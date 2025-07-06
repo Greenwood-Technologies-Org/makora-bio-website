@@ -45,7 +45,7 @@ const Hero = () => {
               variant="outline" 
               size="lg" 
               className="text-lg px-8 py-6 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-              onClick={() => window.open('https://linkedin.com/company/tokusa-bio', '_blank')}
+              onClick={() => window.open('https://linkedin.com/company/makora-bio', '_blank')}
             >
               Visit LinkedIn
             </Button>

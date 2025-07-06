@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Tokusa Bio Design System - Dark biotech theme with electric blue accents */
+/* Makora Bio Design System - Dark biotech theme with electric blue accents */
 
 @layer base {
   :root {
-    /* Tokusa Bio Dark Theme - Converting to HSL */
+    /* Makora Bio Dark Theme - Converting to HSL */
     --background: 215 44% 8%; /* #0B0F1A deep charcoal */
     --foreground: 210 17% 98%; /* #F9FAFB white text */
 
