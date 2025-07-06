@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 // Import logos
 import chemblLogo from "@/assets/mcp_servers/chembl_logo.png";
@@ -159,9 +160,11 @@ const Platform = () => {
 					</div>
 
 					<div className={`text-center fade-in-up ${isVisible ? "visible" : ""}`}>
-						<Button variant="waitlist" size="lg" className="text-lg px-8 py-6">
-							Access MCP Servers
-						</Button>
+						<Link to="/mcp-servers">
+							<Button variant="waitlist" size="lg" className="text-lg px-8 py-6">
+								Access MCP Servers
+							</Button>
+						</Link>
 					</div>
 				</div>
 
@@ -172,9 +175,11 @@ const Platform = () => {
 						Scientists can leverage the smartest AI models with our optimized MCP servers to access powerful agentic
 						research assistance. Get intelligent help with experimental design, literature review, and data analysis.
 					</p>
-					<Button variant="waitlist" size="lg" className="text-lg px-8 py-6">
-						Access Research Assistant
-					</Button>
+					<Link to="/research-assistant">
+						<Button variant="waitlist" size="lg" className="text-lg px-8 py-6">
+							Access Research Assistant
+						</Button>
+					</Link>
 				</div>
 			</div>
 		</section>
