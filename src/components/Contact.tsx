@@ -22,7 +22,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <section id="contact" ref={sectionRef} className="py-24 border-t border-border">
+    <section id="contact" ref={sectionRef} className="py-24">
       <div className="container mx-auto px-6">
         <div className={`max-w-2xl mx-auto text-center fade-in-up ${isVisible ? 'visible' : ''}`}>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">

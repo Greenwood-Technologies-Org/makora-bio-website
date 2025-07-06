@@ -54,7 +54,7 @@ const Products = () => {
             What We're Building
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            We're creating research-ready MCP servers and agents, optimized for fast, reproducible, and accessible scientific workflows.
+            We're creating research-ready MCP servers and agents, optimized for fast, reproducible, and accessible scientific workflows. Use one line to connect to your favorite LLMs.
           </p>
         </div>
 
@@ -103,8 +103,8 @@ const Products = () => {
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-8">
             Scientists can leverage the smartest AI models with our optimized MCP servers to access powerful agentic research assistance. Get intelligent help with experimental design, literature review, and data analysis.
           </p>
-          <Button variant="hero" size="lg" className="text-lg px-8 py-6">
-            Access Research Assistant
+          <Button variant="waitlist" size="lg" className="text-lg px-8 py-6">
+              Access Research Assistant
           </Button>
         </div>
       </div>
