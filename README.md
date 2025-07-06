@@ -46,7 +46,7 @@ src/
 │   ├── ui/             # shadcn/ui components
 │   ├── Contact.tsx     # Contact section
 │   ├── Hero.tsx        # Hero section
-│   ├── Products.tsx    # Products showcase
+│   ├── Platform.tsx    # Platform showcase
 │   └── Waitlist.tsx    # Waitlist signup
 ├── pages/              # Page components
 ├── hooks/              # Custom React hooks

@@ -55,7 +55,7 @@ const mcpServers = [
 	},
 ];
 
-const Products = () => {
+const Platform = () => {
 	const [isVisible, setIsVisible] = useState(false);
 	const [scrollPosition, setScrollPosition] = useState(0);
 	const sectionRef = useRef<HTMLElement>(null);
@@ -100,10 +100,10 @@ const Products = () => {
 	}, [scrollPosition, isVisible]);
 
 	return (
-		<section ref={sectionRef} className="py-24 relative">
+		<section id="platform" ref={sectionRef} className="py-24 relative">
 			<div className="container mx-auto px-6">
 				<div className={`text-center mb-16 fade-in-up ${isVisible ? "visible" : ""}`}>
-					<h2 className="text-4xl md:text-5xl font-bold mb-6">What We're Building</h2>
+					<h2 className="text-4xl md:text-5xl font-bold mb-6">Our Platform</h2>
 					<p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
 						We're creating research-ready MCP servers and agents, optimized for fast, reproducible, and accessible
 						scientific workflows. Use one line to connect to your favorite LLMs.
@@ -181,4 +181,4 @@ const Products = () => {
 	);
 };
 
-export default Products;
+export default Platform;
