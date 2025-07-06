@@ -105,8 +105,7 @@ const Platform = () => {
 				<div className={`text-center mb-16 fade-in-up ${isVisible ? "visible" : ""}`}>
 					<h2 className="text-4xl md:text-5xl font-bold mb-6">Our Platform</h2>
 					<p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-						We're creating research-ready MCP servers and agents, optimized for fast, reproducible, and accessible
-						scientific workflows. Use one line to connect to your favorite LLMs.
+						We're building tools to accelerate life sciences research with agentic AI. Our platform provides access to a suite of powerful MCP servers and agents.
 					</p>
 				</div>
 
@@ -115,7 +114,8 @@ const Platform = () => {
 					<div className={`text-center mb-12 fade-in-up ${isVisible ? "visible" : ""}`}>
 						<h3 className="text-3xl md:text-4xl font-bold mb-4">MCP Servers</h3>
 						<p className="text-lg text-muted-foreground mb-6">
-							Access 4+ specialized research databases through our optimized MCP servers
+							Access 4+ research-ready MCP servers and agents, optimized for fast, reproducible, and accessible
+							scientific workflows. Use one line to connect to your favorite LLMs.
 						</p>
 					</div>
 
@@ -168,7 +168,7 @@ const Platform = () => {
 				{/* Research Assistant Agent Section */}
 				<div className={`text-center fade-in-up ${isVisible ? "visible" : ""}`}>
 					<h3 className="text-3xl md:text-4xl font-bold mb-6">Research Assistant Agent</h3>
-					<p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-8">
+					<p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-8">
 						Scientists can leverage the smartest AI models with our optimized MCP servers to access powerful agentic
 						research assistance. Get intelligent help with experimental design, literature review, and data analysis.
 					</p>

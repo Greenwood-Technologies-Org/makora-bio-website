@@ -30,12 +30,9 @@ const Navbar = () => {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
-    console.log(`Attempting to scroll to section: ${sectionId}`);
     const element = document.getElementById(sectionId);
-    console.log(`Element found:`, element);
     if (element) {
-      const offsetTop = element.offsetTop - 80; // Account for navbar height
-      console.log(`Scrolling to offsetTop: ${offsetTop}`);
+      const offsetTop = element.offsetTop - 80;
       window.scrollTo({
         top: offsetTop,
         behavior: "smooth",
