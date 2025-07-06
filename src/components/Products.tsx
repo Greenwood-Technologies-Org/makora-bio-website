@@ -160,7 +160,7 @@ const Products = () => {
 
 					<div className={`text-center fade-in-up ${isVisible ? "visible" : ""}`}>
 						<Button variant="waitlist" size="lg" className="text-lg px-8 py-6">
-							Access All MCP Servers
+							Access MCP Servers
 						</Button>
 					</div>
 				</div>
