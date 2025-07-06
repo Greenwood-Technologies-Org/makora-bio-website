@@ -36,7 +36,7 @@ const Waitlist = () => {
       <div className="container mx-auto px-6">
         <div className={`max-w-2xl mx-auto text-center fade-in-up ${isVisible ? 'visible' : ''}`}>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Be the First to Try It
+            Be the First to Use Our Tools
           </h2>
           <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
             We're building in public. Enter your email to get early access and updates.

@@ -15,10 +15,14 @@ const Hero = () => {
       
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className={`fade-in-up ${isVisible ? 'visible' : ''}`}>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-6xl md:text-8xl font-bold mb-4 leading-tight text-white">
+            Makora Bio
+          </h1>
+          
+          <h2 className="text-3xl md:text-5xl font-semibold mb-6 leading-tight text-muted-foreground">
             Accelerating life sciences research with{" "}
             <span className="text-primary">agentic AI</span>
-          </h1>
+          </h2>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed">
             We build intelligent tools that free scientists from tedious digital tasks — so they can focus on discovery.
