@@ -117,11 +117,7 @@ const Navbar = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`block w-full text-left px-4 py-2 text-sm font-medium transition-colors hover:text-primary hover:bg-accent rounded-md ${
-                    activeSection === item.id
-                      ? "text-primary bg-accent"
-                      : "text-foreground"
-                  }`}
+                  className="block w-full text-left px-4 py-2 text-sm font-medium transition-colors hover:text-primary hover:bg-accent rounded-md text-foreground"
                 >
                   {item.label}
                 </button>
