@@ -8,6 +8,7 @@ const Waitlist = () => {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [showModal, setShowModal] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -32,20 +33,72 @@ const Waitlist = () => {
     return emailRegex.test(email);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const submitToAirtable = async (name: string, email: string) => {
+    console.log('Submitting to Airtable...', { name, email });
+    console.log('Environment variables:', {
+      token: import.meta.env.VITE_AIRTABLE_PERSONAL_ACCESS_TOKEN ? 'Present' : 'Missing',
+      baseId: import.meta.env.VITE_AIRTABLE_BASE_ID,
+      tableName: import.meta.env.VITE_AIRTABLE_TABLE_NAME
+    });
+
+    // The correct Airtable API format
+    const response = await fetch(`https://api.airtable.com/v0/${import.meta.env.VITE_AIRTABLE_BASE_ID}/${import.meta.env.VITE_AIRTABLE_TABLE_NAME}`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${import.meta.env.VITE_AIRTABLE_PERSONAL_ACCESS_TOKEN}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        records: [
+          {
+            fields: {
+              Name: name,
+              Email: email,
+              'Date Added': new Date().toISOString().split('T')[0] // Format as YYYY-MM-DD
+            }
+          }
+        ]
+      })
+    });
+
+    console.log('Response status:', response.status);
+    const responseData = await response.json();
+    console.log('Response data:', responseData);
+
+    if (!response.ok) {
+      throw new Error(`Failed to submit to waitlist: ${response.status} - ${JSON.stringify(responseData)}`);
+    }
+
+    return responseData;
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!isValidEmail(email)) {
       alert("Please enter a valid email address");
       return;
     }
+
+    setIsSubmitting(true);
     
-    // Handle waitlist signup
-    setShowModal(true);
-    
-    setFirstName("");
-    setLastName("");
-    setEmail("");
+    try {
+      const fullName = `${firstName.trim()} ${lastName.trim()}`;
+      await submitToAirtable(fullName, email);
+      
+      // Show success modal after successful submission
+      setShowModal(true);
+      
+      // Clear form
+      setFirstName("");
+      setLastName("");
+      setEmail("");
+    } catch (error) {
+      console.error('Error submitting to waitlist:', error);
+      alert("Something went wrong. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -86,8 +139,8 @@ const Waitlist = () => {
               className="bg-background border-border text-foreground placeholder:text-muted-foreground"
               required
             />
-            <Button type="submit" variant="waitlist" className="w-full">
-              Join Waitlist
+            <Button type="submit" variant="waitlist" className="w-full" disabled={isSubmitting}>
+              {isSubmitting ? "Joining..." : "Join Waitlist"}
             </Button>
           </form>
         </div>
