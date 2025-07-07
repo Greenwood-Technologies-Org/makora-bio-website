@@ -112,9 +112,9 @@ const Platform = () => {
 
 				{/* MCP Servers Section */}
 				<div className="mb-16">
-					<div className={`text-center mb-12 fade-in-up ${isVisible ? "visible" : ""}`}>
+					<div className={`text-center mb-8 fade-in-up ${isVisible ? "visible" : ""}`}>
 						<h3 className="text-3xl md:text-4xl font-bold mb-4">MCP Servers</h3>
-						<p className="text-lg text-muted-foreground mb-6">
+						<p className="text-lg text-muted-foreground">
 							Access 4+ research-ready MCP servers and agents, optimized for fast, reproducible, and accessible
 							scientific workflows. Use one line to connect to your favorite LLMs.
 						</p>
