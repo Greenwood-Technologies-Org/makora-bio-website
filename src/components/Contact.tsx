@@ -34,7 +34,7 @@ const Contact = () => {
           
           <div className="text-lg">
             <a 
-              href="mailto:team@test.com" 
+              href="mailto:team@makora.bio" 
               className="text-primary hover:text-primary/80 transition-colors duration-200 font-medium"
             >
               team@makora.bio
