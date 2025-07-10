@@ -116,7 +116,7 @@ const Platform = () => {
 						<h3 className="text-3xl md:text-4xl font-bold mb-4">MCP Servers</h3>
 						<p className="text-lg text-muted-foreground">
 							Access 8+ research-ready MCP servers optimized for fast, reproducible, and accessible
-							scientific workflows. Use one line to connect to your favorite LLMs.
+							scientific workflows. Connect to your favorite LLM with one line of code.
 						</p>
 					</div>
 
