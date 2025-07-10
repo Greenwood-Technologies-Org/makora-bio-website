@@ -23,7 +23,7 @@ const ResearchAssistant = () => {
           <h1 className="text-6xl md:text-8xl font-bold text-foreground">
             Research Assistant
           </h1>
-          <p className="text-xl text-muted-foreground mt-6 max-w-2xl">
+          <p className="text-xl text-muted-foreground mt-6 max-w-2xl mx-auto">
             Coming soon - AI-powered research assistance for life sciences
           </p>
         </div>
