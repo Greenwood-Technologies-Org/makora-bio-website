@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
+import logo from "@/assets/logo/rectangle.svg";
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -15,8 +16,8 @@ const Hero = () => {
       
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className={`fade-in-up ${isVisible ? 'visible' : ''}`}>
-          <h1 className="text-6xl md:text-8xl font-bold mb-4 leading-tight text-white">
-            Makora Bio
+          <h1 className="mb-4 leading-tight flex items-center justify-center">
+            <img src={logo} alt="Makora Bio Logo" className="h-16 md:h-24" />
           </h1>
           
           <h2 className="text-3xl md:text-5xl font-semibold mb-6 leading-tight text-muted-foreground">

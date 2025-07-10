@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo/rectangle.svg";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -70,9 +71,9 @@ const Navbar = () => {
           {/* Logo */}
           <button
             onClick={() => scrollToSection("home")}
-            className="text-xl font-bold text-foreground hover:text-primary transition-colors"
+            className="hover:opacity-80 transition-opacity"
           >
-            Makora Bio
+            <img src={logo} alt="Makora Bio Logo" className="h-8" />
           </button>
 
           {/* Desktop Navigation Links */}
