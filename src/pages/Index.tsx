@@ -6,7 +6,7 @@ const Index = () => {
       <div className="text-center">
         <h1 className="text-4xl font-bold mb-6">Makora Bio</h1>
         <Link to="/demo">
-          <button className="px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition-opacity">
+          <button className="px-6 py-3 bg-primary-500 text-white rounded-lg font-medium hover:bg-primary-600 transition-colors shadow-sm">
             View Demo
           </button>
         </Link>
