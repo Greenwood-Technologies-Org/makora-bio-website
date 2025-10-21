@@ -1,0 +1,277 @@
+[
+  {
+    "id": 1,
+    "subject": "Subject 103-004 AE / Con Med Mismatch",
+    "summary": "Data management flagged a mismatch — AE log shows ibuprofen 400 mg for headache, but concomitant medications list 200 mg. CRA needs to confirm the correct dose with the site and ensure consistency across logs.",
+    "urgency": "High",
+    "status": "In Progress",
+    "timestamp": "2 hours ago",
+    "threads": [
+      {
+        "id": 1,
+        "name": "Thread 1: Medical Monitor → Data Management → CRA",
+        "description": "Internal thread identifying the data discrepancy and requesting CRA follow-up with the site.",
+        "participants": ["Medical Monitor", "Data Management", "CRA"],
+        "messages": [
+          {
+            "from": "Medical Monitor",
+            "to": "Data Management",
+            "content": "I noticed a potential discrepancy in Subject 103-004's adverse event reporting. Can you investigate?",
+            "timestamp": "2 days ago"
+          },
+          {
+            "from": "Data Management",
+            "to": "CRA",
+            "content": "We found a mismatch: AE log shows ibuprofen 400 mg for headache, but concomitant medications list 200 mg. Please follow up with the site to confirm the correct dose.",
+            "timestamp": "1 day ago"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Thread 2: CRA → Site CRC",
+        "description": "Outbound email thread to verify and correct the medication entry in the EDC.",
+        "participants": ["CRA", "Site CRC"],
+        "messages": []
+      }
+    ],
+    "todos": [
+      {
+        "id": 1,
+        "description": "Confirm follow-up with internal team",
+        "assignee": "CRA",
+        "status": "pending",
+        "tag": "Thread 1",
+        "hasAIDraft": true,
+        "aiDraft": {
+          "threadId": 1,
+          "message": "Following up with the site now to clarify the ibuprofen dosage discrepancy. Will report back once I receive confirmation from the site CRC.",
+          "references": [
+            {
+              "type": "Email Thread",
+              "title": "Re: Similar AE/Con Med query from Site 102",
+              "date": "2025-10-10"
+            },
+            {
+              "type": "Document",
+              "title": "Data Query Resolution SOP",
+              "date": "2025-09-15"
+            }
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "description": "Clarify with site",
+        "assignee": "CRA",
+        "status": "pending",
+        "tag": "Thread 2",
+        "hasAIDraft": true,
+        "aiDraft": {
+          "threadId": 2,
+          "message": "Hello,\n\nI hope this message finds you well. We've identified a discrepancy in Subject 103-004's records that requires clarification.\n\nSpecifically, the Adverse Event log shows ibuprofen 400 mg taken for headache, while the Concomitant Medications list indicates 200 mg. Could you please verify which dosage is correct and update the EDC accordingly?\n\nThank you for your prompt attention to this matter.\n\nBest regards,\nCRA",
+          "references": [
+            {
+              "type": "Document",
+              "title": "Site Communication Guidelines",
+              "date": "2025-08-20"
+            },
+            {
+              "type": "Email Thread",
+              "title": "Re: EDC Discrepancy Resolution Process",
+              "date": "2025-09-25"
+            },
+            {
+              "type": "Document",
+              "title": "Protocol Section 8.4 - Adverse Event Reporting",
+              "date": "2024-12-01"
+            }
+          ]
+        }
+      },
+      {
+        "id": 3,
+        "description": "Ensure reconciliation between AE and Con Med logs",
+        "assignee": "CRA",
+        "status": "pending",
+        "tag": "EDC"
+      },
+      {
+        "id": 4,
+        "description": "Close query",
+        "assignee": "Data Management",
+        "status": "pending",
+        "tag": "EDC"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "subject": "Protocol Deviation - Subject 105-012 Visit Window Exceeded",
+    "summary": "Subject 105-012 attended Visit 3 outside the protocol-specified window (Day 28 ±3). The visit occurred on Day 35, exceeding the allowed window by 4 days. Site has been notified and deviation report is pending.",
+    "urgency": "Medium",
+    "status": "Pending Response",
+    "timestamp": "5 hours ago",
+    "threads": [
+      {
+        "id": 1,
+        "name": "Thread 1: CRA → Site Coordinator",
+        "description": "Initial notification to site about protocol deviation and request for explanation.",
+        "participants": ["CRA", "Site Coordinator"],
+        "messages": [
+          {
+            "from": "CRA",
+            "to": "Site Coordinator",
+            "content": "I noticed that Subject 105-012's Visit 3 was conducted on Day 35, which is outside the protocol window of Day 28 ±3. Can you please provide context on why this occurred and submit a protocol deviation report?",
+            "timestamp": "3 days ago"
+          }
+        ]
+      }
+    ],
+    "todos": [
+      {
+        "id": 1,
+        "description": "Follow up with site for deviation report",
+        "assignee": "CRA",
+        "status": "pending",
+        "tag": "Thread 1",
+        "hasAIDraft": true,
+        "aiDraft": {
+          "threadId": 1,
+          "message": "Hi,\n\nI wanted to follow up on the protocol deviation for Subject 105-012's Visit 3 timing. As discussed, the visit occurred on Day 35, which exceeded the protocol window.\n\nCould you please provide:\n1. The reason for the delay\n2. A completed protocol deviation report\n3. Any supporting documentation\n\nPlease let me know if you need any assistance with the deviation report form.\n\nThank you,\nCRA",
+          "references": [
+            {
+              "type": "Document",
+              "title": "Protocol Deviation Reporting SOP",
+              "date": "2025-07-01"
+            },
+            {
+              "type": "Email Thread",
+              "title": "Re: Visit Window Deviation - Site 103",
+              "date": "2025-09-18"
+            },
+            {
+              "type": "Document",
+              "title": "Protocol Section 5.2 - Visit Windows",
+              "date": "2024-12-01"
+            }
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "description": "Review and approve deviation documentation",
+        "assignee": "Medical Monitor",
+        "status": "pending",
+        "tag": "EDC"
+      },
+      {
+        "id": 3,
+        "description": "Update EDC with deviation flag",
+        "assignee": "Data Management",
+        "status": "pending",
+        "tag": "EDC"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "subject": "Urgent: Low IP Supply - Site 106 Patient Visit Tomorrow",
+    "summary": "Site 106 pharmacy coordinator reports only 2 kits remaining in inventory with Subject 106-009 scheduled for dispensing visit tomorrow. Site requires emergency IP shipment to avoid visit rescheduling and protocol deviation. CRA needs to coordinate with IP manager and update tracking systems.",
+    "urgency": "High",
+    "status": "In Progress",
+    "timestamp": "1 hour ago",
+    "threads": [
+      {
+        "id": 1,
+        "name": "Thread 1: Site Pharmacy → CRA",
+        "description": "Initial notification from site about low IP inventory and upcoming patient visit.",
+        "participants": ["Site Pharmacy", "CRA"],
+        "messages": [
+          {
+            "from": "Site Pharmacy",
+            "to": "CRA",
+            "content": "Hi,\n\nWe have an urgent situation - our IP inventory is critically low with only 2 kits remaining. Subject 106-009 has a dispensing visit scheduled for tomorrow (10/21) and we want to ensure we have adequate supply.\n\nCould you please expedite a shipment? We'd like to maintain a buffer of at least 5 kits given our enrollment rate.\n\nThank you,\nPharmacy Coordinator\nSite 106",
+            "timestamp": "1 hour ago"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Thread 2: CRA → IP Manager",
+        "description": "Coordination with IP manager to arrange emergency shipment to the site.",
+        "participants": ["CRA", "IP Manager"],
+        "messages": []
+      }
+    ],
+    "todos": [
+      {
+        "id": 1,
+        "description": "Confirm follow-up with site pharmacy",
+        "assignee": "CRA",
+        "status": "pending",
+        "tag": "Thread 1",
+        "hasAIDraft": true,
+        "aiDraft": {
+          "threadId": 1,
+          "message": "Hi,\n\nThank you for the heads up. I'm on it and have already contacted our IP manager to arrange an emergency shipment.\n\nI'll confirm the shipping details and expected delivery time within the next 2 hours. In the meantime, you should be fine for tomorrow's visit with your current inventory of 2 kits.\n\nI'll keep you updated on the shipment tracking.\n\nBest regards,\nCRA",
+          "references": [
+            {
+              "type": "Email Thread",
+              "title": "Re: IP Emergency Shipment Protocol - Site 104",
+              "date": "2025-09-28"
+            },
+            {
+              "type": "Document",
+              "title": "IP Management SOP - Emergency Procedures",
+              "date": "2025-06-15"
+            }
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "description": "Request emergency IP shipment from IP manager",
+        "assignee": "CRA",
+        "status": "pending",
+        "tag": "Thread 2",
+        "hasAIDraft": true,
+        "aiDraft": {
+          "threadId": 2,
+          "message": "Hi,\n\nWe have an urgent IP supply request for Site 106. Current situation:\n\n• Current inventory: 2 kits\n• Scheduled visit: Subject 106-009 tomorrow (10/21)\n• Requested buffer: 5 kits minimum\n• Site enrollment rate: ~2-3 subjects/month\n\nCan we arrange an emergency shipment to arrive by tomorrow afternoon or Wednesday morning at the latest? The site can accommodate delivery during business hours (8 AM - 5 PM EST).\n\nSite shipping address:\nSite 106 Research Pharmacy\n[Address on file]\n\nPlease confirm shipment details and provide tracking information.\n\nThank you,\nCRA",
+          "references": [
+            {
+              "type": "Document",
+              "title": "Site 106 - IP Inventory Log",
+              "date": "2025-10-19"
+            },
+            {
+              "type": "Email Thread",
+              "title": "Re: IP Shipment Request Template",
+              "date": "2025-08-12"
+            },
+            {
+              "type": "Document",
+              "title": "IP Distribution Plan v3.2",
+              "date": "2025-07-01"
+            }
+          ]
+        }
+      },
+      {
+        "id": 3,
+        "description": "Update IP tracking system with shipment details",
+        "assignee": "CRA",
+        "status": "pending",
+        "tag": "EDC"
+      },
+      {
+        "id": 4,
+        "description": "Follow up on shipment delivery confirmation",
+        "assignee": "CRA",
+        "status": "pending",
+        "tag": "EDC"
+      }
+    ]
+  }
+]

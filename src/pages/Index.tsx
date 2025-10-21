@@ -1,17 +1,16 @@
-import Hero from "@/components/Hero";
-import Platform from "@/components/Platform";
-import Waitlist from "@/components/Waitlist";
-import Contact from "@/components/Contact";
-import Navbar from "@/components/Navbar";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <Navbar />
-      <Hero />
-      <Platform />
-      <Waitlist />
-      <Contact />
+    <div className="min-h-screen flex items-center justify-center">
+      <div className="text-center">
+        <h1 className="text-4xl font-bold mb-6">Makora Bio</h1>
+        <Link to="/demo">
+          <button className="px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition-opacity">
+            View Demo
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };
