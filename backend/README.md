@@ -72,10 +72,17 @@ OPENAI_API_KEY=your-openai-api-key-here
 
 ```bash
 # Make sure your virtual environment is activated
+source .venv/bin/activate
+
+# Run the Flask app
 python main.py
 ```
 
 The server will start on `http://localhost:5000`
+
+**Note for macOS users:** Port 5000 may be in use by AirPlay Receiver. If you get an "Address already in use" error:
+- Either disable AirPlay Receiver in System Settings → General → AirDrop & Handoff
+- Or run on a different port: Modify `main.py` to use port 5001 or set `FLASK_PORT=5001` in your `.env` file
 
 ### Production mode
 
@@ -199,4 +206,17 @@ uv pip install -e .
 
 ### Port already in use
 
-Change the port in `main.py` or set the `FLASK_PORT` environment variable.
+**Common on macOS:** Port 5000 is used by AirPlay Receiver by default.
+
+Solutions:
+1. Disable AirPlay Receiver: System Settings → General → AirDrop & Handoff → Turn off "AirPlay Receiver"
+2. Use a different port by modifying `main.py` to use port 5001 or another available port
+3. Set `FLASK_PORT=5001` in your `.env` file
+
+### Build errors with uv
+
+If you see "Unable to determine which files to ship inside the wheel", make sure your `pyproject.toml` has:
+```toml
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+```
