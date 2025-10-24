@@ -18,9 +18,9 @@ def create_app() -> Flask:
     )
 
     # Register blueprints
-    from app.routes import api_bp
+    from app.dspy_routes import dspy_bp
 
-    app.register_blueprint(api_bp, url_prefix="/api")
+    app.register_blueprint(dspy_bp, url_prefix="/api/dspy")
 
     @app.route("/health")
     def health_check():
