@@ -16,12 +16,15 @@
           {
             "from": "Medical Monitor",
             "to": "Data Management",
+            "cc": ["Project Manager"],
             "content": "I noticed a potential discrepancy in Subject 103-004's adverse event reporting. Can you investigate?",
             "timestamp": "2 days ago"
           },
           {
             "from": "Data Management",
             "to": "CRA",
+            "cc": ["Medical Monitor", "Quality Assurance"],
+            "replyTo": "Medical Monitor",
             "content": "We found a mismatch: AE log shows ibuprofen 400 mg for headache, but concomitant medications list 200 mg. Please follow up with the site to confirm the correct dose.",
             "timestamp": "1 day ago"
           }
@@ -32,7 +35,15 @@
         "name": "Thread 2: CRA → Site CRC",
         "description": "Outbound email thread to verify and correct the medication entry in the EDC.",
         "participants": ["CRA", "Site CRC"],
-        "messages": []
+        "messages": [
+          {
+            "from": "CRA",
+            "to": "Site CRC",
+            "cc": ["Medical Monitor", "Data Management"],
+            "content": "I've followed up with the site and they confirmed the correct dosage is 200 mg. I've updated the EDC accordingly.",
+            "timestamp": "1 hour ago"
+          }
+        ]
       }
     ],
     "todos": [
@@ -122,6 +133,7 @@
           {
             "from": "CRA",
             "to": "Site Coordinator",
+            "cc": ["Medical Monitor", "Study Director"],
             "content": "I noticed that Subject 105-012's Visit 3 was conducted on Day 35, which is outside the protocol window of Day 28 ±3. Can you please provide context on why this occurred and submit a protocol deviation report?",
             "timestamp": "3 days ago"
           }
@@ -191,6 +203,7 @@
           {
             "from": "Site Pharmacy",
             "to": "CRA",
+            "cc": ["Site Principal Investigator"],
             "content": "Hi,\n\nWe have an urgent situation - our IP inventory is critically low with only 2 kits remaining. Subject 106-009 has a dispensing visit scheduled for tomorrow (10/21) and we want to ensure we have adequate supply.\n\nCould you please expedite a shipment? We'd like to maintain a buffer of at least 5 kits given our enrollment rate.\n\nThank you,\nPharmacy Coordinator\nSite 106",
             "timestamp": "1 hour ago"
           }
