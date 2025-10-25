@@ -62,12 +62,10 @@ function EmailDetailPanel({ email, onClose }) {
           </div>
         </div>
 
-        {/* AI Draft Reply */}
+        {/*  Reply */}
         <div>
           <h4 className="text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
-            <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-700">
-              AI Draft
-            </span>
+            <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-700"></span>
             Draft Reply
           </h4>
           <textarea
