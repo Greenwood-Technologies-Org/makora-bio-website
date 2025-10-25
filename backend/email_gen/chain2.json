@@ -1,0 +1,459 @@
+[
+{
+"message_id": "[msg001@memorialcc.org](mailto:msg001@memorialcc.org)",
+"in_reply_to": null,
+"references": [],
+"from": {
+"name": "Sarah Chen",
+"email": "[schen@memorialcc.org](mailto:schen@memorialcc.org)"
+},
+"to": [
+{
+"name": "Jennifer Martinez",
+"email": "[jmartinez@genentech-trials.com](mailto:jmartinez@genentech-trials.com)"
+}
+],
+"cc": [
+{
+"name": "Dr. Michael Roberts",
+"email": "[mroberts@memorialcc.org](mailto:mroberts@memorialcc.org)"
+}
+],
+"subject": "[URGENT] Initial SAE Notification - BR-042-0127",
+"date": "2025-02-03T08:12:00-05:00",
+"body": "Hi Jennifer,\n\nWe are reporting a potential Serious Adverse Event for patient BR-042-0127 (initials J.K.) currently enrolled in study NCT00542451. The patient experienced symptomatic shortness of breath and was noted to have reduced LVEF during routine monitoring at Week 8 of therapy.\n\nWe have temporarily interrupted trastuzumab and paclitaxel per protocol. I am attaching the initial SAE form. Let me know if additional documentation is needed.\n\nBest regards,\nSarah Chen, CCRP\nClinical Research Coordinator | Memorial Cancer Center\nPhone: (555) 410-2332\n",
+"attachments": [
+{
+"filename": "Initial_SAE_Form_BR-042-0127.pdf",
+"content_type": "application/pdf",
+"size_kb": 92
+}
+],
+"metadata": {
+"urgency": "high",
+"requires_action": true,
+"action_items": ["CRA review and request missing documentation"],
+"referenced_documents": ["protocol section 7.3.2"],
+"clinical_trial_phase": "monitoring"
+}
+},
+{
+"message_id": "[msg002@genentech-trials.com](mailto:msg002@genentech-trials.com)",
+"in_reply_to": "[msg001@memorialcc.org](mailto:msg001@memorialcc.org)",
+"references": ["[msg001@memorialcc.org](mailto:msg001@memorialcc.org)"],
+"from": {
+"name": "Jennifer Martinez",
+"email": "[jmartinez@genentech-trials.com](mailto:jmartinez@genentech-trials.com)"
+},
+"to": [
+{
+"name": "Sarah Chen",
+"email": "[schen@memorialcc.org](mailto:schen@memorialcc.org)"
+}
+],
+"cc": [
+{
+"name": "Dr. Michael Roberts",
+"email": "[mroberts@memorialcc.org](mailto:mroberts@memorialcc.org)"
+}
+],
+"subject": "Re: [URGENT] Initial SAE Notification - BR-042-0127",
+"date": "2025-02-03T08:47:00-05:00",
+"body": "Hi Sarah,\n\nThank you for the initial report. We will need the following to proceed with full SAE documentation and medical review:\n\n1. Baseline EKG and echocardiogram\n2. Most recent EKG and echocardiogram confirming the decreased LVEF\n3. Any cardiology consult notes if available\n\nPlease send as soon as possible, as reporting timelines for cardiac events related to trastuzumab require expedited handling.\n\nThank you,\nJennifer Martinez, RN, CRA\nStudy Monitoring | Genentech\nPhone: (555) 892-4412\n",
+"attachments": [],
+"metadata": {
+"urgency": "high",
+"requires_action": true,
+"action_items": ["Site to provide cardiac assessments and consult notes"],
+"referenced_documents": ["protocol section 7.3.2", "ICF version 2.1"],
+"clinical_trial_phase": "monitoring"
+}
+},
+{
+"message_id": "[msg003@memorialcc.org](mailto:msg003@memorialcc.org)",
+"in_reply_to": "[msg002@genentech-trials.com](mailto:msg002@genentech-trials.com)",
+"references": ["[msg001@memorialcc.org](mailto:msg001@memorialcc.org)", "[msg002@genentech-trials.com](mailto:msg002@genentech-trials.com)"],
+"from": {
+"name": "Sarah Chen",
+"email": "[schen@memorialcc.org](mailto:schen@memorialcc.org)"
+},
+"to": [
+{
+"name": "Jennifer Martinez",
+"email": "[jmartinez@genentech-trials.com](mailto:jmartinez@genentech-trials.com)"
+}
+],
+"cc": [
+{
+"name": "Dr. Michael Roberts",
+"email": "[mroberts@memorialcc.org](mailto:mroberts@memorialcc.org)"
+}
+],
+"subject": "Re: [URGENT] Initial SAE Notification - BR-042-0127",
+"date": "2025-02-03T11:05:00-05:00",
+"body": "Hi Jennifer,\n\nAttached are the baseline and most recent echocardiograms. We do not yet have the cardiologist consult note; the patient is scheduled to see cardiology later today.\n\nWe will forward the consult note once available.\n\nBest,\nSarah\n",
+"attachments": [
+{
+"filename": "Baseline_Echo_BR-042-0127.pdf",
+"content_type": "application/pdf",
+"size_kb": 210
+},
+{
+"filename": "Week8_Echo_BR-042-0127.pdf",
+"content_type": "application/pdf",
+"size_kb": 224
+}
+],
+"metadata": {
+"urgency": "high",
+"requires_action": true,
+"action_items": ["Await cardiologist note"],
+"referenced_documents": ["protocol section 7.3.3"],
+"clinical_trial_phase": "monitoring"
+}
+},
+{
+"message_id": "[msg004@genentech-trials.com](mailto:msg004@genentech-trials.com)",
+"in_reply_to": "[msg003@memorialcc.org](mailto:msg003@memorialcc.org)",
+"references": ["[msg001@memorialcc.org](mailto:msg001@memorialcc.org)", "[msg002@genentech-trials.com](mailto:msg002@genentech-trials.com)", "[msg003@memorialcc.org](mailto:msg003@memorialcc.org)"],
+"from": {
+"name": "Jennifer Martinez",
+"email": "[jmartinez@genentech-trials.com](mailto:jmartinez@genentech-trials.com)"
+},
+"to": [
+{
+"name": "Dr. Patricia Williams",
+"email": "[pwilliams@genentech.com](mailto:pwilliams@genentech.com)"
+}
+],
+"cc": [
+{
+"name": "Sarah Chen",
+"email": "[schen@memorialcc.org](mailto:schen@memorialcc.org)"
+},
+{
+"name": "Dr. Michael Roberts",
+"email": "[mroberts@memorialcc.org](mailto:mroberts@memorialcc.org)"
+}
+],
+"subject": "[ESCALATION] Cardiac SAE Review Needed - BR-042-0127",
+"date": "2025-02-03T11:22:00-05:00",
+"body": "Hi Dr. Williams,\n\nWe have a suspected trastuzumab-related decrease in LVEF in patient BR-042-0127, currently at Grade 2-3 severity leading to treatment interruption. Baseline and recent echo scans are attached in the previous email.\n\nCardiology consult note pending.\n\nRequesting medical review.\n\nThank you,\nJennifer\n",
+"attachments": [],
+"metadata": {
+"urgency": "high",
+"requires_action": true,
+"action_items": ["Medical monitor review"],
+"referenced_documents": ["protocol section 8.1", "ICH-GCP guidelines"],
+"clinical_trial_phase": "escalation"
+}
+},
+{
+"message_id": "[msg005@genentech.com](mailto:msg005@genentech.com)",
+"in_reply_to": "[msg004@genentech-trials.com](mailto:msg004@genentech-trials.com)",
+"references": ["[msg001@memorialcc.org](mailto:msg001@memorialcc.org)","[msg002@genentech-trials.com](mailto:msg002@genentech-trials.com)","[msg003@memorialcc.org](mailto:msg003@memorialcc.org)","[msg004@genentech-trials.com](mailto:msg004@genentech-trials.com)"],
+"from": {
+"name": "Dr. Patricia Williams",
+"email": "[pwilliams@genentech.com](mailto:pwilliams@genentech.com)"
+},
+"to": [
+{
+"name": "Sarah Chen",
+"email": "[schen@memorialcc.org](mailto:schen@memorialcc.org)"
+}
+],
+"cc": [
+{
+"name": "Jennifer Martinez",
+"email": "[jmartinez@genentech-trials.com](mailto:jmartinez@genentech-trials.com)"
+},
+{
+"name": "Dr. Michael Roberts",
+"email": "[mroberts@memorialcc.org](mailto:mroberts@memorialcc.org)"
+}
+],
+"subject": "Re: [ESCALATION] Cardiac SAE Review Needed - BR-042-0127",
+"date": "2025-02-03T13:54:00-05:00",
+"body": "Hello Sarah,\n\nTo complete the clinical assessment, please provide:\n\n1. Latest EKG tracing\n2. Troponin and BNP lab values if drawn\n3. Cardiology consultation summary when available\n\nThis event is consistent with known trastuzumab-associated cardiac dysfunction and may require expedited reporting.\n\nRegards,\nPatricia Williams, MD\nMedical Monitor | Genentech",
+"attachments": [],
+"metadata": {
+"urgency": "high",
+"requires_action": true,
+"action_items": ["Site to provide labs, EKG, consult note"],
+"referenced_documents": ["protocol appendix C"],
+"clinical_trial_phase": "escalation"
+}
+},
+{
+"message_id": "[msg006@memorialcc.org](mailto:msg006@memorialcc.org)",
+"in_reply_to": "[msg005@genentech.com](mailto:msg005@genentech.com)",
+"references": ["[msg001@memorialcc.org](mailto:msg001@memorialcc.org)","[msg002@genentech-trials.com](mailto:msg002@genentech-trials.com)","[msg003@memorialcc.org](mailto:msg003@memorialcc.org)","[msg004@genentech-trials.com](mailto:msg004@genentech-trials.com)","[msg005@genentech.com](mailto:msg005@genentech.com)"],
+"from": {
+"name": "Dr. Michael Roberts",
+"email": "[mroberts@memorialcc.org](mailto:mroberts@memorialcc.org)"
+},
+"to": [
+{
+"name": "Dr. Patricia Williams",
+"email": "[pwilliams@genentech.com](mailto:pwilliams@genentech.com)"
+}
+],
+"cc": [
+{
+"name": "Jennifer Martinez",
+"email": "[jmartinez@genentech-trials.com](mailto:jmartinez@genentech-trials.com)"
+},
+{
+"name": "Sarah Chen",
+"email": "[schen@memorialcc.org](mailto:schen@memorialcc.org)"
+}
+],
+"subject": "Re: [ESCALATION] Cardiac SAE Review Needed - BR-042-0127",
+"date": "2025-02-03T14:18:00-05:00",
+"body": "Hi Dr. Williams,\n\nPreliminary clinical impression: The patient is symptomatic but stable, no acute decompensated heart failure. We agree with holding trastuzumab pending cardiology evaluation.\n\nWe expect cardiology consultation results later this afternoon.\n\nSincerely,\nMichael Roberts, MD\nPrincipal Investigator\n",
+"attachments": [],
+"metadata": {
+"urgency": "normal",
+"requires_action": false,
+"action_items": [],
+"referenced_documents": [],
+"clinical_trial_phase": "escalation"
+}
+},
+{
+"message_id": "[msg007@genentech.com](mailto:msg007@genentech.com)",
+"in_reply_to": "[msg006@memorialcc.org](mailto:msg006@memorialcc.org)",
+"references": ["[msg001@memorialcc.org](mailto:msg001@memorialcc.org)","[msg002@genentech-trials.com](mailto:msg002@genentech-trials.com)","[msg003@memorialcc.org](mailto:msg003@memorialcc.org)","[msg004@genentech-trials.com](mailto:msg004@genentech-trials.com)","[msg005@genentech.com](mailto:msg005@genentech.com)","[msg006@memorialcc.org](mailto:msg006@memorialcc.org)"],
+"from": {
+"name": "David Thompson",
+"email": "[dthompson@genentech.com](mailto:dthompson@genentech.com)"
+},
+"to": [
+{
+"name": "Sarah Chen",
+"email": "[schen@memorialcc.org](mailto:schen@memorialcc.org)"
+}
+],
+"cc": [
+{
+"name": "Jennifer Martinez",
+"email": "[jmartinez@genentech-trials.com](mailto:jmartinez@genentech-trials.com)"
+},
+{
+"name": "Dr. Patricia Williams",
+"email": "[pwilliams@genentech.com](mailto:pwilliams@genentech.com)"
+},
+{
+"name": "Dr. Michael Roberts",
+"email": "[mroberts@memorialcc.org](mailto:mroberts@memorialcc.org)"
+}
+],
+"subject": "[PV REVIEW] SAE BR-042-0127 – MedDRA Terms & Event Timeline",
+"date": "2025-02-03T17:42:00-05:00",
+"body": "Hi Sarah,\n\nFor safety reporting, we need:\n\n- Confirmed CTCAE Grade\n- MedDRA coding proposed by the site if available\n- Date of onset and date of treatment interruption\n\nOnce cardiology notes are received, we will determine if this constitutes a SUSAR requiring 15-day regulatory reporting.\n\nThank you,\nDavid Thompson, PharmD\nPharmacovigilance Manager\n",
+"attachments": [],
+"metadata": {
+"urgency": "high",
+"requires_action": true,
+"action_items": ["Site confirm grading and timeline"],
+"referenced_documents": ["ICH E2A guidelines"],
+"clinical_trial_phase": "reporting"
+}
+},
+{
+"message_id": "[msg008@memorialcc.org](mailto:msg008@memorialcc.org)",
+"in_reply_to": "[msg007@genentech.com](mailto:msg007@genentech.com)",
+"references": ["[msg001@memorialcc.org](mailto:msg001@memorialcc.org)","[msg002@genentech-trials.com](mailto:msg002@genentech-trials.com)","[msg003@memorialcc.org](mailto:msg003@memorialcc.org)","[msg004@genentech-trials.com](mailto:msg004@genentech-trials.com)","[msg005@genentech.com](mailto:msg005@genentech.com)","[msg006@memorialcc.org](mailto:msg006@memorialcc.org)","[msg007@genentech.com](mailto:msg007@genentech.com)"],
+"from": {
+"name": "Sarah Chen",
+"email": "[schen@memorialcc.org](mailto:schen@memorialcc.org)"
+},
+"to": [
+{
+"name": "David Thompson",
+"email": "[dthompson@genentech.com](mailto:dthompson@genentech.com)"
+}
+],
+"cc": [
+{
+"name": "Jennifer Martinez",
+"email": "[jmartinez@genentech-trials.com](mailto:jmartinez@genentech-trials.com)"
+},
+{
+"name": "Dr. Michael Roberts",
+"email": "[mroberts@memorialcc.org](mailto:mroberts@memorialcc.org)"
+},
+{
+"name": "Dr. Patricia Williams",
+"email": "[pwilliams@genentech.com](mailto:pwilliams@genentech.com)"
+}
+],
+"subject": "Re: [PV REVIEW] SAE BR-042-0127 – MedDRA Terms & Event Timeline",
+"date": "2025-02-04T07:51:00-05:00",
+"body": "Good morning,\n\nAttached are:\n- Cardiology consult note\n- Latest EKG tracing\n- Troponin and BNP values\n\nCTCAE grade assessed as Grade 3.\nOnset: 2025-01-30\nTreatment interruption: 2025-02-02\n\nProposed MedDRA term: \"Left ventricular dysfunction\".\n\nBest regards,\nSarah\n",
+"attachments": [
+{
+"filename": "Cardiology_Consult_BR-042-0127.pdf",
+"content_type": "application/pdf",
+"size_kb": 268
+},
+{
+"filename": "EKG_Week8_BR-042-0127.pdf",
+"content_type": "application/pdf",
+"size_kb": 184
+}
+],
+"metadata": {
+"urgency": "normal",
+"requires_action": false,
+"action_items": [],
+"referenced_documents": [],
+"clinical_trial_phase": "reporting"
+}
+},
+{
+"message_id": "[msg009@genentech.com](mailto:msg009@genentech.com)",
+"in_reply_to": "[msg008@memorialcc.org](mailto:msg008@memorialcc.org)",
+"references": ["[msg001@memorialcc.org](mailto:msg001@memorialcc.org)","[msg002@genentech-trials.com](mailto:msg002@genentech-trials.com)","[msg003@memorialcc.org](mailto:msg003@memorialcc.org)","[msg004@genentech-trials.com](mailto:msg004@genentech-trials.com)","[msg005@genentech.com](mailto:msg005@genentech.com)","[msg006@memorialcc.org](mailto:msg006@memorialcc.org)","[msg007@genentech.com](mailto:msg007@genentech.com)","[msg008@memorialcc.org](mailto:msg008@memorialcc.org)"],
+"from": {
+"name": "Dr. Patricia Williams",
+"email": "[pwilliams@genentech.com](mailto:pwilliams@genentech.com)"
+},
+"to": [
+{
+"name": "David Thompson",
+"email": "[dthompson@genentech.com](mailto:dthompson@genentech.com)"
+}
+],
+"cc": [
+{
+"name": "Jennifer Martinez",
+"email": "[jmartinez@genentech-trials.com](mailto:jmartinez@genentech-trials.com)"
+},
+{
+"name": "Sarah Chen",
+"email": "[schen@memorialcc.org](mailto:schen@memorialcc.org)"
+},
+{
+"name": "Dr. Michael Roberts",
+"email": "[mroberts@memorialcc.org](mailto:mroberts@memorialcc.org)"
+}
+],
+"subject": "Re: [PV REVIEW] SAE BR-042-0127 – Medical Monitor Assessment",
+"date": "2025-02-04T10:14:00-05:00",
+"body": "Final Clinical Assessment:\n\nCausality: Related to study treatment (trastuzumab)\nAction: Hold trastuzumab, continue cardiac monitoring, resume only if LVEF improves\n\nPlease proceed with regulatory reporting.\n\nRegards,\nPatricia",
+"attachments": [],
+"metadata": {
+"urgency": "normal",
+"requires_action": false,
+"action_items": [],
+"referenced_documents": [],
+"clinical_trial_phase": "resolution"
+}
+},
+{
+"message_id": "[msg010@genentech.com](mailto:msg010@genentech.com)",
+"in_reply_to": "[msg009@genentech.com](mailto:msg009@genentech.com)",
+"references": ["[msg001@memorialcc.org](mailto:msg001@memorialcc.org)","[msg002@genentech-trials.com](mailto:msg002@genentech-trials.com)","[msg003@memorialcc.org](mailto:msg003@memorialcc.org)","[msg004@genentech-trials.com](mailto:msg004@genentech-trials.com)","[msg005@genentech.com](mailto:msg005@genentech.com)","[msg006@memorialcc.org](mailto:msg006@memorialcc.org)","[msg007@genentech.com](mailto:msg007@genentech.com)","[msg008@memorialcc.org](mailto:msg008@memorialcc.org)","[msg009@genentech.com](mailto:msg009@genentech.com)"],
+"from": {
+"name": "Lisa Anderson",
+"email": "[landerson@genentech.com](mailto:landerson@genentech.com)"
+},
+"to": [
+{
+"name": "David Thompson",
+"email": "[dthompson@genentech.com](mailto:dthompson@genentech.com)"
+}
+],
+"cc": [
+{
+"name": "Dr. Patricia Williams",
+"email": "[pwilliams@genentech.com](mailto:pwilliams@genentech.com)"
+},
+{
+"name": "Jennifer Martinez",
+"email": "[jmartinez@genentech-trials.com](mailto:jmartinez@genentech-trials.com)"
+}
+],
+"subject": "[REGULATORY] SAE BR-042-0127 Reporting Timeline",
+"date": "2025-02-04T11:03:00-05:00",
+"body": "This event qualifies for 15-day expedited IND safety reporting.\n\nI will prepare the submission package. Final QC needed by tomorrow 4 PM.\n\nLisa",
+"attachments": [],
+"metadata": {
+"urgency": "high",
+"requires_action": true,
+"action_items": ["PV to finalize narrative"],
+"referenced_documents": ["FDA 21 CFR 312.32"],
+"clinical_trial_phase": "reporting"
+}
+},
+{
+"message_id": "[msg011@genentech.com](mailto:msg011@genentech.com)",
+"in_reply_to": "[msg010@genentech.com](mailto:msg010@genentech.com)",
+"references": ["[msg001@memorialcc.org](mailto:msg001@memorialcc.org)","[msg002@genentech-trials.com](mailto:msg002@genentech-trials.com)","[msg003@memorialcc.org](mailto:msg003@memorialcc.org)","[msg004@genentech-trials.com](mailto:msg004@genentech-trials.com)","[msg005@genentech.com](mailto:msg005@genentech.com)","[msg006@memorialcc.org](mailto:msg006@memorialcc.org)","[msg007@genentech.com](mailto:msg007@genentech.com)","[msg008@memorialcc.org](mailto:msg008@memorialcc.org)","[msg009@genentech.com](mailto:msg009@genentech.com)","[msg010@genentech.com](mailto:msg010@genentech.com)"],
+"from": {
+"name": "David Thompson",
+"email": "[dthompson@genentech.com](mailto:dthompson@genentech.com)"
+},
+"to": [
+{
+"name": "Lisa Anderson",
+"email": "[landerson@genentech.com](mailto:landerson@genentech.com)"
+}
+],
+"cc": [
+{
+"name": "Dr. Patricia Williams",
+"email": "[pwilliams@genentech.com](mailto:pwilliams@genentech.com)"
+},
+{
+"name": "Jennifer Martinez",
+"email": "[jmartinez@genentech-trials.com](mailto:jmartinez@genentech-trials.com)"
+}
+],
+"subject": "Re: [REGULATORY] SAE BR-042-0127 Reporting Timeline",
+"date": "2025-02-04T13:27:00-05:00",
+"body": "Acknowledged. Narrative is drafted and will be sent for QC by end of day.\n\nDavid",
+"attachments": [],
+"metadata": {
+"urgency": "normal",
+"requires_action": false,
+"action_items": [],
+"referenced_documents": [],
+"clinical_trial_phase": "resolution"
+}
+},
+{
+"message_id": "[msg012@memorialcc.org](mailto:msg012@memorialcc.org)",
+"in_reply_to": "[msg011@genentech.com](mailto:msg011@genentech.com)",
+"references": ["[msg001@memorialcc.org](mailto:msg001@memorialcc.org)","[msg002@genentech-trials.com](mailto:msg002@genentech-trials.com)","[msg003@memorialcc.org](mailto:msg003@memorialcc.org)","[msg004@genentech-trials.com](mailto:msg004@genentech-trials.com)","[msg005@genentech.com](mailto:msg005@genentech.com)","[msg006@memorialcc.org](mailto:msg006@memorialcc.org)","[msg007@genentech.com](mailto:msg007@genentech.com)","[msg008@memorialcc.org](mailto:msg008@memorialcc.org)","[msg009@genentech.com](mailto:msg009@genentech.com)","[msg010@genentech.com](mailto:msg010@genentech.com)","[msg011@genentech.com](mailto:msg011@genentech.com)"],
+"from": {
+"name": "Sarah Chen",
+"email": "[schen@memorialcc.org](mailto:schen@memorialcc.org)"
+},
+"to": [
+{
+"name": "Jennifer Martinez",
+"email": "[jmartinez@genentech-trials.com](mailto:jmartinez@genentech-trials.com)"
+}
+],
+"cc": [
+{
+"name": "Dr. Michael Roberts",
+"email": "[mroberts@memorialcc.org](mailto:mroberts@memorialcc.org)"
+}
+],
+"subject": "Re: [CLOSURE] SAE BR-042-0127",
+"date": "2025-02-04T15:02:00-05:00",
+"body": "Thank you all for the coordination and support. We will continue monitoring the patient closely and report any follow-up LVEF assessments.\n\nBest regards,\nSarah",
+"attachments": [],
+"metadata": {
+"urgency": "low",
+"requires_action": false,
+"action_items": [],
+"referenced_documents": [],
+"clinical_trial_phase": "resolution"
+}
+}
+]
+

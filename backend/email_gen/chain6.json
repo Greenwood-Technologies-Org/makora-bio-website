@@ -1,0 +1,214 @@
+[
+  {
+    "message_id": "<A8k3mP9nR2vL4jT6qW1xY@med.northwestern.edu>",
+    "references": [],
+    "from": {
+      "name": "Jennifer Martinez",
+      "email": "j.martinez@med.northwestern.edu",
+      "title": "Senior Clinical Research Coordinator",
+      "organization": "Northwestern University Feinberg School of Medicine"
+    },
+    "to": [
+      {
+        "name": "David Chen",
+        "email": "david.chen@gene.com",
+        "title": "Clinical Research Associate",
+        "organization": "Genentech, Inc."
+      }
+    ],
+    "cc": [],
+    "subject": "Subject BR-023-0047 - Potential SAE Query",
+    "date": "2024-11-13T14:17:23-06:00",
+    "body": "Hi David,\n\nI hope this email finds you well. I'm writing regarding Subject BR-023-0047 who had her Week 16 visit yesterday (Day 112).\n\nDuring the visit, the patient reported she's been experiencing increased shortness of breath over the past 10 days, particularly when climbing stairs. She mentioned it to her primary care physician last week who ordered a chest X-ray, which showed some fluid accumulation. Her PCP started her on a diuretic (furosemide 20mg daily) three days ago.\n\nWe completed the protocol-required ECHO yesterday and her LVEF has dropped from 62% at baseline to 48%. Previous ECHO at Week 8 was 59%, so this is a significant decline. Patient denies chest pain but does report the dyspnea on exertion.\n\nI've entered the shortness of breath as an AE in the EDC (Grade 2 per CTCAE v4.0) with onset date of 11/3/24, but I'm not sure if we need to escalate this to an SAE given the LVEF drop and the fact that the patient saw her PCP. The patient hasn't been hospitalized and says she's feeling a bit better since starting the diuretic.\n\nDr. Patel (our PI) wants to hold the next dose of trastuzumab pending your guidance. Patient was scheduled for Week 17 treatment this Friday.\n\nCould you please advise on next steps? Should this be reported as an SAE?\n\nBest regards,\nJennifer Martinez, BSN, RN, CCRC\nSenior Clinical Research Coordinator\nRobert H. Lurie Comprehensive Cancer Center\nNorthwestern University Feinberg School of Medicine\n(312) 555-0142\nj.martinez@med.northwestern.edu\n\nCONFIDENTIAL: This email may contain confidential and privileged material for the sole use of the intended recipient.",
+    "attachments": [
+      {
+        "filename": "ECHO_Report_Subject_047_Week16.pdf",
+        "content_type": "application/pdf",
+        "size_kb": 238,
+        "description": "Echocardiogram report showing LVEF 48%, mild LV dysfunction, small pericardial effusion"
+      }
+    ],
+    "metadata": {
+      "scenario_type": "safety_reporting",
+      "urgency": "high",
+      "primary_issue": "Patient with cardiac dysfunction and LVEF drop from 62% to 48% on trastuzumab - unclear if meets SAE criteria",
+      "required_cra_action": "Assess whether event meets SAE criteria and coordinate with medical monitor for treatment decision",
+      "action_complexity": "requires_escalation",
+      "referenced_entities": {
+        "subject_id": "BR-023-0047",
+        "site_number": "023",
+        "visit": "Week 16",
+        "study_day": "Day 112"
+      }
+    }
+  },
+  {
+    "message_id": "<B3pL9mN2qR7vT5jK4wX8@gene.com>",
+    "in_reply_to": "<A8k3mP9nR2vL4jT6qW1xY@med.northwestern.edu>",
+    "references": ["<A8k3mP9nR2vL4jT6qW1xY@med.northwestern.edu>"],
+    "from": {
+      "name": "David Chen",
+      "email": "david.chen@gene.com",
+      "title": "Clinical Research Associate",
+      "organization": "Genentech, Inc."
+    },
+    "to": [
+      {
+        "name": "Jennifer Martinez",
+        "email": "j.martinez@med.northwestern.edu",
+        "title": "Senior Clinical Research Coordinator",
+        "organization": "Northwestern University Feinberg School of Medicine"
+      }
+    ],
+    "cc": [],
+    "subject": "Re: Subject BR-023-0047 - Potential SAE Query",
+    "date": "2024-11-13T16:42:18-08:00",
+    "body": "Hi Jennifer,\n\nThank you for the prompt notification. I'm reviewing the ECHO report now.\n\nA few clarifying questions to help me assess this properly:\n\n1. Has the patient been hospitalized or is hospitalization being considered? You mentioned she saw her PCP but is currently managing outpatient.\n\n2. When exactly did the patient first notice symptoms? You mentioned 10 days ago (11/3/24) - did she report this during any study visits before Week 16, or was this the first time you heard about it?\n\n3. Is the patient experiencing any other cardiac symptoms besides dyspnea on exertion? Any orthopnea, paroxysmal nocturnal dyspnea, peripheral edema, or palpitations?\n\n4. What was the assessment of the small pericardial effusion noted in the ECHO? Was this present on prior ECHOs?\n\nI need to review Protocol Section 8.3.2 regarding cardiac AE assessment criteria. Definitely appropriate to hold trastuzumab until we sort this out. I may need to loop in Dr. Richardson (our Medical Monitor) depending on your answers.\n\nCan you get back to me as soon as possible given the Friday dosing schedule?\n\nThanks,\nDavid\n\n---\nDavid Chen, PharmD\nClinical Research Associate\nGenentech, Inc.\n(650) 555-2891\ndavid.chen@gene.com",
+    "attachments": [],
+    "metadata": {
+      "scenario_type": "safety_reporting",
+      "urgency": "high",
+      "primary_issue": "Patient with cardiac dysfunction and LVEF drop from 62% to 48% on trastuzumab - unclear if meets SAE criteria",
+      "required_cra_action": "Assess whether event meets SAE criteria and coordinate with medical monitor for treatment decision",
+      "action_complexity": "requires_escalation",
+      "referenced_entities": {
+        "subject_id": "BR-023-0047",
+        "site_number": "023",
+        "protocol_sections": ["8.3.2"],
+        "visit": "Week 16",
+        "study_day": "Day 112"
+      }
+    }
+  },
+  {
+    "message_id": "<C7nK2mR4vL9pT6jW3qX5@med.northwestern.edu>",
+    "in_reply_to": "<B3pL9mN2qR7vT5jK4wX8@gene.com>",
+    "references": ["<A8k3mP9nR2vL4jT6qW1xY@med.northwestern.edu>", "<B3pL9mN2qR7vT5jK4wX8@gene.com>"],
+    "from": {
+      "name": "Jennifer Martinez",
+      "email": "j.martinez@med.northwestern.edu",
+      "title": "Senior Clinical Research Coordinator",
+      "organization": "Northwestern University Feinberg School of Medicine"
+    },
+    "to": [
+      {
+        "name": "David Chen",
+        "email": "david.chen@gene.com",
+        "title": "Clinical Research Associate",
+        "organization": "Genentech, Inc."
+      }
+    ],
+    "cc": [],
+    "subject": "Re: Subject BR-023-0047 - Potential SAE Query",
+    "date": "2024-11-14T08:53:07-06:00",
+    "body": "Hi David,\n\nAnswers to your questions:\n\n1. No hospitalization. Patient is managing at home with the diuretic. Her PCP did not feel hospitalization was needed at this time. She has a follow-up with cardiology scheduled for next Tuesday (11/19).\n\n2. Patient first noticed symptoms around 11/3 but didn't think much of it initially - she thought she was just out of shape. She mentioned it casually during a phone call last week but didn't describe it as concerning. At the Week 16 visit when we asked specifically, she elaborated more about the severity. This is the first time it was formally documented as an AE.\n\n3. She does report mild lower extremity edema (ankle swelling) that started around the same time. No chest pain, no palpitations. She sleeps with one extra pillow now but denies waking up short of breath at night.\n\n4. The pericardial effusion is new - it was not present on the Week 8 ECHO. The cardiologist's impression states \"small circumferential pericardial effusion, not hemodynamically significant.\"\n\nThe patient is understandably anxious about continuing treatment. She specifically asked me yesterday if the study drug could be causing her heart problems.\n\nPlease let me know what you find out. Dr. Patel is waiting to hear back before scheduling the cardiology referral vs just having her see her own cardiologist.\n\nThanks,\nJennifer\n\n---\nJennifer Martinez, BSN, RN, CCRC\nSenior Clinical Research Coordinator\nRobert H. Lurie Comprehensive Cancer Center\nNorthwestern University Feinberg School of Medicine\n(312) 555-0142\nj.martinez@med.northwestern.edu",
+    "attachments": [],
+    "metadata": {
+      "scenario_type": "safety_reporting",
+      "urgency": "high",
+      "primary_issue": "Patient with cardiac dysfunction and LVEF drop from 62% to 48% on trastuzumab - unclear if meets SAE criteria",
+      "required_cra_action": "Assess whether event meets SAE criteria and coordinate with medical monitor for treatment decision",
+      "action_complexity": "requires_escalation",
+      "referenced_entities": {
+        "subject_id": "BR-023-0047",
+        "site_number": "023",
+        "visit": "Week 16",
+        "study_day": "Day 112"
+      }
+    }
+  },
+  {
+    "message_id": "<D2rT8jK6mL4pW9vN3qX7@med.northwestern.edu>",
+    "in_reply_to": "<C7nK2mR4vL9pT6jW3qX5@med.northwestern.edu>",
+    "references": ["<A8k3mP9nR2vL4jT6qW1xY@med.northwestern.edu>", "<B3pL9mN2qR7vT5jK4wX8@gene.com>", "<C7nK2mR4vL9pT6jW3qX5@med.northwestern.edu>"],
+    "from": {
+      "name": "Dr. Rajesh Patel",
+      "email": "r.patel@med.northwestern.edu",
+      "title": "Principal Investigator, Associate Professor of Medicine",
+      "organization": "Northwestern University Feinberg School of Medicine"
+    },
+    "to": [
+      {
+        "name": "David Chen",
+        "email": "david.chen@gene.com",
+        "title": "Clinical Research Associate",
+        "organization": "Genentech, Inc."
+      }
+    ],
+    "cc": [
+      {
+        "name": "Jennifer Martinez",
+        "email": "j.martinez@med.northwestern.edu",
+        "title": "Senior Clinical Research Coordinator",
+        "organization": "Northwestern University Feinberg School of Medicine"
+      }
+    ],
+    "subject": "Re: Subject BR-023-0047 - Potential SAE Query",
+    "date": "2024-11-14T11:28:34-06:00",
+    "body": "David,\n\nDr. Patel here. Jennifer asked me to weigh in on this case.\n\nFrom a clinical standpoint, this patient is exhibiting signs of trastuzumab-related cardiotoxicity. The LVEF decline from 62% to 48% is significant - that's a 14 percentage point absolute drop and a 23% relative decrease from baseline. While she's still above the 40% threshold mentioned in the protocol exclusion criteria, this decline is concerning, particularly with the new pericardial effusion and symptomatic heart failure signs (dyspnea, edema).\n\nPer the protocol's cardiac monitoring guidelines (Section 6.5.3), we should be holding trastuzumab for any symptomatic decrease in LVEF. I've already made that call clinically.\n\nMy question for you and the sponsor: Does this meet criteria for expedited reporting as an SAE? I'm reading Protocol Section 8.3.2 and Appendix 4, and I'm interpreting this as:\n- Medically significant: Yes (cardiac dysfunction on a cardiac-toxic agent)\n- Required medical intervention: Yes (diuretic therapy, cardiac follow-up)\n- But NOT life-threatening and NOT requiring hospitalization\n\nThe SAE definition in Section 8.2 focuses on hospitalization, life-threatening events, etc. This doesn't clearly meet those criteria, but given it's a cardiac AE on trastuzumab in a cardiac safety study, I would think the sponsor's safety team needs to know about this within the expedited timeline.\n\nCan you please clarify the reporting requirements and let us know if we need to complete an SAE form? Also, what's the pathway for this patient to potentially resume trastuzumab - would she need to wait for LVEF recovery, and if so, to what threshold?\n\nPatient is getting nervous, and I'd like to give her clear guidance on her treatment plan.\n\nThank you,\nDr. Rajesh Patel\n\n---\nRajesh Patel, MD, PhD, FACP\nAssociate Professor of Medicine (Hematology and Oncology)\nPrincipal Investigator\nRobert H. Lurie Comprehensive Cancer Center\nNorthwestern University Feinberg School of Medicine\n676 N. St. Clair Street, Suite 850\nChicago, IL 60611\n(312) 555-0198\nr.patel@med.northwestern.edu",
+    "attachments": [],
+    "metadata": {
+      "scenario_type": "safety_reporting",
+      "urgency": "high",
+      "primary_issue": "Patient with cardiac dysfunction and LVEF drop from 62% to 48% on trastuzumab - unclear if meets SAE criteria",
+      "required_cra_action": "Assess whether event meets SAE criteria and coordinate with medical monitor for treatment decision",
+      "action_complexity": "requires_escalation",
+      "referenced_entities": {
+        "subject_id": "BR-023-0047",
+        "site_number": "023",
+        "protocol_sections": ["6.5.3", "8.2", "8.3.2"],
+        "visit": "Week 16",
+        "study_day": "Day 112"
+      }
+    }
+  },
+  {
+    "message_id": "<E6vW3pL8mT5jR9nK2qX4@gene.com>",
+    "in_reply_to": "<D2rT8jK6mL4pW9vN3qX7@med.northwestern.edu>",
+    "references": ["<A8k3mP9nR2vL4jT6qW1xY@med.northwestern.edu>", "<B3pL9mN2qR7vT5jK4wX8@gene.com>", "<C7nK2mR4vL9pT6jW3qX5@med.northwestern.edu>", "<D2rT8jK6mL4pW9vN3qX7@med.northwestern.edu>"],
+    "from": {
+      "name": "Sarah Thornton",
+      "email": "sarah.thornton@gene.com",
+      "title": "Senior Clinical Trial Manager",
+      "organization": "Genentech, Inc."
+    },
+    "to": [
+      {
+        "name": "David Chen",
+        "email": "david.chen@gene.com",
+        "title": "Clinical Research Associate",
+        "organization": "Genentech, Inc."
+      }
+    ],
+    "cc": [
+      {
+        "name": "Dr. Rajesh Patel",
+        "email": "r.patel@med.northwestern.edu",
+        "title": "Principal Investigator",
+        "organization": "Northwestern University Feinberg School of Medicine"
+      },
+      {
+        "name": "Jennifer Martinez",
+        "email": "j.martinez@med.northwestern.edu",
+        "title": "Senior Clinical Research Coordinator",
+        "organization": "Northwestern University Feinberg School of Medicine"
+      }
+    ],
+    "subject": "Re: Subject BR-023-0047 - Potential SAE Query",
+    "date": "2024-11-14T14:16:52-08:00",
+    "body": "David,\n\nI'm looping in on this thread as I just saw the escalation flag in our tracking system.\n\nDr. Patel raises an excellent question about the SAE reporting threshold. This is exactly the kind of cardiac event we designed the monitoring plan around, and I want to make sure we're handling it correctly from both a safety and compliance perspective.\n\nA few things to consider:\n\n1. **IB Section 5.4 specifically lists \"symptomatic cardiac dysfunction\" as an Important Identified Risk for trastuzumab.** The fact that this patient is symptomatic (dyspnea, edema) AND has objective evidence of dysfunction (LVEF drop + effusion) puts this in a different category than asymptomatic LVEF declines.\n\n2. **The diuretic therapy constitutes a \"medically important\" intervention to prevent serious deterioration**, which per ICH E2A guidelines could make this SAE-reportable even without hospitalization.\n\n3. **We have 5 other sites reporting similar borderline cases this quarter**, and we need consistency in how we're classifying these events for our DSMB review next month.\n\nGiven that it's Thursday afternoon and the site is asking about Friday dosing, I think we need Medical Monitor input urgently. Dr. Richardson was reviewing similar cases this week - has he provided any updated guidance on the cardiac AE assessment algorithm?\n\nCan you coordinate a call with Dr. Richardson, the site, and our Safety team tomorrow morning? We should not leave this patient in limbo over the weekend.\n\n-Sarah\n\n---\nSarah Thornton, PhD\nSenior Clinical Trial Manager\nGenentech, Inc.\nOne DNA Way, South San Francisco, CA 94080\n(650) 555-3174\nsarah.thornton@gene.com",
+    "attachments": [],
+    "metadata": {
+      "scenario_type": "safety_reporting",
+      "urgency": "high",
+      "primary_issue": "Patient with cardiac dysfunction and LVEF drop from 62% to 48% on trastuzumab - unclear if meets SAE criteria",
+      "required_cra_action": "Coordinate urgent call with Medical Monitor, site, and Safety team to determine SAE classification and treatment decision before weekend",
+      "action_complexity": "requires_escalation",
+      "referenced_entities": {
+        "subject_id": "BR-023-0047",
+        "site_number": "023",
+        "protocol_sections": ["6.5.3", "8.2", "8.3.2"]
+      }
+    }
+  }
+]

@@ -1,0 +1,714 @@
+[
+  {
+    "message_id": "a1b2c3d4-5e6f-7g8h-9i0j-k1l2m3n4o5p6@memorialcancer.org",
+    "in_reply_to": null,
+    "references": [],
+    "from": {
+      "name": "Sarah Chen",
+      "email": "s.chen@memorialcancer.org"
+    },
+    "to": [
+      {
+        "name": "Jennifer Martinez",
+        "email": "j.martinez@genentech.com"
+      }
+    ],
+    "cc": [],
+    "subject": "SAE Report - Study NCT00542451 - Patient BR-042-0127",
+    "date": "2024-11-15T14:32:18-05:00",
+    "body": "Hi Jennifer,\n\nI need to report a serious adverse event for one of our study participants in the APT trial (NCT00542451).\n\nPatient ID: BR-042-0127 (Initials: J.K.)\nEvent: Patient experienced significant cardiac symptoms including shortness of breath and fatigue. Cardiology consult ordered.\nOnset Date: November 13, 2024\nCurrent Status: Treatment has been held as of today\nPatient is currently: Week 8 of protocol treatment\n\nThe patient came in for her scheduled visit yesterday and reported these symptoms that started about 3 days ago. We've held both paclitaxel and trastuzumab pending further cardiac workup.\n\nI'm attaching the initial SAE form. Dr. Roberts is aware and we're getting additional testing done.\n\nPlease let me know what else you need from us.\n\nThanks,\nSarah\n\n---\nSarah Chen, RN, BSN, CCRC\nClinical Research Coordinator\nMemorial Cancer Center - Site 042\nPhone: (555) 234-5678\nFax: (555) 234-5679",
+    "attachments": [
+      {
+        "filename": "SAE_Form_BR-042-0127_Initial.pdf",
+        "content_type": "application/pdf",
+        "size_kb": 89
+      }
+    ],
+    "metadata": {
+      "urgency": "high",
+      "requires_action": true,
+      "action_items": [
+        "Review initial SAE report",
+        "Request additional documentation",
+        "Assess reporting timeline requirements"
+      ],
+      "referenced_documents": [],
+      "clinical_trial_phase": "reporting"
+    }
+  },
+  {
+    "message_id": "b2c3d4e5-6f7g-8h9i-0j1k-l2m3n4o5p6q7@genentech.com",
+    "in_reply_to": "a1b2c3d4-5e6f-7g8h-9i0j-k1l2m3n4o5p6@memorialcancer.org",
+    "references": ["a1b2c3d4-5e6f-7g8h-9i0j-k1l2m3n4o5p6@memorialcancer.org"],
+    "from": {
+      "name": "Jennifer Martinez",
+      "email": "j.martinez@genentech.com"
+    },
+    "to": [
+      {
+        "name": "Sarah Chen",
+        "email": "s.chen@memorialcancer.org"
+      }
+    ],
+    "cc": [
+      {
+        "name": "David Thompson",
+        "email": "d.thompson@genentech.com"
+      }
+    ],
+    "subject": "Re: SAE Report - Study NCT00542451 - Patient BR-042-0127",
+    "date": "2024-11-15T15:08:42-05:00",
+    "body": "Sarah,\n\nThank you for the prompt notification. I've received your initial SAE form and am copying our Pharmacovigilance Manager, David Thompson, to ensure proper tracking.\n\nGiven the cardiac nature of this event and the known cardiac risks associated with trastuzumab, we need to obtain complete documentation urgently. Per Protocol Section 7.3.2, all SAEs must be reported within 24 hours of site awareness with complete information.\n\nPlease provide the following ASAP:\n\n1. **Baseline LVEF measurement** (from screening/baseline visit)\n2. **Current LVEF measurement** with date performed\n3. **Current and baseline EKG reports**\n4. **Cardiology consultation note** (when available)\n5. **CTCAE grading** of the cardiac event\n6. **Relevant laboratory values** (troponin, BNP if obtained)\n7. **Exact onset date and time** of symptoms\n8. **Any concomitant medications** started for this event\n\nThis event may require expedited reporting to FDA. I will also be escalating to our Medical Monitor given the cardiac involvement.\n\nCan you provide items 1-3 and 5-7 by end of day today? I understand the cardiology note may take longer to obtain.\n\nPlease confirm receipt of this email.\n\nBest regards,\nJennifer\n\n---\nJennifer Martinez, MS, CCRP\nClinical Research Associate\nGenentech, Inc.\nPhone: (650) 225-4891\nEmail: j.martinez@genentech.com",
+    "attachments": [],
+    "metadata": {
+      "urgency": "high",
+      "requires_action": true,
+      "action_items": [
+        "Provide baseline LVEF measurement",
+        "Provide current LVEF measurement",
+        "Provide EKG reports",
+        "Provide CTCAE grading",
+        "Provide laboratory values",
+        "Confirm exact symptom onset",
+        "List concomitant medications"
+      ],
+      "referenced_documents": ["Protocol Section 7.3.2"],
+      "clinical_trial_phase": "escalation"
+    }
+  },
+  {
+    "message_id": "c3d4e5f6-7g8h-9i0j-1k2l-m3n4o5p6q7r8@memorialcancer.org",
+    "in_reply_to": "b2c3d4e5-6f7g-8h9i-0j1k-l2m3n4o5p6q7@genentech.com",
+    "references": [
+      "a1b2c3d4-5e6f-7g8h-9i0j-k1l2m3n4o5p6@memorialcancer.org",
+      "b2c3d4e5-6f7g-8h9i-0j1k-l2m3n4o5p6q7@genentech.com"
+    ],
+    "from": {
+      "name": "Sarah Chen",
+      "email": "s.chen@memorialcancer.org"
+    },
+    "to": [
+      {
+        "name": "Jennifer Martinez",
+        "email": "j.martinez@genentech.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "David Thompson",
+        "email": "d.thompson@genentech.com"
+      },
+      {
+        "name": "Dr. Michael Roberts",
+        "email": "m.roberts@memorialcancer.org"
+      }
+    ],
+    "subject": "Re: SAE Report - Study NCT00542451 - Patient BR-042-0127",
+    "date": "2024-11-15T17:45:23-05:00",
+    "body": "Jennifer,\n\nConfirmed - I've received your request and am working on gathering all documentation.\n\nHere's what I can provide now:\n\n**Baseline LVEF:** 62% (performed 09/15/2024 via echocardiogram)\n**Current LVEF:** 48% (performed 11/14/2024 via echocardiogram) \n**Symptom onset:** November 10, 2024, approximately 2:00 PM per patient report\n**CTCAE Grading:** Grade 2 (symptomatic LVEF decrease, medical intervention indicated)\n**Concomitant meds started:** Lisinopril 10mg daily started 11/14/2024\n\nI'm still working on obtaining:\n- EKG reports (baseline and current) - our cardiology department is scanning these now\n- Full cardiology consultation note - Dr. Patel saw the patient but hasn't finalized his note yet. I've reached out to his office.\n- Lab values: Troponin was normal (<0.01), BNP was 145 pg/mL (mildly elevated)\n\nI'm attaching the echo reports for baseline and current. I should have the EKGs within the hour and will send immediately upon receipt.\n\nDr. Roberts is copied here and can provide additional clinical context as needed.\n\nSarah\n\n---\nSarah Chen, RN, BSN, CCRC\nClinical Research Coordinator\nMemorial Cancer Center - Site 042\nPhone: (555) 234-5678\nFax: (555) 234-5679",
+    "attachments": [
+      {
+        "filename": "Echo_Baseline_09-15-2024_BR-042-0127.pdf",
+        "content_type": "application/pdf",
+        "size_kb": 234
+      },
+      {
+        "filename": "Echo_Current_11-14-2024_BR-042-0127.pdf",
+        "content_type": "application/pdf",
+        "size_kb": 241
+      },
+      {
+        "filename": "Lab_Results_11-14-2024_BR-042-0127.pdf",
+        "content_type": "application/pdf",
+        "size_kb": 67
+      }
+    ],
+    "metadata": {
+      "urgency": "high",
+      "requires_action": true,
+      "action_items": [
+        "Await EKG reports",
+        "Await cardiology consultation note",
+        "Medical monitor assessment needed"
+      ],
+      "referenced_documents": [],
+      "clinical_trial_phase": "monitoring"
+    }
+  },
+  {
+    "message_id": "d4e5f6g7-8h9i-0j1k-2l3m-n4o5p6q7r8s9@genentech.com",
+    "in_reply_to": "c3d4e5f6-7g8h-9i0j-1k2l-m3n4o5p6q7r8@memorialcancer.org",
+    "references": [
+      "a1b2c3d4-5e6f-7g8h-9i0j-k1l2m3n4o5p6@memorialcancer.org",
+      "b2c3d4e5-6f7g-8h9i-0j1k-l2m3n4o5p6q7@genentech.com",
+      "c3d4e5f6-7g8h-9i0j-1k2l-m3n4o5p6q7r8@memorialcancer.org"
+    ],
+    "from": {
+      "name": "Jennifer Martinez",
+      "email": "j.martinez@genentech.com"
+    },
+    "to": [
+      {
+        "name": "Dr. Patricia Williams",
+        "email": "p.williams@genentech.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "Sarah Chen",
+        "email": "s.chen@memorialcancer.org"
+      },
+      {
+        "name": "David Thompson",
+        "email": "d.thompson@genentech.com"
+      },
+      {
+        "name": "Dr. Michael Roberts",
+        "email": "m.roberts@memorialcancer.org"
+      }
+    ],
+    "subject": "[URGENT] Re: SAE Report - Study NCT00542451 - Patient BR-042-0127 - Medical Monitor Review Needed",
+    "date": "2024-11-15T18:12:07-05:00",
+    "body": "Dr. Williams,\n\nI'm escalating this SAE case to you for urgent medical review. We have a symptomatic LVEF decrease in a study participant receiving trastuzumab + paclitaxel.\n\n**KEY DETAILS:**\n- Patient BR-042-0127, Week 8 of treatment\n- LVEF drop from 62% (baseline) to 48% (current) - 14 percentage point decrease\n- Symptomatic: shortness of breath, fatigue\n- Grade 2 per CTCAE\n- Study drug held as of 11/15/2024\n- Started on ACE inhibitor (Lisinopril 10mg daily)\n- Troponin normal, BNP mildly elevated at 145 pg/mL\n\n**CLINICAL CONCERN:**\nThis represents a clinically significant decline in LVEF with symptoms. Given trastuzumab's known cardiotoxicity profile, we need your immediate assessment for:\n\n1. Causality determination (relationship to study drug)\n2. Expectedness assessment (for SUSAR evaluation)\n3. Recommendations for patient management\n4. Determination if this meets criteria for expedited IND safety reporting\n\nEcho reports are attached. Site is obtaining EKG reports and cardiology consultation note - will forward as soon as received.\n\nPer our SOP, this needs medical monitor review within 24 hours of notification. Given the cardiac nature and potential regulatory implications, requesting your assessment as soon as possible tonight if feasible.\n\nPlease advise on next steps.\n\nThank you,\nJennifer\n\n---\nJennifer Martinez, MS, CCRP\nClinical Research Associate\nGenentech, Inc.\nPhone: (650) 225-4891\nMobile: (650) 555-0147 (for urgent matters)\nEmail: j.martinez@genentech.com",
+    "attachments": [
+      {
+        "filename": "Echo_Baseline_09-15-2024_BR-042-0127.pdf",
+        "content_type": "application/pdf",
+        "size_kb": 234
+      },
+      {
+        "filename": "Echo_Current_11-14-2024_BR-042-0127.pdf",
+        "content_type": "application/pdf",
+        "size_kb": 241
+      },
+      {
+        "filename": "Lab_Results_11-14-2024_BR-042-0127.pdf",
+        "content_type": "application/pdf",
+        "size_kb": 67
+      }
+    ],
+    "metadata": {
+      "urgency": "high",
+      "requires_action": true,
+      "action_items": [
+        "Medical monitor causality assessment",
+        "Expectedness determination",
+        "Patient management recommendations",
+        "IND safety reporting determination"
+      ],
+      "referenced_documents": ["SUSAR criteria", "IND safety reporting requirements"],
+      "clinical_trial_phase": "escalation"
+    }
+  },
+  {
+    "message_id": "e5f6g7h8-9i0j-1k2l-3m4n-o5p6q7r8s9t0@genentech.com",
+    "in_reply_to": "d4e5f6g7-8h9i-0j1k-2l3m-n4o5p6q7r8s9@genentech.com",
+    "references": [
+      "a1b2c3d4-5e6f-7g8h-9i0j-k1l2m3n4o5p6@memorialcancer.org",
+      "b2c3d4e5-6f7g-8h9i-0j1k-l2m3n4o5p6q7@genentech.com",
+      "c3d4e5f6-7g8h-9i0j-1k2l-m3n4o5p6q7r8@memorialcancer.org",
+      "d4e5f6g7-8h9i-0j1k-2l3m-n4o5p6q7r8s9@genentech.com"
+    ],
+    "from": {
+      "name": "Dr. Patricia Williams",
+      "email": "p.williams@genentech.com"
+    },
+    "to": [
+      {
+        "name": "Jennifer Martinez",
+        "email": "j.martinez@genentech.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "Sarah Chen",
+        "email": "s.chen@memorialcancer.org"
+      },
+      {
+        "name": "David Thompson",
+        "email": "d.thompson@genentech.com"
+      },
+      {
+        "name": "Dr. Michael Roberts",
+        "email": "m.roberts@memorialcancer.org"
+      }
+    ],
+    "subject": "[URGENT] Re: SAE Report - Study NCT00542451 - Patient BR-042-0127 - Medical Monitor Review Needed",
+    "date": "2024-11-15T21:34:52-05:00",
+    "body": "Jennifer,\n\nThank you for the escalation. I've reviewed the echo reports and available clinical information.\n\nThis is indeed a significant event. A 14-point LVEF drop with clinical symptoms is concerning, particularly in the context of trastuzumab therapy. However, I need additional information before I can complete my causality assessment:\n\n**CRITICAL INFORMATION STILL NEEDED:**\n\n1. **EKG reports** (baseline and current) - to assess for any ischemic changes or conduction abnormalities\n2. **Complete cardiology consultation note** - What is the cardiologist's assessment? Any alternative etiologies considered (ischemia, valvular disease, etc.)?\n3. **Prior cardiac history** - Any pre-existing cardiac conditions? Hypertension? CAD? Previous cardiac events?\n4. **Cumulative trastuzumab dose** - How many doses has she received?\n5. **Prior anthracycline exposure** - Was patient treated with anthracyclines for this or any prior malignancy?\n6. **Recent viral illness** - Any symptoms suggesting viral myocarditis?\n\n**PRELIMINARY ASSESSMENT:**\nBased on current information, this appears to be at least POSSIBLY related to trastuzumab. The temporal relationship is appropriate (Week 8), the event is consistent with known trastuzumab cardiotoxicity, and LVEF decline is well-documented with HER2-targeted therapy.\n\n**URGENT SITE REQUESTS:**\n\nDr. Roberts/Sarah - Please provide:\n- All missing documentation noted above by 10:00 AM EST tomorrow (11/16)\n- Patient's complete cardiac history from screening documentation\n- Any planned follow-up cardiac assessments and timeline\n\nWe may need to submit this as an IND safety report depending on final causality and expectedness determinations. David - please begin preliminary coding with available information.\n\nI will provide final causality assessment once all documentation is received.\n\nDr. Williams\n\n---\nPatricia Williams, MD, PhD\nMedical Monitor, Oncology Clinical Development\nGenentech, Inc.\nPhone: (650) 225-7823\nPager: (650) 555-STAT (7828)\nEmail: p.williams@genentech.com",
+    "attachments": [],
+    "metadata": {
+      "urgency": "high",
+      "requires_action": true,
+      "action_items": [
+        "Provide EKG reports by 10 AM EST 11/16",
+        "Provide complete cardiology note",
+        "Provide patient cardiac history",
+        "Provide cumulative trastuzumab dose",
+        "Confirm anthracycline exposure history",
+        "Screen for viral illness",
+        "Begin MedDRA coding"
+      ],
+      "referenced_documents": ["IND safety reporting requirements", "trastuzumab cardiotoxicity profile"],
+      "clinical_trial_phase": "monitoring"
+    }
+  },
+  {
+    "message_id": "f6g7h8i9-0j1k-2l3m-4n5o-p6q7r8s9t0u1@memorialcancer.org",
+    "in_reply_to": "e5f6g7h8-9i0j-1k2l-3m4n-o5p6q7r8s9t0@genentech.com",
+    "references": [
+      "a1b2c3d4-5e6f-7g8h-9i0j-k1l2m3n4o5p6@memorialcancer.org",
+      "b2c3d4e5-6f7g-8h9i-0j1k-l2m3n4o5p6q7@genentech.com",
+      "c3d4e5f6-7g8h-9i0j-1k2l-m3n4o5p6q7r8@memorialcancer.org",
+      "d4e5f6g7-8h9i-0j1k-2l3m-n4o5p6q7r8s9@genentech.com",
+      "e5f6g7h8-9i0j-1k2l-3m4n-o5p6q7r8s9t0@genentech.com"
+    ],
+    "from": {
+      "name": "Dr. Michael Roberts",
+      "email": "m.roberts@memorialcancer.org"
+    },
+    "to": [
+      {
+        "name": "Dr. Patricia Williams",
+        "email": "p.williams@genentech.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "Jennifer Martinez",
+        "email": "j.martinez@genentech.com"
+      },
+      {
+        "name": "Sarah Chen",
+        "email": "s.chen@memorialcancer.org"
+      },
+      {
+        "name": "David Thompson",
+        "email": "d.thompson@genentech.com"
+      }
+    ],
+    "subject": "[URGENT] Re: SAE Report - Study NCT00542451 - Patient BR-042-0127 - Medical Monitor Review Needed",
+    "date": "2024-11-15T22:18:33-05:00",
+    "body": "Dr. Williams,\n\nThank you for your rapid response. I can provide some of the clinical context you've requested:\n\n**CARDIAC HISTORY:**\n- No prior cardiac disease\n- No history of hypertension (BP consistently 110-120/70-75)\n- No CAD, no prior MI, no arrhythmias\n- Non-smoker\n- Screening EKG was normal sinus rhythm\n- No family history of premature cardiac disease\n\n**TREATMENT HISTORY:**\n- **NO prior anthracycline exposure** - this is node-negative disease, no prior chemotherapy\n- Patient enrolled directly to APT trial after diagnosis\n- Has received **8 doses of weekly trastuzumab** (loading dose 4 mg/kg, then 2 mg/kg weekly)\n- Has received **8 doses of weekly paclitaxel** (80 mg/m² weekly)\n\n**RECENT ILLNESS:**\n- Patient denied any recent viral illness or upper respiratory symptoms\n- No fever, no recent sick contacts\n- She did report feeling \"more tired than usual\" starting about 2 weeks ago, which in retrospect may have been early cardiac symptoms\n\n**CLINICAL IMPRESSION:**\nGiven the absence of alternative risk factors and the temporal relationship, I share your concern that this is likely trastuzumab-related cardiotoxicity. The fact that she has no anthracycline exposure and still developed symptomatic LVEF decline is notable.\n\n**MANAGEMENT PLAN:**\n- Study drugs remain on hold\n- Started ACE inhibitor as noted\n- Cardiology (Dr. Patel) recommended repeat echo in 4 weeks\n- Patient is clinically stable, symptoms improving with ACE inhibitor\n- No indication for hospitalization at this time\n\nSarah is coordinating collection of all EKG reports and the cardiology consultation note first thing tomorrow morning. We will have everything to you by 10:00 AM EST as requested.\n\nPlease let me know if you need any additional clinical information.\n\nBest regards,\nMike\n\n---\nMichael Roberts, MD, FACP\nPrincipal Investigator\nDirector, Clinical Trials Office\nMemorial Cancer Center\nPhone: (555) 234-5670\nEmail: m.roberts@memorialcancer.org",
+    "attachments": [],
+    "metadata": {
+      "urgency": "high",
+      "requires_action": false,
+      "action_items": [
+        "Await final documentation 11/16 10 AM"
+      ],
+      "referenced_documents": ["APT trial protocol", "Protocol screening requirements"],
+      "clinical_trial_phase": "monitoring"
+    }
+  },
+  {
+    "message_id": "g7h8i9j0-1k2l-3m4n-5o6p-q7r8s9t0u1v2@genentech.com",
+    "in_reply_to": "f6g7h8i9-0j1k-2l3m-4n5o-p6q7r8s9t0u1@memorialcancer.org",
+    "references": [
+      "a1b2c3d4-5e6f-7g8h-9i0j-k1l2m3n4o5p6@memorialcancer.org",
+      "b2c3d4e5-6f7g-8h9i-0j1k-l2m3n4o5p6q7@genentech.com",
+      "c3d4e5f6-7g8h-9i0j-1k2l-m3n4o5p6q7r8@memorialcancer.org",
+      "d4e5f6g7-8h9i-0j1k-2l3m-n4o5p6q7r8s9@genentech.com",
+      "e5f6g7h8-9i0j-1k2l-3m4n-o5p6q7r8s9t0@genentech.com",
+      "f6g7h8i9-0j1k-2l3m-4n5o-p6q7r8s9t0u1@memorialcancer.org"
+    ],
+    "from": {
+      "name": "David Thompson",
+      "email": "d.thompson@genentech.com"
+    },
+    "to": [
+      {
+        "name": "Dr. Patricia Williams",
+        "email": "p.williams@genentech.com"
+      },
+      {
+        "name": "Jennifer Martinez",
+        "email": "j.martinez@genentech.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "Sarah Chen",
+        "email": "s.chen@memorialcancer.org"
+      },
+      {
+        "name": "Dr. Michael Roberts",
+        "email": "m.roberts@memorialcancer.org"
+      },
+      {
+        "name": "Lisa Anderson",
+        "email": "l.anderson@genentech.com"
+      }
+    ],
+    "subject": "[URGENT] Re: SAE Report - Study NCT00542451 - Patient BR-042-0127 - PV Assessment",
+    "date": "2024-11-16T08:15:41-05:00",
+    "body": "Dr. Williams, Jennifer, and team,\n\nI've been tracking this case since yesterday's initial report. Based on the clinical information provided, I'm initiating our expedited safety reporting process.\n\n**PHARMACOVIGILANCE ASSESSMENT:**\n\n**Preliminary MedDRA Coding:**\n- PT: Ejection fraction decreased (MedDRA code: 10014653)\n- PT: Dyspnoea (MedDRA code: 10013968) \n- PT: Fatigue (MedDRA code: 10016256)\n- SOC: Cardiac disorders\n\n**Seriousness Criteria Met:**\n- Medically significant event requiring intervention\n- Results in treatment interruption\n- Grade 2 CTCAE (symptomatic, medical intervention indicated)\n\n**REGULATORY TIMELINE CONSIDERATIONS:**\n\nDr. Williams - I need your final causality assessment by **2:00 PM EST today (11/16)** to determine reporting requirements:\n\n- If assessed as **AT LEAST POSSIBLY related** to trastuzumab AND unexpected in nature/severity → This becomes a **SUSAR requiring 15-day expedited IND safety report to FDA**\n- We are already at Day 2 since site awareness (11/15)\n- Clock is ticking on our 15-calendar-day reporting window\n\nLisa Anderson from Regulatory is copied for coordination of any required submissions.\n\n**OUTSTANDING ITEMS NEEDED FROM SITE:**\n\n1. Complete SAE form with all sections filled (current form incomplete)\n2. EKG reports (baseline and current)\n3. Cardiology consultation note\n4. Confirmation of event outcome status (ongoing, resolved, etc.)\n5. Any updated follow-up information\n\n**Sarah/Dr. Roberts** - Please confirm you can provide items 1-3 by 10:00 AM EST as requested. We're holding for these documents to finalize our assessment.\n\nI'll have the draft safety report prepared pending final causality determination.\n\nDavid\n\n---\nDavid Thompson, PharmD, RAC\nPharmacovigilance Manager\nGenentech, Inc. - Drug Safety Department\nPhone: (650) 225-5234\nEmail: d.thompson@genentech.com",
+    "attachments": [],
+    "metadata": {
+      "urgency": "high",
+      "requires_action": true,
+      "action_items": [
+        "Medical monitor final causality by 2 PM EST 11/16",
+        "Complete SAE form from site by 10 AM EST",
+        "All supporting documentation by 10 AM EST",
+        "Prepare draft IND safety report"
+      ],
+      "referenced_documents": [
+        "21 CFR 312.32",
+        "ICH E2A guidelines",
+        "MedDRA coding dictionary",
+        "CTCAE v5.0"
+      ],
+      "clinical_trial_phase": "reporting"
+    }
+  },
+  {
+    "message_id": "h8i9j0k1-2l3m-4n5o-6p7q-r8s9t0u1v2w3@memorialcancer.org",
+    "in_reply_to": "g7h8i9j0-1k2l-3m4n-5o6p-q7r8s9t0u1v2@genentech.com",
+    "references": [
+      "a1b2c3d4-5e6f-7g8h-9i0j-k1l2m3n4o5p6@memorialcancer.org",
+      "b2c3d4e5-6f7g-8h9i-0j1k-l2m3n4o5p6q7@genentech.com",
+      "c3d4e5f6-7g8h-9i0j-1k2l-m3n4o5p6q7r8@memorialcancer.org",
+      "d4e5f6g7-8h9i-0j1k-2l3m-n4o5p6q7r8s9@genentech.com",
+      "e5f6g7h8-9i0j-1k2l-3m4n-o5p6q7r8s9t0@genentech.com",
+      "f6g7h8i9-0j1k-2l3m-4n5o-p6q7r8s9t0u1@memorialcancer.org",
+      "g7h8i9j0-1k2l-3m4n-5o6p-q7r8s9t0u1v2@genentech.com"
+    ],
+    "from": {
+      "name": "Sarah Chen",
+      "email": "s.chen@memorialcancer.org"
+    },
+    "to": [
+      {
+        "name": "David Thompson",
+        "email": "d.thompson@genentech.com"
+      },
+      {
+        "name": "Jennifer Martinez",
+        "email": "j.martinez@genentech.com"
+      },
+      {
+        "name": "Dr. Patricia Williams",
+        "email": "p.williams@genentech.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "Dr. Michael Roberts",
+        "email": "m.roberts@memorialcancer.org"
+      },
+      {
+        "name": "Lisa Anderson",
+        "email": "l.anderson@genentech.com"
+      }
+    ],
+    "subject": "[URGENT] Re: SAE Report - Study NCT00542451 - Patient BR-042-0127 - COMPLETE DOCUMENTATION",
+    "date": "2024-11-16T09:47:12-05:00",
+    "body": "Team,\n\nAll documentation has been obtained and is attached. Apologies for the delay - cardiology had to retrieve archived EKGs from their system.\n\n**COMPLETE DOCUMENTATION PACKAGE:**\n\n1. ✓ Updated SAE form with all sections completed\n2. ✓ Baseline EKG (09/15/2024) - Normal sinus rhythm, no abnormalities\n3. ✓ Current EKG (11/14/2024) - Sinus rhythm, no acute ischemic changes, no conduction abnormalities\n4. ✓ Cardiology consultation note from Dr. Rakesh Patel\n5. ✓ Baseline and current echocardiogram reports (previously sent)\n6. ✓ Laboratory results (previously sent)\n\n**KEY FINDINGS FROM CARDIOLOGY CONSULTATION:**\n\nDr. Patel's assessment (see attached note):\n- **Diagnosis:** Drug-induced cardiomyopathy, likely secondary to trastuzumab\n- **Assessment:** Symptomatic LV systolic dysfunction with LVEF decline from 62% to 48%\n- **No evidence of:** Ischemic disease, valvular disease, or alternative etiology\n- **Recommendations:** \n  * Discontinue trastuzumab permanently\n  * Continue ACE inhibitor (Lisinopril 10mg daily)\n  * Repeat echo in 4 weeks\n  * May consider adding beta-blocker if symptoms persist\n- **Prognosis:** Trastuzumab-induced cardiotoxicity is often reversible with drug discontinuation and medical management\n\n**CURRENT PATIENT STATUS:**\n- Event ongoing but improving\n- Symptoms significantly better since starting Lisinopril\n- Patient currently Grade 1 symptomatically (mild dyspnea only with exertion)\n- Clinically stable, managed as outpatient\n- Follow-up scheduled with cardiology in 4 weeks and with our office in 1 week\n\n**OUTCOME:** Event ongoing, improving with treatment\n\n**ACTION TAKEN:** Study drug (trastuzumab and paclitaxel) permanently discontinued per cardiology recommendation and Protocol Section 7.3.2\n\nAll attached documents are de-identified per HIPAA requirements with only study ID visible.\n\nPlease let me know if you need anything else.\n\nSarah\n\n---\nSarah Chen, RN, BSN, CCRC\nClinical Research Coordinator\nMemorial Cancer Center - Site 042\nPhone: (555) 234-5678\nFax: (555) 234-5679",
+    "attachments": [
+      {
+        "filename": "SAE_Form_BR-042-0127_COMPLETE.pdf",
+        "content_type": "application/pdf",
+        "size_kb": 156
+      },
+      {
+        "filename": "EKG_Baseline_09-15-2024_BR-042-0127.pdf",
+        "content_type": "application/pdf",
+        "size_kb": 423
+      },
+      {
+        "filename": "EKG_Current_11-14-2024_BR-042-0127.pdf",
+        "content_type": "application/pdf",
+        "size_kb": 431
+      },
+      {
+        "filename": "Cardiology_Consultation_Dr-Patel_11-14-2024.pdf",
+        "content_type": "application/pdf",
+        "size_kb": 278
+      }
+    ],
+    "metadata": {
+      "urgency": "high",
+      "requires_action": true,
+      "action_items": [
+        "Medical monitor final causality assessment",
+        "PV determination on expedited reporting",
+        "Regulatory submission preparation if needed"
+      ],
+      "referenced_documents": [
+        "Protocol Section 7.3.2",
+        "HIPAA de-identification requirements"
+      ],
+      "clinical_trial_phase": "monitoring"
+    }
+  },
+  {
+    "message_id": "i9j0k1l2-3m4n-5o6p-7q8r-s9t0u1v2w3x4@genentech.com",
+    "in_reply_to": "h8i9j0k1-2l3m-4n5o-6p7q-r8s9t0u1v2w3@memorialcancer.org",
+    "references": [
+      "a1b2c3d4-5e6f-7g8h-9i0j-k1l2m3n4o5p6@memorialcancer.org",
+      "b2c3d4e5-6f7g-8h9i-0j1k-l2m3n4o5p6q7@genentech.com",
+      "c3d4e5f6-7g8h-9i0j-1k2l-m3n4o5p6q7r8@memorialcancer.org",
+      "d4e5f6g7-8h9i-0j1k-2l3m-n4o5p6q7r8s9@genentech.com",
+      "e5f6g7h8-9i0j-1k2l-3m4n-o5p6q7r8s9t0@genentech.com",
+      "f6g7h8i9-0j1k-2l3m-4n5o-p6q7r8s9t0u1@memorialcancer.org",
+      "g7h8i9j0-1k2l-3m4n-5o6p-q7r8s9t0u1v2@genentech.com",
+      "h8i9j0k1-2l3m-4n5o-6p7q-r8s9t0u1v2w3@memorialcancer.org"
+    ],
+    "from": {
+      "name": "Dr. Patricia Williams",
+      "email": "p.williams@genentech.com"
+    },
+    "to": [
+      {
+        "name": "David Thompson",
+        "email": "d.thompson@genentech.com"
+      },
+      {
+        "name": "Jennifer Martinez",
+        "email": "j.martinez@genentech.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "Sarah Chen",
+        "email": "s.chen@memorialcancer.org"
+      },
+      {
+        "name": "Dr. Michael Roberts",
+        "email": "m.roberts@memorialcancer.org"
+      },
+      {
+        "name": "Lisa Anderson",
+        "email": "l.anderson@genentech.com"
+      }
+    ],
+    "subject": "[URGENT] Re: SAE Report - Study NCT00542451 - Patient BR-042-0127 - FINAL CAUSALITY ASSESSMENT",
+    "date": "2024-11-16T13:22:34-05:00",
+    "body": "Team,\n\nI have completed my medical review of this case with all documentation now available.\n\n**FINAL MEDICAL MONITOR ASSESSMENT:**\n\n**Event:** Symptomatic decrease in left ventricular ejection fraction (LVEF 62% → 48%) with associated dyspnea and fatigue\n\n**Causality Assessment: PROBABLE relationship to trastuzumab**\n\n**Rationale:**\n1. **Temporal relationship:** Event occurred at Week 8 of trastuzumab therapy, consistent with typical onset of trastuzumab-related cardiotoxicity\n2. **Known drug effect:** Cardiac dysfunction is a well-established adverse reaction to trastuzumab, documented in product labeling\n3. **Absence of alternative etiology:** \n   - No baseline cardiac disease\n   - No anthracycline exposure\n   - No ischemic changes on EKG\n   - Cardiologist excluded alternative causes\n4. **Biological plausibility:** Trastuzumab mechanism (HER2 inhibition) known to affect cardiac myocytes\n5. **Consistency with medical literature:** Well-documented in clinical trials and post-marketing experience\n\n**Causality to Paclitaxel: UNLIKELY**\n- Paclitaxel not typically associated with direct cardiomyopathy\n- No evidence of hypersensitivity or other paclitaxel-specific effects\n\n**Expectedness Assessment: EXPECTED**\n- Cardiac dysfunction/decreased LVEF is listed in the Investigator's Brochure Section 6.4.3\n- Included in Protocol Section 7.3 as adverse event of special interest\n- Consistent with the known safety profile of trastuzumab\n- However, the severity in a patient WITHOUT anthracycline exposure is notable\n\n**Clinical Significance:**\n- This case highlights importance of cardiac monitoring in the APT population\n- Even without anthracycline pre-treatment, significant cardiotoxicity can occur\n- Appropriate management initiated (drug discontinuation, ACE inhibitor)\n- Prognosis for recovery is generally favorable\n\n**RECOMMENDATION:**\n- Study drug discontinuation: SUPPORTED (already implemented)\n- Patient should not be re-challenged with trastuzumab\n- Continue cardiac monitoring as planned\n- Case should be included in safety database for ongoing benefit-risk assessment\n\nDavid - this is EXPECTED based on labeling, so does NOT meet SUSAR criteria. However, given the severity and clinical significance, recommend including in next DSUR and periodic safety report.\n\nLisa - Please confirm regulatory reporting requirements based on this assessment.\n\nDr. Williams\n\n---\nPatricia Williams, MD, PhD\nMedical Monitor, Oncology Clinical Development\nGenentech, Inc.\nPhone: (650) 225-7823\nEmail: p.williams@genentech.com",
+    "attachments": [
+      {
+        "filename": "Medical_Monitor_Causality_Assessment_BR-042-0127.pdf",
+        "content_type": "application/pdf",
+        "size_kb": 112
+      }
+    ],
+    "metadata": {
+      "urgency": "high",
+      "requires_action": true,
+      "action_items": [
+        "Confirm regulatory reporting requirements",
+        "Include in DSUR",
+        "Update safety database",
+        "Close SAE case with final documentation"
+      ],
+      "referenced_documents": [
+        "Investigator's Brochure Section 6.4.3",
+        "Protocol Section 7.3",
+        "ICH E2A expectedness criteria",
+        "SUSAR determination guidelines"
+      ],
+      "clinical_trial_phase": "resolution"
+    }
+  },
+  {
+    "message_id": "j0k1l2m3-4n5o-6p7q-8r9s-t0u1v2w3x4y5@genentech.com",
+    "in_reply_to": "i9j0k1l2-3m4n-5o6p-7q8r-s9t0u1v2w3x4@genentech.com",
+    "references": [
+      "a1b2c3d4-5e6f-7g8h-9i0j-k1l2m3n4o5p6@memorialcancer.org",
+      "b2c3d4e5-6f7g-8h9i-0j1k-l2m3n4o5p6q7@genentech.com",
+      "c3d4e5f6-7g8h-9i0j-1k2l-m3n4o5p6q7r8@memorialcancer.org",
+      "d4e5f6g7-8h9i-0j1k-2l3m-n4o5p6q7r8s9@genentech.com",
+      "e5f6g7h8-9i0j-1k2l-3m4n-o5p6q7r8s9t0@genentech.com",
+      "f6g7h8i9-0j1k-2l3m-4n5o-p6q7r8s9t0u1@memorialcancer.org",
+      "g7h8i9j0-1k2l-3m4n-5o6p-q7r8s9t0u1v2@genentech.com",
+      "h8i9j0k1-2l3m-4n5o-6p7q-r8s9t0u1v2w3@memorialcancer.org",
+      "i9j0k1l2-3m4n-5o6p-7q8r-s9t0u1v2w3x4@genentech.com"
+    ],
+    "from": {
+      "name": "Lisa Anderson",
+      "email": "l.anderson@genentech.com"
+    },
+    "to": [
+      {
+        "name": "Dr. Patricia Williams",
+        "email": "p.williams@genentech.com"
+      },
+      {
+        "name": "David Thompson",
+        "email": "d.thompson@genentech.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "Jennifer Martinez",
+        "email": "j.martinez@genentech.com"
+      },
+      {
+        "name": "Sarah Chen",
+        "email": "s.chen@memorialcancer.org"
+      },
+      {
+        "name": "Dr. Michael Roberts",
+        "email": "m.roberts@memorialcancer.org"
+      }
+    ],
+    "subject": "Re: SAE Report - Study NCT00542451 - Patient BR-042-0127 - Regulatory Reporting Determination",
+    "date": "2024-11-16T15:48:19-05:00",
+    "body": "Dr. Williams, David, and team,\n\nThank you for the comprehensive medical assessment. I have reviewed the causality determination and expectedness assessment.\n\n**REGULATORY REPORTING DETERMINATION:**\n\n**FDA IND Safety Report (21 CFR 312.32):**\n- **NOT required** for expedited (15-day) reporting\n- Rationale: Event is EXPECTED per Investigator's Brochure and does not meet SUSAR criteria\n- Event is serious but expected for trastuzumab therapy\n\n**STANDARD REPORTING REQUIREMENTS:**\n\n1. **IND Annual Report:** ✓ Include in next annual safety report\n   - Document as serious adverse event\n   - Include in integrated safety summary\n   - Due: Per annual reporting cycle\n\n2. **IRB Reporting (Site responsibility):**\n   - Site should report to their IRB per local requirements\n   - Some IRBs require reporting of all SAEs, others only unexpected\n   - Sarah/Dr. Roberts - please confirm this has been reported to Memorial Cancer Center IRB per your institution's policies\n\n3. **Development Safety Update Report (DSUR):**\n   - Include in cumulative safety analysis\n   - David to ensure case is flagged for DSUR inclusion\n\n4. **Internal Safety Database:**\n   - Case entered into Argus safety database: ✓ Complete\n   - MedDRA coding confirmed: ✓ Complete  \n   - Causality recorded: ✓ Complete\n\n**INVESTIGATOR NOTIFICATION:**\n\nPer ICH-GCP 4.11.1, no expedited safety notification to investigators is required as this is an expected event. Information will be communicated through routine safety updates.\n\n**CASE CLOSURE:**\n\nAll regulatory requirements for this SAE have been met. Case can be closed in the safety database with the following:\n- Final causality: PROBABLE (trastuzumab)\n- Expectedness: EXPECTED\n- Outcome: Ongoing, improving\n- Action taken: Study drug permanently discontinued\n- Follow-up: Continue per protocol for off-treatment follow-up\n\nExcellent coordination on this case from all parties. The prompt escalation and thorough documentation enabled appropriate medical and regulatory assessment.\n\nLisa\n\n---\nLisa Anderson, MS, RAC\nRegulatory Affairs Associate\nGenentech, Inc. - Regulatory Affairs\nPhone: (650) 225-6842\nEmail: l.anderson@genentech.com",
+    "attachments": [],
+    "metadata": {
+      "urgency": "normal",
+      "requires_action": true,
+      "action_items": [
+        "Site to report to IRB per local requirements",
+        "Include in next IND annual report",
+        "Flag for DSUR inclusion",
+        "Close case in safety database"
+      ],
+      "referenced_documents": [
+        "21 CFR 312.32",
+        "ICH-GCP 4.11.1",
+        "ICH E2F (DSUR)",
+        "IND Annual Report requirements"
+      ],
+      "clinical_trial_phase": "resolution"
+    }
+  },
+  {
+    "message_id": "k1l2m3n4-5o6p-7q8r-9s0t-u1v2w3x4y5z6@genentech.com",
+    "in_reply_to": "j0k1l2m3-4n5o-6p7q-8r9s-t0u1v2w3x4y5@genentech.com",
+    "references": [
+      "a1b2c3d4-5e6f-7g8h-9i0j-k1l2m3n4o5p6@memorialcancer.org",
+      "b2c3d4e5-6f7g-8h9i-0j1k-l2m3n4o5p6q7@genentech.com",
+      "c3d4e5f6-7g8h-9i0j-1k2l-m3n4o5p6q7r8@memorialcancer.org",
+      "d4e5f6g7-8h9i-0j1k-2l3m-n4o5p6q7r8s9@genentech.com",
+      "e5f6g7h8-9i0j-1k2l-3m4n-o5p6q7r8s9t0@genentech.com",
+      "f6g7h8i9-0j1k-2l3m-4n5o-p6q7r8s9t0u1@memorialcancer.org",
+      "g7h8i9j0-1k2l-3m4n-5o6p-q7r8s9t0u1v2@genentech.com",
+      "h8i9j0k1-2l3m-4n5o-6p7q-r8s9t0u1v2w3@memorialcancer.org",
+      "i9j0k1l2-3m4n-5o6p-7q8r-s9t0u1v2w3x4@genentech.com",
+      "j0k1l2m3-4n5o-6p7q-8r9s-t0u1v2w3x4y5@genentech.com"
+    ],
+    "from": {
+      "name": "David Thompson",
+      "email": "d.thompson@genentech.com"
+    },
+    "to": [
+      {
+        "name": "Jennifer Martinez",
+        "email": "j.martinez@genentech.com"
+      },
+      {
+        "name": "Sarah Chen",
+        "email": "s.chen@memorialcancer.org"
+      }
+    ],
+    "cc": [
+      {
+        "name": "Dr. Patricia Williams",
+        "email": "p.williams@genentech.com"
+      },
+      {
+        "name": "Dr. Michael Roberts",
+        "email": "m.roberts@memorialcancer.org"
+      },
+      {
+        "name": "Lisa Anderson",
+        "email": "l.anderson@genentech.com"
+      }
+    ],
+    "subject": "Re: SAE Report - Study NCT00542451 - Patient BR-042-0127 - CASE CLOSURE SUMMARY",
+    "date": "2024-11-17T10:15:28-05:00",
+    "body": "Team,\n\nThank you all for the excellent coordination on this SAE case. I'm providing a final summary for case closure.\n\n**CASE SUMMARY - BR-042-0127:**\n\n**Event:** Symptomatic decrease in LVEF (ejection fraction decreased)\n**Reporter:** Site 042 - Memorial Cancer Center  \n**Initial Report:** November 15, 2024, 14:32 EST\n**Complete Documentation:** November 16, 2024, 09:47 EST\n**Final Assessment:** November 16, 2024, 13:22 EST\n**Processing Time:** 23 hours from initial report to final medical assessment\n\n**FINAL CODING:**\n- MedDRA PT: Ejection fraction decreased (10014653)\n- MedDRA PT: Dyspnoea (10013968)\n- MedDRA PT: Fatigue (10016256)\n- SOC: Cardiac disorders\n- CTCAE Grade: 2 (symptomatic, medical intervention indicated)\n\n**CAUSALITY:** Probable relationship to trastuzumab\n**EXPECTEDNESS:** Expected per IB\n**SERIOUSNESS:** Yes - medically significant, requires intervention\n**OUTCOME:** Ongoing, improving with treatment\n**ACTION TAKEN:** Study drug permanently discontinued\n\n**REGULATORY STATUS:** No expedited reporting required (expected event)\n\n**SAFETY DATABASE:** \n- Case entered in Argus: Case #2024-NCT00542451-042-0127\n- All documentation uploaded and quality checked\n- Case locked for reporting purposes\n- Flagged for inclusion in DSUR and annual IND report\n\n**FOLLOW-UP REQUIREMENTS:**\n\nSarah/Dr. Roberts - Please provide follow-up information:\n1. **4-week follow-up echo results** (expected around December 12, 2024)\n2. **Updated LVEF value** at that time\n3. **Clinical status update** - symptom resolution, medication changes\n4. **Final outcome determination** - when event resolves or stabilizes\n\nPlease submit follow-up SAE report form once repeat echo is completed.\n\n**ACKNOWLEDGMENTS:**\n\nThank you to:\n- Sarah Chen for prompt initial reporting and diligent follow-up on documentation\n- Dr. Roberts for clinical context and management oversight  \n- Jennifer Martinez for appropriate escalation and case coordination\n- Dr. Williams for thorough medical assessment\n- Lisa Anderson for regulatory guidance\n\nThis case demonstrates excellent adherence to our safety reporting processes and appropriate clinical management of an important adverse event.\n\nCase is now officially CLOSED pending follow-up information.\n\nBest regards,\nDavid\n\n---\nDavid Thompson, PharmD, RAC\nPharmacovigilance Manager\nGenentech, Inc. - Drug Safety Department\nPhone: (650) 225-5234\nEmail: d.thompson@genentech.com",
+    "attachments": [
+      {
+        "filename": "Case_Closure_Summary_BR-042-0127.pdf",
+        "content_type": "application/pdf",
+        "size_kb": 178
+      }
+    ],
+    "metadata": {
+      "urgency": "normal",
+      "requires_action": true,
+      "action_items": [
+        "Site to provide 4-week follow-up echo results",
+        "Site to provide clinical status update",
+        "Site to submit follow-up SAE form",
+        "Site to report to local IRB"
+      ],
+      "referenced_documents": [
+        "Protocol Section 7.3.2",
+        "Argus Safety Database",
+        "MedDRA Dictionary",
+        "CTCAE v5.0"
+      ],
+      "clinical_trial_phase": "resolution"
+    }
+  },
+  {
+    "message_id": "l2m3n4o5-6p7q-8r9s-0t1u-v2w3x4y5z6a7@memorialcancer.org",
+    "in_reply_to": "k1l2m3n4-5o6p-7q8r-9s0t-u1v2w3x4y5z6@genentech.com",
+    "references": [
+      "a1b2c3d4-5e6f-7g8h-9i0j-k1l2m3n4o5p6@memorialcancer.org",
+      "b2c3d4e5-6f7g-8h9i-0j1k-l2m3n4o5p6q7@genentech.com",
+      "c3d4e5f6-7g8h-9i0j-1k2l-m3n4o5p6q7r8@memorialcancer.org",
+      "d4e5f6g7-8h9i-0j1k-2l3m-n4o5p6q7r8s9@genentech.com",
+      "e5f6g7h8-9i0j-1k2l-3m4n-o5p6q7r8s9t0@genentech.com",
+      "f6g7h8i9-0j1k-2l3m-4n5o-p6q7r8s9t0u1@memorialcancer.org",
+      "g7h8i9j0-1k2l-3m4n-5o6p-q7r8s9t0u1v2@genentech.com",
+      "h8i9j0k1-2l3m-4n5o-6p7q-r8s9t0u1v2w3@memorialcancer.org",
+      "i9j0k1l2-3m4n-5o6p-7q8r-s9t0u1v2w3x4@genentech.com",
+      "j0k1l2m3-4n5o-6p7q-8r9s-t0u1v2w3x4y5@genentech.com",
+      "k1l2m3n4-5o6p-7q8r-9s0t-u1v2w3x4y5z6@genentech.com"
+    ],
+    "from": {
+      "name": "Sarah Chen",
+      "email": "s.chen@memorialcancer.org"
+    },
+    "to": [
+      {
+        "name": "David Thompson",
+        "email": "d.thompson@genentech.com"
+      },
+      {
+        "name": "Jennifer Martinez",
+        "email": "j.martinez@genentech.com"
+      }
+    ],
+    "cc": [
+      {
+        "name": "Dr. Patricia Williams",
+        "email": "p.williams@genentech.com"
+      },
+      {
+        "name": "Dr. Michael Roberts",
+        "email": "m.roberts@memorialcancer.org"
+      },
+      {
+        "name": "Lisa Anderson",
+        "email": "l.anderson@genentech.com"
+      }
+    ],
+    "subject": "Re: SAE Report - Study NCT00542451 - Patient BR-042-0127 - ACKNOWLEDGMENT",
+    "date": "2024-11-17T11:42:15-05:00",
+    "body": "David, Jennifer, and team,\n\nThank you for the comprehensive case closure summary. I acknowledge receipt and understand the follow-up requirements.\n\n**CONFIRMATIONS:**\n\n✓ SAE has been reported to our Memorial Cancer Center IRB (submitted November 16, 2024)\n✓ Patient scheduled for 4-week follow-up echo on December 12, 2024\n✓ Patient scheduled for clinic follow-up on December 9, 2024\n✓ Will submit follow-up SAE form after repeat cardiac assessment\n\n**CURRENT PATIENT STATUS (as of today):**\n- Symptoms continuing to improve\n- Tolerating Lisinopril well, no side effects\n- Dyspnea now only with significant exertion (essentially Grade 1)\n- Patient in good spirits and understanding of situation\n- Compliant with cardiac medications and follow-up plan\n\nI want to echo David's acknowledgment of the team coordination. This was my first cardiac SAE in a HER2 trial, and I really appreciated the clear guidance and rapid responses from everyone. The process worked smoothly despite the urgency.\n\nI've documented this case thoroughly in our site files and have updated our SOPs to ensure we capture cardiac function data more proactively going forward.\n\nWill keep you posted on follow-up assessments.\n\nThank you all again,\nSarah\n\n---\nSarah Chen, RN, BSN, CCRC\nClinical Research Coordinator\nMemorial Cancer Center - Site 042\nPhone: (555) 234-5678\nFax: (555) 234-5679",
+    "attachments": [
+      {
+        "filename": "IRB_SAE_Report_Confirmation_BR-042-0127.pdf",
+        "content_type": "application/pdf",
+        "size_kb": 94
+      }
+    ],
+    "metadata": {
+      "urgency": "normal",
+      "requires_action": false,
+      "action_items": [],
+      "referenced_documents": [
+        "Site SOPs",
+        "IRB reporting requirements"
+      ],
+      "clinical_trial_phase": "resolution"
+    }
+  }
+]
