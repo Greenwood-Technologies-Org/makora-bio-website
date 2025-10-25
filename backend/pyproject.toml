@@ -9,6 +9,7 @@ dependencies = [
     "flask-cors",
     "dspy",
     "python-dotenv",
+    "anthropic>=0.71.0",
 ]
 
 [project.optional-dependencies]

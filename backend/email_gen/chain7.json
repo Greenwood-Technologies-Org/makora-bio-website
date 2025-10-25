@@ -1,0 +1,313 @@
+[
+{
+"message_id": "[CABemily1a2b3c@med.cornell.edu](mailto:CABemily1a2b3c@med.cornell.edu)",
+"references": [],
+"from": {
+"name": "Emily Clark",
+"email": "[emily.clark@med.cornell.edu](mailto:emily.clark@med.cornell.edu)",
+"title": "Clinical Research Coordinator",
+"organization": "Weill Cornell Medicine - Breast Oncology"
+},
+"to": [
+{
+"name": "Michael Reynolds",
+"email": "[michael.reynolds@gene.com](mailto:michael.reynolds@gene.com)",
+"title": "Clinical Research Associate",
+"organization": "Genentech, Inc."
+}
+],
+"cc": [
+{
+"name": "Dr. Sandra Martin",
+"email": "[sandra.martin@nycancercenter.org](mailto:sandra.martin@nycancercenter.org)",
+"title": "Principal Investigator",
+"organization": "NewYork Cancer Center"
+}
+],
+"subject": "Possible SAE - Subject BR-042-0089 (infusion reaction / ED visit)",
+"date": "2024-11-18T10:12:00-05:00",
+"body": "Hi Michael,\n\nI need to alert you to a potential SAE for Subject BR-042-0089 (Site 042). The subject received their trastuzumab infusion today (Cycle 4 Day 1) at ~09:10. Approximately 10 minutes after the end of the infusion the patient became lightheaded and had a transient syncopal episode while ambulating in the clinic hallway. Vitals in clinic at the time: BP 82/48 mmHg, HR 110 bpm, SpO2 97% on room air, temperature 36.8°C.\n\nWe transported the patient to the ED for evaluation. ED notes (attached) indicate the patient received IV fluids and one dose of diphenhydramine 50 mg IV. Cardiac enzymes were drawn (troponin I 0.01 ng/mL), ECG without acute ischemia. No admission — discharged home the same day at 14:30 after observation. There was no documented change in LVEF in the ED (baseline LVEF 62% from echo dated 2024-11-01 in chart).\n\nWe began the SAE form but it's incomplete — missing CTCAE grade, causality/relatedness assessment, and concomitant meds list. We're unsure if this meets SAE criteria per Protocol v3.2 Section 8.3 (expedited reporting) given ED visit/observation. Please advise ASAP whether you need an expedited report to PV/medical monitor and whether we should hold further trastuzumab doses pending sponsor instruction. We have attached the partially completed SAE_Report_Form.pdf and the ED discharge summary.\n\nThanks,\n\nEmily Clark, BSN, RN\nClinical Research Coordinator\nWeill Cornell Medicine - Breast Oncology\nPhone: (212) 555-0147\nEmail: [emily.clark@med.cornell.edu](mailto:emily.clark@med.cornell.edu)\n\nConfidentiality Notice: This message may contain confidential patient information intended only for the named recipient.",
+"attachments": [
+{
+"filename": "SAE_Report_Form_PARTIAL.pdf",
+"content_type": "application/pdf",
+"size_kb": 78,
+"description": "Partially completed SAE reporting form (missing CTCAE grade, causality, concomitant meds)"
+},
+{
+"filename": "ED_Discharge_Summary_BR-042-0089.pdf",
+"content_type": "application/pdf",
+"size_kb": 112,
+"description": "ED note: transient syncope after trastuzumab infusion; IV fluids, observed, discharged same day"
+}
+],
+"metadata": {
+"scenario_type": "safety_reporting",
+"urgency": "high",
+"primary_issue": "Transient syncope/hypotension after trastuzumab infusion with ED visit; incomplete SAE documentation and unclear expedited reporting requirement.",
+"required_cra_action": "Review SAE details, determine need for expedited SAE submission and escalate to Medical Monitor/Pharmacovigilance; advise site on holding trastuzumab and required assessments.",
+"action_complexity": "requires_escalation",
+"referenced_entities": {
+"subject_id": "BR-042-0089",
+"site_number": "042",
+"protocol_sections": [
+"6.4.2",
+"8.3"
+],
+"visit": "Cycle 4 Day 1",
+"study_day": "Day 85"
+}
+}
+},
+{
+"message_id": "[CABmike2b3c4d@gene.com](mailto:CABmike2b3c4d@gene.com)",
+"in_reply_to": "[CABemily1a2b3c@med.cornell.edu](mailto:CABemily1a2b3c@med.cornell.edu)",
+"references": [
+"[CABemily1a2b3c@med.cornell.edu](mailto:CABemily1a2b3c@med.cornell.edu)"
+],
+"from": {
+"name": "Michael Reynolds",
+"email": "[michael.reynolds@gene.com](mailto:michael.reynolds@gene.com)",
+"title": "CRA",
+"organization": "Genentech, Inc."
+},
+"to": [
+{
+"name": "Emily Clark",
+"email": "[emily.clark@med.cornell.edu](mailto:emily.clark@med.cornell.edu)",
+"title": "Clinical Research Coordinator",
+"organization": "Weill Cornell Medicine - Breast Oncology"
+}
+],
+"cc": [
+{
+"name": "PV Triage",
+"email": "[pv.triage@gene.com](mailto:pv.triage@gene.com)",
+"title": "Pharmacovigilance Triage",
+"organization": "Genentech, Inc."
+},
+{
+"name": "Dr. Sandra Martin",
+"email": "[sandra.martin@nycancercenter.org](mailto:sandra.martin@nycancercenter.org)",
+"title": "Principal Investigator",
+"organization": "NewYork Cancer Center"
+}
+],
+"subject": "Re: Possible SAE - Subject BR-042-0089 (infusion reaction / ED visit)",
+"date": "2024-11-18T13:05:00-05:00",
+"body": "Hi Emily —\n\nThanks for the prompt notice and for the attachments. A few quick clarifying points I need to escalate to PV/medical monitor:\n\n1) Was the ED visit documented as an admission or observation stay (i.e., did the patient have an inpatient admission code)? From your note it sounds like same-day discharge — please confirm exact disposition code. \n2) Please provide CTCAE grade for syncope/hypotension or, if not graded yet, your best clinical estimate (Grade 1-4) and whether there was any ongoing medical intervention after discharge.\n3) Please confirm the subject's concomitant medications at time of event (especially any new anti-hypertensives, benzodiazepines, or opioid analgesics). \n4) Did the site record this as an SAE in the EDC yet? If yes, provide the eCRF ID; if not, do not delay — we may need an expedited notification depending on PV guidance.\n5) Is the subject on any active cardiac meds or any recent change in meds within last 7 days?\n\nPer Protocol v3.2 Section 8.3 we need to review whether this meets criteria for expedited reporting (seriousness = required if led to hospitalization or life-threatening). Even though discharged same day, ED visit for syncope may still meet SAE criteria depending on clinical judgment. I've CC'd PV triage — I will wait for their immediate input but please answer the above items so I can expedite the assessment.\n\nAlso, please keep the subject's next trastuzumab dose on hold until we confirm with PV/medical monitor. Document hold in source and note reason as 'safety assessment after infusion reaction.'\n\nAppreciate the quick turn-around on the missing items — I will escalate as soon as I have answers.\n\nRegards,\n\nMichael Reynolds\nClinical Research Associate\nGenentech, Inc.\nPhone: +1-650-555-2210\nEmail: [michael.reynolds@gene.com](mailto:michael.reynolds@gene.com)",
+"attachments": [],
+"metadata": {
+"scenario_type": "safety_reporting",
+"urgency": "high",
+"primary_issue": "Clarification requested on SAE seriousness, grading, concomitant meds, and EDC reporting status.",
+"required_cra_action": "Obtain missing clinical details from site and escalate to PV; hold next trastuzumab dose until sponsor provides guidance.",
+"action_complexity": "requires_escalation",
+"referenced_entities": {
+"subject_id": "BR-042-0089",
+"site_number": "042",
+"protocol_sections": [
+"8.3"
+],
+"visit": "Cycle 4 Day 1"
+}
+}
+},
+{
+"message_id": "[CARecsite3c4d5e@med.cornell.edu](mailto:CARecsite3c4d5e@med.cornell.edu)",
+"in_reply_to": "[CABmike2b3c4d@gene.com](mailto:CABmike2b3c4d@gene.com)",
+"references": [
+"[CABemily1a2b3c@med.cornell.edu](mailto:CABemily1a2b3c@med.cornell.edu)",
+"[CABmike2b3c4d@gene.com](mailto:CABmike2b3c4d@gene.com)"
+],
+"from": {
+"name": "Emily Clark",
+"email": "[emily.clark@med.cornell.edu](mailto:emily.clark@med.cornell.edu)",
+"title": "Clinical Research Coordinator",
+"organization": "Weill Cornell Medicine - Breast Oncology"
+},
+"to": [
+{
+"name": "Michael Reynolds",
+"email": "[michael.reynolds@gene.com](mailto:michael.reynolds@gene.com)",
+"title": "Clinical Research Associate",
+"organization": "Genentech, Inc."
+}
+],
+"cc": [
+{
+"name": "Dr. Sandra Martin",
+"email": "[sandra.martin@nycancercenter.org](mailto:sandra.martin@nycancercenter.org)",
+"title": "Principal Investigator",
+"organization": "NewYork Cancer Center"
+},
+{
+"name": "Pharmacy - Research",
+"email": "[research.pharmacy@med.cornell.edu](mailto:research.pharmacy@med.cornell.edu)",
+"title": "Research Pharmacist",
+"organization": "Weill Cornell Medicine Pharmacy"
+}
+],
+"subject": "Re: Possible SAE - Subject BR-042-0089 (infusion reaction / ED visit)",
+"date": "2024-11-18T15:30:00-05:00",
+"body": "Hi Michael —\n\nAnswers below based on chart/ED call-back and medication reconciliation performed by pharmacy:\n\n1) Disposition: ED observation only; patient was not admitted. Discharge time 14:30 same day. (ED record attached shows 'Observation — Discharged to Home')\n2) CTCAE grading: We have not formally graded yet — our clinical note lists 'syncope with hypotension, transient.' If I must assign now, our clinic physician documents this as CTCAE Grade 3 for hypotension (medical intervention required — IV fluids). Please advise if you disagree.\n3) Concomitant meds: Current meds per MAR: lisinopril 5 mg qd (stable >6 months), acetaminophen PRN, no benzodiazepines or opioids. No new meds in last 14 days. (Pharmacy recon attached)\n4) EDC: We have NOT submitted an SAE in EDC yet — we waited for sponsor direction after your previous email. \n5) Cardiac meds/changes: No recent changes. Baseline echo 2024-11-01 LVEF 62% documented in source (attached). No troponin elevation (I=0.01). No chest pain reported.\n\nAttachments: ED_Discharge_Summary_BR-042-0089.pdf (same as earlier), Pharmacy_MedRecon_BR-042-0089.pdf\n\nPer PI on site (Dr. Martin) we have held the next trastuzumab dose in local chart and scheduled telephone follow-up for tomorrow. PI asks sponsor/PV for guidance on expedited reporting and whether an outpatient observation ED visit without admission should be considered an SAE in this context.\n\nEmily\n\nEmily Clark, BSN, RN\nClinical Research Coordinator\nWeill Cornell Medicine - Breast Oncology\nPhone: (212) 555-0147\nEmail: [emily.clark@med.cornell.edu](mailto:emily.clark@med.cornell.edu)",
+"attachments": [
+{
+"filename": "ED_Discharge_Summary_BR-042-0089.pdf",
+"content_type": "application/pdf",
+"size_kb": 112,
+"description": "ED note showing observation and same-day discharge"
+},
+{
+"filename": "Pharmacy_MedRecon_BR-042-0089.pdf",
+"content_type": "application/pdf",
+"size_kb": 45,
+"description": "Medication reconciliation showing lisinopril 5 mg qd; no recent med changes"
+}
+],
+"metadata": {
+"scenario_type": "safety_reporting",
+"urgency": "high",
+"primary_issue": "Site provides additional details: ED observation (no admission), suggests CTCAE Grade 3 hypotension; EDC not yet submitted.",
+"required_cra_action": "Assess seriousness, instruct site on EDC SAE submission if required, escalate to PV/medical monitor for causality and dosing guidance.",
+"action_complexity": "requires_escalation",
+"referenced_entities": {
+"subject_id": "BR-042-0089",
+"site_number": "042",
+"protocol_sections": [
+"8.3"
+],
+"visit": "Cycle 4 Day 1"
+}
+}
+},
+{
+"message_id": "[CABpi4d5e6f@nycancercenter.org](mailto:CABpi4d5e6f@nycancercenter.org)",
+"in_reply_to": "[CARecsite3c4d5e@med.cornell.edu](mailto:CARecsite3c4d5e@med.cornell.edu)",
+"references": [
+"[CABemily1a2b3c@med.cornell.edu](mailto:CABemily1a2b3c@med.cornell.edu)",
+"[CABmike2b3c4d@gene.com](mailto:CABmike2b3c4d@gene.com)",
+"[CARecsite3c4d5e@med.cornell.edu](mailto:CARecsite3c4d5e@med.cornell.edu)"
+],
+"from": {
+"name": "Dr. Sandra Martin",
+"email": "[sandra.martin@nycancercenter.org](mailto:sandra.martin@nycancercenter.org)",
+"title": "MD, Principal Investigator",
+"organization": "NewYork Cancer Center"
+},
+"to": [
+{
+"name": "Michael Reynolds",
+"email": "[michael.reynolds@gene.com](mailto:michael.reynolds@gene.com)",
+"title": "Clinical Research Associate",
+"organization": "Genentech, Inc."
+}
+],
+"cc": [
+{
+"name": "Emily Clark",
+"email": "[emily.clark@med.cornell.edu](mailto:emily.clark@med.cornell.edu)",
+"title": "Clinical Research Coordinator",
+"organization": "Weill Cornell Medicine - Breast Oncology"
+},
+{
+"name": "Research Pharmacy",
+"email": "[research.pharmacy@med.cornell.edu](mailto:research.pharmacy@med.cornell.edu)",
+"title": "Research Pharmacist",
+"organization": "Weill Cornell Medicine Pharmacy"
+}
+],
+"subject": "Re: Possible SAE - Subject BR-042-0089 (infusion reaction / ED visit)",
+"date": "2024-11-19T09:02:00-05:00",
+"body": "Hi Michael —\n\nI reviewed the ED summary and spoke with Emily. Clinically, this appears most consistent with an infusion-related hypotensive reaction to trastuzumab (timing immediate post-infusion and responded to IV fluids). Given the subject required medical intervention (IV fluids and ED observation) I would consider this event serious from a clinical management perspective. \n\nMy provisional plan (pending sponsor/PV guidance):\n\n• Keep trastuzumab doses on hold.\n• Repeat vitals and symptom assessment in 24 hours via phone.\n• Repeat LVEF in 2 weeks to capture any delayed cardiac effects (baseline 62% as noted). If LVEF falls ≥10% or below 50% we will notify immediately per protocol. \n\nPlease advise if you want the site to submit an expedited SAE now or wait for PV's determination. From the PI perspective, we have documented hold and haven't re-dosed.\n\nThanks,\n\nSandra Martin, MD\nPrincipal Investigator\nNewYork Cancer Center\nPhone: (646) 555-3220\nEmail: [sandra.martin@nycancercenter.org](mailto:sandra.martin@nycancercenter.org)",
+"attachments": [],
+"metadata": {
+"scenario_type": "safety_reporting",
+"urgency": "high",
+"primary_issue": "PI believes event likely infusion-related and supports holding trastuzumab pending sponsor/PV guidance; requests instruction on expedited SAE submission.",
+"required_cra_action": "Coordinate with PV/medical monitor to decide on expedited SAE reporting and provide formal instruction to site regarding hold and follow-up LVEF timing.",
+"action_complexity": "requires_escalation",
+"referenced_entities": {
+"subject_id": "BR-042-0089",
+"site_number": "042",
+"protocol_sections": [
+"6.4.2",
+"8.3"
+],
+"visit": "Cycle 4 Day 1"
+}
+}
+},
+{
+"message_id": "[CABemily5e6f7g@med.cornell.edu](mailto:CABemily5e6f7g@med.cornell.edu)",
+"in_reply_to": "[CABpi4d5e6f@nycancercenter.org](mailto:CABpi4d5e6f@nycancercenter.org)",
+"references": [
+"[CABemily1a2b3c@med.cornell.edu](mailto:CABemily1a2b3c@med.cornell.edu)",
+"[CABmike2b3c4d@gene.com](mailto:CABmike2b3c4d@gene.com)",
+"[CARecsite3c4d5e@med.cornell.edu](mailto:CARecsite3c4d5e@med.cornell.edu)",
+"[CABpi4d5e6f@nycancercenter.org](mailto:CABpi4d5e6f@nycancercenter.org)"
+],
+"from": {
+"name": "Emily Clark",
+"email": "[emily.clark@med.cornell.edu](mailto:emily.clark@med.cornell.edu)",
+"title": "Clinical Research Coordinator",
+"organization": "Weill Cornell Medicine - Breast Oncology"
+},
+"to": [
+{
+"name": "Michael Reynolds",
+"email": "[michael.reynolds@gene.com](mailto:michael.reynolds@gene.com)",
+"title": "Clinical Research Associate",
+"organization": "Genentech, Inc."
+}
+],
+"cc": [
+{
+"name": "Dr. Sandra Martin",
+"email": "[sandra.martin@nycancercenter.org](mailto:sandra.martin@nycancercenter.org)",
+"title": "Principal Investigator",
+"organization": "NewYork Cancer Center"
+},
+{
+"name": "PV Triage",
+"email": "[pv.triage@gene.com](mailto:pv.triage@gene.com)",
+"title": "Pharmacovigilance Triage",
+"organization": "Genentech, Inc."
+},
+{
+"name": "Research Pharmacy",
+"email": "[research.pharmacy@med.cornell.edu](mailto:research.pharmacy@med.cornell.edu)",
+"title": "Research Pharmacist",
+"organization": "Weill Cornell Medicine Pharmacy"
+}
+],
+"subject": "Re: Possible SAE - Subject BR-042-0089 (infusion reaction / ED visit)",
+"date": "2024-11-19T11:47:00-05:00",
+"body": "Michael —\n\nFollowing Dr. Martin's note we have formally placed the subject's next trastuzumab dose on hold in the chart and flagged the subject as 'pending sponsor instruction.' We have also started a local source note and will schedule an outpatient echo in approximately 2 weeks (requested appt 2024-12-03 pending your confirmation).\n\nCould you please confirm the following as soon as possible:\n\n1) Should we complete and submit the SAE eCRF in EDC now and mark as 'expedited' or wait for PV triage recommendation? (ED visit with observation but no admission.)\n2) Is the proposed plan to repeat LVEF in 2 weeks acceptable to sponsor, or do you require a sooner echo and/or cardiology consult? Per protocol v3.2 Section 6.4.2, any symptomatic event may warrant additional cardiac follow-up.\n3) Any specific details PV needs entered in the SAE form for causality/relatedness (site tends to prefer sponsor wording when possible).\n\nWe need your instruction to proceed — the subject and PI are awaiting guidance and we have documented hold, but we cannot proceed with re-dosing without sponsor direction. Please escalate to the medical monitor/PV if you deem appropriate and advise next steps.\n\nBest regards,\n\nEmily Clark, BSN, RN\nClinical Research Coordinator\nWeill Cornell Medicine - Breast Oncology\nPhone: (212) 555-0147\nEmail: [emily.clark@med.cornell.edu](mailto:emily.clark@med.cornell.edu)",
+"attachments": [
+{
+"filename": "SAE_Report_Form_PARTIAL.pdf",
+"content_type": "application/pdf",
+"size_kb": 78,
+"description": "Partially completed SAE form (resubmitted for sponsor review)"
+}
+],
+"metadata": {
+"scenario_type": "safety_reporting",
+"urgency": "high",
+"primary_issue": "Site has put next trastuzumab dose on hold pending sponsor/PV instruction and requests CRA confirmation on EDC SAE submission and LVEF timing.",
+"required_cra_action": "Determine and communicate whether site should submit expedited SAE in EDC now; escalate to medical monitor/pharmacovigilance for causality and dosing guidance; confirm timing of LVEF and need for cardiology consult.",
+"action_complexity": "requires_escalation",
+"referenced_entities": {
+"subject_id": "BR-042-0089",
+"site_number": "042",
+"protocol_sections": [
+"6.4.2",
+"8.3"
+],
+"visit": "Cycle 4 Day 1",
+"study_day": "Day 85"
+}
+}
+}
+]

@@ -1,0 +1,229 @@
+[
+  {
+    "message_id": "<CAE7k2mN9pQ4rS5tU6vW7xY8zA9bC0dE1f2G3h@med.ucsf.edu>",
+    "references": [],
+    "from": {
+      "name": "Jennifer Martinez",
+      "email": "jennifer.martinez@med.ucsf.edu",
+      "title": "Senior Clinical Research Coordinator",
+      "organization": "UCSF Helen Diller Family Comprehensive Cancer Center"
+    },
+    "to": [
+      {
+        "name": "David Chen",
+        "email": "david.chen@gene.com",
+        "title": "Clinical Research Associate",
+        "organization": "Genentech, Inc."
+      }
+    ],
+    "cc": [],
+    "subject": "NCT00542451 - Subject BR-027-0043 - AE Requiring Guidance",
+    "date": "2024-11-18T14:32:18-08:00",
+    "body": "Hi David,\n\nI wanted to reach out regarding Subject BR-027-0043 who is currently on Week 6 of paclitaxel treatment (concurrent trastuzumab ongoing).\n\nThe patient presented to the infusion center this morning with complaints of shortness of breath that started yesterday evening. She described it as difficulty breathing when lying flat and having to use 2-3 pillows at night. No chest pain, but she did mention some ankle swelling over the past week that she thought was just from \"being on her feet too much.\"\n\nWe held today's paclitaxel dose per protocol and sent her to cardiology for urgent evaluation. The cardiologist did an ECHO which showed LVEF of 48% (baseline was 62% at screening, Week 4 was 58%). Patient is currently stable, no acute intervention needed, but cardiology is recommending holding both study drugs pending further assessment.\n\nI've documented this as an AE in the EDC system (shortness of breath, Grade 2), but I'm uncertain about the classification here. Is this a potential SAE given the cardiac involvement and need to discontinue study treatment? Also, since this could be related to trastuzumab, I wanted to flag it for you right away.\n\nPatient is scheduled to see cardiology again on Thursday for repeat ECHO and further workup. She's been very compliant throughout the study and is understandably concerned.\n\nCan you please advise on next steps for reporting and whether we need to complete an SAE form at this time?\n\nThanks,\nJennifer\n\n---\nJennifer Martinez, RN, BSN, CCRP\nSenior Clinical Research Coordinator\nUCSF Helen Diller Family Comprehensive Cancer Center\n1825 Fourth Street, 3rd Floor\nSan Francisco, CA 94158\nPhone: (415) 555-2847\nEmail: jennifer.martinez@med.ucsf.edu",
+    "attachments": [
+      {
+        "filename": "ECHO_Report_Subject_043_Week6.pdf",
+        "content_type": "application/pdf",
+        "size_kb": 234,
+        "description": "Echocardiogram report showing LVEF 48%, mild LV systolic dysfunction, trace mitral regurgitation"
+      }
+    ],
+    "metadata": {
+      "scenario_type": "safety_reporting",
+      "urgency": "high",
+      "primary_issue": "Patient with significant LVEF decline and cardiac symptoms possibly related to trastuzumab, unclear if meets SAE criteria",
+      "required_cra_action": "Assess if event meets SAE criteria and determine if expedited reporting to pharmacovigilance is required",
+      "action_complexity": "requires_judgment",
+      "referenced_entities": {
+        "subject_id": "BR-027-0043",
+        "site_number": "027",
+        "visit": "Week 6",
+        "study_day": "Day 42"
+      }
+    }
+  },
+  {
+    "message_id": "<D4F8g3hJ9kL2mN5oP6qR7sT8uV9wX0yZ1aB2c@gene.com>",
+    "in_reply_to": "<CAE7k2mN9pQ4rS5tU6vW7xY8zA9bC0dE1f2G3h@med.ucsf.edu>",
+    "references": ["<CAE7k2mN9pQ4rS5tU6vW7xY8zA9bC0dE1f2G3h@med.ucsf.edu>"],
+    "from": {
+      "name": "David Chen",
+      "email": "david.chen@gene.com",
+      "title": "Clinical Research Associate",
+      "organization": "Genentech, Inc."
+    },
+    "to": [
+      {
+        "name": "Jennifer Martinez",
+        "email": "jennifer.martinez@med.ucsf.edu",
+        "title": "Senior Clinical Research Coordinator",
+        "organization": "UCSF Helen Diller Family Comprehensive Cancer Center"
+      }
+    ],
+    "cc": [],
+    "subject": "Re: NCT00542451 - Subject BR-027-0043 - AE Requiring Guidance",
+    "date": "2024-11-18T15:48:33-08:00",
+    "body": "Hi Jennifer,\n\nThank you for the quick heads up on this. I've reviewed the ECHO report you sent.\n\nA few questions to help me assess this:\n\n1. When exactly did the patient first notice the shortness of breath? Was it gradual onset or sudden?\n\n2. Has she had any other cardiac symptoms - palpitations, chest tightness, lightheadedness?\n\n3. The ECHO report mentions \"mild LV systolic dysfunction\" - did the cardiologist provide any clinical assessment about the significance of the LVEF drop from 62% to 48%? That's a 14% absolute decrease which is clinically meaningful.\n\n4. Is the patient currently symptomatic or did the symptoms resolve after holding the dose?\n\n5. Any recent medication changes, illness, or other factors that could explain the symptoms?\n\nI want to make sure I have all the details before determining the SAE criteria. The LVEF decline is concerning given the trastuzumab exposure, but I need to understand if this meets \"medically important\" SAE criteria per protocol Section 8.3.2.\n\nCan you also confirm if the patient required any urgent medical intervention beyond the cardiology consult? Any hospitalization, ER visit, or IV medications?\n\nThanks,\nDavid\n\n---\nDavid Chen, MPH\nClinical Research Associate\nGenentech, Inc.\n1 DNA Way, South San Francisco, CA 94080\nPhone: (650) 555-3192\nEmail: david.chen@gene.com",
+    "attachments": [],
+    "metadata": {
+      "scenario_type": "safety_reporting",
+      "urgency": "high",
+      "primary_issue": "Patient with significant LVEF decline and cardiac symptoms possibly related to trastuzumab, unclear if meets SAE criteria",
+      "required_cra_action": "Assess if event meets SAE criteria and determine if expedited reporting to pharmacovigilance is required",
+      "action_complexity": "requires_judgment",
+      "referenced_entities": {
+        "subject_id": "BR-027-0043",
+        "site_number": "027",
+        "protocol_sections": ["8.3.2"],
+        "visit": "Week 6",
+        "study_day": "Day 42"
+      }
+    }
+  },
+  {
+    "message_id": "<F5H9j4kM0nP3qR6sT7uV8wX9yZ0aB1cD2eF3g@med.ucsf.edu>",
+    "in_reply_to": "<D4F8g3hJ9kL2mN5oP6qR7sT8uV9wX0yZ1aB2c@gene.com>",
+    "references": ["<CAE7k2mN9pQ4rS5tU6vW7xY8zA9bC0dE1f2G3h@med.ucsf.edu>", "<D4F8g3hJ9kL2mN5oP6qR7sT8uV9wX0yZ1aB2c@gene.com>"],
+    "from": {
+      "name": "Jennifer Martinez",
+      "email": "jennifer.martinez@med.ucsf.edu",
+      "title": "Senior Clinical Research Coordinator",
+      "organization": "UCSF Helen Diller Family Comprehensive Cancer Center"
+    },
+    "to": [
+      {
+        "name": "David Chen",
+        "email": "david.chen@gene.com",
+        "title": "Clinical Research Associate",
+        "organization": "Genentech, Inc."
+      }
+    ],
+    "cc": [],
+    "subject": "Re: NCT00542451 - Subject BR-027-0043 - AE Requiring Guidance",
+    "date": "2024-11-18T17:22:54-08:00",
+    "body": "Hi David,\n\nHere are the additional details:\n\n1. Patient says symptoms started Sunday evening (11/17) around 8 PM when she was getting ready for bed. She noticed she couldn't lie flat comfortably. Gradual onset, not sudden.\n\n2. No palpitations, chest pain, or lightheadedness. Just the dyspnea on exertion and orthopnea. She did mention feeling \"more tired than usual\" over the past 10 days but attributed it to the chemo.\n\n3. The cardiologist (Dr. Patel) noted in his assessment: \"14% absolute decrease in LVEF is clinically significant in the setting of HER2-targeted therapy. Findings consistent with early trastuzumab-associated cardiomyopathy. Recommend holding HER2-directed therapy and aggressive management of heart failure symptoms.\" He started her on a low-dose ACE inhibitor and wants to see her back in 3-4 days.\n\n4. Patient's symptoms improved somewhat after sitting upright in the infusion center for about an hour, but she still has some shortness of breath with minimal exertion (walking across the room). She went home this afternoon but was advised to elevate her head while sleeping.\n\n5. No recent medication changes except what was already in the protocol. No concurrent illness. She did mention she's been retaining fluid - her weight was up 4 pounds from last week, and we noted 1+ pitting edema bilaterally.\n\nTo answer your last question - no ER visit or hospitalization required. She came directly to the infusion center as scheduled for her treatment, and we caught this before it progressed. No IV medications given.\n\nDr. Patel's documentation is pretty clear that this is treatment-related. I'm attaching his consult note for your review.\n\nLet me know what you need from us.\n\nJennifer\n\n---\nJennifer Martinez, RN, BSN, CCRP\nSenior Clinical Research Coordinator\nUCSF Helen Diller Family Comprehensive Cancer Center\n1825 Fourth Street, 3rd Floor\nSan Francisco, CA 94158\nPhone: (415) 555-2847\nEmail: jennifer.martinez@med.ucsf.edu",
+    "attachments": [
+      {
+        "filename": "Cardiology_Consult_Note_Dr_Patel.pdf",
+        "content_type": "application/pdf",
+        "size_kb": 187,
+        "description": "Cardiology consultation note with diagnosis of trastuzumab-associated cardiomyopathy, treatment plan with ACE inhibitor, recommendation to hold HER2-targeted therapy"
+      }
+    ],
+    "metadata": {
+      "scenario_type": "safety_reporting",
+      "urgency": "high",
+      "primary_issue": "Patient with significant LVEF decline and cardiac symptoms possibly related to trastuzumab, unclear if meets SAE criteria",
+      "required_cra_action": "Assess if event meets SAE criteria and determine if expedited reporting to pharmacovigilance is required",
+      "action_complexity": "requires_judgment",
+      "referenced_entities": {
+        "subject_id": "BR-027-0043",
+        "site_number": "027",
+        "visit": "Week 6",
+        "study_day": "Day 42"
+      }
+    }
+  },
+  {
+    "message_id": "<G6J0k5lN1oQ4rS7tU8vW9xY0zA1bC2dE3fG4h@med.ucsf.edu>",
+    "in_reply_to": "<F5H9j4kM0nP3qR6sT7uV8wX9yZ0aB1cD2eF3g@med.ucsf.edu>",
+    "references": ["<CAE7k2mN9pQ4rS5tU6vW7xY8zA9bC0dE1f2G3h@med.ucsf.edu>", "<D4F8g3hJ9kL2mN5oP6qR7sT8uV9wX0yZ1aB2c@gene.com>", "<F5H9j4kM0nP3qR6sT7uV8wX9yZ0aB1cD2eF3g@med.ucsf.edu>"],
+    "from": {
+      "name": "Dr. Rebecca Thompson",
+      "email": "rebecca.thompson@med.ucsf.edu",
+      "title": "Principal Investigator, Associate Professor of Medicine",
+      "organization": "UCSF Helen Diller Family Comprehensive Cancer Center"
+    },
+    "to": [
+      {
+        "name": "David Chen",
+        "email": "david.chen@gene.com",
+        "title": "Clinical Research Associate",
+        "organization": "Genentech, Inc."
+      }
+    ],
+    "cc": [
+      {
+        "name": "Jennifer Martinez",
+        "email": "jennifer.martinez@med.ucsf.edu",
+        "title": "Senior Clinical Research Coordinator",
+        "organization": "UCSF Helen Diller Family Comprehensive Cancer Center"
+      }
+    ],
+    "subject": "Re: NCT00542451 - Subject BR-027-0043 - AE Requiring Guidance",
+    "date": "2024-11-19T09:15:42-08:00",
+    "body": "David,\n\nJennifer asked me to weigh in on this case as the treating physician.\n\nFrom a clinical standpoint, this patient has developed symptomatic heart failure with a significant decline in cardiac function directly attributable to trastuzumab. While we managed this as an outpatient and she did not require hospitalization, I would consider this a serious adverse event based on the \"medically important event\" criterion. \n\nThe key factors are:\n- Absolute LVEF decrease of 14% (62% → 48%) crossing into mild systolic dysfunction range\n- Symptomatic heart failure (NYHA Class II) requiring initiation of cardiac medications\n- Permanent discontinuation of study drug per cardiology recommendation\n- Ongoing medical intervention and close monitoring required\n\nEven though she wasn't hospitalized, this represents a significant cardiac toxicity that altered her treatment course and requires ongoing management. From a patient safety perspective, this should be reported as an SAE to capture the full safety profile of trastuzumab in this population.\n\nI've reviewed the cardiology assessment, and Dr. Patel is firm that we should not resume trastuzumab. The patient has completed 6 weeks of paclitaxel, so we're halfway through that component, but continuing trastuzumab carries too much risk given her cardiac response. We'll need guidance from the medical monitor on how to proceed - should we continue paclitaxel alone, or discontinue all study treatment?\n\nThe patient is understandably upset about potentially stopping treatment when she's tolerating everything else well, but she understands the cardiac risks.\n\nPlease advise on the SAE reporting timeline and next steps for treatment decisions. We have her scheduled for cardiology follow-up this Thursday (11/21) and would like to have a plan in place before then.\n\nBest regards,\nRebecca\n\n---\nRebecca Thompson, MD, PhD\nAssociate Professor of Medicine\nPrincipal Investigator, NCT00542451\nUCSF Helen Diller Family Comprehensive Cancer Center\nDivision of Hematology/Oncology\n1825 Fourth Street, 3rd Floor\nSan Francisco, CA 94158\nPhone: (415) 555-2901\nEmail: rebecca.thompson@med.ucsf.edu\n\nCONFIDENTIAL NOTICE: This email and any attachments may contain confidential information protected by HIPAA and other privacy regulations. If you are not the intended recipient, please delete this message and notify the sender.",
+    "attachments": [],
+    "metadata": {
+      "scenario_type": "safety_reporting",
+      "urgency": "high",
+      "primary_issue": "Patient with significant LVEF decline and cardiac symptoms possibly related to trastuzumab, unclear if meets SAE criteria",
+      "required_cra_action": "Assess if event meets SAE criteria and determine if expedited reporting to pharmacovigilance is required",
+      "action_complexity": "requires_escalation",
+      "referenced_entities": {
+        "subject_id": "BR-027-0043",
+        "site_number": "027",
+        "visit": "Week 6",
+        "study_day": "Day 42"
+      }
+    }
+  },
+  {
+    "message_id": "<H7K1l6mO2pR5sT8uV9wX0yZ1aB2cD3eF4gG5i@med.ucsf.edu>",
+    "in_reply_to": "<G6J0k5lN1oQ4rS7tU8vW9xY0zA1bC2dE3fG4h@med.ucsf.edu>",
+    "references": ["<CAE7k2mN9pQ4rS5tU6vW7xY8zA9bC0dE1f2G3h@med.ucsf.edu>", "<D4F8g3hJ9kL2mN5oP6qR7sT8uV9wX0yZ1aB2c@gene.com>", "<F5H9j4kM0nP3qR6sT7uV8wX9yZ0aB1cD2eF3g@med.ucsf.edu>", "<G6J0k5lN1oQ4rS7tU8vW9xY0zA1bC2dE3fG4h@med.ucsf.edu>"],
+    "from": {
+      "name": "Jennifer Martinez",
+      "email": "jennifer.martinez@med.ucsf.edu",
+      "title": "Senior Clinical Research Coordinator",
+      "organization": "UCSF Helen Diller Family Comprehensive Cancer Center"
+    },
+    "to": [
+      {
+        "name": "David Chen",
+        "email": "david.chen@gene.com",
+        "title": "Clinical Research Associate",
+        "organization": "Genentech, Inc."
+      }
+    ],
+    "cc": [
+      {
+        "name": "Dr. Rebecca Thompson",
+        "email": "rebecca.thompson@med.ucsf.edu",
+        "title": "Principal Investigator, Associate Professor of Medicine",
+        "organization": "UCSF Helen Diller Family Comprehensive Cancer Center"
+      }
+    ],
+    "subject": "Re: NCT00542451 - Subject BR-027-0043 - AE Requiring Guidance",
+    "date": "2024-11-19T13:47:29-08:00",
+    "body": "David,\n\nJust wanted to add one more piece of information that came up this morning. I was reviewing the source documents more carefully and noticed that the patient actually mentioned feeling \"a bit more winded\" during her Week 4 visit when we did the routine LVEF assessment. At that time, the ECHO showed 58% (down from 62% baseline), and we documented it as \"within acceptable limits per protocol\" since it was above the 50% threshold.\n\nLooking back, the patient's comment about being winded was documented in her symptom diary but we didn't escalate it at the time because she said it was mild and she thought it was just deconditioning from being less active during treatment. The Week 4 ECHO was interpreted as \"normal\" by the reading cardiologist, so we continued treatment per protocol.\n\nI'm wondering if we should have caught this earlier, or if the Week 4 findings should have triggered additional monitoring. The protocol (Section 6.4.3) says LVEF decline to <50% or >10% absolute decrease from baseline requires holding trastuzumab, but at Week 4 she was at 58%, so technically within parameters.\n\nNow at Week 6 she's dropped to 48%, which is below threshold, plus she's symptomatic. The trajectory seems concerning in retrospect - 62% → 58% → 48% over just 6 weeks.\n\nI've started drafting the SAE form based on Dr. Thompson's assessment that this meets the medically important criterion, but wanted to flag this additional detail in case it affects the causality assessment or if there are any quality/safety concerns about our monitoring at Week 4.\n\nShould I complete the full SAE report and submit it through the portal, or do you need to review and confirm SAE criteria first? Also, do we need to document the Week 4 visit as a potential missed signal, or was our assessment appropriate at that time given the protocol thresholds?\n\nWe really need guidance on treatment continuation before Thursday's cardiology follow-up. The patient has been calling asking what the plan is, and Dr. Thompson wants to have a clear answer for her.\n\nThanks for your help with this,\nJennifer\n\n---\nJennifer Martinez, RN, BSN, CCRP\nSenior Clinical Research Coordinator\nUCSF Helen Diller Family Comprehensive Cancer Center\n1825 Fourth Street, 3rd Floor\nSan Francisco, CA 94158\nPhone: (415) 555-2847\nEmail: jennifer.martinez@med.ucsf.edu",
+    "attachments": [
+      {
+        "filename": "Subject_043_Symptom_Diary_Weeks_1-6.pdf",
+        "content_type": "application/pdf",
+        "size_kb": 412,
+        "description": "Patient symptom diary entries showing Week 4 notation of increased dyspnea with exertion, rated as mild by patient"
+      },
+      {
+        "filename": "ECHO_Report_Subject_043_Week4.pdf",
+        "content_type": "application/pdf",
+        "size_kb": 198,
+        "description": "Week 4 echocardiogram report showing LVEF 58%, interpreted as within normal limits"
+      }
+    ],
+    "metadata": {
+      "scenario_type": "safety_reporting",
+      "urgency": "high",
+      "primary_issue": "Trastuzumab-associated cardiomyopathy with progressive LVEF decline now meeting SAE criteria; retrospective concern about Week 4 monitoring and need for immediate decision on treatment continuation",
+      "required_cra_action": "Confirm SAE criteria, initiate expedited reporting to pharmacovigilance, escalate to medical monitor for treatment discontinuation decision, and assess if Week 4 monitoring was appropriate or represents a protocol adherence issue",
+      "action_complexity": "requires_escalation",
+      "referenced_entities": {
+        "subject_id": "BR-027-0043",
+        "site_number": "027",
+        "protocol_sections": ["6.4.3", "8.3.2"],
+        "visit": "Week 6",
+        "study_day": "Day 42"
+      }
+    }
+  }
+]
