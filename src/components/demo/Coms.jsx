@@ -1,6 +1,31 @@
 import React, { useState, useMemo } from "react";
 import ComDetailPanel from "./ComDetailPanel.jsx";
 import comsData from "@/data/coms.json";
+import {
+  Star,
+  FileEdit,
+  Trash2,
+  Search,
+  ChevronLeft,
+  ChevronRight,
+  ChevronDown,
+  ChevronUp,
+  Link2,
+  X,
+  Check,
+  Mail,
+  CheckSquare,
+  Info,
+  Send,
+  Reply,
+  Forward,
+  Lightbulb,
+  MessageSquare,
+  Loader2,
+  Sparkles,
+  Plus,
+  ListTodo,
+} from "lucide-react";
 
 function Coms() {
   const [selectedProblemId, setSelectedProblemId] = useState(null);
@@ -595,19 +620,7 @@ function Coms() {
                 className="flex-shrink-0 p-1.5 text-gray-600 hover:text-gray-900 hover:bg-white rounded-lg transition-colors"
                 title="Back to inbox"
               >
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M15 19l-7-7 7-7"
-                  />
-                </svg>
+                <ChevronLeft className="w-5 h-5" />
               </button>
 
               <h2 className="text-xl font-bold text-gray-900">
@@ -635,19 +648,7 @@ function Coms() {
                           {participant}
                         </span>
                         {idx < selectedThread.participants.length - 1 && (
-                          <svg
-                            className="w-3 h-3 text-gray-400"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M9 5l7 7-7 7"
-                            />
-                          </svg>
+                          <ChevronRight className="w-3 h-3 text-gray-400" />
                         )}
                       </React.Fragment>
                     ))}
@@ -661,35 +662,11 @@ function Coms() {
                       }
                       className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-blue-100 text-blue-700 hover:bg-blue-200 rounded text-xs font-medium transition-colors"
                     >
-                      <svg
-                        className="w-3 h-3"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
-                        />
-                      </svg>
+                      <Link2 className="w-3 h-3" />
                       <span>Assigned to: {selectedThread.problemSubject}</span>
-                      <svg
-                        className={`w-3 h-3 transition-transform ${
+                      <ChevronDown className={`w-3 h-3 transition-transform ${
                           showAssignmentDropdown ? "rotate-180" : ""
-                        }`}
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M19 9l-7 7-7-7"
-                        />
-                      </svg>
+                        }`} />
                     </button>
 
                     {/* Assignment Dropdown */}
@@ -710,19 +687,7 @@ function Coms() {
                               onClick={() => handleReassignThread(null)}
                               className="w-full flex items-center gap-2 px-3 py-2 text-sm text-gray-700 hover:bg-red-50 rounded transition-colors"
                             >
-                              <svg
-                                className="w-4 h-4 text-red-500"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2}
-                                  d="M6 18L18 6M6 6l12 12"
-                                />
-                              </svg>
+                              <X className="w-4 h-4 text-red-500" />
                               <span className="text-red-600 font-medium">
                                 Unassign from Task
                               </span>
@@ -753,17 +718,7 @@ function Coms() {
                                           {problem.subject}
                                         </span>
                                         {isCurrent && (
-                                          <svg
-                                            className="w-4 h-4 text-primary-600 flex-shrink-0"
-                                            fill="currentColor"
-                                            viewBox="0 0 20 20"
-                                          >
-                                            <path
-                                              fillRule="evenodd"
-                                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                              clipRule="evenodd"
-                                            />
-                                          </svg>
+                                          <Check className="w-4 h-4 text-primary-600 flex-shrink-0" />
                                         )}
                                       </div>
                                       <div className="flex items-center gap-2">
@@ -813,19 +768,7 @@ function Coms() {
                   {selectedThread.messages.length === 0 ? (
                     <div className="flex items-center justify-center h-64 text-gray-500">
                       <div className="text-center">
-                        <svg
-                          className="w-16 h-16 mx-auto mb-3 text-gray-300"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
-                          />
-                        </svg>
+                        <MessageSquare className="w-16 h-16 mx-auto mb-3 text-gray-300" />
                         <p className="text-base font-medium">
                           No messages in this thread yet
                         </p>
@@ -869,19 +812,7 @@ function Coms() {
                                           <span className="text-base font-semibold text-gray-900">
                                             {message.from}
                                           </span>
-                                          <svg
-                                            className="w-4 h-4 text-gray-400"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            viewBox="0 0 24 24"
-                                          >
-                                            <path
-                                              strokeLinecap="round"
-                                              strokeLinejoin="round"
-                                              strokeWidth={2}
-                                              d="M9 5l7 7-7 7"
-                                            />
-                                          </svg>
+                                          <ChevronRight className="w-4 h-4 text-gray-400" />
                                           <span className="text-sm font-medium text-gray-600">
                                             {message.to}
                                           </span>
@@ -916,19 +847,7 @@ function Coms() {
                                     {/* Reply To */}
                                     {message.replyTo && (
                                       <div className="flex items-center gap-2 mb-1 ml-10">
-                                        <svg
-                                          className="w-3.5 h-3.5 text-blue-500"
-                                          fill="none"
-                                          stroke="currentColor"
-                                          viewBox="0 0 24 24"
-                                        >
-                                          <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth={2}
-                                            d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"
-                                          />
-                                        </svg>
+                                        <Reply className="w-3.5 h-3.5 text-blue-500" />
                                         <span className="text-xs text-blue-600">
                                           Reply to: {message.replyTo}
                                         </span>
@@ -947,19 +866,7 @@ function Coms() {
                                       className="p-1 hover:bg-gray-200 rounded transition-colors"
                                       title="Collapse message"
                                     >
-                                      <svg
-                                        className="w-5 h-5 text-gray-600"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
-                                      >
-                                        <path
-                                          strokeLinecap="round"
-                                          strokeLinejoin="round"
-                                          strokeWidth={2}
-                                          d="M5 15l7-7 7 7"
-                                        />
-                                      </svg>
+                                      <ChevronUp className="w-5 h-5 text-gray-600" />
                                     </button>
                                   </div>
                                 </div>
@@ -980,19 +887,7 @@ function Coms() {
                                       }}
                                       className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-gray-700 hover:bg-gray-200 rounded-lg transition-colors font-medium"
                                     >
-                                      <svg
-                                        className="w-4 h-4"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
-                                      >
-                                        <path
-                                          strokeLinecap="round"
-                                          strokeLinejoin="round"
-                                          strokeWidth={2}
-                                          d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"
-                                        />
-                                      </svg>
+                                      <Reply className="w-4 h-4" />
                                       Reply
                                     </button>
 
@@ -1010,19 +905,7 @@ function Coms() {
                                         }}
                                         className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-gray-700 hover:bg-gray-200 rounded-lg transition-colors font-medium"
                                       >
-                                        <svg
-                                          className="w-4 h-4"
-                                          fill="none"
-                                          stroke="currentColor"
-                                          viewBox="0 0 24 24"
-                                        >
-                                          <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth={2}
-                                            d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"
-                                          />
-                                        </svg>
+                                        <Reply className="w-4 h-4" />
                                         Reply All
                                       </button>
                                     )}
@@ -1037,19 +920,7 @@ function Coms() {
                                       }}
                                       className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-gray-700 hover:bg-gray-200 rounded-lg transition-colors font-medium"
                                     >
-                                      <svg
-                                        className="w-4 h-4"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
-                                      >
-                                        <path
-                                          strokeLinecap="round"
-                                          strokeLinejoin="round"
-                                          strokeWidth={2}
-                                          d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                                        />
-                                      </svg>
+                                      <Forward className="w-4 h-4" />
                                       Forward
                                     </button>
                                   </div>
@@ -1075,19 +946,7 @@ function Coms() {
                                     {message.content.length > 100 && "..."}
                                   </p>
                                 </div>
-                                <svg
-                                  className="w-5 h-5 text-gray-400 flex-shrink-0"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M19 9l-7 7-7-7"
-                                  />
-                                </svg>
+                                <ChevronDown className="w-5 h-5 text-gray-400 flex-shrink-0" />
                               </div>
                             )}
                           </div>
@@ -1101,19 +960,7 @@ function Coms() {
                     draftMessage.threadKey === selectedThreadKey && (
                       <div className="mt-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-5 border-2 border-purple-300">
                         <div className="flex items-center gap-2 mb-3">
-                          <svg
-                            className="w-5 h-5 text-purple-600"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                            />
-                          </svg>
+                          <Lightbulb className="w-5 h-5 text-purple-600" />
                           <span className="text-base font-semibold text-purple-700"></span>
                         </div>
                         <textarea
@@ -1182,19 +1029,7 @@ function Coms() {
                             onClick={handleSendDraft}
                             className="px-4 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors font-medium text-sm flex items-center gap-2"
                           >
-                            <svg
-                              className="w-4 h-4"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
-                              />
-                            </svg>
+                            <Send className="w-4 h-4" />
                             Send
                           </button>
                         </div>
@@ -1215,19 +1050,7 @@ function Coms() {
                 <div className="p-6 pt-4">
                   {threadTodos.length === 0 ? (
                     <div className="text-center py-8 text-gray-500">
-                      <svg
-                        className="w-12 h-12 mx-auto mb-2 text-gray-300"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
-                        />
-                      </svg>
+                      <CheckSquare className="w-12 h-12 mx-auto mb-2 text-gray-300" />
                       <p className="text-sm">No TODOs for this thread</p>
                     </div>
                   ) : (
@@ -1248,19 +1071,7 @@ function Coms() {
                             >
                               {todo.status === "completed" ? (
                                 <div className="w-5 h-5 rounded-full bg-green-500 flex items-center justify-center hover:bg-green-600 transition-colors">
-                                  <svg
-                                    className="w-3 h-3 text-white"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    viewBox="0 0 24 24"
-                                  >
-                                    <path
-                                      strokeLinecap="round"
-                                      strokeLinejoin="round"
-                                      strokeWidth={3}
-                                      d="M5 13l4 4L19 7"
-                                    />
-                                  </svg>
+                                  <Check className="w-3 h-3 text-white" strokeWidth={3} />
                                 </div>
                               ) : (
                                 <div className="w-5 h-5 rounded-full border-2 border-gray-300 bg-white hover:border-primary-500 hover:bg-primary-50 transition-colors"></div>
@@ -1284,19 +1095,7 @@ function Coms() {
                                     }
                                     className="w-full flex items-center justify-center gap-1 px-3 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all text-xs font-medium shadow-sm hover:shadow-md"
                                   >
-                                    <svg
-                                      className="w-4 h-4"
-                                      fill="none"
-                                      stroke="currentColor"
-                                      viewBox="0 0 24 24"
-                                    >
-                                      <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth={2}
-                                        d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                                      />
-                                    </svg>
+                                    <Lightbulb className="w-4 h-4" />
                                   </button>
                                 )}
                             </div>
@@ -1320,6 +1119,7 @@ function Coms() {
               <div className="p-4 bg-white border-b border-gray-200">
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-2">
+                    <Mail className="w-6 h-6 text-gray-700" />
                     <h2 className="text-2xl font-bold text-gray-900">
                       Email
                     </h2>
@@ -1339,33 +1139,24 @@ function Coms() {
                 {/* Email Function Buttons */}
                 <div className="flex items-center gap-2 flex-wrap">
                   <button className="px-3 py-1.5 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-lg transition-colors flex items-center gap-1.5">
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                    </svg>
+                    <Star className="w-4 h-4" />
                     Starred
                   </button>
                   <button className="px-3 py-1.5 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-lg transition-colors flex items-center gap-1.5">
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-                    </svg>
+                    <FileEdit className="w-4 h-4" />
                     Drafts
                   </button>
                   <button className="px-3 py-1.5 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-lg transition-colors flex items-center gap-1.5">
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                    </svg>
+                    <Trash2 className="w-4 h-4" />
                     Trash
                   </button>
                   <button className="px-3 py-1.5 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-lg transition-colors flex items-center gap-1.5">
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
+                    <Search className="w-4 h-4" />
                     Search
                   </button>
                   <span className="ml-auto text-xs text-gray-500">
                     {filteredThreads.length} thread
                     {filteredThreads.length !== 1 ? "s" : ""}
-                    {selectedProblemId && " for selected problem"}
                   </span>
                 </div>
               </div>
@@ -1376,19 +1167,7 @@ function Coms() {
                 {filteredThreads.length === 0 ? (
                   <div className="flex items-center justify-center h-64 text-gray-500">
                     <div className="text-center">
-                      <svg
-                        className="w-12 h-12 mx-auto mb-2 text-gray-300"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                        />
-                      </svg>
+                      <Mail className="w-12 h-12 mx-auto mb-2 text-gray-300" />
                       <p className="text-sm">
                         {threadSearchTerm
                           ? "No threads match your search"
@@ -1485,39 +1264,15 @@ function Coms() {
                               }}
                               className="flex items-center gap-1.5 px-2 py-1 bg-gray-100 hover:bg-gray-200 rounded text-xs transition-colors"
                             >
-                              <svg
-                                className="w-3 h-3 text-gray-500 flex-shrink-0"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2}
-                                  d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"
-                                />
-                              </svg>
+                              <Link2 className="w-3 h-3 text-gray-500 flex-shrink-0" />
                               <span className="text-gray-700 truncate max-w-[150px]">
                                 {thread.problemSubject}
                               </span>
-                              <svg
-                                className={`w-3 h-3 text-gray-500 flex-shrink-0 transition-transform ${
+                              <ChevronDown className={`w-3 h-3 text-gray-500 flex-shrink-0 transition-transform ${
                                   activeThreadDropdown === thread.threadKey
                                     ? "rotate-180"
                                     : ""
-                                }`}
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2}
-                                  d="M19 9l-7 7-7-7"
-                                />
-                              </svg>
+                                }`} />
                             </button>
 
                             {/* AI Assist Button - Only show for unassigned threads */}
@@ -1536,21 +1291,9 @@ function Coms() {
                                 }
                               >
                                 {aiAssistLoading === thread.id ? (
-                                  <div className="animate-spin rounded-full h-3 w-3 border-b-2 border-white"></div>
+                                  <Loader2 className="h-3 w-3 animate-spin" />
                                 ) : (
-                                  <svg
-                                    className="w-3 h-3"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    viewBox="0 0 24 24"
-                                  >
-                                    <path
-                                      strokeLinecap="round"
-                                      strokeLinejoin="round"
-                                      strokeWidth={2}
-                                      d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                                    />
-                                  </svg>
+                                  <Sparkles className="w-3 h-3" />
                                 )}
                               </button>
                             )}
@@ -1586,19 +1329,7 @@ function Coms() {
                                     }}
                                     className="w-full flex items-center gap-2 px-3 py-2 text-sm text-gray-700 hover:bg-red-50 rounded transition-colors"
                                   >
-                                    <svg
-                                      className="w-4 h-4 text-red-500"
-                                      fill="none"
-                                      stroke="currentColor"
-                                      viewBox="0 0 24 24"
-                                    >
-                                      <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth={2}
-                                        d="M6 18L18 6M6 6l12 12"
-                                      />
-                                    </svg>
+                                    <X className="w-4 h-4 text-red-500" />
                                     <span className="text-red-600 font-medium">
                                       Unassign from Task
                                     </span>
@@ -1634,17 +1365,7 @@ function Coms() {
                                                 {problem.subject}
                                               </span>
                                               {isCurrent && (
-                                                <svg
-                                                  className="w-4 h-4 text-primary-600 flex-shrink-0"
-                                                  fill="currentColor"
-                                                  viewBox="0 0 20 20"
-                                                >
-                                                  <path
-                                                    fillRule="evenodd"
-                                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                    clipRule="evenodd"
-                                                  />
-                                                </svg>
+                                                <Check className="w-4 h-4 text-primary-600 flex-shrink-0" />
                                               )}
                                             </div>
                                             <div className="flex items-center gap-2">
@@ -1696,7 +1417,7 @@ function Coms() {
                 {isLoadingThreads && (
                   <div className="flex items-center justify-center py-4">
                     <div className="flex items-center gap-2 text-gray-500">
-                      <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-primary-500"></div>
+                      <Loader2 className="h-4 w-4 animate-spin text-primary-500" />
                       <span className="text-sm">Loading more threads...</span>
                     </div>
                   </div>
@@ -1716,7 +1437,10 @@ function Coms() {
             <div className="flex flex-col overflow-hidden">
               <div className="p-4 bg-white border-b border-gray-200">
                 <div className="flex items-center justify-between mb-3">
-                  <h2 className="text-2xl font-bold text-gray-900">Tasks</h2>
+                  <div className="flex items-center gap-2">
+                    <ListTodo className="w-6 h-6 text-gray-700" />
+                    <h2 className="text-2xl font-bold text-gray-900">Tasks</h2>
+                  </div>
                 </div>
                 
                 {/* Task Function Buttons */}
@@ -1744,9 +1468,7 @@ function Coms() {
                     ))}
                   </select>
                   <button className="px-3 py-1.5 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-lg transition-colors flex items-center gap-1.5">
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
+                    <Search className="w-4 h-4" />
                     Search
                   </button>
                   <span className="ml-auto text-xs text-gray-500">
@@ -1762,19 +1484,7 @@ function Coms() {
                 {filteredProblems.length === 0 ? (
                   <div className="flex items-center justify-center h-64 text-gray-500">
                     <div className="text-center">
-                      <svg
-                        className="w-12 h-12 mx-auto mb-2 text-gray-300"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
-                        />
-                      </svg>
+                      <CheckSquare className="w-12 h-12 mx-auto mb-2 text-gray-300" />
                       <p className="text-sm">
                         {problemSearchTerm
                           ? "No tasks match your search"
@@ -1836,38 +1546,14 @@ function Coms() {
                             </p>
                             <div className="flex items-center gap-3 mt-2 text-xs text-gray-500">
                               <div className="flex items-center gap-1">
-                                <svg
-                                  className="w-3.5 h-3.5"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                                  />
-                                </svg>
+                                <Mail className="w-3.5 h-3.5" />
                                 <span>
                                   {threadCount} thread
                                   {threadCount !== 1 ? "s" : ""}
                                 </span>
                               </div>
                               <div className="flex items-center gap-1">
-                                <svg
-                                  className="w-3.5 h-3.5"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
-                                  />
-                                </svg>
+                                <CheckSquare className="w-3.5 h-3.5" />
                                 <span>
                                   {
                                     com.todos.filter(
@@ -1895,19 +1581,7 @@ function Coms() {
                             className="flex-shrink-0 p-2 text-primary-600 hover:bg-primary-100 rounded-lg transition-colors"
                             title="More info"
                           >
-                            <svg
-                              className="w-5 h-5"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                              />
-                            </svg>
+                            <Info className="w-5 h-5" />
                           </button>
                         </div>
                       </div>
@@ -1919,7 +1593,7 @@ function Coms() {
                 {isLoadingProblems && (
                   <div className="flex items-center justify-center py-4">
                     <div className="flex items-center gap-2 text-gray-500">
-                      <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-primary-500"></div>
+                      <Loader2 className="h-4 w-4 animate-spin text-primary-500" />
                       <span className="text-sm">Loading more tasks...</span>
                     </div>
                   </div>
@@ -2047,19 +1721,7 @@ function Coms() {
                     Recommended New Task
                   </h4>
                   <div className="flex items-center gap-2 mb-2">
-                    <svg
-                      className="w-4 h-4 text-green-600"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-                      />
-                    </svg>
+                    <Plus className="w-4 h-4 text-green-600" />
                     <span className="font-semibold text-green-900">
                       {aiRecommendation.newTask.subject}
                     </span>
