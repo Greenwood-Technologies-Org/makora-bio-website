@@ -64,7 +64,7 @@ function ComDetailPanel({ com, onBack }) {
 
       return {
         suggestedTodos: suggestions,
-        reasoning: `Generated ${suggestions.length} TODO suggestions based on task analysis and thread content.`,
+        reasoning: `Generated ${suggestions.length} Subtask suggestions based on task analysis and thread content.`,
       };
     },
 
@@ -423,12 +423,12 @@ function ComDetailPanel({ com, onBack }) {
         setShowAiTodoModal(true);
       } else {
         alert(
-          "No new TODO suggestions found based on current task and threads."
+          "No new Subtask suggestions found based on current task and threads."
         );
       }
     } catch (error) {
-      console.error("AI TODO generation error:", error);
-      alert("Failed to generate TODO suggestions. Please try again.");
+      console.error("AI Subtask generation error:", error);
+      alert("Failed to generate Subtask suggestions. Please try again.");
     } finally {
       setAiTodoLoading(false);
     }
@@ -1356,16 +1356,16 @@ function ComDetailPanel({ com, onBack }) {
                   d="M12 4v16m8-8H4"
                 />
               </svg>
-              Add TODO
+              Add Subtask
             </button>
 
-            {/* AI TODO Generation Button */}
+            {/* AI Subtask Generation Button */}
             <button
               onClick={handleAiTodoGeneration}
               disabled={aiTodoLoading}
               className="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 disabled:from-gray-400 disabled:to-gray-500 text-white transition-all duration-200 shadow-sm hover:shadow-md disabled:cursor-not-allowed flex items-center justify-center flex-shrink-0"
               title={
-                aiTodoLoading ? "Generating TODOs..." : "AI Generate TODOs"
+                aiTodoLoading ? "Generating Subtasks..." : "AI Generate Subtasks"
               }
             >
               {aiTodoLoading ? (
@@ -1417,12 +1417,12 @@ function ComDetailPanel({ com, onBack }) {
                 d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
               />
             </svg>
-            Delete TODO
+            Delete Subtask
           </button>
         </div>
       )}
 
-      {/* Add TODO Modal */}
+      {/* Add Subtask Modal */}
       {showAddTodoModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full">
@@ -1555,14 +1555,14 @@ function ComDetailPanel({ com, onBack }) {
                     d="M12 4v16m8-8H4"
                   />
                 </svg>
-                Add TODO
+                Add Subtask
               </button>
             </div>
           </div>
         </div>
       )}
 
-      {/* AI TODO Recommendations Modal */}
+      {/* AI Subtask Recommendations Modal */}
       {showAiTodoModal && aiTodoRecommendations && (
         <AiTodoModal
           recommendations={aiTodoRecommendations}
@@ -1574,7 +1574,7 @@ function ComDetailPanel({ com, onBack }) {
   );
 }
 
-// AI TODO Modal Component
+// AI Subtask Modal Component
 function AiTodoModal({ recommendations, onAccept, onReject }) {
   const [selectedTodos, setSelectedTodos] = useState(
     recommendations.suggestedTodos.map((todo) => ({ ...todo, selected: true }))
@@ -1709,7 +1709,7 @@ function AiTodoModal({ recommendations, onAccept, onReject }) {
       >
         <div className="p-6 border-b border-gray-200">
           <h3 className="text-lg font-bold text-gray-900 mb-2">
-            AI TODO Recommendations
+            AI Subtask Recommendations
           </h3>
           <p className="text-sm text-gray-600">{recommendations.reasoning}</p>
         </div>
@@ -1885,7 +1885,7 @@ function AiTodoModal({ recommendations, onAccept, onReject }) {
         <div className="p-6 border-t border-gray-200 bg-gray-50">
           <div className="flex items-center justify-between mb-4">
             <p className="text-sm text-gray-600">
-              {selectedCount} of {selectedTodos.length} TODOs selected
+              {selectedCount} of {selectedTodos.length} Subtasks selected
             </p>
           </div>
           <div className="flex gap-3">
@@ -1900,7 +1900,7 @@ function AiTodoModal({ recommendations, onAccept, onReject }) {
               disabled={selectedCount === 0}
               className="flex-1 px-4 py-2 bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 disabled:from-gray-400 disabled:to-gray-500 text-white rounded-lg transition-all duration-200 font-medium shadow-sm hover:shadow-md disabled:cursor-not-allowed"
             >
-              Add {selectedCount} TODO{selectedCount !== 1 ? "s" : ""}
+              Add {selectedCount} Subtask{selectedCount !== 1 ? "s" : ""}
             </button>
           </div>
         </div>
