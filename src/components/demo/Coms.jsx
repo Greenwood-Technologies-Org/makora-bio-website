@@ -175,7 +175,12 @@ function Coms() {
   };
 
   const handleProblemClick = (problemId) => {
-    setSelectedProblemId(selectedProblemId === problemId ? null : problemId);
+    // If clicking the same problem, turn off filtering to show everything
+    if (selectedProblemId === problemId) {
+      setSelectedProblemId(null);
+    } else {
+      setSelectedProblemId(problemId);
+    }
     setSelectedThreadKey(null); // Clear thread selection when problem is clicked
   };
 
@@ -183,8 +188,13 @@ function Coms() {
     // Find the thread and its associated problem
     const thread = allThreads.find((t) => t.threadKey === threadKey);
     if (thread && thread.problemId) {
-      // Filter to show only this task/problem
-      setSelectedProblemId(thread.problemId);
+      // If already filtered on this task, turn off filtering to show everything
+      if (selectedProblemId === thread.problemId) {
+        setSelectedProblemId(null);
+      } else {
+        // Filter to show only this task/problem
+        setSelectedProblemId(thread.problemId);
+      }
       setSelectedThreadKey(null); // Clear thread selection
     }
     
@@ -1547,7 +1557,7 @@ function Coms() {
                             : "hover:bg-gray-50"
                         }`}
                       >
-                        <div className="flex items-start justify-between gap-3">
+                        <div className="flex items-start justify-between gap-3 mb-2">
                           <div
                             className="flex-1 cursor-pointer"
                             onClick={() => handleProblemClick(com.id)}
@@ -1555,74 +1565,80 @@ function Coms() {
                             <h3 className="text-sm font-semibold text-gray-900 mb-2">
                               {com.subject}
                             </h3>
-                            <div className="flex items-center gap-2 mb-2 flex-wrap">
-                              <span
-                                className={`px-2 py-0.5 text-xs rounded-full font-medium ${
-                                  com.urgency === "High"
-                                    ? "bg-red-100 text-red-700"
-                                    : com.urgency === "Medium"
-                                    ? "bg-yellow-100 text-yellow-700"
-                                    : "bg-green-100 text-green-700"
-                                }`}
-                              >
-                                {com.urgency}
-                              </span>
-                              <span
-                                className={`px-2 py-0.5 text-xs rounded-full font-medium ${
-                                  com.status === "In Progress"
-                                    ? "bg-blue-100 text-blue-700"
-                                    : com.status === "Pending Response"
-                                    ? "bg-yellow-100 text-yellow-700"
-                                    : com.status === "Resolved"
-                                    ? "bg-green-100 text-green-700"
-                                    : "bg-gray-100 text-gray-700"
-                                }`}
-                              >
-                                {com.status}
-                              </span>
-                            </div>
-                            <p className="text-xs text-gray-600 leading-relaxed line-clamp-2">
-                              {com.summary}
-                            </p>
-                            <div className="flex items-center gap-3 mt-2 text-xs text-gray-500">
-                              <div className="flex items-center gap-1">
-                                <Mail className="w-3.5 h-3.5" />
-                                <span>
-                                  {threadCount} thread
-                                  {threadCount !== 1 ? "s" : ""}
-                                </span>
-                              </div>
-                              <div className="flex items-center gap-1">
-                                <CheckSquare className="w-3.5 h-3.5" />
-                                <span>
-                                  {
-                                    com.todos.filter(
-                                      (t) => t.status === "pending"
-                                    ).length
-                                  }{" "}
-                                  TODO
-                                  {com.todos.filter(
-                                    (t) => t.status === "pending"
-                                  ).length !== 1
-                                    ? "s"
-                                    : ""}
-                                </span>
-                              </div>
-                              <span className="ml-auto">{com.timestamp}</span>
-                            </div>
                           </div>
 
-                          {/* More Info Button */}
+                          {/* Open Task Detail Icon */}
                           <button
                             onClick={(e) => {
                               e.stopPropagation();
                               handleMoreInfoClick(com);
                             }}
-                            className="flex-shrink-0 p-2 text-primary-600 hover:bg-primary-100 rounded-lg transition-colors"
-                            title="More info"
+                            className="text-gray-900 hover:text-gray-700 transition-colors flex-shrink-0"
+                            title="Open task details"
                           >
-                            <Info className="w-5 h-5" />
+                            <SquareArrowOutUpRight className="w-4 h-4" />
                           </button>
+                        </div>
+
+                        <div
+                          className="cursor-pointer"
+                          onClick={() => handleProblemClick(com.id)}
+                        >
+                          <div className="flex items-center gap-2 mb-2 flex-wrap">
+                            <span
+                              className={`px-2 py-0.5 text-xs rounded-full font-medium ${
+                                com.urgency === "High"
+                                  ? "bg-red-100 text-red-700"
+                                  : com.urgency === "Medium"
+                                  ? "bg-yellow-100 text-yellow-700"
+                                  : "bg-green-100 text-green-700"
+                              }`}
+                            >
+                              {com.urgency}
+                            </span>
+                            <span
+                              className={`px-2 py-0.5 text-xs rounded-full font-medium ${
+                                com.status === "In Progress"
+                                  ? "bg-blue-100 text-blue-700"
+                                  : com.status === "Pending Response"
+                                  ? "bg-yellow-100 text-yellow-700"
+                                  : com.status === "Resolved"
+                                  ? "bg-green-100 text-green-700"
+                                  : "bg-gray-100 text-gray-700"
+                              }`}
+                            >
+                              {com.status}
+                            </span>
+                          </div>
+                          <p className="text-xs text-gray-600 leading-relaxed line-clamp-2">
+                            {com.summary}
+                          </p>
+                          <div className="flex items-center gap-3 mt-2 text-xs text-gray-500">
+                            <div className="flex items-center gap-1">
+                              <Mail className="w-3.5 h-3.5" />
+                              <span>
+                                {threadCount} thread
+                                {threadCount !== 1 ? "s" : ""}
+                              </span>
+                            </div>
+                            <div className="flex items-center gap-1">
+                              <CheckSquare className="w-3.5 h-3.5" />
+                              <span>
+                                {
+                                  com.todos.filter(
+                                    (t) => t.status === "pending"
+                                  ).length
+                                }{" "}
+                                TODO
+                                {com.todos.filter(
+                                  (t) => t.status === "pending"
+                                ).length !== 1
+                                  ? "s"
+                                  : ""}
+                              </span>
+                            </div>
+                            <span className="ml-auto">{com.timestamp}</span>
+                          </div>
                         </div>
                       </div>
                     );
