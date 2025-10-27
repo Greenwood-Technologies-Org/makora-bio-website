@@ -10,6 +10,7 @@ dependencies = [
     "dspy",
     "python-dotenv",
     "anthropic>=0.71.0",
+    "ruff>=0.14.2",
 ]
 
 [project.optional-dependencies]

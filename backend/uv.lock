@@ -1110,6 +1110,7 @@ dependencies = [
     { name = "flask" },
     { name = "flask-cors" },
     { name = "python-dotenv" },
+    { name = "ruff" },
 ]
 
 [package.optional-dependencies]
@@ -1132,6 +1133,7 @@ requires-dist = [
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=7.4.0" },
     { name = "pytest-cov", marker = "extra == 'dev'", specifier = ">=4.1.0" },
     { name = "python-dotenv" },
+    { name = "ruff", specifier = ">=0.14.2" },
     { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.1.0" },
 ]
 provides-extras = ["dev"]
