@@ -1,0 +1,192 @@
+{
+  "emails": [
+    {
+      "from_address": "jennifer.martinez@clintrials-sponsor.com",
+      "to_addresses": [
+        "dr.robert.chen@citymedical-research.org"
+      ],
+      "cc_addresses": [
+        "sarah.williams@clintrials-sponsor.com",
+        "melissa.johnson@citymedical-research.org"
+      ],
+      "subject": "URGENT: Missing Essential Documents in ISF - Site 2047 - Protocol CT-2023-089",
+      "timestamp": "2024-03-15T09:23:00-05:00",
+      "body": "Dear Dr. Chen,\n\nDuring our routine ISF review in preparation for the upcoming sponsor audit scheduled for April 8-10, 2024, we have identified critical gaps in your Investigator Site File for Protocol CT-2023-089.\n\nThe following essential documents are missing or outdated:\n\n1. Dr. Amanda Foster (Sub-Investigator)\n   - Current CV (on file dated 2022, >2 years old)\n   - Current medical license (expired copy on file, expired 12/31/2023)\n   - Updated GCP training certificate (expired 01/15/2024)\n\n2. Dr. Michael Torres (Sub-Investigator)\n   - Current CV (on file dated 2021)\n   - Current medical license (copy on file expires 03/31/2024 - renewal needed)\n\nPer ICH-GCP E6(R2) Section 8.2, current CVs and medical licenses must be maintained in the ISF for all investigators and sub-investigators conducting study procedures. Our records indicate both Dr. Foster and Dr. Torres have been actively screening and enrolling subjects, with Dr. Foster conducting procedures for 8 subjects and Dr. Torres for 6 subjects since January 2024.\n\nThis constitutes a significant regulatory finding that must be addressed immediately. Please provide the following by COB Monday, March 18, 2024:\n\n1. Updated CVs for both sub-investigators (signed and dated within last 2 years)\n2. Current, valid medical license copies for both sub-investigators\n3. Updated GCP training certificates\n4. A corrective and preventive action (CAPA) plan to ensure this does not recur\n\nFailure to provide these documents prior to the audit may result in:\n- Major audit finding\n- Temporary suspension of enrollment activities\n- Potential site closure consideration\n- Regulatory reporting requirements\n\nPlease confirm receipt of this email and your plan to address these deficiencies immediately.\n\nBest regards,\n\nJennifer Martinez, MS, RAC\nSenior Regulatory Affairs Specialist\nClinTrials Pharmaceuticals\nPhone: (555) 234-5678\nEmail: jennifer.martinez@clintrials-sponsor.com",
+      "attachments": [
+        "ISF_Review_Checklist_Site2047_March2024.xlsx",
+        "Essential_Documents_Requirements_ICH-GCP.pdf"
+      ],
+      "message_id": "<msg-001-20240315092300@clintrials-sponsor.com>",
+      "in_reply_to": null
+    },
+    {
+      "from_address": "dr.robert.chen@citymedical-research.org",
+      "to_addresses": [
+        "jennifer.martinez@clintrials-sponsor.com"
+      ],
+      "cc_addresses": [
+        "sarah.williams@clintrials-sponsor.com",
+        "melissa.johnson@citymedical-research.org"
+      ],
+      "subject": "RE: URGENT: Missing Essential Documents in ISF - Site 2047 - Protocol CT-2023-089",
+      "timestamp": "2024-03-15T11:47:00-05:00",
+      "body": "Dear Jennifer,\n\nThank you for bringing this to our attention. I acknowledge receipt of your email and understand the severity of this situation. I apologize for these oversights in our ISF maintenance.\n\nI have immediately contacted both Dr. Foster and Dr. Torres regarding the missing/outdated documentation. Here is our action plan:\n\nImmediate Actions (by EOD today, March 15):\n- Both sub-investigators have been notified and are preparing updated CVs\n- Dr. Foster has confirmed her medical license was renewed in January 2024; she is obtaining a certified copy from the state medical board\n- Dr. Torres is expediting his license renewal application (submitted last week)\n- Both are completing updated GCP training modules today\n\nDocumentation Timeline:\n- Dr. Foster's updated CV and renewed license copy: Monday, March 18 by noon\n- Dr. Foster's GCP certificate: Monday, March 18 by EOD\n- Dr. Torres's updated CV: Monday, March 18 by noon\n- Dr. Torres's renewed license: pending state processing (typically 5-7 business days)\n\nInterim Measures:\n- Effective immediately, Dr. Torres will not conduct any study procedures until his renewed license is on file\n- Dr. Foster will continue procedures only after all documents are submitted and approved\n- I will personally conduct all screening and enrollment activities until documentation is complete\n\nMelissa (our site coordinator, cc'd) is implementing a new tracking system with monthly reminders for document expiration dates to prevent future occurrences. We will have a full CAPA plan drafted by Monday.\n\nMy main concern is Dr. Torres's license renewal timing, as this is dependent on the state medical board processing time. Can you advise on how to handle this gap period?\n\nAgain, I sincerely apologize for this situation and take full responsibility for the oversight.\n\nBest regards,\n\nDr. Robert Chen, MD, PhD\nPrincipal Investigator\nCity Medical Research Center\nPhone: (555) 876-5432",
+      "attachments": [],
+      "message_id": "<msg-002-20240315114700@citymedical-research.org>",
+      "in_reply_to": "<msg-001-20240315092300@clintrials-sponsor.com>"
+    },
+    {
+      "from_address": "jennifer.martinez@clintrials-sponsor.com",
+      "to_addresses": [
+        "dr.robert.chen@citymedical-research.org"
+      ],
+      "cc_addresses": [
+        "sarah.williams@clintrials-sponsor.com",
+        "melissa.johnson@citymedical-research.org",
+        "david.park@clintrials-sponsor.com"
+      ],
+      "subject": "RE: URGENT: Missing Essential Documents in ISF - Site 2047 - Protocol CT-2023-089",
+      "timestamp": "2024-03-15T14:32:00-05:00",
+      "body": "Dr. Chen,\n\nThank you for your prompt response and action plan. I appreciate your immediate attention to this matter.\n\nYour interim measures are appropriate. To address your question regarding Dr. Torres:\n\nDr. Torres must be removed from the delegation log and cannot perform ANY study procedures until:\n1. His renewed medical license is received and on file in the ISF\n2. All other required documents (CV, GCP certificate) are current\n3. The sponsor approves his reinstatement to the delegation log\n\nFor Dr. Foster, she also cannot resume study activities until ALL three documents are received and approved by our team.\n\nAdditional Requirements:\n- Please submit a protocol deviation report for any procedures conducted by either sub-investigator while their credentials were expired/outdated\n- Review all source documents and CRFs for subjects seen by these sub-investigators since January 1, 2024, to ensure data integrity\n- Your CAPA plan should include: root cause analysis, corrective actions, preventive actions, responsible parties, and timeline for implementation\n\nI'm adding David Park (Clinical Operations Director, cc'd) to this thread as he will need to review the deviation reports and CAPA plan.\n\nRevised submission deadline:\n- All Dr. Foster documents: Monday, March 18, 2024 by 12:00 PM EST\n- Dr. Foster approved to resume: Monday, March 18, 2024 by 5:00 PM EST (pending review)\n- Dr. Torres CV and GCP certificate: Monday, March 18, 2024 by 12:00 PM EST\n- Dr. Torres license: as soon as received from state board\n- Protocol deviation reports: Tuesday, March 19, 2024\n- CAPA plan: Tuesday, March 19, 2024\n\nWe will conduct a focused review call on Wednesday, March 20 at 2:00 PM EST to discuss the CAPA and ensure readiness for the audit. Calendar invite to follow.\n\nPlease confirm you understand these requirements and timeline.\n\nBest regards,\n\nJennifer Martinez, MS, RAC\nSenior Regulatory Affairs Specialist\nClinTrials Pharmaceuticals",
+      "attachments": [
+        "Protocol_Deviation_Template_CT-2023-089.docx",
+        "CAPA_Template.docx"
+      ],
+      "message_id": "<msg-003-20240315143200@clintrials-sponsor.com>",
+      "in_reply_to": "<msg-002-20240315114700@citymedical-research.org>"
+    },
+    {
+      "from_address": "melissa.johnson@citymedical-research.org",
+      "to_addresses": [
+        "jennifer.martinez@clintrials-sponsor.com"
+      ],
+      "cc_addresses": [
+        "dr.robert.chen@citymedical-research.org",
+        "sarah.williams@clintrials-sponsor.com",
+        "david.park@clintrials-sponsor.com"
+      ],
+      "subject": "RE: URGENT: Missing Essential Documents in ISF - Site 2047 - Protocol CT-2023-089",
+      "timestamp": "2024-03-18T11:28:00-05:00",
+      "body": "Dear Jennifer,\n\nI am submitting the following documents for Dr. Amanda Foster as requested:\n\n1. Updated CV (signed and dated March 16, 2024) - attached\n2. Current medical license (renewed January 15, 2024, valid through January 14, 2026) - attached\n3. GCP training certificate (completed March 17, 2024, valid through March 16, 2027) - attached\n\nFor Dr. Michael Torres:\n1. Updated CV (signed and dated March 17, 2024) - attached\n2. GCP training certificate (completed March 17, 2024, valid through March 16, 2027) - attached\n3. Medical license - still pending from state board; we have contacted them and they indicated processing by March 22, 2024\n\nAll documents have been filed in our ISF with proper version control and tracking logs updated.\n\nDr. Torres has been removed from the delegation log as of March 15, 2024, and will not conduct any study procedures until his license is received and approved by your team.\n\nWe are finalizing the protocol deviation reports and CAPA plan and will submit them tomorrow (March 19) as scheduled.\n\nPlease review Dr. Foster's documents and let us know if she is approved to resume study activities.\n\nThank you,\n\nMelissa Johnson, RN, CCRC\nSite Coordinator\nCity Medical Research Center\nPhone: (555) 876-5433\nEmail: melissa.johnson@citymedical-research.org",
+      "attachments": [
+        "Foster_Amanda_CV_2024_signed.pdf",
+        "Foster_Amanda_Medical_License_2024-2026.pdf",
+        "Foster_Amanda_GCP_Certificate_2024.pdf",
+        "Torres_Michael_CV_2024_signed.pdf",
+        "Torres_Michael_GCP_Certificate_2024.pdf"
+      ],
+      "message_id": "<msg-004-20240318112800@citymedical-research.org>",
+      "in_reply_to": "<msg-003-20240315143200@clintrials-sponsor.com>"
+    },
+    {
+      "from_address": "jennifer.martinez@clintrials-sponsor.com",
+      "to_addresses": [
+        "melissa.johnson@citymedical-research.org"
+      ],
+      "cc_addresses": [
+        "dr.robert.chen@citymedical-research.org",
+        "sarah.williams@clintrials-sponsor.com",
+        "david.park@clintrials-sponsor.com"
+      ],
+      "subject": "RE: URGENT: Missing Essential Documents in ISF - Site 2047 - Protocol CT-2023-089 - Dr. Foster APPROVED",
+      "timestamp": "2024-03-18T15:42:00-05:00",
+      "body": "Melissa and Dr. Chen,\n\nThank you for the prompt submission of documents. I have reviewed all materials submitted for Dr. Foster and Dr. Torres.\n\nDr. Amanda Foster - APPROVED:\nAll documents have been reviewed and are acceptable. Dr. Foster is approved to resume study activities effective immediately (March 18, 2024, 3:45 PM EST). Please update your delegation log accordingly and ensure Dr. Foster signs the updated log.\n\nDr. Michael Torres - PENDING:\nCV and GCP certificate are acceptable. However, Dr. Torres remains suspended from study activities until his renewed medical license is received, reviewed, and approved. Please submit the license immediately upon receipt from the state board.\n\nNext Steps:\n1. Await protocol deviation reports and CAPA plan (due tomorrow, March 19)\n2. Focused review call: Wednesday, March 20 at 2:00 PM EST (invite sent separately)\n3. Submit Dr. Torres's medical license as soon as available\n\nFor the deviation reports, please ensure you include:\n- Complete list of all procedures conducted by each sub-investigator while credentials were expired/outdated\n- Subject IDs and visit dates affected\n- Assessment of impact on subject safety and data integrity\n- Corrective actions taken\n\nLooking forward to receiving the remaining documentation tomorrow.\n\nBest regards,\n\nJennifer Martinez, MS, RAC\nSenior Regulatory Affairs Specialist\nClinTrials Pharmaceuticals",
+      "attachments": [
+        "Foster_Amanda_Approval_Memo_20240318.pdf"
+      ],
+      "message_id": "<msg-005-20240318154200@clintrials-sponsor.com>",
+      "in_reply_to": "<msg-004-20240318112800@citymedical-research.org>"
+    },
+    {
+      "from_address": "melissa.johnson@citymedical-research.org",
+      "to_addresses": [
+        "jennifer.martinez@clintrials-sponsor.com"
+      ],
+      "cc_addresses": [
+        "dr.robert.chen@citymedical-research.org",
+        "sarah.williams@clintrials-sponsor.com",
+        "david.park@clintrials-sponsor.com"
+      ],
+      "subject": "RE: URGENT: Missing Essential Documents in ISF - Site 2047 - Protocol CT-2023-089 - Deviation Reports and CAPA",
+      "timestamp": "2024-03-19T16:15:00-05:00",
+      "body": "Dear Jennifer,\n\nPlease find attached the requested protocol deviation reports and CAPA plan for the ISF documentation deficiencies.\n\nProtocol Deviation Summary:\n- Dr. Foster: 12 study visits conducted for 8 subjects between January 3 - March 15, 2024 (while CV outdated and license expired)\n- Dr. Torres: 9 study visits conducted for 6 subjects between January 8 - March 15, 2024 (while CV outdated and license near expiration)\n- All procedures were conducted by qualified, licensed physicians\n- No impact on subject safety identified\n- All data collected is accurate and verifiable in source documents\n- Deviations classified as Major, non-serious\n\nCAPA Plan Highlights:\n\nRoot Cause Analysis:\n- Lack of systematic tracking for credential expiration dates\n- No automated reminder system in place\n- Insufficient oversight during staff transitions (previous coordinator departure in December 2023)\n\nCorrective Actions (Completed):\n- All sub-investigator credentials updated and filed\n- Comprehensive ISF audit completed for all studies at site\n- Dr. Torres removed from delegation log pending license renewal\n\nPreventive Actions (Implementation timeline included in attached plan):\n- Electronic tracking system implemented with 90-day, 60-day, and 30-day automatic email reminders\n- Monthly ISF review checklist instituted (first Monday of each month)\n- Quarterly credential verification by PI\n- Enhanced onboarding procedures for new site staff\n- Annual ISF training for all site personnel\n\nWe have also identified and corrected similar issues in our other active protocols (3 additional studies).\n\nUpdate on Dr. Torres: We contacted the state medical board again today. They confirmed his license renewal will be processed by March 22, 2024. We will submit it immediately upon receipt.\n\nPlease review the attached documents and let us know if any additional information is needed before tomorrow's call.\n\nBest regards,\n\nMelissa Johnson, RN, CCRC\nSite Coordinator\nCity Medical Research Center",
+      "attachments": [
+        "Protocol_Deviation_Report_Foster_CT-2023-089.pdf",
+        "Protocol_Deviation_Report_Torres_CT-2023-089.pdf",
+        "CAPA_Plan_ISF_Documentation_Site2047.pdf",
+        "ISF_Tracking_System_Implementation_Plan.pdf",
+        "Updated_Delegation_Log_20240319.pdf"
+      ],
+      "message_id": "<msg-006-20240319161500@citymedical-research.org>",
+      "in_reply_to": "<msg-005-20240318154200@clintrials-sponsor.com>"
+    },
+    {
+      "from_address": "david.park@clintrials-sponsor.com",
+      "to_addresses": [
+        "dr.robert.chen@citymedical-research.org",
+        "melissa.johnson@citymedical-research.org"
+      ],
+      "cc_addresses": [
+        "jennifer.martinez@clintrials-sponsor.com",
+        "sarah.williams@clintrials-sponsor.com"
+      ],
+      "subject": "RE: URGENT: Missing Essential Documents in ISF - Site 2047 - Protocol CT-2023-089 - CAPA Accepted",
+      "timestamp": "2024-03-20T17:23:00-05:00",
+      "body": "Dr. Chen and Melissa,\n\nFollowing our productive discussion this afternoon, I am writing to confirm the outcomes of our focused review call.\n\nDeviation Reports: ACCEPTED\nThe protocol deviation reports have been reviewed and accepted. We concur with your assessment that while these are major deviations from regulatory requirements, there was no impact on subject safety or data integrity. Both sub-investigators were qualified and licensed physicians at the time procedures were performed. These deviations will be documented in our study files and included in our routine regulatory reporting.\n\nCAPA Plan: ACCEPTED with minor modifications\nYour CAPA plan is comprehensive and addresses the root causes effectively. We appreciate the proactive approach to implement similar tracking systems across all your active studies. \n\nModifications requested:\n1. Add verification step: Site monitor to verify credential tracking system during each monitoring visit\n2. Include annual certification that all site personnel have completed ISF training\n3. Add trigger for immediate notification to sponsor if any credential will expire within 30 days and renewal is not yet confirmed\n\nPlease submit the revised CAPA plan incorporating these modifications by Friday, March 22, 2024.\n\nAudit Readiness:\nAssuming Dr. Torres's medical license is received and approved by March 25, 2024, and the revised CAPA is submitted as requested, we are confident the site will be audit-ready. The audit will proceed as scheduled April 8-10, 2024.\n\nThe auditor has been briefed on this situation and will verify:\n- All corrective actions have been implemented\n- New tracking system is functional\n- All current credentials are valid and properly filed\n- Deviation reports are appropriately documented\n\nWe appreciate your immediate attention to this matter and transparent communication throughout this process. Your commitment to regulatory compliance and quality is evident in your swift response.\n\nPlease continue to keep us updated on Dr. Torres's license status.\n\nBest regards,\n\nDavid Park, PharmD\nClinical Operations Director\nClinTrials Pharmaceuticals\nPhone: (555) 234-5690\nEmail: david.park@clintrials-sponsor.com",
+      "attachments": [
+        "CAPA_Review_Summary_Site2047_20240320.pdf",
+        "Audit_Preparation_Checklist_Updated.pdf"
+      ],
+      "message_id": "<msg-007-20240320172300@clintrials-sponsor.com>",
+      "in_reply_to": "<msg-006-20240319161500@citymedical-research.org>"
+    },
+    {
+      "from_address": "melissa.johnson@citymedical-research.org",
+      "to_addresses": [
+        "david.park@clintrials-sponsor.com",
+        "jennifer.martinez@clintrials-sponsor.com"
+      ],
+      "cc_addresses": [
+        "dr.robert.chen@citymedical-research.org",
+        "sarah.williams@clintrials-sponsor.com"
+      ],
+      "subject": "RE: URGENT: Missing Essential Documents in ISF - Site 2047 - Dr. Torres License Received and Revised CAPA",
+      "timestamp": "2024-03-22T10:47:00-05:00",
+      "body": "Dear David and Jennifer,\n\nGood news on two fronts:\n\n1. Dr. Torres's Medical License:\nWe received Dr. Torres's renewed medical license this morning from the state medical board (issued March 21, 2024, valid through March 20, 2026). The certified copy is attached for your review and approval.\n\n2. Revised CAPA Plan:\nThe revised CAPA plan incorporating all three requested modifications is attached. Specifically, we have added:\n- Verification step for site monitors to review credential tracking system\n- Annual ISF training certification requirement for all site personnel\n- 30-day advance notification trigger to sponsor for any pending credential expirations\n\nOnce you approve Dr. Torres's license, we will immediately reinstate him to the delegation log and he can resume study activities.\n\nWe are fully prepared for the April 8-10 audit and confident that all corrective and preventive actions are in place and functioning effectively.\n\nThank you for your guidance and partnership throughout this process. We have learned valuable lessons that will strengthen our regulatory compliance across all studies.\n\nBest regards,\n\nMelissa Johnson, RN, CCRC\nSite Coordinator\nCity Medical Research Center",
+      "attachments": [
+        "Torres_Michael_Medical_License_2024-2026_Certified.pdf",
+        "CAPA_Plan_ISF_Documentation_Site2047_REVISED_20240322.pdf"
+      ],
+      "message_id": "<msg-008-20240322104700@citymedical-research.org>",
+      "in_reply_to": "<msg-007-20240320172300@clintrials-sponsor.com>"
+    },
+    {
+      "from_address": "jennifer.martinez@clintrials-sponsor.com",
+      "to_addresses": [
+        "melissa.johnson@citymedical-research.org"
+      ],
+      "cc_addresses": [
+        "dr.robert.chen@citymedical-research.org",
+        "david.park@clintrials-sponsor.com",
+        "sarah.williams@clintrials-sponsor.com"
+      ],
+      "subject": "RE: URGENT: Missing Essential Documents in ISF - Site 2047 - Dr. Torres APPROVED - ISSUE CLOSED",
+      "timestamp": "2024-03-22T14:18:00-05:00",
+      "body": "Melissa and Dr. Chen,\n\nExcellent news. I have reviewed Dr. Torres's renewed medical license and the revised CAPA plan.\n\nDr. Michael Torres - APPROVED:\nDr. Torres's medical license has been reviewed and is acceptable. Dr. Torres is approved to resume study activities effective immediately (March 22, 2024, 2:15 PM EST). Please update your delegation log accordingly and ensure Dr. Torres signs the updated log.\n\nRevised CAPA Plan - APPROVED:\nThe revised CAPA plan is approved as submitted. All requested modifications have been appropriately incorporated.\n\nISSUE RESOLUTION - CLOSED:\nThis regulatory issue is now considered RESOLVED and CLOSED. All required documentation is complete and on file:\n\n\u2713 Dr. Foster - all credentials current and approved\n\u2713 Dr. Torres - all credentials current and approved\n\u2713 Protocol deviation reports submitted and accepted\n\u2713 CAPA plan approved and implementation underway\n\u2713 Preventive measures in place\n\nAudit Status:\nSite 2047 is cleared for the scheduled audit April 8-10, 2024. The audit team has been notified of the resolution. This matter will be reviewed during the audit to verify implementation of corrective and preventive actions.\n\nCommendation:\nI want to personally commend your team for the professional and expeditious manner in which you addressed this serious regulatory finding. Your transparency, accountability, and commitment to implementing robust preventive measures demonstrate the high standards we expect from our clinical trial sites.\n\nPlease ensure all documentation discussed in this email thread is properly filed in your ISF and readily available for the audit.\n\nIf you have any questions before the audit, please don't hesitate to reach out.\n\nBest regards,\n\nJennifer Martinez, MS, RAC\nSenior Regulatory Affairs Specialist\nClinTrials Pharmaceuticals\n\n---\nThis issue is now CLOSED. No further action required unless new issues arise.\n---",
+      "attachments": [
+        "Torres_Michael_Approval_Memo_20240322.pdf",
+        "Issue_Resolution_Summary_Site2047_ISF_Documentation.pdf"
+      ],
+      "message_id": "<msg-009-20240322141800@clintrials-sponsor.com>",
+      "in_reply_to": "<msg-008-20240322104700@citymedical-research.org>"
+    }
+  ],
+  "role_descriptions": [
+    "jennifer.martinez@clintrials-sponsor.com: ClinTrials Pharmaceuticals (Sponsor), Senior Regulatory Affairs Specialist",
+    "dr.robert.chen@citymedical-research.org: City Medical Research Center (Site), Principal Investigator",
+    "melissa.johnson@citymedical-research.org: City Medical Research Center (Site), Site Coordinator",
+    "sarah.williams@clintrials-sponsor.com: ClinTrials Pharmaceuticals (Sponsor), Clinical Study Manager",
+    "david.park@clintrials-sponsor.com: ClinTrials Pharmaceuticals (Sponsor), Clinical Operations Director"
+  ],
+  "description": "Regulatory specialist notifying that one site's Investigator Site File is missing updated CVs and medical licenses for two sub-investigators who have been conducting study procedures, requiring immediate corrective action before next audit"
+}

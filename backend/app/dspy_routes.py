@@ -1,7 +1,10 @@
 """DSPY-powered API routes."""
 
+import json
 import logging
 import time
+from datetime import datetime
+from pathlib import Path
 from dotenv import load_dotenv
 from flask import Blueprint, jsonify, request
 import dspy
@@ -44,7 +47,7 @@ def retry_with_backoff(func, max_retries=3, initial_delay=1):
 
 # Initialize DSPY with your LLM provider
 load_dotenv("../.env")
-lm = dspy.LM("anthropic/claude-sonnet-4-5", temperature=0.5, cache=True)
+lm = dspy.LM("anthropic/claude-sonnet-4-5", temperature=0.5, cache=True, max_tokens=40000)
 dspy.settings.configure(lm=lm)
 
 
@@ -164,6 +167,12 @@ def draft_synthetic_email_threads():
         # Get optional num_threads parameter, default to 5
         num_threads = data.get("num_threads", 5)
 
+        # Create output directory with timestamp
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        output_dir = Path(f"email_gen/outputs/threads_{timestamp}")
+        output_dir.mkdir(parents=True, exist_ok=True)
+        logger.info(f"Saving threads to {output_dir}")
+
         # Step 1: Generate email thread descriptions
         logger.info(f"Step 1: Generating {num_threads} email thread descriptions...")
         description_signature = dspy.ChainOfThought(DraftSyntheticEmailDescription)
@@ -212,15 +221,36 @@ def draft_synthetic_email_threads():
                 for email in thread_result.email_thread
             ]
 
-            threads.append({
+            thread_data = {
                 "emails": emails_data,
-                "role_descriptions": thread_result.role_descriptions
-            })
+                "role_descriptions": thread_result.role_descriptions,
+                "description": description
+            }
+            threads.append(thread_data)
+
+            # Save this thread individually
+            thread_file = output_dir / f"thread_{idx:03d}.json"
+            with open(thread_file, 'w') as f:
+                json.dump(thread_data, f, indent=2)
+            logger.info(f"Saved thread {idx} to {thread_file}")
+
+        # Save summary file with all threads
+        summary_file = output_dir / "all_threads.json"
+        with open(summary_file, 'w') as f:
+            json.dump({
+                "study_overview": data["study_overview"],
+                "role": data["role"],
+                "num_threads": num_threads,
+                "generated_at": timestamp,
+                "threads": threads
+            }, f, indent=2)
+        logger.info(f"Saved summary to {summary_file}")
 
         logger.info(f"Successfully generated {len(threads)} complete email threads")
         return jsonify({
             "success": True,
-            "threads": threads
+            "threads": threads,
+            "output_dir": str(output_dir)
         }), 200
 
     except Exception as e:

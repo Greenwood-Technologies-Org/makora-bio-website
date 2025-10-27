@@ -1,0 +1,58 @@
+{
+  "emails": [
+    {
+      "from_address": "sarah.chen@memorialhospital.org",
+      "to_addresses": [
+        "medicalmonitor@biopharmacorp.com"
+      ],
+      "cc_addresses": [
+        "clinicaltrials@memorialhospital.org"
+      ],
+      "subject": "URGENT: Part B Eligibility Question - Protocol BPC-FTD-301 (Site 1047)",
+      "timestamp": "2024-03-14T09:23:00-05:00",
+      "body": "Dear Medical Monitor,\n\nI am writing to request urgent clarification on inclusion criteria for Part B enrollment in Protocol BPC-FTD-301.\n\nWe have a participant (Screening ID: 1047-008) scheduled for their Part B screening visit in 48 hours (March 16, 2024). The participant has a confirmed diagnosis of behavioral variant frontotemporal dementia (bvFTD) per protocol requirements. However, during pre-screening review, we noted that the participant also carries a clinical diagnosis of mild cognitive impairment (MCI) that was documented approximately 18 months prior to the FTD diagnosis.\n\nSpecific question: Does the presence of a comorbid MCI diagnosis in addition to the primary FTD diagnosis affect eligibility for Part B enrollment? \n\nThe inclusion criteria (Section 5.1) states participants must have \"a primary diagnosis of FTD\" but does not explicitly address whether prior or concurrent MCI diagnoses are exclusionary. The exclusion criteria (Section 5.2.3) mentions \"other neurodegenerative diseases\" but MCI is not specifically listed.\n\nGiven the timing of the scheduled screening visit, we would greatly appreciate your guidance by end of day March 15th to determine whether we should proceed with this participant.\n\nThank you for your prompt attention to this matter.\n\nBest regards,\nSarah Chen, RN, BSN\nSite Coordinator\nMemorial Hospital Clinical Trials Unit\nSite #1047\nPhone: (555) 234-5678",
+      "attachments": [],
+      "message_id": "<sarah.chen.20240314092300@memorialhospital.org>",
+      "in_reply_to": null
+    },
+    {
+      "from_address": "medicalmonitor@biopharmacorp.com",
+      "to_addresses": [
+        "sarah.chen@memorialhospital.org"
+      ],
+      "cc_addresses": [
+        "clinicaltrials@memorialhospital.org",
+        "studymanager@biopharmacorp.com"
+      ],
+      "subject": "RE: URGENT: Part B Eligibility Question - Protocol BPC-FTD-301 (Site 1047)",
+      "timestamp": "2024-03-14T15:47:00-05:00",
+      "body": "Dear Sarah,\n\nThank you for your inquiry regarding participant 1047-008's eligibility for Part B enrollment.\n\nAfter reviewing the protocol and consulting with our neurology team, I can provide the following clarification:\n\nThe participant REMAINS ELIGIBLE for Part B enrollment. Here is the rationale:\n\n1. Per Inclusion Criterion 1 (Section 5.1.1), participants must have a PRIMARY diagnosis of FTD (behavioral variant, semantic variant, or nonfluent variant) confirmed by a qualified neurologist. The key word is \"primary.\"\n\n2. Mild Cognitive Impairment (MCI) is often part of the prodromal phase of FTD and is not uncommon in the diagnostic trajectory. The fact that MCI was diagnosed 18 months prior to FTD actually suggests a natural disease progression rather than two separate conditions.\n\n3. Exclusion Criterion 5.2.3 refers to \"other primary neurodegenerative diseases\" such as Alzheimer's disease, Parkinson's disease, or Lewy body dementia that would confound the FTD diagnosis. MCI in the context of FTD progression does not fall under this exclusion.\n\n4. As long as the current PRIMARY diagnosis is FTD (confirmed by neurologist evaluation, neuroimaging, and clinical criteria per protocol Section 4.2), the historical MCI diagnosis does not impact eligibility.\n\nRECOMMENDATION: You may proceed with the screening visit on March 16th. Please ensure that:\n- The FTD diagnosis is clearly documented as the primary diagnosis\n- All diagnostic criteria per Section 4.2 are met\n- The neurologist's assessment confirms FTD as the primary condition\n\nPlease document this clarification in the participant's study file and feel free to reach out if you have any additional questions.\n\nBest regards,\n\nDr. Michael Rodriguez, MD, PhD\nMedical Monitor\nBioPharmaCorp\nProtocol BPC-FTD-301\nEmail: medicalmonitor@biopharmacorp.com\nPhone: (555) 789-0123",
+      "attachments": [],
+      "message_id": "<michael.rodriguez.20240314154700@biopharmacorp.com>",
+      "in_reply_to": "<sarah.chen.20240314092300@memorialhospital.org>"
+    },
+    {
+      "from_address": "sarah.chen@memorialhospital.org",
+      "to_addresses": [
+        "medicalmonitor@biopharmacorp.com"
+      ],
+      "cc_addresses": [
+        "clinicaltrials@memorialhospital.org",
+        "studymanager@biopharmacorp.com"
+      ],
+      "subject": "RE: URGENT: Part B Eligibility Question - Protocol BPC-FTD-301 (Site 1047)",
+      "timestamp": "2024-03-14T16:15:00-05:00",
+      "body": "Dear Dr. Rodriguez,\n\nThank you very much for the prompt and thorough clarification. This is extremely helpful.\n\nI have reviewed your guidance with our site PI, Dr. Patricia Williams, and we are in agreement. The participant's FTD diagnosis is well-documented as the primary condition, with all required diagnostic criteria met per Section 4.2 of the protocol.\n\nWe will proceed with the screening visit as scheduled on March 16th and will document this eligibility clarification in the participant's study file per your instructions.\n\nWe appreciate your quick turnaround on this matter.\n\nBest regards,\nSarah Chen, RN, BSN\nSite Coordinator\nMemorial Hospital Clinical Trials Unit\nSite #1047",
+      "attachments": [],
+      "message_id": "<sarah.chen.20240314161500@memorialhospital.org>",
+      "in_reply_to": "<michael.rodriguez.20240314154700@biopharmacorp.com>"
+    }
+  ],
+  "role_descriptions": [
+    "sarah.chen@memorialhospital.org: Memorial Hospital (Site), Site Coordinator/Study Nurse",
+    "clinicaltrials@memorialhospital.org: Memorial Hospital (Site), Clinical Trials Unit",
+    "medicalmonitor@biopharmacorp.com: BioPharmaCorp (Sponsor), Medical Monitor",
+    "studymanager@biopharmacorp.com: BioPharmaCorp (Sponsor), Study Manager"
+  ],
+  "description": "Site coordinator at Memorial Hospital requesting clarification on inclusion criteria for Part B enrollment - specifically whether a participant with mild cognitive impairment in addition to FTD diagnosis meets eligibility requirements, needs response within 48 hours before screening visit"
+}

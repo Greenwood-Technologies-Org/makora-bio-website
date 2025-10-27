@@ -1,0 +1,154 @@
+{
+  "emails": [
+    {
+      "from_address": "sarah.chen@citymedicalcenter.org",
+      "to_addresses": [
+        "clinicaltrials@dnlpharma.com"
+      ],
+      "cc_addresses": [
+        "dr.martinez@citymedicalcenter.org"
+      ],
+      "subject": "URGENT: Emergency Unblinding Request - Study DNL593-202, Subject 202-015-008",
+      "timestamp": "2024-03-15T14:23:00Z",
+      "body": "URGENT - EMERGENCY UNBLINDING REQUEST\n\nStudy: DNL593-202 (Part B)\nSite: 015 - City Medical Center\nSubject ID: 202-015-008\n\nDear DNL Clinical Team,\n\nWe are requesting emergency unblinding for the above subject who was admitted to our hospital approximately 2 hours ago following a generalized tonic-clonic seizure.\n\nPatient Details:\n- Female, 58 years old\n- Randomized to Part B on 2024-01-10\n- Currently on Day 65 of treatment\n- No prior history of seizures\n\nCurrent Status:\n- Patient is stabilized but remains in the Emergency Department\n- Neurology has been consulted\n- The treating neurologist (Dr. Robert Kim) needs to know the treatment assignment to determine appropriate management, particularly regarding potential drug interactions and whether the seizure could be related to study drug\n\nThis is a serious adverse event and we believe emergency unblinding is medically necessary to guide appropriate treatment decisions.\n\nPlease advise on the process to proceed with emergency unblinding as soon as possible.\n\nThank you,\n\nSarah Chen, RN, CCRC\nClinical Research Coordinator\nCity Medical Center\nPhone: (555) 234-5678\nPager: (555) 234-5679",
+      "attachments": [],
+      "message_id": "<urgent-unblind-001@citymedicalcenter.org>",
+      "in_reply_to": null
+    },
+    {
+      "from_address": "jennifer.wong@dnlpharma.com",
+      "to_addresses": [
+        "sarah.chen@citymedicalcenter.org"
+      ],
+      "cc_addresses": [
+        "dr.martinez@citymedicalcenter.org",
+        "medicalmonitor@dnlpharma.com",
+        "david.foster@dnlpharma.com",
+        "unblinding@dnlpharma.com"
+      ],
+      "subject": "RE: URGENT: Emergency Unblinding Request - Study DNL593-202, Subject 202-015-008",
+      "timestamp": "2024-03-15T14:45:00Z",
+      "body": "Dear Sarah and Dr. Martinez,\n\nThank you for this urgent notification. We take this matter very seriously and are mobilizing our team to address this emergency unblinding request.\n\nI have copied:\n- Dr. Patricia Reynolds (Medical Monitor)\n- David Foster (Clinical Operations Director)\n- Our unblinding team\n\nTo proceed with emergency unblinding, we need the following additional information:\n\n1. Confirmation from the treating physician (Dr. Kim) that knowledge of treatment assignment is medically necessary for patient care\n2. Brief description of seizure presentation and current clinical status\n3. Current medications and recent changes\n4. Any other relevant clinical information that supports the need for emergency unblinding\n5. Contact information for Dr. Kim in case our Medical Monitor needs to discuss directly\n\nOnce we receive this information, Dr. Reynolds will review and approve the emergency unblinding if criteria are met. The unblinding can typically be completed within 1-2 hours of approval.\n\nPlease also confirm:\n- Has the IRB been notified of this SAE?\n- Has the SAE report been initiated?\n\nWe will expedite this process. Please call my cell at (555) 789-0123 if you need immediate assistance.\n\nBest regards,\n\nJennifer Wong, PhD\nSenior Clinical Trial Manager\nDNL Pharmaceuticals\nCell: (555) 789-0123",
+      "attachments": [],
+      "message_id": "<response-001@dnlpharma.com>",
+      "in_reply_to": "<urgent-unblind-001@citymedicalcenter.org>"
+    },
+    {
+      "from_address": "dr.martinez@citymedicalcenter.org",
+      "to_addresses": [
+        "jennifer.wong@dnlpharma.com"
+      ],
+      "cc_addresses": [
+        "sarah.chen@citymedicalcenter.org",
+        "medicalmonitor@dnlpharma.com",
+        "david.foster@dnlpharma.com",
+        "unblinding@dnlpharma.com"
+      ],
+      "subject": "RE: URGENT: Emergency Unblinding Request - Study DNL593-202, Subject 202-015-008",
+      "timestamp": "2024-03-15T15:12:00Z",
+      "body": "Dear Jennifer and DNL Team,\n\nThank you for the rapid response. I am providing the requested information below:\n\n1. TREATING PHYSICIAN CONFIRMATION:\nDr. Robert Kim (Neurology) has confirmed that knowledge of treatment assignment is medically necessary. He needs to know whether the patient received DNL593 to:\n   a) Assess if the seizure could be drug-related\n   b) Determine if there are potential interactions with anti-seizure medications he is considering\n   c) Guide monitoring and management decisions\n\nDr. Kim is available at (555) 234-5690 or r.kim@citymedicalcenter.org\n\n2. SEIZURE PRESENTATION:\n- Witnessed generalized tonic-clonic seizure at home, duration approximately 3 minutes\n- Post-ictal confusion for approximately 20 minutes\n- Patient called 911, transported to ED\n- On arrival: Alert and oriented, vital signs stable\n- No focal neurological deficits on examination\n- Currently awaiting CT head and EEG\n\n3. CURRENT MEDICATIONS:\n- Study drug (DNL593 or placebo) - last dose this morning\n- Lisinopril 10mg daily (unchanged for 2 years)\n- Atorvastatin 20mg daily (unchanged for 1 year)\n- Multivitamin daily\n- No recent medication changes\n\n4. ADDITIONAL RELEVANT INFORMATION:\n- No prior seizure history\n- No recent head trauma\n- No fever or signs of infection\n- No alcohol or illicit drug use\n- Patient reports mild headache for past 2 days, otherwise no new symptoms\n- All prior study visits showed no safety concerns\n- Last lab work (Day 56) was within normal limits\n\n5. IRB NOTIFICATION:\n- IRB notification will be submitted today per our institution's policy\n- SAE report is being prepared and will be submitted within 24 hours\n\nPlease expedite the unblinding process. The patient is stable but Dr. Kim would like to make treatment decisions as soon as possible.\n\nThank you,\n\nDr. Maria Martinez, MD\nPrincipal Investigator\nCity Medical Center\nDirect: (555) 234-5681",
+      "attachments": [],
+      "message_id": "<pi-response-001@citymedicalcenter.org>",
+      "in_reply_to": "<response-001@dnlpharma.com>"
+    },
+    {
+      "from_address": "medicalmonitor@dnlpharma.com",
+      "to_addresses": [
+        "dr.martinez@citymedicalcenter.org",
+        "jennifer.wong@dnlpharma.com"
+      ],
+      "cc_addresses": [
+        "sarah.chen@citymedicalcenter.org",
+        "david.foster@dnlpharma.com",
+        "unblinding@dnlpharma.com"
+      ],
+      "subject": "RE: URGENT: Emergency Unblinding Request - Study DNL593-202, Subject 202-015-008 - APPROVED",
+      "timestamp": "2024-03-15T15:35:00Z",
+      "body": "Dear Dr. Martinez and team,\n\nThank you for the comprehensive clinical information.\n\nAfter reviewing the details provided, I am APPROVING this emergency unblinding request. The clinical justification is appropriate - knowledge of treatment assignment is medically necessary to guide the treating physician's management decisions for this serious adverse event.\n\nI am directing our unblinding team to proceed immediately with the emergency unblinding process.\n\nUnblinding team: Please provide the treatment assignment to Dr. Martinez and Dr. Kim within the next 30 minutes. Standard emergency unblinding procedures should be followed, including:\n- Documentation of all individuals unblinded\n- Confirmation of receipt\n- Notification to appropriate regulatory personnel\n\nDr. Martinez: Please ensure that:\n1. Only those individuals with a medical need to know are unblinded\n2. Study drug is discontinued immediately (regardless of assignment)\n3. The patient is followed per protocol SAE reporting requirements\n4. We receive the completed SAE report within 24 hours\n\nI am available if Dr. Kim would like to discuss any clinical concerns at (555) 345-6789.\n\nBest regards,\n\nDr. Patricia Reynolds, MD, PhD\nMedical Monitor\nDNL Pharmaceuticals\nCell: (555) 345-6789",
+      "attachments": [],
+      "message_id": "<approval-001@dnlpharma.com>",
+      "in_reply_to": "<pi-response-001@citymedicalcenter.org>"
+    },
+    {
+      "from_address": "unblinding@dnlpharma.com",
+      "to_addresses": [
+        "dr.martinez@citymedicalcenter.org"
+      ],
+      "cc_addresses": [
+        "sarah.chen@citymedicalcenter.org",
+        "jennifer.wong@dnlpharma.com",
+        "medicalmonitor@dnlpharma.com",
+        "david.foster@dnlpharma.com"
+      ],
+      "subject": "CONFIDENTIAL: Emergency Unblinding Result - Study DNL593-202, Subject 202-015-008",
+      "timestamp": "2024-03-15T16:02:00Z",
+      "body": "**CONFIDENTIAL - TREATMENT ASSIGNMENT INFORMATION**\n\nStudy: DNL593-202 (Part B)\nSite: 015 - City Medical Center\nSubject ID: 202-015-008\nUnblinding Date/Time: March 15, 2024 at 16:00 UTC\nReason: Emergency unblinding for SAE (seizure/hospitalization)\nApproved by: Dr. Patricia Reynolds, Medical Monitor\n\nTREATMENT ASSIGNMENT: PLACEBO\n\nThe subject was randomized to receive PLACEBO in Part B of the study.\n\nIMPORTANT INSTRUCTIONS:\n1. This information should only be shared with individuals who have a medical need to know (treating physicians)\n2. Study drug (placebo) should be discontinued immediately\n3. Please confirm receipt of this unblinding notification\n4. Please provide a list of all individuals who were unblinded\n5. Continue to follow the subject per protocol requirements for SAE reporting and follow-up\n\nDocumentation:\n- Unblinding performed by: Michael Stevens, Unblinding Administrator\n- Unblinding code verification: Confirmed\n- Regulatory notification: In progress\n- Case report form notation: Required\n\nPlease reply to confirm receipt of this information.\n\nFor questions, contact:\nMichael Stevens\nUnblinding Administrator\nDNL Pharmaceuticals\n(555) 456-7890\n\n**This email contains confidential treatment assignment information**",
+      "attachments": [
+        "Unblinding_Certificate_202-015-008.pdf"
+      ],
+      "message_id": "<unblinding-result-001@dnlpharma.com>",
+      "in_reply_to": "<approval-001@dnlpharma.com>"
+    },
+    {
+      "from_address": "dr.martinez@citymedicalcenter.org",
+      "to_addresses": [
+        "unblinding@dnlpharma.com"
+      ],
+      "cc_addresses": [
+        "sarah.chen@citymedicalcenter.org",
+        "jennifer.wong@dnlpharma.com",
+        "medicalmonitor@dnlpharma.com"
+      ],
+      "subject": "RE: CONFIDENTIAL: Emergency Unblinding Result - Study DNL593-202, Subject 202-015-008",
+      "timestamp": "2024-03-15T16:15:00Z",
+      "body": "Dear Michael and DNL Team,\n\nI confirm receipt of the emergency unblinding information for subject 202-015-008.\n\nTREATMENT ASSIGNMENT RECEIVED: PLACEBO\n\nThis information has been shared with:\n1. Dr. Maria Martinez (Principal Investigator) - myself\n2. Dr. Robert Kim (Treating Neurologist)\n3. Sarah Chen (Clinical Research Coordinator) - for documentation purposes\n\nActions taken:\n1. Study drug (placebo) discontinued - patient instructed not to take any further doses\n2. Dr. Kim has been informed of the treatment assignment\n3. Patient will continue to be managed per standard of care for new-onset seizure\n4. All study drug supplies will be returned\n\nCurrent patient status:\n- CT head: Normal, no acute findings\n- EEG: Scheduled for tomorrow\n- Patient remains stable and will likely be admitted overnight for observation\n- Neurology is proceeding with standard workup for first-time seizure\n\nNext steps:\n1. Complete SAE report - will submit within 24 hours\n2. IRB notification - being submitted today\n3. Patient will be withdrawn from study per protocol\n4. Follow-up safety visit will be scheduled per protocol requirements\n\nThank you for the rapid response to this emergency situation.\n\nBest regards,\n\nDr. Maria Martinez, MD\nPrincipal Investigator\nCity Medical Center",
+      "attachments": [],
+      "message_id": "<confirmation-001@citymedicalcenter.org>",
+      "in_reply_to": "<unblinding-result-001@dnlpharma.com>"
+    },
+    {
+      "from_address": "jennifer.wong@dnlpharma.com",
+      "to_addresses": [
+        "dr.martinez@citymedicalcenter.org",
+        "sarah.chen@citymedicalcenter.org"
+      ],
+      "cc_addresses": [
+        "medicalmonitor@dnlpharma.com",
+        "david.foster@dnlpharma.com"
+      ],
+      "subject": "RE: CONFIDENTIAL: Emergency Unblinding Result - Study DNL593-202, Subject 202-015-008 - Follow-up",
+      "timestamp": "2024-03-15T17:30:00Z",
+      "body": "Dear Dr. Martinez and Sarah,\n\nThank you for the confirmation and update on the patient's status. We are relieved to hear that the patient is stable.\n\nA few follow-up items:\n\n1. SAE REPORTING:\n   - Please submit the initial SAE report within 24 hours as planned\n   - We will need follow-up reports as new information becomes available\n   - Please include all relevant medical records, imaging results, and EEG findings\n\n2. STUDY DRUG:\n   - Please complete the drug accountability records\n   - All unused study drug should be returned or destroyed per protocol\n   - Document the date of last dose in the eCRF\n\n3. SUBJECT WITHDRAWAL:\n   - Please complete the Early Termination eCRF pages\n   - Reason: Withdrawal due to adverse event\n   - Early termination visit should be scheduled per protocol (within 7 days if possible)\n\n4. SAFETY FOLLOW-UP:\n   - 30-day safety follow-up will be required per protocol\n   - Please keep us updated on the patient's clinical course and final diagnosis\n\n5. REGULATORY:\n   - Our regulatory team will handle sponsor reporting requirements\n   - Please provide IRB approval letter once received\n\nDr. Reynolds (Medical Monitor) may reach out with additional questions as she reviews the case.\n\nPlease don't hesitate to contact me if you need any assistance or have questions.\n\nWishing the patient a full recovery.\n\nBest regards,\n\nJennifer Wong, PhD\nSenior Clinical Trial Manager\nDNL Pharmaceuticals",
+      "attachments": [],
+      "message_id": "<followup-001@dnlpharma.com>",
+      "in_reply_to": "<confirmation-001@citymedicalcenter.org>"
+    },
+    {
+      "from_address": "sarah.chen@citymedicalcenter.org",
+      "to_addresses": [
+        "jennifer.wong@dnlpharma.com"
+      ],
+      "cc_addresses": [
+        "dr.martinez@citymedicalcenter.org",
+        "medicalmonitor@dnlpharma.com"
+      ],
+      "subject": "RE: CONFIDENTIAL: Emergency Unblinding Result - Study DNL593-202, Subject 202-015-008 - Patient Update",
+      "timestamp": "2024-03-16T14:20:00Z",
+      "body": "Dear Jennifer and DNL Team,\n\nI wanted to provide an update on subject 202-015-008:\n\nPATIENT STATUS (24 hours post-event):\n- Patient was admitted overnight for observation\n- EEG completed this morning - preliminary read shows no epileptiform activity\n- No additional seizures\n- Patient is neurologically intact\n- Being discharged home today with neurology follow-up\n\nNEUROLOGY ASSESSMENT:\nDr. Kim's impression is that this was likely a provoked seizure. Contributing factors being investigated:\n- Sleep deprivation (patient reports poor sleep for past week)\n- Possible viral prodrome (mild headache, fatigue)\n- Patient will follow up with neurology in 2 weeks\n- No anti-seizure medications prescribed at this time\n- Driving restrictions per state law\n\nSTUDY DOCUMENTATION:\n- Initial SAE report submitted to DNL portal at 09:00 today\n- IRB notification submitted yesterday\n- Drug accountability completed - all unused study drug quarantined for return\n- Early termination visit scheduled for March 22, 2024\n\nThe patient and her family are grateful for the quick response and coordination between teams.\n\nPlease let me know if you need any additional information.\n\nBest regards,\n\nSarah Chen, RN, CCRC\nClinical Research Coordinator\nCity Medical Center",
+      "attachments": [
+        "SAE_Report_202-015-008_Initial.pdf"
+      ],
+      "message_id": "<update-001@citymedicalcenter.org>",
+      "in_reply_to": "<followup-001@dnlpharma.com>"
+    }
+  ],
+  "role_descriptions": [
+    "sarah.chen@citymedicalcenter.org: Site - Clinical Research Coordinator at City Medical Center",
+    "dr.martinez@citymedicalcenter.org: Site - Principal Investigator at City Medical Center",
+    "jennifer.wong@dnlpharma.com: Sponsor - Senior Clinical Trial Manager at DNL Pharmaceuticals",
+    "medicalmonitor@dnlpharma.com: Sponsor - Medical Monitor (Dr. Patricia Reynolds) at DNL Pharmaceuticals",
+    "david.foster@dnlpharma.com: Sponsor - Clinical Operations Director at DNL Pharmaceuticals",
+    "unblinding@dnlpharma.com: Sponsor - Unblinding Administrator (Michael Stevens) at DNL Pharmaceuticals"
+  ],
+  "description": "Site requesting emergency unblinding for a Part B participant who experienced a serious adverse event (hospitalization for seizure) to inform treating physicians whether patient received DNL593 or placebo"
+}

@@ -1,0 +1,165 @@
+{
+  "emails": [
+    {
+      "from_address": "sarah.martinez@regionalctu.org",
+      "to_addresses": [
+        "clinops@pharmatrial.com",
+        "ipdistribution@medsponsor.com"
+      ],
+      "cc_addresses": [
+        "pharmacy.supervisor@regionalctu.org",
+        "pi.chen@regionalctu.org"
+      ],
+      "subject": "URGENT: Temperature Excursion - DNL593 Study #2023-DNL-301 - Site 1047",
+      "timestamp": "2024-03-14T07:23:00Z",
+      "body": "Good morning,\n\nI am reporting an urgent temperature excursion event that occurred overnight in our pharmacy investigational product refrigerator.\n\nDETAILS:\n- Study: DNL593-301\n- Site Number: 1047\n- Discovery Time: 07:00 today (March 14, 2024)\n- Refrigerator: IP Fridge #2 (dedicated to DNL593 storage)\n- Issue: Refrigerator malfunction - door seal failure detected\n\nOur temperature monitoring system alarmed at approximately 02:15 this morning, but the pharmacy was not staffed until 07:00. Upon arrival, I found the refrigerator temperature reading 15\u00b0C (should be 2-8\u00b0C).\n\nWe have:\n- Immediately transferred all DNL593 vials to backup refrigerator (validated, temp stable)\n- Documented the event with photos and temperature logs\n- Secured the malfunctioning unit\n\nWe currently have 18 vials of DNL593 that were stored in the affected refrigerator. I need urgent guidance on:\n1. Whether these vials can still be dispensed to patients\n2. What documentation you require from us\n3. Whether we need to quarantine all affected product\n\nWe have two patients scheduled for dosing tomorrow (March 15) and need to know if we can proceed.\n\nPlease advise urgently.\n\nBest regards,\nSarah Martinez, PharmD\nClinical Trials Pharmacist\nRegional Clinical Trials Unit\nPhone: +1-555-0147",
+      "attachments": [],
+      "message_id": "<20240314072300.1047@regionalctu.org>",
+      "in_reply_to": null
+    },
+    {
+      "from_address": "james.wong@pharmatrial.com",
+      "to_addresses": [
+        "sarah.martinez@regionalctu.org"
+      ],
+      "cc_addresses": [
+        "clinops@pharmatrial.com",
+        "ipdistribution@medsponsor.com",
+        "pharmacy.supervisor@regionalctu.org",
+        "pi.chen@regionalctu.org",
+        "qa.tempexcursions@medsponsor.com"
+      ],
+      "subject": "RE: URGENT: Temperature Excursion - DNL593 Study #2023-DNL-301 - Site 1047",
+      "timestamp": "2024-03-14T08:45:00Z",
+      "body": "Dear Sarah,\n\nThank you for the prompt notification. I am looping in the sponsor QA team and we are treating this as a priority issue.\n\nTo properly assess the impact, please provide the following information as soon as possible:\n\n1. TEMPERATURE DATA:\n   - Complete temperature log from the monitoring system (last 24 hours minimum)\n   - Exact time the temperature first exceeded 8\u00b0C\n   - Maximum temperature reached\n   - Duration of excursion\n\n2. AFFECTED PRODUCT:\n   - Complete list of vial numbers stored in the affected refrigerator\n   - Lot numbers for all affected vials\n   - Expiration dates\n   - Current drug accountability records showing which vials are assigned to which patients\n\n3. DOCUMENTATION:\n   - Photos of the refrigerator temperature display\n   - Photos of the alarm system showing alert time\n   - Maintenance records for this refrigerator (last calibration/validation)\n\nPlease DO NOT dispense any product from the affected refrigerator until we provide clearance. Place all 18 vials on quarantine status immediately.\n\nFor your scheduled patients tomorrow, we will work to provide a decision by end of day today (5 PM EST). If needed, we can arrange emergency shipment of replacement product overnight.\n\nI will schedule a conference call for 2 PM EST today with sponsor medical and quality teams. Dial-in details to follow.\n\nRegards,\nJames Wong\nClinical Operations Manager\nPharmaTrial CRO\nMobile: +1-555-0198",
+      "attachments": [],
+      "message_id": "<20240314084500.5821@pharmatrial.com>",
+      "in_reply_to": "<20240314072300.1047@regionalctu.org>"
+    },
+    {
+      "from_address": "sarah.martinez@regionalctu.org",
+      "to_addresses": [
+        "james.wong@pharmatrial.com"
+      ],
+      "cc_addresses": [
+        "clinops@pharmatrial.com",
+        "ipdistribution@medsponsor.com",
+        "pharmacy.supervisor@regionalctu.org",
+        "pi.chen@regionalctu.org",
+        "qa.tempexcursions@medsponsor.com"
+      ],
+      "subject": "RE: URGENT: Temperature Excursion - DNL593 Study #2023-DNL-301 - Site 1047",
+      "timestamp": "2024-03-14T10:12:00Z",
+      "body": "James,\n\nPlease find the requested information below and attached.\n\n1. TEMPERATURE DATA:\n   - Temperature monitoring log attached (TempLog_IPFridge2_March13-14.pdf)\n   - First excursion above 8\u00b0C: March 14, 2024 at 01:47 AM\n   - Maximum temperature reached: 16.2\u00b0C at 06:30 AM\n   - Duration: Approximately 5 hours 13 minutes above 8\u00b0C\n   - Temperature timeline:\n     * 01:47 - 8.1\u00b0C (first breach)\n     * 02:15 - 9.8\u00b0C (alarm triggered)\n     * 03:00 - 11.5\u00b0C\n     * 04:30 - 14.2\u00b0C\n     * 06:30 - 16.2\u00b0C (peak)\n     * 07:15 - Product transferred to backup fridge\n\n2. AFFECTED PRODUCT (all DNL593, 50mg/mL concentration):\n   Lot #: DNL593-2023-B047, Expiry: 31-DEC-2024\n   - Vials: 001-1047-0023 through 001-1047-0040 (18 vials total)\n   - All vials are currently unassigned (in site stock)\n   - Next scheduled assignments: Vials 0023 and 0024 for Patient 1047-008 (visit tomorrow)\n   - Drug accountability log attached (DrugAccountability_Site1047_Current.xlsx)\n\n3. DOCUMENTATION ATTACHED:\n   - TempExcursion_Photos_March14.pdf (refrigerator display, alarm system, affected vials)\n   - Fridge2_CalibrationCert_Jan2024.pdf (last calibration: January 15, 2024 - within specs)\n   - Fridge2_ValidationReport_2023.pdf\n\nAll 18 vials have been placed in quarantine status in our pharmacy management system as of 08:50 this morning. They are physically segregated in a quarantine bin in the backup refrigerator with \"DO NOT USE\" labels.\n\nI have notified our maintenance contractor and they are sending a technician to inspect the malfunctioning unit this afternoon. Preliminary assessment suggests the door seal degraded, causing inadequate closure.\n\nI will be available for the 2 PM call. Please send dial-in information.\n\nRegarding the patients scheduled tomorrow:\n- Patient 1047-008: Visit 4, scheduled 10:00 AM March 15\n- Patient 1047-012: Visit 6, scheduled 2:00 PM March 15\n\nPlease confirm if we should contact these patients to reschedule pending your assessment.\n\nThank you,\nSarah Martinez, PharmD",
+      "attachments": [
+        "TempLog_IPFridge2_March13-14.pdf",
+        "DrugAccountability_Site1047_Current.xlsx",
+        "TempExcursion_Photos_March14.pdf",
+        "Fridge2_CalibrationCert_Jan2024.pdf",
+        "Fridge2_ValidationReport_2023.pdf"
+      ],
+      "message_id": "<20240314101200.1048@regionalctu.org>",
+      "in_reply_to": "<20240314084500.5821@pharmatrial.com>"
+    },
+    {
+      "from_address": "james.wong@pharmatrial.com",
+      "to_addresses": [
+        "sarah.martinez@regionalctu.org",
+        "clinops@pharmatrial.com",
+        "ipdistribution@medsponsor.com",
+        "pharmacy.supervisor@regionalctu.org",
+        "pi.chen@regionalctu.org",
+        "qa.tempexcursions@medsponsor.com"
+      ],
+      "cc_addresses": [
+        "dr.patel@medsponsor.com",
+        "regulatory@medsponsor.com"
+      ],
+      "subject": "RE: URGENT: Temperature Excursion - DNL593 Study #2023-DNL-301 - Site 1047 - Conference Call Details",
+      "timestamp": "2024-03-14T11:30:00Z",
+      "body": "All,\n\nThank you Sarah for the comprehensive documentation. I have reviewed the temperature logs and accountability records with the sponsor team.\n\nCONFERENCE CALL DETAILS:\nDate: March 14, 2024\nTime: 2:00 PM EST (11:00 AM PST)\nDial-in: +1-888-555-0199\nAccess Code: 847392#\nWebEx Link: https://pharmatrial.webex.com/meet/tempexcursion031424\n\nAttendees:\n- Sarah Martinez (Site Pharmacy)\n- Dr. Lisa Chen (Site PI) - optional\n- James Wong (CRO Clinical Ops)\n- Dr. Rajesh Patel (Sponsor Medical Monitor)\n- Michelle Torres (Sponsor QA)\n- David Kim (Sponsor Drug Supply)\n\nAgenda:\n1. Review temperature excursion timeline\n2. Assess stability data for DNL593 under excursion conditions\n3. Determine product usability\n4. Discuss corrective and preventive actions\n5. Protocol deviation reporting requirements\n\nSarah - please DO hold off on contacting the patients until after our call. We should have a decision by 3:30 PM EST.\n\nI am also requesting that the sponsor provide the stability data for DNL593 at elevated temperatures so we can make an informed decision.\n\nSee everyone at 2 PM.\n\nJames Wong\nPharmaTrial CRO",
+      "attachments": [],
+      "message_id": "<20240314113000.5822@pharmatrial.com>",
+      "in_reply_to": "<20240314101200.1048@regionalctu.org>"
+    },
+    {
+      "from_address": "dr.patel@medsponsor.com",
+      "to_addresses": [
+        "james.wong@pharmatrial.com",
+        "sarah.martinez@regionalctu.org"
+      ],
+      "cc_addresses": [
+        "clinops@pharmatrial.com",
+        "ipdistribution@medsponsor.com",
+        "pharmacy.supervisor@regionalctu.org",
+        "pi.chen@regionalctu.org",
+        "qa.tempexcursions@medsponsor.com",
+        "regulatory@medsponsor.com",
+        "david.kim@medsponsor.com"
+      ],
+      "subject": "RE: URGENT: Temperature Excursion - DNL593 Study #2023-DNL-301 - Site 1047 - Stability Assessment",
+      "timestamp": "2024-03-14T13:15:00Z",
+      "body": "Team,\n\nI have reviewed the temperature excursion data with our CMC and stability teams. Here is the preliminary assessment prior to our 2 PM call:\n\nSTABILITY DATA SUMMARY:\nDNL593 (50mg/mL) has been tested under accelerated stability conditions:\n- Storage at 25\u00b0C/60% RH: Stable for up to 7 days (no degradation >2%)\n- Storage at 40\u00b0C/75% RH: Stable for up to 48 hours\n\nEXCURSION ASSESSMENT:\n- Maximum temperature: 16.2\u00b0C\n- Duration at >8\u00b0C: ~5 hours\n- This falls well within our stability envelope\n\nPRELIMINARY CONCLUSION:\nFrom a product stability and patient safety perspective, the affected vials remain suitable for use. The excursion was:\n1. Relatively brief (5 hours)\n2. Moderate temperature (max 16.2\u00b0C, well below accelerated stability test conditions)\n3. Single event (not repeated exposure)\n4. Well-documented\n\nHOWEVER, we must still address:\n1. Regulatory reporting requirements (protocol deviation)\n2. Quality system documentation\n3. Root cause analysis and CAPA\n4. Whether this constitutes a reportable event to IRB/EC\n\nI recommend we proceed with the affected product for patient dosing, but we need QA sign-off and proper documentation in place.\n\nSee you all on the call in 45 minutes.\n\nDr. Rajesh Patel, MD, PhD\nMedical Monitor\nMedSponsor Pharmaceuticals\nDirect: +1-555-0234",
+      "attachments": [],
+      "message_id": "<20240314131500.9847@medsponsor.com>",
+      "in_reply_to": "<20240314113000.5822@pharmatrial.com>"
+    },
+    {
+      "from_address": "michelle.torres@medsponsor.com",
+      "to_addresses": [
+        "dr.patel@medsponsor.com",
+        "james.wong@pharmatrial.com",
+        "sarah.martinez@regionalctu.org"
+      ],
+      "cc_addresses": [
+        "clinops@pharmatrial.com",
+        "ipdistribution@medsponsor.com",
+        "pharmacy.supervisor@regionalctu.org",
+        "pi.chen@regionalctu.org",
+        "qa.tempexcursions@medsponsor.com",
+        "regulatory@medsponsor.com",
+        "david.kim@medsponsor.com"
+      ],
+      "subject": "RE: URGENT: Temperature Excursion - DNL593 Study #2023-DNL-301 - Site 1047 - QA Assessment",
+      "timestamp": "2024-03-14T15:45:00Z",
+      "body": "All,\n\nThank you for the productive call. This email serves as official documentation of our decisions and action items.\n\nDECISION: PRODUCT APPROVED FOR USE\n\nBased on the stability data presented by Dr. Patel and the thorough documentation provided by Site 1047, Quality Assurance approves the continued use of the 18 affected DNL593 vials (Lot DNL593-2023-B047, vials 001-1047-0023 through 001-1047-0040).\n\nRATIONALE:\n1. Temperature excursion (max 16.2\u00b0C for 5 hours) is within validated stability parameters\n2. Product integrity is not compromised\n3. No patient safety concerns identified\n4. Complete documentation and traceability maintained\n\nREQUIRED ACTIONS:\n\nSite 1047 (Sarah Martinez):\n\u25a1 Complete Temperature Excursion Report Form (TERF-001) - Due: March 15, 2024\n\u25a1 Submit Protocol Deviation Report (minor deviation) - Due: March 18, 2024\n\u25a1 Update drug accountability log to note excursion event for affected vials\n\u25a1 Add notation in dispensing records when these vials are used\n\u25a1 Complete root cause analysis with maintenance contractor - Due: March 21, 2024\n\u25a1 Implement CAPA: Enhanced monitoring procedures and backup alarm notification - Due: March 28, 2024\n\u25a1 Provide maintenance/repair report for affected refrigerator - Due: March 18, 2024\n\nCRO (James Wong):\n\u25a1 Submit protocol deviation to sponsor within 5 business days\n\u25a1 Ensure site completes all required documentation\n\u25a1 Track CAPA implementation\n\u25a1 Update site monitoring report\n\nSponsor (MedSponsor):\n\u25a1 Review and approve protocol deviation report\n\u25a1 Determine if IRB notification required (Regulatory to assess) - Due: March 15, 2024\n\u25a1 File temperature excursion in TMF\n\u25a1 Update risk management plan if needed\n\nREGULATORY REPORTING:\nOur regulatory team will assess whether this event requires IRB notification. Preliminary assessment: likely NOT reportable as it does not impact patient safety and product remains within specifications. Final determination by COB tomorrow.\n\nSITE MAY PROCEED WITH SCHEDULED PATIENT VISITS ON MARCH 15.\n\nThe affected vials are released from quarantine status and may be dispensed per protocol.\n\nPlease confirm receipt of this email and acknowledge action items.\n\nBest regards,\n\nMichelle Torres\nSenior Quality Assurance Manager\nMedSponsor Pharmaceuticals\nEmail: michelle.torres@medsponsor.com\nPhone: +1-555-0267",
+      "attachments": [],
+      "message_id": "<20240314154500.3921@medsponsor.com>",
+      "in_reply_to": "<20240314131500.9847@medsponsor.com>"
+    },
+    {
+      "from_address": "sarah.martinez@regionalctu.org",
+      "to_addresses": [
+        "michelle.torres@medsponsor.com"
+      ],
+      "cc_addresses": [
+        "dr.patel@medsponsor.com",
+        "james.wong@pharmatrial.com",
+        "clinops@pharmatrial.com",
+        "ipdistribution@medsponsor.com",
+        "pharmacy.supervisor@regionalctu.org",
+        "pi.chen@regionalctu.org"
+      ],
+      "subject": "RE: URGENT: Temperature Excursion - DNL593 Study #2023-DNL-301 - Site 1047 - Acknowledgment",
+      "timestamp": "2024-03-14T16:20:00Z",
+      "body": "Michelle and team,\n\nThank you for the thorough assessment and rapid turnaround. I acknowledge receipt of the QA decision and action items.\n\nCONFIRMATIONS:\n\u2713 I have removed the quarantine status from all 18 affected vials in our pharmacy system\n\u2713 Vials are now available for dispensing with notation \"Temp Excursion 3/14/24 - QA Approved\"\n\u2713 I have contacted both patients scheduled for tomorrow - visits will proceed as planned\n\u2713 Drug accountability records have been updated with excursion documentation reference\n\nACTION ITEM STATUS:\n\u2713 Temperature Excursion Report Form (TERF-001) - Will complete by EOD March 15\n\u2713 Protocol Deviation Report - Will submit by March 18\n\u2713 Root cause analysis - Maintenance contractor scheduled for March 18, report by March 21\n\u2713 Maintenance/repair report - Will provide by March 18\n\u2713 CAPA implementation - Plan drafted, will implement by March 28\n\nThe malfunctioning refrigerator remains out of service pending full repair and re-validation. All DNL593 product is now stored in our backup validated refrigerator (Fridge #3), which has redundant temperature monitoring with 24/7 alarm notification to our on-call pharmacy staff.\n\nI will send the completed TERF-001 form tomorrow after our patient visits.\n\nThank you again for your support in resolving this issue quickly and thoroughly.\n\nBest regards,\nSarah Martinez, PharmD\nClinical Trials Pharmacist\nRegional Clinical Trials Unit",
+      "attachments": [],
+      "message_id": "<20240314162000.1049@regionalctu.org>",
+      "in_reply_to": "<20240314154500.3921@medsponsor.com>"
+    }
+  ],
+  "role_descriptions": [
+    "sarah.martinez@regionalctu.org: Regional Clinical Trials Unit (Site), Clinical Trials Pharmacist",
+    "pharmacy.supervisor@regionalctu.org: Regional Clinical Trials Unit (Site), Pharmacy Supervisor",
+    "pi.chen@regionalctu.org: Regional Clinical Trials Unit (Site), Principal Investigator",
+    "james.wong@pharmatrial.com: PharmaTrial CRO (CRO), Clinical Operations Manager",
+    "clinops@pharmatrial.com: PharmaTrial CRO (CRO), Clinical Operations Team",
+    "ipdistribution@medsponsor.com: MedSponsor Pharmaceuticals (Sponsor), Investigational Product Distribution",
+    "qa.tempexcursions@medsponsor.com: MedSponsor Pharmaceuticals (Sponsor), Quality Assurance - Temperature Excursions",
+    "dr.patel@medsponsor.com: MedSponsor Pharmaceuticals (Sponsor), Medical Monitor",
+    "michelle.torres@medsponsor.com: MedSponsor Pharmaceuticals (Sponsor), Senior Quality Assurance Manager",
+    "regulatory@medsponsor.com: MedSponsor Pharmaceuticals (Sponsor), Regulatory Affairs",
+    "david.kim@medsponsor.com: MedSponsor Pharmaceuticals (Sponsor), Drug Supply Management"
+  ],
+  "description": "Site pharmacy at Regional Clinical Trials Unit reporting temperature excursion for investigational product storage (refrigerator malfunction overnight), asking for assessment of drug accountability records and whether affected DNL593 vials can still be used"
+}

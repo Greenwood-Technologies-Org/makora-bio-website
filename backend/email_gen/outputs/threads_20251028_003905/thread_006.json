@@ -1,0 +1,120 @@
+{
+  "emails": [
+    {
+      "from_address": "jennifer.martinez@citymedicalcenter.org",
+      "to_addresses": [
+        "dr.robert.chen@citymedicalcenter.org"
+      ],
+      "cc_addresses": [
+        "sarah.williams@clintrialcro.com"
+      ],
+      "subject": "URGENT: Protocol Deviation - Part A Participants 1023 and 1027 Inclusion Criteria Issue",
+      "timestamp": "2024-03-15T09:23:00-05:00",
+      "body": "Dr. Chen,\n\nI need to report an urgent protocol deviation discovered during routine source document verification.\n\nDuring my review of historical medical records for participants enrolled in Part A, I identified that two participants (1023 and 1027) do not meet the healthy participant inclusion criteria:\n\nParticipant 1023:\n- Enrolled on February 12, 2024\n- Medical records obtained from previous provider show diagnosis of Type 2 Diabetes (controlled, on metformin) from 2022\n- This condition was not disclosed during screening\n- Participant has received 2 doses of study drug\n\nParticipant 1027:\n- Enrolled on February 20, 2024\n- Hospital records show previous diagnosis of hypertension (Stage 1) from 2021\n- Currently on lisinopril 10mg daily\n- This was not disclosed during screening process\n- Participant has received 1 dose of study drug\n\nBoth participants signed informed consent and completed screening procedures. The conditions were only discovered when I received complete medical records from their previous healthcare providers this week.\n\nI need guidance on:\n1. Immediate actions required for participant safety\n2. Protocol deviation classification and reporting timeline\n3. Whether participants should continue or be discontinued\n4. Notification requirements to IRB and sponsor\n\nBoth participants are currently scheduled for their next visits next week. Please advise urgently.\n\nBest regards,\nJennifer Martinez, RN, BSN\nStudy Coordinator\nCity Medical Center Clinical Research Unit\nProtocol: XYZ-301-Part A",
+      "attachments": [],
+      "message_id": "<msg-001-20240315-092300@citymedicalcenter.org>",
+      "in_reply_to": null
+    },
+    {
+      "from_address": "dr.robert.chen@citymedicalcenter.org",
+      "to_addresses": [
+        "jennifer.martinez@citymedicalcenter.org"
+      ],
+      "cc_addresses": [
+        "sarah.williams@clintrialcro.com",
+        "medical.monitor@pharmatech.com"
+      ],
+      "subject": "RE: URGENT: Protocol Deviation - Part A Participants 1023 and 1027 Inclusion Criteria Issue",
+      "timestamp": "2024-03-15T10:47:00-05:00",
+      "body": "Jennifer,\n\nThank you for bringing this to my attention immediately. This is indeed a serious protocol deviation that requires urgent attention.\n\nI have reviewed the screening documentation for both participants, and I can confirm that:\n- Medical history forms completed at screening did not capture these conditions\n- Participants verbally denied chronic medical conditions during screening interviews\n- Physical exams and screening labs did not raise red flags at the time\n\nHowever, the protocol clearly defines \"healthy participants\" as those without chronic medical conditions requiring ongoing medication.\n\nImmediate actions I'm taking:\n1. I will personally review both participants' current safety data and all available medical records today\n2. I am placing both participants on hold for any further study procedures until we receive sponsor guidance\n3. I will assess whether there are any immediate safety concerns requiring intervention\n\nSarah - as our CRO monitor, please escalate this immediately to the sponsor medical monitor and provide guidance on:\n- Deviation classification (major vs critical)\n- Reporting timelines to sponsor and regulatory authorities\n- Whether these should be reported as protocol deviations or protocol violations\n- Participant management recommendations\n\nI am also copying the sponsor medical monitor directly for visibility.\n\nWe need to ensure participant safety is our first priority while also meeting all regulatory reporting obligations.\n\nI will be available by phone all day for discussion.\n\nDr. Robert Chen, MD, PhD\nPrincipal Investigator\nCity Medical Center\nOffice: (555) 234-5678\nCell: (555) 234-5679",
+      "attachments": [],
+      "message_id": "<msg-002-20240315-104700@citymedicalcenter.org>",
+      "in_reply_to": "<msg-001-20240315-092300@citymedicalcenter.org>"
+    },
+    {
+      "from_address": "sarah.williams@clintrialcro.com",
+      "to_addresses": [
+        "dr.robert.chen@citymedicalcenter.org",
+        "jennifer.martinez@citymedicalcenter.org"
+      ],
+      "cc_addresses": [
+        "medical.monitor@pharmatech.com",
+        "clinical.operations@pharmatech.com",
+        "david.thompson@clintrialcro.com"
+      ],
+      "subject": "RE: URGENT: Protocol Deviation - Part A Participants 1023 and 1027 Inclusion Criteria Issue",
+      "timestamp": "2024-03-15T11:32:00-05:00",
+      "body": "Dr. Chen and Jennifer,\n\nThank you for the immediate notification. I have escalated this to our sponsor partners and am providing initial guidance while we await medical monitor input.\n\nImmediate Actions (Confirmed):\n1. \u2713 Both participants on hold for further study procedures - CORRECT\n2. Please conduct immediate safety assessments for both participants\n3. Do NOT unblind treatment assignments at this time\n4. Secure all source documentation related to screening and enrollment\n\nDeviation Classification - Preliminary Assessment:\nBased on the protocol definition of healthy participants and the fact that study drug has been administered, this appears to be a MAJOR protocol deviation for each participant. However, final classification will be determined by the sponsor medical monitor.\n\nReporting Requirements:\n1. Protocol Deviation Forms: Must be completed within 24 hours of discovery (by end of day March 16)\n2. Sponsor notification: Immediate (this email chain serves as initial notification)\n3. IRB notification: Within 5 business days per your IRB's reporting requirements for unanticipated problems\n4. Regulatory authority notification: To be determined by sponsor based on deviation classification\n\nDocumentation Needed:\n1. Complete screening source documents for both participants\n2. Medical history questionnaires completed by participants\n3. Historical medical records that revealed the undisclosed conditions\n4. All safety data collected to date for both participants\n5. Timeline of when records were requested vs. received\n\nI am scheduling an urgent call for today at 3:00 PM EST to discuss:\n- Participant safety assessment\n- Continuation vs. discontinuation decision\n- Root cause analysis\n- CAPA (Corrective and Preventive Actions)\n\nCall details will be sent separately.\n\nDavid Thompson, our Clinical Quality Manager, is also looped in for deviation reporting guidance.\n\nSarah Williams, MSN, RN\nSenior Clinical Monitor\nClinTrial CRO\nMobile: (555) 345-6789",
+      "attachments": [],
+      "message_id": "<msg-003-20240315-113200@clintrialcro.com>",
+      "in_reply_to": "<msg-002-20240315-104700@citymedicalcenter.org>"
+    },
+    {
+      "from_address": "medical.monitor@pharmatech.com",
+      "to_addresses": [
+        "dr.robert.chen@citymedicalcenter.org",
+        "sarah.williams@clintrialcro.com"
+      ],
+      "cc_addresses": [
+        "jennifer.martinez@citymedicalcenter.org",
+        "clinical.operations@pharmatech.com",
+        "david.thompson@clintrialcro.com",
+        "regulatory.affairs@pharmatech.com"
+      ],
+      "subject": "RE: URGENT: Protocol Deviation - Part A Participants 1023 and 1027 Inclusion Criteria Issue - SPONSOR GUIDANCE",
+      "timestamp": "2024-03-15T13:15:00-05:00",
+      "body": "Dr. Chen, Sarah, and Jennifer,\n\nThank you for the immediate notification and appropriate escalation. I have reviewed the information provided and consulted with our regulatory affairs and clinical operations teams.\n\nPARTICIPANT SAFETY ASSESSMENT:\nBased on the known safety profile of the investigational product and the specific conditions disclosed (Type 2 Diabetes controlled on metformin, Stage 1 Hypertension controlled on lisinopril), there is no immediate safety concern that would require emergency intervention. However:\n\n1. Both participants must undergo comprehensive safety assessments within 48 hours including:\n   - Complete physical examination\n   - Vital signs\n   - Clinical laboratory tests (including HbA1c for 1023)\n   - ECG\n   - Assessment for any adverse events\n\n2. Review all concomitant medications to ensure no drug-drug interactions with study drug\n\nPARTICIPANT MANAGEMENT DECISION:\nBoth participants must be DISCONTINUED from the study immediately due to protocol violations of inclusion/exclusion criteria. Rationale:\n- Protocol XYZ-301-Part A specifically requires \"healthy participants with no chronic medical conditions\"\n- Both conditions require ongoing pharmacological management\n- Continued participation would constitute ongoing protocol violations\n- Part A is designed to establish safety in healthy participants before moving to patient populations\n\nDISCONTINUATION PROCEDURES:\n1. Complete early termination visits per protocol Section 7.4\n2. Ensure 30-day safety follow-up is completed\n3. Provide participants with clear explanation (protocol eligibility issue, not safety concern)\n4. Ensure participants understand this does not reflect negatively on them\n5. Provide appropriate referral back to their primary care providers\n\nDEVIATION CLASSIFICATION:\nI am classifying these as MAJOR PROTOCOL DEVIATIONS (not violations, as the site acted in good faith with information available at screening). Classification rationale:\n- Inclusion/exclusion criteria not met\n- Study drug administered to ineligible participants\n- However, no immediate safety impact identified\n- Not due to willful or knowing misconduct\n\nREPORTING REQUIREMENTS:\n1. Protocol Deviation Reports: Due within 24 hours (by March 16, 5:00 PM EST)\n2. IRB Reportable Event: Submit within your IRB's timeline for unanticipated problems\n3. Sponsor Safety Database: Enter all safety data within 24 hours\n4. FDA Reporting: Not required as IND safety report (does not meet criteria for serious or unexpected)\n5. Study file documentation: Complete within 5 business days\n\nROOT CAUSE ANALYSIS REQUIRED:\nPlease conduct root cause analysis addressing:\n1. Why were these conditions not identified during screening?\n2. Were appropriate questions asked during medical history collection?\n3. Was the medical history form adequate?\n4. Were previous medical records requested at screening? If not, why not?\n5. What is the site's standard process for obtaining historical medical records?\n6. Were there any language or communication barriers?\n7. Did participants understand the questions being asked?\n\nCORRECTIVE AND PREVENTIVE ACTIONS (CAPA):\nRequired actions for site:\n1. Revise screening procedures to include mandatory request for medical records from all previous healthcare providers BEFORE enrollment\n2. Implement enhanced medical history interview with specific probing questions\n3. Add verification step: coordinator must confirm receipt and review of outside medical records before enrollment\n4. Retrain all study staff on screening procedures and inclusion/exclusion criteria\n5. Review all currently enrolled Part A participants for similar issues\n\nI will join the 3:00 PM call today to discuss further. Please send call-in details.\n\nFor questions, I am available at the contact information below.\n\nDr. Patricia Anderson, MD\nMedical Monitor\nPharmaTech Industries\nDirect: (555) 456-7890\nEmail: medical.monitor@pharmatech.com",
+      "attachments": [],
+      "message_id": "<msg-004-20240315-131500@pharmatech.com>",
+      "in_reply_to": "<msg-003-20240315-113200@clintrialcro.com>"
+    },
+    {
+      "from_address": "dr.robert.chen@citymedicalcenter.org",
+      "to_addresses": [
+        "medical.monitor@pharmatech.com",
+        "sarah.williams@clintrialcro.com"
+      ],
+      "cc_addresses": [
+        "jennifer.martinez@citymedicalcenter.org",
+        "clinical.operations@pharmatech.com",
+        "david.thompson@clintrialcro.com",
+        "regulatory.affairs@pharmatech.com"
+      ],
+      "subject": "RE: URGENT: Protocol Deviation - Part A Participants 1023 and 1027 Inclusion Criteria Issue - SPONSOR GUIDANCE",
+      "timestamp": "2024-03-15T14:42:00-05:00",
+      "body": "Dr. Anderson and team,\n\nThank you for the comprehensive guidance. I am in full agreement with the recommendations and will implement immediately.\n\nACTIONS UNDERWAY:\n\n1. Safety Assessments: I have personally contacted both participants and scheduled comprehensive safety assessments for tomorrow morning (March 16). Both participants report feeling well with no adverse events.\n\n2. Discontinuation: I will meet with both participants tomorrow to:\n   - Explain the eligibility issue in a sensitive, non-judgmental manner\n   - Complete early termination procedures\n   - Schedule 30-day safety follow-up\n   - Provide referral letters to their primary care physicians\n\n3. Protocol Deviation Forms: Jennifer is preparing these and they will be submitted by end of day tomorrow.\n\n4. IRB Notification: Our IRB requires reporting within 5 business days for unanticipated problems. I will submit the report by March 20.\n\n5. Review of Other Participants: Jennifer is conducting immediate review of all 12 currently enrolled Part A participants to verify:\n   - Medical history forms are complete\n   - Outside medical records have been obtained and reviewed\n   - No similar issues exist\n\nROOT CAUSE ANALYSIS - Preliminary Findings:\n\nAfter reviewing our screening procedures, I have identified the following issues:\n\n1. Our medical history form asks \"Do you have any chronic medical conditions?\" but does not specifically list examples or probe for common conditions\n\n2. We do not routinely request outside medical records BEFORE enrollment - we request them post-enrollment for source document verification\n\n3. Both participants are relatively new to our area (moved within past year) and may not have considered their well-controlled conditions as \"chronic\" or significant\n\n4. Participant 1023 stated he thought \"diabetes\" only meant insulin-dependent diabetes\n\n5. Participant 1027 stated her hypertension was \"borderline\" and she didn't think it counted\n\nThis reveals a gap in our screening process and participant education.\n\nCORRECTIVE ACTIONS - Immediate Implementation:\n\n1. REVISED SCREENING PROCEDURE (effective immediately for all future participants):\n   - Medical history form revised to include specific checklist of common conditions\n   - Added requirement: signed release for ALL previous healthcare providers at screening visit\n   - New verification step: outside medical records must be received, reviewed, and documented BEFORE enrollment\n   - If records cannot be obtained within 14 days of screening, participant cannot be enrolled\n\n2. ENHANCED INTERVIEW PROCESS:\n   - Created structured interview guide with probing questions\n   - Specific questions about medications (prescription, OTC, supplements)\n   - Questions about previous diagnoses even if \"controlled\" or \"mild\"\n\n3. STAFF RETRAINING:\n   - Scheduling mandatory retraining for all study staff on March 18\n   - Will cover inclusion/exclusion criteria, medical history collection, and new procedures\n   - Will include case studies and role-playing exercises\n\n4. QUALITY CHECK:\n   - Adding second-person verification of eligibility before enrollment\n   - I will personally review and sign off on eligibility for next 10 participants\n\nI take full responsibility for this deviation and am committed to ensuring it does not happen again. The revised procedures will be shared with you for review before implementation.\n\nI will be on the 3:00 PM call to discuss further.\n\nDr. Robert Chen, MD, PhD\nPrincipal Investigator\nCity Medical Center",
+      "attachments": [],
+      "message_id": "<msg-005-20240315-144200@citymedicalcenter.org>",
+      "in_reply_to": "<msg-004-20240315-131500@pharmatech.com>"
+    },
+    {
+      "from_address": "sarah.williams@clintrialcro.com",
+      "to_addresses": [
+        "dr.robert.chen@citymedicalcenter.org",
+        "medical.monitor@pharmatech.com"
+      ],
+      "cc_addresses": [
+        "jennifer.martinez@citymedicalcenter.org",
+        "clinical.operations@pharmatech.com",
+        "david.thompson@clintrialcro.com",
+        "regulatory.affairs@pharmatech.com"
+      ],
+      "subject": "RE: URGENT: Protocol Deviation - Part A Participants 1023 and 1027 Inclusion Criteria Issue - Call Details and Follow-up",
+      "timestamp": "2024-03-15T15:18:00-05:00",
+      "body": "All,\n\nExcellent progress on addressing this issue. Dr. Chen, thank you for the thorough response and proactive CAPA plan.\n\nCALL DETAILS - Today at 3:00 PM EST:\nDial-in: 1-888-555-0123\nAccess Code: 456789#\nWebex: https://clintrialcro.webex.com/meet/urgent.call.031524\n\nAGENDA:\n1. Safety assessment review (10 min)\n2. Participant discontinuation plan (10 min)\n3. Root cause analysis discussion (15 min)\n4. CAPA plan review and approval (15 min)\n5. Review of other enrolled participants (10 min)\n6. Documentation and reporting timeline (10 min)\n\nADDITIONAL FOLLOW-UP REQUIRED:\n\n1. Site will submit revised screening procedures to sponsor and CRO for review/approval before implementation\n\n2. I will conduct a focused monitoring visit on March 22 to:\n   - Review protocol deviation documentation\n   - Verify CAPA implementation\n   - Review all enrolled participant eligibility documentation\n   - Observe revised screening procedures\n\n3. David Thompson will conduct a quality audit of the site's screening process within 30 days\n\n4. We will implement similar preventive measures at all sites in the study (protocol amendment may be needed)\n\nDOCUMENTATION CHECKLIST:\nJennifer, please ensure the following are ready for review:\n\u25a1 Protocol Deviation Forms (both participants)\n\u25a1 Original screening source documents\n\u25a1 Outside medical records received\n\u25a1 Timeline documentation\n\u25a1 Root cause analysis report\n\u25a1 CAPA plan\n\u25a1 IRB submission letter (draft for review)\n\u25a1 Participant communication documentation\n\nI want to commend the site team for identifying this issue through diligent source document verification and for the immediate and appropriate escalation. While this is a serious deviation, the professional handling demonstrates strong quality culture.\n\nSee everyone on the call at 3:00 PM.\n\nSarah Williams, MSN, RN\nSenior Clinical Monitor\nClinTrial CRO",
+      "attachments": [],
+      "message_id": "<msg-006-20240315-151800@clintrialcro.com>",
+      "in_reply_to": "<msg-005-20240315-144200@citymedicalcenter.org>"
+    }
+  ],
+  "role_descriptions": [
+    "jennifer.martinez@citymedicalcenter.org: Site, Study Coordinator",
+    "dr.robert.chen@citymedicalcenter.org: Site, Principal Investigator",
+    "sarah.williams@clintrialcro.com: CRO, Senior Clinical Monitor",
+    "medical.monitor@pharmatech.com: Sponsor, Medical Monitor",
+    "clinical.operations@pharmatech.com: Sponsor, Clinical Operations",
+    "david.thompson@clintrialcro.com: CRO, Clinical Quality Manager",
+    "regulatory.affairs@pharmatech.com: Sponsor, Regulatory Affairs"
+  ],
+  "description": "Site coordinator reporting that 2 enrolled participants in Part A did not meet the 'healthy participant' criteria upon source document verification - historical medical records show undisclosed conditions, requesting guidance on protocol deviation reporting"
+}

@@ -1,0 +1,99 @@
+{
+  "emails": [
+    {
+      "from_address": "sarah.chen@umc.edu",
+      "to_addresses": [
+        "medical.monitor@pharmatech.com"
+      ],
+      "cc_addresses": [
+        "safety@clintrials-cro.com",
+        "study.coordinator@umc.edu"
+      ],
+      "subject": "URGENT: Grade 2 AE Report - Study PT-2024-301, Subject 1023-007",
+      "timestamp": "2024-03-15T09:23:00-05:00",
+      "body": "Dear Dr. Morrison,\n\nI am writing to report a Grade 2 adverse event for subject 1023-007 enrolled in Part B of Study PT-2024-301.\n\nPatient Details:\n- Study ID: 1023-007\n- Part B, Cohort 2 (150mg dose)\n- Day 14 of dosing\n- 58-year-old male\n\nEvent Description:\nRoutine Day 14 laboratory monitoring revealed elevated liver enzymes:\n- ALT: 156 U/L (baseline: 28 U/L; ULN: 55 U/L) - 2.8x ULN\n- AST: 142 U/L (baseline: 32 U/L; ULN: 48 U/L) - 3.0x ULN\n- Total bilirubin: 1.1 mg/dL (baseline: 0.8 mg/dL; ULN: 1.2 mg/dL) - within normal limits\n- Alkaline phosphatase: 88 U/L (baseline: 72 U/L; ULN: 140 U/L) - within normal limits\n\nThe patient is asymptomatic with no nausea, vomiting, abdominal pain, or jaundice. Vital signs are stable. He denies any new medications, alcohol consumption, or herbal supplements since enrollment.\n\nPer protocol Section 7.3, I have graded this as a Grade 2 AE (>2.5-5.0x ULN). I have held this morning's dose pending your guidance.\n\nQuestions:\n1. Should study drug be permanently discontinued or temporarily held?\n2. What is the recommended monitoring schedule for repeat LFTs?\n3. Are there additional tests you would like performed (hepatitis panel, etc.)?\n4. Should we proceed with the Day 15 PK sampling as scheduled?\n\nI am available by phone (555-0123) for immediate discussion if needed. The SAE report form will be submitted within 24 hours per protocol requirements.\n\nBest regards,\nDr. Sarah Chen, MD\nPrincipal Investigator\nUniversity Medical Center\nDepartment of Oncology",
+      "attachments": [],
+      "message_id": "<1710511380.1023007@umc.edu>",
+      "in_reply_to": null
+    },
+    {
+      "from_address": "james.morrison@pharmatech.com",
+      "to_addresses": [
+        "sarah.chen@umc.edu"
+      ],
+      "cc_addresses": [
+        "safety@clintrials-cro.com",
+        "study.coordinator@umc.edu",
+        "clinical.operations@pharmatech.com"
+      ],
+      "subject": "RE: URGENT: Grade 2 AE Report - Study PT-2024-301, Subject 1023-007",
+      "timestamp": "2024-03-15T10:47:00-04:00",
+      "body": "Dear Dr. Chen,\n\nThank you for the prompt report. I have reviewed the laboratory values and clinical information provided.\n\nTo assist in determining the appropriate course of action, please provide the following additional information:\n\n1. Complete hepatic panel including:\n   - GGT\n   - LDH\n   - Albumin\n   - PT/INR\n\n2. Viral hepatitis screening (HBsAg, Anti-HCV, Anti-HAV IgM)\n\n3. Has the patient had any recent imaging that might suggest hepatic pathology?\n\n4. Any concomitant medications that could contribute to hepatotoxicity?\n\n5. Alcohol use history (quantity/frequency prior to enrollment)\n\n6. Review of systems for any subtle symptoms (fatigue, pruritus, dark urine, pale stools)\n\nYou made the correct decision to hold the study drug. Please continue to hold dosing until further guidance is provided.\n\nI will convene an urgent safety review with our team this afternoon and provide guidance within 6 hours. In the interim, please monitor the patient closely and contact me immediately if:\n- Transaminases increase further\n- Bilirubin rises above ULN\n- Patient develops symptoms\n- Any signs of liver dysfunction appear\n\nMy mobile number is 555-0198 for urgent matters.\n\nBest regards,\nDr. James Morrison, MD, PhD\nMedical Monitor\nPharmaTech Biosciences\nClinical Development",
+      "attachments": [],
+      "message_id": "<CAF9B2E1.0052@pharmatech.com>",
+      "in_reply_to": "<1710511380.1023007@umc.edu>"
+    },
+    {
+      "from_address": "sarah.chen@umc.edu",
+      "to_addresses": [
+        "james.morrison@pharmatech.com"
+      ],
+      "cc_addresses": [
+        "safety@clintrials-cro.com",
+        "study.coordinator@umc.edu",
+        "clinical.operations@pharmatech.com"
+      ],
+      "subject": "RE: URGENT: Grade 2 AE Report - Study PT-2024-301, Subject 1023-007",
+      "timestamp": "2024-03-15T13:15:00-05:00",
+      "body": "Dear Dr. Morrison,\n\nThank you for the rapid response. Please find the requested information below:\n\n1. Complete hepatic panel (drawn today):\n   - GGT: 78 U/L (baseline: 42 U/L; ULN: 65 U/L) - mildly elevated\n   - LDH: 245 U/L (baseline: 198 U/L; ULN: 250 U/L) - high normal\n   - Albumin: 4.2 g/dL (baseline: 4.3 g/dL) - normal\n   - PT/INR: 1.0 (baseline: 1.0) - normal\n\n2. Viral hepatitis screening (results pending, samples sent to lab - expect results by Monday):\n   - HBsAg: pending\n   - Anti-HCV: pending\n   - Anti-HAV IgM: pending\n\n3. Imaging: CT chest/abdomen/pelvis performed at screening (Day -21) showed no hepatic abnormalities, normal liver architecture, no steatosis\n\n4. Concomitant medications:\n   - Metformin 1000mg BID (stable for 3 years)\n   - Atorvastatin 20mg daily (stable for 5 years, no prior LFT elevations)\n   - Lisinopril 10mg daily\n   - Aspirin 81mg daily\n   No changes since enrollment\n\n5. Alcohol history: Patient reports 1-2 glasses of wine per week socially, none in the past 2 weeks per protocol restrictions. No history of alcohol abuse.\n\n6. Review of systems: Patient specifically denies:\n   - Fatigue (energy level unchanged)\n   - Pruritus\n   - Dark urine\n   - Pale or clay-colored stools\n   - Abdominal pain or discomfort\n   - Nausea or decreased appetite\n\nPhysical exam today:\n- No jaundice, scleral icterus\n- No hepatomegaly (liver span 10cm by percussion)\n- No right upper quadrant tenderness\n- No spider angiomata or palmar erythema\n\nThe patient remains in good spirits and is asking about the plan. Study drug continues to be held. I am available for discussion at your convenience.\n\nBest regards,\nDr. Sarah Chen, MD",
+      "attachments": [],
+      "message_id": "<1710525300.1023007@umc.edu>",
+      "in_reply_to": "<CAF9B2E1.0052@pharmatech.com>"
+    },
+    {
+      "from_address": "james.morrison@pharmatech.com",
+      "to_addresses": [
+        "sarah.chen@umc.edu"
+      ],
+      "cc_addresses": [
+        "safety@clintrials-cro.com",
+        "study.coordinator@umc.edu",
+        "clinical.operations@pharmatech.com",
+        "regulatory@pharmatech.com"
+      ],
+      "subject": "RE: URGENT: Grade 2 AE Report - Study PT-2024-301, Subject 1023-007 - MEDICAL GUIDANCE",
+      "timestamp": "2024-03-15T15:42:00-04:00",
+      "body": "Dear Dr. Chen,\n\nThank you for the comprehensive follow-up information. I have completed the safety review with our clinical and medical affairs teams.\n\nMEDICAL GUIDANCE:\n\n1. STUDY DRUG MANAGEMENT:\n   - CONTINUE TO HOLD study drug until LFTs show downward trend\n   - Do NOT permanently discontinue at this time\n   - The patient may be eligible for re-challenge at reduced dose pending LFT normalization\n\n2. MONITORING SCHEDULE:\n   - Repeat complete hepatic panel (ALT, AST, bilirubin, alkaline phosphatase, GGT, albumin, PT/INR) in 48-72 hours (Monday or Tuesday)\n   - If transaminases are stable or decreasing: repeat weekly until return to \u22641.5x ULN\n   - If transaminases increase: repeat in 48 hours and contact me immediately\n   - Continue clinical monitoring for symptoms twice weekly\n\n3. ADDITIONAL TESTING:\n   - Await viral hepatitis panel results\n   - No additional imaging needed at this time unless clinical change\n   - Consider right upper quadrant ultrasound if elevations persist beyond 2 weeks\n\n4. RE-CHALLENGE CRITERIA (if applicable):\n   - ALT/AST must return to \u22641.5x ULN or baseline\n   - Patient remains asymptomatic\n   - Viral hepatitis panel negative\n   - No other identifiable cause\n   - If criteria met, may restart at 100mg (one dose level reduction) with weekly LFT monitoring for 4 weeks\n\n5. DISCONTINUATION CRITERIA:\n   - ALT or AST >5x ULN\n   - ALT or AST >3x ULN with total bilirubin >2x ULN\n   - Patient develops symptoms of hepatotoxicity\n   - Transaminases fail to show downward trend within 2 weeks\n\n6. DAY 15 PK SAMPLING:\n   - CANCEL Day 15 PK sampling as study drug is on hold\n   - Resume PK sampling schedule if/when drug is restarted\n\nRATIONALE:\nThe pattern of transaminase elevation (ALT/AST predominant, normal bilirubin, normal synthetic function) is consistent with hepatocellular injury. Given the timing (Day 14), this may represent drug-related hepatotoxicity, though other causes must be excluded. The Grade 2 severity, asymptomatic presentation, and preserved hepatic function support a conservative watch-and-wait approach with close monitoring.\n\nREPORTING:\n- This event does NOT meet criteria for expedited reporting to FDA as it is Grade 2 and expected per IB Section 8.2\n- Please complete the standard AE case report form\n- Our safety team will track this as a AESI (Adverse Event of Special Interest)\n\nPlease do not hesitate to contact me with any questions or if the clinical situation changes. I will follow up with you on Monday to review the repeat laboratory results.\n\nBest regards,\nDr. James Morrison, MD, PhD\nMedical Monitor\nPharmaTech Biosciences\nMobile: 555-0198",
+      "attachments": [],
+      "message_id": "<CAF9B2E1.0089@pharmatech.com>",
+      "in_reply_to": "<1710525300.1023007@umc.edu>"
+    },
+    {
+      "from_address": "sarah.chen@umc.edu",
+      "to_addresses": [
+        "james.morrison@pharmatech.com"
+      ],
+      "cc_addresses": [
+        "safety@clintrials-cro.com",
+        "study.coordinator@umc.edu",
+        "clinical.operations@pharmatech.com",
+        "regulatory@pharmatech.com"
+      ],
+      "subject": "RE: URGENT: Grade 2 AE Report - Study PT-2024-301, Subject 1023-007 - MEDICAL GUIDANCE",
+      "timestamp": "2024-03-15T15:58:00-05:00",
+      "body": "Dear Dr. Morrison,\n\nThank you for the clear and comprehensive guidance. I have reviewed your recommendations with our study team and will implement the following:\n\n\u2713 Study drug remains on hold\n\u2713 Repeat hepatic panel scheduled for Monday, March 18th (72 hours)\n\u2713 Clinical monitoring visits scheduled for Tuesday and Friday of next week\n\u2713 Day 15 PK visit cancelled\n\u2713 Patient counseled on monitoring plan and symptoms to watch for\n\u2713 AE case report form will be completed today\n\nThe patient has been informed of the plan and understands the need for close monitoring. He is agreeable to the increased visit schedule and will contact us immediately if any symptoms develop.\n\nI have provided the patient with:\n- Written instructions on symptoms requiring immediate contact\n- After-hours contact numbers\n- Instructions to avoid alcohol, acetaminophen, and hepatotoxic substances\n\nI will send you the repeat laboratory results on Monday as soon as they are available and will contact you immediately if there are any concerning changes before then.\n\nThank you again for the prompt guidance and support.\n\nBest regards,\nDr. Sarah Chen, MD\nPrincipal Investigator\nUniversity Medical Center",
+      "attachments": [],
+      "message_id": "<1710527880.1023007@umc.edu>",
+      "in_reply_to": "<CAF9B2E1.0089@pharmatech.com>"
+    }
+  ],
+  "role_descriptions": [
+    "sarah.chen@umc.edu: University Medical Center, Principal Investigator (Site)",
+    "james.morrison@pharmatech.com: PharmaTech Biosciences, Medical Monitor (Sponsor)",
+    "safety@clintrials-cro.com: ClinTrials CRO, Safety Team (CRO)",
+    "study.coordinator@umc.edu: University Medical Center, Study Coordinator (Site)",
+    "clinical.operations@pharmatech.com: PharmaTech Biosciences, Clinical Operations (Sponsor)",
+    "regulatory@pharmatech.com: PharmaTech Biosciences, Regulatory Affairs (Sponsor)"
+  ],
+  "description": "Principal Investigator at University Medical Center reporting a Grade 2 adverse event (elevated liver enzymes) in a Part B participant on Day 14 of dosing, requesting guidance on whether to continue study drug and what additional monitoring is required"
+}

@@ -28,7 +28,7 @@ def main():
                 2021-005733-16 ( EudraCT Number )
           """,
           "role": "CRA",
-          "num_threads": 1
+          "num_threads": 10
       }
   )
 

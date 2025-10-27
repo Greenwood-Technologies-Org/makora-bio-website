@@ -1,0 +1,131 @@
+{
+  "emails": [
+    {
+      "from_address": "jennifer.wong@sponsorpharma.com",
+      "to_addresses": [
+        "david.martinez@sponsorpharma.com"
+      ],
+      "cc_addresses": [
+        "datamanagement@sponsorpharma.com"
+      ],
+      "subject": "URGENT: Data Query - Missing PK Sample Collection Times - Study SP-2024-301",
+      "timestamp": "2024-03-15T09:23:00Z",
+      "body": "Hi David,\n\nWe've identified critical data discrepancies during our routine data review for Study SP-2024-301. Three participants at Metro Research Site (Site 1047) are missing exact PK sample collection times:\n\nParticipant ID: 1047-003 - Visit 3 (Day 15)\nParticipant ID: 1047-007 - Visit 3 (Day 15) \nParticipant ID: 1047-012 - Visit 2 (Day 8)\n\nThe eCRF shows PK samples were collected, but the exact collection times are blank. This is critical for our PK analysis as we need precise timing relative to dose administration.\n\nCan you please escalate this to the site? We may need a source document verification visit to pull the exact times from their source records. This is holding up our PK dataset lock.\n\nThanks,\nJennifer\n\n---\nJennifer Wong, MS\nSenior Data Manager\nSponsor Pharma Inc.\nPhone: (555) 234-5678",
+      "attachments": [],
+      "message_id": "msg_001_20240315092300",
+      "in_reply_to": null
+    },
+    {
+      "from_address": "david.martinez@sponsorpharma.com",
+      "to_addresses": [
+        "sarah.thompson@metroresearch.org"
+      ],
+      "cc_addresses": [
+        "jennifer.wong@sponsorpharma.com",
+        "lisa.chen@sponsorpharma.com"
+      ],
+      "subject": "FW: URGENT: Data Query - Missing PK Sample Collection Times - Study SP-2024-301",
+      "timestamp": "2024-03-15T10:47:00Z",
+      "body": "Hi Sarah,\n\nPlease see the urgent data query below from our Data Management team. We need to resolve missing PK sample collection times for three of your participants as soon as possible.\n\nThis is blocking our PK analysis and dataset lock. Can you please:\n\n1. Check your source documents (lab logs, nursing notes, etc.) for the exact collection times for these samples\n2. Update the eCRF with the correct times\n3. Confirm the data is accurate\n\nIf there are any issues locating this information, please let me know immediately. I'm copying Lisa Chen, our CRA, who may need to schedule an urgent site visit to verify the source documents if needed.\n\nPlease respond by EOD Monday (March 18th) with a status update.\n\nThanks for your prompt attention to this matter.\n\nBest regards,\nDavid\n\n---\nDavid Martinez\nClinical Operations Manager\nSponsor Pharma Inc.\nPhone: (555) 234-5690\nEmail: david.martinez@sponsorpharma.com",
+      "attachments": [],
+      "message_id": "msg_002_20240315104700",
+      "in_reply_to": "msg_001_20240315092300"
+    },
+    {
+      "from_address": "sarah.thompson@metroresearch.org",
+      "to_addresses": [
+        "david.martinez@sponsorpharma.com"
+      ],
+      "cc_addresses": [
+        "jennifer.wong@sponsorpharma.com",
+        "lisa.chen@sponsorpharma.com",
+        "dr.patel@metroresearch.org"
+      ],
+      "subject": "RE: URGENT: Data Query - Missing PK Sample Collection Times - Study SP-2024-301",
+      "timestamp": "2024-03-15T14:22:00Z",
+      "body": "Hi David,\n\nThank you for bringing this to our attention. I've immediately begun investigating these missing data points.\n\nI've pulled the source documents for all three participants and found the following:\n\n- Participant 1047-003: PK collection times ARE documented in our lab collection log. It appears this was a data entry oversight. I can provide the exact times.\n\n- Participant 1047-007: Same situation - times are in source documents but weren't transferred to eCRF.\n\n- Participant 1047-012: I'm still locating the complete documentation for this visit. Our phlebotomist's log shows the sample was collected but the exact time notation is unclear. I'm checking with our nursing staff who were present.\n\nI'm copying Dr. Patel, our PI, for awareness.\n\nFor 1047-003 and 1047-007, I can update the eCRF today. For 1047-012, I should have clarity by end of day Monday. Would Lisa be able to come onsite Tuesday or Wednesday next week to verify all three if needed? That would ensure everything is properly documented.\n\nI apologize for this oversight and will be implementing additional QC checks on our PK data entry going forward.\n\nBest regards,\nSarah\n\n---\nSarah Thompson, RN, CCRC\nStudy Coordinator\nMetro Research Site\nPhone: (555) 876-5432",
+      "attachments": [],
+      "message_id": "msg_003_20240315142200",
+      "in_reply_to": "msg_002_20240315104700"
+    },
+    {
+      "from_address": "lisa.chen@sponsorpharma.com",
+      "to_addresses": [
+        "sarah.thompson@metroresearch.org",
+        "david.martinez@sponsorpharma.com"
+      ],
+      "cc_addresses": [
+        "jennifer.wong@sponsorpharma.com"
+      ],
+      "subject": "RE: URGENT: Data Query - Missing PK Sample Collection Times - Study SP-2024-301",
+      "timestamp": "2024-03-15T15:38:00Z",
+      "body": "Hi Sarah and David,\n\nI can definitely schedule a site visit for Wednesday, March 20th to conduct source document verification for all three participants. This will allow us to:\n\n1. Verify the corrected times for 1047-003 and 1047-007 against source\n2. Work with Sarah to locate and document the time for 1047-012\n3. Review your PK collection and documentation processes to prevent future occurrences\n\nSarah, please go ahead and update the eCRF for the two participants where you have clear documentation. I'll verify everything during my visit.\n\nI'll plan to arrive at your site around 10:00 AM on Wednesday. Please have all source documents ready for review (lab logs, nursing notes, pharmacy records, etc.).\n\nDavid/Jennifer - I'll send a trip report with findings by EOD Wednesday.\n\nThanks,\nLisa\n\n---\nLisa Chen, PhD\nClinical Research Associate\nSponsor Pharma Inc.\nMobile: (555) 234-5699",
+      "attachments": [],
+      "message_id": "msg_004_20240315153800",
+      "in_reply_to": "msg_003_20240315142200"
+    },
+    {
+      "from_address": "sarah.thompson@metroresearch.org",
+      "to_addresses": [
+        "lisa.chen@sponsorpharma.com"
+      ],
+      "cc_addresses": [
+        "david.martinez@sponsorpharma.com",
+        "jennifer.wong@sponsorpharma.com"
+      ],
+      "subject": "RE: URGENT: Data Query - Missing PK Sample Collection Times - Study SP-2024-301",
+      "timestamp": "2024-03-18T11:15:00Z",
+      "body": "Hi Lisa,\n\nQuick update before your Wednesday visit:\n\nGOOD NEWS - I've located all documentation:\n\n\u2713 Participant 1047-003: eCRF updated with collection times from lab log (verified against nursing notes)\n\u2713 Participant 1047-007: eCRF updated with collection times from lab log (verified against nursing notes)\n\u2713 Participant 1047-012: Found the documentation! The time was recorded in our pharmacy dispensing log (which tracks when patients return for PK draws). eCRF has been updated.\n\nAll three entries are now complete in the eCRF. I've also added a query comment explaining the source of each correction.\n\nI'll still have all source documents organized and ready for your verification visit on Wednesday at 10 AM. I've also prepared a summary of our revised PK data collection SOP that we're implementing to prevent this issue going forward.\n\nSee you Wednesday!\n\nSarah\n\n---\nSarah Thompson, RN, CCRC\nStudy Coordinator\nMetro Research Site\nPhone: (555) 876-5432",
+      "attachments": [
+        "PK_Collection_Process_Improvement_Plan.pdf"
+      ],
+      "message_id": "msg_005_20240318111500",
+      "in_reply_to": "msg_004_20240315153800"
+    },
+    {
+      "from_address": "lisa.chen@sponsorpharma.com",
+      "to_addresses": [
+        "david.martinez@sponsorpharma.com",
+        "jennifer.wong@sponsorpharma.com"
+      ],
+      "cc_addresses": [
+        "sarah.thompson@metroresearch.org"
+      ],
+      "subject": "Site Visit Report - Metro Research Site - PK Data Query Resolution",
+      "timestamp": "2024-03-20T17:42:00Z",
+      "body": "Hi David and Jennifer,\n\nI completed the source document verification visit at Metro Research Site today. Here's my report:\n\nSUMMARY:\nAll three missing PK sample collection times have been verified and corrected in the eCRF. Source documentation supports all entries.\n\nFINDINGS:\n\nParticipant 1047-003 (Visit 3, Day 15):\n- Source: Lab collection log dated 02/28/2024\n- Collection times verified: Pre-dose (08:15), 1hr (09:20), 2hr (10:18), 4hr (12:22), 8hr (16:19)\n- eCRF now matches source \u2713\n\nParticipant 1047-007 (Visit 3, Day 15):\n- Source: Lab collection log dated 03/05/2024  \n- Collection times verified: Pre-dose (09:02), 1hr (10:05), 2hr (11:04), 4hr (13:08), 8hr (17:06)\n- eCRF now matches source \u2713\n\nParticipant 1047-012 (Visit 2, Day 8):\n- Source: Pharmacy dispensing log cross-referenced with nursing notes dated 02/22/2024\n- Collection times verified: Pre-dose (07:45), 1hr (08:48), 2hr (09:46), 4hr (11:52), 8hr (15:48)\n- eCRF now matches source \u2713\n\nROOT CAUSE:\nThe site's phlebotomist was recording times in the lab log but the study coordinator was not consistently transcribing all timepoints to the eCRF during initial data entry. This was an isolated incident affecting only these three visits.\n\nCORRECTIVE ACTIONS (implemented by site):\n1. Revised data entry checklist to include PK time verification step\n2. Weekly PK data completeness review before eCRF page completion\n3. Phlebotomist now initials eCRF PK page after coordinator entry to confirm accuracy\n\nRECOMMENDATION:\nNo further action needed. Issue resolved. Site has implemented appropriate preventive measures.\n\nJennifer - all corrected data is now available for your PK analysis.\n\nPlease let me know if you need any additional information.\n\nBest regards,\nLisa\n\n---\nLisa Chen, PhD\nClinical Research Associate\nSponsor Pharma Inc.",
+      "attachments": [
+        "SDV_Report_Site1047_20240320.pdf",
+        "Source_Document_Photos_Redacted.pdf"
+      ],
+      "message_id": "msg_006_20240320174200",
+      "in_reply_to": "msg_005_20240318111500"
+    },
+    {
+      "from_address": "jennifer.wong@sponsorpharma.com",
+      "to_addresses": [
+        "lisa.chen@sponsorpharma.com",
+        "david.martinez@sponsorpharma.com"
+      ],
+      "cc_addresses": [
+        "sarah.thompson@metroresearch.org",
+        "datamanagement@sponsorpharma.com"
+      ],
+      "subject": "RE: Site Visit Report - Metro Research Site - PK Data Query Resolution",
+      "timestamp": "2024-03-21T09:18:00Z",
+      "body": "Lisa and David,\n\nThank you for the rapid resolution of this issue. I've reviewed the corrected data and Lisa's verification report.\n\nAll PK timepoints for the three participants are now complete and have been incorporated into our PK dataset. The data looks consistent with the rest of the study population and we can proceed with our analysis.\n\nQueries closed in the system. Thank you Sarah for the quick turnaround and for implementing the process improvements.\n\nAppreciate everyone's responsiveness on this!\n\nJennifer\n\n---\nJennifer Wong, MS\nSenior Data Manager\nSponsor Pharma Inc.",
+      "attachments": [],
+      "message_id": "msg_007_20240321091800",
+      "in_reply_to": "msg_006_20240320174200"
+    }
+  ],
+  "role_descriptions": [
+    "jennifer.wong@sponsorpharma.com: Sponsor Pharma Inc., Senior Data Manager",
+    "david.martinez@sponsorpharma.com: Sponsor Pharma Inc., Clinical Operations Manager",
+    "lisa.chen@sponsorpharma.com: Sponsor Pharma Inc., Clinical Research Associate (CRA)",
+    "sarah.thompson@metroresearch.org: Metro Research Site, Study Coordinator",
+    "dr.patel@metroresearch.org: Metro Research Site, Principal Investigator",
+    "datamanagement@sponsorpharma.com: Sponsor Pharma Inc., Data Management Team"
+  ],
+  "description": "Sponsor's clinical operations manager forwarding urgent data queries from the data management team regarding missing PK sample collection times for 3 participants at Metro Research Site, requesting site visit to verify source documents"
+}
