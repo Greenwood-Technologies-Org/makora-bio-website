@@ -58,7 +58,11 @@ const Demo = () => {
       <main className="flex-1 overflow-hidden">
         {activeTab === "coms" && <Coms />}
         {activeTab === "docs" && <Docs />}
-        {activeTab === "analytics" && <Analytics />}
+        {activeTab === "analytics" && (
+          <div className="h-full overflow-y-auto p-6">
+            <Analytics />
+          </div>
+        )}
       </main>
     </div>
   );
