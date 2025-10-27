@@ -1203,7 +1203,7 @@ function Coms() {
                 ) : (
                   paginatedThreads.map((thread) => {
                     const isHighlighted =
-                      selectedProblemId === thread.problemId;
+                      selectedProblemId !== null && selectedProblemId === thread.problemId;
                     const isSelected = selectedThreadKey === thread.threadKey;
                     const lastMessage =
                       thread.messages[thread.messages.length - 1];
@@ -1544,7 +1544,7 @@ function Coms() {
                   </div>
                 ) : (
                   paginatedProblems.map((com) => {
-                    const isSelected = selectedProblemId === com.id;
+                    const isSelected = selectedProblemId !== null && selectedProblemId === com.id;
                     const threadCount = threadsData.filter(
                       (t) => t.problemId === com.id
                     ).length;
