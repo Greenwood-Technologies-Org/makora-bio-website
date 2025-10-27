@@ -3,6 +3,45 @@
 import dspy
 
 
+class CategorizeEmailThread(dspy.Signature):
+    """Categorize an email thread into clinical research tasks.
+    
+    Analyzes email content to determine if it should be assigned to an existing task
+    or if a new task should be created. Specializes in clinical research workflows.
+    """
+    
+    # Inputs
+    email_thread: str = dspy.InputField(
+        desc="The email thread content including subject, participants, and message bodies"
+    )
+    existing_tasks: str = dspy.InputField(
+        desc="JSON string of existing tasks with their subjects, summaries, and current status"
+    )
+    
+    # Outputs
+    action: str = dspy.OutputField(
+        desc="Either 'assign_existing' to assign to an existing task, or 'create_new' to create a new task"
+    )
+    task_id: str = dspy.OutputField(
+        desc="If action is 'assign_existing', the ID of the existing task. Otherwise, empty string."
+    )
+    confidence: str = dspy.OutputField(
+        desc="Confidence score from 0-100 for the recommendation"
+    )
+    reasoning: str = dspy.OutputField(
+        desc="Brief explanation of why this categorization was chosen"
+    )
+    new_task_subject: str = dspy.OutputField(
+        desc="If action is 'create_new', a concise subject for the new task. Otherwise, empty string."
+    )
+    new_task_summary: str = dspy.OutputField(
+        desc="If action is 'create_new', a brief summary of what the task involves. Otherwise, empty string."
+    )
+    new_task_priority: str = dspy.OutputField(
+        desc="If action is 'create_new', priority level: 'High', 'Medium', or 'Low'. Otherwise, empty string."
+    )
+
+
 class DraftEmailReply(dspy.Signature):
     """Draft an email reply based on an email thread and a todo task description.
 

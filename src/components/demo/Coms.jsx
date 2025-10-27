@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from "react";
 import ComDetailPanel from "./ComDetailPanel.jsx";
 import comsData from "@/data/coms.json";
+import { categorizeEmailWithDSPy } from "@/services/aiCategorization.js";
 import {
   Star,
   FileEdit,
@@ -193,7 +194,7 @@ function Coms() {
   const handleThreadClick = (threadKey) => {
     // Find the thread and its associated problem
     const thread = allThreads.find((t) => t.threadKey === threadKey);
-    
+
     if (thread && thread.problemId) {
       // Thread has a task assigned - filter by that task
       // If already filtered on this task, turn off filtering to show everything
@@ -216,7 +217,7 @@ function Coms() {
       setSelectedProblemId(null); // Clear problem filter
       setSelectedThreadKey(null); // Clear thread selection
     }
-    
+
     // Mark thread as read when clicked
     markThreadAsRead(parseInt(threadKey));
   };
@@ -282,9 +283,17 @@ function Coms() {
   React.useEffect(() => {
     setThreadsPage(1);
     setProblemsPage(1);
-  }, [threadSearchTerm, problemSearchTerm, selectedProblemId, filteredThreadKey, activeFilters]);
+  }, [
+    threadSearchTerm,
+    problemSearchTerm,
+    selectedProblemId,
+    filteredThreadKey,
+    activeFilters,
+  ]);
 
   // AI Assignment Algorithm (extensible for LLM integration)
+  // COMMENTED OUT: Replaced with DSPy API integration
+  /*
   const assignmentEngine = {
     // Basic algorithm - can be replaced with LLM API call
     async analyzeThread(thread, availableProblems) {
@@ -422,6 +431,7 @@ function Coms() {
         : "Recommended based on content similarity analysis";
     },
   };
+  */
 
   const toggleMessageExpansion = (messageIndex) => {
     setExpandedMessages((prev) => {
@@ -517,7 +527,7 @@ function Coms() {
     }
   };
 
-  // AI Assist handlers
+  // AI Assist handlers - Updated to use DSPy API
   const handleAiAssist = async (thread) => {
     if (thread.problemId) {
       // Thread is already assigned
@@ -532,10 +542,8 @@ function Coms() {
         (p) => p.status !== "Resolved" // Don't assign to resolved problems
       );
 
-      const result = await assignmentEngine.analyzeThread(
-        thread,
-        availableProblems
-      );
+      // Use DSPy API for categorization
+      const result = await categorizeEmailWithDSPy(thread, availableProblems);
 
       if (result.recommendedProblem) {
         setAiRecommendation({
@@ -562,8 +570,9 @@ function Coms() {
         alert("Unable to analyze thread. Please try again.");
       }
     } catch (error) {
-      console.error("AI assist error:", error);
-      alert("Failed to analyze thread. Please try again.");
+      console.error("DSPy AI assist error:", error);
+      // Show user-friendly error message
+      alert(`AI categorization failed: ${error.message}`);
     } finally {
       setAiAssistLoading(null);
     }
@@ -708,9 +717,11 @@ function Coms() {
                     >
                       <Link2 className="w-3 h-3" />
                       <span>Assigned to: {selectedThread.problemSubject}</span>
-                      <ChevronDown className={`w-3 h-3 transition-transform ${
+                      <ChevronDown
+                        className={`w-3 h-3 transition-transform ${
                           showAssignmentDropdown ? "rotate-180" : ""
-                        }`} />
+                        }`}
+                      />
                     </button>
 
                     {/* Assignment Dropdown */}
@@ -1115,7 +1126,10 @@ function Coms() {
                             >
                               {todo.status === "completed" ? (
                                 <div className="w-5 h-5 rounded-full bg-green-500 flex items-center justify-center hover:bg-green-600 transition-colors">
-                                  <Check className="w-3 h-3 text-white" strokeWidth={3} />
+                                  <Check
+                                    className="w-3 h-3 text-white"
+                                    strokeWidth={3}
+                                  />
                                 </div>
                               ) : (
                                 <div className="w-5 h-5 rounded-full border-2 border-gray-300 bg-white hover:border-primary-500 hover:bg-primary-50 transition-colors"></div>
@@ -1164,9 +1178,7 @@ function Coms() {
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-2">
                     <Mail className="w-6 h-6 text-gray-700" />
-                    <h2 className="text-2xl font-bold text-gray-900">
-                      Email
-                    </h2>
+                    <h2 className="text-2xl font-bold text-gray-900">Email</h2>
                     {(() => {
                       const unreadCount = filteredThreads.filter(
                         (t) => !t.isRead
@@ -1179,7 +1191,7 @@ function Coms() {
                     })()}
                   </div>
                 </div>
-                
+
                 {/* Email Function Buttons */}
                 <div className="flex items-center gap-2 flex-wrap">
                   <button className="px-3 py-1.5 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-lg transition-colors flex items-center gap-1.5">
@@ -1222,8 +1234,10 @@ function Coms() {
                 ) : (
                   paginatedThreads.map((thread) => {
                     const isHighlighted =
-                      (selectedProblemId !== null && selectedProblemId === thread.problemId) ||
-                      (filteredThreadKey !== null && filteredThreadKey === thread.threadKey);
+                      (selectedProblemId !== null &&
+                        selectedProblemId === thread.problemId) ||
+                      (filteredThreadKey !== null &&
+                        filteredThreadKey === thread.threadKey);
                     const isSelected = selectedThreadKey === thread.threadKey;
                     const lastMessage =
                       thread.messages[thread.messages.length - 1];
@@ -1278,7 +1292,9 @@ function Coms() {
                           </div>
                           {/* Open Email Icon */}
                           <button
-                            onClick={(e) => handleThreadOpenEmail(e, thread.threadKey)}
+                            onClick={(e) =>
+                              handleThreadOpenEmail(e, thread.threadKey)
+                            }
                             className="text-gray-900 hover:text-gray-700 transition-colors flex-shrink-0"
                             title="Open email"
                           >
@@ -1316,11 +1332,14 @@ function Coms() {
                                     handleAiAssist(thread);
                                   }
                                 }}
-                                disabled={!!thread.problemId || aiAssistLoading === thread.id}
+                                disabled={
+                                  !!thread.problemId ||
+                                  aiAssistLoading === thread.id
+                                }
                                 className={`flex-shrink-0 transition-colors ${
-                                  thread.problemId 
-                                    ? 'cursor-not-allowed' 
-                                    : 'cursor-pointer hover:opacity-80'
+                                  thread.problemId
+                                    ? "cursor-not-allowed"
+                                    : "cursor-pointer hover:opacity-80"
                                 }`}
                                 title={
                                   aiAssistLoading === thread.id
@@ -1331,15 +1350,22 @@ function Coms() {
                                 }
                               >
                                 {aiAssistLoading === thread.id ? (
-                                  <Loader2 className="h-4 w-4 animate-spin" style={{ color: '#4190C5' }} />
+                                  <Loader2
+                                    className="h-4 w-4 animate-spin"
+                                    style={{ color: "#4190C5" }}
+                                  />
                                 ) : (
-                                  <Sparkles 
-                                    className="w-4 h-4" 
-                                    style={{ color: thread.problemId ? '#9CA3AF' : '#4190C5' }}
+                                  <Sparkles
+                                    className="w-4 h-4"
+                                    style={{
+                                      color: thread.problemId
+                                        ? "#9CA3AF"
+                                        : "#4190C5",
+                                    }}
                                   />
                                 )}
                               </button>
-                              
+
                               <button
                                 onClick={(e) => {
                                   e.stopPropagation();
@@ -1355,14 +1381,16 @@ function Coms() {
                                 <span className="text-gray-700 truncate max-w-[450px]">
                                   {thread.problemSubject}
                                 </span>
-                                <ChevronDown className={`w-3 h-3 text-gray-500 flex-shrink-0 transition-transform ${
+                                <ChevronDown
+                                  className={`w-3 h-3 text-gray-500 flex-shrink-0 transition-transform ${
                                     activeThreadDropdown === thread.threadKey
                                       ? "rotate-180"
                                       : ""
-                                  }`} />
+                                  }`}
+                                />
                               </button>
                             </div>
-                            
+
                             {/* Timestamp */}
                             <span className="text-xs text-gray-500 whitespace-nowrap flex-shrink-0">
                               {lastMessage?.timestamp || "N/A"}
@@ -1512,13 +1540,17 @@ function Coms() {
                     <h2 className="text-2xl font-bold text-gray-900">Tasks</h2>
                   </div>
                 </div>
-                
+
                 {/* Task Function Buttons */}
                 <div className="flex items-center gap-2">
                   <select
                     value={activeFilters.urgency}
-                    onChange={(e) => handleFilterChange('urgency', e.target.value)}
-                    className={`px-3 py-1.5 border rounded-lg text-sm font-medium focus:outline-none focus:ring-2 focus:ring-primary-500 ${getUrgencyColor(activeFilters.urgency)}`}
+                    onChange={(e) =>
+                      handleFilterChange("urgency", e.target.value)
+                    }
+                    className={`px-3 py-1.5 border rounded-lg text-sm font-medium focus:outline-none focus:ring-2 focus:ring-primary-500 ${getUrgencyColor(
+                      activeFilters.urgency
+                    )}`}
                   >
                     {filterOptions.urgency.map((option) => (
                       <option key={option} value={option}>
@@ -1528,8 +1560,12 @@ function Coms() {
                   </select>
                   <select
                     value={activeFilters.status}
-                    onChange={(e) => handleFilterChange('status', e.target.value)}
-                    className={`px-3 py-1.5 border rounded-lg text-sm font-medium focus:outline-none focus:ring-2 focus:ring-primary-500 ${getStatusColor(activeFilters.status)}`}
+                    onChange={(e) =>
+                      handleFilterChange("status", e.target.value)
+                    }
+                    className={`px-3 py-1.5 border rounded-lg text-sm font-medium focus:outline-none focus:ring-2 focus:ring-primary-500 ${getStatusColor(
+                      activeFilters.status
+                    )}`}
                   >
                     {filterOptions.status.map((option) => (
                       <option key={option} value={option}>
@@ -1564,7 +1600,9 @@ function Coms() {
                   </div>
                 ) : (
                   paginatedProblems.map((com) => {
-                    const isSelected = selectedProblemId !== null && selectedProblemId === com.id;
+                    const isSelected =
+                      selectedProblemId !== null &&
+                      selectedProblemId === com.id;
                     const threadCount = threadsData.filter(
                       (t) => t.problemId === com.id
                     ).length;
@@ -1650,9 +1688,8 @@ function Coms() {
                                   ).length
                                 }{" "}
                                 TODO
-                                {com.todos.filter(
-                                  (t) => t.status === "pending"
-                                ).length !== 1
+                                {com.todos.filter((t) => t.status === "pending")
+                                  .length !== 1
                                   ? "s"
                                   : ""}
                               </span>
