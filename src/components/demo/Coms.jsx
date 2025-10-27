@@ -36,6 +36,35 @@ function Coms() {
     status: ["All", "In Progress", "Pending Response", "Resolved", "Blocked"],
   };
 
+  // Helper functions to get colors for urgency and status
+  const getUrgencyColor = (urgency) => {
+    switch (urgency) {
+      case "High":
+        return "bg-red-100 text-red-700 border-red-300";
+      case "Medium":
+        return "bg-yellow-100 text-yellow-700 border-yellow-300";
+      case "Low":
+        return "bg-green-100 text-green-700 border-green-300";
+      default:
+        return "bg-white text-gray-700 border-gray-300";
+    }
+  };
+
+  const getStatusColor = (status) => {
+    switch (status) {
+      case "In Progress":
+        return "bg-blue-100 text-blue-700 border-blue-300";
+      case "Pending Response":
+        return "bg-yellow-100 text-yellow-700 border-yellow-300";
+      case "Resolved":
+        return "bg-green-100 text-green-700 border-green-300";
+      case "Blocked":
+        return "bg-gray-100 text-gray-700 border-gray-300";
+      default:
+        return "bg-white text-gray-700 border-gray-300";
+    }
+  };
+
   const filteredComs = problemsData.filter((com) => {
     return (
       (activeFilters.urgency === "All" ||
@@ -1284,41 +1313,15 @@ function Coms() {
       ) : (
         // Inbox View
         <>
-          {/* Filters */}
-          <div className="p-4 border-b border-gray-200 bg-gray-50 flex-shrink-0">
-            <div className="flex flex-wrap gap-4">
-              {Object.entries(filterOptions).map(([filterType, options]) => (
-                <div key={filterType} className="flex items-center gap-2">
-                  <label className="text-sm font-medium text-gray-700 capitalize">
-                    {filterType}:
-                  </label>
-                  <select
-                    value={activeFilters[filterType]}
-                    onChange={(e) =>
-                      handleFilterChange(filterType, e.target.value)
-                    }
-                    className="px-3 py-1.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 bg-white"
-                  >
-                    {options.map((option) => (
-                      <option key={option} value={option}>
-                        {option}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-              ))}
-            </div>
-          </div>
-
           {/* Inbox Layout: Email Threads (Left) + Tasks (Right) */}
           <div className="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-200 flex-1 overflow-hidden">
             {/* Email Threads - Left Panel */}
             <div className="flex flex-col overflow-hidden">
-              <div className="p-4 bg-gray-50 border-b border-gray-200">
-                <div className="flex items-center justify-between mb-2">
+              <div className="p-4 bg-white border-b border-gray-200">
+                <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-2">
-                    <h2 className="text-lg font-bold text-gray-900">
-                      Email Threads
+                    <h2 className="text-2xl font-bold text-gray-900">
+                      Email
                     </h2>
                     {(() => {
                       const unreadCount = filteredThreads.filter(
@@ -1331,54 +1334,39 @@ function Coms() {
                       ) : null;
                     })()}
                   </div>
-                  <p className="text-xs text-gray-500">
+                </div>
+                
+                {/* Email Function Buttons */}
+                <div className="flex items-center gap-2 flex-wrap">
+                  <button className="px-3 py-1.5 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-lg transition-colors flex items-center gap-1.5">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                    </svg>
+                    Starred
+                  </button>
+                  <button className="px-3 py-1.5 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-lg transition-colors flex items-center gap-1.5">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                    </svg>
+                    Drafts
+                  </button>
+                  <button className="px-3 py-1.5 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-lg transition-colors flex items-center gap-1.5">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                    </svg>
+                    Trash
+                  </button>
+                  <button className="px-3 py-1.5 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-lg transition-colors flex items-center gap-1.5">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    Search
+                  </button>
+                  <span className="ml-auto text-xs text-gray-500">
                     {filteredThreads.length} thread
                     {filteredThreads.length !== 1 ? "s" : ""}
                     {selectedProblemId && " for selected problem"}
-                  </p>
-                </div>
-                {/* Thread Search Bar */}
-                <div className="relative">
-                  <svg
-                    className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                    />
-                  </svg>
-                  <input
-                    type="text"
-                    placeholder="Search threads..."
-                    value={threadSearchTerm}
-                    onChange={(e) => setThreadSearchTerm(e.target.value)}
-                    className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-                  />
-                  {threadSearchTerm && (
-                    <button
-                      onClick={() => setThreadSearchTerm("")}
-                      className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600"
-                    >
-                      <svg
-                        className="w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M6 18L18 6M6 6l12 12"
-                        />
-                      </svg>
-                    </button>
-                  )}
+                  </span>
                 </div>
               </div>
               <div
@@ -1726,56 +1714,45 @@ function Coms() {
 
             {/* Tasks - Right Panel */}
             <div className="flex flex-col overflow-hidden">
-              <div className="p-4 bg-gray-50 border-b border-gray-200">
-                <div className="flex items-center justify-between mb-2">
-                  <h2 className="text-lg font-bold text-gray-900">Tasks</h2>
-                  <p className="text-xs text-gray-500">
+              <div className="p-4 bg-white border-b border-gray-200">
+                <div className="flex items-center justify-between mb-3">
+                  <h2 className="text-2xl font-bold text-gray-900">Tasks</h2>
+                </div>
+                
+                {/* Task Function Buttons */}
+                <div className="flex items-center gap-2">
+                  <select
+                    value={activeFilters.urgency}
+                    onChange={(e) => handleFilterChange('urgency', e.target.value)}
+                    className={`px-3 py-1.5 border rounded-lg text-sm font-medium focus:outline-none focus:ring-2 focus:ring-primary-500 ${getUrgencyColor(activeFilters.urgency)}`}
+                  >
+                    {filterOptions.urgency.map((option) => (
+                      <option key={option} value={option}>
+                        {option}
+                      </option>
+                    ))}
+                  </select>
+                  <select
+                    value={activeFilters.status}
+                    onChange={(e) => handleFilterChange('status', e.target.value)}
+                    className={`px-3 py-1.5 border rounded-lg text-sm font-medium focus:outline-none focus:ring-2 focus:ring-primary-500 ${getStatusColor(activeFilters.status)}`}
+                  >
+                    {filterOptions.status.map((option) => (
+                      <option key={option} value={option}>
+                        {option}
+                      </option>
+                    ))}
+                  </select>
+                  <button className="px-3 py-1.5 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-lg transition-colors flex items-center gap-1.5">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    Search
+                  </button>
+                  <span className="ml-auto text-xs text-gray-500">
                     {filteredProblems.length} task
                     {filteredProblems.length !== 1 ? "s" : ""}
-                  </p>
-                </div>
-                {/* Task Search Bar */}
-                <div className="relative">
-                  <svg
-                    className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                    />
-                  </svg>
-                  <input
-                    type="text"
-                    placeholder="Search tasks..."
-                    value={problemSearchTerm}
-                    onChange={(e) => setProblemSearchTerm(e.target.value)}
-                    className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-                  />
-                  {problemSearchTerm && (
-                    <button
-                      onClick={() => setProblemSearchTerm("")}
-                      className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600"
-                    >
-                      <svg
-                        className="w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M6 18L18 6M6 6l12 12"
-                        />
-                      </svg>
-                    </button>
-                  )}
+                  </span>
                 </div>
               </div>
               <div
@@ -1825,10 +1802,10 @@ function Coms() {
                             className="flex-1 cursor-pointer"
                             onClick={() => handleProblemClick(com.id)}
                           >
+                            <h3 className="text-sm font-semibold text-gray-900 mb-2">
+                              {com.subject}
+                            </h3>
                             <div className="flex items-center gap-2 mb-2 flex-wrap">
-                              <h3 className="text-sm font-semibold text-gray-900">
-                                {com.subject}
-                              </h3>
                               <span
                                 className={`px-2 py-0.5 text-xs rounded-full font-medium ${
                                   com.urgency === "High"
