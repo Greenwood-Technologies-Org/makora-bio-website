@@ -1197,7 +1197,7 @@ function Coms() {
                             : "border-transparent hover:bg-gray-50"
                         } ${!thread.isRead ? "font-semibold" : ""}`}
                       >
-                        {/* Header: Sender + Time */}
+                        {/* Header: Sender */}
                         <div className="flex items-baseline justify-between mb-1.5 gap-2">
                           <div className="flex items-center gap-2 min-w-0 flex-1">
                             {/* Unread indicator dot */}
@@ -1231,10 +1231,6 @@ function Coms() {
                               {lastMessage?.from || "Unknown"}
                             </span>
                           </div>
-                          {/* Timestamp */}
-                          <span className="text-xs text-gray-500 whitespace-nowrap flex-shrink-0">
-                            {lastMessage?.timestamp || "N/A"}
-                          </span>
                         </div>
 
                         {/* Subject */}
@@ -1250,53 +1246,74 @@ function Coms() {
                           {thread.name}
                         </h3>
 
-                        {/* Associated Task with Assignment Dropdown and AI Assist */}
-                        <div className="relative">
-                          <div className="flex items-center gap-1">
-                            <button
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                setActiveThreadDropdown(
-                                  activeThreadDropdown === thread.threadKey
-                                    ? null
-                                    : thread.threadKey
-                                );
-                              }}
-                              className="flex items-center gap-1.5 px-2 py-1 bg-gray-100 hover:bg-gray-200 rounded text-xs transition-colors"
-                            >
-                              <Link2 className="w-3 h-3 text-gray-500 flex-shrink-0" />
-                              <span className="text-gray-700 truncate max-w-[150px]">
-                                {thread.problemSubject}
-                              </span>
-                              <ChevronDown className={`w-3 h-3 text-gray-500 flex-shrink-0 transition-transform ${
-                                  activeThreadDropdown === thread.threadKey
-                                    ? "rotate-180"
-                                    : ""
-                                }`} />
-                            </button>
+                        {/* Description */}
+                        <p className="text-xs text-gray-600 mb-2 truncate">
+                          {thread.description}
+                        </p>
 
-                            {/* AI Assist Button - Only show for unassigned threads */}
-                            {!thread.problemId && (
+                        {/* Associated Task with Assignment Dropdown and Timestamp */}
+                        <div className="relative">
+                          <div className="flex items-center justify-between gap-2">
+                            <div className="flex items-center gap-1 flex-1 min-w-0">
+                              {/* AI Assist Sparkles Icon */}
                               <button
                                 onClick={(e) => {
                                   e.stopPropagation();
-                                  handleAiAssist(thread);
+                                  if (!thread.problemId) {
+                                    handleAiAssist(thread);
+                                  }
                                 }}
-                                disabled={aiAssistLoading === thread.id}
-                                className="w-6 h-6 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 disabled:from-gray-400 disabled:to-gray-500 text-white transition-all duration-200 shadow-sm hover:shadow-md disabled:cursor-not-allowed flex items-center justify-center flex-shrink-0"
+                                disabled={!!thread.problemId || aiAssistLoading === thread.id}
+                                className={`flex-shrink-0 transition-colors ${
+                                  thread.problemId 
+                                    ? 'cursor-not-allowed' 
+                                    : 'cursor-pointer hover:opacity-80'
+                                }`}
                                 title={
                                   aiAssistLoading === thread.id
                                     ? "Analyzing..."
-                                    : "AI Assist"
+                                    : thread.problemId
+                                    ? "Task already assigned"
+                                    : "AI Task Recommendation"
                                 }
                               >
                                 {aiAssistLoading === thread.id ? (
-                                  <Loader2 className="h-3 w-3 animate-spin" />
+                                  <Loader2 className="h-4 w-4 animate-spin" style={{ color: '#4190C5' }} />
                                 ) : (
-                                  <Sparkles className="w-3 h-3" />
+                                  <Sparkles 
+                                    className="w-4 h-4" 
+                                    style={{ color: thread.problemId ? '#9CA3AF' : '#4190C5' }}
+                                  />
                                 )}
                               </button>
-                            )}
+                              
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  setActiveThreadDropdown(
+                                    activeThreadDropdown === thread.threadKey
+                                      ? null
+                                      : thread.threadKey
+                                  );
+                                }}
+                                className="flex items-center gap-1.5 px-2 py-1 bg-gray-100 hover:bg-gray-200 rounded text-xs transition-colors min-w-0"
+                              >
+                                <ListTodo className="w-3 h-3 text-gray-500 flex-shrink-0" />
+                                <span className="text-gray-700 truncate max-w-[450px]">
+                                  {thread.problemSubject}
+                                </span>
+                                <ChevronDown className={`w-3 h-3 text-gray-500 flex-shrink-0 transition-transform ${
+                                    activeThreadDropdown === thread.threadKey
+                                      ? "rotate-180"
+                                      : ""
+                                  }`} />
+                              </button>
+                            </div>
+                            
+                            {/* Timestamp */}
+                            <span className="text-xs text-gray-500 whitespace-nowrap flex-shrink-0">
+                              {lastMessage?.timestamp || "N/A"}
+                            </span>
                           </div>
 
                           {/* Assignment Dropdown */}
