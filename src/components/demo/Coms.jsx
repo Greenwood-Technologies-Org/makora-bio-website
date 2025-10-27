@@ -25,6 +25,7 @@ import {
   Sparkles,
   Plus,
   ListTodo,
+  SquareArrowOutUpRight,
 } from "lucide-react";
 
 function Coms() {
@@ -179,10 +180,24 @@ function Coms() {
   };
 
   const handleThreadClick = (threadKey) => {
+    // Find the thread and its associated problem
+    const thread = allThreads.find((t) => t.threadKey === threadKey);
+    if (thread && thread.problemId) {
+      // Filter to show only this task/problem
+      setSelectedProblemId(thread.problemId);
+      setSelectedThreadKey(null); // Clear thread selection
+    }
+    
+    // Mark thread as read when clicked
+    markThreadAsRead(parseInt(threadKey));
+  };
+
+  const handleThreadOpenEmail = (e, threadKey) => {
+    e.stopPropagation();
     setSelectedThreadKey(selectedThreadKey === threadKey ? null : threadKey);
     setDraftMessage(null); // Clear any draft when switching threads
 
-    // Mark thread as read when clicked
+    // Mark thread as read when opened
     markThreadAsRead(parseInt(threadKey));
 
     // Initialize expanded messages: expand only the last message by default (Gmail-like)
@@ -1231,6 +1246,14 @@ function Coms() {
                               {lastMessage?.from || "Unknown"}
                             </span>
                           </div>
+                          {/* Open Email Icon */}
+                          <button
+                            onClick={(e) => handleThreadOpenEmail(e, thread.threadKey)}
+                            className="text-gray-900 hover:text-gray-700 transition-colors flex-shrink-0"
+                            title="Open email"
+                          >
+                            <SquareArrowOutUpRight className="w-4 h-4" />
+                          </button>
                         </div>
 
                         {/* Subject */}
