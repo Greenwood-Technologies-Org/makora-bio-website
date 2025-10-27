@@ -31,6 +31,7 @@ import {
 function Coms() {
   const [selectedProblemId, setSelectedProblemId] = useState(null);
   const [selectedThreadKey, setSelectedThreadKey] = useState(null);
+  const [filteredThreadKey, setFilteredThreadKey] = useState(null); // For filtering by specific email
   const [detailViewProblem, setDetailViewProblem] = useState(null);
   const [threadSearchTerm, setThreadSearchTerm] = useState("");
   const [problemSearchTerm, setProblemSearchTerm] = useState("");
@@ -117,8 +118,12 @@ function Coms() {
   const filteredThreads = useMemo(() => {
     let threads = allThreads;
 
-    // Filter by selected problem if any
-    if (selectedProblemId) {
+    // Filter by specific thread if any
+    if (filteredThreadKey) {
+      threads = threads.filter((t) => t.threadKey === filteredThreadKey);
+    }
+    // Otherwise filter by selected problem if any
+    else if (selectedProblemId) {
       threads = threads.filter((t) => t.problemId === selectedProblemId);
     }
 
@@ -138,7 +143,7 @@ function Coms() {
     }
 
     return threads;
-  }, [allThreads, selectedProblemId, threadSearchTerm]);
+  }, [allThreads, selectedProblemId, filteredThreadKey, threadSearchTerm]);
 
   // Paginated threads for infinite scroll
   const paginatedThreads = useMemo(() => {
@@ -181,13 +186,16 @@ function Coms() {
     } else {
       setSelectedProblemId(problemId);
     }
+    setFilteredThreadKey(null); // Clear thread-specific filter when problem is clicked
     setSelectedThreadKey(null); // Clear thread selection when problem is clicked
   };
 
   const handleThreadClick = (threadKey) => {
     // Find the thread and its associated problem
     const thread = allThreads.find((t) => t.threadKey === threadKey);
+    
     if (thread && thread.problemId) {
+      // Thread has a task assigned - filter by that task
       // If already filtered on this task, turn off filtering to show everything
       if (selectedProblemId === thread.problemId) {
         setSelectedProblemId(null);
@@ -195,6 +203,17 @@ function Coms() {
         // Filter to show only this task/problem
         setSelectedProblemId(thread.problemId);
       }
+      setFilteredThreadKey(null); // Clear thread-specific filter
+      setSelectedThreadKey(null); // Clear thread selection
+    } else if (thread) {
+      // Thread has no task assigned - filter by just this email
+      // If already filtered on this email, turn off filtering
+      if (filteredThreadKey === threadKey) {
+        setFilteredThreadKey(null);
+      } else {
+        setFilteredThreadKey(threadKey);
+      }
+      setSelectedProblemId(null); // Clear problem filter
       setSelectedThreadKey(null); // Clear thread selection
     }
     
@@ -263,7 +282,7 @@ function Coms() {
   React.useEffect(() => {
     setThreadsPage(1);
     setProblemsPage(1);
-  }, [threadSearchTerm, problemSearchTerm, selectedProblemId, activeFilters]);
+  }, [threadSearchTerm, problemSearchTerm, selectedProblemId, filteredThreadKey, activeFilters]);
 
   // AI Assignment Algorithm (extensible for LLM integration)
   const assignmentEngine = {
@@ -1203,7 +1222,8 @@ function Coms() {
                 ) : (
                   paginatedThreads.map((thread) => {
                     const isHighlighted =
-                      selectedProblemId !== null && selectedProblemId === thread.problemId;
+                      (selectedProblemId !== null && selectedProblemId === thread.problemId) ||
+                      (filteredThreadKey !== null && filteredThreadKey === thread.threadKey);
                     const isSelected = selectedThreadKey === thread.threadKey;
                     const lastMessage =
                       thread.messages[thread.messages.length - 1];
