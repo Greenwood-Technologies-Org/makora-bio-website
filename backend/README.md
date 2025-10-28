@@ -78,7 +78,7 @@ source .venv/bin/activate
 python main.py
 ```
 
-The server will start on `http://localhost:5000`
+The server will start on `http://localhost:5001`
 
 **Note for macOS users:** Port 5000 may be in use by AirPlay Receiver. If you get an "Address already in use" error:
 - Either disable AirPlay Receiver in System Settings → General → AirDrop & Handoff
