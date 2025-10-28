@@ -1,5 +1,10 @@
 """DSPY-powered API routes."""
 
+import os
+# Disable DSPy cache before importing to prevent permissions issues
+os.environ['DSPY_CACHE_DISABLED'] = '1'
+os.environ['DSPY_CACHE_TYPE'] = 'none'
+
 from dotenv import load_dotenv
 from flask import Blueprint, jsonify, request
 import dspy

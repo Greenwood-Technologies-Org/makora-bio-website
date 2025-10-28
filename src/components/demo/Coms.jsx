@@ -3,6 +3,11 @@ import ComDetailPanel from "./ComDetailPanel.jsx";
 import comsData from "@/data/coms.json";
 import { categorizeEmailWithDSPy } from "@/services/aiCategorization.js";
 import {
+  createTask,
+  assignThreadToTask,
+  markThreadAsRead as persistMarkThreadAsRead,
+} from "@/services/dataService.js";
+import {
   Star,
   FileEdit,
   Trash2,
@@ -238,12 +243,26 @@ function Coms() {
     }
   };
 
-  const markThreadAsRead = (threadId) => {
-    setThreadsData((prevThreads) =>
-      prevThreads.map((thread) =>
-        thread.id === threadId ? { ...thread, isRead: true } : thread
-      )
-    );
+  const markThreadAsRead = async (threadId) => {
+    try {
+      // Persist the read status change
+      await persistMarkThreadAsRead(threadId, true, problemsData, threadsData);
+
+      // Update local state
+      setThreadsData((prevThreads) =>
+        prevThreads.map((thread) =>
+          thread.id === threadId ? { ...thread, isRead: true } : thread
+        )
+      );
+    } catch (error) {
+      console.error("Failed to mark thread as read:", error);
+      // Still update local state even if persistence fails
+      setThreadsData((prevThreads) =>
+        prevThreads.map((thread) =>
+          thread.id === threadId ? { ...thread, isRead: true } : thread
+        )
+      );
+    }
   };
 
   // Infinite scroll handlers
@@ -496,7 +515,7 @@ function Coms() {
     );
   };
 
-  const handleReassignThread = (newProblemId, threadKey = null) => {
+  const handleReassignThread = async (newProblemId, threadKey = null) => {
     // Use provided threadKey or fall back to selectedThread
     const threadToReassign = threadKey
       ? allThreads.find((t) => t.threadKey === threadKey)
@@ -504,26 +523,40 @@ function Coms() {
 
     if (!threadToReassign) return;
 
-    // Update the thread's problemId
-    setThreadsData((prevThreads) => {
-      return prevThreads.map((thread) => {
-        if (thread.id.toString() === threadToReassign.threadKey) {
-          return {
-            ...thread,
-            problemId: newProblemId, // null for unassigned, or the new problem ID
-          };
-        }
-        return thread;
+    try {
+      // Persist the assignment change
+      await assignThreadToTask(
+        threadToReassign.id,
+        newProblemId,
+        problemsData,
+        threadsData
+      );
+
+      // Update local state
+      setThreadsData((prevThreads) => {
+        return prevThreads.map((thread) => {
+          if (thread.id.toString() === threadToReassign.threadKey) {
+            return {
+              ...thread,
+              problemId: newProblemId, // null for unassigned, or the new problem ID
+            };
+          }
+          return thread;
+        });
       });
-    });
 
-    // Close the appropriate dropdown
-    setShowAssignmentDropdown(false);
-    setActiveThreadDropdown(null);
+      // Close the appropriate dropdown
+      setShowAssignmentDropdown(false);
+      setActiveThreadDropdown(null);
 
-    // If unassigning and currently viewing this thread, go back to inbox
-    if (!newProblemId && selectedThreadKey === threadToReassign.threadKey) {
-      setSelectedThreadKey(null);
+      // If unassigning and currently viewing this thread, go back to inbox
+      if (!newProblemId && selectedThreadKey === threadToReassign.threadKey) {
+        setSelectedThreadKey(null);
+      }
+    } catch (error) {
+      console.error("Failed to reassign thread:", error);
+      // You could add a toast notification here to inform the user of the error
+      alert("Failed to save thread assignment. Please try again.");
     }
   };
 
@@ -578,31 +611,39 @@ function Coms() {
     }
   };
 
-  const handleAcceptRecommendation = () => {
+  const handleAcceptRecommendation = async () => {
     if (aiRecommendation) {
-      if (aiRecommendation.recommendedProblem) {
-        // Assign to existing problem
-        handleReassignThread(
-          aiRecommendation.recommendedProblem.id,
-          aiRecommendation.threadId.toString()
-        );
-      } else if (aiRecommendation.newTask) {
-        // Create new task and assign thread to it
-        const newTaskId = Math.max(...problemsData.map((p) => p.id)) + 1;
-        const newTask = {
-          ...aiRecommendation.newTask,
-          id: newTaskId,
-        };
+      try {
+        if (aiRecommendation.recommendedProblem) {
+          // Assign to existing problem
+          await handleReassignThread(
+            aiRecommendation.recommendedProblem.id,
+            aiRecommendation.threadId.toString()
+          );
+        } else if (aiRecommendation.newTask) {
+          // Create new task and assign thread to it
+          const newTask = await createTask(
+            aiRecommendation.newTask,
+            problemsData,
+            threadsData
+          );
 
-        // Add the new task to problems data
-        setProblemsData((prevProblems) => [...prevProblems, newTask]);
+          // Add the new task to local state
+          setProblemsData((prevProblems) => [...prevProblems, newTask]);
 
-        // Assign the thread to the new task
-        handleReassignThread(newTaskId, aiRecommendation.threadId.toString());
+          // Assign the thread to the new task
+          await handleReassignThread(
+            newTask.id,
+            aiRecommendation.threadId.toString()
+          );
+        }
+
+        setShowRecommendationModal(false);
+        setAiRecommendation(null);
+      } catch (error) {
+        console.error("Failed to accept AI recommendation:", error);
+        alert("Failed to save changes. Please try again.");
       }
-
-      setShowRecommendationModal(false);
-      setAiRecommendation(null);
     }
   };
 
@@ -650,10 +691,17 @@ function Coms() {
       threads: threadsData.filter((t) => t.problemId === detailViewProblem.id),
     };
 
-    return (
+  return (
       <ComDetailPanel
         com={problemWithThreads}
         onBack={() => setDetailViewProblem(null)}
+        problemsData={problemsData}
+        threadsData={threadsData}
+        onTaskUpdate={(updatedTask) => {
+          setProblemsData((prevProblems) =>
+            prevProblems.map((p) => (p.id === updatedTask.id ? updatedTask : p))
+          );
+        }}
       />
     );
   }
@@ -704,8 +752,8 @@ function Coms() {
                           <ChevronRight className="w-3 h-3 text-gray-400" />
                         )}
                       </React.Fragment>
-                    ))}
-                  </div>
+          ))}
+        </div>
 
                   {/* Assignment Badge */}
                   <div className="relative">
@@ -736,7 +784,7 @@ function Coms() {
                           <div className="p-2">
                             <div className="px-3 py-2 text-xs font-semibold text-gray-500 uppercase">
                               Reassign Thread To:
-                            </div>
+      </div>
 
                             <button
                               onClick={() => handleReassignThread(null)}
@@ -821,7 +869,7 @@ function Coms() {
                     Messages
                   </h3>
                   {selectedThread.messages.length === 0 ? (
-                    <div className="flex items-center justify-center h-64 text-gray-500">
+          <div className="flex items-center justify-center h-64 text-gray-500">
                       <div className="text-center">
                         <MessageSquare className="w-16 h-16 mx-auto mb-3 text-gray-300" />
                         <p className="text-base font-medium">
@@ -832,8 +880,8 @@ function Coms() {
                           exchanged
                         </p>
                       </div>
-                    </div>
-                  ) : (
+          </div>
+        ) : (
                     <div className="space-y-2">
                       {selectedThread.messages.map((message, idx) => {
                         const isExpanded = expandedMessages.has(idx);
@@ -855,8 +903,8 @@ function Coms() {
                             {isExpanded ? (
                               // Expanded View
                               <div className="p-5">
-                                <div className="flex items-start justify-between mb-3">
-                                  <div className="flex-1">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex-1">
                                     {/* From → To */}
                                     <div className="flex items-center gap-3 mb-2">
                                       <div className="w-8 h-8 rounded-full bg-primary-500 flex items-center justify-center text-white text-sm font-semibold">
@@ -1621,8 +1669,8 @@ function Coms() {
                             onClick={() => handleProblemClick(com.id)}
                           >
                             <h3 className="text-sm font-semibold text-gray-900 mb-2">
-                              {com.subject}
-                            </h3>
+                      {com.subject}
+                    </h3>
                           </div>
 
                           {/* Open Task Detail Icon */}
@@ -1652,8 +1700,8 @@ function Coms() {
                                   : "bg-green-100 text-green-700"
                               }`}
                             >
-                              {com.urgency}
-                            </span>
+                      {com.urgency}
+                    </span>
                             <span
                               className={`px-2 py-0.5 text-xs rounded-full font-medium ${
                                 com.status === "In Progress"
@@ -1665,12 +1713,12 @@ function Coms() {
                                   : "bg-gray-100 text-gray-700"
                               }`}
                             >
-                              {com.status}
-                            </span>
-                          </div>
+                      {com.status}
+                    </span>
+                  </div>
                           <p className="text-xs text-gray-600 leading-relaxed line-clamp-2">
-                            {com.summary}
-                          </p>
+                    {com.summary}
+                  </p>
                           <div className="flex items-center gap-3 mt-2 text-xs text-gray-500">
                             <div className="flex items-center gap-1">
                               <Mail className="w-3.5 h-3.5" />
@@ -1678,7 +1726,7 @@ function Coms() {
                                 {threadCount} thread
                                 {threadCount !== 1 ? "s" : ""}
                               </span>
-                            </div>
+                </div>
                             <div className="flex items-center gap-1">
                               <CheckSquare className="w-3.5 h-3.5" />
                               <span>
@@ -1692,8 +1740,8 @@ function Coms() {
                                   .length !== 1
                                   ? "s"
                                   : ""}
-                              </span>
-                            </div>
+                </span>
+              </div>
                             <span className="ml-auto">{com.timestamp}</span>
                           </div>
                         </div>
@@ -1708,8 +1756,8 @@ function Coms() {
                     <div className="flex items-center gap-2 text-gray-500">
                       <Loader2 className="h-4 w-4 animate-spin text-primary-500" />
                       <span className="text-sm">Loading more tasks...</span>
-                    </div>
-                  </div>
+                </div>
+                </div>
                 )}
 
                 {/* End of tasks indicator */}
@@ -1717,9 +1765,9 @@ function Coms() {
                   filteredProblems.length > ITEMS_PER_PAGE && (
                     <div className="flex items-center justify-center py-4 text-gray-400">
                       <span className="text-sm">All tasks loaded</span>
-                    </div>
-                  )}
               </div>
+                  )}
+            </div>
             </div>
           </div>
         </>
@@ -1749,7 +1797,7 @@ function Coms() {
                     <span className="text-sm text-gray-900">
                       {aiRecommendation.thread.name}
                     </span>
-                  </div>
+      </div>
                   <div className="flex flex-col gap-2">
                     <span className="text-sm font-medium text-gray-700">
                       Description:

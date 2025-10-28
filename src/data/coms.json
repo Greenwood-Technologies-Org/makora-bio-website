@@ -1,309 +1,351 @@
 {
-  "problems": [
+  "problems": [],
+  "threads": [
     {
       "id": 1,
-      "subject": "Subject 103-004 AE / Con Med Mismatch",
-      "summary": "Data management flagged a mismatch — AE log shows ibuprofen 400 mg for headache, but concomitant medications list 200 mg. CRA needs to confirm the correct dose with the site and ensure consistency across logs.",
-      "urgency": "High",
-      "status": "In Progress",
-      "timestamp": "2 hours ago",
-      "todos": [
+      "name": "URGENT: SAE Report - Study DNLI-123 - Site 456 - Patient 456-007",
+      "description": "An urgent email thread from the Principal Investigator at a participating site reporting a Serious Adverse Event (SAE). A patient in Part B (FTD cohort) has been hospitalized for a severe seizure. The thread includes the initial notification, the CRA's immediate request for the SAE form and source documents, and the CRA's subsequent communication with the internal Denali safety team.",
+      "participants": [
+        "Dr. Helena Ramirez (Site PI)",
+        "Jane Doe (CRA)",
+        "Carlos Vega (Site Coordinator)",
+        "Peter Jones (Project Manager)"
+      ],
+      "problemId": null,
+      "isRead": true,
+      "messages": [
         {
-          "id": 1,
-          "description": "Confirm follow-up with internal team",
-          "assignee": "CRA",
-          "status": "pending",
-          "tag": "Thread 1",
-          "hasAIDraft": true,
-          "aiDraft": {
-            "threadId": 1,
-            "message": "Following up with the site now to clarify the ibuprofen dosage discrepancy. Will report back once I receive confirmation from the site CRC.",
-            "references": [
-              {
-                "type": "Email Thread",
-                "title": "Re: Similar AE/Con Med query from Site 102",
-                "date": "2025-10-10"
-              },
-              {
-                "type": "Document",
-                "title": "Data Query Resolution SOP",
-                "date": "2025-09-15"
-              }
-            ]
-          }
+          "from": "Dr. Helena Ramirez",
+          "to": "Jane Doe",
+          "cc": ["Carlos Vega", "Peter Jones"],
+          "content": "Hi Jane,\n\nThis is an urgent notification of a Serious Adverse Event for a patient in study DNLI-123.\n\nPatient ID: 456-007\nSite: 456 (Sun Valley Medical Center)\nCohort: Part B (FTD)\nEvent: Hospitalization for a severe seizure. The event occurred last night, and the patient was admitted to the hospital early this morning.\n\nWe are currently gathering all necessary information and completing the SAE form. We will send it to you as soon as possible.\n\nPlease let us know of any immediate actions required.\n\nBest regards,\n\nDr. Helena Ramirez\nPrincipal Investigator\nSun Valley Medical Center",
+          "timestamp": "2 hours ago"
         },
         {
-          "id": 2,
-          "description": "Clarify with site",
-          "assignee": "CRA",
-          "status": "pending",
-          "tag": "Thread 2",
-          "hasAIDraft": true,
-          "aiDraft": {
-            "threadId": 2,
-            "message": "Hello,\n\nI hope this message finds you well. We've identified a discrepancy in Subject 103-004's records that requires clarification.\n\nSpecifically, the Adverse Event log shows ibuprofen 400 mg taken for headache, while the Concomitant Medications list indicates 200 mg. Could you please verify which dosage is correct and update the EDC accordingly?\n\nThank you for your prompt attention to this matter.\n\nBest regards,\nCRA",
-            "references": [
-              {
-                "type": "Document",
-                "title": "Site Communication Guidelines",
-                "date": "2025-08-20"
-              },
-              {
-                "type": "Email Thread",
-                "title": "Re: EDC Discrepancy Resolution Process",
-                "date": "2025-09-25"
-              },
-              {
-                "type": "Document",
-                "title": "Protocol Section 8.4 - Adverse Event Reporting",
-                "date": "2024-12-01"
-              }
-            ]
-          }
+          "from": "Jane Doe",
+          "to": "Dr. Helena Ramirez",
+          "cc": ["Carlos Vega", "Peter Jones"],
+          "content": "Hi Dr. Ramirez,\n\nThank you for the urgent notification. I have received it and will notify the internal safety team immediately.\n\nPlease send the completed SAE form and all relevant de-identified source documents (e.g., ER report, admission notes, relevant lab results) as soon as they are available, and no later than 24 hours from your awareness of the event.\n\nI will be available should you have any questions.\n\nBest regards,\n\nJane Doe\nClinical Research Associate\nDenali Therapeutics",
+          "timestamp": "1 hour ago"
         },
         {
-          "id": 3,
-          "description": "Ensure reconciliation between AE and Con Med logs",
-          "assignee": "CRA",
-          "status": "pending",
-          "tag": "EDC"
-        },
-        {
-          "id": 4,
-          "description": "Close query",
-          "assignee": "Data Management",
-          "status": "pending",
-          "tag": "EDC"
+          "from": "Jane Doe",
+          "to": "Safety Team",
+          "cc": ["Peter Jones", "Dr. Li Chen"],
+          "content": "Denali Safety and Medical Team,\n\nThis is an initial notification of a new SAE at Site 456 (Sun Valley Medical Center).\n\nPatient 456-007, enrolled in the Part B FTD cohort, has been hospitalized for a severe seizure.\n\nI have been in contact with the site PI, Dr. Ramirez, and have requested the completed SAE form and relevant source documents. I will forward these materials as soon as I receive them, which is expected within the 24-hour reporting window.\n\nPlease let me know of any immediate actions required from my side.\n\nBest,\n\nJane Doe\nClinical Research Associate\nDenali Therapeutics",
+          "timestamp": "45 minutes ago"
         }
       ]
     },
     {
       "id": 2,
-      "subject": "Protocol Deviation - Subject 105-012 Visit Window Exceeded",
-      "summary": "Subject 105-012 attended Visit 3 outside the protocol-specified window (Day 28 ±3). The visit occurred on Day 35, exceeding the allowed window by 4 days. Site has been notified and deviation report is pending.",
-      "urgency": "Medium",
-      "status": "Pending Response",
-      "timestamp": "5 hours ago",
-      "todos": [
-        {
-          "id": 1,
-          "description": "Follow up with site for deviation report",
-          "assignee": "CRA",
-          "status": "pending",
-          "tag": "Thread 1",
-          "hasAIDraft": true,
-          "aiDraft": {
-            "threadId": 3,
-            "message": "Hi,\n\nI wanted to follow up on the protocol deviation for Subject 105-012's Visit 3 timing. As discussed, the visit occurred on Day 35, which exceeded the protocol window.\n\nCould you please provide:\n1. The reason for the delay\n2. A completed protocol deviation report\n3. Any supporting documentation\n\nPlease let me know if you need any assistance with the deviation report form.\n\nThank you,\nCRA",
-            "references": [
-              {
-                "type": "Document",
-                "title": "Protocol Deviation Reporting SOP",
-                "date": "2025-07-01"
-              },
-              {
-                "type": "Email Thread",
-                "title": "Re: Visit Window Deviation - Site 103",
-                "date": "2025-09-18"
-              },
-              {
-                "type": "Document",
-                "title": "Protocol Section 5.2 - Visit Windows",
-                "date": "2024-12-01"
-              }
-            ]
-          }
-        },
-        {
-          "id": 2,
-          "description": "Review and approve deviation documentation",
-          "assignee": "Medical Monitor",
-          "status": "pending",
-          "tag": "EDC"
-        },
-        {
-          "id": 3,
-          "description": "Update EDC with deviation flag",
-          "assignee": "Data Management",
-          "status": "pending",
-          "tag": "EDC"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "subject": "Urgent: Low IP Supply - Site 106 Patient Visit Tomorrow",
-      "summary": "Site 106 pharmacy coordinator reports only 2 kits remaining in inventory with Subject 106-009 scheduled for dispensing visit tomorrow. Site requires emergency IP shipment to avoid visit rescheduling and protocol deviation. CRA needs to coordinate with IP manager and update tracking systems.",
-      "urgency": "High",
-      "status": "In Progress",
-      "timestamp": "1 hour ago",
-      "todos": [
-        {
-          "id": 1,
-          "description": "Confirm follow-up with site pharmacy",
-          "assignee": "CRA",
-          "status": "pending",
-          "tag": "Thread 1",
-          "hasAIDraft": true,
-          "aiDraft": {
-            "threadId": 4,
-            "message": "Hi,\n\nThank you for the heads up. I'm on it and have already contacted our IP manager to arrange an emergency shipment.\n\nI'll confirm the shipping details and expected delivery time within the next 2 hours. In the meantime, you should be fine for tomorrow's visit with your current inventory of 2 kits.\n\nI'll keep you updated on the shipment tracking.\n\nBest regards,\nCRA",
-            "references": [
-              {
-                "type": "Email Thread",
-                "title": "Re: IP Emergency Shipment Protocol - Site 104",
-                "date": "2025-09-28"
-              },
-              {
-                "type": "Document",
-                "title": "IP Management SOP - Emergency Procedures",
-                "date": "2025-06-15"
-              }
-            ]
-          }
-        },
-        {
-          "id": 2,
-          "description": "Request emergency IP shipment from IP manager",
-          "assignee": "CRA",
-          "status": "pending",
-          "tag": "Thread 2",
-          "hasAIDraft": true,
-          "aiDraft": {
-            "threadId": 5,
-            "message": "Hi,\n\nWe have an urgent IP supply request for Site 106. Current situation:\n\n• Current inventory: 2 kits\n• Scheduled visit: Subject 106-009 tomorrow (10/21)\n• Requested buffer: 5 kits minimum\n• Site enrollment rate: ~2-3 subjects/month\n\nCan we arrange an emergency shipment to arrive by tomorrow afternoon or Wednesday morning at the latest? The site can accommodate delivery during business hours (8 AM - 5 PM EST).\n\nSite shipping address:\nSite 106 Research Pharmacy\n[Address on file]\n\nPlease confirm shipment details and provide tracking information.\n\nThank you,\nCRA",
-            "references": [
-              {
-                "type": "Document",
-                "title": "Site 106 - IP Inventory Log",
-                "date": "2025-10-19"
-              },
-              {
-                "type": "Email Thread",
-                "title": "Re: IP Shipment Request Template",
-                "date": "2025-08-12"
-              },
-              {
-                "type": "Document",
-                "title": "IP Distribution Plan v3.2",
-                "date": "2025-07-01"
-              }
-            ]
-          }
-        },
-        {
-          "id": 3,
-          "description": "Update IP tracking system with shipment details",
-          "assignee": "CRA",
-          "status": "pending",
-          "tag": "EDC"
-        },
-        {
-          "id": 4,
-          "description": "Follow up on shipment delivery confirmation",
-          "assignee": "CRA",
-          "status": "pending",
-          "tag": "EDC"
-        }
-      ]
-    }
-  ],
-  "threads": [
-    {
-      "id": 1,
-      "name": "Medical Monitor → Data Management → CRA",
-      "description": "Internal thread identifying the data discrepancy and requesting CRA follow-up with the site.",
-      "participants": ["Medical Monitor", "Data Management", "CRA"],
-      "problemId": 1,
-      "isRead": true,
+      "name": "Pinnacle Study PTX-305: Scheduling of Interim Monitoring Visit (IMV) at Site S-102",
+      "description": "A routine back-and-forth email exchange between the CRA and a Site Coordinator to schedule an upcoming interim monitoring visit. The discussion covers potential dates, confirmation of the agenda (including 100% SDV for the first two FTD patients), and a request to have specific patient binders and ISF documents available for review.",
+      "participants": [
+        "David Chen (CRA)",
+        "Maria Garcia (Site Coordinator)",
+        "Dr. E. Reed (Site PI)"
+      ],
+      "problemId": null,
+      "isRead": false,
       "messages": [
         {
-          "from": "Medical Monitor",
-          "to": "Data Management",
-          "cc": ["Project Manager"],
-          "content": "I noticed a potential discrepancy in Subject 103-004's adverse event reporting. Can you investigate?",
+          "from": "David Chen",
+          "to": "Maria Garcia",
+          "content": "Hi Maria,\n\nI hope you are well.\n\nI'm writing to schedule the next Interim Monitoring Visit for the PTX-305 study at your site. I am proposing the week of November 6th, specifically Nov 7th, 8th, or 9th. Please let me know which of these dates works best for you and Dr. Reed.\n\nThe primary objectives for this visit will be:\n- 100% Source Data Verification (SDV) for the first two FTD patients (S-102-001 and S-102-002)\n- Review of the Investigator Site File (ISF)\n- Drug accountability review\n\nI have attached a draft agenda for your review. Please let me know if you have any questions.\n\nBest regards,\n\nDavid Chen\nClinical Research Associate\nPinnacle Therapeutics",
+          "timestamp": "3 days ago"
+        },
+        {
+          "from": "Maria Garcia",
+          "to": "David Chen",
+          "cc": ["Dr. E. Reed"],
+          "content": "Hi David,\n\nThanks for reaching out. After checking our calendars, November 8th would work best for us.\n\nWe will ensure the patient binders for S-102-001 and S-102-002 are ready for 100% SDV, and the ISF will be up-to-date and available for your review.\n\nThe agenda looks fine. Will Dr. Reed need to be available for the entire day, or just for a specific meeting?\n\nBest,\n\nMaria Garcia\nSite Coordinator\nOakwood Clinical Research Center",
           "timestamp": "2 days ago"
         },
         {
-          "from": "Data Management",
-          "to": "CRA",
-          "cc": ["Medical Monitor", "Quality Assurance"],
-          "replyTo": "Medical Monitor",
-          "content": "We found a mismatch: AE log shows ibuprofen 400 mg for headache, but concomitant medications list 200 mg. Please follow up with the site to confirm the correct dose.",
+          "from": "David Chen",
+          "to": "Maria Garcia",
+          "cc": ["Dr. E. Reed"],
+          "content": "Hi Maria,\n\nThat's great, thank you for confirming. I have booked the visit for Wednesday, November 8th.\n\nRegarding Dr. Reed's availability, I will only need a brief meeting with her at the beginning of the day to discuss the plan and at the end of the day for a debrief on my findings. I anticipate this will be about 30 minutes for each meeting.\n\nI will send the official confirmation letter with the finalized agenda shortly.\n\nLooking forward to seeing you both.\n\nBest regards,\n\nDavid Chen\nClinical Research Associate\nPinnacle Therapeutics",
           "timestamp": "1 day ago"
         }
       ]
     },
     {
-      "id": 2,
-      "name": "CRA → Site CRC",
-      "description": "Outbound email thread to verify and correct the medication entry in the EDC.",
-      "participants": ["CRA", "Site CRC"],
-      "problemId": 1,
+      "id": 3,
+      "name": "URGENT FOLLOW-UP: Overdue Critical Queries - Study IP-201, Site 101",
+      "description": "A follow-up email from the CRA to a site's data manager regarding a list of critical data queries that are now over 14 days past due. The CRA emphasizes the importance of resolving these queries ahead of the upcoming database lock for the Part A (healthy volunteer) analysis and offers to schedule a call to walk through the outstanding items.",
+      "participants": [
+        "Jane Doe (CRA)",
+        "Mark Smith (Site Data Manager)",
+        "David Chen (Project Manager)",
+        "Emily Carter (Site PI)"
+      ],
+      "problemId": null,
       "isRead": false,
       "messages": [
         {
-          "from": "CRA",
-          "to": "Site CRC",
-          "cc": ["Medical Monitor", "Data Management"],
-          "content": "I've followed up with the site and they confirmed the correct dosage is 200 mg. I've updated the EDC accordingly.",
+          "from": "Jane Doe",
+          "to": "Mark Smith",
+          "cc": ["David Chen", "Emily Carter"],
+          "content": "Hi Mark,\n\nI hope you are having a good week.\n\nI am following up on the list of critical data queries for Study IP-201 that were sent two weeks ago. As of this morning, the attached list of queries are now over 14 days past due.\n\nResolving these is a high priority as we are approaching the database lock for the Part A (healthy volunteer) cohort analysis, scheduled for November 10th. All critical queries must be addressed before we can proceed.\n\nI understand you have many competing priorities. To help expedite this, I would be happy to schedule a 30-minute call to walk through the outstanding items together and resolve them in real-time. Please let me know what your availability looks like for tomorrow or early next week.\n\nThank you for your urgent attention to this matter.\n\nBest regards,\n\nJane Doe\nClinical Research Associate\nInnovate Pharma\njane.doe@innovatepharma.com\n(123) 456-7890",
+          "timestamp": "6 hours ago"
+        },
+        {
+          "from": "Mark Smith",
+          "to": "Jane Doe",
+          "cc": ["David Chen", "Emily Carter"],
+          "content": "Hi Jane,\n\nThank you for the follow-up and my apologies for the delay on these. We've had some unexpected staff shortages this month which has put us behind.\n\nA call would be very helpful. I am available tomorrow at 11:00 AM EST or 2:00 PM EST. Please let me know which time works best for you.\n\nI will review the list in the meantime.\n\nThanks,\n\nMark Smith\nData Manager\nSummit Clinical Trials",
+          "timestamp": "2 hours ago"
+        },
+        {
+          "from": "Jane Doe",
+          "to": "Mark Smith",
+          "cc": ["David Chen", "Emily Carter"],
+          "content": "Hi Mark,\n\nThanks for the quick reply. I completely understand.\n\nTomorrow at 11:00 AM EST works perfectly for me. I will send a calendar invitation with a conference link shortly.\n\nTalk to you then.\n\nBest,\n\nJane\n\nJane Doe\nClinical Research Associate\nInnovate Pharma\njane.doe@innovatepharma.com\n(123) 456-7890",
           "timestamp": "1 hour ago"
         }
       ]
     },
     {
-      "id": 3,
-      "name": "CRA → Site Coordinator",
-      "description": "Initial notification to site about protocol deviation and request for explanation.",
-      "participants": ["CRA", "Site Coordinator"],
-      "problemId": 2,
-      "isRead": true,
+      "id": 4,
+      "name": "[Study INN-045] Site 201, Patient 201-003 - Query on Part B to Part C (OLE) Transition",
+      "description": "An email from a Site Coordinator asking for clarification on the process for transitioning a patient from the double-blind Part B to the open-label extension (Part C). The CRA responds with a detailed explanation of the unblinding procedure, the specific OLE consent form to be used, and the required baseline assessments for Part C.",
+      "participants": [
+        "Samantha Clark (Site Coordinator)",
+        "Craig Miller (CRA)",
+        "Dr. PI Jones (Site PI)",
+        "PM Davis (CRO Project Manager)"
+      ],
+      "problemId": null,
+      "isRead": false,
       "messages": [
         {
-          "from": "CRA",
-          "to": "Site Coordinator",
-          "cc": ["Medical Monitor", "Study Director"],
-          "content": "I noticed that Subject 105-012's Visit 3 was conducted on Day 35, which is outside the protocol window of Day 28 ±3. Can you please provide context on why this occurred and submit a protocol deviation report?",
-          "timestamp": "3 days ago"
+          "from": "Samantha Clark",
+          "to": "Craig Miller",
+          "cc": ["Dr. PI Jones", "PM Davis"],
+          "content": "Hi Craig,\n\nHope you are having a good week.\n\nWe have a patient (201-003) who is approaching their final visit in the double-blind portion (Part B) of the INN-045 study. The patient has expressed interest in continuing into the open-label extension (Part C).\n\nCould you please provide some clarification on the standard procedure for this transition? Specifically, we are looking for guidance on:\n1. The unblinding process and when it should be initiated.\n2. The correct version of the consent form for the OLE.\n3. A list of the required baseline assessments for entry into Part C.\n\nAny documentation or a quick reference guide you could provide would be greatly appreciated.\n\nThank you,\n\nSamantha Clark\nClinical Research Coordinator\nUniversity Health Center\nSite 201",
+          "timestamp": "6 hours ago"
+        },
+        {
+          "from": "Craig Miller",
+          "to": "Samantha Clark",
+          "cc": ["Dr. PI Jones", "PM Davis"],
+          "content": "Hi Samantha,\n\nThank you for reaching out and for your proactive planning for patient 201-003. I'm happy to clarify the transition process from Part B to the Part C Open-Label Extension.\n\nPlease follow the steps below:\n\n1. **Unblinding Procedure:** The unblinding process is managed through the IWRS. After the patient completes their final Part B visit (Visit 12) and all associated data is entered and cleaned in the EDC, you will log into the IWRS and select the option 'Transition to Open-Label Extension'. This will trigger a notification to the unblinded pharmacy staff to dispense the open-label drug. Please note, the site study team will remain blinded to the patient's original treatment assignment in Part B.\n\n2. **OLE Consent Form:** The correct form is the 'Part C Open-Label Extension Informed Consent Form', Version 4.0, dated 18-Jul-2023. It must be signed and dated by the patient *before* any Part C-specific procedures are performed. I have attached a copy for your convenience, but please ensure you are using the IRB-approved version from your Investigator Site File (ISF).\n\n3. **Part C Baseline Assessments:** As per protocol section 7.3, the following baseline assessments must be completed after the OLE ICF is signed but before the first dose of the open-label drug:\n   * Complete Physical Examination\n   * Vital Signs\n   * 12-lead ECG\n   * Safety Labs (Hematology and Chemistry)\n   * Urinalysis\n   * Disease Activity Score (DAS28-CRP)\n\nThese assessments establish the baseline for the open-label phase. All procedures must be documented in the patient's source records.\n\nI hope this provides the clarity you need. Please let me know if you have any further questions or would like to schedule a brief call to walk through the IWRS steps.\n\nBest regards,\n\nCraig Miller\nClinical Research Associate\nInnovate Pharma",
+          "timestamp": "2 hours ago"
         }
       ]
     },
     {
-      "id": 4,
-      "name": "Site Pharmacy → CRA",
-      "description": "Initial notification from site about low IP inventory and upcoming patient visit.",
-      "participants": ["Site Pharmacy", "CRA"],
-      "problemId": 3,
+      "id": 5,
+      "name": "URGENT Action Required: Study PHX-201, Site 101 - Incorrect ICF Version Used for Subject 101-005",
+      "description": "A thread initiated by the CRA after a remote review of site documents. The CRA discovered that a newly enrolled patient was consented using an outdated version of the Informed Consent Form. The email urgently instructs the site to re-consent the participant with the correct, currently approved ICF version and to document this as a major protocol deviation.",
+      "participants": [
+        "Jane Doe (CRA)",
+        "Maria Garcia (Site Coordinator)",
+        "Dr. R. Jones (Site PI)",
+        "Kevin Chen (Sponsor CTM)"
+      ],
+      "problemId": null,
       "isRead": false,
       "messages": [
         {
-          "from": "Site Pharmacy",
-          "to": "CRA",
-          "cc": ["Site Principal Investigator"],
-          "content": "Hi,\n\nWe have an urgent situation - our IP inventory is critically low with only 2 kits remaining. Subject 106-009 has a dispensing visit scheduled for tomorrow (10/21) and we want to ensure we have adequate supply.\n\nCould you please expedite a shipment? We'd like to maintain a buffer of at least 5 kits given our enrollment rate.\n\nThank you,\nPharmacy Coordinator\nSite 106",
+          "from": "Jane Doe",
+          "to": "Maria Garcia",
+          "cc": ["Dr. R. Jones", "Kevin Chen"],
+          "content": "Dear Maria and Dr. Jones,\n\nI hope this email finds you well.\n\nDuring a remote review of the eISF for study PHX-201 today, I identified a critical issue. Subject 101-005, enrolled on October 24, 2023, was consented using the outdated Informed Consent Form (ICF) version 2.0, dated 15-JAN-2023.\n\nThe current, IRB-approved version is ICF v3.0, dated 01-JUL-2023, which was implemented site-wide on July 15, 2023.\n\nThis is a major protocol deviation and requires immediate action to ensure the participant's rights and safety, as well as data integrity. Please take the following steps urgently:\n\n1. **Contact the participant immediately** to schedule a visit to re-consent them using the correct ICF v3.0.\n2. **Thoroughly document** the re-consenting process in the participant's source documents.\n3. **Complete a Protocol Deviation Form** for this event, classifying it as a major deviation. The root cause should be investigated and documented, along with a corrective and preventive action (CAPA) plan.\n4. **Upload** the newly signed ICF v3.0, the completed Protocol Deviation Form, and a detailed Note-to-File explaining the event and its resolution to the eTMF/Investigator Site File within 48 hours.\n\nPlease confirm receipt of this email and provide your plan of action by the end of today. I am available to discuss this further if needed.\n\nThank you for your immediate attention to this critical matter.\n\nBest regards,\n\nJane Doe\nClinical Research Associate\nPharmaxon Therapeutics\njane.doe@pharmaxon.com",
+          "timestamp": "4 hours ago"
+        },
+        {
+          "from": "Maria Garcia",
+          "to": "Jane Doe",
+          "cc": ["Dr. R. Jones", "Kevin Chen"],
+          "content": "Hi Jane,\n\nThank you for bringing this to our attention. I have received and reviewed your email with Dr. Jones.\n\nWe are taking this very seriously. I have already contacted the participant, and they have agreed to come in tomorrow morning at 9:00 AM for re-consenting.\n\nWe will complete all required documentation (new ICF, PD form, NTF) and upload it to the system by EOD tomorrow, October 27th. We will also implement a CAPA to prevent recurrence, which will involve a re-training session with all research staff on ICF version control.\n\nWe will keep you updated. Thank you for your diligence.\n\nBest,\n\nMaria Garcia, CCRC\nClinical Research Coordinator\nUniversity Medical Center",
+          "timestamp": "3 hours ago"
+        },
+        {
+          "from": "Jane Doe",
+          "to": "Maria Garcia",
+          "cc": ["Dr. R. Jones", "Kevin Chen"],
+          "content": "Thank you, Maria.\n\nI appreciate the swift response and clear plan of action. Please let me know once the re-consent is complete and the documents are uploaded tomorrow.\n\nBest regards,\n\nJane Doe\nClinical Research Associate\nPharmaxon Therapeutics",
+          "timestamp": "2 hours ago"
+        },
+        {
+          "from": "Maria Garcia",
+          "to": "Jane Doe",
+          "cc": ["Dr. R. Jones", "Kevin Chen"],
+          "content": "Hi Jane,\n\nThis is to confirm that subject 101-005 was successfully re-consented this morning using ICF v3.0.\n\nAs discussed, the following documents have been completed and uploaded to the eISF:\n\n- Signed ICF v3.0 for subject 101-005\n- Completed Protocol Deviation Form\n- Note-to-File detailing the event and corrective actions\n\nPlease let us know if you require anything further from our side.\n\nBest,\n\nMaria Garcia, CCRC\nClinical Research Coordinator\nUniversity Medical Center",
           "timestamp": "1 hour ago"
         }
       ]
     },
     {
       "id": 6,
-      "name": "Site Inquiry → CRA",
-      "description": "General inquiry from site coordinator about study procedures.",
-      "participants": ["Site Coordinator", "CRA"],
+      "name": "Action Required: Slow Recruitment at Site 203 (Dr. Ames) - Study INP-301",
+      "description": "An internal email from the Clinical Trial Manager (CTM) to the CRA regarding slow patient recruitment at a specific site. The CTM asks the CRA to review the site's screening log for trends in screen failures and to proactively reach out to the PI to discuss recruitment challenges and potential mitigation strategies.",
+      "participants": ["Sarah Chen (CTM)", "David Miller (CRA)"],
       "problemId": null,
       "isRead": false,
       "messages": [
         {
-          "from": "Site Coordinator",
-          "to": "CRA",
-          "content": "Hi, I have a general question about the patient reimbursement process. Could you send me the latest reimbursement form?\n\nThanks!",
-          "timestamp": "3 hours ago"
+          "from": "Sarah Chen",
+          "to": "David Miller",
+          "content": "Hi David,\n\nI'm writing to flag a concern regarding the patient recruitment pace at Site 203 (Dr. Ames) for the INP-301 study. They are significantly behind our enrollment targets for this quarter, having only screened 5 patients in the last month with 1 randomized.\n\nCould you please take the following actions this week?\n\n1. Conduct a thorough review of the site's screening and enrollment log in the EDC. I'm particularly interested in any trends related to screen failure reasons.\n2. Proactively reach out to Dr. Ames and his study coordinator to schedule a call to discuss the recruitment challenges they are facing. We need to understand their barriers and collaboratively identify potential mitigation strategies (e.g., refining pre-screening, patient outreach, etc.).\n\nPlease let me know what you find in the screening log and when you have the call scheduled.\n\nThanks,\n\nSarah Chen\nClinical Trial Manager\nInnovate Pharma",
+          "timestamp": "6 hours ago"
         },
         {
-          "from": "CRA",
-          "to": "Site Coordinator",
-          "content": "Of course! I've attached the latest patient reimbursement form (v2.1) to this email. Let me know if you need any clarification on the process.\n\nBest regards,\nCRA",
+          "from": "David Miller",
+          "to": "Sarah Chen",
+          "content": "Hi Sarah,\n\nThanks for flagging this. I've completed an initial review of the screening log for Site 203.\n\nIt appears the primary reason for screen failure is Exclusion Criterion #5 (HbA1c > 8.5%), which accounted for 12 of the 18 screen failures in the past 90 days. I've attached a brief summary for your reference.\n\nI have already contacted the site coordinator and have a call scheduled with her and Dr. Ames for this Friday, Oct 28th, at 2:00 PM EST to discuss this trend and other potential recruitment barriers.\n\nI will provide you with a summary of our discussion and the proposed action plan following the call.\n\nBest regards,\n\nDavid Miller\nClinical Research Associate\nInnovate Pharma",
           "timestamp": "2 hours ago"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Urgent: Potential Temperature Excursion - DNL593 - Site 101",
+      "description": "An email from a site pharmacist reporting a potential investigational product temperature excursion that occurred in their pharmacy over the weekend. The CRA responds by requesting the temperature logs and initiating an investigation with the sponsor's clinical supply chain manager to determine if the affected vials of DNL593 are still viable for use.",
+      "participants": [
+        "Dr. Emily Carter (Site Pharmacist)",
+        "Jane Doe (CRA)",
+        "David Chen (Supply Chain Manager)"
+      ],
+      "problemId": null,
+      "isRead": false,
+      "messages": [
+        {
+          "from": "Dr. Emily Carter",
+          "to": "Jane Doe",
+          "cc": ["DNL593 Study Team"],
+          "content": "Dear Jane,\n\nI am writing to report a potential temperature excursion involving our stock of DNL593. Upon review of the temperature logs this morning, we noted that the pharmacy refrigerator where the investigational product is stored reached a peak of 11.2°C for approximately 3 hours on Saturday, May 18th. The required storage temperature is 2-8°C.\n\nAll potentially affected vials have been immediately quarantined and are clearly marked. Please advise on the necessary steps to determine the viability of this stock. Can you please let us know if we should proceed with a product return or if a stability assessment is possible?\n\nThank you for your urgent attention to this matter.\n\nBest regards,\n\nDr. Emily Carter\nLead Investigational Pharmacist\nUniversity Medical Center\n(555) 867-5309",
+          "timestamp": "4 hours ago"
+        },
+        {
+          "from": "Jane Doe",
+          "to": "Dr. Emily Carter",
+          "cc": ["David Chen", "DNL593 Study Team"],
+          "content": "Hi Dr. Carter,\n\nThank you for your prompt notification and for quarantining the affected product. We appreciate your diligence.\n\nTo begin our investigation, could you please export and send us the full, continuous temperature monitoring data for the refrigerator from Friday, May 17th, through this morning? Please provide it in PDF or CSV format if possible.\n\nI have looped in our Clinical Supply Chain Manager, David Chen (CC'd), who will lead the assessment once we have the data. Please continue to keep the vials quarantined and labeled 'DO NOT USE - PENDING INVESTIGATION' until we provide a final disposition.\n\nWe will treat this with high priority and aim to provide guidance on the product's viability within 48 hours of receiving the temperature logs.\n\nBest regards,\n\nJane Doe\nClinical Research Associate\nDenali Therapeutics\n(555) 123-4567",
+          "timestamp": "3 hours ago"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "SIV Follow-Up Letter & Action Items - Protocol INN451 - Site 101 University Health",
+      "description": "The CRA sends a Site Initiation Visit (SIV) follow-up letter to a newly activated site. The email summarizes the topics covered during the visit, lists the outstanding action items required before the site can screen their first patient, and attaches key study documents like the pharmacy manual and lab manual for their reference.",
+      "participants": [
+        "Karen Miller (CRA)",
+        "Dr. S. Harding (Site PI)",
+        "Robert Muldoon (Site Coordinator)",
+        "J. Arnold (CTM)"
+      ],
+      "problemId": null,
+      "isRead": false,
+      "messages": [
+        {
+          "from": "Karen Miller",
+          "to": "Dr. S. Harding",
+          "cc": ["Robert Muldoon", "J. Arnold"],
+          "content": "Dear Dr. Harding and Robert,\n\nI hope you are both well.\n\nThank you again for your team's time and engagement during the Site Initiation Visit for study INN451 on Tuesday, September 19th. It was a pleasure meeting everyone and we are excited to partner with University Health on this important trial.\n\nAs discussed, I have attached the formal SIV Follow-Up letter which summarizes the topics we covered. For your convenience, I have also listed the key outstanding action items below. Please note that all items must be resolved before the site can be activated for screening and enrollment.\n\nOutstanding Action Items:\n1. **Submit Final IRB Approval Letter:** Please provide the final, dated approval letter from the central IRB. (Responsibility: Robert Muldoon)\n2. **Complete Staff Training Logs:** Ensure all staff listed on the Delegation of Authority Log have completed and signed the protocol training log. (Responsibility: Robert Muldoon)\n3. **Confirm IP Freezer Temperature Logs:** Please provide the last 30 days of temperature logs for the -20C freezer where the Investigational Product will be stored. (Responsibility: Site Pharmacy)\n4. **Finalize Contract Budget Exhibit C:** Our legal team is awaiting the final sign-off on Exhibit C to execute the Clinical Trial Agreement. (Responsibility: Site Contracts Dept.)\n\nI have also attached the final versions of the Pharmacy Manual and Laboratory Manual for your team's reference. Please ensure these are distributed to the relevant departments.\n\nWe are eager to get your site up and running. Please let me know if you have any questions or if there is anything I can do to help facilitate the completion of these items.\n\nBest regards,\n\nKaren Miller\nClinical Research Associate\nInnovate Pharma\nkaren.miller@innovatepharma.com\n(555) 123-4567",
+          "timestamp": "2 days ago"
+        },
+        {
+          "from": "Robert Muldoon",
+          "to": "Karen Miller",
+          "cc": ["Dr. S. Harding", "J. Arnold"],
+          "content": "Hi Karen,\n\nThanks for sending this over so promptly. The letter is a great summary of our discussion.\n\nHere is a quick update on the action items:\n\n1. **IRB Approval:** We received the final letter this morning. I have attached it to this email.\n2. **Training Logs:** All logs are now complete and filed in the Investigator Site File. I can send you scanned copies if needed.\n3. **Temp Logs:** Our pharmacist is pulling those now and will send them to me this afternoon. I will forward them to you EOD.\n4. **CTA:** I've followed up with our contracts office. They confirmed they have everything they need and expect to return the executed version by Monday.\n\nWe have received and reviewed the manuals. Everything looks clear.\n\nWe look forward to getting activated next week.\n\nBest,\n\nRobert Muldoon\nClinical Research Coordinator\nUniversity Health",
+          "timestamp": "1 day ago"
+        },
+        {
+          "from": "Karen Miller",
+          "to": "Robert Muldoon",
+          "cc": ["Dr. S. Harding", "J. Arnold"],
+          "content": "Hi Robert,\n\nThis is fantastic news! Thank you for the quick turnaround and for the attached IRB approval letter. I have forwarded it to our TMF specialist.\n\nNo need to send the training logs now; I will review them during the next monitoring visit. Please do send the temperature logs when you have them.\n\nOnce we receive the temperature logs and the executed CTA, we will be able to issue the official Site Activation notice.\n\nExcellent work by you and your team. We are very excited to have you on board.\n\nBest regards,\n\nKaren Miller\nClinical Research Associate\nInnovate Pharma",
+          "timestamp": "1 day ago"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Query - Study INN-123 - Site 101 - Subject HV-004 Lab Result",
+      "description": "A site coordinator emails the CRA with a question about a specific lab result for a healthy volunteer in Part A that is flagged as out-of-range in the EDC system. The CRA investigates the query, consults with the study's medical monitor, and responds to the site confirming that the value is not clinically significant and provides instructions on how to close the query.",
+      "participants": [
+        "Brenda Walsh (Site Coordinator)",
+        "David Chen (CRA)",
+        "Dr. Sarah Jenkins (Medical Monitor)"
+      ],
+      "problemId": null,
+      "isRead": false,
+      "messages": [
+        {
+          "from": "Brenda Walsh",
+          "to": "David Chen",
+          "content": "Hi David,\n\nHope you are having a good week.\n\nWe have an automated query in the Medidata EDC for subject HV-004, a healthy volunteer in Part A. The query is for an out-of-range Alanine Aminotransferase (ALT) value of 52 U/L from the Week 4 visit. The upper limit of normal is 50 U/L.\n\nThe subject is asymptomatic and all other liver function tests are within the normal range. Can you please advise if this is considered clinically significant and provide guidance on how to resolve the query?\n\nQuery ID: 884321\n\nThanks for your help,\n\nBrenda Walsh\nClinical Research Coordinator\nWestwood Clinical Research Center",
+          "timestamp": "6 hours ago"
+        },
+        {
+          "from": "David Chen",
+          "to": "Brenda Walsh",
+          "cc": ["Dr. Sarah Jenkins"],
+          "content": "Hi Brenda,\n\nThank you for flagging this.\n\nI have reviewed the data and consulted with our Medical Monitor, Dr. Jenkins (cc'd). Given that this is a minor elevation (1.04x ULN) in an asymptomatic healthy volunteer with all other LFTs being normal, this finding is considered Not Clinically Significant (NCS).\n\nPlease close the query in Medidata with the following comment: \"Value confirmed as accurate. Per sponsor, this is not clinically significant.\"\n\nLet me know if you have any further questions.\n\nBest regards,\n\nDavid Chen\nClinical Research Associate\nInnovate Pharma",
+          "timestamp": "2 hours ago"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Notice of Routine Quality Audit - Protocol SP-101, Site 105 (Maple Creek Clinical Research)",
+      "description": "An email from the sponsor's Quality Assurance (QA) department notifying the CRA that one of their assigned sites has been selected for a routine quality audit. The thread involves the CRA coordinating with the QA auditor and the site PI to schedule the audit and providing the site with a list of documents to prepare for the inspection.",
+      "participants": [
+        "David Chen (QA Auditor)",
+        "Sarah Jenkins (CRA)",
+        "Dr. Alan Grant (Site PI)",
+        "Emily Carter (Site Coordinator)",
+        "Maria Garcia (CTM)",
+        "Brenda Wallace (QA Lead)"
+      ],
+      "problemId": null,
+      "isRead": true,
+      "messages": [
+        {
+          "from": "David Chen",
+          "to": "Sarah Jenkins",
+          "cc": ["Maria Garcia", "Brenda Wallace"],
+          "content": "Hi Sarah,\n\nThis email is to formally notify you that Site 105, Maple Creek Clinical Research (PI: Dr. Alan Grant), has been selected for a routine quality assurance audit for study SP-101.\n\nWe are proposing the audit take place over two days during the week of November 13th or November 20th, 2023.\n\nPlease liaise with the site to determine their availability during these weeks. Once we have a potential date, I will send a formal agenda and confirmation.\n\nThank you for your cooperation.\n\nBest regards,\n\nDavid Chen\nSenior QA Auditor\nStellaris Pharma",
+          "timestamp": "3 days ago"
+        },
+        {
+          "from": "Sarah Jenkins",
+          "to": "Dr. Alan Grant",
+          "cc": ["Emily Carter", "David Chen", "Maria Garcia"],
+          "content": "Dear Dr. Grant and Emily,\n\nPlease see the notification below from our Quality Assurance department. Your site has been selected for a routine quality audit for the SP-101 study.\n\nAs noted, this is a standard procedure. The proposed dates are during the weeks of Nov 13th or Nov 20th. Could you please review your calendars and let me know your team's availability for a two-day period within that timeframe?\n\nI am here to support you in preparing for the audit. Once we confirm a date, I will send over a preparation checklist to help guide your team.\n\nPlease let me know if you have any immediate questions.\n\nBest,\n\nSarah Jenkins\nClinical Research Associate\nStellaris Pharma",
+          "timestamp": "2 days ago"
+        },
+        {
+          "from": "Emily Carter",
+          "to": "Sarah Jenkins",
+          "cc": ["Dr. Alan Grant", "David Chen", "Maria Garcia"],
+          "content": "Hi Sarah,\n\nThank you for the notification. We have reviewed our schedule.\n\nWe are available to host the audit on November 15th and 16th. Please let us know if those dates work for the auditor.\n\nWe would appreciate receiving the preparation checklist at your earliest convenience.\n\nThanks,\n\nEmily Carter\nStudy Coordinator\nMaple Creek Clinical Research",
+          "timestamp": "1 day ago"
+        },
+        {
+          "from": "Sarah Jenkins",
+          "to": "David Chen",
+          "cc": ["Emily Carter", "Dr. Alan Grant", "Maria Garcia"],
+          "content": "All,\n\nThank you for the quick response, Emily.\n\nDavid, please let us know if Nov 15-16 is confirmed on your end. Assuming it is, I have attached the general audit preparation checklist for the site's reference.\n\nEmily/Dr. Grant - Please review the attached document. I will plan to call you early next week to walk through it and answer any questions you may have.\n\nDavid - The site will be ready for you. Please send the formal agenda when it is available.\n\nBest regards,\n\nSarah Jenkins\nClinical Research Associate\nStellaris Pharma",
+          "timestamp": "1 day ago"
+        },
+        {
+          "from": "David Chen",
+          "to": "Sarah Jenkins",
+          "cc": [
+            "Emily Carter",
+            "Dr. Alan Grant",
+            "Maria Garcia",
+            "Brenda Wallace"
+          ],
+          "content": "All,\n\nDates confirmed. I am booked for the audit at Maple Creek Clinical Research on November 15-16, 2023.\n\nThank you, Sarah, for coordinating and providing the checklist. I will send out the detailed audit agenda by EOW next week.\n\nI look forward to meeting with the site team.\n\nRegards,\n\nDavid Chen\nSenior QA Auditor\nStellaris Pharma",
+          "timestamp": "12 hours ago"
         }
       ]
     }

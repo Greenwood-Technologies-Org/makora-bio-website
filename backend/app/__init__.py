@@ -19,8 +19,10 @@ def create_app() -> Flask:
 
     # Register blueprints
     from app.dspy_routes import dspy_bp
+    from app.data_routes import data_bp
 
     app.register_blueprint(dspy_bp, url_prefix="/api/dspy")
+    app.register_blueprint(data_bp)
 
     @app.route("/health")
     def health_check():

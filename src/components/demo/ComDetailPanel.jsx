@@ -1,8 +1,20 @@
 import React, { useState } from "react";
 import { generateEmailDraftWithDSPy } from "../../services/emailDrafting";
 import { generateTodosWithDSPy } from "../../services/todoGeneration";
+import {
+  addTodoToTask,
+  addTodosToTask,
+  updateTodo,
+  updateTask,
+} from "../../services/dataService";
 
-function ComDetailPanel({ com, onBack }) {
+function ComDetailPanel({
+  com,
+  onBack,
+  problemsData,
+  threadsData,
+  onTaskUpdate,
+}) {
   const [expandedThread, setExpandedThread] = useState(null);
   const [threads, setThreads] = useState(com.threads);
   const [draftMessages, setDraftMessages] = useState({});
@@ -159,30 +171,51 @@ function ComDetailPanel({ com, onBack }) {
     });
   };
 
-  const handleAddTodo = () => {
+  const handleAddTodo = async () => {
     if (!newTodo.description.trim() || !newTodo.tag) {
       alert("Please fill in all required fields");
       return;
     }
 
-    // Check if the TODO is associated with a thread (tags like "Thread 1", "Thread 2", etc.)
-    const isThreadAssociated = newTodo.tag.startsWith("Thread");
+    try {
+      // Check if the TODO is associated with a thread (tags like "Thread 1", "Thread 2", etc.)
+      const isThreadAssociated = newTodo.tag.startsWith("Thread");
 
-    const todo = {
-      id: todos.length + 1,
-      description: newTodo.description.trim(),
-      status: newTodo.status,
-      tag: newTodo.tag,
-      hasAIDraft: isThreadAssociated, // AI draft will be generated on-demand using DSPy
-    };
+      const todoData = {
+        description: newTodo.description.trim(),
+        status: newTodo.status,
+        tag: newTodo.tag,
+        hasAIDraft: isThreadAssociated, // AI draft will be generated on-demand using DSPy
+      };
 
-    setTodos([...todos, todo]);
-    setShowAddTodoModal(false);
-    setNewTodo({
-      description: "",
-      tag: "",
-      status: "pending",
-    });
+      // Persist the TODO
+      const createdTodo = await addTodoToTask(
+        com.id,
+        todoData,
+        problemsData,
+        threadsData
+      );
+
+      // Update local state
+      setTodos([...todos, createdTodo]);
+
+      // Update parent component
+      const updatedTask = {
+        ...com,
+        todos: [...todos, createdTodo],
+      };
+      onTaskUpdate(updatedTask);
+
+      setShowAddTodoModal(false);
+      setNewTodo({
+        description: "",
+        tag: "",
+        status: "pending",
+      });
+    } catch (error) {
+      console.error("Failed to add TODO:", error);
+      alert("Failed to save TODO. Please try again.");
+    }
   };
 
   const handleCancelAddTodo = () => {
@@ -221,12 +254,41 @@ function ComDetailPanel({ com, onBack }) {
     }
   };
 
-  const handleAcceptAiTodos = (selectedTodos) => {
-    // Add selected TODOs to the existing list
-    const newTodos = [...todos, ...selectedTodos];
-    setTodos(newTodos);
-    setShowAiTodoModal(false);
-    setAiTodoRecommendations(null);
+  const handleAcceptAiTodos = async (selectedTodos) => {
+    try {
+      // Prepare TODO data for persistence (remove temporary fields)
+      const todosData = selectedTodos.map((todo) => ({
+        description: todo.description,
+        status: todo.status,
+        tag: todo.tag,
+        hasAIDraft: todo.hasAIDraft,
+      }));
+
+      // Persist the TODOs
+      const createdTodos = await addTodosToTask(
+        com.id,
+        todosData,
+        problemsData,
+        threadsData
+      );
+
+      // Update local state
+      const newTodos = [...todos, ...createdTodos];
+      setTodos(newTodos);
+
+      // Update parent component
+      const updatedTask = {
+        ...com,
+        todos: newTodos,
+      };
+      onTaskUpdate(updatedTask);
+
+      setShowAiTodoModal(false);
+      setAiTodoRecommendations(null);
+    } catch (error) {
+      console.error("Failed to add AI TODOs:", error);
+      alert("Failed to save TODOs. Please try again.");
+    }
   };
 
   const handleRejectAiTodos = () => {
