@@ -1,65 +1,74 @@
 {
   "emails": [
     {
-      "from_address": "maria.garcia@metropolisgeneral.org",
+      "from_address": "alex.johnson@denalitx.com",
       "to_addresses": [
-        "alex.johnson@neurogenix.com"
+        "maria.garcia@centennialmedical.org"
       ],
       "cc_addresses": [
-        "david.chen@metropolisgeneral.org",
-        "bcarter@neurogenix.com",
-        "s.miller@globalcro.com"
+        "david.chen@syneos.com"
       ],
-      "subject": "URGENT: SAE Notification - Site 201 (Metropolis General) - Participant 450-008 - Protocol NGX-FTD-002",
-      "timestamp": "2023-11-06T10:05:00Z",
-      "body": "Dear Alex,\n\nPlease be advised of a Serious Adverse Event for a participant in the NGX-FTD-002 study at Site 201.\n\nParticipant ID: 450-008 (Part B, FTD Cohort)\nEvent: Hospitalization for Pneumonia\nDate of Onset: 2023-11-05\n\nThe participant was admitted to Metropolis General Hospital yesterday evening and is currently stable. We are gathering all necessary source documentation and will complete the formal SAE report form shortly.\n\nPlease let us know of any immediate questions.\n\nBest regards,\n\nDr. Maria Garcia\nPrincipal Investigator\nMetropolis General Hospital\nSite 201",
+      "subject": "[DT-1234] Scheduling Request: Interim Monitoring Visit at Site 105",
+      "timestamp": "2024-06-10T10:15:00Z",
+      "body": "Hi Maria,\n\nHope you are having a good week.\n\nI'm writing to schedule the next interim monitoring visit (IMV) for the DT-1234 study at Centennial Medical Center. I am proposing the weeks of June 24th or July 8th for a 2-day visit.\n\nPlease let me know what dates within that timeframe work best for you and the PI.\n\nBest regards,\n\nAlex Johnson\nClinical Research Associate\nDenali Therapeutics",
       "attachments": [],
-      "message_id": 87301,
+      "message_id": 101,
       "in_reply_to": null
     },
     {
-      "from_address": "alex.johnson@neurogenix.com",
+      "from_address": "maria.garcia@centennialmedical.org",
       "to_addresses": [
-        "maria.garcia@metropolisgeneral.org"
+        "alex.johnson@denalitx.com"
       ],
       "cc_addresses": [
-        "david.chen@metropolisgeneral.org",
-        "bcarter@neurogenix.com",
-        "s.miller@globalcro.com"
+        "david.chen@syneos.com"
       ],
-      "subject": "Re: URGENT: SAE Notification - Site 201 (Metropolis General) - Participant 450-008 - Protocol NGX-FTD-002",
-      "timestamp": "2023-11-06T10:25:00Z",
-      "body": "Dear Dr. Garcia,\n\nThank you for the prompt notification of this SAE for participant 450-008. The safety team has been alerted.\n\nPlease ensure the completed SAE report form is submitted to us within 24 hours of your initial awareness of the event. Also, please ensure all related source documentation is uploaded to the eTMF as it becomes available.\n\nWe appreciate your diligence.\n\nBest,\n\nAlex Johnson\nClinical Research Associate\nNeuroGenix Pharma",
+      "subject": "Re: [DT-1234] Scheduling Request: Interim Monitoring Visit at Site 105",
+      "timestamp": "2024-06-11T14:30:00Z",
+      "body": "Hi Alex,\n\nThanks for reaching out. The week of July 8th works better for us. How about Tuesday, July 9th and Wednesday, July 10th?\n\nCould you please send over the monitoring plan for our review prior to the visit?\n\nThanks,\n\nMaria Garcia\nStudy Coordinator\nCentennial Medical Center",
       "attachments": [],
-      "message_id": 87302,
-      "in_reply_to": 87301
+      "message_id": 102,
+      "in_reply_to": 101
     },
     {
-      "from_address": "david.chen@metropolisgeneral.org",
+      "from_address": "alex.johnson@denalitx.com",
       "to_addresses": [
-        "alex.johnson@neurogenix.com"
+        "maria.garcia@centennialmedical.org"
       ],
       "cc_addresses": [
-        "maria.garcia@metropolisgeneral.org",
-        "bcarter@neurogenix.com",
-        "s.miller@globalcro.com"
+        "david.chen@syneos.com"
       ],
-      "subject": "Re: URGENT: SAE Notification - Site 201 (Metropolis General) - Participant 450-008 - Protocol NGX-FTD-002",
-      "timestamp": "2023-11-07T09:50:00Z",
-      "body": "Hi Alex,\n\nPlease find the completed SAE Report Form for participant 450-008 attached to this email.\n\nWe are currently uploading the initial source documents (hospital admission notes, initial diagnosis) to the portal. We will continue to upload further documentation as we receive it.\n\nCould you please confirm receipt of the attached form?\n\nThank you,\n\nDavid Chen\nClinical Research Coordinator\nMetropolis General Hospital\nSite 201",
+      "subject": "Re: [DT-1234] Scheduling Request: Interim Monitoring Visit at Site 105",
+      "timestamp": "2024-06-12T09:05:00Z",
+      "body": "Hi Maria,\n\nThat's great, July 9th and 10th are confirmed on my end.\n\nI've attached the monitoring plan for your review. To help streamline the visit, could we arrange for remote access to your EMR system a few days prior? Please let me know the process for requesting temporary credentials.\n\nI will send the official confirmation letter once we have the access details sorted.\n\nBest,\n\nAlex Johnson\nClinical Research Associate\nDenali Therapeutics",
       "attachments": [
-        "SAE_Form_NGX-FTD-002_Site201_PT450-008_Pneumonia.pdf"
+        "DT-1234_IMV_Plan_Site105_2024-07-09.pdf"
       ],
-      "message_id": 87303,
-      "in_reply_to": 87302
+      "message_id": 103,
+      "in_reply_to": 102
+    },
+    {
+      "from_address": "maria.garcia@centennialmedical.org",
+      "to_addresses": [
+        "alex.johnson@denalitx.com"
+      ],
+      "cc_addresses": [
+        "david.chen@syneos.com"
+      ],
+      "subject": "Re: [DT-1234] Scheduling Request: Interim Monitoring Visit at Site 105",
+      "timestamp": "2024-06-12T16:45:00Z",
+      "body": "Hi Alex,\n\nThanks for the monitoring plan. I've forwarded it to Dr. Evans.\n\nFor EMR access, please fill out the attached Non-Employee Access Request form and return it to me. Our IT department typically takes 2-3 business days to process these requests.\n\nOnce you send it back, I'll submit it and we can consider the dates fully confirmed. Let me know if you have any questions.\n\nBest,\n\nMaria",
+      "attachments": [
+        "Centennial_EMR_Access_Request_Form.pdf"
+      ],
+      "message_id": 104,
+      "in_reply_to": 103
     }
   ],
   "role_descriptions": [
-    "alex.johnson@neurogenix.com: Sponsor, Clinical Research Associate",
-    "maria.garcia@metropolisgeneral.org: Site, Principal Investigator",
-    "david.chen@metropolisgeneral.org: Site, Clinical Research Coordinator",
-    "bcarter@neurogenix.com: Sponsor, Medical Monitor",
-    "s.miller@globalcro.com: CRO, Project Manager"
+    "alex.johnson@denalitx.com: Denali Therapeutics (Sponsor), Clinical Research Associate",
+    "maria.garcia@centennialmedical.org: Centennial Medical Center (Site), Study Coordinator",
+    "david.chen@syneos.com: Syneos Health (CRO), Project Manager"
   ],
-  "description": "An urgent email from the Principal Investigator at Site 201 reporting a Serious Adverse Event (SAE) for a participant in the FTD cohort (Part B). The participant was hospitalized for pneumonia. The thread shows Alex Johnson acknowledging receipt, requesting the completed SAE report form within 24 hours, and following up to ensure all source documentation has been uploaded and the event has been entered correctly in the safety database."
+  "description": "A routine scheduling request you initiated with the Study Coordinator at Site 105 to arrange the next interim monitoring visit. The back-and-forth conversation involves confirming dates, discussing the monitoring plan, and requesting remote access to the site's electronic medical records system."
 }

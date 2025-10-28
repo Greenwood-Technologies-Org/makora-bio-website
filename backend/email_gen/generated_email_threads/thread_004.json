@@ -1,48 +1,27 @@
 {
   "emails": [
     {
-      "from_address": "sarah.miller@ucsfmed.org",
+      "from_address": "emily.carter@oakwoodresearch.com",
       "to_addresses": [
-        "alex.johnson@denalitx.com"
+        "alex.johnson@denalitherapeutics.com"
       ],
       "cc_addresses": [
-        "maria.garcia@ucsfmed.org"
+        "david.lee@synergycro.com",
+        "jessica.chen@oakwoodresearch.com"
       ],
-      "subject": "URGENT: Temperature Excursion - DNL593 Study - Site 105",
-      "timestamp": "2023-10-26T16:15:00Z",
-      "body": "Hi Alex,\n\nHope you are well.\n\nThis morning we discovered a temperature excursion in the investigational product refrigerator at our pharmacy. The excursion occurred overnight.\n\n- Study: DNL593\n- Site: 105 - UCSF Medical Center\n- Excursion Start: Approx. 2023-10-25 22:00 PST\n- Excursion End: 2023-10-26 06:00 PST\n- Recorded Min/Max Temp: -1.5\u00b0C / 9.5\u00b0C (storage range is 2-8\u00b0C)\n- Affected Product: All DNL593 and placebo vials currently in stock.\n\nI have attached the continuous temperature monitoring log for your review. Please advise on the next steps and whether the product integrity may be compromised. The stock is currently being held in the fridge, but we have not used any for dispensing this morning.\n\nBest regards,\n\nSarah Miller, RPh\nPharmacist\nUCSF Medical Center Pharmacy",
-      "attachments": [
-        "Temp_Log_Site105_IP_Fridge_20231026.pdf"
-      ],
-      "message_id": 9501,
+      "subject": "Inquiry: DNL593 Study - Site 210 - Upcoming IP Shipment",
+      "timestamp": "2023-11-06T11:30:00-05:00",
+      "body": "Hi Alex,\n\nHope you are having a productive week.\n\nThe pharmacy team here at Oakwood Clinical Research (Site 210) would like to confirm the details for our next shipment of the investigational product, DNL593.\n\nWe are preparing for a couple of new participants who are scheduled for randomization soon and want to ensure our stock levels are adequate. Could you please provide an update on the quantity being shipped and the expected delivery date?\n\nThank you for your help.\n\nBest regards,\n\nDr. Emily Carter, PharmD\nInvestigational Drug Services\nOakwood Clinical Research",
+      "attachments": [],
+      "message_id": 16734,
       "in_reply_to": null
-    },
-    {
-      "from_address": "alex.johnson@denalitx.com",
-      "to_addresses": [
-        "david.chen@denalitx.com"
-      ],
-      "cc_addresses": [
-        "sarah.miller@ucsfmed.org",
-        "maria.garcia@ucsfmed.org",
-        "emily.white@denalitx.com"
-      ],
-      "subject": "Fwd: URGENT: Temperature Excursion - DNL593 Study - Site 105",
-      "timestamp": "2023-10-26T16:45:10Z",
-      "body": "Hi David,\n\nPlease see the urgent notification below from Site 105 regarding a temperature excursion for the DNL593 IP. Can you please assess the attached temperature log and advise on the product's viability?\n\nSarah/Maria - Thank you for the prompt notification. Please quarantine all affected DNL593 and placebo vials immediately. Do not dispense any of this stock. Please label it clearly as 'QUARANTINED - DO NOT USE' and move it to a separate, secure location within the correct temperature range. We will provide further instructions as soon as the assessment is complete.\n\nThanks,\n\nAlex Johnson\nClinical Research Associate\nDenali Therapeutics\n\n--- Forwarded message ---\nFrom: Sarah Miller <sarah.miller@ucsfmed.org>\nDate: Thu, Oct 26, 2023 at 9:15 AM\nSubject: URGENT: Temperature Excursion - DNL593 Study - Site 105\nTo: Alex Johnson <alex.johnson@denalitx.com>\nCc: Maria Garcia <maria.garcia@ucsfmed.org>\n\nHi Alex,\n\nHope you are well.\n\nThis morning we discovered a temperature excursion in the investigational product refrigerator at our pharmacy. The excursion occurred overnight.\n\n- Study: DNL593\n- Site: 105 - UCSF Medical Center\n- Excursion Start: Approx. 2023-10-25 22:00 PST\n- Excursion End: 2023-10-26 06:00 PST\n- Recorded Min/Max Temp: -1.5\u00b0C / 9.5\u00b0C (storage range is 2-8\u00b0C)\n- Affected Product: All DNL593 and placebo vials currently in stock.\n\nI have attached the continuous temperature monitoring log for your review. Please advise on the next steps and whether the product integrity may be compromised. The stock is currently being held in the fridge, but we have not used any for dispensing this morning.\n\nBest regards,\n\nSarah Miller, RPh\nPharmacist\nUCSF Medical Center Pharmacy",
-      "attachments": [
-        "Temp_Log_Site105_IP_Fridge_20231026.pdf"
-      ],
-      "message_id": 9502,
-      "in_reply_to": 9501
     }
   ],
   "role_descriptions": [
-    "alex.johnson@denalitx.com: Sponsor, Clinical Research Associate",
-    "sarah.miller@ucsfmed.org: Site, Pharmacist",
-    "maria.garcia@ucsfmed.org: Site, Study Coordinator",
-    "david.chen@denalitx.com: Sponsor, Clinical Trial Supplies Manager",
-    "emily.white@denalitx.com: Sponsor, Project Manager"
+    "alex.johnson@denalitherapeutics.com: Denali Therapeutics (Sponsor), Clinical Research Associate",
+    "emily.carter@oakwoodresearch.com: Site, Pharmacist",
+    "david.lee@synergycro.com: CRO, Clinical Research Associate",
+    "jessica.chen@oakwoodresearch.com: Site, Study Coordinator"
   ],
-  "description": "An email from the site pharmacist at Site 105 reporting a temperature excursion in the refrigerator storing the DNL593 and placebo vials. Alex Johnson immediately forwards the temperature log and details to the internal Clinical Trial Supplies Manager at Denali Therapeutics to assess if the product integrity has been compromised and advises the site to quarantine the affected stock pending investigation."
+  "description": "A straightforward inquiry from the pharmacy at Site 210 regarding an upcoming shipment of the investigational product, DNL593. They are confirming the quantity and expected delivery date to ensure they have adequate supply for newly randomized participants."
 }

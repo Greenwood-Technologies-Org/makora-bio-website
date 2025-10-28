@@ -5,281 +5,280 @@
     {
       "emails": [
         {
-          "from_address": "alex.johnson@neurogenixpharma.com",
+          "from_address": "r.miller@oakwoodresearch.org",
           "to_addresses": [
-            "mgarcia@stmarysneurology.org"
+            "maria.garcia@synergyclinical.com"
           ],
           "cc_addresses": [
-            "sarah.chen@neurogenixpharma.com",
-            "revans@stmarysneurology.org"
+            "e.white@oakwoodresearch.org",
+            "david.lee@synergyclinical.com",
+            "alex.johnson@denalitx.com",
+            "sarah.chen@denalitx.com"
           ],
-          "subject": "NGX-PD-201: Scheduling Interim Monitoring Visit (IMV) #3 - Site 105",
-          "timestamp": "2023-11-06T11:15:00Z",
-          "body": "Hi Maria,\n\nI hope you are well.\n\nI'm writing to schedule the next routine Interim Monitoring Visit (IMV) for the NGX-PD-201 study at St. Mary's Neurological Institute. I am proposing a 2-day visit during the last week of November.\n\nMy available dates are:\n- November 27-28\n- November 29-30\n\nPlease let me know which of these dates would work best for you and Dr. Evans. \n\nKey activities for this visit will include 100% SDV for the first three participants enrolled in Part B, review of the ISF, and drug accountability. I have attached a draft agenda for your review.\n\nI look forward to hearing from you.\n\nBest regards,\n\nAlex Johnson\nClinical Research Associate\nNeuroGenix Pharma\nalex.johnson@neurogenixpharma.com",
+          "subject": "URGENT: SAE Report - Study DNLI-001 - Site 203 - Participant 203-005",
+          "timestamp": "2023-10-23T09:15:30-05:00",
+          "body": "Dear Team,\n\nThis is an urgent notification regarding a Serious Adverse Event for participant 203-005 in the DNLI-001 study (Part B).\n\nThe participant was hospitalized yesterday evening following a fall at home. They are currently stable and undergoing evaluation.\n\nWe are in the process of gathering all necessary source documentation and will forward the completed SAE form as soon as possible, well within the 24-hour reporting window.\n\nBest regards,\n\nDr. Robert Miller\nPrincipal Investigator\nOakwood Research Center, Site 203",
+          "attachments": [],
+          "message_id": 1201,
+          "in_reply_to": null
+        },
+        {
+          "from_address": "maria.garcia@synergyclinical.com",
+          "to_addresses": [
+            "r.miller@oakwoodresearch.org"
+          ],
+          "cc_addresses": [
+            "e.white@oakwoodresearch.org",
+            "david.lee@synergyclinical.com",
+            "alex.johnson@denalitx.com",
+            "sarah.chen@denalitx.com"
+          ],
+          "subject": "Re: URGENT: SAE Report - Study DNLI-001 - Site 203 - Participant 203-005",
+          "timestamp": "2023-10-23T09:48:10-05:00",
+          "body": "Dear Dr. Miller,\n\nThank you for the prompt notification. We have received your alert and are on standby.\n\nPlease send the completed SAE form and any available source documentation (e.g., hospital admission notes, ER report) as soon as it is available.\n\nWe appreciate your diligence.\n\nBest regards,\n\nMaria Garcia\nClinical Research Associate\nSynergy Clinical",
+          "attachments": [],
+          "message_id": 1202,
+          "in_reply_to": 1201
+        },
+        {
+          "from_address": "e.white@oakwoodresearch.org",
+          "to_addresses": [
+            "maria.garcia@synergyclinical.com"
+          ],
+          "cc_addresses": [
+            "r.miller@oakwoodresearch.org",
+            "david.lee@synergyclinical.com",
+            "alex.johnson@denalitx.com",
+            "sarah.chen@denalitx.com"
+          ],
+          "subject": "Re: URGENT: SAE Report - Study DNLI-001 - Site 203 - Participant 203-005",
+          "timestamp": "2023-10-23T15:10:00-05:00",
+          "body": "Hi Maria,\n\nPlease find the completed SAE form and the initial hospital admission summary for participant 203-005 attached.\n\nDr. Miller has assessed the event as 'possibly related' to the investigational product due to the participant reporting a brief episode of dizziness prior to the fall. This is documented in the attached form.\n\nWe are awaiting further records from the hospital. Please review and let us know if any immediate additional information is required from our end.\n\nThank you,\n\nEmily White\nStudy Coordinator\nOakwood Research Center",
           "attachments": [
-            "Draft_Agenda_IMV3_Site105.pdf"
+            "DNLI-001_SAE_Form_203-005_Fall.pdf",
+            "Initial_Hospital_Note_203-005_Redacted.pdf"
           ],
-          "message_id": 5201,
-          "in_reply_to": null
+          "message_id": 1203,
+          "in_reply_to": 1202
         },
         {
-          "from_address": "mgarcia@stmarysneurology.org",
-          "to_addresses": [
-            "alex.johnson@neurogenixpharma.com"
-          ],
-          "cc_addresses": [
-            "sarah.chen@neurogenixpharma.com",
-            "revans@stmarysneurology.org"
-          ],
-          "subject": "Re: NGX-PD-201: Scheduling Interim Monitoring Visit (IMV) #3 - Site 105",
-          "timestamp": "2023-11-06T15:45:00Z",
-          "body": "Hi Alex,\n\nThanks for reaching out. The dates of November 29-30 work well for us.\n\nThe draft agenda looks good. For our planning purposes, can you confirm which Part B participants you will be focusing on for SDV?\n\nAlso, please let us know what you will need for EMR access. I will need to submit a request to our IT department at least one week in advance to set up your temporary credentials.\n\nThanks,\n\nMaria Garcia\nStudy Coordinator\nSt. Mary's Neurological Institute",
-          "attachments": [],
-          "message_id": 5202,
-          "in_reply_to": 5201
-        },
-        {
-          "from_address": "alex.johnson@neurogenixpharma.com",
-          "to_addresses": [
-            "mgarcia@stmarysneurology.org"
-          ],
-          "cc_addresses": [
-            "sarah.chen@neurogenixpharma.com",
-            "revans@stmarysneurology.org"
-          ],
-          "subject": "Re: NGX-PD-201: Scheduling Interim Monitoring Visit (IMV) #3 - Site 105",
-          "timestamp": "2023-11-07T09:30:00Z",
-          "body": "Hi Maria,\n\nExcellent, let's confirm the visit for November 29-30. I have booked my travel accordingly.\n\nFor the Part B SDV, we will review participants 105-012, 105-013, and 105-014.\n\nRegarding EMR access, I will send my details in a separate, secure email for you to forward to IT. Thank you for arranging that.\n\nPlease let me know if you need anything else from my side to prepare.\n\nBest,\n\nAlex Johnson\nClinical Research Associate\nNeuroGenix Pharma\nalex.johnson@neurogenixpharma.com",
-          "attachments": [],
-          "message_id": 5203,
-          "in_reply_to": 5202
-        },
-        {
-          "from_address": "mgarcia@stmarysneurology.org",
-          "to_addresses": [
-            "alex.johnson@neurogenixpharma.com"
-          ],
-          "cc_addresses": [
-            "sarah.chen@neurogenixpharma.com",
-            "revans@stmarysneurology.org"
-          ],
-          "subject": "Re: NGX-PD-201: Scheduling Interim Monitoring Visit (IMV) #3 - Site 105",
-          "timestamp": "2023-11-07T14:05:00Z",
-          "body": "Hi Alex,\n\nSounds good. I've blocked our calendars for Nov 29-30 and noted the participants for SDV.\n\nOne quick thing - Dr. Evans has requested to add a 30-minute meeting to the agenda on the first day to discuss the recruitment strategy for Part B. Would you be able to accommodate this?\n\nIf so, could you please send over an updated agenda reflecting this change?\n\nThanks,\n\nMaria Garcia\nStudy Coordinator\nSt. Mary's Neurological Institute",
-          "attachments": [],
-          "message_id": 5204,
-          "in_reply_to": 5203
-        }
-      ],
-      "role_descriptions": [
-        "alex.johnson@neurogenixpharma.com: Sponsor, Clinical Research Associate",
-        "sarah.chen@neurogenixpharma.com: Sponsor, Clinical Project Manager",
-        "mgarcia@stmarysneurology.org: Site, Study Coordinator",
-        "revans@stmarysneurology.org: Site, Principal Investigator"
-      ],
-      "description": "An email thread initiated by Alex Johnson to the Study Coordinator at Site 105, 'St. Mary's Neurological Institute', to schedule the next routine interim monitoring visit. The thread includes a back-and-forth discussion to confirm dates, finalize the agenda including Source Data Verification (SDV) for the first few participants in Part B, and arrange for access to the site's Electronic Medical Record (EMR) system."
-    },
-    {
-      "emails": [
-        {
-          "from_address": "maria.garcia@metropolisgeneral.org",
-          "to_addresses": [
-            "alex.johnson@neurogenix.com"
-          ],
-          "cc_addresses": [
-            "david.chen@metropolisgeneral.org",
-            "bcarter@neurogenix.com",
-            "s.miller@globalcro.com"
-          ],
-          "subject": "URGENT: SAE Notification - Site 201 (Metropolis General) - Participant 450-008 - Protocol NGX-FTD-002",
-          "timestamp": "2023-11-06T10:05:00Z",
-          "body": "Dear Alex,\n\nPlease be advised of a Serious Adverse Event for a participant in the NGX-FTD-002 study at Site 201.\n\nParticipant ID: 450-008 (Part B, FTD Cohort)\nEvent: Hospitalization for Pneumonia\nDate of Onset: 2023-11-05\n\nThe participant was admitted to Metropolis General Hospital yesterday evening and is currently stable. We are gathering all necessary source documentation and will complete the formal SAE report form shortly.\n\nPlease let us know of any immediate questions.\n\nBest regards,\n\nDr. Maria Garcia\nPrincipal Investigator\nMetropolis General Hospital\nSite 201",
-          "attachments": [],
-          "message_id": 87301,
-          "in_reply_to": null
-        },
-        {
-          "from_address": "alex.johnson@neurogenix.com",
-          "to_addresses": [
-            "maria.garcia@metropolisgeneral.org"
-          ],
-          "cc_addresses": [
-            "david.chen@metropolisgeneral.org",
-            "bcarter@neurogenix.com",
-            "s.miller@globalcro.com"
-          ],
-          "subject": "Re: URGENT: SAE Notification - Site 201 (Metropolis General) - Participant 450-008 - Protocol NGX-FTD-002",
-          "timestamp": "2023-11-06T10:25:00Z",
-          "body": "Dear Dr. Garcia,\n\nThank you for the prompt notification of this SAE for participant 450-008. The safety team has been alerted.\n\nPlease ensure the completed SAE report form is submitted to us within 24 hours of your initial awareness of the event. Also, please ensure all related source documentation is uploaded to the eTMF as it becomes available.\n\nWe appreciate your diligence.\n\nBest,\n\nAlex Johnson\nClinical Research Associate\nNeuroGenix Pharma",
-          "attachments": [],
-          "message_id": 87302,
-          "in_reply_to": 87301
-        },
-        {
-          "from_address": "david.chen@metropolisgeneral.org",
-          "to_addresses": [
-            "alex.johnson@neurogenix.com"
-          ],
-          "cc_addresses": [
-            "maria.garcia@metropolisgeneral.org",
-            "bcarter@neurogenix.com",
-            "s.miller@globalcro.com"
-          ],
-          "subject": "Re: URGENT: SAE Notification - Site 201 (Metropolis General) - Participant 450-008 - Protocol NGX-FTD-002",
-          "timestamp": "2023-11-07T09:50:00Z",
-          "body": "Hi Alex,\n\nPlease find the completed SAE Report Form for participant 450-008 attached to this email.\n\nWe are currently uploading the initial source documents (hospital admission notes, initial diagnosis) to the portal. We will continue to upload further documentation as we receive it.\n\nCould you please confirm receipt of the attached form?\n\nThank you,\n\nDavid Chen\nClinical Research Coordinator\nMetropolis General Hospital\nSite 201",
-          "attachments": [
-            "SAE_Form_NGX-FTD-002_Site201_PT450-008_Pneumonia.pdf"
-          ],
-          "message_id": 87303,
-          "in_reply_to": 87302
-        }
-      ],
-      "role_descriptions": [
-        "alex.johnson@neurogenix.com: Sponsor, Clinical Research Associate",
-        "maria.garcia@metropolisgeneral.org: Site, Principal Investigator",
-        "david.chen@metropolisgeneral.org: Site, Clinical Research Coordinator",
-        "bcarter@neurogenix.com: Sponsor, Medical Monitor",
-        "s.miller@globalcro.com: CRO, Project Manager"
-      ],
-      "description": "An urgent email from the Principal Investigator at Site 201 reporting a Serious Adverse Event (SAE) for a participant in the FTD cohort (Part B). The participant was hospitalized for pneumonia. The thread shows Alex Johnson acknowledging receipt, requesting the completed SAE report form within 24 hours, and following up to ensure all source documentation has been uploaded and the event has been entered correctly in the safety database."
-    },
-    {
-      "emails": [
-        {
-          "from_address": "maria.garcia@clindatasolutions.com",
-          "to_addresses": [
-            "alex.johnson@stellarpharma.com"
-          ],
-          "cc_addresses": [
-            "samantha.roy@stellarpharma.com"
-          ],
-          "subject": "[URGENT] Overdue Data Queries - Protocol SP-123, Site 102",
-          "timestamp": "2023-10-26T09:15:00Z",
-          "body": "Hi Alex,\n\nPlease see the attached report regarding a high number of overdue data queries for Site 102 (University Medical Center). There are currently 85 queries outstanding for over 14 days, which is significantly impacting our timelines for the upcoming data lock.\n\nCould you please follow up with the site to get these resolved as soon as possible?\n\nThanks,\n\nMaria Garcia\nData Manager\nClinData Solutions",
-          "attachments": [
-            "Site102_Overdue_Queries_Report_20231026.xlsx"
-          ],
-          "message_id": 1,
-          "in_reply_to": null
-        },
-        {
-          "from_address": "alex.johnson@stellarpharma.com",
-          "to_addresses": [
-            "dchen@umc.edu"
-          ],
-          "cc_addresses": [
-            "maria.garcia@clindatasolutions.com",
-            "samantha.roy@stellarpharma.com"
-          ],
-          "subject": "Fwd: [URGENT] Overdue Data Queries - Protocol SP-123, Site 102",
-          "timestamp": "2023-10-26T10:30:00Z",
-          "body": "Hi David,\n\nHope you are well.\n\nThe data management team has flagged a significant number of overdue queries for your site (please see the report attached in the original email below). \n\nCould you please provide an update on the plan to address these? Please let me know if you need any support from our end.\n\nBest regards,\n\nAlex Johnson\nClinical Research Associate\nStellar Pharma\n\n--- Forwarded message ---\nFrom: Maria Garcia <maria.garcia@clindatasolutions.com>\nDate: Thu, Oct 26, 2023 at 9:15 AM\nSubject: [URGENT] Overdue Data Queries - Protocol SP-123, Site 102\nTo: Alex Johnson <alex.johnson@stellarpharma.com>\nCc: Samantha Roy <samantha.roy@stellarpharma.com>\n\n[Original email body from Maria Garcia]",
-          "attachments": [],
-          "message_id": 2,
-          "in_reply_to": 1
-        },
-        {
-          "from_address": "dchen@umc.edu",
-          "to_addresses": [
-            "alex.johnson@stellarpharma.com"
-          ],
-          "cc_addresses": [
-            "maria.garcia@clindatasolutions.com",
-            "samantha.roy@stellarpharma.com"
-          ],
-          "subject": "Re: [URGENT] Overdue Data Queries - Protocol SP-123, Site 102",
-          "timestamp": "2023-10-27T14:05:00Z",
-          "body": "Hi Alex,\n\nThanks for reaching out. Apologies for the delay in query resolution. We've had some unexpected staffing shortages over the past few weeks which has created a significant backlog.\n\nThe list of 85 queries is quite overwhelming for our current capacity. To help us tackle this efficiently, could you help us prioritize which queries are the most critical to address first, for instance, those related to primary endpoint data?\n\nAny guidance would be greatly appreciated.\n\nThanks,\n\nDavid Chen\nStudy Coordinator\nUniversity Medical Center",
-          "attachments": [],
-          "message_id": 3,
-          "in_reply_to": 2
-        }
-      ],
-      "role_descriptions": [
-        "alex.johnson@stellarpharma.com: Sponsor, Clinical Research Associate",
-        "maria.garcia@clindatasolutions.com: CRO, Data Manager",
-        "dchen@umc.edu: Site, Study Coordinator",
-        "samantha.roy@stellarpharma.com: Sponsor, Lead Clinical Research Associate"
-      ],
-      "description": "A multi-email exchange with the data management team and the Study Coordinator at Site 102. The initial email from the data manager flags a high number of overdue data queries for the site. Alex Johnson forwards this to the site coordinator, who replies explaining they are short-staffed. Alex then works with them to prioritize the most critical queries related to primary endpoint data and sets up a call to help resolve the backlog."
-    },
-    {
-      "emails": [
-        {
-          "from_address": "sarah.chen@maplewoodcrc.com",
-          "to_addresses": [
-            "alex.johnson@innovatepharma.com"
-          ],
-          "cc_addresses": [
-            "david.miller@maplewoodcrc.com",
-            "emily.carter@innovatepharma.com",
-            "brenda.davis@innovatepharma.com"
-          ],
-          "subject": "URGENT: Significant Protocol Deviation - Dosing Error - Study INP456 - Site 303 - Pt 303-005",
-          "timestamp": "2024-05-21T09:15:22Z",
-          "body": "Dear Alex,\n\nI am writing to urgently report a significant protocol deviation that occurred today for participant 303-005, enrolled in Part B of the INP456 study.\n\nThis morning during their daily check-in call, the participant reported that they inadvertently took a double dose of the investigational product (two tablets instead of the prescribed one tablet).\n\nThe participant is currently asymptomatic and reports feeling well. Our PI, Dr. Miller, has been notified and has spoken with the participant directly. We have instructed the participant to self-monitor closely and report any new or worsening symptoms immediately.\n\nWe are initiating a Protocol Deviation form. Could you please provide immediate guidance on the next steps for documentation and any additional safety monitoring procedures we should implement? We need to confirm the appropriate reporting timelines and if any other forms are required at this stage.\n\nThank you for your prompt attention to this serious matter.\n\nBest regards,\n\nSarah Chen\nStudy Coordinator\nMaplewood Clinical Research Center\n(555) 123-4567",
-          "attachments": [],
-          "message_id": 1,
-          "in_reply_to": null
-        }
-      ],
-      "role_descriptions": [
-        "sarah.chen@maplewoodcrc.com: Site, Study Coordinator",
-        "alex.johnson@innovatepharma.com: Sponsor, Clinical Research Associate",
-        "david.miller@maplewoodcrc.com: Site, Principal Investigator",
-        "emily.carter@innovatepharma.com: Sponsor, Medical Monitor",
-        "brenda.davis@innovatepharma.com: Sponsor, Clinical Trial Manager"
-      ],
-      "description": "A thread initiated by the Study Coordinator at Site 303 regarding a significant protocol deviation. A participant in Part B accidentally took a double dose of the investigational product. Alex Johnson provides immediate guidance on documenting the event, completing a protocol deviation form, and ensuring the participant is monitored closely for any adverse effects, looping in the study's Medical Monitor for clinical oversight."
-    },
-    {
-      "emails": [
-        {
-          "from_address": "sarah.miller@ucsfmed.org",
+          "from_address": "maria.garcia@synergyclinical.com",
           "to_addresses": [
             "alex.johnson@denalitx.com"
           ],
           "cc_addresses": [
-            "maria.garcia@ucsfmed.org"
+            "david.lee@synergyclinical.com",
+            "sarah.chen@denalitx.com"
           ],
-          "subject": "URGENT: Temperature Excursion - DNL593 Study - Site 105",
-          "timestamp": "2023-10-26T16:15:00Z",
-          "body": "Hi Alex,\n\nHope you are well.\n\nThis morning we discovered a temperature excursion in the investigational product refrigerator at our pharmacy. The excursion occurred overnight.\n\n- Study: DNL593\n- Site: 105 - UCSF Medical Center\n- Excursion Start: Approx. 2023-10-25 22:00 PST\n- Excursion End: 2023-10-26 06:00 PST\n- Recorded Min/Max Temp: -1.5\u00b0C / 9.5\u00b0C (storage range is 2-8\u00b0C)\n- Affected Product: All DNL593 and placebo vials currently in stock.\n\nI have attached the continuous temperature monitoring log for your review. Please advise on the next steps and whether the product integrity may be compromised. The stock is currently being held in the fridge, but we have not used any for dispensing this morning.\n\nBest regards,\n\nSarah Miller, RPh\nPharmacist\nUCSF Medical Center Pharmacy",
+          "subject": "Fwd: URGENT: SAE Report - Study DNLI-001 - Site 203 - Participant 203-005 -- Sponsor Review Needed",
+          "timestamp": "2023-10-23T15:45:25-05:00",
+          "body": "Hi Alex,\n\nPlease see the forwarded email and attachments for the SAE reported at Site 203 (hospitalization due to a fall).\n\nKey points:\n- Participant in Part B\n- PI causality assessment: 'possibly related'\n\nCould you please review the attached documents and confirm the sponsor's initial assessment and any immediate follow-up questions for the site? The Medical Monitor is on copy.\n\nThanks,\nMaria\n\n--- Begin Forwarded Message ---\nFrom: Emily White <e.white@oakwoodresearch.org>\nDate: Mon, Oct 23, 2023, 3:10 PM\nSubject: Re: URGENT: SAE Report - Study DNLI-001 - Site 203 - Participant 203-005\nTo: Maria Garcia <maria.garcia@synergyclinical.com>\nCc: Robert Miller <r.miller@oakwoodresearch.org>, David Lee <david.lee@synergyclinical.com>, Alex Johnson <alex.johnson@denalitx.com>, Sarah Chen <sarah.chen@denalitx.com>\n\nHi Maria,\n\nPlease find the completed SAE form and the initial hospital admission summary for participant 203-005 attached.\n\nDr. Miller has assessed the event as 'possibly related' to the investigational product due to the participant reporting a brief episode of dizziness prior to the fall. This is documented in the attached form.\n\nWe are awaiting further records from the hospital. Please review and let us know if any immediate additional information is required from our end.\n\nThank you,\n\nEmily White\nStudy Coordinator\nOakwood Research Center",
           "attachments": [
-            "Temp_Log_Site105_IP_Fridge_20231026.pdf"
+            "DNLI-001_SAE_Form_203-005_Fall.pdf",
+            "Initial_Hospital_Note_203-005_Redacted.pdf"
           ],
-          "message_id": 9501,
+          "message_id": 1204,
+          "in_reply_to": 1203
+        }
+      ],
+      "role_descriptions": [
+        "alex.johnson@denalitx.com: Denali Therapeutics (Sponsor), Clinical Research Associate",
+        "sarah.chen@denalitx.com: Denali Therapeutics (Sponsor), Medical Monitor",
+        "maria.garcia@synergyclinical.com: Synergy Clinical (CRO), Clinical Research Associate",
+        "david.lee@synergyclinical.com: Synergy Clinical (CRO), Project Manager",
+        "r.miller@oakwoodresearch.org: Oakwood Research Center (Site), Principal Investigator",
+        "e.white@oakwoodresearch.org: Oakwood Research Center (Site), Study Coordinator"
+      ],
+      "description": "An urgent email thread initiated by the Principal Investigator at Site 203 reporting a Serious Adverse Event (SAE). A participant in Part B of the study was hospitalized due to a fall. The thread includes your immediate follow-up questions regarding the event's causality and a request for the completed SAE form and source documentation."
+    },
+    {
+      "emails": [
+        {
+          "from_address": "alex.johnson@denalitx.com",
+          "to_addresses": [
+            "maria.garcia@centennialmedical.org"
+          ],
+          "cc_addresses": [
+            "david.chen@syneos.com"
+          ],
+          "subject": "[DT-1234] Scheduling Request: Interim Monitoring Visit at Site 105",
+          "timestamp": "2024-06-10T10:15:00Z",
+          "body": "Hi Maria,\n\nHope you are having a good week.\n\nI'm writing to schedule the next interim monitoring visit (IMV) for the DT-1234 study at Centennial Medical Center. I am proposing the weeks of June 24th or July 8th for a 2-day visit.\n\nPlease let me know what dates within that timeframe work best for you and the PI.\n\nBest regards,\n\nAlex Johnson\nClinical Research Associate\nDenali Therapeutics",
+          "attachments": [],
+          "message_id": 101,
           "in_reply_to": null
+        },
+        {
+          "from_address": "maria.garcia@centennialmedical.org",
+          "to_addresses": [
+            "alex.johnson@denalitx.com"
+          ],
+          "cc_addresses": [
+            "david.chen@syneos.com"
+          ],
+          "subject": "Re: [DT-1234] Scheduling Request: Interim Monitoring Visit at Site 105",
+          "timestamp": "2024-06-11T14:30:00Z",
+          "body": "Hi Alex,\n\nThanks for reaching out. The week of July 8th works better for us. How about Tuesday, July 9th and Wednesday, July 10th?\n\nCould you please send over the monitoring plan for our review prior to the visit?\n\nThanks,\n\nMaria Garcia\nStudy Coordinator\nCentennial Medical Center",
+          "attachments": [],
+          "message_id": 102,
+          "in_reply_to": 101
         },
         {
           "from_address": "alex.johnson@denalitx.com",
           "to_addresses": [
-            "david.chen@denalitx.com"
+            "maria.garcia@centennialmedical.org"
           ],
           "cc_addresses": [
-            "sarah.miller@ucsfmed.org",
-            "maria.garcia@ucsfmed.org",
-            "emily.white@denalitx.com"
+            "david.chen@syneos.com"
           ],
-          "subject": "Fwd: URGENT: Temperature Excursion - DNL593 Study - Site 105",
-          "timestamp": "2023-10-26T16:45:10Z",
-          "body": "Hi David,\n\nPlease see the urgent notification below from Site 105 regarding a temperature excursion for the DNL593 IP. Can you please assess the attached temperature log and advise on the product's viability?\n\nSarah/Maria - Thank you for the prompt notification. Please quarantine all affected DNL593 and placebo vials immediately. Do not dispense any of this stock. Please label it clearly as 'QUARANTINED - DO NOT USE' and move it to a separate, secure location within the correct temperature range. We will provide further instructions as soon as the assessment is complete.\n\nThanks,\n\nAlex Johnson\nClinical Research Associate\nDenali Therapeutics\n\n--- Forwarded message ---\nFrom: Sarah Miller <sarah.miller@ucsfmed.org>\nDate: Thu, Oct 26, 2023 at 9:15 AM\nSubject: URGENT: Temperature Excursion - DNL593 Study - Site 105\nTo: Alex Johnson <alex.johnson@denalitx.com>\nCc: Maria Garcia <maria.garcia@ucsfmed.org>\n\nHi Alex,\n\nHope you are well.\n\nThis morning we discovered a temperature excursion in the investigational product refrigerator at our pharmacy. The excursion occurred overnight.\n\n- Study: DNL593\n- Site: 105 - UCSF Medical Center\n- Excursion Start: Approx. 2023-10-25 22:00 PST\n- Excursion End: 2023-10-26 06:00 PST\n- Recorded Min/Max Temp: -1.5\u00b0C / 9.5\u00b0C (storage range is 2-8\u00b0C)\n- Affected Product: All DNL593 and placebo vials currently in stock.\n\nI have attached the continuous temperature monitoring log for your review. Please advise on the next steps and whether the product integrity may be compromised. The stock is currently being held in the fridge, but we have not used any for dispensing this morning.\n\nBest regards,\n\nSarah Miller, RPh\nPharmacist\nUCSF Medical Center Pharmacy",
+          "subject": "Re: [DT-1234] Scheduling Request: Interim Monitoring Visit at Site 105",
+          "timestamp": "2024-06-12T09:05:00Z",
+          "body": "Hi Maria,\n\nThat's great, July 9th and 10th are confirmed on my end.\n\nI've attached the monitoring plan for your review. To help streamline the visit, could we arrange for remote access to your EMR system a few days prior? Please let me know the process for requesting temporary credentials.\n\nI will send the official confirmation letter once we have the access details sorted.\n\nBest,\n\nAlex Johnson\nClinical Research Associate\nDenali Therapeutics",
           "attachments": [
-            "Temp_Log_Site105_IP_Fridge_20231026.pdf"
+            "DT-1234_IMV_Plan_Site105_2024-07-09.pdf"
           ],
-          "message_id": 9502,
-          "in_reply_to": 9501
+          "message_id": 103,
+          "in_reply_to": 102
+        },
+        {
+          "from_address": "maria.garcia@centennialmedical.org",
+          "to_addresses": [
+            "alex.johnson@denalitx.com"
+          ],
+          "cc_addresses": [
+            "david.chen@syneos.com"
+          ],
+          "subject": "Re: [DT-1234] Scheduling Request: Interim Monitoring Visit at Site 105",
+          "timestamp": "2024-06-12T16:45:00Z",
+          "body": "Hi Alex,\n\nThanks for the monitoring plan. I've forwarded it to Dr. Evans.\n\nFor EMR access, please fill out the attached Non-Employee Access Request form and return it to me. Our IT department typically takes 2-3 business days to process these requests.\n\nOnce you send it back, I'll submit it and we can consider the dates fully confirmed. Let me know if you have any questions.\n\nBest,\n\nMaria",
+          "attachments": [
+            "Centennial_EMR_Access_Request_Form.pdf"
+          ],
+          "message_id": 104,
+          "in_reply_to": 103
         }
       ],
       "role_descriptions": [
-        "alex.johnson@denalitx.com: Sponsor, Clinical Research Associate",
-        "sarah.miller@ucsfmed.org: Site, Pharmacist",
-        "maria.garcia@ucsfmed.org: Site, Study Coordinator",
-        "david.chen@denalitx.com: Sponsor, Clinical Trial Supplies Manager",
-        "emily.white@denalitx.com: Sponsor, Project Manager"
+        "alex.johnson@denalitx.com: Denali Therapeutics (Sponsor), Clinical Research Associate",
+        "maria.garcia@centennialmedical.org: Centennial Medical Center (Site), Study Coordinator",
+        "david.chen@syneos.com: Syneos Health (CRO), Project Manager"
       ],
-      "description": "An email from the site pharmacist at Site 105 reporting a temperature excursion in the refrigerator storing the DNL593 and placebo vials. Alex Johnson immediately forwards the temperature log and details to the internal Clinical Trial Supplies Manager at Denali Therapeutics to assess if the product integrity has been compromised and advises the site to quarantine the affected stock pending investigation."
+      "description": "A routine scheduling request you initiated with the Study Coordinator at Site 105 to arrange the next interim monitoring visit. The back-and-forth conversation involves confirming dates, discussing the monitoring plan, and requesting remote access to the site's electronic medical records system."
+    },
+    {
+      "emails": [
+        {
+          "from_address": "sarah.chen@synergyclinical.com",
+          "to_addresses": [
+            "alex.johnson@denalitx.com"
+          ],
+          "cc_addresses": [
+            "david.lee@synergyclinical.com",
+            "maria.garcia@denalitx.com"
+          ],
+          "subject": "URGENT Follow-up Required: Critical Overdue Queries for Site 301 - Study DNLI-STX-01",
+          "timestamp": "2023-11-06T14:30:00Z",
+          "body": "Hi Alex,\n\nHope you are well.\n\nI am forwarding a list of critical, overdue data queries for Site 301 (PI: Dr. Wells) that require immediate attention. We are rapidly approaching the database lock deadline for the Q4 analysis, and resolution of these queries is on the critical path.\n\nThe attached spreadsheet details 8 critical queries related specifically to participant dosing records. These discrepancies must be clarified by the site to ensure data integrity.\n\nCould you please follow up with the site coordinator, Jessica Miller, to ensure these are resolved in the EDC system within the next 48 hours? \n\nPlease let me know if you anticipate any issues or need further clarification from the data management team.\n\nThanks for your urgent attention to this matter.\n\nBest regards,\n\nSarah Chen\nLead Data Manager\nSynergy Clinical",
+          "attachments": [
+            "DNLI-STX-01_Site301_Critical_Queries_Dosing_06NOV2023.xlsx"
+          ],
+          "message_id": 95821,
+          "in_reply_to": null
+        }
+      ],
+      "role_descriptions": [
+        "alex.johnson@denalitx.com: Denali Therapeutics (Sponsor), Clinical Research Associate",
+        "sarah.chen@synergyclinical.com: Synergy Clinical (CRO), Lead Data Manager",
+        "david.lee@synergyclinical.com: Synergy Clinical (CRO), Clinical Project Manager",
+        "maria.garcia@denalitx.com: Denali Therapeutics (Sponsor), Clinical Trial Manager"
+      ],
+      "description": "An email from the Lead Data Manager at the CRO forwarding a list of critical, overdue data queries for Site 301. You are asked to follow up with the site to ensure the queries related to participant dosing records are resolved within the next 48 hours to meet a database lock deadline."
+    },
+    {
+      "emails": [
+        {
+          "from_address": "sarah.chen@oakwoodcrc.com",
+          "to_addresses": [
+            "ben.carter@synergycro.com"
+          ],
+          "cc_addresses": [
+            "emily.vance@oakwoodcrc.com"
+          ],
+          "subject": "[URGENT] Protocol Deviation - Study DNLI-123 - Site 456 - Subject 101-003",
+          "timestamp": "2024-05-21T14:30:00-05:00",
+          "body": "Hi Ben,\n\nI am writing to self-report a protocol deviation for subject 101-003, enrolled in Part A of the DNLI-123 study.\n\nThis morning, the participant missed their scheduled 4-hour post-dose PK blood draw. The participant had a family emergency and had to leave the site unexpectedly after the 2-hour draw was completed. All other procedures for the visit were completed as scheduled.\n\nWe have documented this event in the subject's source documents and are completing the Protocol Deviation form now. Please advise on any immediate actions required from our side and the next steps for reporting this to the sponsor.\n\nThank you,\n\nSarah Chen, CCRP\nStudy Coordinator\nOakwood Clinical Research Center",
+          "attachments": [],
+          "message_id": 95831,
+          "in_reply_to": null
+        },
+        {
+          "from_address": "ben.carter@synergycro.com",
+          "to_addresses": [
+            "alex.johnson@denalitherapeutics.com",
+            "maria.garcia@denalitherapeutics.com"
+          ],
+          "cc_addresses": [
+            "sarah.chen@oakwoodcrc.com"
+          ],
+          "subject": "Fwd: [URGENT] Protocol Deviation - Study DNLI-123 - Site 456 - Subject 101-003",
+          "timestamp": "2024-05-21T16:05:00-05:00",
+          "body": "Hi Alex and Maria,\n\nPlease see the notification below from Site 456 regarding a missed PK sample for a Part A subject. This appears to be a significant deviation given the nature of the healthy volunteer cohort.\n\nSarah, thank you for the prompt notification. Please send over the completed PD form once it's finalized.\n\nAlex/Maria - Please let us know your thoughts on the potential impact and how you would like us to proceed with documentation and follow-up.\n\nBest regards,\n\nBen Carter\nClinical Research Associate\nSynergy CRO\n\n---------- Forwarded message ---------\nFrom: Sarah Chen <sarah.chen@oakwoodcrc.com>\nDate: Tue, May 21, 2024 at 2:30 PM\nSubject: [URGENT] Protocol Deviation - Study DNLI-123 - Site 456 - Subject 101-003\nTo: Ben Carter <ben.carter@synergycro.com>\nCc: Emily Vance <emily.vance@oakwoodcrc.com>\n\nHi Ben,\n\nI am writing to self-report a protocol deviation for subject 101-003, enrolled in Part A of the DNLI-123 study.\n\nThis morning, the participant missed their scheduled 4-hour post-dose PK blood draw. The participant had a family emergency and had to leave the site unexpectedly after the 2-hour draw was completed. All other procedures for the visit were completed as scheduled.\n\nWe have documented this event in the subject's source documents and are completing the Protocol Deviation form now. Please advise on any immediate actions required from our side and the next steps for reporting this to the sponsor.\n\nThank you,\n\nSarah Chen, CCRP\nStudy Coordinator\nOakwood Clinical Research Center",
+          "attachments": [],
+          "message_id": 95832,
+          "in_reply_to": null
+        },
+        {
+          "from_address": "maria.garcia@denalitherapeutics.com",
+          "to_addresses": [
+            "alex.johnson@denalitherapeutics.com",
+            "ben.carter@synergycro.com"
+          ],
+          "cc_addresses": [
+            "sarah.chen@oakwoodcrc.com"
+          ],
+          "subject": "Re: Fwd: [URGENT] Protocol Deviation - Study DNLI-123 - Site 456 - Subject 101-003",
+          "timestamp": "2024-05-22T09:45:00-05:00",
+          "body": "All,\n\nThank you for flagging this. A missed PK sample in the HV cohort is indeed a significant deviation and will require careful assessment.\n\nAlex, please take the lead on this. Can you please follow up with Sarah to ensure the deviation is documented thoroughly in the source and on the PD form? Once you receive the form, please review it and begin drafting an initial impact assessment for our internal clinical pharmacology team. We need to understand how this missing data point affects the overall analysis for this cohort.\n\nPlease let me know if you need any support.\n\nBest,\n\nMaria Garcia\nClinical Trial Manager\nDenali Therapeutics",
+          "attachments": [],
+          "message_id": 95833,
+          "in_reply_to": 95832
+        }
+      ],
+      "role_descriptions": [
+        "alex.johnson@denalitherapeutics.com: Denali Therapeutics (Sponsor), Clinical Research Associate",
+        "maria.garcia@denalitherapeutics.com: Denali Therapeutics (Sponsor), Clinical Trial Manager",
+        "ben.carter@synergycro.com: CRO, Clinical Research Associate",
+        "sarah.chen@oakwoodcrc.com: Site, Study Coordinator",
+        "emily.vance@oakwoodcrc.com: Site, Principal Investigator"
+      ],
+      "description": "A multi-person email chain involving you, the site's Study Coordinator, and your Clinical Trial Manager regarding a significant protocol deviation. The site self-reported that a participant in the healthy volunteer cohort (Part A) missed their post-dose PK blood draw. The discussion focuses on documenting the deviation and determining the impact on data analysis."
+    },
+    {
+      "emails": [
+        {
+          "from_address": "emily.carter@oakwoodresearch.com",
+          "to_addresses": [
+            "alex.johnson@denalitherapeutics.com"
+          ],
+          "cc_addresses": [
+            "david.lee@synergycro.com",
+            "jessica.chen@oakwoodresearch.com"
+          ],
+          "subject": "Inquiry: DNL593 Study - Site 210 - Upcoming IP Shipment",
+          "timestamp": "2023-11-06T11:30:00-05:00",
+          "body": "Hi Alex,\n\nHope you are having a productive week.\n\nThe pharmacy team here at Oakwood Clinical Research (Site 210) would like to confirm the details for our next shipment of the investigational product, DNL593.\n\nWe are preparing for a couple of new participants who are scheduled for randomization soon and want to ensure our stock levels are adequate. Could you please provide an update on the quantity being shipped and the expected delivery date?\n\nThank you for your help.\n\nBest regards,\n\nDr. Emily Carter, PharmD\nInvestigational Drug Services\nOakwood Clinical Research",
+          "attachments": [],
+          "message_id": 16734,
+          "in_reply_to": null
+        }
+      ],
+      "role_descriptions": [
+        "alex.johnson@denalitherapeutics.com: Denali Therapeutics (Sponsor), Clinical Research Associate",
+        "emily.carter@oakwoodresearch.com: Site, Pharmacist",
+        "david.lee@synergycro.com: CRO, Clinical Research Associate",
+        "jessica.chen@oakwoodresearch.com: Site, Study Coordinator"
+      ],
+      "description": "A straightforward inquiry from the pharmacy at Site 210 regarding an upcoming shipment of the investigational product, DNL593. They are confirming the quantity and expected delivery date to ensure they have adequate supply for newly randomized participants."
     }
   ]
 }
