@@ -1,15 +1,32 @@
 import React from 'react';
+import DocViewer, { DocViewerRenderers } from '@cyntler/react-doc-viewer';
+import './DocumentViewer.css';
 
 function DocumentViewer({ document, onClose }) {
+  const handleDownload = () => {
+    const link = window.document.createElement('a');
+    link.href = document.filePath;
+    link.download = `${document.name}.${document.fileType}`;
+    link.click();
+  };
+
+  // Prepare document for viewer
+  const docs = [
+    {
+      uri: document.filePath,
+      fileName: `${document.name}.${document.fileType}`,
+      fileType: document.fileType,
+    }
+  ];
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-      <div className="bg-white rounded-lg shadow-2xl w-full max-w-4xl max-h-[90vh] flex flex-col">
+      <div className="bg-white rounded-lg shadow-2xl w-full max-w-6xl max-h-[95vh] flex flex-col">
         {/* Header */}
         <div className="flex items-center justify-between p-4 border-b border-gray-200 bg-gradient-to-r from-primary-50 to-blue-50">
           <div>
             <h2 className="text-xl font-semibold text-gray-900">{document.name}</h2>
             <p className="text-sm text-gray-600 mt-1">
-              {document.type} • Last modified: {document.dateUploaded}
+              {document.fileType.toUpperCase()} • Last modified: {document.dateUploaded}
             </p>
           </div>
           <button
@@ -23,12 +40,18 @@ function DocumentViewer({ document, onClose }) {
         </div>
 
         {/* Document Content */}
-        <div className="flex-1 overflow-y-auto p-8 bg-gray-50">
-          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 max-w-3xl mx-auto">
-            <div className="prose prose-sm max-w-none">
-              {document.content}
-            </div>
-          </div>
+        <div className="flex-1 overflow-hidden bg-gray-50">
+          <DocViewer
+            documents={docs}
+            pluginRenderers={DocViewerRenderers}
+            config={{
+              header: {
+                disableHeader: true,
+                disableFileName: true,
+              },
+            }}
+            style={{ height: '100%' }}
+          />
         </div>
 
         {/* Footer */}
@@ -40,9 +63,12 @@ function DocumentViewer({ document, onClose }) {
             Close
           </button>
           <button
-            className="px-4 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors font-medium"
-            onClick={() => alert('Download functionality would be implemented here')}
+            onClick={handleDownload}
+            className="px-4 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors font-medium flex items-center gap-2"
           >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
             Download
           </button>
         </div>

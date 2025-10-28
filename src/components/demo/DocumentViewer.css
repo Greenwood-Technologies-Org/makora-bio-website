@@ -1,0 +1,35 @@
+/* Document Viewer custom styles */
+#react-doc-viewer {
+  height: 100%;
+}
+
+#react-doc-viewer #header-bar {
+  display: none;
+}
+
+#react-doc-viewer #proxy-renderer {
+  padding: 0;
+}
+
+#react-doc-viewer iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* PDF viewer styles */
+#react-doc-viewer canvas {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Loading state */
+#react-doc-viewer #loading-renderer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+

@@ -1,55 +1,84 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import DocumentViewer from './DocumentViewer.jsx';
-import { studyProtocolContent, informedConsentContent, vendorCommContent } from './DocumentContent.jsx';
 
-const mockDocuments = [
+// Import actual files from the docs directory
+import studyProtocolDocx from '../../docs/[NCT05262023] Study Protocol.docx';
+import informedConsentDocx from '../../docs/[NCT05262023] Informed Consent.docx';
+import dataMgmtPdf from '../../docs/[NCT05262023] Data Management Plan Summary.pdf';
+import eproManualPdf from '../../docs/[NCT05262023] ePRO System Site Manual.pdf';
+import raciMatrixPptx from '../../docs/[NCT05262023] Clinical Operations RACI Matrix.pptx';
+
+const realDocuments = [
   { 
     id: 1, 
-    name: 'Study Protocol XYZ-123', 
-    type: 'Protocol', 
+    name: '[NCT05262023] Study Protocol', 
+    type: 'Protocol',
+    fileType: 'docx',
     dateUploaded: '2025-10-15', 
     size: '2.4 MB',
-    content: studyProtocolContent
+    filePath: studyProtocolDocx
   },
   { 
     id: 2, 
-    name: 'Informed Consent Form', 
-    type: 'Consent', 
+    name: '[NCT05262023] Informed Consent', 
+    type: 'Consent',
+    fileType: 'docx', 
     dateUploaded: '2025-10-01', 
     size: '856 KB',
-    content: informedConsentContent
+    filePath: informedConsentDocx
   },
   { 
     id: 3, 
-    name: 'Vendor Communication Materials', 
-    type: 'Reference', 
+    name: '[NCT05262023] Data Management Plan Summary', 
+    type: 'Reference',
+    fileType: 'pdf', 
     dateUploaded: '2025-10-18', 
     size: '1.2 MB',
-    content: vendorCommContent
+    filePath: dataMgmtPdf
+  },
+  { 
+    id: 4, 
+    name: '[NCT05262023] ePRO System Site Manual', 
+    type: 'Reference',
+    fileType: 'pdf', 
+    dateUploaded: '2025-10-10', 
+    size: '3.1 MB',
+    filePath: eproManualPdf
+  },
+  { 
+    id: 5, 
+    name: '[NCT05262023] Clinical Operations RACI Matrix', 
+    type: 'Reference',
+    fileType: 'pptx', 
+    dateUploaded: '2025-10-05', 
+    size: '890 KB',
+    filePath: raciMatrixPptx
   }
 ];
 
 function Docs() {
-  const [documents, setDocuments] = useState(mockDocuments);
+  const [documents, setDocuments] = useState(realDocuments);
   const [selectedDocs, setSelectedDocs] = useState(new Set());
   const [viewingDoc, setViewingDoc] = useState(null);
 
-  const getFileIcon = (type) => {
+  const getFileIcon = (fileType) => {
     const icons = {
-      Protocol: '�',
-      Consent: '📝',
-      Reference: '�'
+      docx: '📝',
+      pdf: '📄',
+      pptx: '�',
+      xlsx: '📈'
     };
-    return icons[type] || '📁';
+    return icons[fileType] || '📁';
   };
 
-  const getFileColor = (type) => {
+  const getFileColor = (fileType) => {
     const colors = {
-      Protocol: 'bg-blue-100 text-blue-700 border-blue-200',
-      Consent: 'bg-green-100 text-green-700 border-green-200',
-      Reference: 'bg-purple-100 text-purple-700 border-purple-200'
+      docx: 'bg-blue-100 text-blue-700 border-blue-200',
+      pdf: 'bg-red-100 text-red-700 border-red-200',
+      pptx: 'bg-orange-100 text-orange-700 border-orange-200',
+      xlsx: 'bg-green-100 text-green-700 border-green-200'
     };
-    return colors[type] || 'bg-gray-100 text-gray-700 border-gray-200';
+    return colors[fileType] || 'bg-gray-100 text-gray-700 border-gray-200';
   };
 
   const handleSelectDoc = (id) => {
@@ -142,8 +171,8 @@ function Docs() {
                 className="flex items-center justify-center mb-4 pt-4 cursor-pointer"
                 onClick={() => setViewingDoc(doc)}
               >
-                <div className={`w-20 h-20 rounded-lg border-2 flex items-center justify-center text-4xl transition-transform group-hover:scale-110 ${getFileColor(doc.type)}`}>
-                  {getFileIcon(doc.type)}
+                <div className={`w-20 h-20 rounded-lg border-2 flex items-center justify-center text-4xl transition-transform group-hover:scale-110 ${getFileColor(doc.fileType)}`}>
+                  {getFileIcon(doc.fileType)}
                 </div>
               </div>
 
@@ -156,8 +185,8 @@ function Docs() {
                   {doc.name}
                 </h3>
                 <div className="flex items-center justify-center gap-2 text-xs text-gray-500 mb-2">
-                  <span className={`px-2 py-1 rounded-full font-medium ${getFileColor(doc.type)}`}>
-                    {doc.type}
+                  <span className={`px-2 py-1 rounded-full font-medium uppercase ${getFileColor(doc.fileType)}`}>
+                    {doc.fileType}
                   </span>
                   <span>•</span>
                   <span>{doc.size}</span>
