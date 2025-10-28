@@ -1,0 +1,77 @@
+{
+  "emails": [
+    {
+      "from_address": "sarah.jenkins@innovatepharma.com",
+      "to_addresses": [
+        "eleanor.vance@oakvalleyresearch.com"
+      ],
+      "cc_addresses": [
+        "mark.rivera@oakvalleyresearch.com",
+        "david.chen@innovatepharma.com"
+      ],
+      "subject": "URGENT Follow-Up: Missing Causality Assessment - SAE Report for HV-004 - Study IPN-123",
+      "timestamp": "2023-11-06T10:05:00Z",
+      "body": "Dear Dr. Vance,\n\nI hope this email finds you well.\n\nThis is an urgent follow-up regarding the Serious Adverse Event (SAE) report for subject HV-004 in Part A, submitted on November 3rd.\n\nUpon review, we found that the causality assessment section on the form is incomplete. This information is critical and required for an upcoming safety report with a strict deadline.\n\nPlease find the submitted report attached for your reference. Could you please provide your assessment of the event's relationship to the investigational product at your earliest convenience?\n\nThank you for your prompt attention to this critical matter.\n\nBest regards,\n\nSarah Jenkins\nClinical Research Associate\nInnovatePharma",
+      "attachments": [
+        "IPN-123_HV-004_SAE_Report_Form_Incomplete.pdf"
+      ],
+      "message_id": 1,
+      "in_reply_to": null
+    },
+    {
+      "from_address": "mark.rivera@oakvalleyresearch.com",
+      "to_addresses": [
+        "sarah.jenkins@innovatepharma.com"
+      ],
+      "cc_addresses": [
+        "eleanor.vance@oakvalleyresearch.com",
+        "david.chen@innovatepharma.com"
+      ],
+      "subject": "Re: URGENT Follow-Up: Missing Causality Assessment - SAE Report for HV-004 - Study IPN-123",
+      "timestamp": "2023-11-06T10:25:00Z",
+      "body": "Hi Sarah,\n\nThank you for flagging this. I have just spoken with Dr. Vance between patients, and she will review and respond shortly.\n\nBest,\n\nMark Rivera\nClinical Research Coordinator\nOak Valley Clinical Research",
+      "attachments": [],
+      "message_id": 2,
+      "in_reply_to": 1
+    },
+    {
+      "from_address": "eleanor.vance@oakvalleyresearch.com",
+      "to_addresses": [
+        "sarah.jenkins@innovatepharma.com"
+      ],
+      "cc_addresses": [
+        "mark.rivera@oakvalleyresearch.com",
+        "david.chen@innovatepharma.com"
+      ],
+      "subject": "Re: URGENT Follow-Up: Missing Causality Assessment - SAE Report for HV-004 - Study IPN-123",
+      "timestamp": "2023-11-06T11:15:00Z",
+      "body": "All,\n\nMy apologies for this oversight. Thank you for the prompt follow-up.\n\nAfter reviewing the case, my assessment is that the SAE (acute kidney injury) is **possibly related** to the investigational product.\n\nMark, please update the source documentation and the official SAE form with this assessment and resubmit to the Sponsor today.\n\nRegards,\n\nDr. Eleanor Vance\nPrincipal Investigator\nOak Valley Clinical Research",
+      "attachments": [],
+      "message_id": 3,
+      "in_reply_to": 2
+    },
+    {
+      "from_address": "sarah.jenkins@innovatepharma.com",
+      "to_addresses": [
+        "eleanor.vance@oakvalleyresearch.com"
+      ],
+      "cc_addresses": [
+        "mark.rivera@oakvalleyresearch.com",
+        "david.chen@innovatepharma.com"
+      ],
+      "subject": "Re: URGENT Follow-Up: Missing Causality Assessment - SAE Report for HV-004 - Study IPN-123",
+      "timestamp": "2023-11-06T11:22:00Z",
+      "body": "Dear Dr. Vance,\n\nThank you very much for your swift response and for providing the causality assessment. This is exactly what we needed.\n\nWe can now proceed with our safety reporting. We will look out for the updated form from Mark.\n\nWe appreciate your team's quick action on this.\n\nBest regards,\n\nSarah Jenkins\nClinical Research Associate\nInnovatePharma",
+      "attachments": [],
+      "message_id": 4,
+      "in_reply_to": 3
+    }
+  ],
+  "role_descriptions": [
+    "sarah.jenkins@innovatepharma.com: Sponsor, Clinical Research Associate",
+    "david.chen@innovatepharma.com: Sponsor, Medical Monitor",
+    "eleanor.vance@oakvalleyresearch.com: Site, Principal Investigator",
+    "mark.rivera@oakvalleyresearch.com: Site, Clinical Research Coordinator"
+  ],
+  "description": "An urgent follow-up with a principal investigator regarding a Serious Adverse Event (SAE) report for a healthy volunteer in Part A that has missing causality assessment information required for the safety report."
+}

@@ -1,0 +1,59 @@
+{
+  "emails": [
+    {
+      "from_address": "sarah.jones@innovatepharma.com",
+      "to_addresses": [
+        "b.starr@maplewoodresearch.org",
+        "a.grant@maplewoodresearch.org"
+      ],
+      "cc_addresses": [
+        "david.chen@innovatepharma.com"
+      ],
+      "subject": "Study INP-FTD-201 - Part B Screening at Site 101 - Maplewood Clinical Research",
+      "timestamp": "2023-10-26T10:15:00Z",
+      "body": "Dear Dr. Grant and Brenda,\n\nI hope this email finds you well.\n\nFirst, I want to reiterate our appreciation for your team's outstanding recruitment efforts in Part A of the INP-FTD-201 study. Maplewood has consistently been one of our top-performing sites, and we are very grateful for your hard work.\n\nAs we've transitioned into Part B, I've been reviewing the weekly screening logs and noticed a significant drop-off in potential subjects being screened at your site over the past three weeks. \n\nWe know that Part B has more specific criteria, but given your past success, I wanted to reach out proactively to see if you've encountered any specific barriers or challenges. Are you seeing fewer potential FTD patients, or are there other factors at play?\n\nI would be happy to schedule a brief call next week to discuss this further and brainstorm any strategies or resources we at InnovatePharma could provide to support your recruitment efforts. Please let me know what day and time might work for you and the team.\n\nThank you again for your continued partnership.\n\nBest regards,\n\nSarah Jones\nClinical Research Associate\nInnovatePharma\nsarah.jones@innovatepharma.com",
+      "attachments": [],
+      "message_id": 1,
+      "in_reply_to": null
+    },
+    {
+      "from_address": "b.starr@maplewoodresearch.org",
+      "to_addresses": [
+        "sarah.jones@innovatepharma.com"
+      ],
+      "cc_addresses": [
+        "a.grant@maplewoodresearch.org",
+        "david.chen@innovatepharma.com"
+      ],
+      "subject": "RE: Study INP-FTD-201 - Part B Screening at Site 101 - Maplewood Clinical Research",
+      "timestamp": "2023-10-27T14:30:00Z",
+      "body": "Hi Sarah,\n\nThank you for reaching out and for your kind words about our work on Part A.\n\nWe have also noted the slowdown in screening for Part B and appreciate you contacting us. Dr. Grant and I were just discussing this yesterday. We believe it's a combination of a few factors. The exclusion criteria for Part B are proving to be quite restrictive for our local patient population, particularly the comorbidity requirements. Additionally, a new observational FTD study just opened at University Hospital across town, and it seems to be drawing from the same patient referral network.\n\nWe would welcome a call to discuss this. We want to get back on track. Would you be available next Tuesday, October 31st, in the morning? Anytime between 9 AM and 11 AM ET would work for us.\n\nBest,\n\nBrenda Starr\nStudy Coordinator\nMaplewood Clinical Research\nb.starr@maplewoodresearch.org",
+      "attachments": [],
+      "message_id": 2,
+      "in_reply_to": 1
+    },
+    {
+      "from_address": "sarah.jones@innovatepharma.com",
+      "to_addresses": [
+        "b.starr@maplewoodresearch.org"
+      ],
+      "cc_addresses": [
+        "a.grant@maplewoodresearch.org",
+        "david.chen@innovatepharma.com"
+      ],
+      "subject": "RE: Study INP-FTD-201 - Part B Screening at Site 101 - Maplewood Clinical Research",
+      "timestamp": "2023-10-27T16:05:00Z",
+      "body": "Hi Brenda,\n\nThank you for the prompt and transparent reply. That context is very helpful, and we understand the challenges posed by competing studies and stringent criteria.\n\nNext Tuesday at 10:00 AM ET works perfectly for me. I will send a calendar invitation shortly with a proposed agenda, which will include discussing potential community outreach and reviewing the pre-screening checklist to help identify eligible patients more efficiently.\n\nWe are confident that by working together, we can find effective solutions.\n\nBest regards,\n\nSarah Jones\nClinical Research Associate\nInnovatePharma\nsarah.jones@innovatepharma.com",
+      "attachments": [],
+      "message_id": 3,
+      "in_reply_to": 2
+    }
+  ],
+  "role_descriptions": [
+    "sarah.jones@innovatepharma.com: Sponsor, Clinical Research Associate",
+    "david.chen@innovatepharma.com: Sponsor, Clinical Trial Manager",
+    "b.starr@maplewoodresearch.org: Site, Study Coordinator",
+    "a.grant@maplewoodresearch.org: Site, Principal Investigator"
+  ],
+  "description": "An email to a high-performing site that has had a sudden drop in screening for Part B, inquiring about potential barriers and discussing strategies to boost recruitment of FTD patients."
+}

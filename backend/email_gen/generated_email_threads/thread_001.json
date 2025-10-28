@@ -1,0 +1,59 @@
+{
+  "emails": [
+    {
+      "from_address": "s.jenkins@universityhealth.org",
+      "to_addresses": [
+        "david.chen@innovatepharma.com"
+      ],
+      "cc_addresses": [
+        "study.xyz123@innovatepharma.com"
+      ],
+      "subject": "Query - Protocol XYZ123 - Site 101 - Unblinding & Transition to Part C",
+      "timestamp": "2023-10-26T10:15:00Z",
+      "body": "Hi David,\n\nHope you are having a good week.\n\nWe have a patient (101-004) who is approaching their final visit in the double-blind Part B of the study. We are preparing for their potential transition to the open-label extension (Part C) and would appreciate some clarification on the specific procedures.\n\nCould you please provide a step-by-step guide or point us to the exact section in the protocol/pharmacy manual that details the unblinding process within the IXRS system? We want to ensure we follow the correct procedure for unblinding the patient's Part B treatment assignment and transitioning them to the open-label drug supply for Part C.\n\nAny specific guidance on documentation requirements for this transition would also be very helpful.\n\nThank you for your support.\n\nBest regards,\n\nSarah Jenkins, CCRC\nClinical Research Coordinator\nUniversity Health Center\nSite 101",
+      "attachments": [],
+      "message_id": 98501,
+      "in_reply_to": null
+    },
+    {
+      "from_address": "david.chen@innovatepharma.com",
+      "to_addresses": [
+        "s.jenkins@universityhealth.org"
+      ],
+      "cc_addresses": [
+        "study.xyz123@innovatepharma.com",
+        "lisa.wong@innovatepharma.com"
+      ],
+      "subject": "RE: Query - Protocol XYZ123 - Site 101 - Unblinding & Transition to Part C",
+      "timestamp": "2023-10-26T14:30:00Z",
+      "body": "Hi Sarah,\n\nThanks for reaching out and for your proactive planning. This is an important process to get right.\n\nThe detailed procedures for unblinding and transitioning to Part C are outlined in Protocol v4.0, Section 8.5. I have also attached a quick reference guide that our team created which summarizes the IXRS steps.\n\nIn short, the process is as follows:\n1.  Confirm all Part B end-of-treatment assessments are complete and the patient has consented for Part C.\n2.  The designated unblinded site staff (e.g., Pharmacist) must log into the IXRS.\n3.  Navigate to the 'Unblinding' module for patient 101-004.\n4.  Follow the on-screen prompts to confirm the unblinding request. The system will then reveal the treatment assignment from Part B.\n5.  This event must be documented on the Unblinding Log and in the patient's source notes.\n6.  Once unblinded, you can then proceed with the 'Transition to Open-Label' workflow in IXRS to have the first Part C drug kit assigned.\n\nPlease ensure the eCRF is updated accordingly to reflect the completion of Part B and the start of Part C.\n\nLet me know if you have any further questions after reviewing the attached guide.\n\nBest,\n\nDavid Chen\nClinical Research Associate\nInnovate Pharma",
+      "attachments": [
+        "XYZ123_Part_C_Transition_and_Unblinding_Guide_v1.2.pdf"
+      ],
+      "message_id": 98502,
+      "in_reply_to": 98501
+    },
+    {
+      "from_address": "s.jenkins@universityhealth.org",
+      "to_addresses": [
+        "david.chen@innovatepharma.com"
+      ],
+      "cc_addresses": [
+        "study.xyz123@innovatepharma.com",
+        "lisa.wong@innovatepharma.com"
+      ],
+      "subject": "RE: Query - Protocol XYZ123 - Site 101 - Unblinding & Transition to Part C",
+      "timestamp": "2023-10-27T09:05:00Z",
+      "body": "Hi David,\n\nThis is perfect. Thank you so much for the clear explanation and for providing the reference guide. This is exactly what we needed.\n\nWe will review the materials thoroughly and proceed as instructed for the patient's upcoming visit.\n\nBest regards,\n\nSarah Jenkins, CCRC\nClinical Research Coordinator\nUniversity Health Center\nSite 101",
+      "attachments": [],
+      "message_id": 98503,
+      "in_reply_to": 98502
+    }
+  ],
+  "role_descriptions": [
+    "s.jenkins@universityhealth.org: Site, Clinical Research Coordinator",
+    "david.chen@innovatepharma.com: Sponsor, Clinical Research Associate",
+    "lisa.wong@innovatepharma.com: Sponsor, Clinical Project Manager"
+  ],
+  "description": "A thread initiated by a Clinical Research Coordinator (CRC) asking for clarification on the specific procedures for unblinding and transitioning a patient from the double-blind Part B to the open-label extension (Part C)."
+}

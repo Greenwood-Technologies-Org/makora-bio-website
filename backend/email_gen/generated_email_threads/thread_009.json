@@ -1,0 +1,64 @@
+{
+  "emails": [
+    {
+      "from_address": "sarah.jones@universityhospital.org",
+      "to_addresses": [
+        "jane.doe@denalitx.com"
+      ],
+      "cc_addresses": [
+        "david.chen@universityhospital.org",
+        "peter.smith@syneos.com"
+      ],
+      "subject": "[URGENT] Study DTX-123: Repeated PK Sample Rejection - Site 101",
+      "timestamp": "2023-09-11T11:30:00Z",
+      "body": "Hi Jane,\n\nI hope you are well.\n\nI'm writing to report another issue with a PK sample being rejected by the central lab. This is for patient 101-005, and it's the third time this has happened in the last two months. The reason cited is again 'Improperly Processed - Insufficient Plasma Volume'.\n\nWe believe we are following the lab manual protocol precisely, specifically section 4.2 regarding centrifugation and aliquoting. We are concerned this may impact the patient's data integrity and are unsure how to proceed to prevent this from happening again.\n\nCould you please provide some clarification or guidance on the processing steps? Perhaps there is a nuance we are missing.\n\nI have attached the latest rejection notification from LabCorp for your reference.\n\nBest regards,\n\nSarah Jones, CRC\nClinical Research Coordinator\nUniversity Hospital\nOncology Department",
+      "attachments": [
+        "LabCorp_Rejection_Notice_101-005.pdf"
+      ],
+      "message_id": 1,
+      "in_reply_to": null
+    },
+    {
+      "from_address": "jane.doe@denalitx.com",
+      "to_addresses": [
+        "sarah.jones@universityhospital.org"
+      ],
+      "cc_addresses": [
+        "david.chen@universityhospital.org",
+        "peter.smith@syneos.com",
+        "linda.evans@denalitx.com"
+      ],
+      "subject": "Re: [URGENT] Study DTX-123: Repeated PK Sample Rejection - Site 101",
+      "timestamp": "2023-09-11T15:45:00Z",
+      "body": "Hi Sarah,\n\nThank you for bringing this to my attention immediately. I share your concern about these repeated rejections, and I appreciate you and the team's diligence in following the manual.\n\nI have reviewed the rejection notice. To ensure we resolve this, I would like to schedule a brief call with you and any other staff members involved in sample processing. We can walk through the lab manual procedures step-by-step together and clarify any potential ambiguities. This will help us identify the root cause and prevent future occurrences.\n\nPlease let me know what day and time works best for your team later this week or early next.\n\nBest,\n\nJane Doe\nClinical Research Associate\nDenali Therapeutics",
+      "attachments": [],
+      "message_id": 2,
+      "in_reply_to": 1
+    },
+    {
+      "from_address": "sarah.jones@universityhospital.org",
+      "to_addresses": [
+        "jane.doe@denalitx.com"
+      ],
+      "cc_addresses": [
+        "david.chen@universityhospital.org",
+        "peter.smith@syneos.com",
+        "linda.evans@denalitx.com"
+      ],
+      "subject": "Re: [URGENT] Study DTX-123: Repeated PK Sample Rejection - Site 101",
+      "timestamp": "2023-09-12T09:05:00Z",
+      "body": "Hi Jane,\n\nThank you for the prompt response and for offering to set up a re-training call. We would really appreciate that.\n\nWe are available at the following times:\n- Wednesday (9/13) any time after 1 PM EST\n- Friday (9/15) between 10 AM and 12 PM EST\n\nPlease let us know what works for you, and you can send a meeting invitation.\n\nThanks again for your support.\n\nBest,\n\nSarah Jones, CRC\nClinical Research Coordinator\nUniversity Hospital\nOncology Department",
+      "attachments": [],
+      "message_id": 3,
+      "in_reply_to": 2
+    }
+  ],
+  "role_descriptions": [
+    "jane.doe@denalitx.com: Sponsor, Clinical Research Associate",
+    "sarah.jones@universityhospital.org: Site, Clinical Research Coordinator",
+    "david.chen@universityhospital.org: Site, Principal Investigator",
+    "peter.smith@syneos.com: CRO, Project Manager",
+    "linda.evans@denalitx.com: Sponsor, Clinical Trial Manager"
+  ],
+  "description": "A site CRC is reporting a repeated issue with the central lab rejecting pharmacokinetic (PK) samples due to improper processing, requiring the CRA to provide re-training and clarification on the lab manual procedures."
+}

@@ -1,0 +1,61 @@
+{
+  "emails": [
+    {
+      "from_address": "sarah.miller@pharmacorp.com",
+      "to_addresses": [
+        "m.garcia@cghospital.org"
+      ],
+      "cc_addresses": [
+        "david.chen@clinixcro.com",
+        "r.jones.pi@cghospital.org"
+      ],
+      "subject": "Interim Monitoring Visit Scheduling - Protocol PH-123, Site 045",
+      "timestamp": "2023-10-23T10:05:00Z",
+      "body": "Hi Maria,\n\nI hope you are having a good week.\n\nI am writing to coordinate the next interim monitoring visit (IMV) for the PH-123 study. I would like to propose the following dates for a 2-day on-site visit:\n\n- November 14-15\n- November 20-21\n- November 28-29\n\nPlease let me know which of these dates works best for you and the site staff.\n\nTo help streamline the on-site activities, we are exploring the possibility of conducting some source data verification remotely ahead of the visit. Could you please let me know if City General Hospital provides temporary, read-only access to your EMR system for monitors? If so, what is the process to request access? I am happy to complete any required training or sign necessary confidentiality agreements.\n\nLooking forward to hearing from you.\n\nBest regards,\n\nSarah Miller\nClinical Research Associate\nPharmaCorp\nsarah.miller@pharmacorp.com",
+      "attachments": [],
+      "message_id": 1,
+      "in_reply_to": null
+    },
+    {
+      "from_address": "m.garcia@cghospital.org",
+      "to_addresses": [
+        "sarah.miller@pharmacorp.com"
+      ],
+      "cc_addresses": [
+        "david.chen@clinixcro.com",
+        "r.jones.pi@cghospital.org"
+      ],
+      "subject": "Re: Interim Monitoring Visit Scheduling - Protocol PH-123, Site 045",
+      "timestamp": "2023-10-23T14:30:00Z",
+      "body": "Hi Sarah,\n\nThanks for reaching out. The dates of November 20-21 would work well for us. We will reserve a room for you on those days.\n\nRegarding remote EMR access, our institution does allow this. The process requires you to complete our online IT security and HIPAA training module and sign our institutional Remote Access Agreement. I have attached the agreement form for you to review and sign. I will send a separate email with the link to the training module.\n\nPlease send me the list of patient charts you wish to review at your earliest convenience so we can prepare them.\n\nBest,\n\nMaria Garcia\nStudy Coordinator\nCity General Hospital\nm.garcia@cghospital.org",
+      "attachments": [
+        "CGH_Remote_Access_Agreement_Monitors.pdf"
+      ],
+      "message_id": 2,
+      "in_reply_to": 1
+    },
+    {
+      "from_address": "sarah.miller@pharmacorp.com",
+      "to_addresses": [
+        "m.garcia@cghospital.org"
+      ],
+      "cc_addresses": [
+        "david.chen@clinixcro.com",
+        "r.jones.pi@cghospital.org"
+      ],
+      "subject": "Re: Interim Monitoring Visit Scheduling - Protocol PH-123, Site 045",
+      "timestamp": "2023-10-24T09:15:00Z",
+      "body": "Hi Maria,\n\nThat's great news. I will book my travel for November 20-21. Thank you for reserving a room.\n\nI have received the Remote Access Agreement and will review, sign, and return it by the end of the day. I will also be on the lookout for the training module link.\n\nI will send the list of subjects for review by this Friday. Thanks for all your help in coordinating this.\n\nBest regards,\n\nSarah Miller\nClinical Research Associate\nPharmaCorp\nsarah.miller@pharmacorp.com",
+      "attachments": [],
+      "message_id": 3,
+      "in_reply_to": 2
+    }
+  ],
+  "role_descriptions": [
+    "sarah.miller@pharmacorp.com: Sponsor, Clinical Research Associate",
+    "m.garcia@cghospital.org: Site, Study Coordinator",
+    "david.chen@clinixcro.com: CRO, Clinical Trial Manager",
+    "r.jones.pi@cghospital.org: Site, Principal Investigator"
+  ],
+  "description": "An email exchange to coordinate the scheduling and logistics for an upcoming interim monitoring visit, including a request for remote access to the site's electronic medical records."
+}

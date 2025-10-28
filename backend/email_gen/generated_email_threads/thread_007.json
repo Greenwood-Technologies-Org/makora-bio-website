@@ -1,0 +1,64 @@
+{
+  "emails": [
+    {
+      "from_address": "alan.turing@universityhealth.edu",
+      "to_addresses": [
+        "samantha.carter@pharmatech.com"
+      ],
+      "cc_addresses": [
+        "eleanor.vance@universityhealth.edu",
+        "robert.fischer@universityhealth.edu"
+      ],
+      "subject": "URGENT Query: DNL593 Study - IP Accountability Discrepancy at Site 701",
+      "timestamp": "2023-10-26T11:15:00Z",
+      "body": "Hi Samantha,\n\nHope you are well.\n\nDuring our routine monthly investigational product (IP) accountability check for the DNL593 study today, we identified a discrepancy.\n\nOur physical count shows 14 vials of DNL593 (active drug), but our accountability logs indicate we should have 15 vials on hand. The placebo count is accurate. We have double-checked all dispensing records, patient visit logs, and destruction records from the past month and cannot account for the missing vial.\n\nAttached is a scanned copy of our most recent accountability log for your review.\n\nPlease advise on the immediate next steps and any required documentation we need to complete on our end.\n\nBest regards,\n\nDr. Alan Turing, RPh\nLead Pharmacist\nUniversity Health Research Center\nSite 701",
+      "attachments": [
+        "Site701_DNL593_IP_Accountability_Log_Oct2023.pdf"
+      ],
+      "message_id": 58901,
+      "in_reply_to": null
+    },
+    {
+      "from_address": "samantha.carter@pharmatech.com",
+      "to_addresses": [
+        "alan.turing@universityhealth.edu"
+      ],
+      "cc_addresses": [
+        "eleanor.vance@universityhealth.edu",
+        "robert.fischer@universityhealth.edu",
+        "david.chen@pharmatech.com"
+      ],
+      "subject": "Re: URGENT Query: DNL593 Study - IP Accountability Discrepancy at Site 701",
+      "timestamp": "2023-10-26T13:30:00Z",
+      "body": "Hi Dr. Turing,\n\nThank you for your prompt notification and for providing the accountability log. I have received it and am escalating this to the study team for immediate review.\n\nAs a first step, please quarantine all remaining DNL593 and placebo stock for this study until we have a resolution. Please do not dispense any further IP.\n\nCould you please also prepare a brief deviation note in the site file detailing the discovery of this discrepancy? I will follow up by the end of the day with a formal IP Discrepancy Form for you to complete and any further instructions from the team.\n\nWe will work with you to resolve this as quickly as possible.\n\nBest,\n\nSamantha Carter\nClinical Research Associate\nPharmaTech Inc.",
+      "attachments": [],
+      "message_id": 58902,
+      "in_reply_to": 58901
+    },
+    {
+      "from_address": "alan.turing@universityhealth.edu",
+      "to_addresses": [
+        "samantha.carter@pharmatech.com"
+      ],
+      "cc_addresses": [
+        "eleanor.vance@universityhealth.edu",
+        "robert.fischer@universityhealth.edu",
+        "david.chen@pharmatech.com"
+      ],
+      "subject": "Re: URGENT Query: DNL593 Study - IP Accountability Discrepancy at Site 701",
+      "timestamp": "2023-10-26T14:05:00Z",
+      "body": "Hi Samantha,\n\nThank you for the clear instructions. We have quarantined all study IP as requested and will prepare the deviation note.\n\nWe will await the IP Discrepancy Form and your further guidance.\n\nRegards,\n\nDr. Alan Turing, RPh\nLead Pharmacist\nUniversity Health Research Center\nSite 701",
+      "attachments": [],
+      "message_id": 58903,
+      "in_reply_to": 58902
+    }
+  ],
+  "role_descriptions": [
+    "samantha.carter@pharmatech.com: Sponsor, Clinical Research Associate",
+    "david.chen@pharmatech.com: Sponsor, Clinical Trial Manager",
+    "alan.turing@universityhealth.edu: Site, Pharmacist",
+    "eleanor.vance@universityhealth.edu: Site, Study Coordinator",
+    "robert.fischer@universityhealth.edu: Site, Principal Investigator"
+  ],
+  "description": "A query from a site pharmacist about discrepancies found during the monthly investigational product accountability check for DNL593 and placebo."
+}

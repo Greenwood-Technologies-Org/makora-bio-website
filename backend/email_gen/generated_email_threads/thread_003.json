@@ -1,0 +1,82 @@
+{
+  "emails": [
+    {
+      "from_address": "david.chen@ucsf.edu",
+      "to_addresses": [
+        "lisa.jones@denalitherapeutics.com"
+      ],
+      "cc_addresses": [
+        "sara.khan@syneos.com"
+      ],
+      "subject": "URGENT: Temperature Excursion Alert - Study DNL593-001 - Site 101 (UCSF) - Shipment SH-481516",
+      "timestamp": "2023-05-22T09:15:00-07:00",
+      "body": "Hi Lisa,\n\nHope you are well.\n\nWe received shipment SH-481516 for the DNL593-001 study this morning. Upon unpacking, the temperature monitoring device indicated an excursion alert.\n\nThe shipment has been immediately placed in quarantine in our pharmacy as per protocol. Please find the downloaded temperature log attached for your review.\n\nCould you please advise on the next steps and whether the investigational product is viable for use?\n\nBest regards,\n\nDavid Chen\nStudy Coordinator\nUniversity of California, San Francisco (UCSF) Memory and Aging Center",
+      "attachments": [
+        "TempLog_SH-481516.pdf"
+      ],
+      "message_id": 101,
+      "in_reply_to": null
+    },
+    {
+      "from_address": "lisa.jones@denalitherapeutics.com",
+      "to_addresses": [
+        "kevin.miller@denalitherapeutics.com"
+      ],
+      "cc_addresses": [
+        "david.chen@ucsf.edu",
+        "sara.khan@syneos.com"
+      ],
+      "subject": "Fwd: URGENT: Temperature Excursion Alert - Study DNL593-001 - Site 101 (UCSF) - Shipment SH-481516",
+      "timestamp": "2023-05-22T09:45:00-07:00",
+      "body": "Hi Kevin,\n\nPlease see the urgent notification below from UCSF (Site 101) regarding a temperature excursion for an IP shipment.\n\nCould you or someone from the Clinical Supply team please review the attached temperature log and provide an assessment on the viability of the DNL593/Placebo kits in shipment SH-481516?\n\nThe site has correctly quarantined the product pending our guidance.\n\nThanks for your prompt attention to this.\n\nBest,\n\nLisa Jones\nClinical Research Associate\nDenali Therapeutics",
+      "attachments": [
+        "TempLog_SH-481516.pdf"
+      ],
+      "message_id": 102,
+      "in_reply_to": 101
+    },
+    {
+      "from_address": "kevin.miller@denalitherapeutics.com",
+      "to_addresses": [
+        "lisa.jones@denalitherapeutics.com"
+      ],
+      "cc_addresses": [
+        "david.chen@ucsf.edu",
+        "sara.khan@syneos.com"
+      ],
+      "subject": "RE: URGENT: Temperature Excursion Alert - Study DNL593-001 - Site 101 (UCSF) - Shipment SH-481516",
+      "timestamp": "2023-05-22T11:30:00-07:00",
+      "body": "Hi Lisa,\n\nThank you for flagging this. We have reviewed the temperature data for shipment SH-481516.\n\nThe excursion was for a brief period and remained within the product's stability limits. The investigational product is deemed viable and acceptable for use in the study.\n\nPlease find the official Viability Statement attached. The site should file this with their pharmacy records for the shipment.\n\nLet me know if you need anything else.\n\nRegards,\n\nKevin Miller\nManager, Clinical Supply\nDenali Therapeutics",
+      "attachments": [
+        "Viability_Statement_SH-481516.pdf"
+      ],
+      "message_id": 103,
+      "in_reply_to": 102
+    },
+    {
+      "from_address": "lisa.jones@denalitherapeutics.com",
+      "to_addresses": [
+        "david.chen@ucsf.edu"
+      ],
+      "cc_addresses": [
+        "kevin.miller@denalitherapeutics.com",
+        "sara.khan@syneos.com"
+      ],
+      "subject": "RE: URGENT: Temperature Excursion Alert - Study DNL593-001 - Site 101 (UCSF) - Shipment SH-481516",
+      "timestamp": "2023-05-22T11:45:00-07:00",
+      "body": "Hi David,\n\nThank you for your prompt action in quarantining the shipment and notifying us.\n\nOur Clinical Supply team has reviewed the temperature log and has confirmed that the product is viable and may be used. Please see the attached Viability Statement for your records.\n\nYou can now release the IP from quarantine and move it to your standard temperature-controlled storage. Please file the attached statement in the pharmacy binder for this shipment.\n\nWe appreciate your diligence.\n\nBest regards,\n\nLisa Jones\nClinical Research Associate\nDenali Therapeutics",
+      "attachments": [
+        "Viability_Statement_SH-481516.pdf"
+      ],
+      "message_id": 104,
+      "in_reply_to": 103
+    }
+  ],
+  "role_descriptions": [
+    "lisa.jones@denalitherapeutics.com: Sponsor, Clinical Research Associate",
+    "david.chen@ucsf.edu: Site, Study Coordinator",
+    "kevin.miller@denalitherapeutics.com: Sponsor, Clinical Supply Manager",
+    "sara.khan@syneos.com: CRO, Clinical Trial Assistant"
+  ],
+  "description": "A discussion with a site about a temperature excursion alert for a shipment of DNL593/Placebo, requiring coordination with the clinical supply team to determine if the investigational product is viable for use."
+}

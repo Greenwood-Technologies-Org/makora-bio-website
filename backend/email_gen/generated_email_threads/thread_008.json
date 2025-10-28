@@ -1,0 +1,99 @@
+{
+  "emails": [
+    {
+      "from_address": "john.miller@pharmatech.com",
+      "to_addresses": [
+        "sandra.chen@universityhospital.org"
+      ],
+      "cc_addresses": [
+        "lisa.wong@pharmatech.com",
+        "kevin.baker@pharmatech.com"
+      ],
+      "subject": "[PT-123] Follow-Up: Outstanding Essential Documents for TMF - Site 101",
+      "timestamp": "2024-05-10T11:30:00Z",
+      "body": "Hi Sandra,\n\nHope you are having a good week.\n\nI am writing to follow up on the outstanding essential documents for the new sub-investigators added to the study. As per our TMF review, we are still pending the following for Site 101:\n\n- Dr. Emily Carter: Updated Medical License\n- Dr. Frank Wright: Signed Financial Disclosure Form (FDF)\n\nCould you please provide these documents at your earliest convenience so we can ensure our Trial Master File is up to date and inspection-ready?\n\nThank you for your assistance.\n\nBest regards,\n\nJohn Miller\nClinical Research Associate\nPharmatech Inc.",
+      "attachments": [],
+      "message_id": 1,
+      "in_reply_to": null
+    },
+    {
+      "from_address": "sandra.chen@universityhospital.org",
+      "to_addresses": [
+        "john.miller@pharmatech.com"
+      ],
+      "cc_addresses": [
+        "lisa.wong@pharmatech.com",
+        "kevin.baker@pharmatech.com",
+        "robert.davis@universityhospital.org"
+      ],
+      "subject": "Re: [PT-123] Follow-Up: Outstanding Essential Documents for TMF - Site 101",
+      "timestamp": "2024-05-13T15:05:00Z",
+      "body": "Hi John,\n\nThanks for the reminder. Apologies for the delay.\n\nI have just followed up with both Dr. Carter and Dr. Wright. I expect to have both documents collected and sent over to you by the end of this week.\n\nI will keep you posted.\n\nBest,\n\nSandra Chen\nClinical Research Coordinator\nUniversity Hospital",
+      "attachments": [],
+      "message_id": 2,
+      "in_reply_to": 1
+    },
+    {
+      "from_address": "john.miller@pharmatech.com",
+      "to_addresses": [
+        "sandra.chen@universityhospital.org"
+      ],
+      "cc_addresses": [
+        "lisa.wong@pharmatech.com",
+        "kevin.baker@pharmatech.com",
+        "robert.davis@universityhospital.org"
+      ],
+      "subject": "Re: [PT-123] Follow-Up: Outstanding Essential Documents for TMF - Site 101",
+      "timestamp": "2024-05-20T09:15:00Z",
+      "body": "Hi Sandra,\n\nJust a gentle reminder regarding the pending medical license for Dr. Carter and the FDF for Dr. Wright. These are now overdue and are critical for maintaining TMF compliance.\n\nPlease let us know if there is an updated timeline for these items.\n\nThanks,\n\nJohn Miller\nClinical Research Associate\nPharmatech Inc.",
+      "attachments": [],
+      "message_id": 3,
+      "in_reply_to": 2
+    },
+    {
+      "from_address": "sandra.chen@universityhospital.org",
+      "to_addresses": [
+        "john.miller@pharmatech.com"
+      ],
+      "cc_addresses": [
+        "lisa.wong@pharmatech.com",
+        "kevin.baker@pharmatech.com",
+        "robert.davis@universityhospital.org"
+      ],
+      "subject": "Re: [PT-123] Follow-Up: Outstanding Essential Documents for TMF - Site 101",
+      "timestamp": "2024-05-20T16:45:00Z",
+      "body": "Hi John,\n\nMy sincere apologies for the delay. We finally have both documents ready.\n\nPlease find the signed FDF for Dr. Wright and the updated medical license for Dr. Carter attached.\n\nLet me know if you need anything else from our side.\n\nBest regards,\n\nSandra Chen\nClinical Research Coordinator\nUniversity Hospital",
+      "attachments": [
+        "ECarter_MedLicense_2024.pdf",
+        "FWright_FDF_Signed_2024.pdf"
+      ],
+      "message_id": 4,
+      "in_reply_to": 3
+    },
+    {
+      "from_address": "john.miller@pharmatech.com",
+      "to_addresses": [
+        "sandra.chen@universityhospital.org"
+      ],
+      "cc_addresses": [
+        "lisa.wong@pharmatech.com",
+        "kevin.baker@pharmatech.com",
+        "robert.davis@universityhospital.org"
+      ],
+      "subject": "Re: [PT-123] Follow-Up: Outstanding Essential Documents for TMF - Site 101",
+      "timestamp": "2024-05-21T10:00:00Z",
+      "body": "Hi Sandra,\n\nThank you for sending these over. I've reviewed the documents, and they are complete.\n\nI will forward them for filing in the TMF. We appreciate your help in closing this out.\n\nBest,\n\nJohn Miller\nClinical Research Associate\nPharmatech Inc.",
+      "attachments": [],
+      "message_id": 5,
+      "in_reply_to": 4
+    }
+  ],
+  "role_descriptions": [
+    "john.miller@pharmatech.com: Sponsor, Clinical Research Associate",
+    "sandra.chen@universityhospital.org: Site, Clinical Research Coordinator",
+    "lisa.wong@pharmatech.com: Sponsor, Lead Clinical Research Associate",
+    "kevin.baker@pharmatech.com: Sponsor, Clinical Trial Assistant",
+    "robert.davis@universityhospital.org: Site, Principal Investigator"
+  ],
+  "description": "A follow-up with a site to request outstanding essential documents, such as updated medical licenses and financial disclosure forms for new sub-investigators, needed for the Trial Master File (TMF)."
+}
