@@ -71,3 +71,34 @@ class DraftEmailReply(dspy.Signature):
     body: str = dspy.OutputField(
         desc="The full content of the email reply, professionally written and addressing the todo task"
     )
+
+
+class GenerateTodos(dspy.Signature):
+    """Generate TODO tasks for clinical research based on task context and email threads.
+
+    Analyzes the task details and associated email threads to suggest relevant,
+    actionable TODO items that help resolve the clinical research issue. If existing
+    TODOs already comprehensively cover what needs to be done, returns empty list.
+    """
+
+    # Inputs
+    task_context: str = dspy.InputField(
+        desc="The task details including subject, summary, urgency, and status"
+    )
+    email_threads: str = dspy.InputField(
+        desc="JSON string of associated email threads with their messages and participants"
+    )
+    existing_todos: str = dspy.InputField(
+        desc="JSON string of existing TODO items to analyze for completeness"
+    )
+
+    # Outputs
+    coverage_assessment: str = dspy.OutputField(
+        desc="Assessment of whether existing TODOs comprehensively cover the task requirements. Either 'comprehensive' if existing TODOs are sufficient, or 'gaps_identified' if new TODOs are needed"
+    )
+    todos: str = dspy.OutputField(
+        desc="JSON array of suggested TODO objects (empty array if coverage_assessment is 'comprehensive'), each with 'description', 'priority' (High/Medium/Low), 'tag' (system tag like 'EDC', 'Thread 1', 'Thread 2', etc.), and 'reasoning' (why this TODO is needed)"
+    )
+    summary: str = dspy.OutputField(
+        desc="Brief explanation of the coverage assessment and TODO generation strategy. If comprehensive, explain why existing TODOs are sufficient. If gaps identified, explain what new TODOs were suggested."
+    )

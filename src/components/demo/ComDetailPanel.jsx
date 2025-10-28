@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { generateEmailDraftWithDSPy } from "../../services/emailDrafting";
+import { generateTodosWithDSPy } from "../../services/todoGeneration";
 
 function ComDetailPanel({ com, onBack }) {
   const [expandedThread, setExpandedThread] = useState(null);
@@ -29,269 +31,86 @@ function ComDetailPanel({ com, onBack }) {
   const [aiTodoRecommendations, setAiTodoRecommendations] = useState(null);
   const [showAiTodoModal, setShowAiTodoModal] = useState(false);
 
+  // AI Draft generation state
+  const [aiDraftLoading, setAiDraftLoading] = useState({});
+
   const toggleThread = (threadId) => {
     setExpandedThread(expandedThread === threadId ? null : threadId);
   };
 
-  // AI TODO Generation Engine
-  const todoGenerationEngine = {
-    async analyzeTaskAndGenerateTodos(task, existingTodos, threads) {
-      // Simulate AI processing time
-      await new Promise((resolve) => setTimeout(resolve, 2500));
+  // AI TODO Generation using DSPy (replaced hardcoded engine)
 
-      const taskText = `${task.subject} ${task.summary}`.toLowerCase();
-      const existingTodoTexts = existingTodos.map((t) =>
-        t.description.toLowerCase()
-      );
-      const threadContents = threads
-        .map(
-          (t) =>
-            `${t.name} ${t.description} ${
-              t.messages?.map((m) => m.content).join(" ") || ""
-            }`
-        )
-        .join(" ")
-        .toLowerCase();
-
-      const allContext = `${taskText} ${threadContents}`;
-
-      // Generate suggested TODOs based on task type and content
-      const suggestions = this.generateTodoSuggestions(
-        allContext,
-        existingTodoTexts,
-        threads
-      );
-
-      return {
-        suggestedTodos: suggestions,
-        reasoning: `Generated ${suggestions.length} TODO suggestions based on task analysis and thread content.`,
-      };
-    },
-
-    generateTodoSuggestions(context, existingTodos, threads) {
-      const suggestions = [];
-
-      // Common TODO patterns based on content analysis
-      const todoPatterns = [
-        {
-          keywords: ["discrepancy", "mismatch", "error", "incorrect"],
-          todos: [
-            "Review and verify data accuracy",
-            "Contact site for clarification",
-            "Update EDC with correct information",
-            "Document resolution in study files",
-          ],
-        },
-        {
-          keywords: ["deviation", "protocol", "violation"],
-          todos: [
-            "Submit protocol deviation report",
-            "Obtain PI approval for deviation",
-            "Update deviation log",
-            "Implement corrective actions",
-          ],
-        },
-        {
-          keywords: ["supply", "inventory", "shipment", "kit"],
-          todos: [
-            "Coordinate emergency shipment",
-            "Update inventory tracking system",
-            "Confirm delivery with site",
-            "Monitor future supply levels",
-          ],
-        },
-        {
-          keywords: ["adverse", "event", "ae", "safety"],
-          todos: [
-            "Complete AE assessment",
-            "Notify medical monitor",
-            "Update safety database",
-            "Follow up on patient status",
-          ],
-        },
-        {
-          keywords: ["visit", "schedule", "appointment"],
-          todos: [
-            "Reschedule missed visit",
-            "Update visit tracking log",
-            "Coordinate with site staff",
-            "Ensure protocol compliance",
-          ],
-        },
-      ];
-
-      // Default general TODOs
-      const generalTodos = [
-        "Follow up with site team",
-        "Update study documentation",
-        "Review compliance status",
-        "Prepare status report",
-      ];
-
-      // Find matching patterns
-      let matchedTodos = [];
-      for (const pattern of todoPatterns) {
-        if (pattern.keywords.some((keyword) => context.includes(keyword))) {
-          matchedTodos = [...matchedTodos, ...pattern.todos];
-        }
-      }
-
-      // If no specific patterns match, use general TODOs
-      if (matchedTodos.length === 0) {
-        matchedTodos = generalTodos;
-      }
-
-      // Filter out TODOs that are too similar to existing ones
-      const filteredTodos = matchedTodos.filter((todo) => {
-        return !existingTodos.some(
-          (existing) =>
-            this.calculateSimilarity(todo.toLowerCase(), existing) > 0.7
-        );
-      });
-
-      // Create TODO objects with appropriate system tags
-      filteredTodos.slice(0, 4).forEach((todoText, index) => {
-        const tag = this.determineSystemTag(todoText, threads);
-
-        suggestions.push({
-          id: Math.max(...existingTodos.map((t) => t.id || 0), 0) + index + 1,
-          description: todoText,
-          status: "pending",
-          tag: tag,
-          hasAIDraft: tag.startsWith("Thread"),
-          aiDraft: tag.startsWith("Thread")
-            ? {
-                threadId: this.extractThreadId(tag, threads),
-                message: `Hello,\n\nRegarding: ${todoText}\n\nI wanted to follow up on this matter.\n\nBest regards,\nClinical Research Team`,
-                references: [
-                  {
-                    type: "Document",
-                    title: "Standard Operating Procedures",
-                    date: new Date().toISOString().split("T")[0],
-                  },
-                ],
-              }
-            : undefined,
-        });
-      });
-
-      return suggestions;
-    },
-
-    calculateSimilarity(text1, text2) {
-      const words1 = text1.split(/\s+/);
-      const words2 = text2.split(/\s+/);
-      const intersection = words1.filter((word) => words2.includes(word));
-      return intersection.length / Math.max(words1.length, words2.length);
-    },
-
-    determineSystemTag(todoText, threads) {
-      const lowerText = todoText.toLowerCase();
-
-      // First, try to match TODO to existing threads
-      for (let i = 0; i < threads.length; i++) {
-        const thread = threads[i];
-        const threadText = `${thread.name} ${thread.description}`.toLowerCase();
-        if (this.calculateSimilarity(lowerText, threadText) > 0.3) {
-          return `Thread ${i + 1}`;
-        }
-      }
-
-      // Then, determine system-specific tags based on content
-      if (
-        lowerText.includes("edc") ||
-        lowerText.includes("data entry") ||
-        lowerText.includes("case report")
-      ) {
-        return "Medidata Rave";
-      }
-      if (
-        lowerText.includes("site") ||
-        lowerText.includes("contact") ||
-        lowerText.includes("communication")
-      ) {
-        return "Veeva Site Connect";
-      }
-      if (
-        lowerText.includes("randomization") ||
-        lowerText.includes("ivrs") ||
-        lowerText.includes("iwrs") ||
-        lowerText.includes("kit")
-      ) {
-        return "IWRS/IVRS";
-      }
-      if (
-        lowerText.includes("safety") ||
-        lowerText.includes("adverse") ||
-        lowerText.includes("ae")
-      ) {
-        return "Safety Database";
-      }
-      if (
-        lowerText.includes("tmf") ||
-        lowerText.includes("document") ||
-        lowerText.includes("file")
-      ) {
-        return "eTMF";
-      }
-      if (
-        lowerText.includes("visit") ||
-        lowerText.includes("schedule") ||
-        lowerText.includes("appointment")
-      ) {
-        return "CTMS";
-      }
-
-      return "General"; // default
-    },
-
-    extractThreadId(tag, threads) {
-      const match = tag.match(/Thread (\d+)/);
-      if (match) {
-        const threadIndex = parseInt(match[1]) - 1;
-        return threads[threadIndex]?.id || 1;
-      }
-      return 1;
-    },
-  };
-
-  const handleAIDraft = (todoId) => {
-    // Find the todo with the
+  const handleAIDraft = async (todoId) => {
+    // Find the todo
     const todo = todos.find((t) => t.id === todoId);
-    if (!todo || !todo.aiDraft) return;
+    if (!todo) return;
 
-    const { threadId, message } = todo.aiDraft;
-
-    // Check if the thread exists, if not create it (for new threads)
-    const existingThread = threads.find((t) => t.id === threadId);
-    if (!existingThread) {
-      // Create a new thread based on the todo tag
-      const newThread = {
-        id: threadId,
-        name: `Thread ${threadId}: ${todo.tag}`,
-        description: `Thread for: ${todo.description}`,
-        participants: ["CRA", "Site CRC"], // Default participants for new threads
-        messages: [],
-      };
-      setThreads((prev) => [...prev, newThread]);
+    // Extract thread number from the todo tag (e.g., "Thread 1" -> 1)
+    let threadNumber = null;
+    if (todo.tag && todo.tag.startsWith("Thread")) {
+      const threadMatch = todo.tag.match(/Thread (\d+)/);
+      if (threadMatch) {
+        threadNumber = parseInt(threadMatch[1]);
+      }
     }
 
-    // Set the draft message for the thread
-    setDraftMessages((prev) => ({
-      ...prev,
-      [threadId]: message,
-    }));
+    if (!threadNumber) {
+      alert("Unable to determine which thread this TODO is associated with.");
+      return;
+    }
 
-    // Expand the thread to show the draft
-    setExpandedThread(threadId);
+    // Find the thread by its position in the sorted threads array
+    // Thread 1 = index 0, Thread 2 = index 1, etc.
+    const sortedThreads = threads.sort((a, b) => a.id - b.id);
+    const thread = sortedThreads[threadNumber - 1];
 
-    // Scroll to the thread smoothly
-    setTimeout(() => {
-      const threadElement = document.getElementById(`thread-${threadId}`);
-      if (threadElement) {
-        threadElement.scrollIntoView({ behavior: "smooth", block: "nearest" });
-      }
-    }, 100);
+    if (!thread) {
+      alert(
+        `Associated email thread not found. Looking for thread ${threadNumber} but only found ${threads.length} threads.`
+      );
+      return;
+    }
+
+    // Set loading state for this specific todo
+    setAiDraftLoading((prev) => ({ ...prev, [todoId]: true }));
+
+    try {
+      // Generate AI draft using DSPy service
+      const draft = await generateEmailDraftWithDSPy(thread, todo.description);
+
+      // Format the draft message with proper email structure
+      const formattedMessage = `To: ${draft.to}\n${
+        draft.cc ? `CC: ${draft.cc}\n` : ""
+      }${draft.bcc ? `BCC: ${draft.bcc}\n` : ""}Subject: ${draft.subject}\n\n${
+        draft.body
+      }`;
+
+      // Set the draft message for the thread
+      setDraftMessages((prev) => ({
+        ...prev,
+        [thread.id]: formattedMessage,
+      }));
+
+      // Expand the thread to show the draft
+      setExpandedThread(thread.id);
+
+      // Scroll to the thread smoothly
+      setTimeout(() => {
+        const threadElement = document.getElementById(`thread-${thread.id}`);
+        if (threadElement) {
+          threadElement.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest",
+          });
+        }
+      }, 100);
+    } catch (error) {
+      console.error("AI draft generation error:", error);
+      alert(`Failed to generate AI draft: ${error.message}`);
+    } finally {
+      // Clear loading state
+      setAiDraftLoading((prev) => ({ ...prev, [todoId]: false }));
+    }
   };
 
   const handleDraftChange = (threadId, value) => {
@@ -349,44 +168,12 @@ function ComDetailPanel({ com, onBack }) {
     // Check if the TODO is associated with a thread (tags like "Thread 1", "Thread 2", etc.)
     const isThreadAssociated = newTodo.tag.startsWith("Thread");
 
-    // Extract thread number from tag (e.g., "Thread 1" -> 1)
-    let threadId = null;
-    let aiDraft = null;
-
-    if (isThreadAssociated) {
-      const threadMatch = newTodo.tag.match(/Thread (\d+)/);
-      if (threadMatch) {
-        threadId = parseInt(threadMatch[1]);
-
-        // Find the thread to get participant information
-        const thread = threads.find((t) => t.id === threadId);
-        const toParticipant =
-          thread && thread.participants.length > 1
-            ? thread.participants[thread.participants.length - 1]
-            : "Site CRC";
-
-        // Generate  content
-        aiDraft = {
-          threadId: threadId,
-          message: `Hello,\n\nRegarding: ${newTodo.description.trim()}\n\nI wanted to follow up on this matter and request your assistance.\n\n[AI-generated response based on the TODO description and thread context]\n\nPlease let me know if you need any additional information or clarification.\n\nBest regards,\nClinical Research Team`,
-          references: [
-            {
-              type: "Document",
-              title: "Protocol Guidelines",
-              date: new Date().toISOString().split("T")[0],
-            },
-          ],
-        };
-      }
-    }
-
     const todo = {
       id: todos.length + 1,
       description: newTodo.description.trim(),
       status: newTodo.status,
       tag: newTodo.tag,
-      hasAIDraft: isThreadAssociated,
-      ...(aiDraft && { aiDraft }), // Add aiDraft if it exists
+      hasAIDraft: isThreadAssociated, // AI draft will be generated on-demand using DSPy
     };
 
     setTodos([...todos, todo]);
@@ -412,13 +199,13 @@ function ComDetailPanel({ com, onBack }) {
     setAiTodoLoading(true);
 
     try {
-      const result = await todoGenerationEngine.analyzeTaskAndGenerateTodos(
-        com,
-        todos,
-        threads
-      );
+      const result = await generateTodosWithDSPy(com, threads, todos);
 
-      if (result.suggestedTodos.length > 0) {
+      if (result.coverageAssessment === "comprehensive") {
+        alert(
+          `✅ Existing TODOs are comprehensive!\n\n${result.reasoning}\n\nNo additional TODOs needed at this time.`
+        );
+      } else if (result.suggestedTodos.length > 0) {
         setAiTodoRecommendations(result);
         setShowAiTodoModal(true);
       } else {
@@ -428,7 +215,7 @@ function ComDetailPanel({ com, onBack }) {
       }
     } catch (error) {
       console.error("AI TODO generation error:", error);
-      alert("Failed to generate TODO suggestions. Please try again.");
+      alert(`Failed to generate TODO suggestions: ${error.message}`);
     } finally {
       setAiTodoLoading(false);
     }
@@ -810,7 +597,7 @@ function ComDetailPanel({ com, onBack }) {
 
       <div className="p-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Email Threads - Left/Main Panel */}
-        <div className="lg:col-span-2 space-y-4">
+        <div className="lg:col-span-2 space-y-4 max-h-[80vh] overflow-y-auto">
           <h2 className="text-xl font-bold text-gray-900 mb-4">
             Email Threads
           </h2>
@@ -819,7 +606,7 @@ function ComDetailPanel({ com, onBack }) {
             <div
               key={thread.id}
               id={`thread-${thread.id}`}
-              className="border border-gray-200 rounded-lg overflow-hidden hover:border-primary-300 transition-colors"
+              className="border border-gray-200 rounded-lg hover:border-primary-300 transition-colors flex flex-col"
             >
               {/* Compact Thread Header - Gmail Style */}
               <div
@@ -912,7 +699,7 @@ function ComDetailPanel({ com, onBack }) {
 
               {/* Thread Messages - Expandable */}
               {expandedThread === thread.id && (
-                <div className="p-4 bg-white border-t border-gray-200">
+                <div className="p-4 bg-white border-t border-gray-200 max-h-[70vh] overflow-y-auto">
                   <h4 className="text-sm font-semibold text-gray-700 mb-3">
                     Messages
                   </h4>
@@ -1005,8 +792,8 @@ function ComDetailPanel({ com, onBack }) {
 
                     {/*  Message Box */}
                     {draftMessages[thread.id] && (
-                      <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-4 border-2 border-purple-300">
-                        <div className="flex items-center gap-2 mb-3">
+                      <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-4 border-2 border-purple-300 max-h-[80vh] flex flex-col">
+                        <div className="flex items-center gap-2 mb-3 flex-shrink-0">
                           <svg
                             className="w-5 h-5 text-purple-600"
                             fill="none"
@@ -1020,70 +807,75 @@ function ComDetailPanel({ com, onBack }) {
                               d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
                             />
                           </svg>
-                          <span className="text-sm font-semibold text-purple-700"></span>
+                          <span className="text-sm font-semibold text-purple-700">
+                            AI Draft
+                          </span>
                         </div>
-                        <textarea
-                          value={draftMessages[thread.id]}
-                          onChange={(e) =>
-                            handleDraftChange(thread.id, e.target.value)
-                          }
-                          className="w-full h-96 p-3 border border-purple-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 resize-y mb-3"
-                          placeholder="Edit your message..."
-                        />
+                        <div className="flex-1 overflow-y-auto mb-3">
+                          <textarea
+                            value={draftMessages[thread.id]}
+                            onChange={(e) =>
+                              handleDraftChange(thread.id, e.target.value)
+                            }
+                            className="w-full min-h-[200px] p-3 border border-purple-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 resize-none mb-3"
+                            placeholder="Edit your message..."
+                          />
 
-                        {/* AI References */}
-                        {(() => {
-                          const todo = com.todos.find(
-                            (t) => t.aiDraft && t.aiDraft.threadId === thread.id
-                          );
-                          return (
-                            todo &&
-                            todo.aiDraft &&
-                            todo.aiDraft.references &&
-                            todo.aiDraft.references.length > 0 && (
-                              <div className="mb-3">
-                                <h5 className="text-xs font-semibold text-purple-700 mb-2">
-                                  AI References Used:
-                                </h5>
-                                <div className="space-y-1">
-                                  {todo.aiDraft.references.map((ref, idx) => (
-                                    <div
-                                      key={idx}
-                                      className="flex items-start gap-2 text-xs bg-white bg-opacity-50 rounded p-2"
-                                    >
-                                      <svg
-                                        className="w-3 h-3 text-purple-600 mt-0.5 flex-shrink-0"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
+                          {/* AI References */}
+                          {(() => {
+                            const todo = com.todos.find(
+                              (t) =>
+                                t.aiDraft && t.aiDraft.threadId === thread.id
+                            );
+                            return (
+                              todo &&
+                              todo.aiDraft &&
+                              todo.aiDraft.references &&
+                              todo.aiDraft.references.length > 0 && (
+                                <div className="mb-3">
+                                  <h5 className="text-xs font-semibold text-purple-700 mb-2">
+                                    AI References Used:
+                                  </h5>
+                                  <div className="space-y-1">
+                                    {todo.aiDraft.references.map((ref, idx) => (
+                                      <div
+                                        key={idx}
+                                        className="flex items-start gap-2 text-xs bg-white bg-opacity-50 rounded p-2"
                                       >
-                                        <path
-                                          strokeLinecap="round"
-                                          strokeLinejoin="round"
-                                          strokeWidth={2}
-                                          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                                        />
-                                      </svg>
-                                      <div className="flex-1">
-                                        <span className="font-medium text-purple-900">
-                                          {ref.type}:
-                                        </span>
-                                        <span className="text-gray-700 ml-1">
-                                          {ref.title}
-                                        </span>
-                                        <span className="text-gray-500 ml-1">
-                                          ({ref.date})
-                                        </span>
+                                        <svg
+                                          className="w-3 h-3 text-purple-600 mt-0.5 flex-shrink-0"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          viewBox="0 0 24 24"
+                                        >
+                                          <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth={2}
+                                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                                          />
+                                        </svg>
+                                        <div className="flex-1">
+                                          <span className="font-medium text-purple-900">
+                                            {ref.type}:
+                                          </span>
+                                          <span className="text-gray-700 ml-1">
+                                            {ref.title}
+                                          </span>
+                                          <span className="text-gray-500 ml-1">
+                                            ({ref.date})
+                                          </span>
+                                        </div>
                                       </div>
-                                    </div>
-                                  ))}
+                                    ))}
+                                  </div>
                                 </div>
-                              </div>
-                            )
-                          );
-                        })()}
+                              )
+                            );
+                          })()}
+                        </div>
 
-                        <div className="flex gap-2 justify-end">
+                        <div className="flex gap-2 justify-end flex-shrink-0">
                           <button
                             onClick={() => handleCancelDraft(thread.id)}
                             className="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors font-medium text-sm"
@@ -1292,22 +1084,31 @@ function ComDetailPanel({ com, onBack }) {
                               e.stopPropagation();
                               handleAIDraft(todo.id);
                             }}
-                            className="w-6 h-6 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white transition-all duration-200 shadow-sm hover:shadow-md flex items-center justify-center flex-shrink-0"
-                            title="AI Draft"
+                            disabled={aiDraftLoading[todo.id]}
+                            className="w-6 h-6 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 disabled:from-gray-400 disabled:to-gray-500 text-white transition-all duration-200 shadow-sm hover:shadow-md disabled:cursor-not-allowed flex items-center justify-center flex-shrink-0"
+                            title={
+                              aiDraftLoading[todo.id]
+                                ? "Generating AI Draft..."
+                                : "AI Draft"
+                            }
                           >
-                            <svg
-                              className="w-3 h-3"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                              />
-                            </svg>
+                            {aiDraftLoading[todo.id] ? (
+                              <div className="animate-spin rounded-full h-3 w-3 border-b-2 border-white"></div>
+                            ) : (
+                              <svg
+                                className="w-3 h-3"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth={2}
+                                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                                />
+                              </svg>
+                            )}
                           </button>
                         )}
                       </div>
@@ -1568,6 +1369,7 @@ function ComDetailPanel({ com, onBack }) {
           recommendations={aiTodoRecommendations}
           onAccept={handleAcceptAiTodos}
           onReject={handleRejectAiTodos}
+          threads={threads}
         />
       )}
     </div>
@@ -1575,7 +1377,7 @@ function ComDetailPanel({ com, onBack }) {
 }
 
 // AI TODO Modal Component
-function AiTodoModal({ recommendations, onAccept, onReject }) {
+function AiTodoModal({ recommendations, onAccept, onReject, threads }) {
   const [selectedTodos, setSelectedTodos] = useState(
     recommendations.suggestedTodos.map((todo) => ({ ...todo, selected: true }))
   );
@@ -1704,17 +1506,17 @@ function AiTodoModal({ recommendations, onAccept, onReject }) {
       onClick={() => setShowTagDropdown(null)}
     >
       <div
-        className="bg-white rounded-lg shadow-xl max-w-2xl w-full max-h-[80vh] overflow-hidden"
+        className="bg-white rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] overflow-hidden flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="p-6 border-b border-gray-200">
+        <div className="p-6 border-b border-gray-200 flex-shrink-0">
           <h3 className="text-lg font-bold text-gray-900 mb-2">
             AI TODO Recommendations
           </h3>
           <p className="text-sm text-gray-600">{recommendations.reasoning}</p>
         </div>
 
-        <div className="p-6 overflow-y-auto max-h-96">
+        <div className="flex-1 overflow-y-auto p-6">
           <div className="space-y-3">
             {selectedTodos.map((todo) => (
               <div
@@ -1882,7 +1684,7 @@ function AiTodoModal({ recommendations, onAccept, onReject }) {
           </div>
         </div>
 
-        <div className="p-6 border-t border-gray-200 bg-gray-50">
+        <div className="p-6 border-t border-gray-200 bg-gray-50 flex-shrink-0">
           <div className="flex items-center justify-between mb-4">
             <p className="text-sm text-gray-600">
               {selectedCount} of {selectedTodos.length} TODOs selected

@@ -4,13 +4,13 @@ from dotenv import load_dotenv
 from flask import Blueprint, jsonify, request
 import dspy
 import json
-from app.dspy_signatures import DraftEmailReply, CategorizeEmailThread
+from app.dspy_signatures import DraftEmailReply, CategorizeEmailThread, GenerateTodos
 
 dspy_bp = Blueprint("dspy", __name__)
 
 # Initialize DSPY with your LLM provider
 load_dotenv("../.env")
-lm = dspy.LM("anthropic/claude-sonnet-4-5", temperature=0.5, cache=True)
+lm = dspy.LM("anthropic/claude-sonnet-4-5", temperature=0.5, cache=False)
 dspy.settings.configure(lm=lm)
 
 
@@ -131,7 +131,6 @@ def categorize_email():
                 {"success": False, "error": f"Missing required fields: {', '.join(missing_fields)}"}
             ), 400
 
-        # Format email thread for analysis
         thread = data["email_thread"]
         email_content = f"""
 Subject: {thread.get('subject', '')}
@@ -180,6 +179,116 @@ Content: {msg.get('content', '')}
         return jsonify({
             "success": True,
             "recommendation": recommendation
+        }), 200
+
+    except Exception as e:
+        return jsonify({"success": False, "error": str(e)}), 500
+
+
+@dspy_bp.route("/generate-todos", methods=["POST"])
+def generate_todos():
+    """Generate TODO tasks for clinical research based on task context and email threads.
+
+    Expected JSON payload:
+    {
+        "task": {
+            "id": 1,
+            "subject": "Subject 103-004 AE / Con Med Mismatch",
+            "summary": "Data management flagged a mismatch...",
+            "urgency": "High",
+            "status": "In Progress"
+        },
+        "email_threads": [
+            {
+                "id": 1,
+                "name": "Medical Monitor → Data Management → CRA",
+                "description": "Internal thread...",
+                "participants": ["Medical Monitor", "Data Management", "CRA"],
+                "messages": [
+                    {
+                        "from": "Medical Monitor",
+                        "to": "Data Management",
+                        "timestamp": "2 hours ago",
+                        "content": "We have identified a discrepancy..."
+                    }
+                ]
+            }
+        ],
+        "existing_todos": [
+            {
+                "id": 1,
+                "description": "Confirm follow-up with internal team",
+                "status": "pending",
+                "tag": "Thread 1"
+            }
+        ]
+    }
+
+    Returns:
+    {
+        "success": true,
+        "todos": [
+            {
+                "description": "Review and verify data accuracy",
+                "priority": "High",
+                "tag": "EDC",
+                "reasoning": "Data discrepancy requires immediate verification"
+            }
+        ],
+        "summary": "Generated 4 TODO suggestions based on task analysis and thread content."
+    }
+    """
+    try:
+        data = request.get_json()
+
+        # Validate required fields
+        required_fields = ["task", "email_threads", "existing_todos"]
+        missing_fields = [field for field in required_fields if field not in data]
+
+        if missing_fields:
+            return jsonify(
+                {"success": False, "error": f"Missing required fields: {', '.join(missing_fields)}"}
+            ), 400
+
+        task = data["task"]
+        task_context = f"""
+Task ID: {task.get('id', '')}
+Subject: {task.get('subject', '')}
+Summary: {task.get('summary', '')}
+Urgency: {task.get('urgency', '')}
+Status: {task.get('status', '')}
+"""
+
+        # Format email threads
+        email_threads_json = json.dumps(data["email_threads"])
+        
+        # Format existing todos
+        existing_todos_json = json.dumps(data["existing_todos"])
+
+        # Use DSPy to generate TODOs
+        generate_todos_signature = dspy.ChainOfThought(GenerateTodos)
+        
+        result = generate_todos_signature(
+            task_context=task_context.strip(),
+            email_threads=email_threads_json,
+            existing_todos=existing_todos_json
+        )
+
+        # Parse the JSON response
+        try:
+            todos_list = json.loads(result.todos)
+        except json.JSONDecodeError:
+            # If JSON parsing fails, return an error
+            return jsonify({
+                "success": False, 
+                "error": "Invalid JSON format in AI response"
+            }), 500
+
+        return jsonify({
+            "success": True,
+            "coverage_assessment": result.coverage_assessment,
+            "todos": todos_list,
+            "summary": result.summary
         }), 200
 
     except Exception as e:
