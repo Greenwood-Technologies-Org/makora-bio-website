@@ -1,61 +1,77 @@
 {
   "emails": [
     {
-      "from_address": "dr.helena.ramirez@sunvalleymed.org",
+      "from_address": "alex.johnson@neurogenixpharma.com",
       "to_addresses": [
-        "jane.doe@denalitx.com"
+        "mgarcia@stmarysneurology.org"
       ],
       "cc_addresses": [
-        "carlos.vega@sunvalleymed.org",
-        "peter.jones@denalitx.com"
+        "sarah.chen@neurogenixpharma.com",
+        "revans@stmarysneurology.org"
       ],
-      "subject": "URGENT: SAE Report - Study DNLI-123 - Site 456 - Patient 456-007",
-      "timestamp": "2023-10-26T09:15:00Z",
-      "body": "Hi Jane,\n\nThis is an urgent notification of a Serious Adverse Event for a patient in study DNLI-123.\n\nPatient ID: 456-007\nSite: 456 (Sun Valley Medical Center)\nCohort: Part B (FTD)\nEvent: Hospitalization for a severe seizure. The event occurred last night, and the patient was admitted to the hospital early this morning.\n\nWe are currently gathering all necessary information and completing the SAE form. We will send it to you as soon as possible.\n\nPlease let us know of any immediate actions required.\n\nBest regards,\n\nDr. Helena Ramirez\nPrincipal Investigator\nSun Valley Medical Center",
-      "attachments": [],
-      "message_id": 101,
+      "subject": "NGX-PD-201: Scheduling Interim Monitoring Visit (IMV) #3 - Site 105",
+      "timestamp": "2023-11-06T11:15:00Z",
+      "body": "Hi Maria,\n\nI hope you are well.\n\nI'm writing to schedule the next routine Interim Monitoring Visit (IMV) for the NGX-PD-201 study at St. Mary's Neurological Institute. I am proposing a 2-day visit during the last week of November.\n\nMy available dates are:\n- November 27-28\n- November 29-30\n\nPlease let me know which of these dates would work best for you and Dr. Evans. \n\nKey activities for this visit will include 100% SDV for the first three participants enrolled in Part B, review of the ISF, and drug accountability. I have attached a draft agenda for your review.\n\nI look forward to hearing from you.\n\nBest regards,\n\nAlex Johnson\nClinical Research Associate\nNeuroGenix Pharma\nalex.johnson@neurogenixpharma.com",
+      "attachments": [
+        "Draft_Agenda_IMV3_Site105.pdf"
+      ],
+      "message_id": 5201,
       "in_reply_to": null
     },
     {
-      "from_address": "jane.doe@denalitx.com",
+      "from_address": "mgarcia@stmarysneurology.org",
       "to_addresses": [
-        "dr.helena.ramirez@sunvalleymed.org"
+        "alex.johnson@neurogenixpharma.com"
       ],
       "cc_addresses": [
-        "carlos.vega@sunvalleymed.org",
-        "peter.jones@denalitx.com"
+        "sarah.chen@neurogenixpharma.com",
+        "revans@stmarysneurology.org"
       ],
-      "subject": "Re: URGENT: SAE Report - Study DNLI-123 - Site 456 - Patient 456-007",
-      "timestamp": "2023-10-26T09:32:00Z",
-      "body": "Hi Dr. Ramirez,\n\nThank you for the urgent notification. I have received it and will notify the internal safety team immediately.\n\nPlease send the completed SAE form and all relevant de-identified source documents (e.g., ER report, admission notes, relevant lab results) as soon as they are available, and no later than 24 hours from your awareness of the event.\n\nI will be available should you have any questions.\n\nBest regards,\n\nJane Doe\nClinical Research Associate\nDenali Therapeutics",
+      "subject": "Re: NGX-PD-201: Scheduling Interim Monitoring Visit (IMV) #3 - Site 105",
+      "timestamp": "2023-11-06T15:45:00Z",
+      "body": "Hi Alex,\n\nThanks for reaching out. The dates of November 29-30 work well for us.\n\nThe draft agenda looks good. For our planning purposes, can you confirm which Part B participants you will be focusing on for SDV?\n\nAlso, please let us know what you will need for EMR access. I will need to submit a request to our IT department at least one week in advance to set up your temporary credentials.\n\nThanks,\n\nMaria Garcia\nStudy Coordinator\nSt. Mary's Neurological Institute",
       "attachments": [],
-      "message_id": 102,
-      "in_reply_to": 101
+      "message_id": 5202,
+      "in_reply_to": 5201
     },
     {
-      "from_address": "jane.doe@denalitx.com",
+      "from_address": "alex.johnson@neurogenixpharma.com",
       "to_addresses": [
-        "safety.team@denalitx.com"
+        "mgarcia@stmarysneurology.org"
       ],
       "cc_addresses": [
-        "peter.jones@denalitx.com",
-        "dr.li.chen@denalitx.com"
+        "sarah.chen@neurogenixpharma.com",
+        "revans@stmarysneurology.org"
       ],
-      "subject": "URGENT NOTIFICATION: New SAE - Study DNLI-123 - Site 456 - Hospitalization for Seizure",
-      "timestamp": "2023-10-26T09:45:00Z",
-      "body": "Denali Safety and Medical Team,\n\nThis is an initial notification of a new SAE at Site 456 (Sun Valley Medical Center).\n\nPatient 456-007, enrolled in the Part B FTD cohort, has been hospitalized for a severe seizure. \n\nI have been in contact with the site PI, Dr. Ramirez, and have requested the completed SAE form and relevant source documents. I will forward these materials as soon as I receive them, which is expected within the 24-hour reporting window.\n\nPlease let me know of any immediate actions required from my side.\n\nBest,\n\nJane Doe\nClinical Research Associate\nDenali Therapeutics",
+      "subject": "Re: NGX-PD-201: Scheduling Interim Monitoring Visit (IMV) #3 - Site 105",
+      "timestamp": "2023-11-07T09:30:00Z",
+      "body": "Hi Maria,\n\nExcellent, let's confirm the visit for November 29-30. I have booked my travel accordingly.\n\nFor the Part B SDV, we will review participants 105-012, 105-013, and 105-014.\n\nRegarding EMR access, I will send my details in a separate, secure email for you to forward to IT. Thank you for arranging that.\n\nPlease let me know if you need anything else from my side to prepare.\n\nBest,\n\nAlex Johnson\nClinical Research Associate\nNeuroGenix Pharma\nalex.johnson@neurogenixpharma.com",
       "attachments": [],
-      "message_id": 103,
-      "in_reply_to": null
+      "message_id": 5203,
+      "in_reply_to": 5202
+    },
+    {
+      "from_address": "mgarcia@stmarysneurology.org",
+      "to_addresses": [
+        "alex.johnson@neurogenixpharma.com"
+      ],
+      "cc_addresses": [
+        "sarah.chen@neurogenixpharma.com",
+        "revans@stmarysneurology.org"
+      ],
+      "subject": "Re: NGX-PD-201: Scheduling Interim Monitoring Visit (IMV) #3 - Site 105",
+      "timestamp": "2023-11-07T14:05:00Z",
+      "body": "Hi Alex,\n\nSounds good. I've blocked our calendars for Nov 29-30 and noted the participants for SDV.\n\nOne quick thing - Dr. Evans has requested to add a 30-minute meeting to the agenda on the first day to discuss the recruitment strategy for Part B. Would you be able to accommodate this?\n\nIf so, could you please send over an updated agenda reflecting this change?\n\nThanks,\n\nMaria Garcia\nStudy Coordinator\nSt. Mary's Neurological Institute",
+      "attachments": [],
+      "message_id": 5204,
+      "in_reply_to": 5203
     }
   ],
   "role_descriptions": [
-    "jane.doe@denalitx.com: Sponsor, Clinical Research Associate",
-    "dr.helena.ramirez@sunvalleymed.org: Site, Principal Investigator",
-    "carlos.vega@sunvalleymed.org: Site, Study Coordinator",
-    "peter.jones@denalitx.com: Sponsor, Project Manager",
-    "safety.team@denalitx.com: Sponsor, Safety Team",
-    "dr.li.chen@denalitx.com: Sponsor, Medical Monitor"
+    "alex.johnson@neurogenixpharma.com: Sponsor, Clinical Research Associate",
+    "sarah.chen@neurogenixpharma.com: Sponsor, Clinical Project Manager",
+    "mgarcia@stmarysneurology.org: Site, Study Coordinator",
+    "revans@stmarysneurology.org: Site, Principal Investigator"
   ],
-  "description": "An urgent email thread from the Principal Investigator at a participating site reporting a Serious Adverse Event (SAE). A patient in Part B (FTD cohort) has been hospitalized for a severe seizure. The thread includes the initial notification, the CRA's immediate request for the SAE form and source documents, and the CRA's subsequent communication with the internal Denali safety team."
+  "description": "An email thread initiated by Alex Johnson to the Study Coordinator at Site 105, 'St. Mary's Neurological Institute', to schedule the next routine interim monitoring visit. The thread includes a back-and-forth discussion to confirm dates, finalize the agenda including Source Data Verification (SDV) for the first few participants in Part B, and arrange for access to the site's Electronic Medical Record (EMR) system."
 }

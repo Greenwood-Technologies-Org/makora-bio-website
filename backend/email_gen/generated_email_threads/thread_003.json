@@ -1,45 +1,29 @@
 {
   "emails": [
     {
-      "from_address": "samantha.clark@universityhealth.com",
+      "from_address": "sarah.chen@maplewoodcrc.com",
       "to_addresses": [
-        "craig.miller@innovatepharma.com"
+        "alex.johnson@innovatepharma.com"
       ],
       "cc_addresses": [
-        "pi.jones@universityhealth.com",
-        "pm.davis@globalcro.com"
+        "david.miller@maplewoodcrc.com",
+        "emily.carter@innovatepharma.com",
+        "brenda.davis@innovatepharma.com"
       ],
-      "subject": "[Study INN-045] Site 201, Patient 201-003 - Query on Part B to Part C (OLE) Transition",
-      "timestamp": "2023-10-26T10:15:00-04:00",
-      "body": "Hi Craig,\n\nHope you are having a good week.\n\nWe have a patient (201-003) who is approaching their final visit in the double-blind portion (Part B) of the INN-045 study. The patient has expressed interest in continuing into the open-label extension (Part C).\n\nCould you please provide some clarification on the standard procedure for this transition? Specifically, we are looking for guidance on:\n1. The unblinding process and when it should be initiated.\n2. The correct version of the consent form for the OLE.\n3. A list of the required baseline assessments for entry into Part C.\n\nAny documentation or a quick reference guide you could provide would be greatly appreciated.\n\nThank you,\n\nSamantha Clark\nClinical Research Coordinator\nUniversity Health Center\nSite 201",
+      "subject": "URGENT: Significant Protocol Deviation - Dosing Error - Study INP456 - Site 303 - Pt 303-005",
+      "timestamp": "2024-05-21T09:15:22Z",
+      "body": "Dear Alex,\n\nI am writing to urgently report a significant protocol deviation that occurred today for participant 303-005, enrolled in Part B of the INP456 study.\n\nThis morning during their daily check-in call, the participant reported that they inadvertently took a double dose of the investigational product (two tablets instead of the prescribed one tablet).\n\nThe participant is currently asymptomatic and reports feeling well. Our PI, Dr. Miller, has been notified and has spoken with the participant directly. We have instructed the participant to self-monitor closely and report any new or worsening symptoms immediately.\n\nWe are initiating a Protocol Deviation form. Could you please provide immediate guidance on the next steps for documentation and any additional safety monitoring procedures we should implement? We need to confirm the appropriate reporting timelines and if any other forms are required at this stage.\n\nThank you for your prompt attention to this serious matter.\n\nBest regards,\n\nSarah Chen\nStudy Coordinator\nMaplewood Clinical Research Center\n(555) 123-4567",
       "attachments": [],
-      "message_id": 16734,
+      "message_id": 1,
       "in_reply_to": null
-    },
-    {
-      "from_address": "craig.miller@innovatepharma.com",
-      "to_addresses": [
-        "samantha.clark@universityhealth.com"
-      ],
-      "cc_addresses": [
-        "pi.jones@universityhealth.com",
-        "pm.davis@globalcro.com"
-      ],
-      "subject": "RE: [Study INN-045] Site 201, Patient 201-003 - Query on Part B to Part C (OLE) Transition",
-      "timestamp": "2023-10-26T14:45:00-04:00",
-      "body": "Hi Samantha,\n\nThank you for reaching out and for your proactive planning for patient 201-003. I'm happy to clarify the transition process from Part B to the Part C Open-Label Extension.\n\nPlease follow the steps below:\n\n1.  **Unblinding Procedure:** The unblinding process is managed through the IWRS. After the patient completes their final Part B visit (Visit 12) and all associated data is entered and cleaned in the EDC, you will log into the IWRS and select the option 'Transition to Open-Label Extension'. This will trigger a notification to the unblinded pharmacy staff to dispense the open-label drug. Please note, the site study team will remain blinded to the patient's original treatment assignment in Part B.\n\n2.  **OLE Consent Form:** The correct form is the 'Part C Open-Label Extension Informed Consent Form', Version 4.0, dated 18-Jul-2023. It must be signed and dated by the patient *before* any Part C-specific procedures are performed. I have attached a copy for your convenience, but please ensure you are using the IRB-approved version from your Investigator Site File (ISF).\n\n3.  **Part C Baseline Assessments:** As per protocol section 7.3, the following baseline assessments must be completed after the OLE ICF is signed but before the first dose of the open-label drug:\n    *   Complete Physical Examination\n    *   Vital Signs\n    *   12-lead ECG\n    *   Safety Labs (Hematology and Chemistry)\n    *   Urinalysis\n    *   Disease Activity Score (DAS28-CRP)\n\nThese assessments establish the baseline for the open-label phase. All procedures must be documented in the patient's source records.\n\nI hope this provides the clarity you need. Please let me know if you have any further questions or would like to schedule a brief call to walk through the IWRS steps.\n\nBest regards,\n\nCraig Miller\nClinical Research Associate\nInnovate Pharma",
-      "attachments": [
-        "INN-045_OLE_ICF_v4.0_18JUL2023.pdf"
-      ],
-      "message_id": 16735,
-      "in_reply_to": 16734
     }
   ],
   "role_descriptions": [
-    "craig.miller@innovatepharma.com: Sponsor, Clinical Research Associate",
-    "samantha.clark@universityhealth.com: Site, Site Coordinator",
-    "pi.jones@universityhealth.com: Site, Principal Investigator",
-    "pm.davis@globalcro.com: CRO, Project Manager"
+    "sarah.chen@maplewoodcrc.com: Site, Study Coordinator",
+    "alex.johnson@innovatepharma.com: Sponsor, Clinical Research Associate",
+    "david.miller@maplewoodcrc.com: Site, Principal Investigator",
+    "emily.carter@innovatepharma.com: Sponsor, Medical Monitor",
+    "brenda.davis@innovatepharma.com: Sponsor, Clinical Trial Manager"
   ],
-  "description": "An email from a Site Coordinator asking for clarification on the process for transitioning a patient from the double-blind Part B to the open-label extension (Part C). The CRA responds with a detailed explanation of the unblinding procedure, the specific OLE consent form to be used, and the required baseline assessments for Part C."
+  "description": "A thread initiated by the Study Coordinator at Site 303 regarding a significant protocol deviation. A participant in Part B accidentally took a double dose of the investigational product. Alex Johnson provides immediate guidance on documenting the event, completing a protocol deviation form, and ensuring the participant is monitored closely for any adverse effects, looping in the study's Medical Monitor for clinical oversight."
 }

@@ -1,61 +1,60 @@
 {
   "emails": [
     {
-      "from_address": "jane.doe@innovatepharma.com",
+      "from_address": "maria.garcia@clindatasolutions.com",
       "to_addresses": [
-        "mark.smith@summit-trials.com"
+        "alex.johnson@stellarpharma.com"
       ],
       "cc_addresses": [
-        "david.chen@innovatepharma.com",
-        "emily.carter@summit-trials.com"
+        "samantha.roy@stellarpharma.com"
       ],
-      "subject": "URGENT FOLLOW-UP: Overdue Critical Queries - Study IP-201, Site 101",
-      "timestamp": "2023-10-26T10:15:00-04:00",
-      "body": "Hi Mark,\n\nI hope you are having a good week.\n\nI am following up on the list of critical data queries for Study IP-201 that were sent two weeks ago. As of this morning, the attached list of queries are now over 14 days past due.\n\nResolving these is a high priority as we are approaching the database lock for the Part A (healthy volunteer) cohort analysis, scheduled for November 10th. All critical queries must be addressed before we can proceed.\n\nI understand you have many competing priorities. To help expedite this, I would be happy to schedule a 30-minute call to walk through the outstanding items together and resolve them in real-time. Please let me know what your availability looks like for tomorrow or early next week.\n\nThank you for your urgent attention to this matter.\n\nBest regards,\n\nJane Doe\nClinical Research Associate\nInnovate Pharma\njane.doe@innovatepharma.com\n(123) 456-7890",
+      "subject": "[URGENT] Overdue Data Queries - Protocol SP-123, Site 102",
+      "timestamp": "2023-10-26T09:15:00Z",
+      "body": "Hi Alex,\n\nPlease see the attached report regarding a high number of overdue data queries for Site 102 (University Medical Center). There are currently 85 queries outstanding for over 14 days, which is significantly impacting our timelines for the upcoming data lock.\n\nCould you please follow up with the site to get these resolved as soon as possible?\n\nThanks,\n\nMaria Garcia\nData Manager\nClinData Solutions",
       "attachments": [
-        "IP-201_Site101_Overdue_Critical_Queries_2023-10-26.xlsx"
+        "Site102_Overdue_Queries_Report_20231026.xlsx"
       ],
       "message_id": 1,
       "in_reply_to": null
     },
     {
-      "from_address": "mark.smith@summit-trials.com",
+      "from_address": "alex.johnson@stellarpharma.com",
       "to_addresses": [
-        "jane.doe@innovatepharma.com"
+        "dchen@umc.edu"
       ],
       "cc_addresses": [
-        "david.chen@innovatepharma.com",
-        "emily.carter@summit-trials.com"
+        "maria.garcia@clindatasolutions.com",
+        "samantha.roy@stellarpharma.com"
       ],
-      "subject": "Re: URGENT FOLLOW-UP: Overdue Critical Queries - Study IP-201, Site 101",
-      "timestamp": "2023-10-26T14:30:00-04:00",
-      "body": "Hi Jane,\n\nThank you for the follow-up and my apologies for the delay on these. We've had some unexpected staff shortages this month which has put us behind.\n\nA call would be very helpful. I am available tomorrow at 11:00 AM EST or 2:00 PM EST. Please let me know which time works best for you.\n\nI will review the list in the meantime.\n\nThanks,\n\nMark Smith\nData Manager\nSummit Clinical Trials",
+      "subject": "Fwd: [URGENT] Overdue Data Queries - Protocol SP-123, Site 102",
+      "timestamp": "2023-10-26T10:30:00Z",
+      "body": "Hi David,\n\nHope you are well.\n\nThe data management team has flagged a significant number of overdue queries for your site (please see the report attached in the original email below). \n\nCould you please provide an update on the plan to address these? Please let me know if you need any support from our end.\n\nBest regards,\n\nAlex Johnson\nClinical Research Associate\nStellar Pharma\n\n--- Forwarded message ---\nFrom: Maria Garcia <maria.garcia@clindatasolutions.com>\nDate: Thu, Oct 26, 2023 at 9:15 AM\nSubject: [URGENT] Overdue Data Queries - Protocol SP-123, Site 102\nTo: Alex Johnson <alex.johnson@stellarpharma.com>\nCc: Samantha Roy <samantha.roy@stellarpharma.com>\n\n[Original email body from Maria Garcia]",
       "attachments": [],
       "message_id": 2,
       "in_reply_to": 1
     },
     {
-      "from_address": "jane.doe@innovatepharma.com",
+      "from_address": "dchen@umc.edu",
       "to_addresses": [
-        "mark.smith@summit-trials.com"
+        "alex.johnson@stellarpharma.com"
       ],
       "cc_addresses": [
-        "david.chen@innovatepharma.com",
-        "emily.carter@summit-trials.com"
+        "maria.garcia@clindatasolutions.com",
+        "samantha.roy@stellarpharma.com"
       ],
-      "subject": "Re: URGENT FOLLOW-UP: Overdue Critical Queries - Study IP-201, Site 101",
-      "timestamp": "2023-10-26T14:45:00-04:00",
-      "body": "Hi Mark,\n\nThanks for the quick reply. I completely understand.\n\nTomorrow at 11:00 AM EST works perfectly for me. I will send a calendar invitation with a conference link shortly.\n\nTalk to you then.\n\nBest,\n\nJane\n\nJane Doe\nClinical Research Associate\nInnovate Pharma\njane.doe@innovatepharma.com\n(123) 456-7890",
+      "subject": "Re: [URGENT] Overdue Data Queries - Protocol SP-123, Site 102",
+      "timestamp": "2023-10-27T14:05:00Z",
+      "body": "Hi Alex,\n\nThanks for reaching out. Apologies for the delay in query resolution. We've had some unexpected staffing shortages over the past few weeks which has created a significant backlog.\n\nThe list of 85 queries is quite overwhelming for our current capacity. To help us tackle this efficiently, could you help us prioritize which queries are the most critical to address first, for instance, those related to primary endpoint data?\n\nAny guidance would be greatly appreciated.\n\nThanks,\n\nDavid Chen\nStudy Coordinator\nUniversity Medical Center",
       "attachments": [],
       "message_id": 3,
       "in_reply_to": 2
     }
   ],
   "role_descriptions": [
-    "jane.doe@innovatepharma.com: Sponsor, Clinical Research Associate",
-    "david.chen@innovatepharma.com: Sponsor, Clinical Project Manager",
-    "mark.smith@summit-trials.com: Site, Data Manager",
-    "emily.carter@summit-trials.com: Site, Principal Investigator"
+    "alex.johnson@stellarpharma.com: Sponsor, Clinical Research Associate",
+    "maria.garcia@clindatasolutions.com: CRO, Data Manager",
+    "dchen@umc.edu: Site, Study Coordinator",
+    "samantha.roy@stellarpharma.com: Sponsor, Lead Clinical Research Associate"
   ],
-  "description": "A follow-up email from the CRA to a site's data manager regarding a list of critical data queries that are now over 14 days past due. The CRA emphasizes the importance of resolving these queries ahead of the upcoming database lock for the Part A (healthy volunteer) analysis and offers to schedule a call to walk through the outstanding items."
+  "description": "A multi-email exchange with the data management team and the Study Coordinator at Site 102. The initial email from the data manager flags a high number of overdue data queries for the site. Alex Johnson forwards this to the site coordinator, who replies explaining they are short-staffed. Alex then works with them to prioritize the most critical queries related to primary endpoint data and sets up a call to help resolve the backlog."
 }

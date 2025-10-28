@@ -1,79 +1,48 @@
 {
   "emails": [
     {
-      "from_address": "jane.doe@pharmaxon.com",
+      "from_address": "sarah.miller@ucsfmed.org",
       "to_addresses": [
-        "m.garcia@universitymedical.edu",
-        "r.jones@universitymedical.edu"
+        "alex.johnson@denalitx.com"
       ],
       "cc_addresses": [
-        "kevin.chen@pharmaxon.com"
+        "maria.garcia@ucsfmed.org"
       ],
-      "subject": "URGENT Action Required: Study PHX-201, Site 101 - Incorrect ICF Version Used for Subject 101-005",
-      "timestamp": "2023-10-26T11:15:00Z",
-      "body": "Dear Maria and Dr. Jones,\n\nI hope this email finds you well.\n\nDuring a remote review of the eISF for study PHX-201 today, I identified a critical issue. Subject 101-005, enrolled on October 24, 2023, was consented using the outdated Informed Consent Form (ICF) version 2.0, dated 15-JAN-2023.\n\nThe current, IRB-approved version is ICF v3.0, dated 01-JUL-2023, which was implemented site-wide on July 15, 2023.\n\nThis is a major protocol deviation and requires immediate action to ensure the participant's rights and safety, as well as data integrity. Please take the following steps urgently:\n\n1.  **Contact the participant immediately** to schedule a visit to re-consent them using the correct ICF v3.0.\n2.  **Thoroughly document** the re-consenting process in the participant's source documents.\n3.  **Complete a Protocol Deviation Form** for this event, classifying it as a major deviation. The root cause should be investigated and documented, along with a corrective and preventive action (CAPA) plan.\n4.  **Upload** the newly signed ICF v3.0, the completed Protocol Deviation Form, and a detailed Note-to-File explaining the event and its resolution to the eTMF/Investigator Site File within 48 hours.\n\nPlease confirm receipt of this email and provide your plan of action by the end of today. I am available to discuss this further if needed.\n\nThank you for your immediate attention to this critical matter.\n\nBest regards,\n\nJane Doe\nClinical Research Associate\nPharmaxon Therapeutics\njane.doe@pharmaxon.com",
-      "attachments": [],
-      "message_id": 95831,
+      "subject": "URGENT: Temperature Excursion - DNL593 Study - Site 105",
+      "timestamp": "2023-10-26T16:15:00Z",
+      "body": "Hi Alex,\n\nHope you are well.\n\nThis morning we discovered a temperature excursion in the investigational product refrigerator at our pharmacy. The excursion occurred overnight.\n\n- Study: DNL593\n- Site: 105 - UCSF Medical Center\n- Excursion Start: Approx. 2023-10-25 22:00 PST\n- Excursion End: 2023-10-26 06:00 PST\n- Recorded Min/Max Temp: -1.5\u00b0C / 9.5\u00b0C (storage range is 2-8\u00b0C)\n- Affected Product: All DNL593 and placebo vials currently in stock.\n\nI have attached the continuous temperature monitoring log for your review. Please advise on the next steps and whether the product integrity may be compromised. The stock is currently being held in the fridge, but we have not used any for dispensing this morning.\n\nBest regards,\n\nSarah Miller, RPh\nPharmacist\nUCSF Medical Center Pharmacy",
+      "attachments": [
+        "Temp_Log_Site105_IP_Fridge_20231026.pdf"
+      ],
+      "message_id": 9501,
       "in_reply_to": null
     },
     {
-      "from_address": "m.garcia@universitymedical.edu",
+      "from_address": "alex.johnson@denalitx.com",
       "to_addresses": [
-        "jane.doe@pharmaxon.com"
+        "david.chen@denalitx.com"
       ],
       "cc_addresses": [
-        "r.jones@universitymedical.edu",
-        "kevin.chen@pharmaxon.com"
+        "sarah.miller@ucsfmed.org",
+        "maria.garcia@ucsfmed.org",
+        "emily.white@denalitx.com"
       ],
-      "subject": "Re: URGENT Action Required: Study PHX-201, Site 101 - Incorrect ICF Version Used for Subject 101-005",
-      "timestamp": "2023-10-26T11:45:00Z",
-      "body": "Hi Jane,\n\nThank you for bringing this to our attention. I have received and reviewed your email with Dr. Jones.\n\nWe are taking this very seriously. I have already contacted the participant, and they have agreed to come in tomorrow morning at 9:00 AM for re-consenting. \n\nWe will complete all required documentation (new ICF, PD form, NTF) and upload it to the system by EOD tomorrow, October 27th. We will also implement a CAPA to prevent recurrence, which will involve a re-training session with all research staff on ICF version control.\n\nWe will keep you updated. Thank you for your diligence.\n\nBest,\n\nMaria Garcia, CCRC\nClinical Research Coordinator\nUniversity Medical Center",
-      "attachments": [],
-      "message_id": 95832,
-      "in_reply_to": 95831
-    },
-    {
-      "from_address": "jane.doe@pharmaxon.com",
-      "to_addresses": [
-        "m.garcia@universitymedical.edu"
-      ],
-      "cc_addresses": [
-        "r.jones@universitymedical.edu",
-        "kevin.chen@pharmaxon.com"
-      ],
-      "subject": "Re: URGENT Action Required: Study PHX-201, Site 101 - Incorrect ICF Version Used for Subject 101-005",
-      "timestamp": "2023-10-26T12:05:00Z",
-      "body": "Thank you, Maria.\n\nI appreciate the swift response and clear plan of action. Please let me know once the re-consent is complete and the documents are uploaded tomorrow.\n\nBest regards,\n\nJane Doe\nClinical Research Associate\nPharmaxon Therapeutics",
-      "attachments": [],
-      "message_id": 95833,
-      "in_reply_to": 95832
-    },
-    {
-      "from_address": "m.garcia@universitymedical.edu",
-      "to_addresses": [
-        "jane.doe@pharmaxon.com"
-      ],
-      "cc_addresses": [
-        "r.jones@universitymedical.edu",
-        "kevin.chen@pharmaxon.com"
-      ],
-      "subject": "Re: URGENT Action Required: Study PHX-201, Site 101 - Incorrect ICF Version Used for Subject 101-005 - RESOLVED",
-      "timestamp": "2023-10-27T14:20:00Z",
-      "body": "Hi Jane,\n\nThis is to confirm that subject 101-005 was successfully re-consented this morning using ICF v3.0.\n\nAs discussed, the following documents have been completed and uploaded to the eISF:\n\n- Signed ICF v3.0 for subject 101-005\n- Completed Protocol Deviation Form\n- Note-to-File detailing the event and corrective actions\n\nPlease let us know if you require anything further from our side.\n\nBest,\n\nMaria Garcia, CCRC\nClinical Research Coordinator\nUniversity Medical Center",
+      "subject": "Fwd: URGENT: Temperature Excursion - DNL593 Study - Site 105",
+      "timestamp": "2023-10-26T16:45:10Z",
+      "body": "Hi David,\n\nPlease see the urgent notification below from Site 105 regarding a temperature excursion for the DNL593 IP. Can you please assess the attached temperature log and advise on the product's viability?\n\nSarah/Maria - Thank you for the prompt notification. Please quarantine all affected DNL593 and placebo vials immediately. Do not dispense any of this stock. Please label it clearly as 'QUARANTINED - DO NOT USE' and move it to a separate, secure location within the correct temperature range. We will provide further instructions as soon as the assessment is complete.\n\nThanks,\n\nAlex Johnson\nClinical Research Associate\nDenali Therapeutics\n\n--- Forwarded message ---\nFrom: Sarah Miller <sarah.miller@ucsfmed.org>\nDate: Thu, Oct 26, 2023 at 9:15 AM\nSubject: URGENT: Temperature Excursion - DNL593 Study - Site 105\nTo: Alex Johnson <alex.johnson@denalitx.com>\nCc: Maria Garcia <maria.garcia@ucsfmed.org>\n\nHi Alex,\n\nHope you are well.\n\nThis morning we discovered a temperature excursion in the investigational product refrigerator at our pharmacy. The excursion occurred overnight.\n\n- Study: DNL593\n- Site: 105 - UCSF Medical Center\n- Excursion Start: Approx. 2023-10-25 22:00 PST\n- Excursion End: 2023-10-26 06:00 PST\n- Recorded Min/Max Temp: -1.5\u00b0C / 9.5\u00b0C (storage range is 2-8\u00b0C)\n- Affected Product: All DNL593 and placebo vials currently in stock.\n\nI have attached the continuous temperature monitoring log for your review. Please advise on the next steps and whether the product integrity may be compromised. The stock is currently being held in the fridge, but we have not used any for dispensing this morning.\n\nBest regards,\n\nSarah Miller, RPh\nPharmacist\nUCSF Medical Center Pharmacy",
       "attachments": [
-        "101-005_ICF_v3_Signed_27OCT2023.pdf",
-        "PD_101-005_Incorrect_ICF.pdf",
-        "NTF_101-005_ICF_Reconsent.pdf"
+        "Temp_Log_Site105_IP_Fridge_20231026.pdf"
       ],
-      "message_id": 95834,
-      "in_reply_to": 95833
+      "message_id": 9502,
+      "in_reply_to": 9501
     }
   ],
   "role_descriptions": [
-    "jane.doe@pharmaxon.com: Sponsor, Clinical Research Associate",
-    "kevin.chen@pharmaxon.com: Sponsor, Clinical Trial Manager",
-    "m.garcia@universitymedical.edu: Site, Clinical Research Coordinator",
-    "r.jones@universitymedical.edu: Site, Principal Investigator"
+    "alex.johnson@denalitx.com: Sponsor, Clinical Research Associate",
+    "sarah.miller@ucsfmed.org: Site, Pharmacist",
+    "maria.garcia@ucsfmed.org: Site, Study Coordinator",
+    "david.chen@denalitx.com: Sponsor, Clinical Trial Supplies Manager",
+    "emily.white@denalitx.com: Sponsor, Project Manager"
   ],
-  "description": "A thread initiated by the CRA after a remote review of site documents. The CRA discovered that a newly enrolled patient was consented using an outdated version of the Informed Consent Form. The email urgently instructs the site to re-consent the participant with the correct, currently approved ICF version and to document this as a major protocol deviation."
+  "description": "An email from the site pharmacist at Site 105 reporting a temperature excursion in the refrigerator storing the DNL593 and placebo vials. Alex Johnson immediately forwards the temperature log and details to the internal Clinical Trial Supplies Manager at Denali Therapeutics to assess if the product integrity has been compromised and advises the site to quarantine the affected stock pending investigation."
 }

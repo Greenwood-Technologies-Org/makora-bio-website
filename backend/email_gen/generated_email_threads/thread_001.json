@@ -1,55 +1,65 @@
 {
   "emails": [
     {
-      "from_address": "david.chen@pinnacletx.com",
+      "from_address": "maria.garcia@metropolisgeneral.org",
       "to_addresses": [
-        "m.garcia@oakwoodcrc.org"
+        "alex.johnson@neurogenix.com"
       ],
-      "cc_addresses": [],
-      "subject": "Pinnacle Study PTX-305: Scheduling of Interim Monitoring Visit (IMV) at Site S-102",
-      "timestamp": "2023-10-23T10:05:00Z",
-      "body": "Hi Maria,\n\nI hope you are well.\n\nI'm writing to schedule the next Interim Monitoring Visit for the PTX-305 study at your site. I am proposing the week of November 6th, specifically Nov 7th, 8th, or 9th. Please let me know which of these dates works best for you and Dr. Reed.\n\nThe primary objectives for this visit will be:\n- 100% Source Data Verification (SDV) for the first two FTD patients (S-102-001 and S-102-002)\n- Review of the Investigator Site File (ISF)\n- Drug accountability review\n\nI have attached a draft agenda for your review. Please let me know if you have any questions.\n\nBest regards,\n\nDavid Chen\nClinical Research Associate\nPinnacle Therapeutics",
-      "attachments": [
-        "PTX-305_IMV_Agenda_Draft_S102.pdf"
+      "cc_addresses": [
+        "david.chen@metropolisgeneral.org",
+        "bcarter@neurogenix.com",
+        "s.miller@globalcro.com"
       ],
-      "message_id": 1,
+      "subject": "URGENT: SAE Notification - Site 201 (Metropolis General) - Participant 450-008 - Protocol NGX-FTD-002",
+      "timestamp": "2023-11-06T10:05:00Z",
+      "body": "Dear Alex,\n\nPlease be advised of a Serious Adverse Event for a participant in the NGX-FTD-002 study at Site 201.\n\nParticipant ID: 450-008 (Part B, FTD Cohort)\nEvent: Hospitalization for Pneumonia\nDate of Onset: 2023-11-05\n\nThe participant was admitted to Metropolis General Hospital yesterday evening and is currently stable. We are gathering all necessary source documentation and will complete the formal SAE report form shortly.\n\nPlease let us know of any immediate questions.\n\nBest regards,\n\nDr. Maria Garcia\nPrincipal Investigator\nMetropolis General Hospital\nSite 201",
+      "attachments": [],
+      "message_id": 87301,
       "in_reply_to": null
     },
     {
-      "from_address": "m.garcia@oakwoodcrc.org",
+      "from_address": "alex.johnson@neurogenix.com",
       "to_addresses": [
-        "david.chen@pinnacletx.com"
+        "maria.garcia@metropolisgeneral.org"
       ],
       "cc_addresses": [
-        "e.reed@oakwoodcrc.org"
+        "david.chen@metropolisgeneral.org",
+        "bcarter@neurogenix.com",
+        "s.miller@globalcro.com"
       ],
-      "subject": "Re: Pinnacle Study PTX-305: Scheduling of Interim Monitoring Visit (IMV) at Site S-102",
-      "timestamp": "2023-10-23T14:22:00Z",
-      "body": "Hi David,\n\nThanks for reaching out. After checking our calendars, November 8th would work best for us.\n\nWe will ensure the patient binders for S-102-001 and S-102-002 are ready for 100% SDV, and the ISF will be up-to-date and available for your review.\n\nThe agenda looks fine. Will Dr. Reed need to be available for the entire day, or just for a specific meeting?\n\nBest,\n\nMaria Garcia\nSite Coordinator\nOakwood Clinical Research Center",
+      "subject": "Re: URGENT: SAE Notification - Site 201 (Metropolis General) - Participant 450-008 - Protocol NGX-FTD-002",
+      "timestamp": "2023-11-06T10:25:00Z",
+      "body": "Dear Dr. Garcia,\n\nThank you for the prompt notification of this SAE for participant 450-008. The safety team has been alerted.\n\nPlease ensure the completed SAE report form is submitted to us within 24 hours of your initial awareness of the event. Also, please ensure all related source documentation is uploaded to the eTMF as it becomes available.\n\nWe appreciate your diligence.\n\nBest,\n\nAlex Johnson\nClinical Research Associate\nNeuroGenix Pharma",
       "attachments": [],
-      "message_id": 2,
-      "in_reply_to": 1
+      "message_id": 87302,
+      "in_reply_to": 87301
     },
     {
-      "from_address": "david.chen@pinnacletx.com",
+      "from_address": "david.chen@metropolisgeneral.org",
       "to_addresses": [
-        "m.garcia@oakwoodcrc.org"
+        "alex.johnson@neurogenix.com"
       ],
       "cc_addresses": [
-        "e.reed@oakwoodcrc.org"
+        "maria.garcia@metropolisgeneral.org",
+        "bcarter@neurogenix.com",
+        "s.miller@globalcro.com"
       ],
-      "subject": "Re: Pinnacle Study PTX-305: Scheduling of Interim Monitoring Visit (IMV) at Site S-102",
-      "timestamp": "2023-10-24T09:15:00Z",
-      "body": "Hi Maria,\n\nThat's great, thank you for confirming. I have booked the visit for Wednesday, November 8th.\n\nRegarding Dr. Reed's availability, I will only need a brief meeting with her at the beginning of the day to discuss the plan and at the end of the day for a debrief on my findings. I anticipate this will be about 30 minutes for each meeting.\n\nI will send the official confirmation letter with the finalized agenda shortly.\n\nLooking forward to seeing you both.\n\nBest regards,\n\nDavid Chen\nClinical Research Associate\nPinnacle Therapeutics",
-      "attachments": [],
-      "message_id": 3,
-      "in_reply_to": 2
+      "subject": "Re: URGENT: SAE Notification - Site 201 (Metropolis General) - Participant 450-008 - Protocol NGX-FTD-002",
+      "timestamp": "2023-11-07T09:50:00Z",
+      "body": "Hi Alex,\n\nPlease find the completed SAE Report Form for participant 450-008 attached to this email.\n\nWe are currently uploading the initial source documents (hospital admission notes, initial diagnosis) to the portal. We will continue to upload further documentation as we receive it.\n\nCould you please confirm receipt of the attached form?\n\nThank you,\n\nDavid Chen\nClinical Research Coordinator\nMetropolis General Hospital\nSite 201",
+      "attachments": [
+        "SAE_Form_NGX-FTD-002_Site201_PT450-008_Pneumonia.pdf"
+      ],
+      "message_id": 87303,
+      "in_reply_to": 87302
     }
   ],
   "role_descriptions": [
-    "david.chen@pinnacletx.com: Sponsor, Clinical Research Associate",
-    "m.garcia@oakwoodcrc.org: Site, Site Coordinator",
-    "e.reed@oakwoodcrc.org: Site, Principal Investigator"
+    "alex.johnson@neurogenix.com: Sponsor, Clinical Research Associate",
+    "maria.garcia@metropolisgeneral.org: Site, Principal Investigator",
+    "david.chen@metropolisgeneral.org: Site, Clinical Research Coordinator",
+    "bcarter@neurogenix.com: Sponsor, Medical Monitor",
+    "s.miller@globalcro.com: CRO, Project Manager"
   ],
-  "description": "A routine back-and-forth email exchange between the CRA and a Site Coordinator to schedule an upcoming interim monitoring visit. The discussion covers potential dates, confirmation of the agenda (including 100% SDV for the first two FTD patients), and a request to have specific patient binders and ISF documents available for review."
+  "description": "An urgent email from the Principal Investigator at Site 201 reporting a Serious Adverse Event (SAE) for a participant in the FTD cohort (Part B). The participant was hospitalized for pneumonia. The thread shows Alex Johnson acknowledging receipt, requesting the completed SAE report form within 24 hours, and following up to ensure all source documentation has been uploaded and the event has been entered correctly in the safety database."
 }
