@@ -310,3 +310,36 @@ export async function markThreadAsRead(
     throw error;
   }
 }
+
+/**
+ * Delete a task and unassign its threads
+ * @param {number} taskId - The task ID to delete
+ * @param {Array} currentProblems - Current problems array
+ * @param {Array} currentThreads - Current threads array
+ * @returns {Promise<boolean>} Success status
+ */
+export async function deleteTask(taskId, currentProblems, currentThreads) {
+  try {
+    console.log("Deleting task:", taskId);
+
+    // Remove the task from problems
+    const updatedProblems = currentProblems.filter((p) => p.id !== taskId);
+
+    // Unassign all threads that were assigned to this task
+    const updatedThreads = currentThreads.map((thread) =>
+      thread.problemId === taskId ? { ...thread, problemId: null } : thread
+    );
+
+    const updatedData = {
+      problems: updatedProblems,
+      threads: updatedThreads,
+    };
+
+    await saveData(updatedData);
+    console.log("Task deleted successfully");
+    return true;
+  } catch (error) {
+    console.error("Delete task error:", error);
+    throw new Error(`Failed to delete task: ${error.message}`);
+  }
+}

@@ -7,6 +7,7 @@ import {
   updateTodo,
   updateTask,
 } from "../../services/dataService";
+import { Sparkles } from "lucide-react";
 
 function ComDetailPanel({
   com,
@@ -506,7 +507,7 @@ function ComDetailPanel({
 
   return (
     <div
-      className="bg-white rounded-lg shadow-sm border border-gray-200"
+      className="bg-white rounded-lg shadow-sm border border-gray-200 max-h-[90vh] overflow-y-auto"
       onClick={(e) => {
         handleCloseContextMenu();
         setShowExistingTagDropdown(null);
@@ -856,19 +857,7 @@ function ComDetailPanel({
                     {draftMessages[thread.id] && (
                       <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-4 border-2 border-purple-300 max-h-[80vh] flex flex-col">
                         <div className="flex items-center gap-2 mb-3 flex-shrink-0">
-                          <svg
-                            className="w-5 h-5 text-purple-600"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                            />
-                          </svg>
+                          <Sparkles className="w-5 h-5 text-purple-600" />
                           <span className="text-sm font-semibold text-purple-700">
                             AI Draft
                           </span>
@@ -974,11 +963,11 @@ function ComDetailPanel({
         </div>
 
         {/* Current TODOs - Right Panel */}
-        <div className="lg:col-span-1">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">
+        <div className="lg:col-span-1 max-h-[80vh] overflow-y-auto pr-2 pb-4">
+          <h2 className="text-xl font-bold text-gray-900 mb-4 sticky top-0 bg-white z-10 pb-2">
             Current TODOs
           </h2>
-          <div className="space-y-3">
+          <div className="space-y-3 pb-4">
             {todos.map((todo) => {
               const isEDC = todo.tag === "EDC";
               return (
@@ -1147,7 +1136,7 @@ function ComDetailPanel({
                               handleAIDraft(todo.id);
                             }}
                             disabled={aiDraftLoading[todo.id]}
-                            className="w-6 h-6 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 disabled:from-gray-400 disabled:to-gray-500 text-white transition-all duration-200 shadow-sm hover:shadow-md disabled:cursor-not-allowed flex items-center justify-center flex-shrink-0"
+                            className="w-6 h-6 rounded-full bg-white border border-gray-200 hover:bg-gray-50 disabled:bg-white disabled:border-gray-200 disabled:cursor-not-allowed transition-colors duration-200 shadow-sm hover:shadow-md flex items-center justify-center flex-shrink-0"
                             title={
                               aiDraftLoading[todo.id]
                                 ? "Generating AI Draft..."
@@ -1155,21 +1144,19 @@ function ComDetailPanel({
                             }
                           >
                             {aiDraftLoading[todo.id] ? (
-                              <div className="animate-spin rounded-full h-3 w-3 border-b-2 border-white"></div>
+                              <div
+                                className="animate-spin rounded-full h-3 w-3 border-b-2"
+                                style={{ borderColor: "#4190C5" }}
+                              ></div>
                             ) : (
-                              <svg
+                              <Sparkles
                                 className="w-3 h-3"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2}
-                                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                                />
-                              </svg>
+                                style={{
+                                  color: aiDraftLoading[todo.id]
+                                    ? "#9CA3AF"
+                                    : "#4190C5",
+                                }}
+                              />
                             )}
                           </button>
                         )}
@@ -1201,7 +1188,7 @@ function ComDetailPanel({
           </div>
 
           {/* Action Buttons */}
-          <div className="mt-6 flex gap-2">
+          <div className="mt-4 mb-4 flex gap-2">
             <button
               onClick={() => setShowAddTodoModal(true)}
               className="flex-1 px-4 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors font-medium flex items-center justify-center gap-2"
@@ -1226,27 +1213,18 @@ function ComDetailPanel({
             <button
               onClick={handleAiTodoGeneration}
               disabled={aiTodoLoading}
-              className="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 disabled:from-gray-400 disabled:to-gray-500 text-white transition-all duration-200 shadow-sm hover:shadow-md disabled:cursor-not-allowed flex items-center justify-center flex-shrink-0"
+              className="w-10 h-10 rounded-full bg-white border border-gray-200 hover:bg-gray-50 disabled:bg-white disabled:border-gray-200 disabled:cursor-not-allowed transition-colors duration-200 shadow-sm hover:shadow-md flex items-center justify-center flex-shrink-0"
               title={
                 aiTodoLoading ? "Generating TODOs..." : "AI Generate TODOs"
               }
             >
               {aiTodoLoading ? (
-                <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
+                <div
+                  className="animate-spin rounded-full h-4 w-4 border-b-2"
+                  style={{ borderColor: "#4190C5" }}
+                ></div>
               ) : (
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                  />
-                </svg>
+                <Sparkles className="w-4 h-4" style={{ color: "#4190C5" }} />
               )}
             </button>
           </div>
@@ -1722,19 +1700,7 @@ function AiTodoModal({ recommendations, onAccept, onReject, threads }) {
                       {/* AI Draft Indicator */}
                       {todo.hasAIDraft && (
                         <span className="flex items-center gap-1 text-purple-600">
-                          <svg
-                            className="w-4 h-4"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                            />
-                          </svg>
+                          <Sparkles className="w-4 h-4" />
                           <span className="text-xs">AI Draft</span>
                         </span>
                       )}

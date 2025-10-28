@@ -2,10 +2,12 @@ import React, { useState, useMemo } from "react";
 import ComDetailPanel from "./ComDetailPanel.jsx";
 import comsData from "@/data/coms.json";
 import { categorizeEmailWithDSPy } from "@/services/aiCategorization.js";
+import { generateEmailDraftWithDSPy } from "@/services/emailDrafting";
 import {
   createTask,
   assignThreadToTask,
   markThreadAsRead as persistMarkThreadAsRead,
+  deleteTask,
 } from "@/services/dataService.js";
 import {
   Star,
@@ -25,7 +27,6 @@ import {
   Send,
   Reply,
   Forward,
-  Lightbulb,
   MessageSquare,
   Loader2,
   Sparkles,
@@ -61,8 +62,12 @@ function Coms() {
 
   // AI assist state
   const [aiAssistLoading, setAiAssistLoading] = useState(null); // threadId that's being processed
+  const [aiDraftLoading, setAiDraftLoading] = useState({}); // todoId -> boolean
   const [aiRecommendation, setAiRecommendation] = useState(null); // { threadId, recommendedProblem, confidence }
   const [showRecommendationModal, setShowRecommendationModal] = useState(false);
+
+  // Task context menu state
+  const [taskContextMenu, setTaskContextMenu] = useState(null); // { taskId, x, y }
 
   const filterOptions = {
     urgency: ["All", "High", "Medium", "Low"],
@@ -95,6 +100,31 @@ function Coms() {
         return "bg-gray-100 text-gray-700 border-gray-300";
       default:
         return "bg-white text-gray-700 border-gray-300";
+    }
+  };
+
+  // Match tag pill colors used in ComDetailPanel
+  const getTodoTagColor = (tagValue) => {
+    if (!tagValue) return "bg-gray-100 text-gray-700 border-gray-200";
+    if (tagValue.startsWith("Thread")) {
+      return "bg-cyan-100 text-cyan-700 border-cyan-200";
+    }
+    switch (tagValue) {
+      case "Medidata Rave":
+      case "EDC":
+        return "bg-purple-100 text-purple-700 border-purple-200";
+      case "Veeva Site Connect":
+        return "bg-blue-100 text-blue-700 border-blue-200";
+      case "CTMS":
+        return "bg-green-100 text-green-700 border-green-200";
+      case "eTMF":
+        return "bg-amber-100 text-amber-700 border-amber-200";
+      case "IWRS/IVRS":
+        return "bg-pink-100 text-pink-700 border-pink-200";
+      case "Safety Database":
+        return "bg-red-100 text-red-700 border-red-200";
+      default:
+        return "bg-gray-100 text-gray-700 border-gray-200";
     }
   };
 
@@ -194,6 +224,53 @@ function Coms() {
     }
     setFilteredThreadKey(null); // Clear thread-specific filter when problem is clicked
     setSelectedThreadKey(null); // Clear thread selection when problem is clicked
+  };
+
+  // Handle right-click on task
+  const handleTaskContextMenu = (e, taskId) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setTaskContextMenu({
+      taskId,
+      x: e.clientX,
+      y: e.clientY,
+    });
+  };
+
+  // Close task context menu
+  const handleCloseTaskContextMenu = () => {
+    setTaskContextMenu(null);
+  };
+
+  // Delete task handler
+  const handleDeleteTask = async (taskId) => {
+    try {
+      await deleteTask(taskId, problemsData, threadsData);
+
+      // Update local state
+      setProblemsData((prev) => prev.filter((p) => p.id !== taskId));
+      setThreadsData((prev) =>
+        prev.map((t) =>
+          t.problemId === taskId ? { ...t, problemId: null } : t
+        )
+      );
+
+      // Clear selections if the deleted task was selected
+      if (selectedProblemId === taskId) {
+        setSelectedProblemId(null);
+        setSelectedThreadKey(null);
+      }
+
+      // Close detail view if showing deleted task
+      if (detailViewProblem?.id === taskId) {
+        setDetailViewProblem(null);
+      }
+
+      handleCloseTaskContextMenu();
+    } catch (error) {
+      console.error("Failed to delete task:", error);
+      alert("Failed to delete task. Please try again.");
+    }
   };
 
   const handleThreadClick = (threadKey) => {
@@ -468,15 +545,33 @@ function Coms() {
     setDetailViewProblem(problem);
   };
 
-  const handleAIDraft = (todo, threadKey) => {
-    if (!todo.aiDraft) return;
+  const handleAIDraft = async (todo, threadKey) => {
+    if (!threadKey) return;
 
-    setDraftMessage({
-      threadKey,
-      message: todo.aiDraft.message,
-      references: todo.aiDraft.references || [],
-      todoId: todo.id,
-    });
+    const thread = allThreads.find((t) => t.threadKey === threadKey);
+    if (!thread) return;
+
+    setAiDraftLoading((prev) => ({ ...prev, [todo.id]: true }));
+    try {
+      const draft = await generateEmailDraftWithDSPy(thread, todo.description);
+      const formattedMessage = `To: ${draft.to || ""}\n${
+        draft.cc ? `CC: ${draft.cc}\n` : ""
+      }${draft.bcc ? `BCC: ${draft.bcc}\n` : ""}\nSubject: ${
+        draft.subject || ""
+      }\n\n${draft.body || ""}`;
+
+      setDraftMessage({
+        threadKey,
+        message: formattedMessage,
+        references: [],
+        todoId: todo.id,
+      });
+    } catch (error) {
+      console.error("AI draft generation error:", error);
+      alert(`Failed to generate AI draft: ${error.message}`);
+    } finally {
+      setAiDraftLoading((prev) => ({ ...prev, [todo.id]: false }));
+    }
   };
 
   const handleCancelDraft = () => {
@@ -691,7 +786,7 @@ function Coms() {
       threads: threadsData.filter((t) => t.problemId === detailViewProblem.id),
     };
 
-  return (
+    return (
       <ComDetailPanel
         com={problemWithThreads}
         onBack={() => setDetailViewProblem(null)}
@@ -707,7 +802,10 @@ function Coms() {
   }
 
   return (
-    <div className="bg-white h-full flex flex-col overflow-hidden">
+    <div
+      className="bg-white h-full flex flex-col overflow-hidden"
+      onClick={handleCloseTaskContextMenu}
+    >
       {/* Show Thread View or Inbox View */}
       {selectedThread ? (
         // Gmail-like Thread View
@@ -752,8 +850,8 @@ function Coms() {
                           <ChevronRight className="w-3 h-3 text-gray-400" />
                         )}
                       </React.Fragment>
-          ))}
-        </div>
+                    ))}
+                  </div>
 
                   {/* Assignment Badge */}
                   <div className="relative">
@@ -784,7 +882,7 @@ function Coms() {
                           <div className="p-2">
                             <div className="px-3 py-2 text-xs font-semibold text-gray-500 uppercase">
                               Reassign Thread To:
-      </div>
+                            </div>
 
                             <button
                               onClick={() => handleReassignThread(null)}
@@ -869,7 +967,7 @@ function Coms() {
                     Messages
                   </h3>
                   {selectedThread.messages.length === 0 ? (
-          <div className="flex items-center justify-center h-64 text-gray-500">
+                    <div className="flex items-center justify-center h-64 text-gray-500">
                       <div className="text-center">
                         <MessageSquare className="w-16 h-16 mx-auto mb-3 text-gray-300" />
                         <p className="text-base font-medium">
@@ -880,8 +978,8 @@ function Coms() {
                           exchanged
                         </p>
                       </div>
-          </div>
-        ) : (
+                    </div>
+                  ) : (
                     <div className="space-y-2">
                       {selectedThread.messages.map((message, idx) => {
                         const isExpanded = expandedMessages.has(idx);
@@ -903,8 +1001,8 @@ function Coms() {
                             {isExpanded ? (
                               // Expanded View
                               <div className="p-5">
-              <div className="flex items-start justify-between mb-3">
-                <div className="flex-1">
+                                <div className="flex items-start justify-between mb-3">
+                                  <div className="flex-1">
                                     {/* From → To */}
                                     <div className="flex items-center gap-3 mb-2">
                                       <div className="w-8 h-8 rounded-full bg-primary-500 flex items-center justify-center text-white text-sm font-semibold">
@@ -1063,7 +1161,7 @@ function Coms() {
                     draftMessage.threadKey === selectedThreadKey && (
                       <div className="mt-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-5 border-2 border-purple-300">
                         <div className="flex items-center gap-2 mb-3">
-                          <Lightbulb className="w-5 h-5 text-purple-600" />
+                          <Sparkles className="w-5 h-5 text-purple-600" />
                           <span className="text-base font-semibold text-purple-700"></span>
                         </div>
                         <textarea
@@ -1193,17 +1291,49 @@ function Coms() {
                               >
                                 {todo.description}
                               </p>
-                              {todo.hasAIDraft &&
-                                todo.status !== "completed" && (
-                                  <button
-                                    onClick={() =>
-                                      handleAIDraft(todo, selectedThreadKey)
-                                    }
-                                    className="w-full flex items-center justify-center gap-1 px-3 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all text-xs font-medium shadow-sm hover:shadow-md"
+
+                              {/* Tags and AI Draft Indicator - match ComDetailPanel */}
+                              <div className="flex items-center gap-4 text-sm">
+                                {/* Tag pill */}
+                                {todo.tag && (
+                                  <span
+                                    className={`px-2 py-0.5 rounded-full text-xs font-medium border ${getTodoTagColor(
+                                      todo.tag
+                                    )}`}
                                   >
-                                    <Lightbulb className="w-4 h-4" />
-                                  </button>
+                                    {todo.tag}
+                                  </span>
                                 )}
+
+                                {/* AI Draft Button */}
+                                {todo.hasAIDraft &&
+                                  todo.status !== "completed" && (
+                                    <button
+                                      onClick={() =>
+                                        handleAIDraft(todo, selectedThreadKey)
+                                      }
+                                      disabled={!!aiDraftLoading[todo.id]}
+                                      className="w-6 h-6 rounded-full bg-white border border-gray-200 hover:bg-gray-50 disabled:bg-white disabled:border-gray-200 disabled:cursor-not-allowed transition-colors duration-200 shadow-sm hover:shadow-md flex items-center justify-center flex-shrink-0"
+                                      title={
+                                        aiDraftLoading[todo.id]
+                                          ? "Generating AI Draft..."
+                                          : "AI Draft"
+                                      }
+                                    >
+                                      {aiDraftLoading[todo.id] ? (
+                                        <div
+                                          className="animate-spin rounded-full h-3 w-3 border-b-2"
+                                          style={{ borderColor: "#4190C5" }}
+                                        ></div>
+                                      ) : (
+                                        <Sparkles
+                                          className="w-3 h-3"
+                                          style={{ color: "#4190C5" }}
+                                        />
+                                      )}
+                                    </button>
+                                  )}
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -1657,6 +1787,7 @@ function Coms() {
                     return (
                       <div
                         key={com.id}
+                        onContextMenu={(e) => handleTaskContextMenu(e, com.id)}
                         className={`p-4 transition-all ${
                           isSelected
                             ? "bg-primary-50 border-l-4 border-primary-500"
@@ -1669,8 +1800,8 @@ function Coms() {
                             onClick={() => handleProblemClick(com.id)}
                           >
                             <h3 className="text-sm font-semibold text-gray-900 mb-2">
-                      {com.subject}
-                    </h3>
+                              {com.subject}
+                            </h3>
                           </div>
 
                           {/* Open Task Detail Icon */}
@@ -1700,8 +1831,8 @@ function Coms() {
                                   : "bg-green-100 text-green-700"
                               }`}
                             >
-                      {com.urgency}
-                    </span>
+                              {com.urgency}
+                            </span>
                             <span
                               className={`px-2 py-0.5 text-xs rounded-full font-medium ${
                                 com.status === "In Progress"
@@ -1713,12 +1844,12 @@ function Coms() {
                                   : "bg-gray-100 text-gray-700"
                               }`}
                             >
-                      {com.status}
-                    </span>
-                  </div>
+                              {com.status}
+                            </span>
+                          </div>
                           <p className="text-xs text-gray-600 leading-relaxed line-clamp-2">
-                    {com.summary}
-                  </p>
+                            {com.summary}
+                          </p>
                           <div className="flex items-center gap-3 mt-2 text-xs text-gray-500">
                             <div className="flex items-center gap-1">
                               <Mail className="w-3.5 h-3.5" />
@@ -1726,7 +1857,7 @@ function Coms() {
                                 {threadCount} thread
                                 {threadCount !== 1 ? "s" : ""}
                               </span>
-                </div>
+                            </div>
                             <div className="flex items-center gap-1">
                               <CheckSquare className="w-3.5 h-3.5" />
                               <span>
@@ -1740,8 +1871,8 @@ function Coms() {
                                   .length !== 1
                                   ? "s"
                                   : ""}
-                </span>
-              </div>
+                              </span>
+                            </div>
                             <span className="ml-auto">{com.timestamp}</span>
                           </div>
                         </div>
@@ -1756,8 +1887,8 @@ function Coms() {
                     <div className="flex items-center gap-2 text-gray-500">
                       <Loader2 className="h-4 w-4 animate-spin text-primary-500" />
                       <span className="text-sm">Loading more tasks...</span>
-                </div>
-                </div>
+                    </div>
+                  </div>
                 )}
 
                 {/* End of tasks indicator */}
@@ -1765,9 +1896,9 @@ function Coms() {
                   filteredProblems.length > ITEMS_PER_PAGE && (
                     <div className="flex items-center justify-center py-4 text-gray-400">
                       <span className="text-sm">All tasks loaded</span>
-              </div>
+                    </div>
                   )}
-            </div>
+              </div>
             </div>
           </div>
         </>
@@ -1797,7 +1928,7 @@ function Coms() {
                     <span className="text-sm text-gray-900">
                       {aiRecommendation.thread.name}
                     </span>
-      </div>
+                  </div>
                   <div className="flex flex-col gap-2">
                     <span className="text-sm font-medium text-gray-700">
                       Description:
@@ -1926,6 +2057,26 @@ function Coms() {
               </button>
             </div>
           </div>
+        </div>
+      )}
+
+      {/* Task Context Menu for Delete */}
+      {taskContextMenu && (
+        <div
+          className="fixed bg-white rounded-lg shadow-lg border border-gray-200 py-1 z-50"
+          style={{
+            left: `${taskContextMenu.x}px`,
+            top: `${taskContextMenu.y}px`,
+          }}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <button
+            onClick={() => handleDeleteTask(taskContextMenu.taskId)}
+            className="w-full px-4 py-2 text-left text-sm text-red-600 hover:bg-red-50 flex items-center gap-2 transition-colors"
+          >
+            <Trash2 className="w-4 h-4" />
+            Delete Task
+          </button>
         </div>
       )}
     </div>
