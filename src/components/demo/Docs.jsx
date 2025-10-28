@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import DocumentViewer from './DocumentViewer.jsx';
 
-// Import actual files from the docs directory
-import studyProtocolDocx from '../../docs/[NCT05262023] Study Protocol.docx';
-import informedConsentDocx from '../../docs/[NCT05262023] Informed Consent.docx';
-import dataMgmtPdf from '../../docs/[NCT05262023] Data Management Plan Summary.pdf';
-import eproManualPdf from '../../docs/[NCT05262023] ePRO System Site Manual.pdf';
-import raciMatrixPptx from '../../docs/[NCT05262023] Clinical Operations RACI Matrix.pptx';
+// You can use Google Drive links OR local file imports
+// To use Google Drive:
+// 1. Upload file to Google Drive
+// 2. Right-click file > Share > Change to "Anyone with the link"
+// 3. Copy the sharing link (looks like: https://drive.google.com/file/d/FILE_ID/view)
+// 4. Paste it in filePath below
 
 const realDocuments = [
   { 
@@ -16,7 +16,9 @@ const realDocuments = [
     fileType: 'docx',
     dateUploaded: '2025-10-15', 
     size: '2.4 MB',
-    filePath: studyProtocolDocx
+    // Replace with your Google Drive link:
+    filePath: 'https://drive.google.com/file/d/YOUR_FILE_ID_HERE/view'
+    // Or keep local import: filePath: studyProtocolDocx
   },
   { 
     id: 2, 
@@ -25,7 +27,8 @@ const realDocuments = [
     fileType: 'docx', 
     dateUploaded: '2025-10-01', 
     size: '856 KB',
-    filePath: informedConsentDocx
+    // Replace with your Google Drive link:
+    filePath: 'https://drive.google.com/file/d/YOUR_FILE_ID_HERE/view'
   },
   { 
     id: 3, 
@@ -34,7 +37,8 @@ const realDocuments = [
     fileType: 'pdf', 
     dateUploaded: '2025-10-18', 
     size: '1.2 MB',
-    filePath: dataMgmtPdf
+    // Replace with your Google Drive link:
+    filePath: 'https://drive.google.com/file/d/YOUR_FILE_ID_HERE/view'
   },
   { 
     id: 4, 
@@ -43,7 +47,8 @@ const realDocuments = [
     fileType: 'pdf', 
     dateUploaded: '2025-10-10', 
     size: '3.1 MB',
-    filePath: eproManualPdf
+    // Replace with your Google Drive link:
+    filePath: 'https://drive.google.com/file/d/YOUR_FILE_ID_HERE/view'
   },
   { 
     id: 5, 
@@ -52,7 +57,8 @@ const realDocuments = [
     fileType: 'pptx', 
     dateUploaded: '2025-10-05', 
     size: '890 KB',
-    filePath: raciMatrixPptx
+    // Replace with your Google Drive link:
+    filePath: 'https://drive.google.com/file/d/YOUR_FILE_ID_HERE/view'
   }
 ];
 
