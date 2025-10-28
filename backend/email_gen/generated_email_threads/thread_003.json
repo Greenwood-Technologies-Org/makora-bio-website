@@ -1,82 +1,45 @@
 {
   "emails": [
     {
-      "from_address": "david.chen@ucsf.edu",
+      "from_address": "samantha.clark@universityhealth.com",
       "to_addresses": [
-        "lisa.jones@denalitherapeutics.com"
+        "craig.miller@innovatepharma.com"
       ],
       "cc_addresses": [
-        "sara.khan@syneos.com"
+        "pi.jones@universityhealth.com",
+        "pm.davis@globalcro.com"
       ],
-      "subject": "URGENT: Temperature Excursion Alert - Study DNL593-001 - Site 101 (UCSF) - Shipment SH-481516",
-      "timestamp": "2023-05-22T09:15:00-07:00",
-      "body": "Hi Lisa,\n\nHope you are well.\n\nWe received shipment SH-481516 for the DNL593-001 study this morning. Upon unpacking, the temperature monitoring device indicated an excursion alert.\n\nThe shipment has been immediately placed in quarantine in our pharmacy as per protocol. Please find the downloaded temperature log attached for your review.\n\nCould you please advise on the next steps and whether the investigational product is viable for use?\n\nBest regards,\n\nDavid Chen\nStudy Coordinator\nUniversity of California, San Francisco (UCSF) Memory and Aging Center",
-      "attachments": [
-        "TempLog_SH-481516.pdf"
-      ],
-      "message_id": 101,
+      "subject": "[Study INN-045] Site 201, Patient 201-003 - Query on Part B to Part C (OLE) Transition",
+      "timestamp": "2023-10-26T10:15:00-04:00",
+      "body": "Hi Craig,\n\nHope you are having a good week.\n\nWe have a patient (201-003) who is approaching their final visit in the double-blind portion (Part B) of the INN-045 study. The patient has expressed interest in continuing into the open-label extension (Part C).\n\nCould you please provide some clarification on the standard procedure for this transition? Specifically, we are looking for guidance on:\n1. The unblinding process and when it should be initiated.\n2. The correct version of the consent form for the OLE.\n3. A list of the required baseline assessments for entry into Part C.\n\nAny documentation or a quick reference guide you could provide would be greatly appreciated.\n\nThank you,\n\nSamantha Clark\nClinical Research Coordinator\nUniversity Health Center\nSite 201",
+      "attachments": [],
+      "message_id": 16734,
       "in_reply_to": null
     },
     {
-      "from_address": "lisa.jones@denalitherapeutics.com",
+      "from_address": "craig.miller@innovatepharma.com",
       "to_addresses": [
-        "kevin.miller@denalitherapeutics.com"
+        "samantha.clark@universityhealth.com"
       ],
       "cc_addresses": [
-        "david.chen@ucsf.edu",
-        "sara.khan@syneos.com"
+        "pi.jones@universityhealth.com",
+        "pm.davis@globalcro.com"
       ],
-      "subject": "Fwd: URGENT: Temperature Excursion Alert - Study DNL593-001 - Site 101 (UCSF) - Shipment SH-481516",
-      "timestamp": "2023-05-22T09:45:00-07:00",
-      "body": "Hi Kevin,\n\nPlease see the urgent notification below from UCSF (Site 101) regarding a temperature excursion for an IP shipment.\n\nCould you or someone from the Clinical Supply team please review the attached temperature log and provide an assessment on the viability of the DNL593/Placebo kits in shipment SH-481516?\n\nThe site has correctly quarantined the product pending our guidance.\n\nThanks for your prompt attention to this.\n\nBest,\n\nLisa Jones\nClinical Research Associate\nDenali Therapeutics",
+      "subject": "RE: [Study INN-045] Site 201, Patient 201-003 - Query on Part B to Part C (OLE) Transition",
+      "timestamp": "2023-10-26T14:45:00-04:00",
+      "body": "Hi Samantha,\n\nThank you for reaching out and for your proactive planning for patient 201-003. I'm happy to clarify the transition process from Part B to the Part C Open-Label Extension.\n\nPlease follow the steps below:\n\n1.  **Unblinding Procedure:** The unblinding process is managed through the IWRS. After the patient completes their final Part B visit (Visit 12) and all associated data is entered and cleaned in the EDC, you will log into the IWRS and select the option 'Transition to Open-Label Extension'. This will trigger a notification to the unblinded pharmacy staff to dispense the open-label drug. Please note, the site study team will remain blinded to the patient's original treatment assignment in Part B.\n\n2.  **OLE Consent Form:** The correct form is the 'Part C Open-Label Extension Informed Consent Form', Version 4.0, dated 18-Jul-2023. It must be signed and dated by the patient *before* any Part C-specific procedures are performed. I have attached a copy for your convenience, but please ensure you are using the IRB-approved version from your Investigator Site File (ISF).\n\n3.  **Part C Baseline Assessments:** As per protocol section 7.3, the following baseline assessments must be completed after the OLE ICF is signed but before the first dose of the open-label drug:\n    *   Complete Physical Examination\n    *   Vital Signs\n    *   12-lead ECG\n    *   Safety Labs (Hematology and Chemistry)\n    *   Urinalysis\n    *   Disease Activity Score (DAS28-CRP)\n\nThese assessments establish the baseline for the open-label phase. All procedures must be documented in the patient's source records.\n\nI hope this provides the clarity you need. Please let me know if you have any further questions or would like to schedule a brief call to walk through the IWRS steps.\n\nBest regards,\n\nCraig Miller\nClinical Research Associate\nInnovate Pharma",
       "attachments": [
-        "TempLog_SH-481516.pdf"
+        "INN-045_OLE_ICF_v4.0_18JUL2023.pdf"
       ],
-      "message_id": 102,
-      "in_reply_to": 101
-    },
-    {
-      "from_address": "kevin.miller@denalitherapeutics.com",
-      "to_addresses": [
-        "lisa.jones@denalitherapeutics.com"
-      ],
-      "cc_addresses": [
-        "david.chen@ucsf.edu",
-        "sara.khan@syneos.com"
-      ],
-      "subject": "RE: URGENT: Temperature Excursion Alert - Study DNL593-001 - Site 101 (UCSF) - Shipment SH-481516",
-      "timestamp": "2023-05-22T11:30:00-07:00",
-      "body": "Hi Lisa,\n\nThank you for flagging this. We have reviewed the temperature data for shipment SH-481516.\n\nThe excursion was for a brief period and remained within the product's stability limits. The investigational product is deemed viable and acceptable for use in the study.\n\nPlease find the official Viability Statement attached. The site should file this with their pharmacy records for the shipment.\n\nLet me know if you need anything else.\n\nRegards,\n\nKevin Miller\nManager, Clinical Supply\nDenali Therapeutics",
-      "attachments": [
-        "Viability_Statement_SH-481516.pdf"
-      ],
-      "message_id": 103,
-      "in_reply_to": 102
-    },
-    {
-      "from_address": "lisa.jones@denalitherapeutics.com",
-      "to_addresses": [
-        "david.chen@ucsf.edu"
-      ],
-      "cc_addresses": [
-        "kevin.miller@denalitherapeutics.com",
-        "sara.khan@syneos.com"
-      ],
-      "subject": "RE: URGENT: Temperature Excursion Alert - Study DNL593-001 - Site 101 (UCSF) - Shipment SH-481516",
-      "timestamp": "2023-05-22T11:45:00-07:00",
-      "body": "Hi David,\n\nThank you for your prompt action in quarantining the shipment and notifying us.\n\nOur Clinical Supply team has reviewed the temperature log and has confirmed that the product is viable and may be used. Please see the attached Viability Statement for your records.\n\nYou can now release the IP from quarantine and move it to your standard temperature-controlled storage. Please file the attached statement in the pharmacy binder for this shipment.\n\nWe appreciate your diligence.\n\nBest regards,\n\nLisa Jones\nClinical Research Associate\nDenali Therapeutics",
-      "attachments": [
-        "Viability_Statement_SH-481516.pdf"
-      ],
-      "message_id": 104,
-      "in_reply_to": 103
+      "message_id": 16735,
+      "in_reply_to": 16734
     }
   ],
   "role_descriptions": [
-    "lisa.jones@denalitherapeutics.com: Sponsor, Clinical Research Associate",
-    "david.chen@ucsf.edu: Site, Study Coordinator",
-    "kevin.miller@denalitherapeutics.com: Sponsor, Clinical Supply Manager",
-    "sara.khan@syneos.com: CRO, Clinical Trial Assistant"
+    "craig.miller@innovatepharma.com: Sponsor, Clinical Research Associate",
+    "samantha.clark@universityhealth.com: Site, Site Coordinator",
+    "pi.jones@universityhealth.com: Site, Principal Investigator",
+    "pm.davis@globalcro.com: CRO, Project Manager"
   ],
-  "description": "A discussion with a site about a temperature excursion alert for a shipment of DNL593/Placebo, requiring coordination with the clinical supply team to determine if the investigational product is viable for use."
+  "description": "An email from a Site Coordinator asking for clarification on the process for transitioning a patient from the double-blind Part B to the open-label extension (Part C). The CRA responds with a detailed explanation of the unblinding procedure, the specific OLE consent form to be used, and the required baseline assessments for Part C."
 }

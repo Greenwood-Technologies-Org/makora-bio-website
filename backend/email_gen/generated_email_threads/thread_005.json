@@ -1,65 +1,37 @@
 {
   "emails": [
     {
-      "from_address": "sarah.jenkins@pinnaclepharma.com",
+      "from_address": "sarah.chen@innovatepharma.com",
       "to_addresses": [
-        "maria.garcia@universityhealth.edu"
+        "david.miller@innovatepharma.com"
       ],
-      "cc_addresses": [
-        "robert.miller@universityhealth.edu",
-        "david.chen@pinnaclepharma.com",
-        "kevin.lee@synergyclinical.com"
-      ],
-      "subject": "URGENT Action Required: Overdue Data Queries for Study PNCL-201 at Site 101 - Approaching Database Lock",
-      "timestamp": "2023-10-26T10:05:00Z",
-      "body": "Dear Maria,\n\nI hope this email finds you well.\n\nI am writing to follow up on the significant number of overdue data queries for study PNCL-201 at University Health Center. As of this morning, there are 127 queries outstanding for more than 30 days in the Medidata Rave EDC system.\n\nAs you know, we are rapidly approaching the database lock for the Part A interim analysis, scheduled for November 15th. It is critical that all data is clean and all queries are resolved well in advance of this deadline to ensure data integrity for the analysis.\n\nI have attached a line listing of the overdue queries for your convenience. Could you please review this list and provide a plan for resolution by the end of this week? Please let us know what resources you need and if there are any major issues preventing your team from addressing these.\n\nWe are happy to schedule a call to walk through the queries if that would be helpful.\n\nThank you for your immediate attention to this critical matter.\n\nBest regards,\n\nSarah Jenkins\nClinical Research Associate\nPinnacle Pharma\nsarah.jenkins@pinnaclepharma.com",
-      "attachments": [
-        "PNCL-201_Site101_Overdue_Queries_20231026.xlsx"
-      ],
-      "message_id": 1,
+      "cc_addresses": [],
+      "subject": "Action Required: Slow Recruitment at Site 203 (Dr. Ames) - Study INP-301",
+      "timestamp": "2023-10-26T10:15:00Z",
+      "body": "Hi David,\n\nI'm writing to flag a concern regarding the patient recruitment pace at Site 203 (Dr. Ames) for the INP-301 study. They are significantly behind our enrollment targets for this quarter, having only screened 5 patients in the last month with 1 randomized.\n\nCould you please take the following actions this week?\n\n1.  Conduct a thorough review of the site's screening and enrollment log in the EDC. I'm particularly interested in any trends related to screen failure reasons.\n2.  Proactively reach out to Dr. Ames and his study coordinator to schedule a call to discuss the recruitment challenges they are facing. We need to understand their barriers and collaboratively identify potential mitigation strategies (e.g., refining pre-screening, patient outreach, etc.).\n\nPlease let me know what you find in the screening log and when you have the call scheduled.\n\nThanks,\n\nSarah Chen\nClinical Trial Manager\nInnovate Pharma",
+      "attachments": [],
+      "message_id": 1654,
       "in_reply_to": null
     },
     {
-      "from_address": "maria.garcia@universityhealth.edu",
+      "from_address": "david.miller@innovatepharma.com",
       "to_addresses": [
-        "sarah.jenkins@pinnaclepharma.com"
+        "sarah.chen@innovatepharma.com"
       ],
-      "cc_addresses": [
-        "robert.miller@universityhealth.edu",
-        "david.chen@pinnaclepharma.com",
-        "kevin.lee@synergyclinical.com"
+      "cc_addresses": [],
+      "subject": "Re: Action Required: Slow Recruitment at Site 203 (Dr. Ames) - Study INP-301",
+      "timestamp": "2023-10-26T14:45:00Z",
+      "body": "Hi Sarah,\n\nThanks for flagging this. I've completed an initial review of the screening log for Site 203.\n\nIt appears the primary reason for screen failure is Exclusion Criterion #5 (HbA1c > 8.5%), which accounted for 12 of the 18 screen failures in the past 90 days. I've attached a brief summary for your reference.\n\nI have already contacted the site coordinator and have a call scheduled with her and Dr. Ames for this Friday, Oct 28th, at 2:00 PM EST to discuss this trend and other potential recruitment barriers.\n\nI will provide you with a summary of our discussion and the proposed action plan following the call.\n\nBest regards,\n\nDavid Miller\nClinical Research Associate\nInnovate Pharma",
+      "attachments": [
+        "Site203_ScreenFailure_Summary_26Oct2023.pdf"
       ],
-      "subject": "Re: URGENT Action Required: Overdue Data Queries for Study PNCL-201 at Site 101 - Approaching Database Lock",
-      "timestamp": "2023-10-26T14:22:00Z",
-      "body": "Hi Sarah,\n\nThank you for your email and for providing the query list. My apologies for the delay in resolving these.\n\nWe have had some unexpected staffing shortages over the past month which has led to this backlog. I have reviewed the list with Dr. Miller, and we have prioritized this task. I will be dedicating my time exclusively to resolving these queries for the remainder of this week and next.\n\nOur plan is to have at least 60% of the queries resolved by EOD Tuesday, October 31st, with the remainder completed by Monday, November 6th. This should give us ample time before the database lock.\n\nI will provide you with a status update on Tuesday.\n\nBest,\n\nMaria Garcia\nClinical Data Manager\nUniversity Health Center",
-      "attachments": [],
-      "message_id": 2,
-      "in_reply_to": 1
-    },
-    {
-      "from_address": "sarah.jenkins@pinnaclepharma.com",
-      "to_addresses": [
-        "maria.garcia@universityhealth.edu"
-      ],
-      "cc_addresses": [
-        "robert.miller@universityhealth.edu",
-        "david.chen@pinnaclepharma.com",
-        "kevin.lee@synergyclinical.com"
-      ],
-      "subject": "Re: URGENT Action Required: Overdue Data Queries for Study PNCL-201 at Site 101 - Approaching Database Lock",
-      "timestamp": "2023-10-26T16:50:00Z",
-      "body": "Hi Maria,\n\nThank you for the prompt response and for outlining your plan. We understand that staffing issues can be challenging, and we appreciate you prioritizing this.\n\nThe timeline you've proposed is acceptable. Please keep us updated on your progress, and don't hesitate to reach out if you encounter any queries that require clarification from our data management or medical monitoring teams.\n\nWe look forward to your update on Tuesday.\n\nThanks again for your commitment to resolving this.\n\nBest regards,\n\nSarah Jenkins\nClinical Research Associate\nPinnacle Pharma\nsarah.jenkins@pinnaclepharma.com",
-      "attachments": [],
-      "message_id": 3,
-      "in_reply_to": 2
+      "message_id": 1655,
+      "in_reply_to": 1654
     }
   ],
   "role_descriptions": [
-    "sarah.jenkins@pinnaclepharma.com: Sponsor, Clinical Research Associate",
-    "maria.garcia@universityhealth.edu: Site, Clinical Data Manager",
-    "robert.miller@universityhealth.edu: Site, Principal Investigator",
-    "david.chen@pinnaclepharma.com: Sponsor, Clinical Project Manager",
-    "kevin.lee@synergyclinical.com: CRO, Clinical Research Associate"
+    "sarah.chen@innovatepharma.com: Sponsor, Clinical Trial Manager",
+    "david.miller@innovatepharma.com: Sponsor, Clinical Research Associate"
   ],
-  "description": "A thread with a site's data manager to address a large backlog of overdue data queries in the EDC system, emphasizing the need for timely resolution before an upcoming database lock for a Part A analysis."
+  "description": "An internal email from the Clinical Trial Manager (CTM) to the CRA regarding slow patient recruitment at a specific site. The CTM asks the CRA to review the site's screening log for trends in screen failures and to proactively reach out to the PI to discuss recruitment challenges and potential mitigation strategies."
 }

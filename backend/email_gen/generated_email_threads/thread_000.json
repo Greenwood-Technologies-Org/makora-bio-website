@@ -1,63 +1,61 @@
 {
   "emails": [
     {
-      "from_address": "sarah.jones@southviewresearch.org",
+      "from_address": "dr.helena.ramirez@sunvalleymed.org",
       "to_addresses": [
-        "kevin.murphy@inovant.com"
+        "jane.doe@denalitx.com"
       ],
       "cc_addresses": [
-        "lisa.chen@southviewresearch.org"
+        "carlos.vega@sunvalleymed.org",
+        "peter.jones@denalitx.com"
       ],
-      "subject": "URGENT: Significant Protocol Deviation - Study FTD-202 - Site 101 - Participant 101-008",
-      "timestamp": "2023-05-15T10:30:00Z",
-      "body": "Hi Kevin,\n\nPlease be advised of a significant protocol deviation for participant 101-008 in the FTD-202 study.\n\nThe participant missed their scheduled Week 12 visit today (May 15, 2023), which was a dosing visit for Part B of the study. All associated safety assessments, including blood draws and vital signs, were also missed.\n\nThe participant's caregiver called this morning to inform us of a family emergency that prevented them from attending. They were unable to provide a timeline for rescheduling at that moment.\n\nWe have documented this in the source and have attached the initial protocol deviation form. Please provide guidance on the following:\n1. The window for rescheduling the visit and administering the dose.\n2. How to handle the missed safety assessments.\n3. Any additional documentation required beyond the standard PD form.\n\nThank you for your urgent attention to this matter.\n\nBest regards,\n\nSarah Jones\nStudy Coordinator\nSouthview Research Center\n(555) 123-4567",
-      "attachments": [
-        "PD_Form_FTD202_Site101_101-008_Initial.pdf"
-      ],
-      "message_id": 16734,
+      "subject": "URGENT: SAE Report - Study DNLI-123 - Site 456 - Patient 456-007",
+      "timestamp": "2023-10-26T09:15:00Z",
+      "body": "Hi Jane,\n\nThis is an urgent notification of a Serious Adverse Event for a patient in study DNLI-123.\n\nPatient ID: 456-007\nSite: 456 (Sun Valley Medical Center)\nCohort: Part B (FTD)\nEvent: Hospitalization for a severe seizure. The event occurred last night, and the patient was admitted to the hospital early this morning.\n\nWe are currently gathering all necessary information and completing the SAE form. We will send it to you as soon as possible.\n\nPlease let us know of any immediate actions required.\n\nBest regards,\n\nDr. Helena Ramirez\nPrincipal Investigator\nSun Valley Medical Center",
+      "attachments": [],
+      "message_id": 101,
       "in_reply_to": null
     },
     {
-      "from_address": "kevin.murphy@inovant.com",
+      "from_address": "jane.doe@denalitx.com",
       "to_addresses": [
-        "sarah.jones@southviewresearch.org"
+        "dr.helena.ramirez@sunvalleymed.org"
       ],
       "cc_addresses": [
-        "lisa.chen@southviewresearch.org",
-        "anna.volkov@inovant.com",
-        "mark.davis@inovant.com"
+        "carlos.vega@sunvalleymed.org",
+        "peter.jones@denalitx.com"
       ],
-      "subject": "Re: URGENT: Significant Protocol Deviation - Study FTD-202 - Site 101 - Participant 101-008",
-      "timestamp": "2023-05-15T11:45:00Z",
-      "body": "Hi Sarah,\n\nThank you for the prompt and detailed notification. I have received the PD form.\n\nI am escalating this to our Medical Monitor, Dr. Volkov, for immediate review and guidance regarding the missed dose and rescheduling window. The participant's safety is our top priority.\n\nPlease attempt to contact the participant/caregiver again this afternoon to check on their status and see if a tentative reschedule date can be set.\n\nI will provide a formal response with a complete action plan as soon as I have feedback from the medical team, which I expect by EOD today or first thing tomorrow morning.\n\nBest,\n\nKevin Murphy\nClinical Research Associate\nInovant Pharmaceuticals\n(555) 987-6543",
+      "subject": "Re: URGENT: SAE Report - Study DNLI-123 - Site 456 - Patient 456-007",
+      "timestamp": "2023-10-26T09:32:00Z",
+      "body": "Hi Dr. Ramirez,\n\nThank you for the urgent notification. I have received it and will notify the internal safety team immediately.\n\nPlease send the completed SAE form and all relevant de-identified source documents (e.g., ER report, admission notes, relevant lab results) as soon as they are available, and no later than 24 hours from your awareness of the event.\n\nI will be available should you have any questions.\n\nBest regards,\n\nJane Doe\nClinical Research Associate\nDenali Therapeutics",
       "attachments": [],
-      "message_id": 16735,
-      "in_reply_to": 16734
+      "message_id": 102,
+      "in_reply_to": 101
     },
     {
-      "from_address": "kevin.murphy@inovant.com",
+      "from_address": "jane.doe@denalitx.com",
       "to_addresses": [
-        "sarah.jones@southviewresearch.org"
+        "safety.team@denalitx.com"
       ],
       "cc_addresses": [
-        "lisa.chen@southviewresearch.org",
-        "anna.volkov@inovant.com",
-        "mark.davis@inovant.com"
+        "peter.jones@denalitx.com",
+        "dr.li.chen@denalitx.com"
       ],
-      "subject": "Re: URGENT: Significant Protocol Deviation - Study FTD-202 - Site 101 - Participant 101-008",
-      "timestamp": "2023-05-16T09:00:00Z",
-      "body": "Hi Sarah,\n\nFollowing up as promised. I have discussed this case with Dr. Volkov. Please proceed with the following guidance:\n\n1.  **Rescheduling:** Reschedule the participant for the Week 12 visit as soon as possible. The visit must occur within 72 hours of the original appointment time. Please prioritize all safety assessments upon their arrival.\n2.  **Dosing:** The missed dose of the investigational product should be administered at this rescheduled visit, provided all safety assessments are within acceptable limits and the PI confirms it is safe to do so.\n3.  **Documentation:** Please ensure this is fully documented as a significant protocol deviation in the eCRF and source. Detail the reason for the missed visit and all actions taken. Update the protocol deviation form with the resolution and upload it to the TMF.\n\nPlease let me know as soon as the visit is rescheduled.\n\nThank you for your diligence.\n\nBest,\n\nKevin Murphy\nClinical Research Associate\nInovant Pharmaceuticals\n(555) 987-6543",
+      "subject": "URGENT NOTIFICATION: New SAE - Study DNLI-123 - Site 456 - Hospitalization for Seizure",
+      "timestamp": "2023-10-26T09:45:00Z",
+      "body": "Denali Safety and Medical Team,\n\nThis is an initial notification of a new SAE at Site 456 (Sun Valley Medical Center).\n\nPatient 456-007, enrolled in the Part B FTD cohort, has been hospitalized for a severe seizure. \n\nI have been in contact with the site PI, Dr. Ramirez, and have requested the completed SAE form and relevant source documents. I will forward these materials as soon as I receive them, which is expected within the 24-hour reporting window.\n\nPlease let me know of any immediate actions required from my side.\n\nBest,\n\nJane Doe\nClinical Research Associate\nDenali Therapeutics",
       "attachments": [],
-      "message_id": 16736,
-      "in_reply_to": 16735
+      "message_id": 103,
+      "in_reply_to": null
     }
   ],
   "role_descriptions": [
-    "kevin.murphy@inovant.com: Sponsor, Clinical Research Associate",
-    "sarah.jones@southviewresearch.org: Site, Study Coordinator",
-    "lisa.chen@southviewresearch.org: Site, Principal Investigator",
-    "anna.volkov@inovant.com: Sponsor, Medical Monitor",
-    "mark.davis@inovant.com: Sponsor, Clinical Project Manager"
+    "jane.doe@denalitx.com: Sponsor, Clinical Research Associate",
+    "dr.helena.ramirez@sunvalleymed.org: Site, Principal Investigator",
+    "carlos.vega@sunvalleymed.org: Site, Study Coordinator",
+    "peter.jones@denalitx.com: Sponsor, Project Manager",
+    "safety.team@denalitx.com: Sponsor, Safety Team",
+    "dr.li.chen@denalitx.com: Sponsor, Medical Monitor"
   ],
-  "description": "An email chain with a site coordinator regarding a significant protocol deviation where a participant in Part B with FTD missed a scheduled dosing visit and associated safety assessments."
+  "description": "An urgent email thread from the Principal Investigator at a participating site reporting a Serious Adverse Event (SAE). A patient in Part B (FTD cohort) has been hospitalized for a severe seizure. The thread includes the initial notification, the CRA's immediate request for the SAE form and source documents, and the CRA's subsequent communication with the internal Denali safety team."
 }

@@ -1,99 +1,38 @@
 {
   "emails": [
     {
-      "from_address": "john.miller@pharmatech.com",
+      "from_address": "brenda.walsh@westwoodcrc.com",
       "to_addresses": [
-        "sandra.chen@universityhospital.org"
+        "david.chen@innovatepharma.com"
       ],
-      "cc_addresses": [
-        "lisa.wong@pharmatech.com",
-        "kevin.baker@pharmatech.com"
-      ],
-      "subject": "[PT-123] Follow-Up: Outstanding Essential Documents for TMF - Site 101",
-      "timestamp": "2024-05-10T11:30:00Z",
-      "body": "Hi Sandra,\n\nHope you are having a good week.\n\nI am writing to follow up on the outstanding essential documents for the new sub-investigators added to the study. As per our TMF review, we are still pending the following for Site 101:\n\n- Dr. Emily Carter: Updated Medical License\n- Dr. Frank Wright: Signed Financial Disclosure Form (FDF)\n\nCould you please provide these documents at your earliest convenience so we can ensure our Trial Master File is up to date and inspection-ready?\n\nThank you for your assistance.\n\nBest regards,\n\nJohn Miller\nClinical Research Associate\nPharmatech Inc.",
+      "cc_addresses": [],
+      "subject": "Query - Study INN-123 - Site 101 - Subject HV-004 Lab Result",
+      "timestamp": "2023-10-26T10:15:00-05:00",
+      "body": "Hi David,\n\nHope you are having a good week.\n\nWe have an automated query in the Medidata EDC for subject HV-004, a healthy volunteer in Part A. The query is for an out-of-range Alanine Aminotransferase (ALT) value of 52 U/L from the Week 4 visit. The upper limit of normal is 50 U/L.\n\nThe subject is asymptomatic and all other liver function tests are within the normal range. Can you please advise if this is considered clinically significant and provide guidance on how to resolve the query?\n\nQuery ID: 884321\n\nThanks for your help,\n\nBrenda Walsh\nClinical Research Coordinator\nWestwood Clinical Research Center",
       "attachments": [],
-      "message_id": 1,
+      "message_id": 101,
       "in_reply_to": null
     },
     {
-      "from_address": "sandra.chen@universityhospital.org",
+      "from_address": "david.chen@innovatepharma.com",
       "to_addresses": [
-        "john.miller@pharmatech.com"
+        "brenda.walsh@westwoodcrc.com"
       ],
       "cc_addresses": [
-        "lisa.wong@pharmatech.com",
-        "kevin.baker@pharmatech.com",
-        "robert.davis@universityhospital.org"
+        "sarah.jenkins.md@innovatepharma.com"
       ],
-      "subject": "Re: [PT-123] Follow-Up: Outstanding Essential Documents for TMF - Site 101",
-      "timestamp": "2024-05-13T15:05:00Z",
-      "body": "Hi John,\n\nThanks for the reminder. Apologies for the delay.\n\nI have just followed up with both Dr. Carter and Dr. Wright. I expect to have both documents collected and sent over to you by the end of this week.\n\nI will keep you posted.\n\nBest,\n\nSandra Chen\nClinical Research Coordinator\nUniversity Hospital",
+      "subject": "RE: Query - Study INN-123 - Site 101 - Subject HV-004 Lab Result",
+      "timestamp": "2023-10-26T14:30:00-05:00",
+      "body": "Hi Brenda,\n\nThank you for flagging this.\n\nI have reviewed the data and consulted with our Medical Monitor, Dr. Jenkins (cc'd). Given that this is a minor elevation (1.04x ULN) in an asymptomatic healthy volunteer with all other LFTs being normal, this finding is considered Not Clinically Significant (NCS).\n\nPlease close the query in Medidata with the following comment: \"Value confirmed as accurate. Per sponsor, this is not clinically significant.\"\n\nLet me know if you have any further questions.\n\nBest regards,\n\nDavid Chen\nClinical Research Associate\nInnovate Pharma",
       "attachments": [],
-      "message_id": 2,
-      "in_reply_to": 1
-    },
-    {
-      "from_address": "john.miller@pharmatech.com",
-      "to_addresses": [
-        "sandra.chen@universityhospital.org"
-      ],
-      "cc_addresses": [
-        "lisa.wong@pharmatech.com",
-        "kevin.baker@pharmatech.com",
-        "robert.davis@universityhospital.org"
-      ],
-      "subject": "Re: [PT-123] Follow-Up: Outstanding Essential Documents for TMF - Site 101",
-      "timestamp": "2024-05-20T09:15:00Z",
-      "body": "Hi Sandra,\n\nJust a gentle reminder regarding the pending medical license for Dr. Carter and the FDF for Dr. Wright. These are now overdue and are critical for maintaining TMF compliance.\n\nPlease let us know if there is an updated timeline for these items.\n\nThanks,\n\nJohn Miller\nClinical Research Associate\nPharmatech Inc.",
-      "attachments": [],
-      "message_id": 3,
-      "in_reply_to": 2
-    },
-    {
-      "from_address": "sandra.chen@universityhospital.org",
-      "to_addresses": [
-        "john.miller@pharmatech.com"
-      ],
-      "cc_addresses": [
-        "lisa.wong@pharmatech.com",
-        "kevin.baker@pharmatech.com",
-        "robert.davis@universityhospital.org"
-      ],
-      "subject": "Re: [PT-123] Follow-Up: Outstanding Essential Documents for TMF - Site 101",
-      "timestamp": "2024-05-20T16:45:00Z",
-      "body": "Hi John,\n\nMy sincere apologies for the delay. We finally have both documents ready.\n\nPlease find the signed FDF for Dr. Wright and the updated medical license for Dr. Carter attached.\n\nLet me know if you need anything else from our side.\n\nBest regards,\n\nSandra Chen\nClinical Research Coordinator\nUniversity Hospital",
-      "attachments": [
-        "ECarter_MedLicense_2024.pdf",
-        "FWright_FDF_Signed_2024.pdf"
-      ],
-      "message_id": 4,
-      "in_reply_to": 3
-    },
-    {
-      "from_address": "john.miller@pharmatech.com",
-      "to_addresses": [
-        "sandra.chen@universityhospital.org"
-      ],
-      "cc_addresses": [
-        "lisa.wong@pharmatech.com",
-        "kevin.baker@pharmatech.com",
-        "robert.davis@universityhospital.org"
-      ],
-      "subject": "Re: [PT-123] Follow-Up: Outstanding Essential Documents for TMF - Site 101",
-      "timestamp": "2024-05-21T10:00:00Z",
-      "body": "Hi Sandra,\n\nThank you for sending these over. I've reviewed the documents, and they are complete.\n\nI will forward them for filing in the TMF. We appreciate your help in closing this out.\n\nBest,\n\nJohn Miller\nClinical Research Associate\nPharmatech Inc.",
-      "attachments": [],
-      "message_id": 5,
-      "in_reply_to": 4
+      "message_id": 102,
+      "in_reply_to": 101
     }
   ],
   "role_descriptions": [
-    "john.miller@pharmatech.com: Sponsor, Clinical Research Associate",
-    "sandra.chen@universityhospital.org: Site, Clinical Research Coordinator",
-    "lisa.wong@pharmatech.com: Sponsor, Lead Clinical Research Associate",
-    "kevin.baker@pharmatech.com: Sponsor, Clinical Trial Assistant",
-    "robert.davis@universityhospital.org: Site, Principal Investigator"
+    "david.chen@innovatepharma.com: Sponsor, Clinical Research Associate",
+    "brenda.walsh@westwoodcrc.com: Site, Clinical Research Coordinator",
+    "sarah.jenkins.md@innovatepharma.com: Sponsor, Medical Monitor"
   ],
-  "description": "A follow-up with a site to request outstanding essential documents, such as updated medical licenses and financial disclosure forms for new sub-investigators, needed for the Trial Master File (TMF)."
+  "description": "A site coordinator emails the CRA with a question about a specific lab result for a healthy volunteer in Part A that is flagged as out-of-range in the EDC system. The CRA investigates the query, consults with the study's medical monitor, and responds to the site confirming that the value is not clinically significant and provides instructions on how to close the query."
 }

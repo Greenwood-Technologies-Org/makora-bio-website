@@ -1,59 +1,55 @@
 {
   "emails": [
     {
-      "from_address": "s.jenkins@universityhealth.org",
+      "from_address": "david.chen@pinnacletx.com",
       "to_addresses": [
-        "david.chen@innovatepharma.com"
+        "m.garcia@oakwoodcrc.org"
       ],
-      "cc_addresses": [
-        "study.xyz123@innovatepharma.com"
+      "cc_addresses": [],
+      "subject": "Pinnacle Study PTX-305: Scheduling of Interim Monitoring Visit (IMV) at Site S-102",
+      "timestamp": "2023-10-23T10:05:00Z",
+      "body": "Hi Maria,\n\nI hope you are well.\n\nI'm writing to schedule the next Interim Monitoring Visit for the PTX-305 study at your site. I am proposing the week of November 6th, specifically Nov 7th, 8th, or 9th. Please let me know which of these dates works best for you and Dr. Reed.\n\nThe primary objectives for this visit will be:\n- 100% Source Data Verification (SDV) for the first two FTD patients (S-102-001 and S-102-002)\n- Review of the Investigator Site File (ISF)\n- Drug accountability review\n\nI have attached a draft agenda for your review. Please let me know if you have any questions.\n\nBest regards,\n\nDavid Chen\nClinical Research Associate\nPinnacle Therapeutics",
+      "attachments": [
+        "PTX-305_IMV_Agenda_Draft_S102.pdf"
       ],
-      "subject": "Query - Protocol XYZ123 - Site 101 - Unblinding & Transition to Part C",
-      "timestamp": "2023-10-26T10:15:00Z",
-      "body": "Hi David,\n\nHope you are having a good week.\n\nWe have a patient (101-004) who is approaching their final visit in the double-blind Part B of the study. We are preparing for their potential transition to the open-label extension (Part C) and would appreciate some clarification on the specific procedures.\n\nCould you please provide a step-by-step guide or point us to the exact section in the protocol/pharmacy manual that details the unblinding process within the IXRS system? We want to ensure we follow the correct procedure for unblinding the patient's Part B treatment assignment and transitioning them to the open-label drug supply for Part C.\n\nAny specific guidance on documentation requirements for this transition would also be very helpful.\n\nThank you for your support.\n\nBest regards,\n\nSarah Jenkins, CCRC\nClinical Research Coordinator\nUniversity Health Center\nSite 101",
-      "attachments": [],
-      "message_id": 98501,
+      "message_id": 1,
       "in_reply_to": null
     },
     {
-      "from_address": "david.chen@innovatepharma.com",
+      "from_address": "m.garcia@oakwoodcrc.org",
       "to_addresses": [
-        "s.jenkins@universityhealth.org"
+        "david.chen@pinnacletx.com"
       ],
       "cc_addresses": [
-        "study.xyz123@innovatepharma.com",
-        "lisa.wong@innovatepharma.com"
+        "e.reed@oakwoodcrc.org"
       ],
-      "subject": "RE: Query - Protocol XYZ123 - Site 101 - Unblinding & Transition to Part C",
-      "timestamp": "2023-10-26T14:30:00Z",
-      "body": "Hi Sarah,\n\nThanks for reaching out and for your proactive planning. This is an important process to get right.\n\nThe detailed procedures for unblinding and transitioning to Part C are outlined in Protocol v4.0, Section 8.5. I have also attached a quick reference guide that our team created which summarizes the IXRS steps.\n\nIn short, the process is as follows:\n1.  Confirm all Part B end-of-treatment assessments are complete and the patient has consented for Part C.\n2.  The designated unblinded site staff (e.g., Pharmacist) must log into the IXRS.\n3.  Navigate to the 'Unblinding' module for patient 101-004.\n4.  Follow the on-screen prompts to confirm the unblinding request. The system will then reveal the treatment assignment from Part B.\n5.  This event must be documented on the Unblinding Log and in the patient's source notes.\n6.  Once unblinded, you can then proceed with the 'Transition to Open-Label' workflow in IXRS to have the first Part C drug kit assigned.\n\nPlease ensure the eCRF is updated accordingly to reflect the completion of Part B and the start of Part C.\n\nLet me know if you have any further questions after reviewing the attached guide.\n\nBest,\n\nDavid Chen\nClinical Research Associate\nInnovate Pharma",
-      "attachments": [
-        "XYZ123_Part_C_Transition_and_Unblinding_Guide_v1.2.pdf"
-      ],
-      "message_id": 98502,
-      "in_reply_to": 98501
+      "subject": "Re: Pinnacle Study PTX-305: Scheduling of Interim Monitoring Visit (IMV) at Site S-102",
+      "timestamp": "2023-10-23T14:22:00Z",
+      "body": "Hi David,\n\nThanks for reaching out. After checking our calendars, November 8th would work best for us.\n\nWe will ensure the patient binders for S-102-001 and S-102-002 are ready for 100% SDV, and the ISF will be up-to-date and available for your review.\n\nThe agenda looks fine. Will Dr. Reed need to be available for the entire day, or just for a specific meeting?\n\nBest,\n\nMaria Garcia\nSite Coordinator\nOakwood Clinical Research Center",
+      "attachments": [],
+      "message_id": 2,
+      "in_reply_to": 1
     },
     {
-      "from_address": "s.jenkins@universityhealth.org",
+      "from_address": "david.chen@pinnacletx.com",
       "to_addresses": [
-        "david.chen@innovatepharma.com"
+        "m.garcia@oakwoodcrc.org"
       ],
       "cc_addresses": [
-        "study.xyz123@innovatepharma.com",
-        "lisa.wong@innovatepharma.com"
+        "e.reed@oakwoodcrc.org"
       ],
-      "subject": "RE: Query - Protocol XYZ123 - Site 101 - Unblinding & Transition to Part C",
-      "timestamp": "2023-10-27T09:05:00Z",
-      "body": "Hi David,\n\nThis is perfect. Thank you so much for the clear explanation and for providing the reference guide. This is exactly what we needed.\n\nWe will review the materials thoroughly and proceed as instructed for the patient's upcoming visit.\n\nBest regards,\n\nSarah Jenkins, CCRC\nClinical Research Coordinator\nUniversity Health Center\nSite 101",
+      "subject": "Re: Pinnacle Study PTX-305: Scheduling of Interim Monitoring Visit (IMV) at Site S-102",
+      "timestamp": "2023-10-24T09:15:00Z",
+      "body": "Hi Maria,\n\nThat's great, thank you for confirming. I have booked the visit for Wednesday, November 8th.\n\nRegarding Dr. Reed's availability, I will only need a brief meeting with her at the beginning of the day to discuss the plan and at the end of the day for a debrief on my findings. I anticipate this will be about 30 minutes for each meeting.\n\nI will send the official confirmation letter with the finalized agenda shortly.\n\nLooking forward to seeing you both.\n\nBest regards,\n\nDavid Chen\nClinical Research Associate\nPinnacle Therapeutics",
       "attachments": [],
-      "message_id": 98503,
-      "in_reply_to": 98502
+      "message_id": 3,
+      "in_reply_to": 2
     }
   ],
   "role_descriptions": [
-    "s.jenkins@universityhealth.org: Site, Clinical Research Coordinator",
-    "david.chen@innovatepharma.com: Sponsor, Clinical Research Associate",
-    "lisa.wong@innovatepharma.com: Sponsor, Clinical Project Manager"
+    "david.chen@pinnacletx.com: Sponsor, Clinical Research Associate",
+    "m.garcia@oakwoodcrc.org: Site, Site Coordinator",
+    "e.reed@oakwoodcrc.org: Site, Principal Investigator"
   ],
-  "description": "A thread initiated by a Clinical Research Coordinator (CRC) asking for clarification on the specific procedures for unblinding and transitioning a patient from the double-blind Part B to the open-label extension (Part C)."
+  "description": "A routine back-and-forth email exchange between the CRA and a Site Coordinator to schedule an upcoming interim monitoring visit. The discussion covers potential dates, confirmation of the agenda (including 100% SDV for the first two FTD patients), and a request to have specific patient binders and ISF documents available for review."
 }

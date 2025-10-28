@@ -1,64 +1,100 @@
 {
   "emails": [
     {
-      "from_address": "sarah.jones@universityhospital.org",
+      "from_address": "david.chen@stellarispharma.com",
       "to_addresses": [
-        "jane.doe@denalitx.com"
+        "sarah.jenkins@stellarispharma.com"
       ],
       "cc_addresses": [
-        "david.chen@universityhospital.org",
-        "peter.smith@syneos.com"
+        "maria.garcia@stellarispharma.com",
+        "brenda.wallace@stellarispharma.com"
       ],
-      "subject": "[URGENT] Study DTX-123: Repeated PK Sample Rejection - Site 101",
-      "timestamp": "2023-09-11T11:30:00Z",
-      "body": "Hi Jane,\n\nI hope you are well.\n\nI'm writing to report another issue with a PK sample being rejected by the central lab. This is for patient 101-005, and it's the third time this has happened in the last two months. The reason cited is again 'Improperly Processed - Insufficient Plasma Volume'.\n\nWe believe we are following the lab manual protocol precisely, specifically section 4.2 regarding centrifugation and aliquoting. We are concerned this may impact the patient's data integrity and are unsure how to proceed to prevent this from happening again.\n\nCould you please provide some clarification or guidance on the processing steps? Perhaps there is a nuance we are missing.\n\nI have attached the latest rejection notification from LabCorp for your reference.\n\nBest regards,\n\nSarah Jones, CRC\nClinical Research Coordinator\nUniversity Hospital\nOncology Department",
-      "attachments": [
-        "LabCorp_Rejection_Notice_101-005.pdf"
-      ],
+      "subject": "Notice of Routine Quality Audit - Protocol SP-101, Site 105 (Maple Creek Clinical Research)",
+      "timestamp": "2023-10-23T09:15:00Z",
+      "body": "Hi Sarah,\n\nThis email is to formally notify you that Site 105, Maple Creek Clinical Research (PI: Dr. Alan Grant), has been selected for a routine quality assurance audit for study SP-101.\n\nWe are proposing the audit take place over two days during the week of November 13th or November 20th, 2023. \n\nPlease liaise with the site to determine their availability during these weeks. Once we have a potential date, I will send a formal agenda and confirmation.\n\nThank you for your cooperation.\n\nBest regards,\n\nDavid Chen\nSenior QA Auditor\nStellaris Pharma",
+      "attachments": [],
       "message_id": 1,
       "in_reply_to": null
     },
     {
-      "from_address": "jane.doe@denalitx.com",
+      "from_address": "sarah.jenkins@stellarispharma.com",
       "to_addresses": [
-        "sarah.jones@universityhospital.org"
+        "agrant@maplecreekresearch.com",
+        "ecarter@maplecreekresearch.com"
       ],
       "cc_addresses": [
-        "david.chen@universityhospital.org",
-        "peter.smith@syneos.com",
-        "linda.evans@denalitx.com"
+        "david.chen@stellarispharma.com",
+        "maria.garcia@stellarispharma.com"
       ],
-      "subject": "Re: [URGENT] Study DTX-123: Repeated PK Sample Rejection - Site 101",
-      "timestamp": "2023-09-11T15:45:00Z",
-      "body": "Hi Sarah,\n\nThank you for bringing this to my attention immediately. I share your concern about these repeated rejections, and I appreciate you and the team's diligence in following the manual.\n\nI have reviewed the rejection notice. To ensure we resolve this, I would like to schedule a brief call with you and any other staff members involved in sample processing. We can walk through the lab manual procedures step-by-step together and clarify any potential ambiguities. This will help us identify the root cause and prevent future occurrences.\n\nPlease let me know what day and time works best for your team later this week or early next.\n\nBest,\n\nJane Doe\nClinical Research Associate\nDenali Therapeutics",
+      "subject": "Fwd: Notice of Routine Quality Audit - Protocol SP-101, Site 105 (Maple Creek Clinical Research)",
+      "timestamp": "2023-10-23T11:30:00Z",
+      "body": "Dear Dr. Grant and Emily,\n\nPlease see the notification below from our Quality Assurance department. Your site has been selected for a routine quality audit for the SP-101 study.\n\nAs noted, this is a standard procedure. The proposed dates are during the weeks of Nov 13th or Nov 20th. Could you please review your calendars and let me know your team's availability for a two-day period within that timeframe?\n\nI am here to support you in preparing for the audit. Once we confirm a date, I will send over a preparation checklist to help guide your team.\n\nPlease let me know if you have any immediate questions.\n\nBest,\n\nSarah Jenkins\nClinical Research Associate\nStellaris Pharma\n\n--- Forwarded Message ---\nFrom: david.chen@stellarispharma.com\nTo: sarah.jenkins@stellarispharma.com\nSubject: Notice of Routine Quality Audit - Protocol SP-101, Site 105 (Maple Creek Clinical Research)\nDate: 2023-10-23T09:15:00Z\n\n...",
       "attachments": [],
       "message_id": 2,
       "in_reply_to": 1
     },
     {
-      "from_address": "sarah.jones@universityhospital.org",
+      "from_address": "ecarter@maplecreekresearch.com",
       "to_addresses": [
-        "jane.doe@denalitx.com"
+        "sarah.jenkins@stellarispharma.com"
       ],
       "cc_addresses": [
-        "david.chen@universityhospital.org",
-        "peter.smith@syneos.com",
-        "linda.evans@denalitx.com"
+        "agrant@maplecreekresearch.com",
+        "david.chen@stellarispharma.com",
+        "maria.garcia@stellarispharma.com"
       ],
-      "subject": "Re: [URGENT] Study DTX-123: Repeated PK Sample Rejection - Site 101",
-      "timestamp": "2023-09-12T09:05:00Z",
-      "body": "Hi Jane,\n\nThank you for the prompt response and for offering to set up a re-training call. We would really appreciate that.\n\nWe are available at the following times:\n- Wednesday (9/13) any time after 1 PM EST\n- Friday (9/15) between 10 AM and 12 PM EST\n\nPlease let us know what works for you, and you can send a meeting invitation.\n\nThanks again for your support.\n\nBest,\n\nSarah Jones, CRC\nClinical Research Coordinator\nUniversity Hospital\nOncology Department",
+      "subject": "Re: Notice of Routine Quality Audit - Protocol SP-101, Site 105 (Maple Creek Clinical Research)",
+      "timestamp": "2023-10-24T14:05:00Z",
+      "body": "Hi Sarah,\n\nThank you for the notification. We have reviewed our schedule.\n\nWe are available to host the audit on November 15th and 16th. Please let us know if those dates work for the auditor.\n\nWe would appreciate receiving the preparation checklist at your earliest convenience.\n\nThanks,\n\nEmily Carter\nStudy Coordinator\nMaple Creek Clinical Research",
       "attachments": [],
       "message_id": 3,
       "in_reply_to": 2
+    },
+    {
+      "from_address": "sarah.jenkins@stellarispharma.com",
+      "to_addresses": [
+        "david.chen@stellarispharma.com",
+        "ecarter@maplecreekresearch.com",
+        "agrant@maplecreekresearch.com"
+      ],
+      "cc_addresses": [
+        "maria.garcia@stellarispharma.com"
+      ],
+      "subject": "Re: Notice of Routine Quality Audit - Protocol SP-101, Site 105 - DATES CONFIRMED: Nov 15-16",
+      "timestamp": "2023-10-25T10:00:00Z",
+      "body": "All,\n\nThank you for the quick response, Emily.\n\nDavid, please let us know if Nov 15-16 is confirmed on your end. Assuming it is, I have attached the general audit preparation checklist for the site's reference.\n\nEmily/Dr. Grant - Please review the attached document. I will plan to call you early next week to walk through it and answer any questions you may have.\n\nDavid - The site will be ready for you. Please send the formal agenda when it is available.\n\nBest regards,\n\nSarah Jenkins\nClinical Research Associate\nStellaris Pharma",
+      "attachments": [
+        "Audit_Preparation_Checklist_SP-101.pdf"
+      ],
+      "message_id": 4,
+      "in_reply_to": 3
+    },
+    {
+      "from_address": "david.chen@stellarispharma.com",
+      "to_addresses": [
+        "sarah.jenkins@stellarispharma.com",
+        "ecarter@maplecreekresearch.com",
+        "agrant@maplecreekresearch.com"
+      ],
+      "cc_addresses": [
+        "maria.garcia@stellarispharma.com",
+        "brenda.wallace@stellarispharma.com"
+      ],
+      "subject": "Re: Notice of Routine Quality Audit - Protocol SP-101, Site 105 - DATES CONFIRMED: Nov 15-16",
+      "timestamp": "2023-10-25T13:45:00Z",
+      "body": "All,\n\nDates confirmed. I am booked for the audit at Maple Creek Clinical Research on November 15-16, 2023.\n\nThank you, Sarah, for coordinating and providing the checklist. I will send out the detailed audit agenda by EOW next week.\n\nI look forward to meeting with the site team.\n\nRegards,\n\nDavid Chen\nSenior QA Auditor\nStellaris Pharma",
+      "attachments": [],
+      "message_id": 5,
+      "in_reply_to": 4
     }
   ],
   "role_descriptions": [
-    "jane.doe@denalitx.com: Sponsor, Clinical Research Associate",
-    "sarah.jones@universityhospital.org: Site, Clinical Research Coordinator",
-    "david.chen@universityhospital.org: Site, Principal Investigator",
-    "peter.smith@syneos.com: CRO, Project Manager",
-    "linda.evans@denalitx.com: Sponsor, Clinical Trial Manager"
+    "sarah.jenkins@stellarispharma.com: Sponsor, Clinical Research Associate",
+    "david.chen@stellarispharma.com: Sponsor, QA Auditor",
+    "maria.garcia@stellarispharma.com: Sponsor, Clinical Project Manager",
+    "brenda.wallace@stellarispharma.com: Sponsor, QA Lead",
+    "agrant@maplecreekresearch.com: Site, Principal Investigator",
+    "ecarter@maplecreekresearch.com: Site, Study Coordinator"
   ],
-  "description": "A site CRC is reporting a repeated issue with the central lab rejecting pharmacokinetic (PK) samples due to improper processing, requiring the CRA to provide re-training and clarification on the lab manual procedures."
+  "description": "An email from the sponsor's Quality Assurance (QA) department notifying the CRA that one of their assigned sites has been selected for a routine quality audit. The thread involves the CRA coordinating with the QA auditor and the site PI to schedule the audit and providing the site with a list of documents to prepare for the inspection."
 }

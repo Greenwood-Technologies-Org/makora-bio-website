@@ -1,59 +1,79 @@
 {
   "emails": [
     {
-      "from_address": "sarah.jones@innovatepharma.com",
+      "from_address": "jane.doe@pharmaxon.com",
       "to_addresses": [
-        "b.starr@maplewoodresearch.org",
-        "a.grant@maplewoodresearch.org"
+        "m.garcia@universitymedical.edu",
+        "r.jones@universitymedical.edu"
       ],
       "cc_addresses": [
-        "david.chen@innovatepharma.com"
+        "kevin.chen@pharmaxon.com"
       ],
-      "subject": "Study INP-FTD-201 - Part B Screening at Site 101 - Maplewood Clinical Research",
-      "timestamp": "2023-10-26T10:15:00Z",
-      "body": "Dear Dr. Grant and Brenda,\n\nI hope this email finds you well.\n\nFirst, I want to reiterate our appreciation for your team's outstanding recruitment efforts in Part A of the INP-FTD-201 study. Maplewood has consistently been one of our top-performing sites, and we are very grateful for your hard work.\n\nAs we've transitioned into Part B, I've been reviewing the weekly screening logs and noticed a significant drop-off in potential subjects being screened at your site over the past three weeks. \n\nWe know that Part B has more specific criteria, but given your past success, I wanted to reach out proactively to see if you've encountered any specific barriers or challenges. Are you seeing fewer potential FTD patients, or are there other factors at play?\n\nI would be happy to schedule a brief call next week to discuss this further and brainstorm any strategies or resources we at InnovatePharma could provide to support your recruitment efforts. Please let me know what day and time might work for you and the team.\n\nThank you again for your continued partnership.\n\nBest regards,\n\nSarah Jones\nClinical Research Associate\nInnovatePharma\nsarah.jones@innovatepharma.com",
+      "subject": "URGENT Action Required: Study PHX-201, Site 101 - Incorrect ICF Version Used for Subject 101-005",
+      "timestamp": "2023-10-26T11:15:00Z",
+      "body": "Dear Maria and Dr. Jones,\n\nI hope this email finds you well.\n\nDuring a remote review of the eISF for study PHX-201 today, I identified a critical issue. Subject 101-005, enrolled on October 24, 2023, was consented using the outdated Informed Consent Form (ICF) version 2.0, dated 15-JAN-2023.\n\nThe current, IRB-approved version is ICF v3.0, dated 01-JUL-2023, which was implemented site-wide on July 15, 2023.\n\nThis is a major protocol deviation and requires immediate action to ensure the participant's rights and safety, as well as data integrity. Please take the following steps urgently:\n\n1.  **Contact the participant immediately** to schedule a visit to re-consent them using the correct ICF v3.0.\n2.  **Thoroughly document** the re-consenting process in the participant's source documents.\n3.  **Complete a Protocol Deviation Form** for this event, classifying it as a major deviation. The root cause should be investigated and documented, along with a corrective and preventive action (CAPA) plan.\n4.  **Upload** the newly signed ICF v3.0, the completed Protocol Deviation Form, and a detailed Note-to-File explaining the event and its resolution to the eTMF/Investigator Site File within 48 hours.\n\nPlease confirm receipt of this email and provide your plan of action by the end of today. I am available to discuss this further if needed.\n\nThank you for your immediate attention to this critical matter.\n\nBest regards,\n\nJane Doe\nClinical Research Associate\nPharmaxon Therapeutics\njane.doe@pharmaxon.com",
       "attachments": [],
-      "message_id": 1,
+      "message_id": 95831,
       "in_reply_to": null
     },
     {
-      "from_address": "b.starr@maplewoodresearch.org",
+      "from_address": "m.garcia@universitymedical.edu",
       "to_addresses": [
-        "sarah.jones@innovatepharma.com"
+        "jane.doe@pharmaxon.com"
       ],
       "cc_addresses": [
-        "a.grant@maplewoodresearch.org",
-        "david.chen@innovatepharma.com"
+        "r.jones@universitymedical.edu",
+        "kevin.chen@pharmaxon.com"
       ],
-      "subject": "RE: Study INP-FTD-201 - Part B Screening at Site 101 - Maplewood Clinical Research",
-      "timestamp": "2023-10-27T14:30:00Z",
-      "body": "Hi Sarah,\n\nThank you for reaching out and for your kind words about our work on Part A.\n\nWe have also noted the slowdown in screening for Part B and appreciate you contacting us. Dr. Grant and I were just discussing this yesterday. We believe it's a combination of a few factors. The exclusion criteria for Part B are proving to be quite restrictive for our local patient population, particularly the comorbidity requirements. Additionally, a new observational FTD study just opened at University Hospital across town, and it seems to be drawing from the same patient referral network.\n\nWe would welcome a call to discuss this. We want to get back on track. Would you be available next Tuesday, October 31st, in the morning? Anytime between 9 AM and 11 AM ET would work for us.\n\nBest,\n\nBrenda Starr\nStudy Coordinator\nMaplewood Clinical Research\nb.starr@maplewoodresearch.org",
+      "subject": "Re: URGENT Action Required: Study PHX-201, Site 101 - Incorrect ICF Version Used for Subject 101-005",
+      "timestamp": "2023-10-26T11:45:00Z",
+      "body": "Hi Jane,\n\nThank you for bringing this to our attention. I have received and reviewed your email with Dr. Jones.\n\nWe are taking this very seriously. I have already contacted the participant, and they have agreed to come in tomorrow morning at 9:00 AM for re-consenting. \n\nWe will complete all required documentation (new ICF, PD form, NTF) and upload it to the system by EOD tomorrow, October 27th. We will also implement a CAPA to prevent recurrence, which will involve a re-training session with all research staff on ICF version control.\n\nWe will keep you updated. Thank you for your diligence.\n\nBest,\n\nMaria Garcia, CCRC\nClinical Research Coordinator\nUniversity Medical Center",
       "attachments": [],
-      "message_id": 2,
-      "in_reply_to": 1
+      "message_id": 95832,
+      "in_reply_to": 95831
     },
     {
-      "from_address": "sarah.jones@innovatepharma.com",
+      "from_address": "jane.doe@pharmaxon.com",
       "to_addresses": [
-        "b.starr@maplewoodresearch.org"
+        "m.garcia@universitymedical.edu"
       ],
       "cc_addresses": [
-        "a.grant@maplewoodresearch.org",
-        "david.chen@innovatepharma.com"
+        "r.jones@universitymedical.edu",
+        "kevin.chen@pharmaxon.com"
       ],
-      "subject": "RE: Study INP-FTD-201 - Part B Screening at Site 101 - Maplewood Clinical Research",
-      "timestamp": "2023-10-27T16:05:00Z",
-      "body": "Hi Brenda,\n\nThank you for the prompt and transparent reply. That context is very helpful, and we understand the challenges posed by competing studies and stringent criteria.\n\nNext Tuesday at 10:00 AM ET works perfectly for me. I will send a calendar invitation shortly with a proposed agenda, which will include discussing potential community outreach and reviewing the pre-screening checklist to help identify eligible patients more efficiently.\n\nWe are confident that by working together, we can find effective solutions.\n\nBest regards,\n\nSarah Jones\nClinical Research Associate\nInnovatePharma\nsarah.jones@innovatepharma.com",
+      "subject": "Re: URGENT Action Required: Study PHX-201, Site 101 - Incorrect ICF Version Used for Subject 101-005",
+      "timestamp": "2023-10-26T12:05:00Z",
+      "body": "Thank you, Maria.\n\nI appreciate the swift response and clear plan of action. Please let me know once the re-consent is complete and the documents are uploaded tomorrow.\n\nBest regards,\n\nJane Doe\nClinical Research Associate\nPharmaxon Therapeutics",
       "attachments": [],
-      "message_id": 3,
-      "in_reply_to": 2
+      "message_id": 95833,
+      "in_reply_to": 95832
+    },
+    {
+      "from_address": "m.garcia@universitymedical.edu",
+      "to_addresses": [
+        "jane.doe@pharmaxon.com"
+      ],
+      "cc_addresses": [
+        "r.jones@universitymedical.edu",
+        "kevin.chen@pharmaxon.com"
+      ],
+      "subject": "Re: URGENT Action Required: Study PHX-201, Site 101 - Incorrect ICF Version Used for Subject 101-005 - RESOLVED",
+      "timestamp": "2023-10-27T14:20:00Z",
+      "body": "Hi Jane,\n\nThis is to confirm that subject 101-005 was successfully re-consented this morning using ICF v3.0.\n\nAs discussed, the following documents have been completed and uploaded to the eISF:\n\n- Signed ICF v3.0 for subject 101-005\n- Completed Protocol Deviation Form\n- Note-to-File detailing the event and corrective actions\n\nPlease let us know if you require anything further from our side.\n\nBest,\n\nMaria Garcia, CCRC\nClinical Research Coordinator\nUniversity Medical Center",
+      "attachments": [
+        "101-005_ICF_v3_Signed_27OCT2023.pdf",
+        "PD_101-005_Incorrect_ICF.pdf",
+        "NTF_101-005_ICF_Reconsent.pdf"
+      ],
+      "message_id": 95834,
+      "in_reply_to": 95833
     }
   ],
   "role_descriptions": [
-    "sarah.jones@innovatepharma.com: Sponsor, Clinical Research Associate",
-    "david.chen@innovatepharma.com: Sponsor, Clinical Trial Manager",
-    "b.starr@maplewoodresearch.org: Site, Study Coordinator",
-    "a.grant@maplewoodresearch.org: Site, Principal Investigator"
+    "jane.doe@pharmaxon.com: Sponsor, Clinical Research Associate",
+    "kevin.chen@pharmaxon.com: Sponsor, Clinical Trial Manager",
+    "m.garcia@universitymedical.edu: Site, Clinical Research Coordinator",
+    "r.jones@universitymedical.edu: Site, Principal Investigator"
   ],
-  "description": "An email to a high-performing site that has had a sudden drop in screening for Part B, inquiring about potential barriers and discussing strategies to boost recruitment of FTD patients."
+  "description": "A thread initiated by the CRA after a remote review of site documents. The CRA discovered that a newly enrolled patient was consented using an outdated version of the Informed Consent Form. The email urgently instructs the site to re-consent the participant with the correct, currently approved ICF version and to document this as a major protocol deviation."
 }

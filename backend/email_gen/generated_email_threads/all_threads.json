@@ -5,695 +5,584 @@
     {
       "emails": [
         {
-          "from_address": "sarah.jones@southviewresearch.org",
+          "from_address": "dr.helena.ramirez@sunvalleymed.org",
           "to_addresses": [
-            "kevin.murphy@inovant.com"
+            "jane.doe@denalitx.com"
           ],
           "cc_addresses": [
-            "lisa.chen@southviewresearch.org"
+            "carlos.vega@sunvalleymed.org",
+            "peter.jones@denalitx.com"
           ],
-          "subject": "URGENT: Significant Protocol Deviation - Study FTD-202 - Site 101 - Participant 101-008",
-          "timestamp": "2023-05-15T10:30:00Z",
-          "body": "Hi Kevin,\n\nPlease be advised of a significant protocol deviation for participant 101-008 in the FTD-202 study.\n\nThe participant missed their scheduled Week 12 visit today (May 15, 2023), which was a dosing visit for Part B of the study. All associated safety assessments, including blood draws and vital signs, were also missed.\n\nThe participant's caregiver called this morning to inform us of a family emergency that prevented them from attending. They were unable to provide a timeline for rescheduling at that moment.\n\nWe have documented this in the source and have attached the initial protocol deviation form. Please provide guidance on the following:\n1. The window for rescheduling the visit and administering the dose.\n2. How to handle the missed safety assessments.\n3. Any additional documentation required beyond the standard PD form.\n\nThank you for your urgent attention to this matter.\n\nBest regards,\n\nSarah Jones\nStudy Coordinator\nSouthview Research Center\n(555) 123-4567",
-          "attachments": [
-            "PD_Form_FTD202_Site101_101-008_Initial.pdf"
-          ],
-          "message_id": 16734,
+          "subject": "URGENT: SAE Report - Study DNLI-123 - Site 456 - Patient 456-007",
+          "timestamp": "2023-10-26T09:15:00Z",
+          "body": "Hi Jane,\n\nThis is an urgent notification of a Serious Adverse Event for a patient in study DNLI-123.\n\nPatient ID: 456-007\nSite: 456 (Sun Valley Medical Center)\nCohort: Part B (FTD)\nEvent: Hospitalization for a severe seizure. The event occurred last night, and the patient was admitted to the hospital early this morning.\n\nWe are currently gathering all necessary information and completing the SAE form. We will send it to you as soon as possible.\n\nPlease let us know of any immediate actions required.\n\nBest regards,\n\nDr. Helena Ramirez\nPrincipal Investigator\nSun Valley Medical Center",
+          "attachments": [],
+          "message_id": 101,
           "in_reply_to": null
         },
         {
-          "from_address": "kevin.murphy@inovant.com",
+          "from_address": "jane.doe@denalitx.com",
           "to_addresses": [
-            "sarah.jones@southviewresearch.org"
+            "dr.helena.ramirez@sunvalleymed.org"
           ],
           "cc_addresses": [
-            "lisa.chen@southviewresearch.org",
-            "anna.volkov@inovant.com",
-            "mark.davis@inovant.com"
+            "carlos.vega@sunvalleymed.org",
+            "peter.jones@denalitx.com"
           ],
-          "subject": "Re: URGENT: Significant Protocol Deviation - Study FTD-202 - Site 101 - Participant 101-008",
-          "timestamp": "2023-05-15T11:45:00Z",
-          "body": "Hi Sarah,\n\nThank you for the prompt and detailed notification. I have received the PD form.\n\nI am escalating this to our Medical Monitor, Dr. Volkov, for immediate review and guidance regarding the missed dose and rescheduling window. The participant's safety is our top priority.\n\nPlease attempt to contact the participant/caregiver again this afternoon to check on their status and see if a tentative reschedule date can be set.\n\nI will provide a formal response with a complete action plan as soon as I have feedback from the medical team, which I expect by EOD today or first thing tomorrow morning.\n\nBest,\n\nKevin Murphy\nClinical Research Associate\nInovant Pharmaceuticals\n(555) 987-6543",
+          "subject": "Re: URGENT: SAE Report - Study DNLI-123 - Site 456 - Patient 456-007",
+          "timestamp": "2023-10-26T09:32:00Z",
+          "body": "Hi Dr. Ramirez,\n\nThank you for the urgent notification. I have received it and will notify the internal safety team immediately.\n\nPlease send the completed SAE form and all relevant de-identified source documents (e.g., ER report, admission notes, relevant lab results) as soon as they are available, and no later than 24 hours from your awareness of the event.\n\nI will be available should you have any questions.\n\nBest regards,\n\nJane Doe\nClinical Research Associate\nDenali Therapeutics",
           "attachments": [],
-          "message_id": 16735,
-          "in_reply_to": 16734
+          "message_id": 102,
+          "in_reply_to": 101
         },
         {
-          "from_address": "kevin.murphy@inovant.com",
+          "from_address": "jane.doe@denalitx.com",
           "to_addresses": [
-            "sarah.jones@southviewresearch.org"
+            "safety.team@denalitx.com"
           ],
           "cc_addresses": [
-            "lisa.chen@southviewresearch.org",
-            "anna.volkov@inovant.com",
-            "mark.davis@inovant.com"
+            "peter.jones@denalitx.com",
+            "dr.li.chen@denalitx.com"
           ],
-          "subject": "Re: URGENT: Significant Protocol Deviation - Study FTD-202 - Site 101 - Participant 101-008",
-          "timestamp": "2023-05-16T09:00:00Z",
-          "body": "Hi Sarah,\n\nFollowing up as promised. I have discussed this case with Dr. Volkov. Please proceed with the following guidance:\n\n1.  **Rescheduling:** Reschedule the participant for the Week 12 visit as soon as possible. The visit must occur within 72 hours of the original appointment time. Please prioritize all safety assessments upon their arrival.\n2.  **Dosing:** The missed dose of the investigational product should be administered at this rescheduled visit, provided all safety assessments are within acceptable limits and the PI confirms it is safe to do so.\n3.  **Documentation:** Please ensure this is fully documented as a significant protocol deviation in the eCRF and source. Detail the reason for the missed visit and all actions taken. Update the protocol deviation form with the resolution and upload it to the TMF.\n\nPlease let me know as soon as the visit is rescheduled.\n\nThank you for your diligence.\n\nBest,\n\nKevin Murphy\nClinical Research Associate\nInovant Pharmaceuticals\n(555) 987-6543",
+          "subject": "URGENT NOTIFICATION: New SAE - Study DNLI-123 - Site 456 - Hospitalization for Seizure",
+          "timestamp": "2023-10-26T09:45:00Z",
+          "body": "Denali Safety and Medical Team,\n\nThis is an initial notification of a new SAE at Site 456 (Sun Valley Medical Center).\n\nPatient 456-007, enrolled in the Part B FTD cohort, has been hospitalized for a severe seizure. \n\nI have been in contact with the site PI, Dr. Ramirez, and have requested the completed SAE form and relevant source documents. I will forward these materials as soon as I receive them, which is expected within the 24-hour reporting window.\n\nPlease let me know of any immediate actions required from my side.\n\nBest,\n\nJane Doe\nClinical Research Associate\nDenali Therapeutics",
           "attachments": [],
-          "message_id": 16736,
-          "in_reply_to": 16735
+          "message_id": 103,
+          "in_reply_to": null
         }
       ],
       "role_descriptions": [
-        "kevin.murphy@inovant.com: Sponsor, Clinical Research Associate",
-        "sarah.jones@southviewresearch.org: Site, Study Coordinator",
-        "lisa.chen@southviewresearch.org: Site, Principal Investigator",
-        "anna.volkov@inovant.com: Sponsor, Medical Monitor",
-        "mark.davis@inovant.com: Sponsor, Clinical Project Manager"
+        "jane.doe@denalitx.com: Sponsor, Clinical Research Associate",
+        "dr.helena.ramirez@sunvalleymed.org: Site, Principal Investigator",
+        "carlos.vega@sunvalleymed.org: Site, Study Coordinator",
+        "peter.jones@denalitx.com: Sponsor, Project Manager",
+        "safety.team@denalitx.com: Sponsor, Safety Team",
+        "dr.li.chen@denalitx.com: Sponsor, Medical Monitor"
       ],
-      "description": "An email chain with a site coordinator regarding a significant protocol deviation where a participant in Part B with FTD missed a scheduled dosing visit and associated safety assessments."
+      "description": "An urgent email thread from the Principal Investigator at a participating site reporting a Serious Adverse Event (SAE). A patient in Part B (FTD cohort) has been hospitalized for a severe seizure. The thread includes the initial notification, the CRA's immediate request for the SAE form and source documents, and the CRA's subsequent communication with the internal Denali safety team."
     },
     {
       "emails": [
         {
-          "from_address": "s.jenkins@universityhealth.org",
+          "from_address": "david.chen@pinnacletx.com",
+          "to_addresses": [
+            "m.garcia@oakwoodcrc.org"
+          ],
+          "cc_addresses": [],
+          "subject": "Pinnacle Study PTX-305: Scheduling of Interim Monitoring Visit (IMV) at Site S-102",
+          "timestamp": "2023-10-23T10:05:00Z",
+          "body": "Hi Maria,\n\nI hope you are well.\n\nI'm writing to schedule the next Interim Monitoring Visit for the PTX-305 study at your site. I am proposing the week of November 6th, specifically Nov 7th, 8th, or 9th. Please let me know which of these dates works best for you and Dr. Reed.\n\nThe primary objectives for this visit will be:\n- 100% Source Data Verification (SDV) for the first two FTD patients (S-102-001 and S-102-002)\n- Review of the Investigator Site File (ISF)\n- Drug accountability review\n\nI have attached a draft agenda for your review. Please let me know if you have any questions.\n\nBest regards,\n\nDavid Chen\nClinical Research Associate\nPinnacle Therapeutics",
+          "attachments": [
+            "PTX-305_IMV_Agenda_Draft_S102.pdf"
+          ],
+          "message_id": 1,
+          "in_reply_to": null
+        },
+        {
+          "from_address": "m.garcia@oakwoodcrc.org",
+          "to_addresses": [
+            "david.chen@pinnacletx.com"
+          ],
+          "cc_addresses": [
+            "e.reed@oakwoodcrc.org"
+          ],
+          "subject": "Re: Pinnacle Study PTX-305: Scheduling of Interim Monitoring Visit (IMV) at Site S-102",
+          "timestamp": "2023-10-23T14:22:00Z",
+          "body": "Hi David,\n\nThanks for reaching out. After checking our calendars, November 8th would work best for us.\n\nWe will ensure the patient binders for S-102-001 and S-102-002 are ready for 100% SDV, and the ISF will be up-to-date and available for your review.\n\nThe agenda looks fine. Will Dr. Reed need to be available for the entire day, or just for a specific meeting?\n\nBest,\n\nMaria Garcia\nSite Coordinator\nOakwood Clinical Research Center",
+          "attachments": [],
+          "message_id": 2,
+          "in_reply_to": 1
+        },
+        {
+          "from_address": "david.chen@pinnacletx.com",
+          "to_addresses": [
+            "m.garcia@oakwoodcrc.org"
+          ],
+          "cc_addresses": [
+            "e.reed@oakwoodcrc.org"
+          ],
+          "subject": "Re: Pinnacle Study PTX-305: Scheduling of Interim Monitoring Visit (IMV) at Site S-102",
+          "timestamp": "2023-10-24T09:15:00Z",
+          "body": "Hi Maria,\n\nThat's great, thank you for confirming. I have booked the visit for Wednesday, November 8th.\n\nRegarding Dr. Reed's availability, I will only need a brief meeting with her at the beginning of the day to discuss the plan and at the end of the day for a debrief on my findings. I anticipate this will be about 30 minutes for each meeting.\n\nI will send the official confirmation letter with the finalized agenda shortly.\n\nLooking forward to seeing you both.\n\nBest regards,\n\nDavid Chen\nClinical Research Associate\nPinnacle Therapeutics",
+          "attachments": [],
+          "message_id": 3,
+          "in_reply_to": 2
+        }
+      ],
+      "role_descriptions": [
+        "david.chen@pinnacletx.com: Sponsor, Clinical Research Associate",
+        "m.garcia@oakwoodcrc.org: Site, Site Coordinator",
+        "e.reed@oakwoodcrc.org: Site, Principal Investigator"
+      ],
+      "description": "A routine back-and-forth email exchange between the CRA and a Site Coordinator to schedule an upcoming interim monitoring visit. The discussion covers potential dates, confirmation of the agenda (including 100% SDV for the first two FTD patients), and a request to have specific patient binders and ISF documents available for review."
+    },
+    {
+      "emails": [
+        {
+          "from_address": "jane.doe@innovatepharma.com",
+          "to_addresses": [
+            "mark.smith@summit-trials.com"
+          ],
+          "cc_addresses": [
+            "david.chen@innovatepharma.com",
+            "emily.carter@summit-trials.com"
+          ],
+          "subject": "URGENT FOLLOW-UP: Overdue Critical Queries - Study IP-201, Site 101",
+          "timestamp": "2023-10-26T10:15:00-04:00",
+          "body": "Hi Mark,\n\nI hope you are having a good week.\n\nI am following up on the list of critical data queries for Study IP-201 that were sent two weeks ago. As of this morning, the attached list of queries are now over 14 days past due.\n\nResolving these is a high priority as we are approaching the database lock for the Part A (healthy volunteer) cohort analysis, scheduled for November 10th. All critical queries must be addressed before we can proceed.\n\nI understand you have many competing priorities. To help expedite this, I would be happy to schedule a 30-minute call to walk through the outstanding items together and resolve them in real-time. Please let me know what your availability looks like for tomorrow or early next week.\n\nThank you for your urgent attention to this matter.\n\nBest regards,\n\nJane Doe\nClinical Research Associate\nInnovate Pharma\njane.doe@innovatepharma.com\n(123) 456-7890",
+          "attachments": [
+            "IP-201_Site101_Overdue_Critical_Queries_2023-10-26.xlsx"
+          ],
+          "message_id": 1,
+          "in_reply_to": null
+        },
+        {
+          "from_address": "mark.smith@summit-trials.com",
+          "to_addresses": [
+            "jane.doe@innovatepharma.com"
+          ],
+          "cc_addresses": [
+            "david.chen@innovatepharma.com",
+            "emily.carter@summit-trials.com"
+          ],
+          "subject": "Re: URGENT FOLLOW-UP: Overdue Critical Queries - Study IP-201, Site 101",
+          "timestamp": "2023-10-26T14:30:00-04:00",
+          "body": "Hi Jane,\n\nThank you for the follow-up and my apologies for the delay on these. We've had some unexpected staff shortages this month which has put us behind.\n\nA call would be very helpful. I am available tomorrow at 11:00 AM EST or 2:00 PM EST. Please let me know which time works best for you.\n\nI will review the list in the meantime.\n\nThanks,\n\nMark Smith\nData Manager\nSummit Clinical Trials",
+          "attachments": [],
+          "message_id": 2,
+          "in_reply_to": 1
+        },
+        {
+          "from_address": "jane.doe@innovatepharma.com",
+          "to_addresses": [
+            "mark.smith@summit-trials.com"
+          ],
+          "cc_addresses": [
+            "david.chen@innovatepharma.com",
+            "emily.carter@summit-trials.com"
+          ],
+          "subject": "Re: URGENT FOLLOW-UP: Overdue Critical Queries - Study IP-201, Site 101",
+          "timestamp": "2023-10-26T14:45:00-04:00",
+          "body": "Hi Mark,\n\nThanks for the quick reply. I completely understand.\n\nTomorrow at 11:00 AM EST works perfectly for me. I will send a calendar invitation with a conference link shortly.\n\nTalk to you then.\n\nBest,\n\nJane\n\nJane Doe\nClinical Research Associate\nInnovate Pharma\njane.doe@innovatepharma.com\n(123) 456-7890",
+          "attachments": [],
+          "message_id": 3,
+          "in_reply_to": 2
+        }
+      ],
+      "role_descriptions": [
+        "jane.doe@innovatepharma.com: Sponsor, Clinical Research Associate",
+        "david.chen@innovatepharma.com: Sponsor, Clinical Project Manager",
+        "mark.smith@summit-trials.com: Site, Data Manager",
+        "emily.carter@summit-trials.com: Site, Principal Investigator"
+      ],
+      "description": "A follow-up email from the CRA to a site's data manager regarding a list of critical data queries that are now over 14 days past due. The CRA emphasizes the importance of resolving these queries ahead of the upcoming database lock for the Part A (healthy volunteer) analysis and offers to schedule a call to walk through the outstanding items."
+    },
+    {
+      "emails": [
+        {
+          "from_address": "samantha.clark@universityhealth.com",
+          "to_addresses": [
+            "craig.miller@innovatepharma.com"
+          ],
+          "cc_addresses": [
+            "pi.jones@universityhealth.com",
+            "pm.davis@globalcro.com"
+          ],
+          "subject": "[Study INN-045] Site 201, Patient 201-003 - Query on Part B to Part C (OLE) Transition",
+          "timestamp": "2023-10-26T10:15:00-04:00",
+          "body": "Hi Craig,\n\nHope you are having a good week.\n\nWe have a patient (201-003) who is approaching their final visit in the double-blind portion (Part B) of the INN-045 study. The patient has expressed interest in continuing into the open-label extension (Part C).\n\nCould you please provide some clarification on the standard procedure for this transition? Specifically, we are looking for guidance on:\n1. The unblinding process and when it should be initiated.\n2. The correct version of the consent form for the OLE.\n3. A list of the required baseline assessments for entry into Part C.\n\nAny documentation or a quick reference guide you could provide would be greatly appreciated.\n\nThank you,\n\nSamantha Clark\nClinical Research Coordinator\nUniversity Health Center\nSite 201",
+          "attachments": [],
+          "message_id": 16734,
+          "in_reply_to": null
+        },
+        {
+          "from_address": "craig.miller@innovatepharma.com",
+          "to_addresses": [
+            "samantha.clark@universityhealth.com"
+          ],
+          "cc_addresses": [
+            "pi.jones@universityhealth.com",
+            "pm.davis@globalcro.com"
+          ],
+          "subject": "RE: [Study INN-045] Site 201, Patient 201-003 - Query on Part B to Part C (OLE) Transition",
+          "timestamp": "2023-10-26T14:45:00-04:00",
+          "body": "Hi Samantha,\n\nThank you for reaching out and for your proactive planning for patient 201-003. I'm happy to clarify the transition process from Part B to the Part C Open-Label Extension.\n\nPlease follow the steps below:\n\n1.  **Unblinding Procedure:** The unblinding process is managed through the IWRS. After the patient completes their final Part B visit (Visit 12) and all associated data is entered and cleaned in the EDC, you will log into the IWRS and select the option 'Transition to Open-Label Extension'. This will trigger a notification to the unblinded pharmacy staff to dispense the open-label drug. Please note, the site study team will remain blinded to the patient's original treatment assignment in Part B.\n\n2.  **OLE Consent Form:** The correct form is the 'Part C Open-Label Extension Informed Consent Form', Version 4.0, dated 18-Jul-2023. It must be signed and dated by the patient *before* any Part C-specific procedures are performed. I have attached a copy for your convenience, but please ensure you are using the IRB-approved version from your Investigator Site File (ISF).\n\n3.  **Part C Baseline Assessments:** As per protocol section 7.3, the following baseline assessments must be completed after the OLE ICF is signed but before the first dose of the open-label drug:\n    *   Complete Physical Examination\n    *   Vital Signs\n    *   12-lead ECG\n    *   Safety Labs (Hematology and Chemistry)\n    *   Urinalysis\n    *   Disease Activity Score (DAS28-CRP)\n\nThese assessments establish the baseline for the open-label phase. All procedures must be documented in the patient's source records.\n\nI hope this provides the clarity you need. Please let me know if you have any further questions or would like to schedule a brief call to walk through the IWRS steps.\n\nBest regards,\n\nCraig Miller\nClinical Research Associate\nInnovate Pharma",
+          "attachments": [
+            "INN-045_OLE_ICF_v4.0_18JUL2023.pdf"
+          ],
+          "message_id": 16735,
+          "in_reply_to": 16734
+        }
+      ],
+      "role_descriptions": [
+        "craig.miller@innovatepharma.com: Sponsor, Clinical Research Associate",
+        "samantha.clark@universityhealth.com: Site, Site Coordinator",
+        "pi.jones@universityhealth.com: Site, Principal Investigator",
+        "pm.davis@globalcro.com: CRO, Project Manager"
+      ],
+      "description": "An email from a Site Coordinator asking for clarification on the process for transitioning a patient from the double-blind Part B to the open-label extension (Part C). The CRA responds with a detailed explanation of the unblinding procedure, the specific OLE consent form to be used, and the required baseline assessments for Part C."
+    },
+    {
+      "emails": [
+        {
+          "from_address": "jane.doe@pharmaxon.com",
+          "to_addresses": [
+            "m.garcia@universitymedical.edu",
+            "r.jones@universitymedical.edu"
+          ],
+          "cc_addresses": [
+            "kevin.chen@pharmaxon.com"
+          ],
+          "subject": "URGENT Action Required: Study PHX-201, Site 101 - Incorrect ICF Version Used for Subject 101-005",
+          "timestamp": "2023-10-26T11:15:00Z",
+          "body": "Dear Maria and Dr. Jones,\n\nI hope this email finds you well.\n\nDuring a remote review of the eISF for study PHX-201 today, I identified a critical issue. Subject 101-005, enrolled on October 24, 2023, was consented using the outdated Informed Consent Form (ICF) version 2.0, dated 15-JAN-2023.\n\nThe current, IRB-approved version is ICF v3.0, dated 01-JUL-2023, which was implemented site-wide on July 15, 2023.\n\nThis is a major protocol deviation and requires immediate action to ensure the participant's rights and safety, as well as data integrity. Please take the following steps urgently:\n\n1.  **Contact the participant immediately** to schedule a visit to re-consent them using the correct ICF v3.0.\n2.  **Thoroughly document** the re-consenting process in the participant's source documents.\n3.  **Complete a Protocol Deviation Form** for this event, classifying it as a major deviation. The root cause should be investigated and documented, along with a corrective and preventive action (CAPA) plan.\n4.  **Upload** the newly signed ICF v3.0, the completed Protocol Deviation Form, and a detailed Note-to-File explaining the event and its resolution to the eTMF/Investigator Site File within 48 hours.\n\nPlease confirm receipt of this email and provide your plan of action by the end of today. I am available to discuss this further if needed.\n\nThank you for your immediate attention to this critical matter.\n\nBest regards,\n\nJane Doe\nClinical Research Associate\nPharmaxon Therapeutics\njane.doe@pharmaxon.com",
+          "attachments": [],
+          "message_id": 95831,
+          "in_reply_to": null
+        },
+        {
+          "from_address": "m.garcia@universitymedical.edu",
+          "to_addresses": [
+            "jane.doe@pharmaxon.com"
+          ],
+          "cc_addresses": [
+            "r.jones@universitymedical.edu",
+            "kevin.chen@pharmaxon.com"
+          ],
+          "subject": "Re: URGENT Action Required: Study PHX-201, Site 101 - Incorrect ICF Version Used for Subject 101-005",
+          "timestamp": "2023-10-26T11:45:00Z",
+          "body": "Hi Jane,\n\nThank you for bringing this to our attention. I have received and reviewed your email with Dr. Jones.\n\nWe are taking this very seriously. I have already contacted the participant, and they have agreed to come in tomorrow morning at 9:00 AM for re-consenting. \n\nWe will complete all required documentation (new ICF, PD form, NTF) and upload it to the system by EOD tomorrow, October 27th. We will also implement a CAPA to prevent recurrence, which will involve a re-training session with all research staff on ICF version control.\n\nWe will keep you updated. Thank you for your diligence.\n\nBest,\n\nMaria Garcia, CCRC\nClinical Research Coordinator\nUniversity Medical Center",
+          "attachments": [],
+          "message_id": 95832,
+          "in_reply_to": 95831
+        },
+        {
+          "from_address": "jane.doe@pharmaxon.com",
+          "to_addresses": [
+            "m.garcia@universitymedical.edu"
+          ],
+          "cc_addresses": [
+            "r.jones@universitymedical.edu",
+            "kevin.chen@pharmaxon.com"
+          ],
+          "subject": "Re: URGENT Action Required: Study PHX-201, Site 101 - Incorrect ICF Version Used for Subject 101-005",
+          "timestamp": "2023-10-26T12:05:00Z",
+          "body": "Thank you, Maria.\n\nI appreciate the swift response and clear plan of action. Please let me know once the re-consent is complete and the documents are uploaded tomorrow.\n\nBest regards,\n\nJane Doe\nClinical Research Associate\nPharmaxon Therapeutics",
+          "attachments": [],
+          "message_id": 95833,
+          "in_reply_to": 95832
+        },
+        {
+          "from_address": "m.garcia@universitymedical.edu",
+          "to_addresses": [
+            "jane.doe@pharmaxon.com"
+          ],
+          "cc_addresses": [
+            "r.jones@universitymedical.edu",
+            "kevin.chen@pharmaxon.com"
+          ],
+          "subject": "Re: URGENT Action Required: Study PHX-201, Site 101 - Incorrect ICF Version Used for Subject 101-005 - RESOLVED",
+          "timestamp": "2023-10-27T14:20:00Z",
+          "body": "Hi Jane,\n\nThis is to confirm that subject 101-005 was successfully re-consented this morning using ICF v3.0.\n\nAs discussed, the following documents have been completed and uploaded to the eISF:\n\n- Signed ICF v3.0 for subject 101-005\n- Completed Protocol Deviation Form\n- Note-to-File detailing the event and corrective actions\n\nPlease let us know if you require anything further from our side.\n\nBest,\n\nMaria Garcia, CCRC\nClinical Research Coordinator\nUniversity Medical Center",
+          "attachments": [
+            "101-005_ICF_v3_Signed_27OCT2023.pdf",
+            "PD_101-005_Incorrect_ICF.pdf",
+            "NTF_101-005_ICF_Reconsent.pdf"
+          ],
+          "message_id": 95834,
+          "in_reply_to": 95833
+        }
+      ],
+      "role_descriptions": [
+        "jane.doe@pharmaxon.com: Sponsor, Clinical Research Associate",
+        "kevin.chen@pharmaxon.com: Sponsor, Clinical Trial Manager",
+        "m.garcia@universitymedical.edu: Site, Clinical Research Coordinator",
+        "r.jones@universitymedical.edu: Site, Principal Investigator"
+      ],
+      "description": "A thread initiated by the CRA after a remote review of site documents. The CRA discovered that a newly enrolled patient was consented using an outdated version of the Informed Consent Form. The email urgently instructs the site to re-consent the participant with the correct, currently approved ICF version and to document this as a major protocol deviation."
+    },
+    {
+      "emails": [
+        {
+          "from_address": "sarah.chen@innovatepharma.com",
+          "to_addresses": [
+            "david.miller@innovatepharma.com"
+          ],
+          "cc_addresses": [],
+          "subject": "Action Required: Slow Recruitment at Site 203 (Dr. Ames) - Study INP-301",
+          "timestamp": "2023-10-26T10:15:00Z",
+          "body": "Hi David,\n\nI'm writing to flag a concern regarding the patient recruitment pace at Site 203 (Dr. Ames) for the INP-301 study. They are significantly behind our enrollment targets for this quarter, having only screened 5 patients in the last month with 1 randomized.\n\nCould you please take the following actions this week?\n\n1.  Conduct a thorough review of the site's screening and enrollment log in the EDC. I'm particularly interested in any trends related to screen failure reasons.\n2.  Proactively reach out to Dr. Ames and his study coordinator to schedule a call to discuss the recruitment challenges they are facing. We need to understand their barriers and collaboratively identify potential mitigation strategies (e.g., refining pre-screening, patient outreach, etc.).\n\nPlease let me know what you find in the screening log and when you have the call scheduled.\n\nThanks,\n\nSarah Chen\nClinical Trial Manager\nInnovate Pharma",
+          "attachments": [],
+          "message_id": 1654,
+          "in_reply_to": null
+        },
+        {
+          "from_address": "david.miller@innovatepharma.com",
+          "to_addresses": [
+            "sarah.chen@innovatepharma.com"
+          ],
+          "cc_addresses": [],
+          "subject": "Re: Action Required: Slow Recruitment at Site 203 (Dr. Ames) - Study INP-301",
+          "timestamp": "2023-10-26T14:45:00Z",
+          "body": "Hi Sarah,\n\nThanks for flagging this. I've completed an initial review of the screening log for Site 203.\n\nIt appears the primary reason for screen failure is Exclusion Criterion #5 (HbA1c > 8.5%), which accounted for 12 of the 18 screen failures in the past 90 days. I've attached a brief summary for your reference.\n\nI have already contacted the site coordinator and have a call scheduled with her and Dr. Ames for this Friday, Oct 28th, at 2:00 PM EST to discuss this trend and other potential recruitment barriers.\n\nI will provide you with a summary of our discussion and the proposed action plan following the call.\n\nBest regards,\n\nDavid Miller\nClinical Research Associate\nInnovate Pharma",
+          "attachments": [
+            "Site203_ScreenFailure_Summary_26Oct2023.pdf"
+          ],
+          "message_id": 1655,
+          "in_reply_to": 1654
+        }
+      ],
+      "role_descriptions": [
+        "sarah.chen@innovatepharma.com: Sponsor, Clinical Trial Manager",
+        "david.miller@innovatepharma.com: Sponsor, Clinical Research Associate"
+      ],
+      "description": "An internal email from the Clinical Trial Manager (CTM) to the CRA regarding slow patient recruitment at a specific site. The CTM asks the CRA to review the site's screening log for trends in screen failures and to proactively reach out to the PI to discuss recruitment challenges and potential mitigation strategies."
+    },
+    {
+      "emails": [
+        {
+          "from_address": "emily.carter@universitymed.edu",
+          "to_addresses": [
+            "jane.doe@denalitherapeutics.com"
+          ],
+          "cc_addresses": [
+            "dnl593-studyteam@denalitherapeutics.com"
+          ],
+          "subject": "Urgent: Potential Temperature Excursion - DNL593 - Site 101",
+          "timestamp": "2024-05-20T08:45:10Z",
+          "body": "Dear Jane,\n\nI am writing to report a potential temperature excursion involving our stock of DNL593. Upon review of the temperature logs this morning, we noted that the pharmacy refrigerator where the investigational product is stored reached a peak of 11.2\u00b0C for approximately 3 hours on Saturday, May 18th. The required storage temperature is 2-8\u00b0C.\n\nAll potentially affected vials have been immediately quarantined and are clearly marked. Please advise on the necessary steps to determine the viability of this stock. Can you please let us know if we should proceed with a product return or if a stability assessment is possible?\n\nThank you for your urgent attention to this matter.\n\nBest regards,\n\nDr. Emily Carter\nLead Investigational Pharmacist\nUniversity Medical Center\n(555) 867-5309",
+          "attachments": [],
+          "message_id": 1,
+          "in_reply_to": null
+        },
+        {
+          "from_address": "jane.doe@denalitherapeutics.com",
+          "to_addresses": [
+            "emily.carter@universitymed.edu"
+          ],
+          "cc_addresses": [
+            "david.chen@denalitherapeutics.com",
+            "dnl593-studyteam@denalitherapeutics.com"
+          ],
+          "subject": "Re: Urgent: Potential Temperature Excursion - DNL593 - Site 101",
+          "timestamp": "2024-05-20T09:30:25Z",
+          "body": "Hi Dr. Carter,\n\nThank you for your prompt notification and for quarantining the affected product. We appreciate your diligence.\n\nTo begin our investigation, could you please export and send us the full, continuous temperature monitoring data for the refrigerator from Friday, May 17th, through this morning? Please provide it in PDF or CSV format if possible.\n\nI have looped in our Clinical Supply Chain Manager, David Chen (CC'd), who will lead the assessment once we have the data. Please continue to keep the vials quarantined and labeled 'DO NOT USE - PENDING INVESTIGATION' until we provide a final disposition.\n\nWe will treat this with high priority and aim to provide guidance on the product's viability within 48 hours of receiving the temperature logs.\n\nBest regards,\n\nJane Doe\nClinical Research Associate\nDenali Therapeutics\n(555) 123-4567",
+          "attachments": [],
+          "message_id": 2,
+          "in_reply_to": 1
+        }
+      ],
+      "role_descriptions": [
+        "jane.doe@denalitherapeutics.com: Sponsor, Clinical Research Associate",
+        "emily.carter@universitymed.edu: Site, Pharmacist",
+        "david.chen@denalitherapeutics.com: Sponsor, Clinical Supply Chain Manager"
+      ],
+      "description": "An email from a site pharmacist reporting a potential investigational product temperature excursion that occurred in their pharmacy over the weekend. The CRA responds by requesting the temperature logs and initiating an investigation with the sponsor's clinical supply chain manager to determine if the affected vials of DNL593 are still viable for use."
+    },
+    {
+      "emails": [
+        {
+          "from_address": "karen.miller@innovatepharma.com",
+          "to_addresses": [
+            "s.harding@universityhealth.edu",
+            "r.muldoon@universityhealth.edu"
+          ],
+          "cc_addresses": [
+            "j.arnold@innovatepharma.com"
+          ],
+          "subject": "SIV Follow-Up Letter & Action Items - Protocol INN451 - Site 101 University Health",
+          "timestamp": "2023-09-21T15:30:00Z",
+          "body": "Dear Dr. Harding and Robert,\n\nI hope you are both well.\n\nThank you again for your team's time and engagement during the Site Initiation Visit for study INN451 on Tuesday, September 19th. It was a pleasure meeting everyone and we are excited to partner with University Health on this important trial.\n\nAs discussed, I have attached the formal SIV Follow-Up letter which summarizes the topics we covered. For your convenience, I have also listed the key outstanding action items below. Please note that all items must be resolved before the site can be activated for screening and enrollment.\n\nOutstanding Action Items:\n1.  **Submit Final IRB Approval Letter:** Please provide the final, dated approval letter from the central IRB. (Responsibility: Robert Muldoon)\n2.  **Complete Staff Training Logs:** Ensure all staff listed on the Delegation of Authority Log have completed and signed the protocol training log. (Responsibility: Robert Muldoon)\n3.  **Confirm IP Freezer Temperature Logs:** Please provide the last 30 days of temperature logs for the -20C freezer where the Investigational Product will be stored. (Responsibility: Site Pharmacy)\n4.  **Finalize Contract Budget Exhibit C:** Our legal team is awaiting the final sign-off on Exhibit C to execute the Clinical Trial Agreement. (Responsibility: Site Contracts Dept.)\n\nI have also attached the final versions of the Pharmacy Manual and Laboratory Manual for your team's reference. Please ensure these are distributed to the relevant departments.\n\nWe are eager to get your site up and running. Please let me know if you have any questions or if there is anything I can do to help facilitate the completion of these items.\n\nBest regards,\n\nKaren Miller\nClinical Research Associate\nInnovate Pharma\nkaren.miller@innovatepharma.com\n(555) 123-4567",
+          "attachments": [
+            "INN451_SIV_Follow_Up_Letter_Site101.pdf",
+            "INN451_Pharmacy_Manual_v2.1.pdf",
+            "INN451_Laboratory_Manual_v3.0.pdf"
+          ],
+          "message_id": 1,
+          "in_reply_to": null
+        },
+        {
+          "from_address": "r.muldoon@universityhealth.edu",
+          "to_addresses": [
+            "karen.miller@innovatepharma.com"
+          ],
+          "cc_addresses": [
+            "s.harding@universityhealth.edu",
+            "j.arnold@innovatepharma.com"
+          ],
+          "subject": "Re: SIV Follow-Up Letter & Action Items - Protocol INN451 - Site 101 University Health",
+          "timestamp": "2023-09-22T11:00:00Z",
+          "body": "Hi Karen,\n\nThanks for sending this over so promptly. The letter is a great summary of our discussion.\n\nHere is a quick update on the action items:\n\n1.  **IRB Approval:** We received the final letter this morning. I have attached it to this email.\n2.  **Training Logs:** All logs are now complete and filed in the Investigator Site File. I can send you scanned copies if needed.\n3.  **Temp Logs:** Our pharmacist is pulling those now and will send them to me this afternoon. I will forward them to you EOD.\n4.  **CTA:** I've followed up with our contracts office. They confirmed they have everything they need and expect to return the executed version by Monday.\n\nWe have received and reviewed the manuals. Everything looks clear.\n\nWe look forward to getting activated next week.\n\nBest,\n\nRobert Muldoon\nClinical Research Coordinator\nUniversity Health",
+          "attachments": [
+            "Site101_Final_IRB_Approval_INN451.pdf"
+          ],
+          "message_id": 2,
+          "in_reply_to": 1
+        },
+        {
+          "from_address": "karen.miller@innovatepharma.com",
+          "to_addresses": [
+            "r.muldoon@universityhealth.edu"
+          ],
+          "cc_addresses": [
+            "s.harding@universityhealth.edu",
+            "j.arnold@innovatepharma.com"
+          ],
+          "subject": "Re: SIV Follow-Up Letter & Action Items - Protocol INN451 - Site 101 University Health",
+          "timestamp": "2023-09-22T13:45:00Z",
+          "body": "Hi Robert,\n\nThis is fantastic news! Thank you for the quick turnaround and for the attached IRB approval letter. I have forwarded it to our TMF specialist.\n\nNo need to send the training logs now; I will review them during the next monitoring visit. Please do send the temperature logs when you have them.\n\nOnce we receive the temperature logs and the executed CTA, we will be able to issue the official Site Activation notice.\n\nExcellent work by you and your team. We are very excited to have you on board.\n\nBest regards,\n\nKaren Miller\nClinical Research Associate\nInnovate Pharma",
+          "attachments": [],
+          "message_id": 3,
+          "in_reply_to": 2
+        }
+      ],
+      "role_descriptions": [
+        "karen.miller@innovatepharma.com: Sponsor, Clinical Research Associate",
+        "j.arnold@innovatepharma.com: Sponsor, Clinical Trial Manager",
+        "s.harding@universityhealth.edu: Site, Principal Investigator",
+        "r.muldoon@universityhealth.edu: Site, Clinical Research Coordinator"
+      ],
+      "description": "The CRA sends a Site Initiation Visit (SIV) follow-up letter to a newly activated site. The email summarizes the topics covered during the visit, lists the outstanding action items required before the site can screen their first patient, and attaches key study documents like the pharmacy manual and lab manual for their reference."
+    },
+    {
+      "emails": [
+        {
+          "from_address": "brenda.walsh@westwoodcrc.com",
           "to_addresses": [
             "david.chen@innovatepharma.com"
           ],
-          "cc_addresses": [
-            "study.xyz123@innovatepharma.com"
-          ],
-          "subject": "Query - Protocol XYZ123 - Site 101 - Unblinding & Transition to Part C",
-          "timestamp": "2023-10-26T10:15:00Z",
-          "body": "Hi David,\n\nHope you are having a good week.\n\nWe have a patient (101-004) who is approaching their final visit in the double-blind Part B of the study. We are preparing for their potential transition to the open-label extension (Part C) and would appreciate some clarification on the specific procedures.\n\nCould you please provide a step-by-step guide or point us to the exact section in the protocol/pharmacy manual that details the unblinding process within the IXRS system? We want to ensure we follow the correct procedure for unblinding the patient's Part B treatment assignment and transitioning them to the open-label drug supply for Part C.\n\nAny specific guidance on documentation requirements for this transition would also be very helpful.\n\nThank you for your support.\n\nBest regards,\n\nSarah Jenkins, CCRC\nClinical Research Coordinator\nUniversity Health Center\nSite 101",
+          "cc_addresses": [],
+          "subject": "Query - Study INN-123 - Site 101 - Subject HV-004 Lab Result",
+          "timestamp": "2023-10-26T10:15:00-05:00",
+          "body": "Hi David,\n\nHope you are having a good week.\n\nWe have an automated query in the Medidata EDC for subject HV-004, a healthy volunteer in Part A. The query is for an out-of-range Alanine Aminotransferase (ALT) value of 52 U/L from the Week 4 visit. The upper limit of normal is 50 U/L.\n\nThe subject is asymptomatic and all other liver function tests are within the normal range. Can you please advise if this is considered clinically significant and provide guidance on how to resolve the query?\n\nQuery ID: 884321\n\nThanks for your help,\n\nBrenda Walsh\nClinical Research Coordinator\nWestwood Clinical Research Center",
           "attachments": [],
-          "message_id": 98501,
+          "message_id": 101,
           "in_reply_to": null
         },
         {
           "from_address": "david.chen@innovatepharma.com",
           "to_addresses": [
-            "s.jenkins@universityhealth.org"
+            "brenda.walsh@westwoodcrc.com"
           ],
           "cc_addresses": [
-            "study.xyz123@innovatepharma.com",
-            "lisa.wong@innovatepharma.com"
+            "sarah.jenkins.md@innovatepharma.com"
           ],
-          "subject": "RE: Query - Protocol XYZ123 - Site 101 - Unblinding & Transition to Part C",
-          "timestamp": "2023-10-26T14:30:00Z",
-          "body": "Hi Sarah,\n\nThanks for reaching out and for your proactive planning. This is an important process to get right.\n\nThe detailed procedures for unblinding and transitioning to Part C are outlined in Protocol v4.0, Section 8.5. I have also attached a quick reference guide that our team created which summarizes the IXRS steps.\n\nIn short, the process is as follows:\n1.  Confirm all Part B end-of-treatment assessments are complete and the patient has consented for Part C.\n2.  The designated unblinded site staff (e.g., Pharmacist) must log into the IXRS.\n3.  Navigate to the 'Unblinding' module for patient 101-004.\n4.  Follow the on-screen prompts to confirm the unblinding request. The system will then reveal the treatment assignment from Part B.\n5.  This event must be documented on the Unblinding Log and in the patient's source notes.\n6.  Once unblinded, you can then proceed with the 'Transition to Open-Label' workflow in IXRS to have the first Part C drug kit assigned.\n\nPlease ensure the eCRF is updated accordingly to reflect the completion of Part B and the start of Part C.\n\nLet me know if you have any further questions after reviewing the attached guide.\n\nBest,\n\nDavid Chen\nClinical Research Associate\nInnovate Pharma",
-          "attachments": [
-            "XYZ123_Part_C_Transition_and_Unblinding_Guide_v1.2.pdf"
-          ],
-          "message_id": 98502,
-          "in_reply_to": 98501
-        },
-        {
-          "from_address": "s.jenkins@universityhealth.org",
-          "to_addresses": [
-            "david.chen@innovatepharma.com"
-          ],
-          "cc_addresses": [
-            "study.xyz123@innovatepharma.com",
-            "lisa.wong@innovatepharma.com"
-          ],
-          "subject": "RE: Query - Protocol XYZ123 - Site 101 - Unblinding & Transition to Part C",
-          "timestamp": "2023-10-27T09:05:00Z",
-          "body": "Hi David,\n\nThis is perfect. Thank you so much for the clear explanation and for providing the reference guide. This is exactly what we needed.\n\nWe will review the materials thoroughly and proceed as instructed for the patient's upcoming visit.\n\nBest regards,\n\nSarah Jenkins, CCRC\nClinical Research Coordinator\nUniversity Health Center\nSite 101",
+          "subject": "RE: Query - Study INN-123 - Site 101 - Subject HV-004 Lab Result",
+          "timestamp": "2023-10-26T14:30:00-05:00",
+          "body": "Hi Brenda,\n\nThank you for flagging this.\n\nI have reviewed the data and consulted with our Medical Monitor, Dr. Jenkins (cc'd). Given that this is a minor elevation (1.04x ULN) in an asymptomatic healthy volunteer with all other LFTs being normal, this finding is considered Not Clinically Significant (NCS).\n\nPlease close the query in Medidata with the following comment: \"Value confirmed as accurate. Per sponsor, this is not clinically significant.\"\n\nLet me know if you have any further questions.\n\nBest regards,\n\nDavid Chen\nClinical Research Associate\nInnovate Pharma",
           "attachments": [],
-          "message_id": 98503,
-          "in_reply_to": 98502
-        }
-      ],
-      "role_descriptions": [
-        "s.jenkins@universityhealth.org: Site, Clinical Research Coordinator",
-        "david.chen@innovatepharma.com: Sponsor, Clinical Research Associate",
-        "lisa.wong@innovatepharma.com: Sponsor, Clinical Project Manager"
-      ],
-      "description": "A thread initiated by a Clinical Research Coordinator (CRC) asking for clarification on the specific procedures for unblinding and transitioning a patient from the double-blind Part B to the open-label extension (Part C)."
-    },
-    {
-      "emails": [
-        {
-          "from_address": "sarah.jenkins@innovatepharma.com",
-          "to_addresses": [
-            "eleanor.vance@oakvalleyresearch.com"
-          ],
-          "cc_addresses": [
-            "mark.rivera@oakvalleyresearch.com",
-            "david.chen@innovatepharma.com"
-          ],
-          "subject": "URGENT Follow-Up: Missing Causality Assessment - SAE Report for HV-004 - Study IPN-123",
-          "timestamp": "2023-11-06T10:05:00Z",
-          "body": "Dear Dr. Vance,\n\nI hope this email finds you well.\n\nThis is an urgent follow-up regarding the Serious Adverse Event (SAE) report for subject HV-004 in Part A, submitted on November 3rd.\n\nUpon review, we found that the causality assessment section on the form is incomplete. This information is critical and required for an upcoming safety report with a strict deadline.\n\nPlease find the submitted report attached for your reference. Could you please provide your assessment of the event's relationship to the investigational product at your earliest convenience?\n\nThank you for your prompt attention to this critical matter.\n\nBest regards,\n\nSarah Jenkins\nClinical Research Associate\nInnovatePharma",
-          "attachments": [
-            "IPN-123_HV-004_SAE_Report_Form_Incomplete.pdf"
-          ],
-          "message_id": 1,
-          "in_reply_to": null
-        },
-        {
-          "from_address": "mark.rivera@oakvalleyresearch.com",
-          "to_addresses": [
-            "sarah.jenkins@innovatepharma.com"
-          ],
-          "cc_addresses": [
-            "eleanor.vance@oakvalleyresearch.com",
-            "david.chen@innovatepharma.com"
-          ],
-          "subject": "Re: URGENT Follow-Up: Missing Causality Assessment - SAE Report for HV-004 - Study IPN-123",
-          "timestamp": "2023-11-06T10:25:00Z",
-          "body": "Hi Sarah,\n\nThank you for flagging this. I have just spoken with Dr. Vance between patients, and she will review and respond shortly.\n\nBest,\n\nMark Rivera\nClinical Research Coordinator\nOak Valley Clinical Research",
-          "attachments": [],
-          "message_id": 2,
-          "in_reply_to": 1
-        },
-        {
-          "from_address": "eleanor.vance@oakvalleyresearch.com",
-          "to_addresses": [
-            "sarah.jenkins@innovatepharma.com"
-          ],
-          "cc_addresses": [
-            "mark.rivera@oakvalleyresearch.com",
-            "david.chen@innovatepharma.com"
-          ],
-          "subject": "Re: URGENT Follow-Up: Missing Causality Assessment - SAE Report for HV-004 - Study IPN-123",
-          "timestamp": "2023-11-06T11:15:00Z",
-          "body": "All,\n\nMy apologies for this oversight. Thank you for the prompt follow-up.\n\nAfter reviewing the case, my assessment is that the SAE (acute kidney injury) is **possibly related** to the investigational product.\n\nMark, please update the source documentation and the official SAE form with this assessment and resubmit to the Sponsor today.\n\nRegards,\n\nDr. Eleanor Vance\nPrincipal Investigator\nOak Valley Clinical Research",
-          "attachments": [],
-          "message_id": 3,
-          "in_reply_to": 2
-        },
-        {
-          "from_address": "sarah.jenkins@innovatepharma.com",
-          "to_addresses": [
-            "eleanor.vance@oakvalleyresearch.com"
-          ],
-          "cc_addresses": [
-            "mark.rivera@oakvalleyresearch.com",
-            "david.chen@innovatepharma.com"
-          ],
-          "subject": "Re: URGENT Follow-Up: Missing Causality Assessment - SAE Report for HV-004 - Study IPN-123",
-          "timestamp": "2023-11-06T11:22:00Z",
-          "body": "Dear Dr. Vance,\n\nThank you very much for your swift response and for providing the causality assessment. This is exactly what we needed.\n\nWe can now proceed with our safety reporting. We will look out for the updated form from Mark.\n\nWe appreciate your team's quick action on this.\n\nBest regards,\n\nSarah Jenkins\nClinical Research Associate\nInnovatePharma",
-          "attachments": [],
-          "message_id": 4,
-          "in_reply_to": 3
-        }
-      ],
-      "role_descriptions": [
-        "sarah.jenkins@innovatepharma.com: Sponsor, Clinical Research Associate",
-        "david.chen@innovatepharma.com: Sponsor, Medical Monitor",
-        "eleanor.vance@oakvalleyresearch.com: Site, Principal Investigator",
-        "mark.rivera@oakvalleyresearch.com: Site, Clinical Research Coordinator"
-      ],
-      "description": "An urgent follow-up with a principal investigator regarding a Serious Adverse Event (SAE) report for a healthy volunteer in Part A that has missing causality assessment information required for the safety report."
-    },
-    {
-      "emails": [
-        {
-          "from_address": "david.chen@ucsf.edu",
-          "to_addresses": [
-            "lisa.jones@denalitherapeutics.com"
-          ],
-          "cc_addresses": [
-            "sara.khan@syneos.com"
-          ],
-          "subject": "URGENT: Temperature Excursion Alert - Study DNL593-001 - Site 101 (UCSF) - Shipment SH-481516",
-          "timestamp": "2023-05-22T09:15:00-07:00",
-          "body": "Hi Lisa,\n\nHope you are well.\n\nWe received shipment SH-481516 for the DNL593-001 study this morning. Upon unpacking, the temperature monitoring device indicated an excursion alert.\n\nThe shipment has been immediately placed in quarantine in our pharmacy as per protocol. Please find the downloaded temperature log attached for your review.\n\nCould you please advise on the next steps and whether the investigational product is viable for use?\n\nBest regards,\n\nDavid Chen\nStudy Coordinator\nUniversity of California, San Francisco (UCSF) Memory and Aging Center",
-          "attachments": [
-            "TempLog_SH-481516.pdf"
-          ],
-          "message_id": 101,
-          "in_reply_to": null
-        },
-        {
-          "from_address": "lisa.jones@denalitherapeutics.com",
-          "to_addresses": [
-            "kevin.miller@denalitherapeutics.com"
-          ],
-          "cc_addresses": [
-            "david.chen@ucsf.edu",
-            "sara.khan@syneos.com"
-          ],
-          "subject": "Fwd: URGENT: Temperature Excursion Alert - Study DNL593-001 - Site 101 (UCSF) - Shipment SH-481516",
-          "timestamp": "2023-05-22T09:45:00-07:00",
-          "body": "Hi Kevin,\n\nPlease see the urgent notification below from UCSF (Site 101) regarding a temperature excursion for an IP shipment.\n\nCould you or someone from the Clinical Supply team please review the attached temperature log and provide an assessment on the viability of the DNL593/Placebo kits in shipment SH-481516?\n\nThe site has correctly quarantined the product pending our guidance.\n\nThanks for your prompt attention to this.\n\nBest,\n\nLisa Jones\nClinical Research Associate\nDenali Therapeutics",
-          "attachments": [
-            "TempLog_SH-481516.pdf"
-          ],
           "message_id": 102,
           "in_reply_to": 101
-        },
-        {
-          "from_address": "kevin.miller@denalitherapeutics.com",
-          "to_addresses": [
-            "lisa.jones@denalitherapeutics.com"
-          ],
-          "cc_addresses": [
-            "david.chen@ucsf.edu",
-            "sara.khan@syneos.com"
-          ],
-          "subject": "RE: URGENT: Temperature Excursion Alert - Study DNL593-001 - Site 101 (UCSF) - Shipment SH-481516",
-          "timestamp": "2023-05-22T11:30:00-07:00",
-          "body": "Hi Lisa,\n\nThank you for flagging this. We have reviewed the temperature data for shipment SH-481516.\n\nThe excursion was for a brief period and remained within the product's stability limits. The investigational product is deemed viable and acceptable for use in the study.\n\nPlease find the official Viability Statement attached. The site should file this with their pharmacy records for the shipment.\n\nLet me know if you need anything else.\n\nRegards,\n\nKevin Miller\nManager, Clinical Supply\nDenali Therapeutics",
-          "attachments": [
-            "Viability_Statement_SH-481516.pdf"
-          ],
-          "message_id": 103,
-          "in_reply_to": 102
-        },
-        {
-          "from_address": "lisa.jones@denalitherapeutics.com",
-          "to_addresses": [
-            "david.chen@ucsf.edu"
-          ],
-          "cc_addresses": [
-            "kevin.miller@denalitherapeutics.com",
-            "sara.khan@syneos.com"
-          ],
-          "subject": "RE: URGENT: Temperature Excursion Alert - Study DNL593-001 - Site 101 (UCSF) - Shipment SH-481516",
-          "timestamp": "2023-05-22T11:45:00-07:00",
-          "body": "Hi David,\n\nThank you for your prompt action in quarantining the shipment and notifying us.\n\nOur Clinical Supply team has reviewed the temperature log and has confirmed that the product is viable and may be used. Please see the attached Viability Statement for your records.\n\nYou can now release the IP from quarantine and move it to your standard temperature-controlled storage. Please file the attached statement in the pharmacy binder for this shipment.\n\nWe appreciate your diligence.\n\nBest regards,\n\nLisa Jones\nClinical Research Associate\nDenali Therapeutics",
-          "attachments": [
-            "Viability_Statement_SH-481516.pdf"
-          ],
-          "message_id": 104,
-          "in_reply_to": 103
         }
       ],
       "role_descriptions": [
-        "lisa.jones@denalitherapeutics.com: Sponsor, Clinical Research Associate",
-        "david.chen@ucsf.edu: Site, Study Coordinator",
-        "kevin.miller@denalitherapeutics.com: Sponsor, Clinical Supply Manager",
-        "sara.khan@syneos.com: CRO, Clinical Trial Assistant"
+        "david.chen@innovatepharma.com: Sponsor, Clinical Research Associate",
+        "brenda.walsh@westwoodcrc.com: Site, Clinical Research Coordinator",
+        "sarah.jenkins.md@innovatepharma.com: Sponsor, Medical Monitor"
       ],
-      "description": "A discussion with a site about a temperature excursion alert for a shipment of DNL593/Placebo, requiring coordination with the clinical supply team to determine if the investigational product is viable for use."
+      "description": "A site coordinator emails the CRA with a question about a specific lab result for a healthy volunteer in Part A that is flagged as out-of-range in the EDC system. The CRA investigates the query, consults with the study's medical monitor, and responds to the site confirming that the value is not clinically significant and provides instructions on how to close the query."
     },
     {
       "emails": [
         {
-          "from_address": "sarah.jones@innovatepharma.com",
+          "from_address": "david.chen@stellarispharma.com",
           "to_addresses": [
-            "b.starr@maplewoodresearch.org",
-            "a.grant@maplewoodresearch.org"
+            "sarah.jenkins@stellarispharma.com"
           ],
           "cc_addresses": [
-            "david.chen@innovatepharma.com"
+            "maria.garcia@stellarispharma.com",
+            "brenda.wallace@stellarispharma.com"
           ],
-          "subject": "Study INP-FTD-201 - Part B Screening at Site 101 - Maplewood Clinical Research",
-          "timestamp": "2023-10-26T10:15:00Z",
-          "body": "Dear Dr. Grant and Brenda,\n\nI hope this email finds you well.\n\nFirst, I want to reiterate our appreciation for your team's outstanding recruitment efforts in Part A of the INP-FTD-201 study. Maplewood has consistently been one of our top-performing sites, and we are very grateful for your hard work.\n\nAs we've transitioned into Part B, I've been reviewing the weekly screening logs and noticed a significant drop-off in potential subjects being screened at your site over the past three weeks. \n\nWe know that Part B has more specific criteria, but given your past success, I wanted to reach out proactively to see if you've encountered any specific barriers or challenges. Are you seeing fewer potential FTD patients, or are there other factors at play?\n\nI would be happy to schedule a brief call next week to discuss this further and brainstorm any strategies or resources we at InnovatePharma could provide to support your recruitment efforts. Please let me know what day and time might work for you and the team.\n\nThank you again for your continued partnership.\n\nBest regards,\n\nSarah Jones\nClinical Research Associate\nInnovatePharma\nsarah.jones@innovatepharma.com",
+          "subject": "Notice of Routine Quality Audit - Protocol SP-101, Site 105 (Maple Creek Clinical Research)",
+          "timestamp": "2023-10-23T09:15:00Z",
+          "body": "Hi Sarah,\n\nThis email is to formally notify you that Site 105, Maple Creek Clinical Research (PI: Dr. Alan Grant), has been selected for a routine quality assurance audit for study SP-101.\n\nWe are proposing the audit take place over two days during the week of November 13th or November 20th, 2023. \n\nPlease liaise with the site to determine their availability during these weeks. Once we have a potential date, I will send a formal agenda and confirmation.\n\nThank you for your cooperation.\n\nBest regards,\n\nDavid Chen\nSenior QA Auditor\nStellaris Pharma",
           "attachments": [],
           "message_id": 1,
           "in_reply_to": null
         },
         {
-          "from_address": "b.starr@maplewoodresearch.org",
+          "from_address": "sarah.jenkins@stellarispharma.com",
           "to_addresses": [
-            "sarah.jones@innovatepharma.com"
+            "agrant@maplecreekresearch.com",
+            "ecarter@maplecreekresearch.com"
           ],
           "cc_addresses": [
-            "a.grant@maplewoodresearch.org",
-            "david.chen@innovatepharma.com"
+            "david.chen@stellarispharma.com",
+            "maria.garcia@stellarispharma.com"
           ],
-          "subject": "RE: Study INP-FTD-201 - Part B Screening at Site 101 - Maplewood Clinical Research",
-          "timestamp": "2023-10-27T14:30:00Z",
-          "body": "Hi Sarah,\n\nThank you for reaching out and for your kind words about our work on Part A.\n\nWe have also noted the slowdown in screening for Part B and appreciate you contacting us. Dr. Grant and I were just discussing this yesterday. We believe it's a combination of a few factors. The exclusion criteria for Part B are proving to be quite restrictive for our local patient population, particularly the comorbidity requirements. Additionally, a new observational FTD study just opened at University Hospital across town, and it seems to be drawing from the same patient referral network.\n\nWe would welcome a call to discuss this. We want to get back on track. Would you be available next Tuesday, October 31st, in the morning? Anytime between 9 AM and 11 AM ET would work for us.\n\nBest,\n\nBrenda Starr\nStudy Coordinator\nMaplewood Clinical Research\nb.starr@maplewoodresearch.org",
+          "subject": "Fwd: Notice of Routine Quality Audit - Protocol SP-101, Site 105 (Maple Creek Clinical Research)",
+          "timestamp": "2023-10-23T11:30:00Z",
+          "body": "Dear Dr. Grant and Emily,\n\nPlease see the notification below from our Quality Assurance department. Your site has been selected for a routine quality audit for the SP-101 study.\n\nAs noted, this is a standard procedure. The proposed dates are during the weeks of Nov 13th or Nov 20th. Could you please review your calendars and let me know your team's availability for a two-day period within that timeframe?\n\nI am here to support you in preparing for the audit. Once we confirm a date, I will send over a preparation checklist to help guide your team.\n\nPlease let me know if you have any immediate questions.\n\nBest,\n\nSarah Jenkins\nClinical Research Associate\nStellaris Pharma\n\n--- Forwarded Message ---\nFrom: david.chen@stellarispharma.com\nTo: sarah.jenkins@stellarispharma.com\nSubject: Notice of Routine Quality Audit - Protocol SP-101, Site 105 (Maple Creek Clinical Research)\nDate: 2023-10-23T09:15:00Z\n\n...",
           "attachments": [],
           "message_id": 2,
           "in_reply_to": 1
         },
         {
-          "from_address": "sarah.jones@innovatepharma.com",
+          "from_address": "ecarter@maplecreekresearch.com",
           "to_addresses": [
-            "b.starr@maplewoodresearch.org"
+            "sarah.jenkins@stellarispharma.com"
           ],
           "cc_addresses": [
-            "a.grant@maplewoodresearch.org",
-            "david.chen@innovatepharma.com"
+            "agrant@maplecreekresearch.com",
+            "david.chen@stellarispharma.com",
+            "maria.garcia@stellarispharma.com"
           ],
-          "subject": "RE: Study INP-FTD-201 - Part B Screening at Site 101 - Maplewood Clinical Research",
-          "timestamp": "2023-10-27T16:05:00Z",
-          "body": "Hi Brenda,\n\nThank you for the prompt and transparent reply. That context is very helpful, and we understand the challenges posed by competing studies and stringent criteria.\n\nNext Tuesday at 10:00 AM ET works perfectly for me. I will send a calendar invitation shortly with a proposed agenda, which will include discussing potential community outreach and reviewing the pre-screening checklist to help identify eligible patients more efficiently.\n\nWe are confident that by working together, we can find effective solutions.\n\nBest regards,\n\nSarah Jones\nClinical Research Associate\nInnovatePharma\nsarah.jones@innovatepharma.com",
-          "attachments": [],
-          "message_id": 3,
-          "in_reply_to": 2
-        }
-      ],
-      "role_descriptions": [
-        "sarah.jones@innovatepharma.com: Sponsor, Clinical Research Associate",
-        "david.chen@innovatepharma.com: Sponsor, Clinical Trial Manager",
-        "b.starr@maplewoodresearch.org: Site, Study Coordinator",
-        "a.grant@maplewoodresearch.org: Site, Principal Investigator"
-      ],
-      "description": "An email to a high-performing site that has had a sudden drop in screening for Part B, inquiring about potential barriers and discussing strategies to boost recruitment of FTD patients."
-    },
-    {
-      "emails": [
-        {
-          "from_address": "sarah.jenkins@pinnaclepharma.com",
-          "to_addresses": [
-            "maria.garcia@universityhealth.edu"
-          ],
-          "cc_addresses": [
-            "robert.miller@universityhealth.edu",
-            "david.chen@pinnaclepharma.com",
-            "kevin.lee@synergyclinical.com"
-          ],
-          "subject": "URGENT Action Required: Overdue Data Queries for Study PNCL-201 at Site 101 - Approaching Database Lock",
-          "timestamp": "2023-10-26T10:05:00Z",
-          "body": "Dear Maria,\n\nI hope this email finds you well.\n\nI am writing to follow up on the significant number of overdue data queries for study PNCL-201 at University Health Center. As of this morning, there are 127 queries outstanding for more than 30 days in the Medidata Rave EDC system.\n\nAs you know, we are rapidly approaching the database lock for the Part A interim analysis, scheduled for November 15th. It is critical that all data is clean and all queries are resolved well in advance of this deadline to ensure data integrity for the analysis.\n\nI have attached a line listing of the overdue queries for your convenience. Could you please review this list and provide a plan for resolution by the end of this week? Please let us know what resources you need and if there are any major issues preventing your team from addressing these.\n\nWe are happy to schedule a call to walk through the queries if that would be helpful.\n\nThank you for your immediate attention to this critical matter.\n\nBest regards,\n\nSarah Jenkins\nClinical Research Associate\nPinnacle Pharma\nsarah.jenkins@pinnaclepharma.com",
-          "attachments": [
-            "PNCL-201_Site101_Overdue_Queries_20231026.xlsx"
-          ],
-          "message_id": 1,
-          "in_reply_to": null
-        },
-        {
-          "from_address": "maria.garcia@universityhealth.edu",
-          "to_addresses": [
-            "sarah.jenkins@pinnaclepharma.com"
-          ],
-          "cc_addresses": [
-            "robert.miller@universityhealth.edu",
-            "david.chen@pinnaclepharma.com",
-            "kevin.lee@synergyclinical.com"
-          ],
-          "subject": "Re: URGENT Action Required: Overdue Data Queries for Study PNCL-201 at Site 101 - Approaching Database Lock",
-          "timestamp": "2023-10-26T14:22:00Z",
-          "body": "Hi Sarah,\n\nThank you for your email and for providing the query list. My apologies for the delay in resolving these.\n\nWe have had some unexpected staffing shortages over the past month which has led to this backlog. I have reviewed the list with Dr. Miller, and we have prioritized this task. I will be dedicating my time exclusively to resolving these queries for the remainder of this week and next.\n\nOur plan is to have at least 60% of the queries resolved by EOD Tuesday, October 31st, with the remainder completed by Monday, November 6th. This should give us ample time before the database lock.\n\nI will provide you with a status update on Tuesday.\n\nBest,\n\nMaria Garcia\nClinical Data Manager\nUniversity Health Center",
-          "attachments": [],
-          "message_id": 2,
-          "in_reply_to": 1
-        },
-        {
-          "from_address": "sarah.jenkins@pinnaclepharma.com",
-          "to_addresses": [
-            "maria.garcia@universityhealth.edu"
-          ],
-          "cc_addresses": [
-            "robert.miller@universityhealth.edu",
-            "david.chen@pinnaclepharma.com",
-            "kevin.lee@synergyclinical.com"
-          ],
-          "subject": "Re: URGENT Action Required: Overdue Data Queries for Study PNCL-201 at Site 101 - Approaching Database Lock",
-          "timestamp": "2023-10-26T16:50:00Z",
-          "body": "Hi Maria,\n\nThank you for the prompt response and for outlining your plan. We understand that staffing issues can be challenging, and we appreciate you prioritizing this.\n\nThe timeline you've proposed is acceptable. Please keep us updated on your progress, and don't hesitate to reach out if you encounter any queries that require clarification from our data management or medical monitoring teams.\n\nWe look forward to your update on Tuesday.\n\nThanks again for your commitment to resolving this.\n\nBest regards,\n\nSarah Jenkins\nClinical Research Associate\nPinnacle Pharma\nsarah.jenkins@pinnaclepharma.com",
-          "attachments": [],
-          "message_id": 3,
-          "in_reply_to": 2
-        }
-      ],
-      "role_descriptions": [
-        "sarah.jenkins@pinnaclepharma.com: Sponsor, Clinical Research Associate",
-        "maria.garcia@universityhealth.edu: Site, Clinical Data Manager",
-        "robert.miller@universityhealth.edu: Site, Principal Investigator",
-        "david.chen@pinnaclepharma.com: Sponsor, Clinical Project Manager",
-        "kevin.lee@synergyclinical.com: CRO, Clinical Research Associate"
-      ],
-      "description": "A thread with a site's data manager to address a large backlog of overdue data queries in the EDC system, emphasizing the need for timely resolution before an upcoming database lock for a Part A analysis."
-    },
-    {
-      "emails": [
-        {
-          "from_address": "sarah.miller@pharmacorp.com",
-          "to_addresses": [
-            "m.garcia@cghospital.org"
-          ],
-          "cc_addresses": [
-            "david.chen@clinixcro.com",
-            "r.jones.pi@cghospital.org"
-          ],
-          "subject": "Interim Monitoring Visit Scheduling - Protocol PH-123, Site 045",
-          "timestamp": "2023-10-23T10:05:00Z",
-          "body": "Hi Maria,\n\nI hope you are having a good week.\n\nI am writing to coordinate the next interim monitoring visit (IMV) for the PH-123 study. I would like to propose the following dates for a 2-day on-site visit:\n\n- November 14-15\n- November 20-21\n- November 28-29\n\nPlease let me know which of these dates works best for you and the site staff.\n\nTo help streamline the on-site activities, we are exploring the possibility of conducting some source data verification remotely ahead of the visit. Could you please let me know if City General Hospital provides temporary, read-only access to your EMR system for monitors? If so, what is the process to request access? I am happy to complete any required training or sign necessary confidentiality agreements.\n\nLooking forward to hearing from you.\n\nBest regards,\n\nSarah Miller\nClinical Research Associate\nPharmaCorp\nsarah.miller@pharmacorp.com",
-          "attachments": [],
-          "message_id": 1,
-          "in_reply_to": null
-        },
-        {
-          "from_address": "m.garcia@cghospital.org",
-          "to_addresses": [
-            "sarah.miller@pharmacorp.com"
-          ],
-          "cc_addresses": [
-            "david.chen@clinixcro.com",
-            "r.jones.pi@cghospital.org"
-          ],
-          "subject": "Re: Interim Monitoring Visit Scheduling - Protocol PH-123, Site 045",
-          "timestamp": "2023-10-23T14:30:00Z",
-          "body": "Hi Sarah,\n\nThanks for reaching out. The dates of November 20-21 would work well for us. We will reserve a room for you on those days.\n\nRegarding remote EMR access, our institution does allow this. The process requires you to complete our online IT security and HIPAA training module and sign our institutional Remote Access Agreement. I have attached the agreement form for you to review and sign. I will send a separate email with the link to the training module.\n\nPlease send me the list of patient charts you wish to review at your earliest convenience so we can prepare them.\n\nBest,\n\nMaria Garcia\nStudy Coordinator\nCity General Hospital\nm.garcia@cghospital.org",
-          "attachments": [
-            "CGH_Remote_Access_Agreement_Monitors.pdf"
-          ],
-          "message_id": 2,
-          "in_reply_to": 1
-        },
-        {
-          "from_address": "sarah.miller@pharmacorp.com",
-          "to_addresses": [
-            "m.garcia@cghospital.org"
-          ],
-          "cc_addresses": [
-            "david.chen@clinixcro.com",
-            "r.jones.pi@cghospital.org"
-          ],
-          "subject": "Re: Interim Monitoring Visit Scheduling - Protocol PH-123, Site 045",
-          "timestamp": "2023-10-24T09:15:00Z",
-          "body": "Hi Maria,\n\nThat's great news. I will book my travel for November 20-21. Thank you for reserving a room.\n\nI have received the Remote Access Agreement and will review, sign, and return it by the end of the day. I will also be on the lookout for the training module link.\n\nI will send the list of subjects for review by this Friday. Thanks for all your help in coordinating this.\n\nBest regards,\n\nSarah Miller\nClinical Research Associate\nPharmaCorp\nsarah.miller@pharmacorp.com",
-          "attachments": [],
-          "message_id": 3,
-          "in_reply_to": 2
-        }
-      ],
-      "role_descriptions": [
-        "sarah.miller@pharmacorp.com: Sponsor, Clinical Research Associate",
-        "m.garcia@cghospital.org: Site, Study Coordinator",
-        "david.chen@clinixcro.com: CRO, Clinical Trial Manager",
-        "r.jones.pi@cghospital.org: Site, Principal Investigator"
-      ],
-      "description": "An email exchange to coordinate the scheduling and logistics for an upcoming interim monitoring visit, including a request for remote access to the site's electronic medical records."
-    },
-    {
-      "emails": [
-        {
-          "from_address": "alan.turing@universityhealth.edu",
-          "to_addresses": [
-            "samantha.carter@pharmatech.com"
-          ],
-          "cc_addresses": [
-            "eleanor.vance@universityhealth.edu",
-            "robert.fischer@universityhealth.edu"
-          ],
-          "subject": "URGENT Query: DNL593 Study - IP Accountability Discrepancy at Site 701",
-          "timestamp": "2023-10-26T11:15:00Z",
-          "body": "Hi Samantha,\n\nHope you are well.\n\nDuring our routine monthly investigational product (IP) accountability check for the DNL593 study today, we identified a discrepancy.\n\nOur physical count shows 14 vials of DNL593 (active drug), but our accountability logs indicate we should have 15 vials on hand. The placebo count is accurate. We have double-checked all dispensing records, patient visit logs, and destruction records from the past month and cannot account for the missing vial.\n\nAttached is a scanned copy of our most recent accountability log for your review.\n\nPlease advise on the immediate next steps and any required documentation we need to complete on our end.\n\nBest regards,\n\nDr. Alan Turing, RPh\nLead Pharmacist\nUniversity Health Research Center\nSite 701",
-          "attachments": [
-            "Site701_DNL593_IP_Accountability_Log_Oct2023.pdf"
-          ],
-          "message_id": 58901,
-          "in_reply_to": null
-        },
-        {
-          "from_address": "samantha.carter@pharmatech.com",
-          "to_addresses": [
-            "alan.turing@universityhealth.edu"
-          ],
-          "cc_addresses": [
-            "eleanor.vance@universityhealth.edu",
-            "robert.fischer@universityhealth.edu",
-            "david.chen@pharmatech.com"
-          ],
-          "subject": "Re: URGENT Query: DNL593 Study - IP Accountability Discrepancy at Site 701",
-          "timestamp": "2023-10-26T13:30:00Z",
-          "body": "Hi Dr. Turing,\n\nThank you for your prompt notification and for providing the accountability log. I have received it and am escalating this to the study team for immediate review.\n\nAs a first step, please quarantine all remaining DNL593 and placebo stock for this study until we have a resolution. Please do not dispense any further IP.\n\nCould you please also prepare a brief deviation note in the site file detailing the discovery of this discrepancy? I will follow up by the end of the day with a formal IP Discrepancy Form for you to complete and any further instructions from the team.\n\nWe will work with you to resolve this as quickly as possible.\n\nBest,\n\nSamantha Carter\nClinical Research Associate\nPharmaTech Inc.",
-          "attachments": [],
-          "message_id": 58902,
-          "in_reply_to": 58901
-        },
-        {
-          "from_address": "alan.turing@universityhealth.edu",
-          "to_addresses": [
-            "samantha.carter@pharmatech.com"
-          ],
-          "cc_addresses": [
-            "eleanor.vance@universityhealth.edu",
-            "robert.fischer@universityhealth.edu",
-            "david.chen@pharmatech.com"
-          ],
-          "subject": "Re: URGENT Query: DNL593 Study - IP Accountability Discrepancy at Site 701",
-          "timestamp": "2023-10-26T14:05:00Z",
-          "body": "Hi Samantha,\n\nThank you for the clear instructions. We have quarantined all study IP as requested and will prepare the deviation note.\n\nWe will await the IP Discrepancy Form and your further guidance.\n\nRegards,\n\nDr. Alan Turing, RPh\nLead Pharmacist\nUniversity Health Research Center\nSite 701",
-          "attachments": [],
-          "message_id": 58903,
-          "in_reply_to": 58902
-        }
-      ],
-      "role_descriptions": [
-        "samantha.carter@pharmatech.com: Sponsor, Clinical Research Associate",
-        "david.chen@pharmatech.com: Sponsor, Clinical Trial Manager",
-        "alan.turing@universityhealth.edu: Site, Pharmacist",
-        "eleanor.vance@universityhealth.edu: Site, Study Coordinator",
-        "robert.fischer@universityhealth.edu: Site, Principal Investigator"
-      ],
-      "description": "A query from a site pharmacist about discrepancies found during the monthly investigational product accountability check for DNL593 and placebo."
-    },
-    {
-      "emails": [
-        {
-          "from_address": "john.miller@pharmatech.com",
-          "to_addresses": [
-            "sandra.chen@universityhospital.org"
-          ],
-          "cc_addresses": [
-            "lisa.wong@pharmatech.com",
-            "kevin.baker@pharmatech.com"
-          ],
-          "subject": "[PT-123] Follow-Up: Outstanding Essential Documents for TMF - Site 101",
-          "timestamp": "2024-05-10T11:30:00Z",
-          "body": "Hi Sandra,\n\nHope you are having a good week.\n\nI am writing to follow up on the outstanding essential documents for the new sub-investigators added to the study. As per our TMF review, we are still pending the following for Site 101:\n\n- Dr. Emily Carter: Updated Medical License\n- Dr. Frank Wright: Signed Financial Disclosure Form (FDF)\n\nCould you please provide these documents at your earliest convenience so we can ensure our Trial Master File is up to date and inspection-ready?\n\nThank you for your assistance.\n\nBest regards,\n\nJohn Miller\nClinical Research Associate\nPharmatech Inc.",
-          "attachments": [],
-          "message_id": 1,
-          "in_reply_to": null
-        },
-        {
-          "from_address": "sandra.chen@universityhospital.org",
-          "to_addresses": [
-            "john.miller@pharmatech.com"
-          ],
-          "cc_addresses": [
-            "lisa.wong@pharmatech.com",
-            "kevin.baker@pharmatech.com",
-            "robert.davis@universityhospital.org"
-          ],
-          "subject": "Re: [PT-123] Follow-Up: Outstanding Essential Documents for TMF - Site 101",
-          "timestamp": "2024-05-13T15:05:00Z",
-          "body": "Hi John,\n\nThanks for the reminder. Apologies for the delay.\n\nI have just followed up with both Dr. Carter and Dr. Wright. I expect to have both documents collected and sent over to you by the end of this week.\n\nI will keep you posted.\n\nBest,\n\nSandra Chen\nClinical Research Coordinator\nUniversity Hospital",
-          "attachments": [],
-          "message_id": 2,
-          "in_reply_to": 1
-        },
-        {
-          "from_address": "john.miller@pharmatech.com",
-          "to_addresses": [
-            "sandra.chen@universityhospital.org"
-          ],
-          "cc_addresses": [
-            "lisa.wong@pharmatech.com",
-            "kevin.baker@pharmatech.com",
-            "robert.davis@universityhospital.org"
-          ],
-          "subject": "Re: [PT-123] Follow-Up: Outstanding Essential Documents for TMF - Site 101",
-          "timestamp": "2024-05-20T09:15:00Z",
-          "body": "Hi Sandra,\n\nJust a gentle reminder regarding the pending medical license for Dr. Carter and the FDF for Dr. Wright. These are now overdue and are critical for maintaining TMF compliance.\n\nPlease let us know if there is an updated timeline for these items.\n\nThanks,\n\nJohn Miller\nClinical Research Associate\nPharmatech Inc.",
+          "subject": "Re: Notice of Routine Quality Audit - Protocol SP-101, Site 105 (Maple Creek Clinical Research)",
+          "timestamp": "2023-10-24T14:05:00Z",
+          "body": "Hi Sarah,\n\nThank you for the notification. We have reviewed our schedule.\n\nWe are available to host the audit on November 15th and 16th. Please let us know if those dates work for the auditor.\n\nWe would appreciate receiving the preparation checklist at your earliest convenience.\n\nThanks,\n\nEmily Carter\nStudy Coordinator\nMaple Creek Clinical Research",
           "attachments": [],
           "message_id": 3,
           "in_reply_to": 2
         },
         {
-          "from_address": "sandra.chen@universityhospital.org",
+          "from_address": "sarah.jenkins@stellarispharma.com",
           "to_addresses": [
-            "john.miller@pharmatech.com"
+            "david.chen@stellarispharma.com",
+            "ecarter@maplecreekresearch.com",
+            "agrant@maplecreekresearch.com"
           ],
           "cc_addresses": [
-            "lisa.wong@pharmatech.com",
-            "kevin.baker@pharmatech.com",
-            "robert.davis@universityhospital.org"
+            "maria.garcia@stellarispharma.com"
           ],
-          "subject": "Re: [PT-123] Follow-Up: Outstanding Essential Documents for TMF - Site 101",
-          "timestamp": "2024-05-20T16:45:00Z",
-          "body": "Hi John,\n\nMy sincere apologies for the delay. We finally have both documents ready.\n\nPlease find the signed FDF for Dr. Wright and the updated medical license for Dr. Carter attached.\n\nLet me know if you need anything else from our side.\n\nBest regards,\n\nSandra Chen\nClinical Research Coordinator\nUniversity Hospital",
+          "subject": "Re: Notice of Routine Quality Audit - Protocol SP-101, Site 105 - DATES CONFIRMED: Nov 15-16",
+          "timestamp": "2023-10-25T10:00:00Z",
+          "body": "All,\n\nThank you for the quick response, Emily.\n\nDavid, please let us know if Nov 15-16 is confirmed on your end. Assuming it is, I have attached the general audit preparation checklist for the site's reference.\n\nEmily/Dr. Grant - Please review the attached document. I will plan to call you early next week to walk through it and answer any questions you may have.\n\nDavid - The site will be ready for you. Please send the formal agenda when it is available.\n\nBest regards,\n\nSarah Jenkins\nClinical Research Associate\nStellaris Pharma",
           "attachments": [
-            "ECarter_MedLicense_2024.pdf",
-            "FWright_FDF_Signed_2024.pdf"
+            "Audit_Preparation_Checklist_SP-101.pdf"
           ],
           "message_id": 4,
           "in_reply_to": 3
         },
         {
-          "from_address": "john.miller@pharmatech.com",
+          "from_address": "david.chen@stellarispharma.com",
           "to_addresses": [
-            "sandra.chen@universityhospital.org"
+            "sarah.jenkins@stellarispharma.com",
+            "ecarter@maplecreekresearch.com",
+            "agrant@maplecreekresearch.com"
           ],
           "cc_addresses": [
-            "lisa.wong@pharmatech.com",
-            "kevin.baker@pharmatech.com",
-            "robert.davis@universityhospital.org"
+            "maria.garcia@stellarispharma.com",
+            "brenda.wallace@stellarispharma.com"
           ],
-          "subject": "Re: [PT-123] Follow-Up: Outstanding Essential Documents for TMF - Site 101",
-          "timestamp": "2024-05-21T10:00:00Z",
-          "body": "Hi Sandra,\n\nThank you for sending these over. I've reviewed the documents, and they are complete.\n\nI will forward them for filing in the TMF. We appreciate your help in closing this out.\n\nBest,\n\nJohn Miller\nClinical Research Associate\nPharmatech Inc.",
+          "subject": "Re: Notice of Routine Quality Audit - Protocol SP-101, Site 105 - DATES CONFIRMED: Nov 15-16",
+          "timestamp": "2023-10-25T13:45:00Z",
+          "body": "All,\n\nDates confirmed. I am booked for the audit at Maple Creek Clinical Research on November 15-16, 2023.\n\nThank you, Sarah, for coordinating and providing the checklist. I will send out the detailed audit agenda by EOW next week.\n\nI look forward to meeting with the site team.\n\nRegards,\n\nDavid Chen\nSenior QA Auditor\nStellaris Pharma",
           "attachments": [],
           "message_id": 5,
           "in_reply_to": 4
         }
       ],
       "role_descriptions": [
-        "john.miller@pharmatech.com: Sponsor, Clinical Research Associate",
-        "sandra.chen@universityhospital.org: Site, Clinical Research Coordinator",
-        "lisa.wong@pharmatech.com: Sponsor, Lead Clinical Research Associate",
-        "kevin.baker@pharmatech.com: Sponsor, Clinical Trial Assistant",
-        "robert.davis@universityhospital.org: Site, Principal Investigator"
+        "sarah.jenkins@stellarispharma.com: Sponsor, Clinical Research Associate",
+        "david.chen@stellarispharma.com: Sponsor, QA Auditor",
+        "maria.garcia@stellarispharma.com: Sponsor, Clinical Project Manager",
+        "brenda.wallace@stellarispharma.com: Sponsor, QA Lead",
+        "agrant@maplecreekresearch.com: Site, Principal Investigator",
+        "ecarter@maplecreekresearch.com: Site, Study Coordinator"
       ],
-      "description": "A follow-up with a site to request outstanding essential documents, such as updated medical licenses and financial disclosure forms for new sub-investigators, needed for the Trial Master File (TMF)."
-    },
-    {
-      "emails": [
-        {
-          "from_address": "sarah.jones@universityhospital.org",
-          "to_addresses": [
-            "jane.doe@denalitx.com"
-          ],
-          "cc_addresses": [
-            "david.chen@universityhospital.org",
-            "peter.smith@syneos.com"
-          ],
-          "subject": "[URGENT] Study DTX-123: Repeated PK Sample Rejection - Site 101",
-          "timestamp": "2023-09-11T11:30:00Z",
-          "body": "Hi Jane,\n\nI hope you are well.\n\nI'm writing to report another issue with a PK sample being rejected by the central lab. This is for patient 101-005, and it's the third time this has happened in the last two months. The reason cited is again 'Improperly Processed - Insufficient Plasma Volume'.\n\nWe believe we are following the lab manual protocol precisely, specifically section 4.2 regarding centrifugation and aliquoting. We are concerned this may impact the patient's data integrity and are unsure how to proceed to prevent this from happening again.\n\nCould you please provide some clarification or guidance on the processing steps? Perhaps there is a nuance we are missing.\n\nI have attached the latest rejection notification from LabCorp for your reference.\n\nBest regards,\n\nSarah Jones, CRC\nClinical Research Coordinator\nUniversity Hospital\nOncology Department",
-          "attachments": [
-            "LabCorp_Rejection_Notice_101-005.pdf"
-          ],
-          "message_id": 1,
-          "in_reply_to": null
-        },
-        {
-          "from_address": "jane.doe@denalitx.com",
-          "to_addresses": [
-            "sarah.jones@universityhospital.org"
-          ],
-          "cc_addresses": [
-            "david.chen@universityhospital.org",
-            "peter.smith@syneos.com",
-            "linda.evans@denalitx.com"
-          ],
-          "subject": "Re: [URGENT] Study DTX-123: Repeated PK Sample Rejection - Site 101",
-          "timestamp": "2023-09-11T15:45:00Z",
-          "body": "Hi Sarah,\n\nThank you for bringing this to my attention immediately. I share your concern about these repeated rejections, and I appreciate you and the team's diligence in following the manual.\n\nI have reviewed the rejection notice. To ensure we resolve this, I would like to schedule a brief call with you and any other staff members involved in sample processing. We can walk through the lab manual procedures step-by-step together and clarify any potential ambiguities. This will help us identify the root cause and prevent future occurrences.\n\nPlease let me know what day and time works best for your team later this week or early next.\n\nBest,\n\nJane Doe\nClinical Research Associate\nDenali Therapeutics",
-          "attachments": [],
-          "message_id": 2,
-          "in_reply_to": 1
-        },
-        {
-          "from_address": "sarah.jones@universityhospital.org",
-          "to_addresses": [
-            "jane.doe@denalitx.com"
-          ],
-          "cc_addresses": [
-            "david.chen@universityhospital.org",
-            "peter.smith@syneos.com",
-            "linda.evans@denalitx.com"
-          ],
-          "subject": "Re: [URGENT] Study DTX-123: Repeated PK Sample Rejection - Site 101",
-          "timestamp": "2023-09-12T09:05:00Z",
-          "body": "Hi Jane,\n\nThank you for the prompt response and for offering to set up a re-training call. We would really appreciate that.\n\nWe are available at the following times:\n- Wednesday (9/13) any time after 1 PM EST\n- Friday (9/15) between 10 AM and 12 PM EST\n\nPlease let us know what works for you, and you can send a meeting invitation.\n\nThanks again for your support.\n\nBest,\n\nSarah Jones, CRC\nClinical Research Coordinator\nUniversity Hospital\nOncology Department",
-          "attachments": [],
-          "message_id": 3,
-          "in_reply_to": 2
-        }
-      ],
-      "role_descriptions": [
-        "jane.doe@denalitx.com: Sponsor, Clinical Research Associate",
-        "sarah.jones@universityhospital.org: Site, Clinical Research Coordinator",
-        "david.chen@universityhospital.org: Site, Principal Investigator",
-        "peter.smith@syneos.com: CRO, Project Manager",
-        "linda.evans@denalitx.com: Sponsor, Clinical Trial Manager"
-      ],
-      "description": "A site CRC is reporting a repeated issue with the central lab rejecting pharmacokinetic (PK) samples due to improper processing, requiring the CRA to provide re-training and clarification on the lab manual procedures."
+      "description": "An email from the sponsor's Quality Assurance (QA) department notifying the CRA that one of their assigned sites has been selected for a routine quality audit. The thread involves the CRA coordinating with the QA auditor and the site PI to schedule the audit and providing the site with a list of documents to prepare for the inspection."
     }
   ]
 }
