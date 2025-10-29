@@ -62,6 +62,12 @@ class DraftEmailReply(dspy.Signature):
     user_profile: str = dspy.InputField(
         desc="Information about the current user composing the reply (name, email, organization, role). Use an appropriate tone and sign-off."
     )
+    documents: str = dspy.InputField(
+        desc="JSON string array of available documents to cite. Each item may include: type, title, date, description, and raw_text (the raw text content)."
+    )
+    email_context: str = dspy.InputField(
+        desc="Additional email context or summaries (e.g., thread descriptions or prior decisions) to inform citations."
+    )
 
     # Outputs
     to: str = dspy.OutputField(desc="Comma-separated list of email addresses for the 'To' field")
@@ -76,6 +82,12 @@ class DraftEmailReply(dspy.Signature):
     )
     body: str = dspy.OutputField(
         desc="The full content of the email reply, professionally written and addressing the todo task"
+    )
+    references: str = dspy.OutputField(
+        desc="JSON array of references used in the draft (e.g., prior emails, attached documents). Each item should include type, title, and optional date/source."
+    )
+    reasoning: str = dspy.OutputField(
+        desc="Brief reasoning explaining why cited references were included."
     )
 
 

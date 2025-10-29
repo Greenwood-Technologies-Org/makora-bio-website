@@ -58,23 +58,31 @@ def draft_email_reply():
 
         user_profile = json.dumps(data.get("user_profile", {}))
 
+        # Optional context inputs
+        documents = json.dumps(data.get("documents", []))
+        email_context = data.get("email_context", "")
+
         result = draft_reply_signature(
             email_thread=data["email_thread"],
             todo_description=data["todo_description"],
             user_profile=user_profile,
+            documents=documents,
+            email_context=email_context,
         )
 
         return jsonify(
-            {
-                "success": True,
-                "draft": {
-                    "to": result.to,
-                    "cc": result.cc,
-                    "bcc": result.bcc,
-                    "subject": result.subject,
-                    "body": result.body,
-                },
-            }
+                {
+                    "success": True,
+                    "draft": {
+                        "to": result.to,
+                        "cc": result.cc,
+                        "bcc": result.bcc,
+                        "subject": result.subject,
+                        "body": result.body,
+                        "references": result.references if hasattr(result, "references") else "[]",
+                        "reasoning": result.reasoning if hasattr(result, "reasoning") else "",
+                    },
+                }
         ), 200
 
     except Exception as e:

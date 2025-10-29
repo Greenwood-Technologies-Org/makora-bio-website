@@ -20,6 +20,8 @@ function ComDetailPanel({
   const [expandedThread, setExpandedThread] = useState(null);
   const [threads, setThreads] = useState(com.threads);
   const [draftMessages, setDraftMessages] = useState({});
+  const [draftReferences, setDraftReferences] = useState({}); // threadId -> [{type,title,date}]
+  const [draftReasoning, setDraftReasoning] = useState({}); // threadId -> string
   const [todos, setTodos] = useState(com.todos);
   const [showAddTodoModal, setShowAddTodoModal] = useState(false);
   const [contextMenu, setContextMenu] = useState(null); // { todoId, x, y }
@@ -93,7 +95,11 @@ function ComDetailPanel({
       const draft = await generateEmailDraftWithDSPy(
         thread,
         todo.description,
-        userProfile
+        userProfile,
+        {
+          emailContext: com.summary || com.subject || "",
+          documents: com.documents || [],
+        }
       );
 
       // Format the draft message with proper email structure
@@ -107,6 +113,16 @@ function ComDetailPanel({
       setDraftMessages((prev) => ({
         ...prev,
         [thread.id]: formattedMessage,
+      }));
+
+      // Set references and reasoning if provided
+      setDraftReferences((prev) => ({
+        ...prev,
+        [thread.id]: draft.references || [],
+      }));
+      setDraftReasoning((prev) => ({
+        ...prev,
+        [thread.id]: draft.reasoning || "",
       }));
 
       // Expand the thread to show the draft
@@ -883,22 +899,15 @@ function ComDetailPanel({
                           />
 
                           {/* AI References */}
-                          {(() => {
-                            const todo = com.todos.find(
-                              (t) =>
-                                t.aiDraft && t.aiDraft.threadId === thread.id
-                            );
-                            return (
-                              todo &&
-                              todo.aiDraft &&
-                              todo.aiDraft.references &&
-                              todo.aiDraft.references.length > 0 && (
-                                <div className="mb-3">
-                                  <h5 className="text-xs font-semibold text-purple-700 mb-2">
-                                    AI References Used:
-                                  </h5>
-                                  <div className="space-y-1">
-                                    {todo.aiDraft.references.map((ref, idx) => (
+                          {draftReferences[thread.id] &&
+                            draftReferences[thread.id].length > 0 && (
+                              <div className="mb-3">
+                                <h5 className="text-xs font-semibold text-purple-700 mb-2">
+                                  AI References Used:
+                                </h5>
+                                <div className="space-y-1">
+                                  {draftReferences[thread.id].map(
+                                    (ref, idx) => (
                                       <div
                                         key={idx}
                                         className="flex items-start gap-2 text-xs bg-white bg-opacity-50 rounded p-2"
@@ -923,17 +932,23 @@ function ComDetailPanel({
                                           <span className="text-gray-700 ml-1">
                                             {ref.title}
                                           </span>
-                                          <span className="text-gray-500 ml-1">
-                                            ({ref.date})
-                                          </span>
+                                          {ref.date && (
+                                            <span className="text-gray-500 ml-1">
+                                              ({ref.date})
+                                            </span>
+                                          )}
                                         </div>
                                       </div>
-                                    ))}
-                                  </div>
+                                    )
+                                  )}
                                 </div>
-                              )
-                            );
-                          })()}
+                                {draftReasoning[thread.id] && (
+                                  <p className="text-[11px] text-purple-700 mt-2">
+                                    Reasoning: {draftReasoning[thread.id]}
+                                  </p>
+                                )}
+                              </div>
+                            )}
                         </div>
 
                         <div className="flex gap-2 justify-end flex-shrink-0">

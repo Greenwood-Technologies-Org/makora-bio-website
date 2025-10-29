@@ -13,7 +13,8 @@ const API_BASE_URL = "http://localhost:5001";
 export async function generateEmailDraftWithDSPy(
   emailThread,
   todoDescription,
-  userProfile
+  userProfile,
+  options = {}
 ) {
   try {
     // Format the email thread for the API
@@ -40,6 +41,12 @@ export async function generateEmailDraftWithDSPy(
       emailThreadText += `Content: ${emailThread.description || ""}\n`;
     }
 
+    // Normalize documents to include raw_text field (if provided as rawText)
+    const normalizedDocs = (options.documents || []).map((doc) => ({
+      ...doc,
+      raw_text: doc.raw_text || doc.rawText || "",
+    }));
+
     const response = await fetch(`${API_BASE_URL}/api/dspy/draft-email-reply`, {
       method: "POST",
       headers: {
@@ -49,6 +56,8 @@ export async function generateEmailDraftWithDSPy(
         email_thread: emailThreadText.trim(),
         todo_description: todoDescription,
         user_profile: userProfile || null,
+        documents: normalizedDocs,
+        email_context: options.emailContext || "",
       }),
     });
 
@@ -71,6 +80,14 @@ export async function generateEmailDraftWithDSPy(
       bcc: data.draft.bcc,
       subject: data.draft.subject,
       body: data.draft.body,
+      references: (() => {
+        try {
+          return JSON.parse(data.draft.references || "[]");
+        } catch {
+          return [];
+        }
+      })(),
+      reasoning: data.draft.reasoning || "",
     };
   } catch (error) {
     console.error("DSPy email drafting error:", error);

@@ -1531,11 +1531,7 @@ function Coms() {
                                   !!thread.problemId ||
                                   aiAssistLoading === thread.id
                                 }
-                                className={`flex-shrink-0 transition-colors ${
-                                  thread.problemId
-                                    ? "cursor-not-allowed"
-                                    : "cursor-pointer hover:opacity-80"
-                                }`}
+                                className="w-6 h-6 rounded-full bg-white border border-gray-200 hover:bg-gray-50 disabled:bg-white disabled:border-gray-200 disabled:cursor-not-allowed transition-colors duration-200 shadow-sm hover:shadow-md flex items-center justify-center flex-shrink-0"
                                 title={
                                   aiAssistLoading === thread.id
                                     ? "Analyzing..."
@@ -1545,13 +1541,13 @@ function Coms() {
                                 }
                               >
                                 {aiAssistLoading === thread.id ? (
-                                  <Loader2
-                                    className="h-4 w-4 animate-spin"
-                                    style={{ color: "#4190C5" }}
-                                  />
+                                  <div
+                                    className="animate-spin rounded-full h-3 w-3 border-b-2"
+                                    style={{ borderColor: "#4190C5" }}
+                                  ></div>
                                 ) : (
                                   <Sparkles
-                                    className="w-4 h-4"
+                                    className="w-3 h-3"
                                     style={{
                                       color: thread.problemId
                                         ? "#9CA3AF"

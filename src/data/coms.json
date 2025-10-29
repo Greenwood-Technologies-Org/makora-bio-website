@@ -101,7 +101,7 @@
         "Maria Garcia (Sponsor CTM)"
       ],
       "problemId": null,
-      "isRead": true,
+      "isRead": false,
       "messages": [
         {
           "from": "Sarah Chen",
@@ -198,7 +198,7 @@
         "Sarah Chen (Medical Monitor)"
       ],
       "problemId": 1,
-      "isRead": false,
+      "isRead": true,
       "messages": [
         {
           "from": "Dr. Robert Miller",
