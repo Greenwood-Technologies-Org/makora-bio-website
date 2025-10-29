@@ -17,6 +17,9 @@ class CategorizeEmailThread(dspy.Signature):
     existing_tasks: str = dspy.InputField(
         desc="JSON string of existing tasks with their subjects, summaries, and current status"
     )
+    user_profile: str = dspy.InputField(
+        desc="Information about the current user (name, email, organization, role). Treat outputs from this person's perspective."
+    )
     
     # Outputs
     action: str = dspy.OutputField(
@@ -56,6 +59,9 @@ class DraftEmailReply(dspy.Signature):
     todo_description: str = dspy.InputField(
         desc="The todo task description that this email reply should address (e.g., 'Confirm follow-up with internal team')"
     )
+    user_profile: str = dspy.InputField(
+        desc="Information about the current user composing the reply (name, email, organization, role). Use an appropriate tone and sign-off."
+    )
 
     # Outputs
     to: str = dspy.OutputField(desc="Comma-separated list of email addresses for the 'To' field")
@@ -90,6 +96,9 @@ class GenerateTodos(dspy.Signature):
     )
     existing_todos: str = dspy.InputField(
         desc="JSON string of existing TODO items to analyze for completeness"
+    )
+    user_profile: str = dspy.InputField(
+        desc="Information about the current user (name, email, organization, role). Tailor suggestions to this role."
     )
 
     # Outputs

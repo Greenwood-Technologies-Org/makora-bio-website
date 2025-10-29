@@ -56,8 +56,12 @@ def draft_email_reply():
         # Draft the email reply using DSPY
         draft_reply_signature = dspy.ChainOfThought(DraftEmailReply)
 
+        user_profile = json.dumps(data.get("user_profile", {}))
+
         result = draft_reply_signature(
-            email_thread=data["email_thread"], todo_description=data["todo_description"]
+            email_thread=data["email_thread"],
+            todo_description=data["todo_description"],
+            user_profile=user_profile,
         )
 
         return jsonify(
@@ -160,9 +164,12 @@ Content: {msg.get('content', '')}
         # Use DSPy to categorize the email
         categorize_signature = dspy.ChainOfThought(CategorizeEmailThread)
         
+        user_profile = json.dumps(data.get("user_profile", {}))
+
         result = categorize_signature(
             email_thread=email_content.strip(),
-            existing_tasks=existing_tasks_json
+            existing_tasks=existing_tasks_json,
+            user_profile=user_profile,
         )
 
         # Build response
@@ -273,10 +280,13 @@ Status: {task.get('status', '')}
         # Use DSPy to generate TODOs
         generate_todos_signature = dspy.ChainOfThought(GenerateTodos)
         
+        user_profile = json.dumps(data.get("user_profile", {}))
+
         result = generate_todos_signature(
             task_context=task_context.strip(),
             email_threads=email_threads_json,
-            existing_todos=existing_todos_json
+            existing_todos=existing_todos_json,
+            user_profile=user_profile,
         )
 
         # Parse the JSON response

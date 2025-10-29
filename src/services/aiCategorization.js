@@ -10,7 +10,11 @@ const API_BASE_URL = "http://localhost:5001";
  * @param {Array} existingTasks - Array of existing tasks to match against
  * @returns {Promise<Object>} AI recommendation for categorization
  */
-export async function categorizeEmailWithDSPy(emailThread, existingTasks) {
+export async function categorizeEmailWithDSPy(
+  emailThread,
+  existingTasks,
+  userProfile
+) {
   try {
     const response = await fetch(`${API_BASE_URL}/api/dspy/categorize-email`, {
       method: "POST",
@@ -32,6 +36,7 @@ export async function categorizeEmailWithDSPy(emailThread, existingTasks) {
           status: task.status,
           urgency: task.urgency,
         })),
+        user_profile: userProfile || null,
       }),
     });
 

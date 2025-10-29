@@ -11,7 +11,12 @@ const API_BASE_URL = "http://localhost:5001";
  * @param {Array} existingTodos - Array of existing TODO objects
  * @returns {Promise<Object>} The generated TODOs and summary
  */
-export async function generateTodosWithDSPy(task, emailThreads, existingTodos) {
+export async function generateTodosWithDSPy(
+  task,
+  emailThreads,
+  existingTodos,
+  userProfile
+) {
   try {
     const requestData = {
       task: {
@@ -35,6 +40,9 @@ export async function generateTodosWithDSPy(task, emailThreads, existingTodos) {
         tag: todo.tag,
       })),
     };
+    if (userProfile) {
+      requestData.user_profile = userProfile;
+    }
 
     console.log("Sending request to DSPy:", requestData);
 

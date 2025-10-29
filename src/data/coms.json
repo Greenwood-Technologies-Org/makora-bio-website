@@ -2,132 +2,81 @@
   "problems": [
     {
       "id": 1,
-      "subject": "SAE Report - DNLI-001 - Site 203 - Pt 203-005 - Hospitalization (Fall)",
-      "summary": "Serious Adverse Event reported for participant 203-005 in study DNLI-001 Part B at Site 203. Patient hospitalized following fall at home with reported dizziness prior to event. PI assessment: possibly related to investigational product. Initial SAE form and hospital admission notes received. Requires sponsor causality review, Medical Monitor assessment, regulatory reporting timeline compliance (24-hour window), and collection of complete hospital discharge documentation.",
+      "subject": "SAE Management - DNLI-001 - Site 203 - Pt 203-005 - Hospitalization (Fall)",
+      "summary": "Manage Serious Adverse Event for participant 203-005 at Site 203 who was hospitalized following a fall at home. PI assessed causality as 'possibly related' due to dizziness episode prior to fall. Task includes: review of submitted SAE form and hospital documentation, sponsor causality assessment, coordination with Medical Monitor, collection of additional source documents, regulatory reporting within timelines, and ongoing follow-up until event resolution.",
       "urgency": "High",
       "status": "In Progress",
       "timestamp": "Just now",
       "todos": [
         {
           "id": 1,
-          "description": "Medical Monitor (Sarah Chen) to review SAE form and hospital admission notes and provide sponsor causality assessment for participant 203-005 fall/hospitalization event",
+          "description": "Review submitted SAE form (DNLI-001_SAE_Form_203-005_Fall.pdf) and initial hospital admission summary for completeness and accuracy within 24-hour reporting window",
           "status": "pending",
           "tag": "Thread 1",
           "hasAIDraft": true
         },
         {
           "id": 2,
-          "description": "Prepare and submit regulatory SAE notification to appropriate health authorities within 24-hour reporting timeline",
+          "description": "Coordinate with Medical Monitor (Sarah Chen) to conduct sponsor causality assessment for the fall/hospitalization event, considering PI's 'possibly related' assessment due to pre-fall dizziness",
           "status": "pending",
-          "tag": "EDC",
-          "hasAIDraft": false
+          "tag": "Thread 1",
+          "hasAIDraft": true
         },
         {
           "id": 3,
-          "description": "Follow up with Site 203 (Emily White) to obtain complete hospital discharge documentation including discharge summary, final diagnoses, and treatment details",
+          "description": "Request and collect complete hospital discharge summary, diagnostic test results, and all source documentation from Site 203 for the hospitalization event",
           "status": "pending",
           "tag": "Thread 1",
           "hasAIDraft": true
         },
         {
           "id": 4,
-          "description": "Review dizziness symptom pattern in participant 203-005's case history and assess relationship to investigational product dosing schedule",
+          "description": "Submit regulatory SAE reports to applicable health authorities (FDA, EMA, etc.) within required timelines per protocol and regional requirements",
           "status": "pending",
           "tag": "EDC",
           "hasAIDraft": false
         },
         {
           "id": 5,
-          "description": "Assess whether participant 203-005 can continue in study or requires permanent discontinuation based on SAE severity and causality",
+          "description": "Notify IRB/IEC of the SAE per institutional requirements and protocol, including PI and sponsor causality assessments",
           "status": "pending",
           "tag": "EDC",
           "hasAIDraft": false
         },
         {
           "id": 6,
-          "description": "Review aggregate safety data for dizziness and falls across DNLI-001 study to identify any emerging safety signals",
+          "description": "Provide guidance to Site 203 on follow-up requirements, including frequency of participant monitoring, documentation needs, and resolution criteria",
           "status": "pending",
-          "tag": "EDC",
-          "hasAIDraft": false
+          "tag": "Thread 1",
+          "hasAIDraft": true
         },
         {
           "id": 7,
-          "description": "Document sponsor causality assessment and rationale in safety database and prepare narrative summary for regulatory submission",
+          "description": "Schedule and conduct follow-up communications with Site 203 to track participant recovery status, obtain updates on hospitalization outcome, and collect resolution documentation",
+          "status": "pending",
+          "tag": "Thread 1",
+          "hasAIDraft": true
+        },
+        {
+          "id": 8,
+          "description": "Review dizziness as potential safety signal - query if other participants in Part B have reported similar symptoms and consider need for protocol safety amendment or DSMB notification",
           "status": "pending",
           "tag": "EDC",
           "hasAIDraft": false
         },
         {
-          "id": 8,
-          "description": "Notify DSMB (Data Safety Monitoring Board) of SAE per protocol requirements and determine if expedited DSMB review is needed",
+          "id": 9,
+          "description": "Document all SAE management activities, decisions, and communications in the Trial Master File and study tracking systems",
           "status": "pending",
           "tag": "EDC",
           "hasAIDraft": false
-        }
-      ],
-      "threads": [
+        },
         {
-          "id": 1,
-          "name": "URGENT: SAE Report - Study DNLI-001 - Site 203 - Participant 203-005",
-          "description": "An urgent email thread initiated by the Principal Investigator at Site 203 reporting a Serious Adverse Event (SAE). A participant in Part B of the study was hospitalized due to a fall. The thread includes your immediate follow-up questions regarding the event's causality and a request for the completed SAE form and source documentation.",
-          "participants": [
-            "Dr. Robert Miller (Site PI)",
-            "Maria Garcia (CRA)",
-            "Emily White (Site Coordinator)",
-            "David Lee (CRO Project Manager)",
-            "Alex Johnson (Sponsor CRA)",
-            "Sarah Chen (Medical Monitor)"
-          ],
-          "problemId": 1,
-          "isRead": true,
-          "messages": [
-            {
-              "from": "Dr. Robert Miller",
-              "to": "Maria Garcia",
-              "cc": [
-                "Emily White",
-                "David Lee",
-                "Alex Johnson",
-                "Sarah Chen"
-              ],
-              "content": "Dear Team,\n\nThis is an urgent notification regarding a Serious Adverse Event for participant 203-005 in the DNLI-001 study (Part B).\n\nThe participant was hospitalized yesterday evening following a fall at home. They are currently stable and undergoing evaluation.\n\nWe are in the process of gathering all necessary source documentation and will forward the completed SAE form as soon as possible, well within the 24-hour reporting window.\n\nBest regards,\n\nDr. Robert Miller\nPrincipal Investigator\nOakwood Research Center, Site 203",
-              "timestamp": "2 hours ago"
-            },
-            {
-              "from": "Maria Garcia",
-              "to": "Dr. Robert Miller",
-              "cc": [
-                "Emily White",
-                "David Lee",
-                "Alex Johnson",
-                "Sarah Chen"
-              ],
-              "content": "Dear Dr. Miller,\n\nThank you for the prompt notification. We have received your alert and are on standby.\n\nPlease send the completed SAE form and any available source documentation (e.g., hospital admission notes, ER report) as soon as it is available.\n\nWe appreciate your diligence.\n\nBest regards,\n\nMaria Garcia\nClinical Research Associate\nSynergy Clinical",
-              "timestamp": "1 hour ago"
-            },
-            {
-              "from": "Emily White",
-              "to": "Maria Garcia",
-              "cc": [
-                "Dr. Robert Miller",
-                "David Lee",
-                "Alex Johnson",
-                "Sarah Chen"
-              ],
-              "content": "Hi Maria,\n\nPlease find the completed SAE form and the initial hospital admission summary for participant 203-005 attached.\n\nDr. Miller has assessed the event as 'possibly related' to the investigational product due to the participant reporting a brief episode of dizziness prior to the fall. This is documented in the attached form.\n\nWe are awaiting further records from the hospital. Please review and let us know if any immediate additional information is required from our end.\n\nThank you,\n\nEmily White\nStudy Coordinator\nOakwood Research Center\n\nAttachments:\n- DNLI-001_SAE_Form_203-005_Fall.pdf\n- Initial_Hospital_Note_203-005_Redacted.pdf",
-              "timestamp": "30 minutes ago"
-            },
-            {
-              "from": "Maria Garcia",
-              "to": "Alex Johnson",
-              "cc": [
-                "David Lee",
-                "Sarah Chen"
-              ],
-              "content": "Hi Alex,\n\nPlease see the forwarded email and attachments for the SAE reported at Site 203 (hospitalization due to a fall).\n\nKey points:\n- Participant in Part B\n- PI causality assessment: 'possibly related'\n\nCould you please review the attached documents and confirm the sponsor's initial assessment and any immediate follow-up questions for the site? The Medical Monitor is on copy.\n\nThanks,\nMaria\n\n--- Begin Forwarded Message ---\nFrom: Emily White <e.white@oakwoodresearch.org>\n\nPlease find the completed SAE form and the initial hospital admission summary for participant 203-005 attached.\n\nDr. Miller has assessed the event as 'possibly related' to the investigational product due to the participant reporting a brief episode of dizziness prior to the fall. This is documented in the attached form.\n\nWe are awaiting further records from the hospital. Please review and let us know if any immediate additional information is required from our end.",
-              "timestamp": "15 minutes ago"
-            }
-          ]
+          "id": 10,
+          "description": "Upon event resolution, obtain final hospital discharge summary and close out SAE case with final causality assessment and outcome documentation",
+          "status": "pending",
+          "tag": "Thread 1",
+          "hasAIDraft": true
         }
       ]
     }

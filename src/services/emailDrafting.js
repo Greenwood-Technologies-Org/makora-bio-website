@@ -10,7 +10,11 @@ const API_BASE_URL = "http://localhost:5001";
  * @param {string} todoDescription - The todo task description
  * @returns {Promise<Object>} The generated email draft
  */
-export async function generateEmailDraftWithDSPy(emailThread, todoDescription) {
+export async function generateEmailDraftWithDSPy(
+  emailThread,
+  todoDescription,
+  userProfile
+) {
   try {
     // Format the email thread for the API
     let emailThreadText = `Subject: ${
@@ -44,6 +48,7 @@ export async function generateEmailDraftWithDSPy(emailThread, todoDescription) {
       body: JSON.stringify({
         email_thread: emailThreadText.trim(),
         todo_description: todoDescription,
+        user_profile: userProfile || null,
       }),
     });
 
