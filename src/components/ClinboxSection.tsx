@@ -198,43 +198,61 @@ const ClinboxSection = () => {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="text-center p-6 bg-primary/5 rounded-lg">
-                  <Clock className="h-10 w-10 text-primary mx-auto mb-4" />
-                  <h4 className="font-bold text-foreground mb-2">Sponsor Staff</h4>
-                  <p className="text-2xl font-bold text-primary mb-2">≈75%</p>
-                  <p className="text-sm text-muted-foreground">
-                    less time per actionable email
-                  </p>
-                  <p className="text-xs text-muted-foreground mt-2">
-                    (6-10 hrs saved per week / FTE)
-                  </p>
-                </div>
+              <Card className="bg-card border-border hover:border-primary/50 transition-colors">
+                <CardContent className="p-6">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="p-3 bg-primary/10 rounded-lg mb-4">
+                      <Clock className="h-6 w-6 text-primary" />
+                    </div>
+                    <h4 className="text-lg font-semibold text-foreground mb-2">Sponsor Staff</h4>
+                    <p className="text-2xl font-bold text-primary mb-2">75%</p>
+                    <p className="text-muted-foreground mb-2">
+                      less time per email
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      (6-10 hrs saved per week / FTE)
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
 
-                <div className="text-center p-6 bg-primary/5 rounded-lg">
-                  <Users className="h-10 w-10 text-primary mx-auto mb-4" />
-                  <h4 className="font-bold text-foreground mb-2">Site Engagement</h4>
-                  <p className="text-2xl font-bold text-primary mb-2">10-20%</p>
-                  <p className="text-sm text-muted-foreground">
-                    faster complex thread resolution
-                  </p>
-                  <p className="text-xs text-muted-foreground mt-2">
-                    50% faster quick threads
-                  </p>
-                </div>
+              <Card className="bg-card border-border hover:border-primary/50 transition-colors">
+                <CardContent className="p-6">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="p-3 bg-primary/10 rounded-lg mb-4">
+                      <Users className="h-6 w-6 text-primary" />
+                    </div>
+                    <h4 className="text-lg font-semibold text-foreground mb-2">Site Engagement</h4>
+                    <p className="text-2xl font-bold text-primary mb-2">10-20%</p>
+                    <p className="text-muted-foreground mb-2">
+                      faster complex thread resolution
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      50% faster quick threads
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
 
-                <div className="text-center p-6 bg-primary/5 rounded-lg">
-                  <TrendingUp className="h-10 w-10 text-primary mx-auto mb-4" />
-                  <h4 className="font-bold text-foreground mb-2">Study Level</h4>
-                  <p className="text-2xl font-bold text-primary mb-2">10-20%</p>
-                  <p className="text-sm text-muted-foreground">
-                    fewer repeat questions
-                  </p>
-                  <p className="text-xs text-muted-foreground mt-2">
-                    within 4-8 weeks via analytics
-                  </p>
-                </div>
-              </div>
+              <Card className="bg-card border-border hover:border-primary/50 transition-colors">
+                <CardContent className="p-6">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="p-3 bg-primary/10 rounded-lg mb-4">
+                      <TrendingUp className="h-6 w-6 text-primary" />
+                    </div>
+                    <h4 className="text-lg font-semibold text-foreground mb-2">Study Level</h4>
+                    <p className="text-2xl font-bold text-primary mb-2">10-20%</p>
+                    <p className="text-muted-foreground mb-2">
+                      fewer repeat questions
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      within 4-8 weeks via analytics
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
+          </div>
 
           {/* Demo Testimonials */}
           <div className="mt-12 max-w-4xl mx-auto">
