@@ -1,33 +1,184 @@
 import React, { useState } from 'react';
-import DocumentViewer from './DocumentViewer.jsx';
-import { studyProtocolContent, informedConsentContent, vendorCommContent } from './DocumentContent.jsx';
+import { Document, Page, pdfjs } from 'react-pdf';
+import 'react-pdf/dist/Page/AnnotationLayer.css';
+import 'react-pdf/dist/Page/TextLayer.css';
+
+// Configure PDF.js worker from node_modules
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.min.mjs',
+  import.meta.url,
+).toString();
+
+// Import PDF files
+import studyProtocolPdf from '../../docs/[NCT05262023] Study Protocol.pdf';
+import informedConsentPdf from '../../docs/[NCT05262023] Informed Consent.pdf';
+import dataManagementPdf from '../../docs/[NCT05262023] Data Management Plan Summary.pdf';
+import eproManualPdf from '../../docs/[NCT05262023] ePRO System Site Manual.pdf';
+import raciMatrixPdf from '../../docs/[NCT05262023] Clinical Operations RACI Matrix.pdf';
 
 const mockDocuments = [
   { 
     id: 1, 
-    name: 'Study Protocol XYZ-123', 
-    type: 'Protocol', 
+    name: '[NCT05262023] Study Protocol', 
+    type: 'Protocol',
     dateUploaded: '2025-10-15', 
     size: '2.4 MB',
-    content: studyProtocolContent
+    filePath: studyProtocolPdf
   },
   { 
     id: 2, 
-    name: 'Informed Consent Form', 
-    type: 'Consent', 
+    name: '[NCT05262023] Informed Consent', 
+    type: 'Consent',
     dateUploaded: '2025-10-01', 
     size: '856 KB',
-    content: informedConsentContent
+    filePath: informedConsentPdf
   },
   { 
     id: 3, 
-    name: 'Vendor Communication Materials', 
-    type: 'Reference', 
+    name: '[NCT05262023] Data Management Plan Summary', 
+    type: 'Reference',
     dateUploaded: '2025-10-18', 
     size: '1.2 MB',
-    content: vendorCommContent
+    filePath: dataManagementPdf
+  },
+  { 
+    id: 4, 
+    name: '[NCT05262023] ePRO System Site Manual', 
+    type: 'Reference',
+    dateUploaded: '2025-10-10', 
+    size: '3.1 MB',
+    filePath: eproManualPdf
+  },
+  { 
+    id: 5, 
+    name: '[NCT05262023] Clinical Operations RACI Matrix', 
+    type: 'Reference',
+    dateUploaded: '2025-10-05', 
+    size: '890 KB',
+    filePath: raciMatrixPdf
   }
 ];
+
+// PDF Viewer Component
+function PDFViewer({ document, onClose }) {
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+  const [scale, setScale] = useState(1.0);
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
+
+  return (
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+      <div className="bg-white rounded-lg shadow-2xl w-full max-w-6xl max-h-[95vh] flex flex-col">
+        {/* Header */}
+        <div className="flex items-center justify-between p-4 border-b border-gray-200 bg-gradient-to-r from-primary-50 to-blue-50">
+          <div>
+            <h2 className="text-xl font-semibold text-gray-900">{document.name}</h2>
+            <p className="text-sm text-gray-600 mt-1">
+              PDF • Last modified: {document.dateUploaded}
+            </p>
+          </div>
+          <button
+            onClick={onClose}
+            className="text-gray-400 hover:text-gray-600 transition-colors p-2 hover:bg-white rounded-lg"
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        {/* Controls */}
+        <div className="p-3 border-b border-gray-200 flex items-center justify-between bg-gray-50">
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => setPageNumber(prev => Math.max(prev - 1, 1))}
+              disabled={pageNumber <= 1}
+              className="px-3 py-1 border border-gray-300 rounded hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              Previous
+            </button>
+            <span className="text-sm text-gray-600">
+              Page {pageNumber} of {numPages || '...'}
+            </span>
+            <button
+              onClick={() => setPageNumber(prev => Math.min(prev + 1, numPages || prev))}
+              disabled={pageNumber >= (numPages || 1)}
+              className="px-3 py-1 border border-gray-300 rounded hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              Next
+            </button>
+          </div>
+          
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => setScale(prev => Math.max(prev - 0.2, 0.5))}
+              className="px-3 py-1 border border-gray-300 rounded hover:bg-gray-100"
+            >
+              Zoom Out
+            </button>
+            <span className="text-sm text-gray-600">{Math.round(scale * 100)}%</span>
+            <button
+              onClick={() => setScale(prev => Math.min(prev + 0.2, 2.0))}
+              className="px-3 py-1 border border-gray-300 rounded hover:bg-gray-100"
+            >
+              Zoom In
+            </button>
+          </div>
+        </div>
+
+        {/* PDF Display */}
+        <div className="flex-1 overflow-auto bg-gray-100 p-4" style={{ minHeight: 0 }}>
+          <div className="flex justify-center">
+            <Document
+              file={document.filePath}
+              onLoadSuccess={onDocumentLoadSuccess}
+              loading={
+                <div className="flex items-center justify-center p-8">
+                  <div className="text-gray-600">Loading PDF...</div>
+                </div>
+              }
+              error={
+                <div className="flex items-center justify-center p-8">
+                  <div className="text-red-600">Failed to load PDF. Please try again.</div>
+                </div>
+              }
+            >
+              <Page 
+                pageNumber={pageNumber} 
+                scale={scale}
+                renderTextLayer={true}
+                renderAnnotationLayer={true}
+              />
+            </Document>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <div className="p-4 border-t border-gray-200 bg-gray-50 flex justify-end gap-3">
+          <button
+            onClick={onClose}
+            className="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-100 transition-colors font-medium"
+          >
+            Close
+          </button>
+          <a
+            href={document.filePath}
+            download={`${document.name}.pdf`}
+            className="px-4 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors font-medium flex items-center gap-2"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            Download
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function Docs() {
   const [documents, setDocuments] = useState(mockDocuments);
@@ -35,12 +186,8 @@ function Docs() {
   const [viewingDoc, setViewingDoc] = useState(null);
 
   const getFileIcon = (type) => {
-    const icons = {
-      Protocol: '�',
-      Consent: '📝',
-      Reference: '�'
-    };
-    return icons[type] || '📁';
+    // All files are PDFs now
+    return '�';
   };
 
   const getFileColor = (type) => {
@@ -196,9 +343,9 @@ function Docs() {
         )}
       </div>
 
-      {/* Document Viewer Modal */}
+      {/* PDF Viewer Modal */}
       {viewingDoc && (
-        <DocumentViewer 
+        <PDFViewer 
           document={viewingDoc} 
           onClose={() => setViewingDoc(null)} 
         />
