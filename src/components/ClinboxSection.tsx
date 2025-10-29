@@ -92,11 +92,11 @@ const ClinboxSection = () => {
         <div className="text-center mb-16 fade-in-section">
           <div className="flex items-center justify-center gap-4 mb-4">
             <img src={logo} alt="Clinbox" className="h-16 w-16 md:h-20 md:w-20" />
-            <h2 className="text-4xl md:text-6xl font-bold text-foreground">
+            <h2 className="text-4xl md:text-6xl font-bold text-primary">
               Clinbox
             </h2>
           </div>
-          <p className="text-xl md:text-2xl text-primary font-semibold">
+          <p className="text-xl md:text-2xl text-muted-foreground">
             The intelligent inbox for clinical research operations
           </p>
         </div>
@@ -106,18 +106,15 @@ const ClinboxSection = () => {
           <h3 className="text-3xl font-bold text-foreground mb-6 text-center">
             The Problem
           </h3>
-          <div className="max-w-4xl mx-auto mb-8">
+          <div className="max-w-5xl mx-auto mb-8">
             <p className="text-lg text-foreground leading-relaxed mb-6">
-              Sponsor teams spend <span className="font-bold text-primary">2+ hours per day</span> on email, 
+              Clinical operations staff spend 2+ hours per day on email, 
               digging through files like strategy docs, SOPs, and vendor systems to answer routine questions. 
-              Response times average <span className="font-bold">2 days</span>, and every redirect adds another 
-              2 days. Complex threads like contract negotiation can drag on for{" "}
-              <span className="font-bold">2+ weeks</span>.
+              Response times average 2 days, and every redirect adds another 
+              2 days. Complex threads like contract negotiation can drag on for more than 2 weeks.
             </p>
-            <p className="text-lg text-foreground leading-relaxed">
-              <span className="font-bold text-primary">60% of sites</span> and{" "}
-              <span className="font-bold text-primary">43% of sponsors/CROs</span> say poor 
-              communication severely impacts SSU, patient enrollment, and site engagement.
+            <p className="text-lg leading-relaxed font-semibold">
+              60% of sites and 43% of sponsors/CROs say poor communication severely impacts SSU, patient enrollment, and site engagement.
             </p>
           </div>
 
@@ -157,8 +154,8 @@ const ClinboxSection = () => {
             The Solution
           </h3>
           <div className="max-w-4xl mx-auto mb-8">
-            <p className="text-xl text-foreground leading-relaxed text-center">
-              Clinbox is an <span className="font-bold text-primary">AI-powered inbox</span> purpose-built 
+            <p className="text-lg text-foreground leading-relaxed text-center">
+              Clinbox is an AI-powered inbox purpose-built 
               for clinical operations. It helps sponsor teams manage threads, draft replies, and surface insights.
             </p>
           </div>
