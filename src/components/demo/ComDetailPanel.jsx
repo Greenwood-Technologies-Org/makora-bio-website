@@ -1635,7 +1635,7 @@ function AiTodoModal({ recommendations, onAccept, onReject, threads }) {
             AI TODO Recommendations
           </h3>
           <button
-            className="text-xs text-blue-600 hover:text-blue-700 underline"
+            className="text-xs text-gray-600 hover:text-gray-700 underline"
             onClick={() => setShowReasoning((v) => !v)}
           >
             {showReasoning ? "Hide reasoning" : "Show reasoning"}
