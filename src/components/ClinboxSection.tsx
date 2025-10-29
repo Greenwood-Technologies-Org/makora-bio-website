@@ -111,7 +111,7 @@ const ClinboxSection = () => {
               Clinical operations staff spend 2+ hours per day on email, 
               digging through files like strategy docs, SOPs, and vendor systems to answer routine questions. 
               Response times average 2 days, and every redirect adds another 
-              2 days. Complex threads like contract negotiation can drag on for more than 2 weeks.
+              2 days. Complex threads, like contract negotiation and query resolution, can drag on for 2+ weeks.
             </p>
             <p className="text-lg leading-relaxed font-semibold">
               60% of sites and 43% of sponsors/CROs say poor communication severely impacts SSU, patient enrollment, and site engagement.
