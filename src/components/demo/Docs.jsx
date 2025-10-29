@@ -9,12 +9,12 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   import.meta.url,
 ).toString();
 
-// Import PDF files
-import studyProtocolPdf from '../../docs/[NCT05262023] Study Protocol.pdf';
-import informedConsentPdf from '../../docs/[NCT05262023] Informed Consent.pdf';
-import dataManagementPdf from '../../docs/[NCT05262023] Data Management Plan Summary.pdf';
-import eproManualPdf from '../../docs/[NCT05262023] ePRO System Site Manual.pdf';
-import raciMatrixPdf from '../../docs/[NCT05262023] Clinical Operations RACI Matrix.pdf';
+// Import PDF files as URLs
+import studyProtocolPdf from '../../docs/[NCT05262023] Study Protocol.pdf?url';
+import informedConsentPdf from '../../docs/[NCT05262023] Informed Consent.pdf?url';
+import dataManagementPdf from '../../docs/[NCT05262023] Data Management Plan Summary.pdf?url';
+import eproManualPdf from '../../docs/[NCT05262023] ePRO System Site Manual.pdf?url';
+import raciMatrixPdf from '../../docs/[NCT05262023] Clinical Operations RACI Matrix.pdf?url';
 
 const mockDocuments = [
   { 
@@ -135,6 +135,7 @@ function PDFViewer({ document, onClose }) {
             <Document
               file={document.filePath}
               onLoadSuccess={onDocumentLoadSuccess}
+              onLoadError={(error) => console.error('PDF load error:', error)}
               loading={
                 <div className="flex items-center justify-center p-8">
                   <div className="text-gray-600">Loading PDF...</div>
@@ -145,6 +146,10 @@ function PDFViewer({ document, onClose }) {
                   <div className="text-red-600">Failed to load PDF. Please try again.</div>
                 </div>
               }
+              options={{
+                cMapUrl: '/cmaps/',
+                standardFontDataUrl: '/standard_fonts/',
+              }}
             >
               <Page 
                 pageNumber={pageNumber} 

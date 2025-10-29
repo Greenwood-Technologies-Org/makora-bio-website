@@ -17,7 +17,9 @@ export default defineConfig({
     },
   },
   assetsInclude: ['**/*.pdf'],
-  optimizeDeps: {
-    exclude: ['pdfjs-dist']
+  build: {
+    rollupOptions: {
+      external: [],
+    },
   },
 });
