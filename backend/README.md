@@ -50,6 +50,10 @@ uv pip install -e .
 uv pip install -e ".[dev]"
 ```
 
+```python
+python -m ipykernel install --user --name=makora-bio-backend --display-name "makora-bio-backend"
+```
+
 ### 4. Configure environment variables
 
 Copy the example environment file and update with your values:
