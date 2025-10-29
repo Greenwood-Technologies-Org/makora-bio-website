@@ -13,7 +13,7 @@ const HeroSection = () => {
           The intelligent data layer for clinical research
         </p>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          We're building an -based approach to the data movement between email, source, and vendor portals to save staff 20+ hours a week
+          We're building an AI-based approach to the data movement between email, source, and vendor portals to save staff 20+ hours a week
         </p>
       </div>
     </section>
