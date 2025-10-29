@@ -41,6 +41,25 @@
   ],
   "threads": [
     {
+      "id": 1,
+      "name": "Low IP Stock Alert - Patient Visit Before Scheduled Resupply",
+      "description": "A notification from a site coordinator regarding investigational product inventory timing. The site has a patient scheduled for dosing in 5 days, but this visit falls 5 days before the normal monthly resupply shipment is due to arrive. The coordinator is proactively requesting guidance on expediting the shipment or managing inventory.",
+      "participants": [
+        "Jennifer Martinez (Site Coordinator)",
+        "Alex Johnson (Sponsor CRA)"
+      ],
+      "problemId": null,
+      "isRead": false,
+      "messages": [
+        {
+          "from": "Jennifer Martinez",
+          "to": "Alex Johnson",
+          "content": "Hi Alex,\n\nHope you're doing well.\n\nI wanted to reach out regarding our investigational product inventory timing at Site 405 (Riverside Clinical Research) for study DNLI-001.\n\nWe have patient 405-2008 scheduled for their Week 12 dosing visit this Friday, November 1st at 9:00 AM. During our routine inventory review today, our pharmacy noted that we currently have 2 kits remaining in stock. The protocol requires 3 kits to be available on-site for proper randomization backup according to the pharmacy manual.\n\nOur normal monthly resupply shipment is scheduled to arrive on Wednesday, November 6th - which means this patient visit is happening 5 days before our usual restock day. Our last shipment arrived about 3 weeks ago, so we're just in that gap between shipments.\n\nCould you please advise on the best approach:\n1. Is it possible to expedite the November shipment to arrive by Thursday, October 31st (day before the visit)?\n2. Alternatively, should we consider rescheduling the patient visit to the following week after the resupply arrives?\n3. Are there any other sites in the region that might have excess inventory we could coordinate a transfer from?\n\nWe have some flexibility with this patient's schedule if needed, and Dr. Patterson is aware of the situation. Just wanted to get ahead of this to avoid any issues.\n\nPlease let me know what you think is the best path forward.\n\nThank you!\n\nBest regards,\n\nJennifer Martinez, CCRC\nSenior Clinical Research Coordinator\nRiverside Clinical Research Center - Site 405\n(555) 234-7890\njennifer.martinez@riversidecrc.org",
+          "timestamp": "2 hours ago"
+        }
+      ]
+    },
+    {
       "id": 2,
       "name": "Scheduling Request: Interim Monitoring Visit at Site 105 - Study DT-1234",
       "description": "A routine scheduling request you initiated with the Study Coordinator at Site 105 to arrange the next interim monitoring visit. The back-and-forth conversation involves confirming dates, discussing the monitoring plan, and requesting remote access to the site's electronic medical records system.",
