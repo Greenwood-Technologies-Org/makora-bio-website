@@ -17,6 +17,9 @@ class CategorizeEmailThread(dspy.Signature):
     existing_tasks: str = dspy.InputField(
         desc="JSON string of existing tasks with their subjects, summaries, and current status"
     )
+    user_profile: str = dspy.InputField(
+        desc="Information about the current user (name, email, organization, role). Treat outputs from this person's perspective."
+    )
 
     # Outputs
     action: str = dspy.OutputField(
@@ -54,6 +57,9 @@ class DraftEmailReply(dspy.Signature):
     todo_description: str = dspy.InputField(
         desc="The todo task description that this email reply should address (e.g., 'Confirm follow-up with internal team')"
     )
+    user_profile: str = dspy.InputField(
+        desc="Information about the current user composing the reply (name, email, organization, role). Use an appropriate tone and sign-off."
+    )
 
     # Outputs
     to: str = dspy.OutputField(desc="Comma-separated list of email addresses for the 'To' field")
@@ -75,8 +81,13 @@ class GenerateTodos(dspy.Signature):
     """Generate TODO tasks for clinical research based on task context and email threads.
 
     Analyzes the task details and associated email threads to suggest relevant,
-    actionable TODO items that help resolve the clinical research issue. If existing
-    TODOs already comprehensively cover what needs to be done, returns empty list.
+    actionable TODO items that help resolve the clinical research issue.
+
+    STRICT FILTERING: Only include TODOs that are directly actionable by the
+    person described in user_profile. Exclude items that primarily require action
+    from other roles (e.g., site pharmacist, data manager) unless the user's role
+    is to coordinate that action. If nothing is appropriate for this user, return
+    an empty list. Prefer at most 3–5 high-impact items.
     """
 
     # Inputs
@@ -89,13 +100,16 @@ class GenerateTodos(dspy.Signature):
     existing_todos: str = dspy.InputField(
         desc="JSON string of existing TODO items to analyze for completeness"
     )
+    user_profile: str = dspy.InputField(
+        desc="Information about the current user (name, email, organization, role). Tailor suggestions to this role."
+    )
 
     # Outputs
     coverage_assessment: str = dspy.OutputField(
-        desc="Assessment of whether existing TODOs comprehensively cover the task requirements. Either 'comprehensive' if existing TODOs are sufficient, or 'gaps_identified' if new TODOs are needed"
+        desc="Assessment of whether existing TODOs comprehensively cover the task requirements for this user. Either 'comprehensive' if existing TODOs are sufficient, or 'gaps_identified' if new TODOs are needed"
     )
     todos: str = dspy.OutputField(
-        desc="JSON array of suggested TODO objects (empty array if coverage_assessment is 'comprehensive'), each with 'description', 'priority' (High/Medium/Low), 'tag' (system tag like 'EDC', 'Thread 1', 'Thread 2', etc.), and 'reasoning' (why this TODO is needed)"
+        desc="JSON array of suggested TODO objects specifically for this user (empty array if none are appropriate or coverage is comprehensive), each with 'description', 'priority' (High/Medium/Low), 'tag' (system tag like 'EDC', 'Thread 1', 'Thread 2', etc.), and 'reasoning' (why this TODO is needed)"
     )
     summary: str = dspy.OutputField(
         desc="Brief explanation of the coverage assessment and TODO generation strategy. If comprehensive, explain why existing TODOs are sufficient. If gaps identified, explain what new TODOs were suggested."
