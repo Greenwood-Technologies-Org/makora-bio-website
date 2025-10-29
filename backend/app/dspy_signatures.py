@@ -5,11 +5,11 @@ import dspy
 
 class CategorizeEmailThread(dspy.Signature):
     """Categorize an email thread into clinical research tasks.
-
+    
     Analyzes email content to determine if it should be assigned to an existing task
     or if a new task should be created. Specializes in clinical research workflows.
     """
-
+    
     # Inputs
     email_thread: str = dspy.InputField(
         desc="The email thread content including subject, participants, and message bodies"
@@ -20,7 +20,7 @@ class CategorizeEmailThread(dspy.Signature):
     user_profile: str = dspy.InputField(
         desc="Information about the current user (name, email, organization, role). Treat outputs from this person's perspective."
     )
-
+    
     # Outputs
     action: str = dspy.OutputField(
         desc="Either 'assign_existing' to assign to an existing task, or 'create_new' to create a new task"
@@ -28,7 +28,9 @@ class CategorizeEmailThread(dspy.Signature):
     task_id: str = dspy.OutputField(
         desc="If action is 'assign_existing', the ID of the existing task. Otherwise, empty string."
     )
-    confidence: str = dspy.OutputField(desc="Confidence score from 0-100 for the recommendation")
+    confidence: str = dspy.OutputField(
+        desc="Confidence score from 0-100 for the recommendation"
+    )
     reasoning: str = dspy.OutputField(
         desc="Brief explanation of why this categorization was chosen"
     )

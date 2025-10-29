@@ -1,10 +1,9 @@
 """DSPY-powered API routes."""
 
 import os
-
 # Disable DSPy cache before importing to prevent permissions issues
-os.environ["DSPY_CACHE_DISABLED"] = "1"
-os.environ["DSPY_CACHE_TYPE"] = "none"
+os.environ['DSPY_CACHE_DISABLED'] = '1'
+os.environ['DSPY_CACHE_TYPE'] = 'none'
 
 from dotenv import load_dotenv
 from flask import Blueprint, jsonify, request
@@ -143,19 +142,19 @@ def categorize_email():
 
         thread = data["email_thread"]
         email_content = f"""
-Subject: {thread.get("subject", "")}
-Participants: {", ".join(thread.get("participants", []))}
-Description: {thread.get("description", "")}
+Subject: {thread.get('subject', '')}
+Participants: {', '.join(thread.get('participants', []))}
+Description: {thread.get('description', '')}
 
 Messages:
 """
-
-        for msg in thread.get("messages", []):
+        
+        for msg in thread.get('messages', []):
             email_content += f"""
-From: {msg.get("from", "")}
-To: {msg.get("to", "")}
-Time: {msg.get("timestamp", "")}
-Content: {msg.get("content", "")}
+From: {msg.get('from', '')}
+To: {msg.get('to', '')}
+Time: {msg.get('timestamp', '')}
+Content: {msg.get('content', '')}
 ---
 """
 
@@ -164,7 +163,7 @@ Content: {msg.get("content", "")}
 
         # Use DSPy to categorize the email
         categorize_signature = dspy.ChainOfThought(CategorizeEmailThread)
-
+        
         user_profile = json.dumps(data.get("user_profile", {}))
 
         result = categorize_signature(
@@ -177,7 +176,7 @@ Content: {msg.get("content", "")}
         recommendation = {
             "action": result.action,
             "confidence": result.confidence,
-            "reasoning": result.reasoning,
+            "reasoning": result.reasoning
         }
 
         if result.action == "assign_existing":
@@ -186,10 +185,13 @@ Content: {msg.get("content", "")}
             recommendation["new_task"] = {
                 "subject": result.new_task_subject,
                 "summary": result.new_task_summary,
-                "priority": result.new_task_priority,
+                "priority": result.new_task_priority
             }
 
-        return jsonify({"success": True, "recommendation": recommendation}), 200
+        return jsonify({
+            "success": True,
+            "recommendation": recommendation
+        }), 200
 
     except Exception as e:
         return jsonify({"success": False, "error": str(e)}), 500
@@ -262,22 +264,22 @@ def generate_todos():
 
         task = data["task"]
         task_context = f"""
-Task ID: {task.get("id", "")}
-Subject: {task.get("subject", "")}
-Summary: {task.get("summary", "")}
-Urgency: {task.get("urgency", "")}
-Status: {task.get("status", "")}
+Task ID: {task.get('id', '')}
+Subject: {task.get('subject', '')}
+Summary: {task.get('summary', '')}
+Urgency: {task.get('urgency', '')}
+Status: {task.get('status', '')}
 """
 
         # Format email threads
         email_threads_json = json.dumps(data["email_threads"])
-
+        
         # Format existing todos
         existing_todos_json = json.dumps(data["existing_todos"])
 
         # Use DSPy to generate TODOs
         generate_todos_signature = dspy.ChainOfThought(GenerateTodos)
-
+        
         user_profile = json.dumps(data.get("user_profile", {}))
 
         result = generate_todos_signature(
@@ -292,16 +294,17 @@ Status: {task.get("status", "")}
             todos_list = json.loads(result.todos)
         except json.JSONDecodeError:
             # If JSON parsing fails, return an error
-            return jsonify({"success": False, "error": "Invalid JSON format in AI response"}), 500
+            return jsonify({
+                "success": False, 
+                "error": "Invalid JSON format in AI response"
+            }), 500
 
-        return jsonify(
-            {
-                "success": True,
-                "coverage_assessment": result.coverage_assessment,
-                "todos": todos_list,
-                "summary": result.summary,
-            }
-        ), 200
+        return jsonify({
+            "success": True,
+            "coverage_assessment": result.coverage_assessment,
+            "todos": todos_list,
+            "summary": result.summary
+        }), 200
 
     except Exception as e:
         return jsonify({"success": False, "error": str(e)}), 500
