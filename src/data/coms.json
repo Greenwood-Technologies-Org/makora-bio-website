@@ -41,6 +41,25 @@
   ],
   "threads": [
     {
+      "id": 1,
+      "name": "Low IP Stock Alert - Patient Visit Before Scheduled Resupply",
+      "description": "A notification from a site coordinator regarding investigational product inventory timing. The site has a patient scheduled for dosing in 5 days, but this visit falls 5 days before the normal monthly resupply shipment is due to arrive. The coordinator is proactively requesting guidance on expediting the shipment or managing inventory.",
+      "participants": [
+        "Jennifer Martinez (Site Coordinator)",
+        "Alex Johnson (Sponsor CRA)"
+      ],
+      "problemId": null,
+      "isRead": false,
+      "messages": [
+        {
+          "from": "Jennifer Martinez",
+          "to": "Alex Johnson",
+          "content": "Hi Alex,\n\nHope you're doing well.\n\nI wanted to reach out regarding our investigational product inventory timing at Site 405 (Riverside Clinical Research) for study DNLI-001.\n\nWe have patient 405-2008 scheduled for their Week 12 dosing visit this Friday, November 1st at 9:00 AM. During our routine inventory review today, our pharmacy noted that we currently have 2 kits remaining in stock. The protocol requires 3 kits to be available on-site for proper randomization backup according to the pharmacy manual.\n\nOur normal monthly resupply shipment is scheduled to arrive on Wednesday, November 6th - which means this patient visit is happening 5 days before our usual restock day. Our last shipment arrived about 3 weeks ago, so we're just in that gap between shipments.\n\nCould you please advise on the best approach:\n1. Is it possible to expedite the November shipment to arrive by Thursday, October 31st (day before the visit)?\n2. Alternatively, should we consider rescheduling the patient visit to the following week after the resupply arrives?\n3. Are there any other sites in the region that might have excess inventory we could coordinate a transfer from?\n\nWe have some flexibility with this patient's schedule if needed, and Dr. Patterson is aware of the situation. Just wanted to get ahead of this to avoid any issues.\n\nPlease let me know what you think is the best path forward.\n\nThank you!\n\nBest regards,\n\nJennifer Martinez, CCRC\nSenior Clinical Research Coordinator\nRiverside Clinical Research Center - Site 405\n(555) 234-7890\njennifer.martinez@riversidecrc.org",
+          "timestamp": "2 hours ago"
+        }
+      ]
+    },
+    {
       "id": 2,
       "name": "Scheduling Request: Interim Monitoring Visit at Site 105 - Study DT-1234",
       "description": "A routine scheduling request you initiated with the Study Coordinator at Site 105 to arrange the next interim monitoring visit. The back-and-forth conversation involves confirming dates, discussing the monitoring plan, and requesting remote access to the site's electronic medical records system.",
@@ -55,28 +74,36 @@
         {
           "from": "Alex Johnson",
           "to": "Maria Garcia",
-          "cc": ["David Chen"],
+          "cc": [
+            "David Chen"
+          ],
           "content": "Hi Maria,\n\nHope you are having a good week.\n\nI'm writing to schedule the next interim monitoring visit (IMV) for the DT-1234 study at Centennial Medical Center. I am proposing the weeks of June 24th or July 8th for a 2-day visit.\n\nPlease let me know what dates within that timeframe work best for you and the PI.\n\nBest regards,\n\nAlex Johnson\nClinical Research Associate\nDenali Therapeutics",
           "timestamp": "3 days ago"
         },
         {
           "from": "Maria Garcia",
           "to": "Alex Johnson",
-          "cc": ["David Chen"],
+          "cc": [
+            "David Chen"
+          ],
           "content": "Hi Alex,\n\nThanks for reaching out. The week of July 8th works better for us. How about Tuesday, July 9th and Wednesday, July 10th?\n\nCould you please send over the monitoring plan for our review prior to the visit?\n\nThanks,\n\nMaria Garcia\nStudy Coordinator\nCentennial Medical Center",
           "timestamp": "2 days ago"
         },
         {
           "from": "Alex Johnson",
           "to": "Maria Garcia",
-          "cc": ["David Chen"],
+          "cc": [
+            "David Chen"
+          ],
           "content": "Hi Maria,\n\nThat's great, July 9th and 10th are confirmed on my end.\n\nI've attached the monitoring plan for your review. To help streamline the visit, could we arrange for remote access to your EMR system a few days prior? Please let me know the process for requesting temporary credentials.\n\nI will send the official confirmation letter once we have the access details sorted.\n\nBest,\n\nAlex Johnson\nClinical Research Associate\nDenali Therapeutics\n\nAttachment:\n- DT-1234_IMV_Plan_Site105_2024-07-09.pdf",
           "timestamp": "1 day ago"
         },
         {
           "from": "Maria Garcia",
           "to": "Alex Johnson",
-          "cc": ["David Chen"],
+          "cc": [
+            "David Chen"
+          ],
           "content": "Hi Alex,\n\nThanks for the monitoring plan. I've forwarded it to Dr. Evans.\n\nFor EMR access, please fill out the attached Non-Employee Access Request form and return it to me. Our IT department typically takes 2-3 business days to process these requests.\n\nOnce you send it back, I'll submit it and we can consider the dates fully confirmed. Let me know if you have any questions.\n\nBest,\n\nMaria\n\nAttachment:\n- Centennial_EMR_Access_Request_Form.pdf",
           "timestamp": "6 hours ago"
         }
@@ -98,7 +125,10 @@
         {
           "from": "Sarah Chen",
           "to": "Alex Johnson",
-          "cc": ["David Lee", "Maria Garcia"],
+          "cc": [
+            "David Lee",
+            "Maria Garcia"
+          ],
           "content": "Hi Alex,\n\nHope you are well.\n\nI am forwarding a list of critical, overdue data queries for Site 301 (PI: Dr. Wells) that require immediate attention. We are rapidly approaching the database lock deadline for the Q4 analysis, and resolution of these queries is on the critical path.\n\nThe attached spreadsheet details 8 critical queries related specifically to participant dosing records. These discrepancies must be clarified by the site to ensure data integrity.\n\nCould you please follow up with the site coordinator, Jessica Miller, to ensure these are resolved in the EDC system within the next 48 hours? \n\nPlease let me know if you anticipate any issues or need further clarification from the data management team.\n\nThanks for your urgent attention to this matter.\n\nBest regards,\n\nSarah Chen\nLead Data Manager\nSynergy Clinical\n\nAttachment:\n- DNLI-STX-01_Site301_Critical_Queries_Dosing_06NOV2023.xlsx",
           "timestamp": "3 hours ago"
         }
@@ -116,26 +146,34 @@
         "Emily Vance (Site PI)"
       ],
       "problemId": null,
-      "isRead": false,
+      "isRead": true,
       "messages": [
         {
           "from": "Sarah Chen",
           "to": "Ben Carter",
-          "cc": ["Emily Vance"],
+          "cc": [
+            "Emily Vance"
+          ],
           "content": "Hi Ben,\n\nI am writing to self-report a protocol deviation for subject 101-003, enrolled in Part A of the DNLI-123 study.\n\nThis morning, the participant missed their scheduled 4-hour post-dose PK blood draw. The participant had a family emergency and had to leave the site unexpectedly after the 2-hour draw was completed. All other procedures for the visit were completed as scheduled.\n\nWe have documented this event in the subject's source documents and are completing the Protocol Deviation form now. Please advise on any immediate actions required from our side and the next steps for reporting this to the sponsor.\n\nThank you,\n\nSarah Chen, CCRP\nStudy Coordinator\nOakwood Clinical Research Center",
           "timestamp": "4 hours ago"
         },
         {
           "from": "Ben Carter",
           "to": "Alex Johnson",
-          "cc": ["Maria Garcia", "Sarah Chen"],
+          "cc": [
+            "Maria Garcia",
+            "Sarah Chen"
+          ],
           "content": "Hi Alex and Maria,\n\nPlease see the notification below from Site 456 regarding a missed PK sample for a Part A subject. This appears to be a significant deviation given the nature of the healthy volunteer cohort.\n\nSarah, thank you for the prompt notification. Please send over the completed PD form once it's finalized.\n\nAlex/Maria - Please let us know your thoughts on the potential impact and how you would like us to proceed with documentation and follow-up.\n\nBest regards,\n\nBen Carter\nClinical Research Associate\nSynergy CRO\n\n---------- Forwarded message ---------\nFrom: Sarah Chen <sarah.chen@oakwoodcrc.com>\n\nI am writing to self-report a protocol deviation for subject 101-003, enrolled in Part A of the DNLI-123 study.\n\nThis morning, the participant missed their scheduled 4-hour post-dose PK blood draw. The participant had a family emergency and had to leave the site unexpectedly after the 2-hour draw was completed. All other procedures for the visit were completed as scheduled.\n\nWe have documented this event in the subject's source documents and are completing the Protocol Deviation form now.",
           "timestamp": "2 hours ago"
         },
         {
           "from": "Maria Garcia",
           "to": "Alex Johnson",
-          "cc": ["Ben Carter", "Sarah Chen"],
+          "cc": [
+            "Ben Carter",
+            "Sarah Chen"
+          ],
           "content": "All,\n\nThank you for flagging this. A missed PK sample in the HV cohort is indeed a significant deviation and will require careful assessment.\n\nAlex, please take the lead on this. Can you please follow up with Sarah to ensure the deviation is documented thoroughly in the source and on the PD form? Once you receive the form, please review it and begin drafting an initial impact assessment for our internal clinical pharmacology team. We need to understand how this missing data point affects the overall analysis for this cohort.\n\nPlease let me know if you need any support.\n\nBest,\n\nMaria Garcia\nClinical Trial Manager\nDenali Therapeutics",
           "timestamp": "1 hour ago"
         }
@@ -152,19 +190,22 @@
         "Jessica Chen (Site Coordinator)"
       ],
       "problemId": null,
-      "isRead": false,
+      "isRead": true,
       "messages": [
         {
           "from": "Dr. Emily Carter",
           "to": "Alex Johnson",
-          "cc": ["David Lee", "Jessica Chen"],
+          "cc": [
+            "David Lee",
+            "Jessica Chen"
+          ],
           "content": "Hi Alex,\n\nHope you are having a productive week.\n\nThe pharmacy team here at Oakwood Clinical Research (Site 210) would like to confirm the details for our next shipment of the investigational product, DNL593.\n\nWe are preparing for a couple of new participants who are scheduled for randomization soon and want to ensure our stock levels are adequate. Could you please provide an update on the quantity being shipped and the expected delivery date?\n\nThank you for your help.\n\nBest regards,\n\nDr. Emily Carter, PharmD\nInvestigational Drug Services\nOakwood Clinical Research",
           "timestamp": "1 day ago"
         }
       ]
     },
     {
-      "id": 1,
+      "id": 17,
       "name": "URGENT: SAE Report - Study DNLI-001 - Site 203 - Participant 203-005",
       "description": "An urgent email thread initiated by the Principal Investigator at Site 203 reporting a Serious Adverse Event (SAE). A participant in Part B of the study was hospitalized due to a fall. The thread includes your immediate follow-up questions regarding the event's causality and a request for the completed SAE form and source documentation.",
       "participants": [
@@ -181,14 +222,24 @@
         {
           "from": "Dr. Robert Miller",
           "to": "Maria Garcia",
-          "cc": ["Emily White", "David Lee", "Alex Johnson", "Sarah Chen"],
+          "cc": [
+            "Emily White",
+            "David Lee",
+            "Alex Johnson",
+            "Sarah Chen"
+          ],
           "content": "Dear Team,\n\nThis is an urgent notification regarding a Serious Adverse Event for participant 203-005 in the DNLI-001 study (Part B).\n\nThe participant was hospitalized yesterday evening following a fall at home. They are currently stable and undergoing evaluation.\n\nWe are in the process of gathering all necessary source documentation and will forward the completed SAE form as soon as possible, well within the 24-hour reporting window.\n\nBest regards,\n\nDr. Robert Miller\nPrincipal Investigator\nOakwood Research Center, Site 203",
           "timestamp": "2 hours ago"
         },
         {
           "from": "Maria Garcia",
           "to": "Dr. Robert Miller",
-          "cc": ["Emily White", "David Lee", "Alex Johnson", "Sarah Chen"],
+          "cc": [
+            "Emily White",
+            "David Lee",
+            "Alex Johnson",
+            "Sarah Chen"
+          ],
           "content": "Dear Dr. Miller,\n\nThank you for the prompt notification. We have received your alert and are on standby.\n\nPlease send the completed SAE form and any available source documentation (e.g., hospital admission notes, ER report) as soon as it is available.\n\nWe appreciate your diligence.\n\nBest regards,\n\nMaria Garcia\nClinical Research Associate\nSynergy Clinical",
           "timestamp": "1 hour ago"
         },
@@ -207,7 +258,10 @@
         {
           "from": "Maria Garcia",
           "to": "Alex Johnson",
-          "cc": ["David Lee", "Sarah Chen"],
+          "cc": [
+            "David Lee",
+            "Sarah Chen"
+          ],
           "content": "Hi Alex,\n\nPlease see the forwarded email and attachments for the SAE reported at Site 203 (hospitalization due to a fall).\n\nKey points:\n- Participant in Part B\n- PI causality assessment: 'possibly related'\n\nCould you please review the attached documents and confirm the sponsor's initial assessment and any immediate follow-up questions for the site? The Medical Monitor is on copy.\n\nThanks,\nMaria\n\n--- Begin Forwarded Message ---\nFrom: Emily White <e.white@oakwoodresearch.org>\n\nPlease find the completed SAE form and the initial hospital admission summary for participant 203-005 attached.\n\nDr. Miller has assessed the event as 'possibly related' to the investigational product due to the participant reporting a brief episode of dizziness prior to the fall. This is documented in the attached form.\n\nWe are awaiting further records from the hospital. Please review and let us know if any immediate additional information is required from our end.",
           "timestamp": "15 minutes ago"
         }
@@ -267,14 +321,18 @@
         {
           "from": "alex.johnson@denalitx.com",
           "to": "m.garcia@summitclinical.com",
-          "cc": ["d.chen@syneos.com"],
+          "cc": [
+            "d.chen@syneos.com"
+          ],
           "content": "Hi Maria,\n\nHope you are having a good week.\n\nI'm writing to schedule the upcoming Q3 Interim Monitoring Visit for the DNLI-123-01 study at your site. I would like to propose the week of August 5th or the week of August 12th for the visit.\n\nPlease let me know which of these weeks works best for you and Dr. Reed's availability. Once we have a week selected, we can lock in the specific dates.\n\nBest regards,\n\nAlex Johnson\nClinical Research Associate\nDenali Therapeutics",
           "timestamp": "17 days ago"
         },
         {
           "from": "m.garcia@summitclinical.com",
           "to": "alex.johnson@denalitx.com",
-          "cc": ["d.chen@syneos.com"],
+          "cc": [
+            "d.chen@syneos.com"
+          ],
           "content": "Hi Alex,\n\nThanks for reaching out.\n\nUnfortunately, Dr. Reed will be on vacation for the first three weeks of August, so the weeks of the 5th and 12th will not work for us.\n\nWould the week of August 26th be a possibility for you? We have good availability on August 27-28.\n\nPlease let me know if that works for your schedule.\n\nThank you,\n\nMaria Garcia\nClinical Research Coordinator\nSummit Clinical Research",
           "timestamp": "21 days ago"
         }
@@ -321,7 +379,10 @@
         {
           "from": "e.reed@maplewoodresearch.com",
           "to": "alex.johnson@denalithx.com",
-          "cc": ["c.ruiz@maplewoodresearch.com", "sarah.chen@synergycro.com"],
+          "cc": [
+            "c.ruiz@maplewoodresearch.com",
+            "sarah.chen@synergycro.com"
+          ],
           "content": "Dear Alex,\n\nThis email is to urgently inform you of a significant protocol deviation that occurred today at our site (102) for study DNLI-001.\n\nThis morning, participant 102-2005, enrolled in Part B (FTD cohort), was inadvertently administered a double dose of the investigational product during their scheduled Visit 5 infusion.\n\nThe error was identified by the infusion nurse immediately following the procedure. The participant is currently stable, asymptomatic, and is being held for an extended 8-hour observation period as a precaution. All vital signs are being monitored closely and remain within normal limits.\n\nWe have documented the event and completed the attached Protocol Deviation form. We require immediate guidance on the necessary follow-up, safety monitoring, and reporting procedures. Please escalate this to the study's Medical Monitor as soon as possible for their assessment and recommendations.\n\nWe await your urgent response.\n\nBest regards,\n\nDr. Evelyn Reed\nPrincipal Investigator\nMaplewood Clinical Research\nSite 102\n\nAttachments:\n- PD_Form_102-2005_DoubleDose_10MAY2024.pdf",
           "timestamp": "27 days ago"
         }
@@ -380,14 +441,20 @@
         {
           "from": "alex.johnson@denalitx.com",
           "to": "sarah.miller@ucsfmed.org",
-          "cc": ["pm_lead@pinnaclecro.com", "emily.vance@ucsfmed.org"],
+          "cc": [
+            "pm_lead@pinnaclecro.com",
+            "emily.vance@ucsfmed.org"
+          ],
           "content": "Hi Sarah,\n\nI hope you are having a good week.\n\nI'm following up on the Monitoring Visit Report from our visit on October 25th. There are a couple of outstanding action items that we need to close out:\n\n1. Updated Delegation of Authority Log: Please provide the updated log reflecting the addition of Dr. James Peterson as a new Sub-Investigator.\n2. Training Confirmation: Please provide documentation confirming that Dr. Peterson has completed the required protocol and GCP training.\n\nPlease let me know if you have an estimated timeline for when these items can be provided.\n\nThanks for your continued hard work on this study.\n\nBest regards,\n\nAlex Johnson\nClinical Research Associate\nDenali Therapeutics",
           "timestamp": "29 days ago"
         },
         {
           "from": "sarah.miller@ucsfmed.org",
           "to": "alex.johnson@denalitx.com",
-          "cc": ["pm_lead@pinnaclecro.com", "emily.vance@ucsfmed.org"],
+          "cc": [
+            "pm_lead@pinnaclecro.com",
+            "emily.vance@ucsfmed.org"
+          ],
           "content": "Hi Alex,\n\nThanks for the reminder. \n\nWe have Dr. Peterson's training documentation ready, which I've attached to this email. \n\nI am still waiting for Dr. Vance to sign the updated Delegation of Authority Log. She has been in back-to-back patient visits today but I expect to have it signed and sent over to you by EOD tomorrow.\n\nI will let you know if there are any further delays.\n\nBest,\n\nSarah Miller\nClinical Research Coordinator\nUCSF Medical Center\n\nAttachments:\n- JPeterson_Training_Confirmation_DNLI-001.pdf",
           "timestamp": "15 days ago"
         }
@@ -410,7 +477,9 @@
         {
           "from": "mgarcia@westwoodcrc.com",
           "to": "ben.carter@synergyclinical.com",
-          "cc": ["ereed@westwoodcrc.com"],
+          "cc": [
+            "ereed@westwoodcrc.com"
+          ],
           "content": "Hi Ben,\n\nHope you're having a good week.\n\nWe have a potential healthy volunteer for Part A of the DNL-123 study who is interested in screening. During the pre-screen review, we noted their liver function tests (LFTs) are slightly above the upper limit of normal (ULN). Specifically, their ALT is 1.2x ULN.\n\nThe protocol exclusion criterion #5 states 'Clinically significant abnormal laboratory values,' but it's a bit ambiguous for this specific case. Could you please provide clarification on the acceptable range for LFTs for healthy volunteers in this part of the study? We want to ensure we are interpreting this correctly before proceeding with the formal screening visit.\n\nThanks for your help.\n\nBest regards,\n\nMaria Garcia\nClinical Research Coordinator\nWestwood Clinical Research Center",
           "timestamp": "29 days ago"
         },
@@ -443,14 +512,20 @@
         {
           "from": "alex.johnson@denalitx.com",
           "to": "s.chen@universityhealth.org",
-          "cc": ["d.roberts@universityhealth.org", "lisa.wong@syneos.com"],
+          "cc": [
+            "d.roberts@universityhealth.org",
+            "lisa.wong@syneos.com"
+          ],
           "content": "Dear Sarah,\n\nI hope this email finds you well.\n\nI'm reaching out today for a proactive check-in regarding recruitment for the FTD cohort (Part B) of the DNLI-001 study at University Health Center. In reviewing the recent screening logs, I noted that your site has not yet screened any patients for this specific cohort.\n\nWe understand that recruiting for specific patient populations can present unique challenges. Our team at Denali is here to support you in any way we can. We'd be happy to schedule a brief call to discuss your site's current pre-screening and recruitment strategies. We can also explore if any additional resources might be helpful.\n\nTo that end, I've attached our latest approved patient recruitment flyer and an updated FAQ document for sites, which you may find useful.\n\nPlease let me know if you and Dr. Roberts would be available for a 15-20 minute call sometime next week to brainstorm potential solutions.\n\nBest regards,\n\nAlex Johnson\nClinical Research Associate\nDenali Therapeutics\nalex.johnson@denalitx.com\n\nAttachments:\n- DNLI-001_Patient_Recruitment_Flyer_v3.0.pdf\n- DNLI-001_FAQ_for_Sites_v2.1.pdf",
           "timestamp": "30 days ago"
         },
         {
           "from": "s.chen@universityhealth.org",
           "to": "alex.johnson@denalitx.com",
-          "cc": ["d.roberts@universityhealth.org", "lisa.wong@syneos.com"],
+          "cc": [
+            "d.roberts@universityhealth.org",
+            "lisa.wong@syneos.com"
+          ],
           "content": "Hi Alex,\n\nThank you for reaching out and for the attached materials. We appreciate the proactive support.\n\nYou are correct, we have been facing some challenges identifying potential candidates for the FTD cohort. A call to discuss our strategy would be very helpful.\n\nDr. Roberts and I are generally available next Tuesday or Thursday afternoon. Please let us know what time works best for you to send a meeting invitation.\n\nThank you,\n\nSarah Chen\nClinical Research Coordinator\nUniversity Health Center\ns.chen@universityhealth.org",
           "timestamp": "1 month ago"
         }
@@ -471,7 +546,10 @@
         {
           "from": "sarah.chen@denalitx.com",
           "to": "alex.johnson@denalitx.com",
-          "cc": ["tmf.queries@denalitx.com", "david.lee@denalitx.com"],
+          "cc": [
+            "tmf.queries@denalitx.com",
+            "david.lee@denalitx.com"
+          ],
           "content": "Hi Alex,\n\nHope you are well.\n\nDuring a routine QC of the Trial Master File for study DNLI-CNS-002, I was unable to locate the IRB approval letter for the recently submitted Protocol Amendment 4 (dated 2023-10-15) for our central site, Summit Neurosciences (Site 101).\n\nCould you please investigate this? If you have the document, please upload it to the correct placeholder in the eTMF as soon as possible. If the site has not yet provided it, could you follow up with them?\n\nThis is currently holding up our periodic TMF review milestone.\n\nThanks for your help.\n\nBest regards,\n\nSarah Chen\nTMF Specialist\nDenali Therapeutics\nsarah.chen@denalitx.com",
           "timestamp": "1 month ago"
         }
@@ -494,16 +572,39 @@
         {
           "from": "schen@ucsfmed.org",
           "to": "david.miller@syneos.com",
-          "cc": ["mlee@ucsfmed.org"],
+          "cc": [
+            "mlee@ucsfmed.org"
+          ],
           "content": "Hi David,\n\nHope you are well.\n\nWe have a query regarding participant 101-005. The participant is approaching their Week 25 visit and has expressed strong interest in continuing into the Open-Label Extension (Part C) of the study.\n\nTo ensure we can properly consent them, could you please provide clarification on the visit schedule and any specific procedures required for the OLE portion of the trial? We want to make sure we have all the correct information to discuss with the participant.\n\nPlease let us know.\n\nBest regards,\n\nSarah Chen\nClinical Research Coordinator\nUCSF Medical Center",
           "timestamp": "1 month ago"
         },
         {
           "from": "david.miller@syneos.com",
           "to": "alex.johnson@denalitx.com",
-          "cc": ["maria.garcia@denalitx.com"],
+          "cc": [
+            "maria.garcia@denalitx.com"
+          ],
           "content": "Hi Alex,\n\nPlease see the query below from Site 101 regarding the OLE rollover for participant 101-005.\n\nCould you please provide the site with the requested clarification on the visit schedule and procedures for Part C?\n\nThanks,\nDavid\n\n--- Forwarded message ---\nFrom: Sarah Chen <schen@ucsfmed.org>\nDate: Thu, Oct 26, 2023 at 10:15 AM\nSubject: [DNLI-001] Site 101 - Participant 101-005 - OLE Rollover Query\nTo: David Miller <david.miller@syneos.com>\nCc: Michael Lee <mlee@ucsfmed.org>\n\n[original message content included above]",
           "timestamp": "2 months ago"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Low IP Stock Alert - Patient Visit Before Scheduled Resupply",
+      "description": "A notification from a site coordinator regarding investigational product inventory timing. The site has a patient scheduled for dosing in 5 days, but this visit falls 5 days before the normal monthly resupply shipment is due to arrive. The coordinator is proactively requesting guidance on expediting the shipment or managing inventory.",
+      "participants": [
+        "Jennifer Martinez (Site Coordinator)",
+        "Alex Johnson (Sponsor CRA)"
+      ],
+      "problemId": null,
+      "isRead": true,
+      "messages": [
+        {
+          "from": "Jennifer Martinez",
+          "to": "Alex Johnson",
+          "content": "Hi Alex,\n\nHope you're doing well.\n\nI wanted to reach out regarding our investigational product inventory timing at Site 405 (Riverside Clinical Research) for study DNLI-001.\n\nWe have patient 405-2008 scheduled for their Week 12 dosing visit this Friday, November 1st at 9:00 AM. During our routine inventory review today, our pharmacy noted that we currently have 2 kits remaining in stock. The protocol requires 3 kits to be available on-site for proper randomization backup according to the pharmacy manual.\n\nOur normal monthly resupply shipment is scheduled to arrive on Wednesday, November 6th - which means this patient visit is happening 5 days before our usual restock day. Our last shipment arrived about 3 weeks ago, so we're just in that gap between shipments.\n\nCould you please advise on the best approach:\n1. Is it possible to expedite the November shipment to arrive by Thursday, October 31st (day before the visit)?\n2. Alternatively, should we consider rescheduling the patient visit to the following week after the resupply arrives?\n3. Are there any other sites in the region that might have excess inventory we could coordinate a transfer from?\n\nWe have some flexibility with this patient's schedule if needed, and Dr. Patterson is aware of the situation. Just wanted to get ahead of this to avoid any issues.\n\nPlease let me know what you think is the best path forward.\n\nThank you!\n\nBest regards,\n\nJennifer Martinez, CCRC\nSenior Clinical Research Coordinator\nRiverside Clinical Research Center - Site 405\n(555) 234-7890\njennifer.martinez@riversidecrc.org",
+          "timestamp": "2 hours ago"
         }
       ]
     }
