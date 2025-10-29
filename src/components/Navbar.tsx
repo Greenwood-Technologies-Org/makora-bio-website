@@ -26,7 +26,12 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <span className="text-xl font-bold text-primary">Makora Bio</span>
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="text-xl font-bold text-primary hover:opacity-80 transition-opacity"
+          >
+            Makora Bio
+          </button>
           
           <div className="hidden md:flex items-center gap-8">
             <button
