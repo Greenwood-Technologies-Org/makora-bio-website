@@ -190,11 +190,6 @@ function Docs() {
   const [selectedDocs, setSelectedDocs] = useState(new Set());
   const [viewingDoc, setViewingDoc] = useState(null);
 
-  const getFileIcon = (type) => {
-    // All files are PDFs now
-    return '�';
-  };
-
   const getFileColor = (type) => {
     const colors = {
       Protocol: 'bg-blue-100 text-blue-700 border-blue-200',
@@ -289,19 +284,9 @@ function Docs() {
                 </div>
               </div>
 
-              {/* File Icon */}
-              <div 
-                className="flex items-center justify-center mb-4 pt-4 cursor-pointer"
-                onClick={() => setViewingDoc(doc)}
-              >
-                <div className={`w-20 h-20 rounded-lg border-2 flex items-center justify-center text-4xl transition-transform group-hover:scale-110 ${getFileColor(doc.type)}`}>
-                  {getFileIcon(doc.type)}
-                </div>
-              </div>
-
               {/* File Info */}
               <div 
-                className="text-center pb-4 cursor-pointer"
+                className="text-center pb-4 pt-12 cursor-pointer"
                 onClick={() => setViewingDoc(doc)}
               >
                 <h3 className="text-sm font-semibold text-gray-900 mb-2 px-2" title={doc.name}>
