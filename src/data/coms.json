@@ -1,277 +1,621 @@
-[
-  {
-    "id": 1,
-    "subject": "Subject 103-004 AE / Con Med Mismatch",
-    "summary": "Data management flagged a mismatch — AE log shows ibuprofen 400 mg for headache, but concomitant medications list 200 mg. CRA needs to confirm the correct dose with the site and ensure consistency across logs.",
-    "urgency": "High",
-    "status": "In Progress",
-    "timestamp": "2 hours ago",
-    "threads": [
-      {
-        "id": 1,
-        "name": "Thread 1: Medical Monitor → Data Management → CRA",
-        "description": "Internal thread identifying the data discrepancy and requesting CRA follow-up with the site.",
-        "participants": ["Medical Monitor", "Data Management", "CRA"],
-        "messages": [
-          {
-            "from": "Medical Monitor",
-            "to": "Data Management",
-            "content": "I noticed a potential discrepancy in Subject 103-004's adverse event reporting. Can you investigate?",
-            "timestamp": "2 days ago"
-          },
-          {
-            "from": "Data Management",
-            "to": "CRA",
-            "content": "We found a mismatch: AE log shows ibuprofen 400 mg for headache, but concomitant medications list 200 mg. Please follow up with the site to confirm the correct dose.",
-            "timestamp": "1 day ago"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "name": "Thread 2: CRA → Site CRC",
-        "description": "Outbound email thread to verify and correct the medication entry in the EDC.",
-        "participants": ["CRA", "Site CRC"],
-        "messages": []
-      }
-    ],
-    "todos": [
-      {
-        "id": 1,
-        "description": "Confirm follow-up with internal team",
-        "assignee": "CRA",
-        "status": "pending",
-        "tag": "Thread 1",
-        "hasAIDraft": true,
-        "aiDraft": {
-          "threadId": 1,
-          "message": "Following up with the site now to clarify the ibuprofen dosage discrepancy. Will report back once I receive confirmation from the site CRC.",
-          "references": [
-            {
-              "type": "Email Thread",
-              "title": "Re: Similar AE/Con Med query from Site 102",
-              "date": "2025-10-10"
-            },
-            {
-              "type": "Document",
-              "title": "Data Query Resolution SOP",
-              "date": "2025-09-15"
-            }
-          ]
+{
+  "problems": [
+    {
+      "id": 1,
+      "subject": "SAE Review & Response - DNLI-001 Site 203 Pt 203-005 - Hospitalization (Fall)",
+      "summary": "Urgent SAE requiring sponsor review and response. Participant 203-005 (Part B) hospitalized following fall at home with reported dizziness. Site PI assessed as 'possibly related' to investigational product. Actions needed: Review SAE form and hospital documentation, coordinate with Medical Monitor (Sarah Chen) for causality assessment, determine expectedness, confirm regulatory reporting timelines, and provide feedback to site CRA (Maria Garcia) on any additional documentation requirements.",
+      "urgency": "High",
+      "status": "In Progress",
+      "timestamp": "Just now",
+      "todos": [
+        {
+          "id": 1,
+          "description": "Review SAE form (DNLI-001_SAE_Form_203-005_Fall.pdf) and hospital admission summary for completeness, accuracy, and consistency with 24-hour reporting requirements",
+          "status": "pending",
+          "tag": "Thread 1",
+          "hasAIDraft": true
+        },
+        {
+          "id": 2,
+          "description": "Review protocol and Investigator's Brochure to determine if hospitalization due to fall with dizziness is an 'expected' event for Part B participants, document finding",
+          "status": "pending",
+          "tag": "EDC",
+          "hasAIDraft": false
+        },
+        {
+          "id": 3,
+          "description": "Coordinate with Medical Monitor (Sarah Chen) to request causality assessment and timeline for response - forward SAE documentation and site PI's 'possibly related' assessment",
+          "status": "pending",
+          "tag": "Thread 1",
+          "hasAIDraft": true
+        },
+        {
+          "id": 4,
+          "description": "Confirm regulatory reporting timelines based on expectedness determination and prepare notification to site CRA (Maria Garcia) with feedback on documentation and any additional requirements",
+          "status": "pending",
+          "tag": "Thread 1",
+          "hasAIDraft": true
         }
-      },
-      {
-        "id": 2,
-        "description": "Clarify with site",
-        "assignee": "CRA",
-        "status": "pending",
-        "tag": "Thread 2",
-        "hasAIDraft": true,
-        "aiDraft": {
-          "threadId": 2,
-          "message": "Hello,\n\nI hope this message finds you well. We've identified a discrepancy in Subject 103-004's records that requires clarification.\n\nSpecifically, the Adverse Event log shows ibuprofen 400 mg taken for headache, while the Concomitant Medications list indicates 200 mg. Could you please verify which dosage is correct and update the EDC accordingly?\n\nThank you for your prompt attention to this matter.\n\nBest regards,\nCRA",
-          "references": [
-            {
-              "type": "Document",
-              "title": "Site Communication Guidelines",
-              "date": "2025-08-20"
-            },
-            {
-              "type": "Email Thread",
-              "title": "Re: EDC Discrepancy Resolution Process",
-              "date": "2025-09-25"
-            },
-            {
-              "type": "Document",
-              "title": "Protocol Section 8.4 - Adverse Event Reporting",
-              "date": "2024-12-01"
-            }
-          ]
+      ]
+    },
+    {
+      "id": 2,
+      "subject": "Follow-up: Critical Overdue Dosing Queries - Site 301 (DNLI-STX-01)",
+      "summary": "Follow up with Site 301 coordinator, Jessica Miller, to ensure resolution of 8 critical, overdue data queries related to participant dosing records in the EDC system. These queries are critical for the upcoming database lock for Q4 analysis and must be resolved within the next 48 hours. Refer to the attached spreadsheet for query details.",
+      "urgency": "High",
+      "status": "In Progress",
+      "timestamp": "Just now",
+      "todos": [
+        {
+          "id": 1,
+          "description": "Review the attached 'DNLI-STX-01_Site301_Critical_Queries_Dosing_06NOV2023.xlsx' spreadsheet to understand the 8 critical overdue dosing queries for Site 301.",
+          "status": "pending",
+          "tag": "Thread 1",
+          "hasAIDraft": true
+        },
+        {
+          "id": 2,
+          "description": "Contact Jessica Miller (Site 301 coordinator) to discuss the 8 critical overdue dosing queries and emphasize the 48-hour resolution deadline for database lock.",
+          "status": "pending",
+          "tag": "Thread 1",
+          "hasAIDraft": true
+        },
+        {
+          "id": 3,
+          "description": "Follow up on EDC to confirm resolution status of the 8 critical dosing queries from Site 301 within the next 48 hours.",
+          "status": "pending",
+          "tag": "EDC",
+          "hasAIDraft": false
+        },
+        {
+          "id": 4,
+          "description": "Provide an update to Sarah Chen (CRO Data Manager) and Maria Garcia (Sponsor CTM) on the status and resolution of Site 301's critical dosing queries.",
+          "status": "pending",
+          "tag": "Thread 1",
+          "hasAIDraft": true
         }
-      },
-      {
-        "id": 3,
-        "description": "Ensure reconciliation between AE and Con Med logs",
-        "assignee": "CRA",
-        "status": "pending",
-        "tag": "EDC"
-      },
-      {
-        "id": 4,
-        "description": "Close query",
-        "assignee": "Data Management",
-        "status": "pending",
-        "tag": "EDC"
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "subject": "Protocol Deviation - Subject 105-012 Visit Window Exceeded",
-    "summary": "Subject 105-012 attended Visit 3 outside the protocol-specified window (Day 28 ±3). The visit occurred on Day 35, exceeding the allowed window by 4 days. Site has been notified and deviation report is pending.",
-    "urgency": "Medium",
-    "status": "Pending Response",
-    "timestamp": "5 hours ago",
-    "threads": [
-      {
-        "id": 1,
-        "name": "Thread 1: CRA → Site Coordinator",
-        "description": "Initial notification to site about protocol deviation and request for explanation.",
-        "participants": ["CRA", "Site Coordinator"],
-        "messages": [
-          {
-            "from": "CRA",
-            "to": "Site Coordinator",
-            "content": "I noticed that Subject 105-012's Visit 3 was conducted on Day 35, which is outside the protocol window of Day 28 ±3. Can you please provide context on why this occurred and submit a protocol deviation report?",
-            "timestamp": "3 days ago"
-          }
-        ]
-      }
-    ],
-    "todos": [
-      {
-        "id": 1,
-        "description": "Follow up with site for deviation report",
-        "assignee": "CRA",
-        "status": "pending",
-        "tag": "Thread 1",
-        "hasAIDraft": true,
-        "aiDraft": {
-          "threadId": 1,
-          "message": "Hi,\n\nI wanted to follow up on the protocol deviation for Subject 105-012's Visit 3 timing. As discussed, the visit occurred on Day 35, which exceeded the protocol window.\n\nCould you please provide:\n1. The reason for the delay\n2. A completed protocol deviation report\n3. Any supporting documentation\n\nPlease let me know if you need any assistance with the deviation report form.\n\nThank you,\nCRA",
-          "references": [
-            {
-              "type": "Document",
-              "title": "Protocol Deviation Reporting SOP",
-              "date": "2025-07-01"
-            },
-            {
-              "type": "Email Thread",
-              "title": "Re: Visit Window Deviation - Site 103",
-              "date": "2025-09-18"
-            },
-            {
-              "type": "Document",
-              "title": "Protocol Section 5.2 - Visit Windows",
-              "date": "2024-12-01"
-            }
-          ]
+      ]
+    },
+    {
+      "id": 3,
+      "subject": "Protocol Deviation - Missed PK Sample - DNLI-123 - Site 456 - Subject 101-003",
+      "summary": "Follow up with Site 456 (Sarah Chen) to ensure thorough documentation of the missed 4-hour post-dose PK sample for Subject 101-003 in study DNLI-123. Review the completed Protocol Deviation form once received. Draft an initial impact assessment for the internal clinical pharmacology team to evaluate the effect of this missing data point on the overall analysis for the healthy volunteer cohort.",
+      "urgency": "High",
+      "status": "In Progress",
+      "timestamp": "Just now",
+      "todos": []
+    }
+  ],
+  "threads": [
+    {
+      "id": 2,
+      "name": "Scheduling Request: Interim Monitoring Visit at Site 105 - Study DT-1234",
+      "description": "A routine scheduling request you initiated with the Study Coordinator at Site 105 to arrange the next interim monitoring visit. The back-and-forth conversation involves confirming dates, discussing the monitoring plan, and requesting remote access to the site's electronic medical records system.",
+      "participants": [
+        "Alex Johnson (CRA)",
+        "Maria Garcia (Site Coordinator)",
+        "David Chen (CRO Project Manager)"
+      ],
+      "problemId": 4,
+      "isRead": true,
+      "messages": [
+        {
+          "from": "Alex Johnson",
+          "to": "Maria Garcia",
+          "cc": [
+            "David Chen"
+          ],
+          "content": "Hi Maria,\n\nHope you are having a good week.\n\nI'm writing to schedule the next interim monitoring visit (IMV) for the DT-1234 study at Centennial Medical Center. I am proposing the weeks of June 24th or July 8th for a 2-day visit.\n\nPlease let me know what dates within that timeframe work best for you and the PI.\n\nBest regards,\n\nAlex Johnson\nClinical Research Associate\nDenali Therapeutics",
+          "timestamp": "3 days ago"
+        },
+        {
+          "from": "Maria Garcia",
+          "to": "Alex Johnson",
+          "cc": [
+            "David Chen"
+          ],
+          "content": "Hi Alex,\n\nThanks for reaching out. The week of July 8th works better for us. How about Tuesday, July 9th and Wednesday, July 10th?\n\nCould you please send over the monitoring plan for our review prior to the visit?\n\nThanks,\n\nMaria Garcia\nStudy Coordinator\nCentennial Medical Center",
+          "timestamp": "2 days ago"
+        },
+        {
+          "from": "Alex Johnson",
+          "to": "Maria Garcia",
+          "cc": [
+            "David Chen"
+          ],
+          "content": "Hi Maria,\n\nThat's great, July 9th and 10th are confirmed on my end.\n\nI've attached the monitoring plan for your review. To help streamline the visit, could we arrange for remote access to your EMR system a few days prior? Please let me know the process for requesting temporary credentials.\n\nI will send the official confirmation letter once we have the access details sorted.\n\nBest,\n\nAlex Johnson\nClinical Research Associate\nDenali Therapeutics\n\nAttachment:\n- DT-1234_IMV_Plan_Site105_2024-07-09.pdf",
+          "timestamp": "1 day ago"
+        },
+        {
+          "from": "Maria Garcia",
+          "to": "Alex Johnson",
+          "cc": [
+            "David Chen"
+          ],
+          "content": "Hi Alex,\n\nThanks for the monitoring plan. I've forwarded it to Dr. Evans.\n\nFor EMR access, please fill out the attached Non-Employee Access Request form and return it to me. Our IT department typically takes 2-3 business days to process these requests.\n\nOnce you send it back, I'll submit it and we can consider the dates fully confirmed. Let me know if you have any questions.\n\nBest,\n\nMaria\n\nAttachment:\n- Centennial_EMR_Access_Request_Form.pdf",
+          "timestamp": "6 hours ago"
         }
-      },
-      {
-        "id": 2,
-        "description": "Review and approve deviation documentation",
-        "assignee": "Medical Monitor",
-        "status": "pending",
-        "tag": "EDC"
-      },
-      {
-        "id": 3,
-        "description": "Update EDC with deviation flag",
-        "assignee": "Data Management",
-        "status": "pending",
-        "tag": "EDC"
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "subject": "Urgent: Low IP Supply - Site 106 Patient Visit Tomorrow",
-    "summary": "Site 106 pharmacy coordinator reports only 2 kits remaining in inventory with Subject 106-009 scheduled for dispensing visit tomorrow. Site requires emergency IP shipment to avoid visit rescheduling and protocol deviation. CRA needs to coordinate with IP manager and update tracking systems.",
-    "urgency": "High",
-    "status": "In Progress",
-    "timestamp": "1 hour ago",
-    "threads": [
-      {
-        "id": 1,
-        "name": "Thread 1: Site Pharmacy → CRA",
-        "description": "Initial notification from site about low IP inventory and upcoming patient visit.",
-        "participants": ["Site Pharmacy", "CRA"],
-        "messages": [
-          {
-            "from": "Site Pharmacy",
-            "to": "CRA",
-            "content": "Hi,\n\nWe have an urgent situation - our IP inventory is critically low with only 2 kits remaining. Subject 106-009 has a dispensing visit scheduled for tomorrow (10/21) and we want to ensure we have adequate supply.\n\nCould you please expedite a shipment? We'd like to maintain a buffer of at least 5 kits given our enrollment rate.\n\nThank you,\nPharmacy Coordinator\nSite 106",
-            "timestamp": "1 hour ago"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "name": "Thread 2: CRA → IP Manager",
-        "description": "Coordination with IP manager to arrange emergency shipment to the site.",
-        "participants": ["CRA", "IP Manager"],
-        "messages": []
-      }
-    ],
-    "todos": [
-      {
-        "id": 1,
-        "description": "Confirm follow-up with site pharmacy",
-        "assignee": "CRA",
-        "status": "pending",
-        "tag": "Thread 1",
-        "hasAIDraft": true,
-        "aiDraft": {
-          "threadId": 1,
-          "message": "Hi,\n\nThank you for the heads up. I'm on it and have already contacted our IP manager to arrange an emergency shipment.\n\nI'll confirm the shipping details and expected delivery time within the next 2 hours. In the meantime, you should be fine for tomorrow's visit with your current inventory of 2 kits.\n\nI'll keep you updated on the shipment tracking.\n\nBest regards,\nCRA",
-          "references": [
-            {
-              "type": "Email Thread",
-              "title": "Re: IP Emergency Shipment Protocol - Site 104",
-              "date": "2025-09-28"
-            },
-            {
-              "type": "Document",
-              "title": "IP Management SOP - Emergency Procedures",
-              "date": "2025-06-15"
-            }
-          ]
+      ]
+    },
+    {
+      "id": 3,
+      "name": "URGENT Follow-up Required: Critical Overdue Queries for Site 301 - Study DNLI-STX-01",
+      "description": "An email from the Lead Data Manager at the CRO forwarding a list of critical, overdue data queries for Site 301. You are asked to follow up with the site to ensure the queries related to participant dosing records are resolved within the next 48 hours to meet a database lock deadline.",
+      "participants": [
+        "Alex Johnson (Sponsor CRA)",
+        "Sarah Chen (CRO Data Manager)",
+        "David Lee (CRO Project Manager)",
+        "Maria Garcia (Sponsor CTM)"
+      ],
+      "problemId": 2,
+      "isRead": false,
+      "messages": [
+        {
+          "from": "Sarah Chen",
+          "to": "Alex Johnson",
+          "cc": [
+            "David Lee",
+            "Maria Garcia"
+          ],
+          "content": "Hi Alex,\n\nHope you are well.\n\nI am forwarding a list of critical, overdue data queries for Site 301 (PI: Dr. Wells) that require immediate attention. We are rapidly approaching the database lock deadline for the Q4 analysis, and resolution of these queries is on the critical path.\n\nThe attached spreadsheet details 8 critical queries related specifically to participant dosing records. These discrepancies must be clarified by the site to ensure data integrity.\n\nCould you please follow up with the site coordinator, Jessica Miller, to ensure these are resolved in the EDC system within the next 48 hours? \n\nPlease let me know if you anticipate any issues or need further clarification from the data management team.\n\nThanks for your urgent attention to this matter.\n\nBest regards,\n\nSarah Chen\nLead Data Manager\nSynergy Clinical\n\nAttachment:\n- DNLI-STX-01_Site301_Critical_Queries_Dosing_06NOV2023.xlsx",
+          "timestamp": "3 hours ago"
         }
-      },
-      {
-        "id": 2,
-        "description": "Request emergency IP shipment from IP manager",
-        "assignee": "CRA",
-        "status": "pending",
-        "tag": "Thread 2",
-        "hasAIDraft": true,
-        "aiDraft": {
-          "threadId": 2,
-          "message": "Hi,\n\nWe have an urgent IP supply request for Site 106. Current situation:\n\n• Current inventory: 2 kits\n• Scheduled visit: Subject 106-009 tomorrow (10/21)\n• Requested buffer: 5 kits minimum\n• Site enrollment rate: ~2-3 subjects/month\n\nCan we arrange an emergency shipment to arrive by tomorrow afternoon or Wednesday morning at the latest? The site can accommodate delivery during business hours (8 AM - 5 PM EST).\n\nSite shipping address:\nSite 106 Research Pharmacy\n[Address on file]\n\nPlease confirm shipment details and provide tracking information.\n\nThank you,\nCRA",
-          "references": [
-            {
-              "type": "Document",
-              "title": "Site 106 - IP Inventory Log",
-              "date": "2025-10-19"
-            },
-            {
-              "type": "Email Thread",
-              "title": "Re: IP Shipment Request Template",
-              "date": "2025-08-12"
-            },
-            {
-              "type": "Document",
-              "title": "IP Distribution Plan v3.2",
-              "date": "2025-07-01"
-            }
-          ]
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Protocol Deviation - Study DNLI-123 - Site 456 - Subject 101-003 - Missed PK Sample",
+      "description": "A multi-person email chain involving you, the site's Study Coordinator, and your Clinical Trial Manager regarding a significant protocol deviation. The site self-reported that a participant in the healthy volunteer cohort (Part A) missed their post-dose PK blood draw. The discussion focuses on documenting the deviation and determining the impact on data analysis.",
+      "participants": [
+        "Sarah Chen (Site Coordinator)",
+        "Ben Carter (CRO CRA)",
+        "Alex Johnson (Sponsor CRA)",
+        "Maria Garcia (Sponsor CTM)",
+        "Emily Vance (Site PI)"
+      ],
+      "problemId": 3,
+      "isRead": true,
+      "messages": [
+        {
+          "from": "Sarah Chen",
+          "to": "Ben Carter",
+          "cc": [
+            "Emily Vance"
+          ],
+          "content": "Hi Ben,\n\nI am writing to self-report a protocol deviation for subject 101-003, enrolled in Part A of the DNLI-123 study.\n\nThis morning, the participant missed their scheduled 4-hour post-dose PK blood draw. The participant had a family emergency and had to leave the site unexpectedly after the 2-hour draw was completed. All other procedures for the visit were completed as scheduled.\n\nWe have documented this event in the subject's source documents and are completing the Protocol Deviation form now. Please advise on any immediate actions required from our side and the next steps for reporting this to the sponsor.\n\nThank you,\n\nSarah Chen, CCRP\nStudy Coordinator\nOakwood Clinical Research Center",
+          "timestamp": "4 hours ago"
+        },
+        {
+          "from": "Ben Carter",
+          "to": "Alex Johnson",
+          "cc": [
+            "Maria Garcia",
+            "Sarah Chen"
+          ],
+          "content": "Hi Alex and Maria,\n\nPlease see the notification below from Site 456 regarding a missed PK sample for a Part A subject. This appears to be a significant deviation given the nature of the healthy volunteer cohort.\n\nSarah, thank you for the prompt notification. Please send over the completed PD form once it's finalized.\n\nAlex/Maria - Please let us know your thoughts on the potential impact and how you would like us to proceed with documentation and follow-up.\n\nBest regards,\n\nBen Carter\nClinical Research Associate\nSynergy CRO\n\n---------- Forwarded message ---------\nFrom: Sarah Chen <sarah.chen@oakwoodcrc.com>\n\nI am writing to self-report a protocol deviation for subject 101-003, enrolled in Part A of the DNLI-123 study.\n\nThis morning, the participant missed their scheduled 4-hour post-dose PK blood draw. The participant had a family emergency and had to leave the site unexpectedly after the 2-hour draw was completed. All other procedures for the visit were completed as scheduled.\n\nWe have documented this event in the subject's source documents and are completing the Protocol Deviation form now.",
+          "timestamp": "2 hours ago"
+        },
+        {
+          "from": "Maria Garcia",
+          "to": "Alex Johnson",
+          "cc": [
+            "Ben Carter",
+            "Sarah Chen"
+          ],
+          "content": "All,\n\nThank you for flagging this. A missed PK sample in the HV cohort is indeed a significant deviation and will require careful assessment.\n\nAlex, please take the lead on this. Can you please follow up with Sarah to ensure the deviation is documented thoroughly in the source and on the PD form? Once you receive the form, please review it and begin drafting an initial impact assessment for our internal clinical pharmacology team. We need to understand how this missing data point affects the overall analysis for this cohort.\n\nPlease let me know if you need any support.\n\nBest,\n\nMaria Garcia\nClinical Trial Manager\nDenali Therapeutics",
+          "timestamp": "1 hour ago"
         }
-      },
-      {
-        "id": 3,
-        "description": "Update IP tracking system with shipment details",
-        "assignee": "CRA",
-        "status": "pending",
-        "tag": "EDC"
-      },
-      {
-        "id": 4,
-        "description": "Follow up on shipment delivery confirmation",
-        "assignee": "CRA",
-        "status": "pending",
-        "tag": "EDC"
-      }
-    ]
-  }
-]
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Inquiry: DNL593 Study - Site 210 - Upcoming IP Shipment",
+      "description": "A straightforward inquiry from the pharmacy at Site 210 regarding an upcoming shipment of the investigational product, DNL593. They are confirming the quantity and expected delivery date to ensure they have adequate supply for newly randomized participants.",
+      "participants": [
+        "Dr. Emily Carter (Site Pharmacist)",
+        "Alex Johnson (Sponsor CRA)",
+        "David Lee (CRO CRA)",
+        "Jessica Chen (Site Coordinator)"
+      ],
+      "problemId": null,
+      "isRead": false,
+      "messages": [
+        {
+          "from": "Dr. Emily Carter",
+          "to": "Alex Johnson",
+          "cc": [
+            "David Lee",
+            "Jessica Chen"
+          ],
+          "content": "Hi Alex,\n\nHope you are having a productive week.\n\nThe pharmacy team here at Oakwood Clinical Research (Site 210) would like to confirm the details for our next shipment of the investigational product, DNL593.\n\nWe are preparing for a couple of new participants who are scheduled for randomization soon and want to ensure our stock levels are adequate. Could you please provide an update on the quantity being shipped and the expected delivery date?\n\nThank you for your help.\n\nBest regards,\n\nDr. Emily Carter, PharmD\nInvestigational Drug Services\nOakwood Clinical Research",
+          "timestamp": "1 day ago"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "URGENT: SAE Report - Study DNLI-001 - Site 203 - Participant 203-005",
+      "description": "An urgent email thread initiated by the Principal Investigator at Site 203 reporting a Serious Adverse Event (SAE). A participant in Part B of the study was hospitalized due to a fall. The thread includes your immediate follow-up questions regarding the event's causality and a request for the completed SAE form and source documentation.",
+      "participants": [
+        "Dr. Robert Miller (Site PI)",
+        "Maria Garcia (CRA)",
+        "Emily White (Site Coordinator)",
+        "David Lee (CRO Project Manager)",
+        "Alex Johnson (Sponsor CRA)",
+        "Sarah Chen (Medical Monitor)"
+      ],
+      "problemId": 1,
+      "isRead": true,
+      "messages": [
+        {
+          "from": "Dr. Robert Miller",
+          "to": "Maria Garcia",
+          "cc": [
+            "Emily White",
+            "David Lee",
+            "Alex Johnson",
+            "Sarah Chen"
+          ],
+          "content": "Dear Team,\n\nThis is an urgent notification regarding a Serious Adverse Event for participant 203-005 in the DNLI-001 study (Part B).\n\nThe participant was hospitalized yesterday evening following a fall at home. They are currently stable and undergoing evaluation.\n\nWe are in the process of gathering all necessary source documentation and will forward the completed SAE form as soon as possible, well within the 24-hour reporting window.\n\nBest regards,\n\nDr. Robert Miller\nPrincipal Investigator\nOakwood Research Center, Site 203",
+          "timestamp": "2 hours ago"
+        },
+        {
+          "from": "Maria Garcia",
+          "to": "Dr. Robert Miller",
+          "cc": [
+            "Emily White",
+            "David Lee",
+            "Alex Johnson",
+            "Sarah Chen"
+          ],
+          "content": "Dear Dr. Miller,\n\nThank you for the prompt notification. We have received your alert and are on standby.\n\nPlease send the completed SAE form and any available source documentation (e.g., hospital admission notes, ER report) as soon as it is available.\n\nWe appreciate your diligence.\n\nBest regards,\n\nMaria Garcia\nClinical Research Associate\nSynergy Clinical",
+          "timestamp": "1 hour ago"
+        },
+        {
+          "from": "Emily White",
+          "to": "Maria Garcia",
+          "cc": [
+            "Dr. Robert Miller",
+            "David Lee",
+            "Alex Johnson",
+            "Sarah Chen"
+          ],
+          "content": "Hi Maria,\n\nPlease find the completed SAE form and the initial hospital admission summary for participant 203-005 attached.\n\nDr. Miller has assessed the event as 'possibly related' to the investigational product due to the participant reporting a brief episode of dizziness prior to the fall. This is documented in the attached form.\n\nWe are awaiting further records from the hospital. Please review and let us know if any immediate additional information is required from our end.\n\nThank you,\n\nEmily White\nStudy Coordinator\nOakwood Research Center\n\nAttachments:\n- DNLI-001_SAE_Form_203-005_Fall.pdf\n- Initial_Hospital_Note_203-005_Redacted.pdf",
+          "timestamp": "30 minutes ago"
+        },
+        {
+          "from": "Maria Garcia",
+          "to": "Alex Johnson",
+          "cc": [
+            "David Lee",
+            "Sarah Chen"
+          ],
+          "content": "Hi Alex,\n\nPlease see the forwarded email and attachments for the SAE reported at Site 203 (hospitalization due to a fall).\n\nKey points:\n- Participant in Part B\n- PI causality assessment: 'possibly related'\n\nCould you please review the attached documents and confirm the sponsor's initial assessment and any immediate follow-up questions for the site? The Medical Monitor is on copy.\n\nThanks,\nMaria\n\n--- Begin Forwarded Message ---\nFrom: Emily White <e.white@oakwoodresearch.org>\n\nPlease find the completed SAE form and the initial hospital admission summary for participant 203-005 attached.\n\nDr. Miller has assessed the event as 'possibly related' to the investigational product due to the participant reporting a brief episode of dizziness prior to the fall. This is documented in the attached form.\n\nWe are awaiting further records from the hospital. Please review and let us know if any immediate additional information is required from our end.",
+          "timestamp": "15 minutes ago"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "URGENT: New SAE Report - Study DNLI-123 - Site 101 (UCLA) - Patient 101-005",
+      "description": "An urgent email thread initiated by a site coordinator at UCLA reporting a Serious Adverse Event (SAE) for a patient in Part B. The patient was hospitalized for pneumonia. The thread involves Alex Johnson acknowledging the report, requesting source documents, and confirming the 24-hour reporting timeline with the Denali safety team.",
+      "participants": [
+        "Maria Garcia (UCLA Site Coordinator)",
+        "Dr. Robert Chen (UCLA Site PI)",
+        "Alex Johnson (Sponsor CRA)",
+        "Sarah Lee (CRO Project Manager)",
+        "Denali Safety Team (Sponsor)",
+        "Syneos Study Mailbox (CRO)"
+      ],
+      "problemId": null,
+      "isRead": true,
+      "messages": [
+        {
+          "from": "maria.garcia@med.ucla.edu",
+          "to": "alex.johnson@denalitx.com",
+          "cc": [
+            "robert.chen@med.ucla.edu",
+            "sarah.lee@cro-syneos.com",
+            "study.DNLI-123@cro-syneos.com"
+          ],
+          "content": "Dear Study Team,\n\nPlease see the attached Serious Adverse Event (SAE) form for patient 101-005 enrolled in Part B of the DNLI-123 study.\n\nThe patient was hospitalized yesterday evening for pneumonia.\n\nPlease confirm receipt of this report and let us know the next steps.\n\nBest regards,\n\nMaria Garcia\nClinical Research Coordinator\nUCLA Department of Neurology\n(310) 555-1234\nmaria.garcia@med.ucla.edu\n\nAttachments:\n- SAE_Report_DNLI-123_101-005_Initial.pdf",
+          "timestamp": "2023-10-23T09:15:30-07:00"
+        },
+        {
+          "from": "sarah.lee@cro-syneos.com",
+          "to": "maria.garcia@med.ucla.edu",
+          "cc": [
+            "alex.johnson@denalitx.com",
+            "robert.chen@med.ucla.edu",
+            "safety@denalitx.com"
+          ],
+          "content": "Hi Maria,\n\nThank you for the prompt notification and for sending the initial SAE report. We have received it.\n\nAlex, can you please take the lead on this from the sponsor side? Please acknowledge the report with the site, request the necessary source documents, and confirm the 24-hour reporting timeline has been met with the Denali safety team (cc'd).\n\nMaria, Alex will be in touch with you shortly regarding the next steps.\n\nBest,\n\nSarah Lee\nProject Manager\nSyneos Health",
+          "timestamp": "15 days ago"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "DNLI-123-01: Scheduling Q3 2024 Interim Monitoring Visit (IMV) - Site 101",
+      "description": "A routine scheduling back-and-forth between Alex Johnson and a clinical research coordinator at a study site to finalize dates for the next quarterly Interim Monitoring Visit (IMV). The thread includes proposed dates from Alex, a counter-proposal from the site due to the Principal Investigator's vacation, and a final confirmation.",
+      "participants": [
+        "Alex Johnson (Sponsor CRA)",
+        "Maria Garcia (Site Coordinator)",
+        "David Chen (CRO Project Manager)"
+      ],
+      "problemId": null,
+      "isRead": true,
+      "messages": [
+        {
+          "from": "alex.johnson@denalitx.com",
+          "to": "m.garcia@summitclinical.com",
+          "cc": [
+            "d.chen@syneos.com"
+          ],
+          "content": "Hi Maria,\n\nHope you are having a good week.\n\nI'm writing to schedule the upcoming Q3 Interim Monitoring Visit for the DNLI-123-01 study at your site. I would like to propose the week of August 5th or the week of August 12th for the visit.\n\nPlease let me know which of these weeks works best for you and Dr. Reed's availability. Once we have a week selected, we can lock in the specific dates.\n\nBest regards,\n\nAlex Johnson\nClinical Research Associate\nDenali Therapeutics",
+          "timestamp": "17 days ago"
+        },
+        {
+          "from": "m.garcia@summitclinical.com",
+          "to": "alex.johnson@denalitx.com",
+          "cc": [
+            "d.chen@syneos.com"
+          ],
+          "content": "Hi Alex,\n\nThanks for reaching out.\n\nUnfortunately, Dr. Reed will be on vacation for the first three weeks of August, so the weeks of the 5th and 12th will not work for us.\n\nWould the week of August 26th be a possibility for you? We have good availability on August 27-28.\n\nPlease let me know if that works for your schedule.\n\nThank you,\n\nMaria Garcia\nClinical Research Coordinator\nSummit Clinical Research",
+          "timestamp": "21 days ago"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "URGENT Follow-Up: Outstanding Data Queries for Study DNLI-001 at Site 305",
+      "description": "An email from Alex Johnson to a low-performing site's research team following up on a list of over 30 data queries that have been outstanding for more than 14 days. The email serves as a formal reminder and requests an estimated timeline for resolution to ensure the database lock for Part A is not delayed.",
+      "participants": [
+        "Alex Johnson (Sponsor CRA)",
+        "Brian Neal (Site Coordinator)",
+        "Dr. Marta Gomez (Site PI)",
+        "Sandra Wong (Sponsor CTM)"
+      ],
+      "problemId": null,
+      "isRead": true,
+      "messages": [
+        {
+          "from": "alex.johnson@denalitherapeutics.com",
+          "to": "brian.neal@cvsresearch.org",
+          "cc": [
+            "dr.marta.gomez@cvsresearch.org",
+            "sandra.wong@denalitherapeutics.com"
+          ],
+          "content": "Dear Dr. Gomez and Brian,\n\nI hope this email finds you well.\n\nI am writing to follow up on the outstanding data queries for study DNLI-001. As of this morning, there are over 30 queries that have remained open for more than 14 days. Timely resolution is critical as we are approaching the database lock for Part A, and these delays are putting our timeline at risk.\n\nI have attached a detailed line listing of the outstanding queries for your convenience. \n\nCould you please review the list and provide an estimated timeline for when your team expects to have these resolved? Please let me know if you are encountering any issues or require support from our end to address these items.\n\nThank you for your prompt attention to this important matter.\n\nBest regards,\n\nAlex Johnson\nClinical Research Associate\nDenali Therapeutics\nalex.johnson@denalitherapeutics.com\n\nAttachments:\n- DNLI-001_Site305_Outstanding_Queries_2024-05-21.xlsx",
+          "timestamp": "25 days ago"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "URGENT: Protocol Deviation - Dosing Error - Study DNLI-001 - Site 102",
+      "description": "A multi-part discussion with a Principal Investigator who reported a protocol deviation where a participant in the FTD cohort (Part B) was accidentally administered a double dose of the investigational product. The thread involves Alex Johnson escalating the issue to the study's medical monitor for guidance on patient safety and follow-up procedures.",
+      "participants": [
+        "Alex Johnson (Sponsor CRA)",
+        "Dr. Evelyn Reed (Site PI)",
+        "Carla Ruiz (Site Coordinator)",
+        "Sarah Chen (CRO Project Manager)"
+      ],
+      "problemId": null,
+      "isRead": true,
+      "messages": [
+        {
+          "from": "e.reed@maplewoodresearch.com",
+          "to": "alex.johnson@denalithx.com",
+          "cc": [
+            "c.ruiz@maplewoodresearch.com",
+            "sarah.chen@synergycro.com"
+          ],
+          "content": "Dear Alex,\n\nThis email is to urgently inform you of a significant protocol deviation that occurred today at our site (102) for study DNLI-001.\n\nThis morning, participant 102-2005, enrolled in Part B (FTD cohort), was inadvertently administered a double dose of the investigational product during their scheduled Visit 5 infusion.\n\nThe error was identified by the infusion nurse immediately following the procedure. The participant is currently stable, asymptomatic, and is being held for an extended 8-hour observation period as a precaution. All vital signs are being monitored closely and remain within normal limits.\n\nWe have documented the event and completed the attached Protocol Deviation form. We require immediate guidance on the necessary follow-up, safety monitoring, and reporting procedures. Please escalate this to the study's Medical Monitor as soon as possible for their assessment and recommendations.\n\nWe await your urgent response.\n\nBest regards,\n\nDr. Evelyn Reed\nPrincipal Investigator\nMaplewood Clinical Research\nSite 102\n\nAttachments:\n- PD_Form_102-2005_DoubleDose_10MAY2024.pdf",
+          "timestamp": "27 days ago"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "URGENT: Temperature Excursion - Site 101 - DNL593/Placebo",
+      "description": "An urgent notification from a site pharmacist regarding a temperature excursion in the refrigerator storing the DNL593 and placebo. The thread shows Alex Johnson coordinating with Denali's clinical supply manager to determine if the product is still viable and providing instructions to the site to quarantine the affected stock.",
+      "participants": [
+        "Alex Johnson (Sponsor CRA)",
+        "Dr. Sarah Chen (Site Pharmacist)",
+        "David Lee (Sponsor Clinical Supply Manager)",
+        "Maria Garcia (Site Coordinator)",
+        "Ben Carter (CRO Project Manager)"
+      ],
+      "problemId": null,
+      "isRead": true,
+      "messages": [
+        {
+          "from": "sarah.chen@maplewoodresearch.com",
+          "to": "alex.johnson@denalitx.com",
+          "cc": [
+            "maria.garcia@maplewoodresearch.com",
+            "ben.carter@synergyclinical.com"
+          ],
+          "content": "Dear Alex,\n\nThis is an urgent notification regarding a temperature excursion for the Investigational Product refrigerator at Site 101, Maplewood Clinical Research Center.\n\nThe excursion was noted this morning at 8:00 AM EST. The refrigerator stores all kits for the DNL593 study, including active drug and placebo.\n\nDetails:\n- Duration of excursion: Approximately 6 hours (from 1:45 AM to 7:45 AM EST).\n- Minimum Temperature Recorded: 1.2°C\n- Maximum Temperature Recorded: 9.5°C (briefly)\n- Standard Range: 2°C to 8°C\n\nI have attached the continuous temperature monitoring log for your review. All affected DNL593 and placebo kits have been identified and remain in the refrigerator, but are not being dispensed.\n\nPlease provide immediate guidance on the viability of the affected product and instructions on next steps.\n\nBest regards,\n\nDr. Sarah Chen\nInvestigational Drug Pharmacist\nMaplewood Clinical Research Center\n(555) 123-4567\n\nAttachments:\n- TempLog_Site101_20231106.pdf",
+          "timestamp": "28 days ago"
+        },
+        {
+          "from": "alex.johnson@denalitx.com",
+          "to": "sarah.chen@maplewoodresearch.com",
+          "cc": [
+            "david.lee@denalitx.com",
+            "maria.garcia@maplewoodresearch.com",
+            "ben.carter@synergyclinical.com"
+          ],
+          "content": "Hi Sarah,\n\nThank you for the prompt and detailed notification. I have received the temperature log.\n\nPlease immediately quarantine all affected DNL593 and placebo kits. Label the stock clearly with \"QUARANTINED - DO NOT USE PENDING SPONSOR ASSESSMENT.\"\n\nI am looping in David Lee, our Clinical Supply Manager at Denali, to conduct a formal stability assessment based on the data you provided.\n\nDavid, can you please review the attached log from the previous email and advise on the viability of the product? Please let us know if you require any further information from the site.\n\nSarah, we will provide further instructions as soon as the assessment is complete. Please confirm once the product has been quarantined.\n\nBest regards,\n\nAlex Johnson\nClinical Research Associate\nDenali Therapeutics",
+          "timestamp": "29 days ago"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Follow-up: Outstanding Action Items from MVR - Study DNLI-001 - Site 102",
+      "description": "A routine follow-up email from Alex Johnson to a site coordinator regarding outstanding action items from the last monitoring visit report. The email specifically requests an updated Delegation of Authority Log to reflect a new sub-investigator and confirmation of completed training for the new staff member.",
+      "participants": [
+        "Alex Johnson (Sponsor CRA)",
+        "Sarah Miller (Site Coordinator)",
+        "Dr. Emily Vance (Site PI)",
+        "Pinnacle PM Lead (CRO)"
+      ],
+      "problemId": null,
+      "isRead": true,
+      "messages": [
+        {
+          "from": "alex.johnson@denalitx.com",
+          "to": "sarah.miller@ucsfmed.org",
+          "cc": [
+            "pm_lead@pinnaclecro.com",
+            "emily.vance@ucsfmed.org"
+          ],
+          "content": "Hi Sarah,\n\nI hope you are having a good week.\n\nI'm following up on the Monitoring Visit Report from our visit on October 25th. There are a couple of outstanding action items that we need to close out:\n\n1. Updated Delegation of Authority Log: Please provide the updated log reflecting the addition of Dr. James Peterson as a new Sub-Investigator.\n2. Training Confirmation: Please provide documentation confirming that Dr. Peterson has completed the required protocol and GCP training.\n\nPlease let me know if you have an estimated timeline for when these items can be provided.\n\nThanks for your continued hard work on this study.\n\nBest regards,\n\nAlex Johnson\nClinical Research Associate\nDenali Therapeutics",
+          "timestamp": "29 days ago"
+        },
+        {
+          "from": "sarah.miller@ucsfmed.org",
+          "to": "alex.johnson@denalitx.com",
+          "cc": [
+            "pm_lead@pinnaclecro.com",
+            "emily.vance@ucsfmed.org"
+          ],
+          "content": "Hi Alex,\n\nThanks for the reminder. \n\nWe have Dr. Peterson's training documentation ready, which I've attached to this email. \n\nI am still waiting for Dr. Vance to sign the updated Delegation of Authority Log. She has been in back-to-back patient visits today but I expect to have it signed and sent over to you by EOD tomorrow.\n\nI will let you know if there are any further delays.\n\nBest,\n\nSarah Miller\nClinical Research Coordinator\nUCSF Medical Center\n\nAttachments:\n- JPeterson_Training_Confirmation_DNLI-001.pdf",
+          "timestamp": "15 days ago"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Protocol DNL-123 - Query re: Part A Screening Exclusion Criteria",
+      "description": "An inquiry from a site coordinator asking for clarification on the screening procedures for healthy volunteers in Part A, specifically regarding the exclusion criteria related to liver function tests. Alex Johnson provides a clear answer by referencing the specific section of the protocol.",
+      "participants": [
+        "Maria Garcia (Site Coordinator)",
+        "Dr. Emily Reed (Site PI)",
+        "Ben Carter (CRO CRA)",
+        "Alex Johnson (Sponsor CRA)",
+        "Sarah Chen (Sponsor PM)"
+      ],
+      "problemId": null,
+      "isRead": true,
+      "messages": [
+        {
+          "from": "mgarcia@westwoodcrc.com",
+          "to": "ben.carter@synergyclinical.com",
+          "cc": [
+            "ereed@westwoodcrc.com"
+          ],
+          "content": "Hi Ben,\n\nHope you're having a good week.\n\nWe have a potential healthy volunteer for Part A of the DNL-123 study who is interested in screening. During the pre-screen review, we noted their liver function tests (LFTs) are slightly above the upper limit of normal (ULN). Specifically, their ALT is 1.2x ULN.\n\nThe protocol exclusion criterion #5 states 'Clinically significant abnormal laboratory values,' but it's a bit ambiguous for this specific case. Could you please provide clarification on the acceptable range for LFTs for healthy volunteers in this part of the study? We want to ensure we are interpreting this correctly before proceeding with the formal screening visit.\n\nThanks for your help.\n\nBest regards,\n\nMaria Garcia\nClinical Research Coordinator\nWestwood Clinical Research Center",
+          "timestamp": "29 days ago"
+        },
+        {
+          "from": "ben.carter@synergyclinical.com",
+          "to": "alex.johnson@denalitx.com",
+          "cc": [
+            "mgarcia@westwoodcrc.com",
+            "ereed@westwoodcrc.com",
+            "sarah.chen@denalitx.com"
+          ],
+          "content": "Hi Alex,\n\nPlease see the query below from the team at Westwood CRC regarding the LFT exclusion criteria for Part A.\n\nCould you please provide the official guidance from the sponsor on this and reference the relevant protocol section?\n\nThanks,\n\nBen\n\n--- Original Message ---\nFrom: Maria Garcia <mgarcia@westwoodcrc.com>\nSent: Thursday, October 26, 2023 10:15 AM\nTo: Ben Carter <ben.carter@synergyclinical.com>\nCc: Dr. Emily Reed <ereed@westwoodcrc.com>\nSubject: Protocol DNL-123 - Query re: Part A Screening Exclusion Criteria\n\n[original message content included above]",
+          "timestamp": "30 days ago"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Proactive Check-in: Recruitment for FTD Cohort (Part B) - Site 123",
+      "description": "A thread initiated by Alex Johnson to a site that has not yet screened any patients for the FTD cohort (Part B). The email is a proactive check-in to discuss potential recruitment barriers and offer support, such as reviewing their pre-screening strategies or providing new recruitment materials.",
+      "participants": [
+        "Alex Johnson (Sponsor CRA)",
+        "Sarah Chen (Site Coordinator)",
+        "Dr. David Roberts (Site PI)",
+        "Lisa Wong (CRO Project Manager)"
+      ],
+      "problemId": null,
+      "isRead": true,
+      "messages": [
+        {
+          "from": "alex.johnson@denalitx.com",
+          "to": "s.chen@universityhealth.org",
+          "cc": [
+            "d.roberts@universityhealth.org",
+            "lisa.wong@syneos.com"
+          ],
+          "content": "Dear Sarah,\n\nI hope this email finds you well.\n\nI'm reaching out today for a proactive check-in regarding recruitment for the FTD cohort (Part B) of the DNLI-001 study at University Health Center. In reviewing the recent screening logs, I noted that your site has not yet screened any patients for this specific cohort.\n\nWe understand that recruiting for specific patient populations can present unique challenges. Our team at Denali is here to support you in any way we can. We'd be happy to schedule a brief call to discuss your site's current pre-screening and recruitment strategies. We can also explore if any additional resources might be helpful.\n\nTo that end, I've attached our latest approved patient recruitment flyer and an updated FAQ document for sites, which you may find useful.\n\nPlease let me know if you and Dr. Roberts would be available for a 15-20 minute call sometime next week to brainstorm potential solutions.\n\nBest regards,\n\nAlex Johnson\nClinical Research Associate\nDenali Therapeutics\nalex.johnson@denalitx.com\n\nAttachments:\n- DNLI-001_Patient_Recruitment_Flyer_v3.0.pdf\n- DNLI-001_FAQ_for_Sites_v2.1.pdf",
+          "timestamp": "30 days ago"
+        },
+        {
+          "from": "s.chen@universityhealth.org",
+          "to": "alex.johnson@denalitx.com",
+          "cc": [
+            "d.roberts@universityhealth.org",
+            "lisa.wong@syneos.com"
+          ],
+          "content": "Hi Alex,\n\nThank you for reaching out and for the attached materials. We appreciate the proactive support.\n\nYou are correct, we have been facing some challenges identifying potential candidates for the FTD cohort. A call to discuss our strategy would be very helpful.\n\nDr. Roberts and I are generally available next Tuesday or Thursday afternoon. Please let us know what time works best for you to send a meeting invitation.\n\nThank you,\n\nSarah Chen\nClinical Research Coordinator\nUniversity Health Center\ns.chen@universityhealth.org",
+          "timestamp": "1 month ago"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "URGENT: Missing IRB Approval in eTMF - DNLI-CNS-002",
+      "description": "A request from Denali's internal TMF specialist to Alex Johnson asking for the IRB approval letter for a recently submitted protocol amendment from a central site. Alex needs to locate the document and ensure it is uploaded to the eTMF system correctly.",
+      "participants": [
+        "Alex Johnson (Sponsor CRA)",
+        "Sarah Chen (Sponsor TMF Specialist)",
+        "David Lee (Sponsor CPM)"
+      ],
+      "problemId": null,
+      "isRead": true,
+      "messages": [
+        {
+          "from": "sarah.chen@denalitx.com",
+          "to": "alex.johnson@denalitx.com",
+          "cc": [
+            "tmf.queries@denalitx.com",
+            "david.lee@denalitx.com"
+          ],
+          "content": "Hi Alex,\n\nHope you are well.\n\nDuring a routine QC of the Trial Master File for study DNLI-CNS-002, I was unable to locate the IRB approval letter for the recently submitted Protocol Amendment 4 (dated 2023-10-15) for our central site, Summit Neurosciences (Site 101).\n\nCould you please investigate this? If you have the document, please upload it to the correct placeholder in the eTMF as soon as possible. If the site has not yet provided it, could you follow up with them?\n\nThis is currently holding up our periodic TMF review milestone.\n\nThanks for your help.\n\nBest regards,\n\nSarah Chen\nTMF Specialist\nDenali Therapeutics\nsarah.chen@denalitx.com",
+          "timestamp": "1 month ago"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "[DNLI-001] Site 101 - Participant 101-005 - OLE Rollover Query",
+      "description": "A back-and-forth conversation with a site regarding a participant in Part B who is nearing the end of the 25-week treatment period and has questions about rolling over into the Open-Label Extension (Part C). The site is asking for clarification on the visit schedule and procedures in the OLE to properly consent the participant.",
+      "participants": [
+        "Alex Johnson (Sponsor CRA)",
+        "David Miller (CRO CRA)",
+        "Maria Garcia (Sponsor CTM)",
+        "Sarah Chen (Site Coordinator)",
+        "Dr. Michael Lee (Site PI)"
+      ],
+      "problemId": null,
+      "isRead": true,
+      "messages": [
+        {
+          "from": "schen@ucsfmed.org",
+          "to": "david.miller@syneos.com",
+          "cc": [
+            "mlee@ucsfmed.org"
+          ],
+          "content": "Hi David,\n\nHope you are well.\n\nWe have a query regarding participant 101-005. The participant is approaching their Week 25 visit and has expressed strong interest in continuing into the Open-Label Extension (Part C) of the study.\n\nTo ensure we can properly consent them, could you please provide clarification on the visit schedule and any specific procedures required for the OLE portion of the trial? We want to make sure we have all the correct information to discuss with the participant.\n\nPlease let us know.\n\nBest regards,\n\nSarah Chen\nClinical Research Coordinator\nUCSF Medical Center",
+          "timestamp": "1 month ago"
+        },
+        {
+          "from": "david.miller@syneos.com",
+          "to": "alex.johnson@denalitx.com",
+          "cc": [
+            "maria.garcia@denalitx.com"
+          ],
+          "content": "Hi Alex,\n\nPlease see the query below from Site 101 regarding the OLE rollover for participant 101-005.\n\nCould you please provide the site with the requested clarification on the visit schedule and procedures for Part C?\n\nThanks,\nDavid\n\n--- Forwarded message ---\nFrom: Sarah Chen <schen@ucsfmed.org>\nDate: Thu, Oct 26, 2023 at 10:15 AM\nSubject: [DNLI-001] Site 101 - Participant 101-005 - OLE Rollover Query\nTo: David Miller <david.miller@syneos.com>\nCc: Michael Lee <mlee@ucsfmed.org>\n\n[original message content included above]",
+          "timestamp": "2 months ago"
+        }
+      ]
+    }
+  ]
+}
