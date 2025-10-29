@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="py-8 bg-muted/30 border-t border-border">
+    <footer className="py-8 border-t border-border">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
           <p>© 2025 Makora Bio. All rights reserved.</p>

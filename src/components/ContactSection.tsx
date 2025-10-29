@@ -1,31 +1,32 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Calendar } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-20 bg-muted/30 scroll-mt-20">
+    <section id="contact" className="bg-background scroll-mt-20">
       <div className="container mx-auto px-6">
-        <div className="max-w-3xl mx-auto text-center fade-in-section">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-foreground mb-6">
             Contact Us
           </h2>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <p className="text-lg text-foreground mb-2 leading-relaxed">
+            We're partnering with a small number of select clinical research teams to co-develop Clinbox. Design partners receive early access, feature input, and 3 months of free use.
+          </p>
+          <div className="flex flex-col gap-4 items-center pt-5">
+            <p className="text-lg text-foreground">
+              <a 
+                href="mailto:team@makora.bio" 
+                className="text-primary font-medium"
+              >
+                team@makora.bio
+              </a>
+            </p>
             <Button
-              size="lg"
-              className="text-lg"
-              onClick={() => window.location.href = "mailto:contact@makorabio.com"}
-            >
-              <Mail className="mr-2 h-5 w-5" />
-              Email
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="text-lg"
+              size="default"
+              className="text-base px-6 py-4"
               onClick={() => window.open("https://calendly.com/makorabio", "_blank")}
             >
-              <Calendar className="mr-2 h-5 w-5" />
+              <Calendar className="mr-2 h-4 w-4" />
               Book a Demo
             </Button>
           </div>
