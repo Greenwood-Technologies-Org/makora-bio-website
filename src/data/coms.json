@@ -37,6 +37,44 @@
           "hasAIDraft": true
         }
       ]
+    },
+    {
+      "id": 2,
+      "subject": "Follow-up: Critical Overdue Dosing Queries - Site 301 (DNLI-STX-01)",
+      "summary": "Follow up with Site 301 coordinator, Jessica Miller, to ensure resolution of 8 critical, overdue data queries related to participant dosing records in the EDC system. These queries are critical for the upcoming database lock for Q4 analysis and must be resolved within the next 48 hours. Refer to the attached spreadsheet for query details.",
+      "urgency": "High",
+      "status": "In Progress",
+      "timestamp": "Just now",
+      "todos": [
+        {
+          "id": 1,
+          "description": "Review the attached 'DNLI-STX-01_Site301_Critical_Queries_Dosing_06NOV2023.xlsx' spreadsheet to understand the 8 critical overdue dosing queries for Site 301.",
+          "status": "pending",
+          "tag": "Thread 1",
+          "hasAIDraft": true
+        },
+        {
+          "id": 2,
+          "description": "Contact Jessica Miller (Site 301 coordinator) to discuss the 8 critical overdue dosing queries and emphasize the 48-hour resolution deadline for database lock.",
+          "status": "pending",
+          "tag": "Thread 1",
+          "hasAIDraft": true
+        },
+        {
+          "id": 3,
+          "description": "Follow up on EDC to confirm resolution status of the 8 critical dosing queries from Site 301 within the next 48 hours.",
+          "status": "pending",
+          "tag": "EDC",
+          "hasAIDraft": false
+        },
+        {
+          "id": 4,
+          "description": "Provide an update to Sarah Chen (CRO Data Manager) and Maria Garcia (Sponsor CTM) on the status and resolution of Site 301's critical dosing queries.",
+          "status": "pending",
+          "tag": "Thread 1",
+          "hasAIDraft": true
+        }
+      ]
     }
   ],
   "threads": [
@@ -100,7 +138,7 @@
         "David Lee (CRO Project Manager)",
         "Maria Garcia (Sponsor CTM)"
       ],
-      "problemId": null,
+      "problemId": 2,
       "isRead": false,
       "messages": [
         {

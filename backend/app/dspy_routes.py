@@ -15,7 +15,13 @@ dspy_bp = Blueprint("dspy", __name__)
 
 # Initialize DSPY with your LLM provider
 load_dotenv("../.env")
-lm = dspy.LM("anthropic/claude-sonnet-4-5", temperature=0.5, cache=False)
+# Use Gemini 2.5 Flash - API key should be in .env as GEMINI_API_KEY
+api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
+if api_key:
+    # Set GOOGLE_API_KEY for DSPy if it's not already set
+    if not os.getenv("GOOGLE_API_KEY"):
+        os.environ["GOOGLE_API_KEY"] = api_key
+lm = dspy.LM("gemini/gemini-2.5-flash", temperature=0.5, cache=False)
 dspy.settings.configure(lm=lm)
 
 

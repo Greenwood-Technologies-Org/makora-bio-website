@@ -9,6 +9,7 @@ import {
   markThreadAsRead as persistMarkThreadAsRead,
   deleteTask,
 } from "@/services/dataService.js";
+import { prefetchTodos } from "@/services/todoGeneration.js";
 import {
   Star,
   FileEdit,
@@ -65,6 +66,7 @@ function Coms() {
   const [aiDraftLoading, setAiDraftLoading] = useState({}); // todoId -> boolean
   const [aiRecommendation, setAiRecommendation] = useState(null); // { threadId, recommendedProblem, confidence }
   const [showRecommendationModal, setShowRecommendationModal] = useState(false);
+  const [showAssignmentReasoning, setShowAssignmentReasoning] = useState(false);
 
   // Current user profile for AI context
   const userProfile = {
@@ -660,6 +662,21 @@ function Coms() {
       if (!newProblemId && selectedThreadKey === threadToReassign.threadKey) {
         setSelectedThreadKey(null);
       }
+
+      // Background prefetch TODOs for the affected task after assignment
+      if (newProblemId) {
+        const task = problemsData.find((p) => p.id === newProblemId);
+        if (task) {
+          const taskThreads = threadsData
+            .map((t) =>
+              t.id.toString() === threadToReassign.threadKey
+                ? { ...t, problemId: newProblemId }
+                : t
+            )
+            .filter((t) => t.problemId === newProblemId);
+          prefetchTodos(task, taskThreads, task.todos || [], userProfile);
+        }
+      }
     } catch (error) {
       console.error("Failed to reassign thread:", error);
       // You could add a toast notification here to inform the user of the error
@@ -746,6 +763,18 @@ function Coms() {
           await handleReassignThread(
             newTask.id,
             aiRecommendation.threadId.toString()
+          );
+
+          // Prefetch AI TODOs for the new task in background
+          const newTaskThreads = [
+            ...threadsData,
+            { ...aiRecommendation.thread, problemId: newTask.id },
+          ].filter((t) => t.problemId === newTask.id);
+          prefetchTodos(
+            newTask,
+            newTaskThreads,
+            newTask.todos || [],
+            userProfile
           );
         }
 
@@ -1300,7 +1329,7 @@ function Coms() {
                             </div>
                             <div className="flex-1">
                               <p
-                                className={`text-sm mb-2 ${
+                                className={`text-sm mb-2 whitespace-pre-wrap break-words ${
                                   todo.status === "completed"
                                     ? "text-gray-600 line-through"
                                     : "text-gray-900"
@@ -2013,9 +2042,19 @@ function Coms() {
                   <p className="text-sm text-blue-800 mb-3">
                     {aiRecommendation.recommendedProblem.summary}
                   </p>
-                  <p className="text-sm text-blue-700 italic">
-                    {aiRecommendation.reasoning}
-                  </p>
+                  <button
+                    className="text-xs text-blue-600 hover:text-blue-700 underline"
+                    onClick={() => setShowAssignmentReasoning((v) => !v)}
+                  >
+                    {showAssignmentReasoning
+                      ? "Hide reasoning"
+                      : "Show reasoning"}
+                  </button>
+                  {showAssignmentReasoning && (
+                    <p className="text-sm text-blue-700 italic mt-2">
+                      {aiRecommendation.reasoning}
+                    </p>
+                  )}
                 </div>
               )}
 
@@ -2045,9 +2084,19 @@ function Coms() {
                   <p className="text-sm text-green-800 mb-3">
                     {aiRecommendation.newTask.summary}
                   </p>
-                  <p className="text-sm text-green-700 italic">
-                    {aiRecommendation.reasoning}
-                  </p>
+                  <button
+                    className="text-xs text-green-700 hover:text-green-800 underline"
+                    onClick={() => setShowAssignmentReasoning((v) => !v)}
+                  >
+                    {showAssignmentReasoning
+                      ? "Hide reasoning"
+                      : "Show reasoning"}
+                  </button>
+                  {showAssignmentReasoning && (
+                    <p className="text-sm text-green-700 italic mt-2">
+                      {aiRecommendation.reasoning}
+                    </p>
+                  )}
                 </div>
               )}
             </div>

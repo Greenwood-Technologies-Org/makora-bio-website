@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import { generateEmailDraftWithDSPy } from "../../services/emailDrafting";
-import { generateTodosWithDSPy } from "../../services/todoGeneration";
+import {
+  generateTodosWithDSPy,
+  getCachedTodos,
+  setCachedTodos,
+  markCachedTodosUsed,
+} from "../../services/todoGeneration";
 import {
   addTodoToTask,
   addTodosToTask,
@@ -254,6 +259,16 @@ function ComDetailPanel({
     setAiTodoLoading(true);
 
     try {
+      // 1) Check cache first; if present and not used, consume it
+      const cached = getCachedTodos(com.id);
+      if (cached && cached.result && cached.used === false) {
+        setAiTodoRecommendations(cached.result);
+        setShowAiTodoModal(true);
+        markCachedTodosUsed(com.id);
+        return; // done
+      }
+
+      // 2) Otherwise, generate fresh and cache it
       const result = await generateTodosWithDSPy(
         com,
         threads,
@@ -268,6 +283,7 @@ function ComDetailPanel({
       } else if (result.suggestedTodos.length > 0) {
         setAiTodoRecommendations(result);
         setShowAiTodoModal(true);
+        setCachedTodos(com.id, result);
       } else {
         alert(
           "No new TODO suggestions found based on current task and threads."
@@ -1059,7 +1075,7 @@ function ComDetailPanel({
                             </div>
                           ) : (
                             <p
-                              className={`text-sm mb-2 cursor-text hover:bg-gray-100 px-1 py-0.5 rounded ${
+                              className={`text-sm mb-2 cursor-text hover:bg-gray-100 px-1 py-0.5 rounded whitespace-pre-wrap break-words ${
                                 todo.status === "completed"
                                   ? "text-gray-600 line-through"
                                   : "text-gray-900"
@@ -1449,6 +1465,7 @@ function AiTodoModal({ recommendations, onAccept, onReject, threads }) {
   const [editingTodo, setEditingTodo] = useState(null);
   const [editingText, setEditingText] = useState("");
   const [showTagDropdown, setShowTagDropdown] = useState(null);
+  const [showReasoning, setShowReasoning] = useState(false);
   const [customTags, setCustomTags] = useState([]);
 
   // Tag options with colors
@@ -1578,7 +1595,17 @@ function AiTodoModal({ recommendations, onAccept, onReject, threads }) {
           <h3 className="text-lg font-bold text-gray-900 mb-2">
             AI TODO Recommendations
           </h3>
-          <p className="text-sm text-gray-600">{recommendations.reasoning}</p>
+          <button
+            className="text-xs text-blue-600 hover:text-blue-700 underline"
+            onClick={() => setShowReasoning((v) => !v)}
+          >
+            {showReasoning ? "Hide reasoning" : "Show reasoning"}
+          </button>
+          {showReasoning && (
+            <p className="text-sm text-gray-600 mt-2">
+              {recommendations.reasoning}
+            </p>
+          )}
         </div>
 
         <div className="flex-1 overflow-y-auto p-6">
