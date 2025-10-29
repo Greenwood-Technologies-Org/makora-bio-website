@@ -1,77 +1,117 @@
 import React, { useState, useEffect } from 'react';
 import DocumentViewer from './DocumentViewer.jsx';
 
-// You can use Google Drive links OR local file imports
-// To use Google Drive:
-// 1. Upload file to Google Drive
-// 2. Right-click file > Share > Change to "Anyone with the link"
-// 3. Copy the sharing link (looks like: https://drive.google.com/file/d/FILE_ID/view)
-// 4. Paste it in filePath below
+import studyProtocolDocx from '@/docs/[NCT05262023] Study Protocol.docx';
+import informedConsentDocx from '@/docs/[NCT05262023] Informed Consent.docx';
+import dataManagementPlanPdf from '@/docs/[NCT05262023] Data Management Plan Summary.pdf';
+import systemSiteManualPdf from '@/docs/[NCT05262023] ePRO System Site Manual.pdf';
+import raciMatrixPptx from '@/docs/[NCT05262023] Clinical Operations RACI Matrix.pptx';
 
-const realDocuments = [
-  { 
-    id: 1, 
-    name: '[NCT05262023] Study Protocol', 
+const documentLibrary = [
+  {
+    id: 1,
+    name: '[NCT05262023] Study Protocol',
     type: 'Protocol',
     fileType: 'docx',
-    dateUploaded: '2025-10-15', 
-    size: '2.4 MB',
-    // Replace with your Google Drive link:
-    filePath: 'https://drive.google.com/file/d/YOUR_FILE_ID_HERE/view'
-    // Or keep local import: filePath: studyProtocolDocx
+    dateUploaded: '2024-10-15',
+    filePath: studyProtocolDocx,
+    size: null
   },
-  { 
-    id: 2, 
-    name: '[NCT05262023] Informed Consent', 
+  {
+    id: 2,
+    name: '[NCT05262023] Informed Consent',
     type: 'Consent',
-    fileType: 'docx', 
-    dateUploaded: '2025-10-01', 
-    size: '856 KB',
-    // Replace with your Google Drive link:
-    filePath: 'https://drive.google.com/file/d/YOUR_FILE_ID_HERE/view'
+    fileType: 'docx',
+    dateUploaded: '2024-10-01',
+    filePath: informedConsentDocx,
+    size: null
   },
-  { 
-    id: 3, 
-    name: '[NCT05262023] Data Management Plan Summary', 
+  {
+    id: 3,
+    name: '[NCT05262023] Data Management Plan Summary',
     type: 'Reference',
-    fileType: 'pdf', 
-    dateUploaded: '2025-10-18', 
-    size: '1.2 MB',
-    // Replace with your Google Drive link:
-    filePath: 'https://drive.google.com/file/d/YOUR_FILE_ID_HERE/view'
+    fileType: 'pdf',
+    dateUploaded: '2024-10-18',
+    filePath: dataManagementPlanPdf,
+    size: null
   },
-  { 
-    id: 4, 
-    name: '[NCT05262023] ePRO System Site Manual', 
+  {
+    id: 4,
+    name: '[NCT05262023] ePRO System Site Manual',
     type: 'Reference',
-    fileType: 'pdf', 
-    dateUploaded: '2025-10-10', 
-    size: '3.1 MB',
-    // Replace with your Google Drive link:
-    filePath: 'https://drive.google.com/file/d/YOUR_FILE_ID_HERE/view'
+    fileType: 'pdf',
+    dateUploaded: '2024-10-10',
+    filePath: systemSiteManualPdf,
+    size: null
   },
-  { 
-    id: 5, 
-    name: '[NCT05262023] Clinical Operations RACI Matrix', 
+  {
+    id: 5,
+    name: '[NCT05262023] Clinical Operations RACI Matrix',
     type: 'Reference',
-    fileType: 'pptx', 
-    dateUploaded: '2025-10-05', 
-    size: '890 KB',
-    // Replace with your Google Drive link:
-    filePath: 'https://drive.google.com/file/d/YOUR_FILE_ID_HERE/view'
+    fileType: 'pptx',
+    dateUploaded: '2024-10-05',
+    filePath: raciMatrixPptx,
+    size: null
   }
 ];
 
+const formatFileSize = (bytes) => {
+  if (!Number.isFinite(bytes) || bytes <= 0) return null;
+  const units = ['B', 'KB', 'MB', 'GB'];
+  const exponent = Math.min(Math.floor(Math.log(bytes) / Math.log(1024)), units.length - 1);
+  const value = bytes / Math.pow(1024, exponent);
+  return `${value.toFixed(value >= 10 || exponent === 0 ? 0 : 1)} ${units[exponent]}`;
+};
+
 function Docs() {
-  const [documents, setDocuments] = useState(realDocuments);
+  const [documents, setDocuments] = useState(documentLibrary);
   const [selectedDocs, setSelectedDocs] = useState(new Set());
   const [viewingDoc, setViewingDoc] = useState(null);
+
+  useEffect(() => {
+    let isMounted = true;
+
+    const enrichWithSizes = async () => {
+      const documentsWithSizes = await Promise.all(
+        documentLibrary.map(async (doc) => {
+          if (doc.size) return doc;
+          try {
+            const response = await fetch(doc.filePath);
+            const blob = await response.blob();
+            return {
+              ...doc,
+              size: formatFileSize(blob.size)
+            };
+          } catch (error) {
+            console.error('Unable to determine file size for', doc.name, error);
+            return {
+              ...doc,
+              size: null
+            };
+          }
+        })
+      );
+
+      if (!isMounted) return;
+
+      const documentsMap = new Map(documentsWithSizes.map((doc) => [doc.id, doc]));
+      setDocuments((prevDocuments) =>
+        prevDocuments.map((doc) => documentsMap.get(doc.id) || doc)
+      );
+    };
+
+    enrichWithSizes();
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   const getFileIcon = (fileType) => {
     const icons = {
       docx: '📝',
       pdf: '📄',
-      pptx: '�',
+      pptx: '📊',
       xlsx: '📈'
     };
     return icons[fileType] || '📁';
@@ -195,7 +235,12 @@ function Docs() {
                     {doc.fileType}
                   </span>
                   <span>•</span>
-                  <span>{doc.size}</span>
+                  {doc.size && (
+                    <>
+                      <span>•</span>
+                      <span>{doc.size}</span>
+                    </>
+                  )}
                 </div>
                 <p className="text-xs text-gray-500">
                   Uploaded {doc.dateUploaded}

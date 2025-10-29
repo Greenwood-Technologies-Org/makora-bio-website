@@ -1,57 +1,29 @@
-import React from 'react';
+import React, { useMemo } from 'react';
+import DocViewer, { DocViewerRenderers } from '@cyntler/react-doc-viewer';
+import '@cyntler/react-doc-viewer/dist/index.css';
 import './DocumentViewer.css';
 
 function DocumentViewer({ document, onClose }) {
-  // Check if it's a Google Drive link
-  const isGoogleDriveLink = document.filePath && (
-    document.filePath.includes('drive.google.com') || 
-    document.filePath.includes('docs.google.com')
+  const documents = useMemo(
+    () => [
+      {
+        uri: document.filePath,
+        fileType: document.fileType,
+        fileName: `${document.name}.${document.fileType}`
+      }
+    ],
+    [document]
   );
 
-  // Extract Google Drive file ID from various URL formats
-  const getGoogleDriveFileId = (url) => {
-    if (!url) return null;
-    
-    // Handle different Google Drive URL formats
-    const patterns = [
-      /\/file\/d\/([^\/]+)/,  // /file/d/FILE_ID/view
-      /id=([^&]+)/,            // ?id=FILE_ID
-      /\/d\/([^\/]+)/,         // /d/FILE_ID
-    ];
-    
-    for (const pattern of patterns) {
-      const match = url.match(pattern);
-      if (match) return match[1];
-    }
-    return null;
-  };
-
-  // Get the appropriate viewer URL
-  const getViewerUrl = () => {
-    if (isGoogleDriveLink) {
-      const fileId = getGoogleDriveFileId(document.filePath);
-      if (fileId) {
-        // Use Google Drive's preview URL
-        return `https://drive.google.com/file/d/${fileId}/preview`;
-      }
-    }
-    return null;
-  };
-
   const handleDownload = () => {
-    if (isGoogleDriveLink) {
-      // Open Google Drive link in new tab
-      window.open(document.filePath, '_blank');
-    } else {
-      // Download local file
-      const link = window.document.createElement('a');
-      link.href = document.filePath;
-      link.download = `${document.name}.${document.fileType}`;
-      link.click();
-    }
+    const link = window.document.createElement('a');
+    link.href = document.filePath;
+    link.download = `${document.name}.${document.fileType}`;
+    window.document.body.appendChild(link);
+    link.click();
+    window.document.body.removeChild(link);
   };
 
-  const viewerUrl = getViewerUrl();
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
       <div className="bg-white rounded-lg shadow-2xl w-full max-w-6xl max-h-[95vh] flex flex-col">
@@ -60,7 +32,7 @@ function DocumentViewer({ document, onClose }) {
           <div>
             <h2 className="text-xl font-semibold text-gray-900">{document.name}</h2>
             <p className="text-sm text-gray-600 mt-1">
-              {document.fileType.toUpperCase()} • Last modified: {document.dateUploaded}
+              {document.fileType.toUpperCase()} • Last updated: {document.dateUploaded}
             </p>
           </div>
           <button
@@ -74,34 +46,22 @@ function DocumentViewer({ document, onClose }) {
         </div>
 
         {/* Document Content */}
-        <div className="flex-1 overflow-auto bg-gray-50" style={{ minHeight: 0 }}>
-          {viewerUrl ? (
-            <iframe
-              src={viewerUrl}
-              className="w-full h-full border-0"
-              title={document.name}
-              allow="autoplay"
+        <div className="flex-1 overflow-hidden bg-gray-50" style={{ minHeight: 0 }}>
+          <div className="h-full">
+            <DocViewer
+              documents={documents}
+              pluginRenderers={DocViewerRenderers}
+              className="doc-viewer"
+              style={{ width: '100%', height: '100%' }}
+              config={{
+                header: {
+                  disableHeader: true,
+                  disableFileName: true,
+                  retainURLParams: false
+                }
+              }}
             />
-          ) : (
-            <div className="flex flex-col items-center justify-center h-full text-center p-8">
-              <svg className="w-24 h-24 text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-              </svg>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Preview Not Available</h3>
-              <p className="text-gray-600 mb-4 max-w-md">
-                Unable to preview this file. Please use a Google Drive sharing link for online preview.
-              </p>
-              <button
-                onClick={handleDownload}
-                className="px-6 py-3 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors font-medium flex items-center gap-2"
-              >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                </svg>
-                {isGoogleDriveLink ? 'Open in Google Drive' : 'Download File'}
-              </button>
-            </div>
-          )}
+          </div>
         </div>
 
         {/* Footer */}
@@ -119,7 +79,7 @@ function DocumentViewer({ document, onClose }) {
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
             </svg>
-            {isGoogleDriveLink ? 'Open in Google Drive' : 'Download'}
+            Download
           </button>
         </div>
       </div>

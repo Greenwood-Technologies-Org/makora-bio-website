@@ -1,7 +1,11 @@
-/* Document Viewer custom styles */
-/* Google Drive iframe viewer */
-iframe {
-  border: none;
-  width: 100%;
+.doc-viewer {
   height: 100%;
+}
+
+.doc-viewer > div {
+  height: 100%;
+}
+
+.doc-viewer iframe {
+  border: none;
 }
