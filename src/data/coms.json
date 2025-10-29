@@ -75,6 +75,15 @@
           "hasAIDraft": true
         }
       ]
+    },
+    {
+      "id": 3,
+      "subject": "Protocol Deviation - Missed PK Sample - DNLI-123 - Site 456 - Subject 101-003",
+      "summary": "Follow up with Site 456 (Sarah Chen) to ensure thorough documentation of the missed 4-hour post-dose PK sample for Subject 101-003 in study DNLI-123. Review the completed Protocol Deviation form once received. Draft an initial impact assessment for the internal clinical pharmacology team to evaluate the effect of this missing data point on the overall analysis for the healthy volunteer cohort.",
+      "urgency": "High",
+      "status": "In Progress",
+      "timestamp": "Just now",
+      "todos": []
     }
   ],
   "threads": [
@@ -87,8 +96,8 @@
         "Maria Garcia (Site Coordinator)",
         "David Chen (CRO Project Manager)"
       ],
-      "problemId": null,
-      "isRead": false,
+      "problemId": 4,
+      "isRead": true,
       "messages": [
         {
           "from": "Alex Johnson",
@@ -164,8 +173,8 @@
         "Maria Garcia (Sponsor CTM)",
         "Emily Vance (Site PI)"
       ],
-      "problemId": null,
-      "isRead": false,
+      "problemId": 3,
+      "isRead": true,
       "messages": [
         {
           "from": "Sarah Chen",

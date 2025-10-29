@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import { docsCatalog } from "../../data/docsCatalog";
 import { generateEmailDraftWithDSPy } from "../../services/emailDrafting";
 import {
   generateTodosWithDSPy,
@@ -27,6 +28,7 @@ function ComDetailPanel({
   const [draftMessages, setDraftMessages] = useState({});
   const [draftReferences, setDraftReferences] = useState({}); // threadId -> [{type,title,date}]
   const [draftReasoning, setDraftReasoning] = useState({}); // threadId -> string
+  const [showDraftReasoning, setShowDraftReasoning] = useState({}); // threadId -> boolean
   const [todos, setTodos] = useState(com.todos);
   const [showAddTodoModal, setShowAddTodoModal] = useState(false);
   const [contextMenu, setContextMenu] = useState(null); // { todoId, x, y }
@@ -54,6 +56,7 @@ function ComDetailPanel({
 
   // AI Draft generation state
   const [aiDraftLoading, setAiDraftLoading] = useState({});
+  const draftSectionRefs = useRef({}); // threadId -> element
 
   const toggleThread = (threadId) => {
     setExpandedThread(expandedThread === threadId ? null : threadId);
@@ -103,7 +106,14 @@ function ComDetailPanel({
         userProfile,
         {
           emailContext: com.summary || com.subject || "",
-          documents: com.documents || [],
+          documents:
+            (docsCatalog || []).map((d) => ({
+              type: d.type,
+              title: d.name,
+              date: d.dateUploaded,
+              description: "",
+              raw_text: "",
+            })) || [],
         }
       );
 
@@ -114,7 +124,8 @@ function ComDetailPanel({
         draft.body
       }`;
 
-      // Set the draft message for the thread
+      // Ensure the thread with the draft is expanded and set the draft message
+      setExpandedThread(thread.id);
       setDraftMessages((prev) => ({
         ...prev,
         [thread.id]: formattedMessage,
@@ -143,6 +154,14 @@ function ComDetailPanel({
           });
         }
       }, 100);
+
+      // Scroll the AI draft section into view
+      setTimeout(() => {
+        const el = draftSectionRefs.current[thread.id];
+        if (el && typeof el.scrollIntoView === "function") {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 0);
     } catch (error) {
       console.error("AI draft generation error:", error);
       alert(`Failed to generate AI draft: ${error.message}`);
@@ -897,10 +916,13 @@ function ComDetailPanel({
 
                     {/*  Message Box */}
                     {draftMessages[thread.id] && (
-                      <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-4 border-2 border-purple-300 max-h-[80vh] flex flex-col">
+                      <div
+                        ref={(el) => (draftSectionRefs.current[thread.id] = el)}
+                        className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-lg p-4 border-2 border-blue-300 max-h-[80vh] flex flex-col"
+                      >
                         <div className="flex items-center gap-2 mb-3 flex-shrink-0">
-                          <Sparkles className="w-5 h-5 text-purple-600" />
-                          <span className="text-sm font-semibold text-purple-700">
+                          <Sparkles className="w-5 h-5 text-blue-600" />
+                          <span className="text-sm font-semibold text-blue-700">
                             AI Draft
                           </span>
                         </div>
@@ -910,7 +932,7 @@ function ComDetailPanel({
                             onChange={(e) =>
                               handleDraftChange(thread.id, e.target.value)
                             }
-                            className="w-full min-h-[200px] p-3 border border-purple-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 resize-none mb-3"
+                            className="w-full min-h-[200px] p-3 border border-blue-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none mb-3"
                             placeholder="Edit your message..."
                           />
 
@@ -918,7 +940,7 @@ function ComDetailPanel({
                           {draftReferences[thread.id] &&
                             draftReferences[thread.id].length > 0 && (
                               <div className="mb-3">
-                                <h5 className="text-xs font-semibold text-purple-700 mb-2">
+                                <h5 className="text-xs font-semibold text-blue-700 mb-2">
                                   AI References Used:
                                 </h5>
                                 <div className="space-y-1">
@@ -929,7 +951,7 @@ function ComDetailPanel({
                                         className="flex items-start gap-2 text-xs bg-white bg-opacity-50 rounded p-2"
                                       >
                                         <svg
-                                          className="w-3 h-3 text-purple-600 mt-0.5 flex-shrink-0"
+                                          className="w-3 h-3 text-blue-600 mt-0.5 flex-shrink-0"
                                           fill="none"
                                           stroke="currentColor"
                                           viewBox="0 0 24 24"
@@ -959,9 +981,26 @@ function ComDetailPanel({
                                   )}
                                 </div>
                                 {draftReasoning[thread.id] && (
-                                  <p className="text-[11px] text-purple-700 mt-2">
-                                    Reasoning: {draftReasoning[thread.id]}
-                                  </p>
+                                  <div className="mt-2">
+                                    <button
+                                      className="text-xs text-gray-600 hover:text-gray-700 underline"
+                                      onClick={() =>
+                                        setShowDraftReasoning((prev) => ({
+                                          ...prev,
+                                          [thread.id]: !prev[thread.id],
+                                        }))
+                                      }
+                                    >
+                                      {showDraftReasoning[thread.id]
+                                        ? "Hide reasoning"
+                                        : "Show reasoning"}
+                                    </button>
+                                    {showDraftReasoning[thread.id] && (
+                                      <p className="text-xs text-gray-700 italic mt-2 whitespace-pre-wrap">
+                                        {draftReasoning[thread.id]}
+                                      </p>
+                                    )}
+                                  </div>
                                 )}
                               </div>
                             )}
@@ -1069,7 +1108,7 @@ function ComDetailPanel({
                                 }}
                                 onBlur={() => handleSaveExistingEdit(todo.id)}
                                 onClick={(e) => e.stopPropagation()}
-                                className="w-full px-2 py-1 text-sm bg-white border border-purple-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+                                className="w-full px-2 py-1 text-sm bg-white border border-blue-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                 autoFocus
                               />
                             </div>
@@ -1151,7 +1190,7 @@ function ComDetailPanel({
                                     <input
                                       type="text"
                                       placeholder="Create new tag..."
-                                      className="w-full px-2 py-1 text-xs border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-purple-500"
+                                      className="w-full px-2 py-1 text-xs border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-500"
                                       onKeyDown={(e) => {
                                         if (e.key === "Enter") {
                                           e.stopPropagation();
@@ -1615,7 +1654,7 @@ function AiTodoModal({ recommendations, onAccept, onReject, threads }) {
                 key={todo.id}
                 className={`p-4 rounded-lg border-2 transition-all cursor-pointer ${
                   todo.selected
-                    ? "border-purple-200 bg-purple-50"
+                    ? "border-blue-200 bg-blue-50"
                     : "border-gray-200 bg-gray-50"
                 }`}
                 onClick={() => handleToggleTodo(todo.id)}
@@ -1625,7 +1664,7 @@ function AiTodoModal({ recommendations, onAccept, onReject, threads }) {
                     <div
                       className={`w-4 h-4 rounded border-2 flex items-center justify-center ${
                         todo.selected
-                          ? "bg-purple-500 border-purple-500"
+                          ? "bg-blue-500 border-blue-500"
                           : "border-gray-300"
                       }`}
                     >
@@ -1663,7 +1702,7 @@ function AiTodoModal({ recommendations, onAccept, onReject, threads }) {
                           }}
                           onBlur={() => handleSaveEdit(todo.id)}
                           onClick={(e) => e.stopPropagation()}
-                          className="w-full px-2 py-1 text-sm font-medium text-gray-900 bg-white border border-purple-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+                          className="w-full px-2 py-1 text-sm font-medium text-gray-900 bg-white border border-blue-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                           autoFocus
                         />
                       </div>
@@ -1734,7 +1773,7 @@ function AiTodoModal({ recommendations, onAccept, onReject, threads }) {
                               <input
                                 type="text"
                                 placeholder="Create new tag..."
-                                className="w-full px-2 py-1 text-xs border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-purple-500"
+                                className="w-full px-2 py-1 text-xs border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-500"
                                 onKeyDown={(e) => {
                                   if (e.key === "Enter") {
                                     e.stopPropagation();
@@ -1751,7 +1790,7 @@ function AiTodoModal({ recommendations, onAccept, onReject, threads }) {
 
                       {/* AI Draft Indicator */}
                       {todo.hasAIDraft && (
-                        <span className="flex items-center gap-1 text-purple-600">
+                        <span className="flex items-center gap-1 text-blue-600">
                           <Sparkles className="w-4 h-4" />
                           <span className="text-xs">AI Draft</span>
                         </span>
@@ -1780,7 +1819,7 @@ function AiTodoModal({ recommendations, onAccept, onReject, threads }) {
             <button
               onClick={handleAccept}
               disabled={selectedCount === 0}
-              className="flex-1 px-4 py-2 bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 disabled:from-gray-400 disabled:to-gray-500 text-white rounded-lg transition-all duration-200 font-medium shadow-sm hover:shadow-md disabled:cursor-not-allowed"
+              className="flex-1 px-4 py-2 bg-primary-500 hover:bg-primary-600 disabled:bg-gray-400 text-white rounded-lg transition-colors font-medium shadow-sm hover:shadow-md disabled:cursor-not-allowed"
             >
               Add {selectedCount} TODO{selectedCount !== 1 ? "s" : ""}
             </button>

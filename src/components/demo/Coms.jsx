@@ -122,7 +122,7 @@ function Coms() {
     switch (tagValue) {
       case "Medidata Rave":
       case "EDC":
-        return "bg-purple-100 text-purple-700 border-purple-200";
+        return "bg-blue-100 text-blue-700 border-blue-200";
       case "Veeva Site Connect":
         return "bg-blue-100 text-blue-700 border-blue-200";
       case "CTMS":
@@ -1205,10 +1205,10 @@ function Coms() {
                   {/*  Section */}
                   {draftMessage &&
                     draftMessage.threadKey === selectedThreadKey && (
-                      <div className="mt-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-5 border-2 border-purple-300">
+                      <div className="mt-6 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-lg p-5 border-2 border-blue-300">
                         <div className="flex items-center gap-2 mb-3">
-                          <Sparkles className="w-5 h-5 text-purple-600" />
-                          <span className="text-base font-semibold text-purple-700"></span>
+                          <Sparkles className="w-5 h-5 text-blue-600" />
+                          <span className="text-base font-semibold text-blue-700"></span>
                         </div>
                         <textarea
                           value={draftMessage.message}
@@ -1218,7 +1218,7 @@ function Coms() {
                               message: e.target.value,
                             })
                           }
-                          className="w-full h-64 p-3 border border-purple-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 resize-y mb-3 bg-white"
+                          className="w-full h-64 p-3 border border-blue-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-y mb-3 bg-white"
                           placeholder="Edit your message..."
                         />
 
@@ -1226,7 +1226,7 @@ function Coms() {
                         {draftMessage.references &&
                           draftMessage.references.length > 0 && (
                             <div className="mb-3">
-                              <h5 className="text-xs font-semibold text-purple-700 mb-2">
+                              <h5 className="text-xs font-semibold text-blue-700 mb-2">
                                 AI References Used:
                               </h5>
                               <div className="space-y-1">
@@ -1236,7 +1236,7 @@ function Coms() {
                                     className="flex items-start gap-2 text-xs bg-white bg-opacity-50 rounded p-2"
                                   >
                                     <svg
-                                      className="w-3 h-3 text-purple-600 mt-0.5 flex-shrink-0"
+                                      className="w-3 h-3 text-blue-600 mt-0.5 flex-shrink-0"
                                       fill="none"
                                       stroke="currentColor"
                                       viewBox="0 0 24 24"
@@ -1249,7 +1249,7 @@ function Coms() {
                                       />
                                     </svg>
                                     <div className="flex-1">
-                                      <span className="font-medium text-purple-900">
+                                      <span className="font-medium text-blue-900">
                                         {ref.type}:
                                       </span>
                                       <span className="text-gray-700 ml-1">
@@ -1957,6 +1957,90 @@ function Coms() {
             </h3>
 
             <div className="space-y-4 overflow-y-auto max-h-[calc(90vh-200px)]">
+              {/* Existing Task Assignment */}
+              {aiRecommendation.recommendedProblem && (
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                  <h4 className="font-medium text-blue-900 mb-2">
+                    Recommended Assignment
+                  </h4>
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="font-semibold text-blue-900">
+                      {aiRecommendation.recommendedProblem.subject}
+                    </span>
+                    <span
+                      className={`px-2 py-0.5 text-xs rounded-full font-medium ${
+                        aiRecommendation.recommendedProblem.urgency === "High"
+                          ? "bg-red-100 text-red-700"
+                          : aiRecommendation.recommendedProblem.urgency ===
+                            "Medium"
+                          ? "bg-yellow-100 text-yellow-700"
+                          : "bg-green-100 text-green-700"
+                      }`}
+                    >
+                      {aiRecommendation.recommendedProblem.urgency}
+                    </span>
+                  </div>
+                  <p className="text-sm text-blue-800 mb-3">
+                    {aiRecommendation.recommendedProblem.summary}
+                  </p>
+                  <button
+                    className="text-xs text-blue-600 hover:text-blue-700 underline"
+                    onClick={() => setShowAssignmentReasoning((v) => !v)}
+                  >
+                    {showAssignmentReasoning
+                      ? "Hide reasoning"
+                      : "Show reasoning"}
+                  </button>
+                  {showAssignmentReasoning && (
+                    <p className="text-sm text-blue-700 italic mt-2">
+                      {aiRecommendation.reasoning}
+                    </p>
+                  )}
+                </div>
+              )}
+
+              {/* New Task Creation */}
+              {aiRecommendation.newTask && (
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                  <h4 className="font-medium text-blue-900 mb-2">
+                    Recommended New Task
+                  </h4>
+                  <div className="flex items-center gap-2 mb-2">
+                    <Plus className="w-4 h-4 text-blue-600" />
+                    <span className="font-semibold text-blue-900">
+                      {aiRecommendation.newTask.subject}
+                    </span>
+                    <span
+                      className={`px-2 py-0.5 text-xs rounded-full font-medium ${
+                        aiRecommendation.newTask.urgency === "High"
+                          ? "bg-red-100 text-red-700"
+                          : aiRecommendation.newTask.urgency === "Medium"
+                          ? "bg-yellow-100 text-yellow-700"
+                          : "bg-green-100 text-green-700"
+                      }`}
+                    >
+                      {aiRecommendation.newTask.urgency}
+                    </span>
+                  </div>
+                  <p className="text-sm text-blue-800 mb-3">
+                    {aiRecommendation.newTask.summary}
+                  </p>
+                  <button
+                    className="text-xs text-blue-600 hover:text-blue-700 underline"
+                    onClick={() => setShowAssignmentReasoning((v) => !v)}
+                  >
+                    {showAssignmentReasoning
+                      ? "Hide reasoning"
+                      : "Show reasoning"}
+                  </button>
+                  {showAssignmentReasoning && (
+                    <p className="text-sm text-blue-700 italic mt-2">
+                      {aiRecommendation.reasoning}
+                    </p>
+                  )}
+                </div>
+              )}
+
               {/* Thread Summary */}
               <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
                 <h4 className="font-medium text-gray-900 mb-2">
@@ -2015,90 +2099,6 @@ function Coms() {
                     )}
                 </div>
               </div>
-
-              {/* Existing Task Assignment */}
-              {aiRecommendation.recommendedProblem && (
-                <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
-                  <h4 className="font-medium text-blue-900 mb-2">
-                    Recommended Assignment
-                  </h4>
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="font-semibold text-blue-900">
-                      {aiRecommendation.recommendedProblem.subject}
-                    </span>
-                    <span
-                      className={`px-2 py-0.5 text-xs rounded-full font-medium ${
-                        aiRecommendation.recommendedProblem.urgency === "High"
-                          ? "bg-red-100 text-red-700"
-                          : aiRecommendation.recommendedProblem.urgency ===
-                            "Medium"
-                          ? "bg-yellow-100 text-yellow-700"
-                          : "bg-green-100 text-green-700"
-                      }`}
-                    >
-                      {aiRecommendation.recommendedProblem.urgency}
-                    </span>
-                  </div>
-                  <p className="text-sm text-blue-800 mb-3">
-                    {aiRecommendation.recommendedProblem.summary}
-                  </p>
-                  <button
-                    className="text-xs text-blue-600 hover:text-blue-700 underline"
-                    onClick={() => setShowAssignmentReasoning((v) => !v)}
-                  >
-                    {showAssignmentReasoning
-                      ? "Hide reasoning"
-                      : "Show reasoning"}
-                  </button>
-                  {showAssignmentReasoning && (
-                    <p className="text-sm text-blue-700 italic mt-2">
-                      {aiRecommendation.reasoning}
-                    </p>
-                  )}
-                </div>
-              )}
-
-              {/* New Task Creation */}
-              {aiRecommendation.newTask && (
-                <div className="bg-green-50 p-4 rounded-lg border border-green-200">
-                  <h4 className="font-medium text-green-900 mb-2">
-                    Recommended New Task
-                  </h4>
-                  <div className="flex items-center gap-2 mb-2">
-                    <Plus className="w-4 h-4 text-green-600" />
-                    <span className="font-semibold text-green-900">
-                      {aiRecommendation.newTask.subject}
-                    </span>
-                    <span
-                      className={`px-2 py-0.5 text-xs rounded-full font-medium ${
-                        aiRecommendation.newTask.urgency === "High"
-                          ? "bg-red-100 text-red-700"
-                          : aiRecommendation.newTask.urgency === "Medium"
-                          ? "bg-yellow-100 text-yellow-700"
-                          : "bg-green-100 text-green-700"
-                      }`}
-                    >
-                      {aiRecommendation.newTask.urgency}
-                    </span>
-                  </div>
-                  <p className="text-sm text-green-800 mb-3">
-                    {aiRecommendation.newTask.summary}
-                  </p>
-                  <button
-                    className="text-xs text-green-700 hover:text-green-800 underline"
-                    onClick={() => setShowAssignmentReasoning((v) => !v)}
-                  >
-                    {showAssignmentReasoning
-                      ? "Hide reasoning"
-                      : "Show reasoning"}
-                  </button>
-                  {showAssignmentReasoning && (
-                    <p className="text-sm text-green-700 italic mt-2">
-                      {aiRecommendation.reasoning}
-                    </p>
-                  )}
-                </div>
-              )}
             </div>
 
             {/* Action Buttons */}
@@ -2111,7 +2111,7 @@ function Coms() {
               </button>
               <button
                 onClick={handleAcceptRecommendation}
-                className="flex-1 px-4 py-2 bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white rounded-lg transition-all duration-200 font-medium shadow-sm hover:shadow-md"
+                className="flex-1 px-4 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg transition-colors font-medium shadow-sm hover:shadow-md"
               >
                 {aiRecommendation.recommendedProblem
                   ? "Accept Assignment"
