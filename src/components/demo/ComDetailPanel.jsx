@@ -14,6 +14,7 @@ function ComDetailPanel({
   onBack,
   problemsData,
   threadsData,
+  userProfile,
   onTaskUpdate,
 }) {
   const [expandedThread, setExpandedThread] = useState(null);
@@ -89,7 +90,11 @@ function ComDetailPanel({
 
     try {
       // Generate AI draft using DSPy service
-      const draft = await generateEmailDraftWithDSPy(thread, todo.description);
+      const draft = await generateEmailDraftWithDSPy(
+        thread,
+        todo.description,
+        userProfile
+      );
 
       // Format the draft message with proper email structure
       const formattedMessage = `To: ${draft.to}\n${
@@ -233,7 +238,12 @@ function ComDetailPanel({
     setAiTodoLoading(true);
 
     try {
-      const result = await generateTodosWithDSPy(com, threads, todos);
+      const result = await generateTodosWithDSPy(
+        com,
+        threads,
+        todos,
+        userProfile
+      );
 
       if (result.coverageAssessment === "comprehensive") {
         alert(

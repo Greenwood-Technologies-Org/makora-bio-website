@@ -2,78 +2,36 @@
   "problems": [
     {
       "id": 1,
-      "subject": "SAE Management - DNLI-001 - Site 203 - Pt 203-005 - Hospitalization (Fall)",
-      "summary": "Manage Serious Adverse Event for participant 203-005 at Site 203 who was hospitalized following a fall at home. PI assessed causality as 'possibly related' due to dizziness episode prior to fall. Task includes: review of submitted SAE form and hospital documentation, sponsor causality assessment, coordination with Medical Monitor, collection of additional source documents, regulatory reporting within timelines, and ongoing follow-up until event resolution.",
+      "subject": "SAE Review & Response - DNLI-001 Site 203 Pt 203-005 - Hospitalization (Fall)",
+      "summary": "Urgent SAE requiring sponsor review and response. Participant 203-005 (Part B) hospitalized following fall at home with reported dizziness. Site PI assessed as 'possibly related' to investigational product. Actions needed: Review SAE form and hospital documentation, coordinate with Medical Monitor (Sarah Chen) for causality assessment, determine expectedness, confirm regulatory reporting timelines, and provide feedback to site CRA (Maria Garcia) on any additional documentation requirements.",
       "urgency": "High",
       "status": "In Progress",
       "timestamp": "Just now",
       "todos": [
         {
           "id": 1,
-          "description": "Review submitted SAE form (DNLI-001_SAE_Form_203-005_Fall.pdf) and initial hospital admission summary for completeness and accuracy within 24-hour reporting window",
+          "description": "Review SAE form (DNLI-001_SAE_Form_203-005_Fall.pdf) and hospital admission summary for completeness, accuracy, and consistency with 24-hour reporting requirements",
           "status": "pending",
           "tag": "Thread 1",
           "hasAIDraft": true
         },
         {
           "id": 2,
-          "description": "Coordinate with Medical Monitor (Sarah Chen) to conduct sponsor causality assessment for the fall/hospitalization event, considering PI's 'possibly related' assessment due to pre-fall dizziness",
+          "description": "Review protocol and Investigator's Brochure to determine if hospitalization due to fall with dizziness is an 'expected' event for Part B participants, document finding",
           "status": "pending",
-          "tag": "Thread 1",
-          "hasAIDraft": true
+          "tag": "EDC",
+          "hasAIDraft": false
         },
         {
           "id": 3,
-          "description": "Request and collect complete hospital discharge summary, diagnostic test results, and all source documentation from Site 203 for the hospitalization event",
+          "description": "Coordinate with Medical Monitor (Sarah Chen) to request causality assessment and timeline for response - forward SAE documentation and site PI's 'possibly related' assessment",
           "status": "pending",
           "tag": "Thread 1",
           "hasAIDraft": true
         },
         {
           "id": 4,
-          "description": "Submit regulatory SAE reports to applicable health authorities (FDA, EMA, etc.) within required timelines per protocol and regional requirements",
-          "status": "pending",
-          "tag": "EDC",
-          "hasAIDraft": false
-        },
-        {
-          "id": 5,
-          "description": "Notify IRB/IEC of the SAE per institutional requirements and protocol, including PI and sponsor causality assessments",
-          "status": "pending",
-          "tag": "EDC",
-          "hasAIDraft": false
-        },
-        {
-          "id": 6,
-          "description": "Provide guidance to Site 203 on follow-up requirements, including frequency of participant monitoring, documentation needs, and resolution criteria",
-          "status": "pending",
-          "tag": "Thread 1",
-          "hasAIDraft": true
-        },
-        {
-          "id": 7,
-          "description": "Schedule and conduct follow-up communications with Site 203 to track participant recovery status, obtain updates on hospitalization outcome, and collect resolution documentation",
-          "status": "pending",
-          "tag": "Thread 1",
-          "hasAIDraft": true
-        },
-        {
-          "id": 8,
-          "description": "Review dizziness as potential safety signal - query if other participants in Part B have reported similar symptoms and consider need for protocol safety amendment or DSMB notification",
-          "status": "pending",
-          "tag": "EDC",
-          "hasAIDraft": false
-        },
-        {
-          "id": 9,
-          "description": "Document all SAE management activities, decisions, and communications in the Trial Master File and study tracking systems",
-          "status": "pending",
-          "tag": "EDC",
-          "hasAIDraft": false
-        },
-        {
-          "id": 10,
-          "description": "Upon event resolution, obtain final hospital discharge summary and close out SAE case with final causality assessment and outcome documentation",
+          "description": "Confirm regulatory reporting timelines based on expectedness determination and prepare notification to site CRA (Maria Garcia) with feedback on documentation and any additional requirements",
           "status": "pending",
           "tag": "Thread 1",
           "hasAIDraft": true

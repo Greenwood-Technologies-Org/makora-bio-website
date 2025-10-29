@@ -66,6 +66,14 @@ function Coms() {
   const [aiRecommendation, setAiRecommendation] = useState(null); // { threadId, recommendedProblem, confidence }
   const [showRecommendationModal, setShowRecommendationModal] = useState(false);
 
+  // Current user profile for AI context
+  const userProfile = {
+    name: "Alex Johnson",
+    email: "alex.johnson@denalitherapeutics.com",
+    organization: "Denali Therapeutics",
+    role: "Clinical Research Associate",
+  };
+
   // Task context menu state
   const [taskContextMenu, setTaskContextMenu] = useState(null); // { taskId, x, y }
 
@@ -553,7 +561,11 @@ function Coms() {
 
     setAiDraftLoading((prev) => ({ ...prev, [todo.id]: true }));
     try {
-      const draft = await generateEmailDraftWithDSPy(thread, todo.description);
+      const draft = await generateEmailDraftWithDSPy(
+        thread,
+        todo.description,
+        userProfile
+      );
       const formattedMessage = `To: ${draft.to || ""}\n${
         draft.cc ? `CC: ${draft.cc}\n` : ""
       }${draft.bcc ? `BCC: ${draft.bcc}\n` : ""}\nSubject: ${
@@ -671,7 +683,11 @@ function Coms() {
       );
 
       // Use DSPy API for categorization
-      const result = await categorizeEmailWithDSPy(thread, availableProblems);
+      const result = await categorizeEmailWithDSPy(
+        thread,
+        availableProblems,
+        userProfile
+      );
 
       if (result.recommendedProblem) {
         setAiRecommendation({
@@ -792,6 +808,7 @@ function Coms() {
         onBack={() => setDetailViewProblem(null)}
         problemsData={problemsData}
         threadsData={threadsData}
+        userProfile={userProfile}
         onTaskUpdate={(updatedTask) => {
           setProblemsData((prevProblems) =>
             prevProblems.map((p) => (p.id === updatedTask.id ? updatedTask : p))
