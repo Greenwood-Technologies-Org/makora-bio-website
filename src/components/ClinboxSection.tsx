@@ -124,7 +124,7 @@ const ClinboxSection = () => {
               className="w-full"
               plugins={[
                 Autoplay({
-                  delay: 3000,
+                  delay: 5000,
                 })
               ]}
               opts={{
@@ -190,8 +190,11 @@ const ClinboxSection = () => {
             The Value
           </h3>
           <div className="max-w-6xl mx-auto">
+            <p className="text-lg text-foreground text-center">
+              Clinbox reduces email overhead while preserving oversight and compliance.
+            </p>
             <p className="text-lg text-foreground mb-8 text-center">
-              Clinbox reduces email overhead while preserving oversight and compliance
+              We estimate the following ROI at the sponsor, site, and study levels:
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -239,7 +242,7 @@ const ClinboxSection = () => {
               className="w-full"
               plugins={[
                 Autoplay({
-                  delay: 3000,
+                  delay: 5000,
                 })
               ]}
               opts={{
