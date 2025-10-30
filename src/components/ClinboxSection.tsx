@@ -182,6 +182,19 @@ const ClinboxSection = () => {
               );
             })}
           </div>
+
+          {/* Demo Video */}
+          <div className="max-w-2xl mx-auto mt-12">
+            <div className="aspect-video w-full">
+              <iframe
+                className="w-full h-full rounded-lg shadow-lg"
+                src="https://www.youtube.com/embed/xLIS7Ef1nTc"
+                title="Clinbox Demo"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
         </div>
 
         {/* Value Section */}
