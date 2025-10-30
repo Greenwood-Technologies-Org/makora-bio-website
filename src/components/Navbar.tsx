@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +18,7 @@ const Navbar = () => {
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
+    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -33,6 +36,7 @@ const Navbar = () => {
             Makora Bio
           </button>
           
+          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection("clinbox")}
@@ -47,7 +51,36 @@ const Navbar = () => {
               Contact Us
             </button>
           </div>
+
+          {/* Mobile Hamburger Button */}
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="md:hidden text-foreground hover:text-primary transition-colors"
+            aria-label="Toggle menu"
+          >
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden mt-4 py-4 border-t border-border">
+            <div className="flex flex-col gap-4">
+              <button
+                onClick={() => scrollToSection("clinbox")}
+                className="font-medium text-foreground hover:text-primary transition-colors text-left"
+              >
+                Clinbox
+              </button>
+              <button
+                onClick={() => scrollToSection("contact")}
+                className="font-medium text-foreground hover:text-primary transition-colors text-left"
+              >
+                Contact Us
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   );

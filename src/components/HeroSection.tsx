@@ -57,13 +57,15 @@ const HeroSection = () => {
       </div>
       
       {/* Scroll Down Arrow */}
-      <button
-        onClick={scrollToClinbox}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 cursor-pointer animate-bounce hover:text-primary transition-colors"
-        aria-label="Scroll to Clinbox section"
-      >
-        <ChevronDown className="h-12 w-12 text-muted-foreground hover:text-primary transition-colors" />
-      </button>
+      <div className="absolute bottom-16 left-0 right-0 z-20 flex items-center justify-center">
+        <button
+          onClick={scrollToClinbox}
+          className="cursor-pointer animate-bounce hover:text-primary transition-colors p-0 m-0 flex items-center justify-center"
+          aria-label="Scroll to Clinbox section"
+        >
+          <ChevronDown className="h-12 w-12 text-muted-foreground hover:text-primary transition-colors" />
+        </button>
+      </div>
     </section>
   );
 };
