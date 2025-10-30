@@ -91,12 +91,12 @@ const ClinboxSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 fade-in-section">
           <div className="flex items-center justify-center gap-4 mb-4">
-            <img src={logo} alt="Clinbox" className="h-16 w-16 md:h-20 md:w-20" />
-            <h2 className="text-4xl md:text-6xl font-bold text-primary">
+            <img src={logo} alt="Clinbox" className="h-16 w-16" />
+            <h2 className="text-6xl font-bold text-primary">
               Clinbox
             </h2>
           </div>
-          <p className="text-xl md:text-2xl text-muted-foreground">
+          <p className="text-2xl text-muted-foreground">
             The intelligent inbox for clinical research operations
           </p>
         </div>
