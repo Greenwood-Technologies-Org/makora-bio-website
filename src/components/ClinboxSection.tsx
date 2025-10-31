@@ -104,7 +104,7 @@ const ClinboxSection = () => {
         {/* Problem Section */}
         <div className="mb-20 fade-in-section">
           <h3 className="text-3xl font-bold text-foreground mb-6 text-center">
-            The Problem
+            Problem
           </h3>
           <div className="max-w-5xl mx-auto mb-8">
             <p className="text-lg text-foreground leading-relaxed mb-6">
@@ -151,7 +151,7 @@ const ClinboxSection = () => {
         {/* Solution Section */}
         <div className="mb-20 fade-in-section">
           <h3 className="text-3xl font-bold text-foreground mb-6 text-center">
-            The Solution
+            Solution
           </h3>
           <div className="max-w-4xl mx-auto mb-8">
             <p className="text-lg text-foreground leading-relaxed text-center">
@@ -200,7 +200,7 @@ const ClinboxSection = () => {
         {/* Value Section */}
         <div className="mb-20 fade-in-section">
           <h3 className="text-3xl font-bold text-foreground mb-6 text-center">
-            The Value
+            Value
           </h3>
           <div className="max-w-6xl mx-auto">
             <p className="text-lg text-foreground text-center">
