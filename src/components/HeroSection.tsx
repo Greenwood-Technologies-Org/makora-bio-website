@@ -7,7 +7,7 @@ const HeroSection = () => {
   
   const questions = [
     "What if your trials ran 30% faster?",
-    "What if your team could save 20+ hours a week?",
+    "What if each teammate could save 20+ hours a week?",
     "What if data moved seamlessly between email, source, and vendor portals?",
   ];
 

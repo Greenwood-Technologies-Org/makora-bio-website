@@ -6,7 +6,7 @@ import {
   CarouselItem,
   CarouselDots,
 } from "@/components/ui/carousel";
-import { Mail, Zap, BarChart3, Clock, Users, TrendingUp } from "lucide-react";
+import { Mail, Sparkles, BarChart3, Clock, Users, TrendingUp, Shield, FileCheck } from "lucide-react";
 import Autoplay from "embla-carousel-autoplay";
 import logo from "@/assets/clinbox-logo.png";
 
@@ -70,7 +70,7 @@ const ClinboxSection = () => {
       description: "Organize emails into tasks and subtasks tied to study workflows",
     },
     {
-      icon: Zap,
+      icon: Sparkles,
       title: "AI Automation",
       description: "Automate routine actions with AI-suggested replies, escalations, and meetings",
     },
@@ -83,6 +83,16 @@ const ClinboxSection = () => {
       icon: TrendingUp,
       title: "Process Insights",
       description: "Analyze communications to uncover bottlenecks and improve over time",
+    },
+    {
+      icon: Shield,
+      title: "Secure",
+      description: "Encrypts all data in transit and at rest with audit trails aligned to 21 CFR Part 11",
+    },
+    {
+      icon: FileCheck,
+      title: "Compliant",
+      description: "Meets ICH-GCP and FDA retention standards for trial records",
     },
   ];
 
@@ -109,7 +119,7 @@ const ClinboxSection = () => {
           <div className="max-w-5xl mx-auto mb-8">
             <p className="text-lg text-foreground leading-relaxed mb-6">
               Clinical operations staff spend 2+ hours per day on email, 
-              digging through files like strategy docs, SOPs, and vendor systems to answer routine questions. 
+              digging through internal files, external documents, and vendor systems to answer routine questions. 
               Response times average 2 days, and every redirect adds another 
               2 days. Complex threads, like contract negotiation and query resolution, can drag on for 2+ weeks.
             </p>
@@ -160,23 +170,19 @@ const ClinboxSection = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {features.map((feature, index) => {
               const Icon = feature.icon;
               return (
                 <Card key={index} className="bg-card border-border hover:border-primary/50 transition-colors">
                   <CardContent className="p-6">
-                    <div className="flex items-start gap-4">
-                      <div className="p-3 bg-primary/10 rounded-lg">
-                        <Icon className="h-6 w-6 text-primary" />
-                      </div>
-                      <div>
-                        <h4 className="text-lg font-semibold text-foreground mb-2">
-                          {feature.title}
-                        </h4>
-                        <p className="text-muted-foreground">{feature.description}</p>
-                      </div>
+                    <div className="flex items-center gap-2 mb-2">
+                      <Icon className="h-5 w-5 text-primary flex-shrink-0" />
+                      <h4 className="text-lg font-semibold text-foreground">
+                        {feature.title}
+                      </h4>
                     </div>
+                    <p className="text-muted-foreground">{feature.description}</p>
                   </CardContent>
                 </Card>
               );
