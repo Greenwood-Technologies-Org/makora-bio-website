@@ -119,7 +119,7 @@ const ClinboxSection = () => {
           <div className="max-w-5xl mx-auto mb-8">
             <p className="text-lg text-foreground leading-relaxed mb-6">
               Clinical operations staff spend 2+ hours per day on email, 
-              digging through internal files, external documents, and vendor systems to answer routine questions. 
+              digging through files, previous emails, and vendor systems to answer routine questions. 
               Response times average 2 days, and every redirect adds another 
               2 days. Complex threads, like contract negotiation and query resolution, can drag on for 2+ weeks.
             </p>
