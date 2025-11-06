@@ -166,7 +166,7 @@ const ClinboxSection = () => {
           <div className="max-w-4xl mx-auto mb-8">
             <p className="text-lg text-foreground leading-relaxed text-center">
               Clinbox is an AI-powered inbox purpose-built 
-              for clinical operations. It helps sponsor teams manage threads, draft replies, and surface insights.
+              for clinical research operations. It helps teams manage threads, draft replies, and surface insights.
             </p>
           </div>
 
