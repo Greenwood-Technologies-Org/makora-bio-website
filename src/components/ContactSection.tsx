@@ -24,7 +24,7 @@ const ContactSection = () => {
             <Button
               size="default"
               className="text-base px-6 py-4"
-              onClick={() => window.open("https://calendly.com/makorabio", "_blank")}
+              onClick={() => window.open("https://calendly.com/roshan-kern/30min", "_blank")}
             >
               <Calendar className="mr-2 h-4 w-4" />
               Book a Demo
