@@ -21,6 +21,7 @@ const mockDocuments = [
     id: 1, 
     name: '[NCT05262023] Study Protocol', 
     type: 'Protocol',
+    version: 'v3.2',
     dateUploaded: '2025-10-15', 
     size: '2.4 MB',
     filePath: studyProtocolPdf
@@ -29,6 +30,7 @@ const mockDocuments = [
     id: 2, 
     name: '[NCT05262023] Informed Consent', 
     type: 'Consent',
+    version: 'v2.1',
     dateUploaded: '2025-10-01', 
     size: '856 KB',
     filePath: informedConsentPdf
@@ -37,6 +39,7 @@ const mockDocuments = [
     id: 3, 
     name: '[NCT05262023] Data Management Plan Summary', 
     type: 'Reference',
+    version: 'v1.5',
     dateUploaded: '2025-10-18', 
     size: '1.2 MB',
     filePath: dataManagementPdf
@@ -45,6 +48,7 @@ const mockDocuments = [
     id: 4, 
     name: '[NCT05262023] ePRO System Site Manual', 
     type: 'Reference',
+    version: 'v4.0',
     dateUploaded: '2025-10-10', 
     size: '3.1 MB',
     filePath: eproManualPdf
@@ -53,6 +57,7 @@ const mockDocuments = [
     id: 5, 
     name: '[NCT05262023] Clinical Operations RACI Matrix', 
     type: 'Reference',
+    version: 'v1.0',
     dateUploaded: '2025-10-05', 
     size: '890 KB',
     filePath: raciMatrixPdf
@@ -77,7 +82,7 @@ function PDFViewer({ document, onClose }) {
           <div>
             <h2 className="text-xl font-semibold text-gray-900">{document.name}</h2>
             <p className="text-sm text-gray-600 mt-1">
-              PDF • Last modified: {document.dateUploaded}
+              {document.version} • PDF • Last modified: {document.dateUploaded}
             </p>
           </div>
           <button
@@ -296,6 +301,8 @@ function Docs() {
                   <span className={`px-2 py-1 rounded-full font-medium ${getFileColor(doc.type)}`}>
                     {doc.type}
                   </span>
+                  <span>•</span>
+                  <span className="font-semibold text-gray-700">{doc.version}</span>
                   <span>•</span>
                   <span>{doc.size}</span>
                 </div>
