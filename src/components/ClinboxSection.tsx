@@ -118,10 +118,9 @@ const ClinboxSection = () => {
           </h3>
           <div className="max-w-5xl mx-auto mb-8">
             <p className="text-lg text-foreground leading-relaxed mb-6">
-              Clinical operations staff spend 2+ hours per day on email, 
+              Clinical operations staff spend 10+ hours per week on email, 
               digging through files, previous emails, and vendor systems to answer routine questions. 
-              Response times average 2 days, and every redirect adds another 
-              2 days. Complex threads, like contract negotiation and query resolution, can drag on for 2+ weeks.
+              Each response takes 2 days, making complex threads like contract negotiation and query resolution drag on for 2+ weeks.
             </p>
             <p className="text-lg leading-relaxed font-semibold">
               60% of sites and 43% of sponsors/CROs say poor communication severely impacts SSU, patient enrollment, and site engagement.
