@@ -7,10 +7,10 @@ const TeamLogos = () => {
   ];
 
   return (
-    <section className="py-12 px-6 lg:px-8">
+    <section className="py-8 px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
         <p className="text-center text-sm text-muted-foreground mb-8">
-          Our best-in-class team and advisors have worked at:
+          Our best-in-class teammates have worked at:
         </p>
         
         <div className="flex flex-wrap justify-center items-center gap-12">

@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const ContactSection = () => {
   return (
-    <section className="py-12 px-6 lg:px-8 bg-secondary/30" id="contact">
+    <section className="py-8 px-6 lg:px-8 bg-secondary/30" id="contact">
       <div className="max-w-4xl mx-auto text-center space-y-8">
         <h2 className="text-4xl font-semibold">Contact Us</h2>
         

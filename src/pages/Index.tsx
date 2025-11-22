@@ -20,8 +20,8 @@ const Index = () => {
         <DemoForm />
         <Security />
         <Integrations />
-        <TeamLogos />
         <ContactSection />
+        <TeamLogos />
       </main>
       <Footer />
     </div>

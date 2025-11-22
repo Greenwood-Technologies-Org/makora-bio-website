@@ -20,9 +20,9 @@ const ClinboxHelps = () => {
   ];
 
   return (
-    <section className="py-12 px-6 lg:px-8" id="clinbox">
+    <section className="py-8 px-6 lg:px-8" id="clinbox">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-semibold text-center mb-12">
+        <h2 className="text-4xl font-semibold text-center mb-6">
           Helping sponsors, CROs, and sites
         </h2>
         

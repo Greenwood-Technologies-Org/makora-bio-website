@@ -18,9 +18,9 @@ const DemoForm = () => {
   };
 
   return (
-    <section className="py-12 px-6 lg:px-8 bg-secondary/30" id="demo">
+    <section className="py-8 px-6 lg:px-8 bg-secondary/30" id="demo">
       <div className="max-w-2xl mx-auto">
-        <div className="text-center mb-12 animate-fade-in">
+        <div className="text-center mb-6 animate-fade-in">
           <h2 className="text-4xl font-semibold mb-4">Try a Demo</h2>
         </div>
         

@@ -23,9 +23,9 @@ const Security = () => {
   ];
 
   return (
-    <section className="py-12 px-6 lg:px-8" id="security">
+    <section className="py-6 px-6 lg:px-8" id="security">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-semibold text-center mb-12">Security</h2>
+        <h2 className="text-4xl font-semibold text-center mb-6">Security</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-12">
           {features.map((feature, index) => {

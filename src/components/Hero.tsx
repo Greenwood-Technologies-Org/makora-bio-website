@@ -36,13 +36,13 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="pt-32 pb-12 px-6 lg:px-8">
+    <section className="pt-32 pb-8 px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-12 items-center lg:justify-around">
           <div className="space-y-8 animate-fade-in text-center lg:text-left lg:max-w-xl">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-semibold tracking-tight">
-                Meet <span className="text-primary">ClinBox</span>
+                <span className="text-primary">ClinBox</span>
               </h1>
               <p className="text-2xl font-medium">
                 the intelligent inbox for clinical research
