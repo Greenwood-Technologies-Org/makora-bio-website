@@ -1,17 +1,27 @@
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
+import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
 
-const companies = ["MIT", "Stanford", "Sanofi", "Pfizer", "Johns Hopkins"];
+const companyLogos = [
+  { name: "Stanford Medicine", src: "/built_for_logos/stanford_medicine_logo.png" },
+  { name: "MSK", src: "/built_for_logos/msk_logo.png" },
+  { name: "Syneos Health", src: "/built_for_logos/1200px-Syneos_Health_logo.png" },
+  { name: "Grifols", src: "/built_for_logos/Grifols.png" },
+  { name: "Fortrea", src: "/built_for_logos/fortrea-logo-without-background.png" },
+  { name: "Summit Therapeutics", src: "/built_for_logos/summit-therapeutics-logo.png" },
+  { name: "Worldwide Clinical Trials", src: "/built_for_logos/worldwide-1.png" },
+];
 
 const Hero = () => {
-  const [currentCompany, setCurrentCompany] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentCompany((prev) => (prev + 1) % companies.length);
-    }, 2000);
-    return () => clearInterval(interval);
-  }, []);
+  const [emblaRef] = useEmblaCarousel(
+    { 
+      loop: true,
+      align: 'start',
+      slidesToScroll: 1,
+    },
+    [Autoplay({ delay: 2000, stopOnInteraction: false })]
+  );
 
   return (
     <section className="pt-32 pb-12 px-6 lg:px-8">
@@ -35,22 +45,25 @@ const Hero = () => {
             </Button>
             
             <div className="pt-2">
-              <p className="text-sm text-muted-foreground mb-3">Built for researchers at:</p>
-              <div className="relative h-8 overflow-hidden">
-                <div 
-                  className="flex absolute whitespace-nowrap animate-slide-in"
-                  style={{ 
-                    animation: 'slideCarousel 15s linear infinite',
-                  }}
-                >
-                  {[...companies, ...companies, ...companies].map((company, index) => (
-                    <span
-                      key={`${company}-${index}`}
-                      className="text-lg font-semibold text-primary px-8"
-                    >
-                      {company}
-                    </span>
-                  ))}
+              <p className="text-sm text-muted-foreground mb-3">Built for clinical research staff at:</p>
+              <div className="relative">
+                <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-background to-transparent z-10" />
+                <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-background to-transparent z-10" />
+                <div className="overflow-hidden" ref={emblaRef}>
+                  <div className="flex gap-8">
+                    {companyLogos.map((logo, index) => (
+                      <div
+                        key={`${logo.name}-${index}`}
+                        className="flex-[0_0_auto] flex items-center justify-center px-4"
+                      >
+                        <img 
+                          src={logo.src} 
+                          alt={logo.name}
+                          className="h-12 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+                        />
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
