@@ -1,7 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { useEffect, useState } from "react";
-import useEmblaCarousel from 'embla-carousel-react';
-import Autoplay from 'embla-carousel-autoplay';
+import { useEffect, useRef } from "react";
 
 const companyLogos = [
   { name: "Stanford Medicine", src: "/built_for_logos/stanford_medicine_logo.png" },
@@ -14,14 +12,28 @@ const companyLogos = [
 ];
 
 const Hero = () => {
-  const [emblaRef] = useEmblaCarousel(
-    { 
-      loop: true,
-      align: 'start',
-      slidesToScroll: 1,
-    },
-    [Autoplay({ delay: 2000, stopOnInteraction: false })]
-  );
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const scrollContainer = scrollRef.current;
+    if (!scrollContainer) return;
+
+    let scrollPos = 0;
+    const scroll = () => {
+      scrollPos += 0.2;
+      scrollContainer.style.transform = `translate3d(-${scrollPos}px, 0px, 0px)`;
+      
+      // Reset when we've scrolled through half the content (since we duplicate)
+      if (scrollPos >= scrollContainer.scrollWidth / 2) {
+        scrollPos = 0;
+      }
+      
+      requestAnimationFrame(scroll);
+    };
+    
+    const animationId = requestAnimationFrame(scroll);
+    return () => cancelAnimationFrame(animationId);
+  }, []);
 
   return (
     <section className="pt-32 pb-12 px-6 lg:px-8">
@@ -45,21 +57,21 @@ const Hero = () => {
             </Button>
             
             <div className="pt-2">
-              <p className="text-sm text-muted-foreground mb-3">Built for clinical research staff at:</p>
-              <div className="relative">
+              <p className="text-sm text-muted-foreground mb-5">Built for clinical research staff at:</p>
+              <div className="relative w-full max-w-md">
                 <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-background to-transparent z-10" />
                 <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-background to-transparent z-10" />
-                <div className="overflow-hidden" ref={emblaRef}>
-                  <div className="flex gap-8">
-                    {companyLogos.map((logo, index) => (
+                <div className="overflow-hidden">
+                  <div className="flex gap-8" ref={scrollRef}>
+                    {[...companyLogos, ...companyLogos].map((logo, index) => (
                       <div
                         key={`${logo.name}-${index}`}
-                        className="flex-[0_0_auto] flex items-center justify-center px-4"
+                        className="flex-[0_0_auto] flex items-center justify-center px-1"
                       >
                         <img 
                           src={logo.src} 
                           alt={logo.name}
-                          className="h-12 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+                          className="h-6 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
                         />
                       </div>
                     ))}
