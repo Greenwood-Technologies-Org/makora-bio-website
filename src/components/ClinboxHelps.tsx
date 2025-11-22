@@ -9,8 +9,8 @@ const ClinboxHelps = () => {
     },
     {
       icon: Zap,
-      metric: "95%",
-      description: "urgent messages auto escalated (AEs, deviations, patient questions, contract blockers)",
+      metric: "90%",
+      description: "urgent messages auto-escalated (AEs, deviations, patient questions, contract blockers)",
     },
     {
       icon: ArrowUpRight,
