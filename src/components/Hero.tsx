@@ -58,7 +58,7 @@ const Hero = () => {
             </Button>
             
             <div className="pt-2">
-              <p className="text-sm text-muted-foreground mb-5">Built for clinical research staff at:</p>
+              <p className="text-sm text-muted-foreground mb-5">Built for teams at:</p>
               <div className="relative w-full max-w-md">
                 <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-background to-transparent z-10" />
                 <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-background to-transparent z-10" />
