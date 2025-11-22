@@ -33,13 +33,6 @@ const Navbar = () => {
         Value
       </a>
       <a 
-        href="#integrations" 
-        onClick={(e) => handleNavClick(e, '#integrations')}
-        className={`text-sm font-medium text-foreground hover:text-primary transition-colors ${mobile ? 'block py-3' : ''}`}
-      >
-        Integrations
-      </a>
-      <a 
         href="#demo" 
         onClick={(e) => handleNavClick(e, '#demo')}
         className={`text-sm font-medium text-foreground hover:text-primary transition-colors ${mobile ? 'block py-3' : ''}`}
@@ -52,6 +45,13 @@ const Navbar = () => {
         className={`text-sm font-medium text-foreground hover:text-primary transition-colors ${mobile ? 'block py-3' : ''}`}
       >
         Security
+      </a>
+      <a 
+        href="#integrations" 
+        onClick={(e) => handleNavClick(e, '#integrations')}
+        className={`text-sm font-medium text-foreground hover:text-primary transition-colors ${mobile ? 'block py-3' : ''}`}
+      >
+        Integrations
       </a>
       <Button asChild variant="default" size="sm" className={mobile ? 'w-full mt-2' : ''}>
         <a href="#contact" onClick={(e) => handleNavClick(e, '#contact')}>Get Started</a>
