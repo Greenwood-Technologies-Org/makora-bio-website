@@ -8,7 +8,7 @@ const EmailImpact = () => {
   return (
     <section className="py-12 px-6 lg:px-8 bg-secondary/30">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl font-semibold text-center mb-12">Email's Impact</h2>
+        <h2 className="text-4xl font-semibold text-center mb-12">Legacy email slows trials down</h2>
         
         <div className="space-y-0">
           {impacts.map((impact, index) => {
