@@ -63,9 +63,16 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/50 backdrop-blur-glass border-b border-border/50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="text-xl font-semibold text-primary hover:opacity-80 transition-opacity">
+          <a 
+            href="#top" 
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            className="text-xl font-semibold text-primary hover:opacity-80 transition-opacity cursor-pointer"
+          >
             Makora Bio
-          </Link>
+          </a>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
