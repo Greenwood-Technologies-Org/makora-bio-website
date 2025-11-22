@@ -6,13 +6,13 @@ const Security = () => {
       icon: Lock,
       title: "Your data stays private",
       description:
-        "Our platform protects your privileged data with end-to-end encryption, isolated from all other customer data.",
+        "We protect your privileged data with end-to-end encryption, isolated from all other customer data.",
     },
     {
       icon: Shield,
       title: "Full data control",
       description:
-        "Our platform provides full visibility into your clinical trial operations, allowing precise control over data access and usage.",
+        "Full visibility into your clinical trial operations, allowing precise control over data access and usage.",
     },
     {
       icon: CheckCircle,
@@ -23,7 +23,7 @@ const Security = () => {
   ];
 
   return (
-    <section className="py-6 px-6 lg:px-8" id="security">
+    <section className="pb-6 pt-12 px-6 lg:px-8" id="security">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-semibold text-center mb-6">Security</h2>
         

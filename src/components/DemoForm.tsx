@@ -27,7 +27,7 @@ const DemoForm = () => {
         <form onSubmit={handleSubmit} className="space-y-6 bg-card p-8 rounded-2xl shadow-lg border border-border animate-fade-in">
           <div className="text-center mb-6">
             <p className="text-xl text-muted-foreground mb-2">1 minute live demo with ClinBox</p>
-            <p className="text-muted-foreground">See how ClinBox enhances a simulated inbox</p>
+            <p className="text-muted-foreground">See ClinBox work in a simulated inbox</p>
           </div>
           
           <div>

@@ -1,19 +1,19 @@
-import { ArrowDown, Zap, ArrowUp } from "lucide-react";
+import { ArrowDownRight, Zap, ArrowUpRight } from "lucide-react";
 
 const ClinboxHelps = () => {
   const benefits = [
     {
-      icon: ArrowDown,
+      icon: ArrowDownRight,
       metric: "75%",
-      description: "less time on email (6–10 hours saved per week per FTE)",
+      description: "less time on email (5-8 hours saved per week per FTE)",
     },
     {
       icon: Zap,
       metric: "95%",
-      description: "of urgent messages auto escalated (AEs, deviations, patient questions, contract blockers)",
+      description: "urgent messages auto escalated (AEs, deviations, patient questions, contract blockers)",
     },
     {
-      icon: ArrowUp,
+      icon: ArrowUpRight,
       metric: "50%",
       description: "faster task resolution (with AI assistance)",
     },
@@ -31,13 +31,14 @@ const ClinboxHelps = () => {
             const Icon = benefit.icon;
             return (
               <div key={index} className="relative">
-                <div className="p-8 animate-fade-in flex items-start gap-4" style={{ animationDelay: `${index * 100}ms` }}>
-                  <Icon className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="text-muted-foreground leading-relaxed">
-                      <strong className="font-bold text-foreground">{benefit.metric}</strong> {benefit.description}
-                    </p>
+                <div className="p-8 animate-fade-in flex flex-col items-center text-center" style={{ animationDelay: `${index * 100}ms` }}>
+                  <div className="flex items-center gap-3 mb-4">
+                    <Icon className="w-8 h-8 text-primary flex-shrink-0" />
+                    <p className="text-3xl font-semibold text-foreground">{benefit.metric}</p>
                   </div>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {benefit.description}
+                  </p>
                 </div>
                 {index < benefits.length - 1 && (
                   <>
