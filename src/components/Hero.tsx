@@ -9,6 +9,7 @@ const companyLogos = [
   { name: "Fortrea", src: "/built_for_logos/fortrea-logo-without-background.png" },
   { name: "Summit Therapeutics", src: "/built_for_logos/summit-therapeutics-logo.png" },
   { name: "Worldwide Clinical Trials", src: "/built_for_logos/worldwide-1.png" },
+  { name: "CWRU Med", src: "/built_for_logos/Casemed_logo2010.png" },
 ];
 
 const Hero = () => {
