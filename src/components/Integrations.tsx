@@ -11,7 +11,7 @@ const integrations = [
 
 const Integrations = () => {
   return (
-    <section className="py-8 px-6 lg:px-8 bg-secondary/30">
+    <section className="py-8 px-6 lg:px-8 bg-secondary/30" id="integrations">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-medium text-center mb-12">
           Seamless Integrations Across Your Clinical Trial Workflows

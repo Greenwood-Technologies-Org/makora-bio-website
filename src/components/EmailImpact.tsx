@@ -1,7 +1,7 @@
 const EmailImpact = () => {
   const impacts = [
-    "*10+ hours/week* spent digging through inbox, files, and vendor portals to answer queries",
-    "*2-day* average email response time, turning threads into 2+ week delays",
+    "each teammate spends *10+ hours/week* digging through their inbox, files, and vendor portals to answer queries",
+    "the average email response takes *2 days*, turning threads into *2 week* delays",
     "*60% of sites & 43% of sponsors* say communication delays hurt SSU, enrollment, and engagement",
   ];
 
@@ -10,7 +10,7 @@ const EmailImpact = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row lg:gap-16">
           <div className="lg:w-[30%] mb-12 lg:mb-0 lg:pt-8">
-            <h2 className="text-4xl font-medium text-center lg:text-left">Legacy email slows trials down</h2>
+            <h2 className="text-4xl font-medium text-center lg:text-left">Legacy Email Slows Trials</h2>
           </div>
           
           <div className="lg:w-[70%] space-y-0">

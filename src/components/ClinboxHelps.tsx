@@ -23,7 +23,7 @@ const ClinboxHelps = () => {
     <section className="py-8 px-6 lg:px-8" id="clinbox">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-medium text-center mb-6">
-          Helping sponsors, CROs, and sites
+          We Help Sponsors, CROs, and Sites
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-8">

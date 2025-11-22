@@ -18,7 +18,7 @@ const Security = () => {
       icon: CheckCircle,
       title: "Compliant",
       description:
-        "Meets ICH-GCP and FDA standards, with audit trails aligned to 21 CFR Part 11",
+        "Meets ICH-GCP and FDA standards, with audit trails aligned to 21 CFR Part 11.",
     },
   ];
 
