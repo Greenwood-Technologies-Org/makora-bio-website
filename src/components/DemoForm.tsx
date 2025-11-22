@@ -13,6 +13,10 @@ const DemoForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!formData.inboxType) {
+      toast.error("Please select an inbox type");
+      return;
+    }
     toast.success("Demo request submitted! We'll be in touch soon.");
     setFormData({ name: "", email: "", inboxType: "" });
   };
@@ -26,8 +30,8 @@ const DemoForm = () => {
         
         <form onSubmit={handleSubmit} className="space-y-6 bg-card p-8 rounded-2xl shadow-lg border border-border animate-fade-in">
           <div className="text-center mb-6">
-            <p className="text-xl text-muted-foreground mb-2">1 minute live demo with ClinBox</p>
-            <p className="text-muted-foreground">See ClinBox work in a simulated inbox</p>
+            <p className="text-2xl text-muted-foreground mb-2 text-primary">1 minute live demo with ClinBox</p>
+            <p className="text-muted-foreground">See ClinBox work with simulated emails</p>
           </div>
           
           <div>
@@ -58,7 +62,7 @@ const DemoForm = () => {
               onValueChange={(value) => setFormData({ ...formData, inboxType: value })}
               required
             >
-              <SelectTrigger className="h-12">
+              <SelectTrigger className="h-12 data-[placeholder]:text-muted-foreground">
                 <SelectValue placeholder="Inbox Type" />
               </SelectTrigger>
               <SelectContent>
@@ -69,7 +73,7 @@ const DemoForm = () => {
             </Select>
           </div>
           
-          <Button type="submit" size="lg" className="w-full">
+          <Button type="submit" size="lg" className="w-full" disabled={!formData.inboxType}>
             Try Demo
           </Button>
           
