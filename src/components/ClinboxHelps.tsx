@@ -15,7 +15,7 @@ const ClinboxHelps = () => {
     {
       icon: ArrowUpRight,
       metric: "50%",
-      description: "faster quick task resolution with AI assistance (scheduling, document retrieval, system actions)",
+      description: "faster quick task resolution with AI assistance (scheduling, vendor system actions, file retrieval)",
     },
   ];
 
