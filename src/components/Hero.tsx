@@ -41,7 +41,7 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row gap-12 items-center lg:justify-around">
           <div className="space-y-8 animate-fade-in text-center lg:text-left lg:max-w-xl">
             <div className="space-y-4">
-              <h1 className="text-5xl lg:text-6xl font-semibold tracking-tight">
+              <h1 className="text-5xl lg:text-6xl font-medium tracking-tight">
                 <span className="text-primary">ClinBox</span>
               </h1>
               <p className="text-2xl font-medium">
@@ -86,7 +86,7 @@ const Hero = () => {
               className="w-full max-w-md border-2 border-primary rounded-2xl flex items-center justify-center bg-card/50 backdrop-blur-sm shadow-lg"
               style={{ aspectRatio: "8/9" }}
             >
-              <span className="text-2xl font-semibold text-primary">Demo</span>
+              <span className="text-2xl font-medium text-primary">Demo</span>
             </div>
           </div>
         </div>

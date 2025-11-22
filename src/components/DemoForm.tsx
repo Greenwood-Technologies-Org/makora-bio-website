@@ -25,7 +25,7 @@ const DemoForm = () => {
     <section className="py-8 px-6 lg:px-8 bg-secondary/30" id="demo">
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-6 animate-fade-in">
-          <h2 className="text-4xl font-semibold mb-4">Try a Demo</h2>
+          <h2 className="text-4xl font-medium mb-4">Try a Demo</h2>
         </div>
         
         <form onSubmit={handleSubmit} className="space-y-6 bg-card p-8 rounded-2xl shadow-lg border border-border animate-fade-in">

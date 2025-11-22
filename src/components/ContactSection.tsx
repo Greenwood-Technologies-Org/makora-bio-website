@@ -4,7 +4,7 @@ const ContactSection = () => {
   return (
     <section className="py-8 px-6 lg:px-8 bg-secondary/30" id="contact">
       <div className="max-w-4xl mx-auto text-center space-y-8">
-        <h2 className="text-4xl font-semibold">Contact Us</h2>
+        <h2 className="text-4xl font-medium">Contact Us</h2>
         
         <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
           We're partnering with a small number of select clinical research teams to co-develop ClinBox. 

@@ -10,7 +10,7 @@ const EmailImpact = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row lg:gap-16">
           <div className="lg:w-[30%] mb-12 lg:mb-0 lg:pt-8">
-            <h2 className="text-4xl font-semibold text-center lg:text-left">Legacy email slows trials down</h2>
+            <h2 className="text-4xl font-medium text-center lg:text-left">Legacy email slows trials down</h2>
           </div>
           
           <div className="lg:w-[70%] space-y-0">

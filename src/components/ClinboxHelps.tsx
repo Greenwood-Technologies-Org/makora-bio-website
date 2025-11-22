@@ -22,7 +22,7 @@ const ClinboxHelps = () => {
   return (
     <section className="py-8 px-6 lg:px-8" id="clinbox">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-semibold text-center mb-6">
+        <h2 className="text-4xl font-medium text-center mb-6">
           Helping sponsors, CROs, and sites
         </h2>
         
@@ -34,7 +34,7 @@ const ClinboxHelps = () => {
                 <div className="p-8 animate-fade-in flex flex-col items-center text-center" style={{ animationDelay: `${index * 100}ms` }}>
                   <div className="flex items-center gap-3 mb-4">
                     <Icon className="w-8 h-8 text-primary flex-shrink-0" />
-                    <p className="text-3xl font-semibold text-foreground">{benefit.metric}</p>
+                    <p className="text-3xl font-medium text-foreground">{benefit.metric}</p>
                   </div>
                   <p className="text-muted-foreground leading-relaxed">
                     {benefit.description}

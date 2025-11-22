@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-sm">
           <div className="flex items-center gap-4">
-            <span className="font-semibold text-primary">Makora Bio</span>
+            <span className="font-medium text-primary">Makora Bio</span>
             <a 
               href="mailto:team@makora.bio" 
               className="text-muted-foreground hover:text-primary transition-colors"

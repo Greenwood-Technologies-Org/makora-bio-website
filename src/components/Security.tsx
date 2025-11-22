@@ -25,7 +25,7 @@ const Security = () => {
   return (
     <section className="pb-6 pt-12 px-6 lg:px-8" id="security">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-semibold text-center mb-6">Security</h2>
+        <h2 className="text-4xl font-medium text-center mb-6">Security</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-12">
           {features.map((feature, index) => {
@@ -41,7 +41,7 @@ const Security = () => {
                       <Icon className="w-8 h-8 text-primary" />
                     </div>
                   </div>
-                  <h3 className="text-xl font-semibold">{feature.title}</h3>
+                  <h3 className="text-xl font-medium">{feature.title}</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     {feature.description}
                   </p>
