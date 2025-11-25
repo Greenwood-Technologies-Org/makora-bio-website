@@ -37,9 +37,9 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="pt-32 pb-8 px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row gap-12 items-center lg:justify-around">
+    <section className="pt-32 pb-8">
+      <div className="mx-auto">
+        <div className="flex flex-col lg:flex-row gap-2 items-center lg:justify-around">
           <div className="space-y-8 animate-fade-in text-center lg:text-left lg:max-w-xl">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-medium tracking-tight">
@@ -85,7 +85,7 @@ const Hero = () => {
           <div className="flex justify-center animate-fade-in lg:max-w-md w-full">
             <div 
               className="w-full max-w-md border-2 border-primary rounded-2xl flex items-center justify-center bg-card/50 backdrop-blur-sm shadow-lg"
-              style={{ aspectRatio: "8/9" }}
+              style={{ aspectRatio: "9/9" }}
             >
               <span className="text-2xl font-medium text-primary">Demo</span>
             </div>
