@@ -36,13 +36,13 @@ const ClinboxHelps = () => {
                     <Icon className="w-8 h-8 text-primary flex-shrink-0" />
                     <p className="text-3xl font-medium text-foreground">{benefit.metric}</p>
                   </div>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground text-lg leading-relaxed">
                     {benefit.description}
                   </p>
                 </div>
                 {index < benefits.length - 1 && (
                   <>
-                    <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-24 border-r border-border" />
+                    <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-36 border-r border-border" />
                     <div className="md:hidden border-t border-border" />
                   </>
                 )}
@@ -50,6 +50,10 @@ const ClinboxHelps = () => {
             );
           })}
         </div>
+        
+        <p className="text-sm text-muted-foreground text-center">
+          * ROI estimates from indirect data
+        </p>
       </div>
     </section>
   );
