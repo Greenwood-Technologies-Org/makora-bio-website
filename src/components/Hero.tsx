@@ -39,7 +39,7 @@ const Hero = () => {
   return (
     <section className="pt-32 pb-8">
       <div className="mx-auto">
-        <div className="flex flex-col lg:flex-row gap-2 items-center lg:justify-around">
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-0 lg:justify-around">
           <div className="space-y-8 animate-fade-in text-center lg:text-left lg:max-w-xl">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-medium tracking-tight">
