@@ -42,7 +42,8 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-0 lg:justify-around">
           <div className="space-y-8 animate-fade-in text-center lg:text-left lg:max-w-xl">
             <div className="space-y-4">
-              <h1 className="text-5xl lg:text-6xl font-medium tracking-tight">
+              <h1 className="text-5xl lg:text-6xl font-medium tracking-tight flex items-center gap-4">
+                <img src="/clinbox_square_logo.png" alt="ClinBox Logo" className="h-14 w-auto" />
                 <span className="text-primary">ClinBox</span>
               </h1>
               <p className="text-2xl font-medium">
