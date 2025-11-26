@@ -25,55 +25,49 @@ const HeroDemo = () => {
 
   const [setIndex, setSetIndex] = useState(0);
   const [visibleSteps, setVisibleSteps] = useState(0);
-  // used to trigger a grouped fade-out animation
-  const [isFadingOut, setIsFadingOut] = useState(false);
+  const [direction, setDirection] = useState<'in' | 'out'>('in');
 
   const steps = stepSets[setIndex];
 
   useEffect(() => {
-    const perStepDelay = 3000; // how long each step stays visible as it comes in
-    const bufferDuration = 3000; // how long to keep the full set visible before fade-out
-    const fadeOutDuration = 500; // quick group fade-out duration
-
-    let t: ReturnType<typeof setTimeout> | undefined;
-
-    if (isFadingOut) {
-      // once fading out, wait for the fadeOutDuration then switch sets and show first step quickly
-      t = setTimeout(() => {
-        setIsFadingOut(false);
-        setSetIndex((prev) => (prev + 1) % stepSets.length);
-        // immediately show first step of next set so group switch feels faster
-        setVisibleSteps(1);
-      }, fadeOutDuration);
-    } else {
-      if (visibleSteps < steps.length) {
-        // still bringing steps in, schedule the next one
-        t = setTimeout(() => setVisibleSteps((v) => v + 1), perStepDelay);
-      } else if (visibleSteps === steps.length) {
-        // full set visible, wait the buffer then start fade out
-        t = setTimeout(() => setIsFadingOut(true), bufferDuration);
+    const interval = setInterval(() => {
+      if (direction === 'in') {
+        setVisibleSteps((prev) => {
+          const next = prev + 1;
+          if (next > steps.length) {
+            setDirection('out');
+            return 0;
+          }
+          return next;
+        });
+      } else {
+        setVisibleSteps((prev) => {
+          const next = prev - 1;
+          if (next < 0) {
+            setDirection('in');
+            setSetIndex((prevSet) => (prevSet + 1) % stepSets.length);
+            return 0;
+          }
+          return next;
+        });
       }
-    }
+    }, 3000); // Change every 1.5 seconds
 
-    return () => {
-      if (t) clearTimeout(t);
-    };
-  }, [isFadingOut, visibleSteps, steps.length, stepSets.length]);
+    return () => clearInterval(interval);
+  }, [direction, steps.length, stepSets.length]);
 
   return (
     <div className="w-full max-w-md border-2 border-primary rounded-2xl bg-card/50 backdrop-blur-sm shadow-lg p-6" style={{ aspectRatio: "9/9" }}>
       <div className="flex flex-col space-y-6 h-full justify-center">
         {steps.map((step, index) => {
           const Icon = step.icon;
-          const isCurrentlyShown = index < visibleSteps;
-          const isFadingOutThisItem = isFadingOut && isCurrentlyShown;
-          const isVisible = isCurrentlyShown && !isFadingOut;
+          const isVisible = direction === 'in' && index < visibleSteps;
 
           return (
             <div
               key={index}
               className={`flex items-center space-x-3 transition-all duration-1000 ${
-                isFadingOutThisItem ? "opacity-0 translate-y-24" : isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-24"
+                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-24"
               }`}
             >
               <div
