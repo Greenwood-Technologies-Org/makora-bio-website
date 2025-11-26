@@ -105,11 +105,11 @@ const HeroDemo = () => {
         })}
       </div>
       <div className={`absolute inset-0 flex flex-col items-center justify-center transition-all duration-1000 ${isLoading ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'}`}>
-        <span className="font-medium text-black mb-2">Monitoring Inbox</span>
+        <span className="text-xl font-medium text-black mb-2">Monitoring Inbox</span>
         <div className="flex space-x-1">
-          <span className="inline-block animate-bounce">.</span>
-          <span className="inline-block animate-bounce" style={{animationDelay: '0.1s'}}>.</span>
-          <span className="inline-block animate-bounce" style={{animationDelay: '0.2s'}}>.</span>
+          <span className="inline-block animate-bounce text-xl">.</span>
+          <span className="inline-block animate-bounce text-xl" style={{animationDelay: '0.1s'}}>.</span>
+          <span className="inline-block animate-bounce text-xl" style={{animationDelay: '0.2s'}}>.</span>
         </div>
       </div>
     </div>
