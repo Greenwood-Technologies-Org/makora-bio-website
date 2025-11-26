@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useEffect, useRef } from "react";
+import HeroDemo from "./HeroDemo";
 
 const companyLogos = [
   { name: "Stanford Medicine", src: "/built_for_logos/stanford_medicine_logo.png" },
@@ -84,12 +85,7 @@ const Hero = () => {
           </div>
           
           <div className="flex justify-center animate-fade-in lg:max-w-md w-full">
-            <div 
-              className="w-full max-w-md border-2 border-primary rounded-2xl flex items-center justify-center bg-card/50 backdrop-blur-sm shadow-lg"
-              style={{ aspectRatio: "9/9" }}
-            >
-              <span className="text-2xl font-medium text-primary">Demo</span>
-            </div>
+            <HeroDemo />
           </div>
         </div>
       </div>
