@@ -9,12 +9,12 @@ const HeroDemo = () => {
     { icon: Database, text: "Logging in Medidata Rave" },
   ];
 
-  const [currentStep, setCurrentStep] = useState(0);
+  const [visibleSteps, setVisibleSteps] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentStep((prev) => (prev + 1) % steps.length);
-    }, 2000); // Change step every 2 seconds
+      setVisibleSteps((prev) => (prev + 1) % (steps.length + 1));
+    }, 3000); // Change every 3 seconds
 
     return () => clearInterval(interval);
   }, [steps.length]);
@@ -24,26 +24,21 @@ const HeroDemo = () => {
       <div className="flex flex-col space-y-4 h-full justify-center">
         {steps.map((step, index) => {
           const Icon = step.icon;
-          const isActive = index === currentStep;
-          const isCompleted = index < currentStep;
+          const isVisible = index < visibleSteps;
 
           return (
             <div
               key={index}
-              className={`flex items-center space-x-3 transition-all duration-500 ${
-                isActive ? "opacity-100 scale-105" : isCompleted ? "opacity-70" : "opacity-40"
+              className={`flex items-center space-x-3 transition-all duration-1000 ${
+                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-24"
               }`}
             >
               <div
-                className={`p-2 rounded-full transition-colors duration-500 ${
-                  isActive ? "bg-primary text-primary-foreground" : isCompleted ? "bg-green-500 text-white" : "bg-muted"
-                }`}
+                className="text-primary"
               >
-                <Icon className="w-4 h-4" />
+                <Icon className="w-6 h-6" />
               </div>
-              <span className={`text-sm font-medium transition-colors duration-500 ${
-                isActive ? "text-foreground" : "text-muted-foreground"
-              }`}>
+              <span className="font-medium text-black">
                 {step.text}
               </span>
             </div>
