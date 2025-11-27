@@ -4,8 +4,8 @@ const ClinboxHelps = () => {
   const benefits = [
     {
       icon: ArrowDownRight,
-      metric: "75%",
-      description: "less time on email (5-8 hours saved per week per FTE)",
+      metric: "60%",
+      description: "less time on email (3-6 hours saved per week per FTE)",
     },
     {
       icon: Zap,
@@ -14,7 +14,7 @@ const ClinboxHelps = () => {
     },
     {
       icon: ArrowUpRight,
-      metric: "50%",
+      metric: "30%",
       description: "faster quick task resolution with AI assistance (scheduling, vendor system actions, file retrieval)",
     },
   ];

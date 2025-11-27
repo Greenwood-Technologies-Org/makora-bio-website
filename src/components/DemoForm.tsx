@@ -25,9 +25,10 @@ const DemoForm = () => {
     <section className="py-8 px-6 lg:px-8 bg-secondary/30" id="demo">
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-6 animate-fade-in">
-          <h2 className="text-4xl font-medium mb-4">Try a Demo</h2>
+          <h2 className="text-4xl font-medium mb-4">See a Demo</h2>
         </div>
         
+        {/*
         <form onSubmit={handleSubmit} className="space-y-6 bg-card p-8 rounded-2xl shadow-lg border border-border animate-fade-in">
           <div className="text-center mb-6">
             <p className="text-2xl text-muted-foreground mb-2 text-primary">1 minute live demo with ClinBox</p>
@@ -81,6 +82,19 @@ const DemoForm = () => {
             By clicking "Try Demo," you agree to receive emails from Makora Bio and agree to our Terms of Service
           </p>
         </form>
+        */}
+        
+        <div className="text-center space-y-8 bg-card p-8 rounded-2xl shadow-lg border border-border animate-fade-in">
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            Schedule a meeting with the team to see ClinBox in action
+          </p>
+          
+          <Button asChild size="lg" className="shadow-glow">
+            <a href="https://calendly.com/roshan-kern/30min" target="_blank" rel="noopener noreferrer">
+              See Demo
+            </a>
+          </Button>
+        </div>
       </div>
     </section>
   );

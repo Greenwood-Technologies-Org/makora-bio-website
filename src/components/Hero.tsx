@@ -55,8 +55,10 @@ const Hero = () => {
               </p>
             </div>
             
-            <Button size="lg" className="shadow-glow">
-              Get Started
+            <Button asChild size="lg" className="shadow-glow">
+              <a href="https://calendly.com/roshan-kern/30min" target="_blank" rel="noopener noreferrer">
+                Get Started
+              </a>
             </Button>
             
             <div className="pt-2">
