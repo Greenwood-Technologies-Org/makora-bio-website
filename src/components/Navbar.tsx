@@ -1,86 +1,98 @@
-import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Menu } from "lucide-react";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    setOpen(false);
+    const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
+      const navbarHeight = 64; // Height of the fixed navbar (h-16 = 4rem = 64px)
+      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - navbarHeight - 32; // Additional 16px for spacing
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
-    setIsMobileMenuOpen(false);
   };
 
+  const NavLinks = ({ mobile = false }: { mobile?: boolean }) => (
+    <>
+      <a 
+        href="#clinbox" 
+        onClick={(e) => handleNavClick(e, '#clinbox')}
+        className={`text-sm font-medium text-foreground hover:text-primary transition-colors ${mobile ? 'block py-3' : ''}`}
+      >
+        Value
+      </a>
+      <a 
+        href="#demo" 
+        onClick={(e) => handleNavClick(e, '#demo')}
+        className={`text-sm font-medium text-foreground hover:text-primary transition-colors ${mobile ? 'block py-3' : ''}`}
+      >
+        Demo
+      </a>
+      <a 
+        href="#security" 
+        onClick={(e) => handleNavClick(e, '#security')}
+        className={`text-sm font-medium text-foreground hover:text-primary transition-colors ${mobile ? 'block py-3' : ''}`}
+      >
+        Security
+      </a>
+      <a 
+        href="#integrations" 
+        onClick={(e) => handleNavClick(e, '#integrations')}
+        className={`text-sm font-medium text-foreground hover:text-primary transition-colors ${mobile ? 'block py-3' : ''}`}
+      >
+        Integrations
+      </a>
+      <Button asChild variant="default" size="sm" className={mobile ? 'w-full mt-2' : ''}>
+        <a href="#contact" onClick={(e) => handleNavClick(e, '#contact')}>Get Started</a>
+      </Button>
+    </>
+  );
+
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/80 backdrop-blur-sm shadow-sm" : "bg-transparent"
-      }`}
-    >
-      <div className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="text-xl font-bold text-primary hover:opacity-80 transition-opacity"
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-card/50 backdrop-blur-glass border-b border-border/50">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          <a 
+            href="#top" 
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            className="text-xl font-semibold text-primary hover:opacity-80 transition-opacity cursor-pointer"
           >
             Makora Bio
-          </button>
+          </a>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <button
-              onClick={() => scrollToSection("clinbox")}
-              className="font-medium text-foreground hover:text-primary transition-colors"
-            >
-              Clinbox
-            </button>
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="font-medium text-foreground hover:text-primary transition-colors"
-            >
-              Contact Us
-            </button>
+            <NavLinks />
           </div>
 
-          {/* Mobile Hamburger Button */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-foreground hover:text-primary transition-colors"
-            aria-label="Toggle menu"
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          {/* Mobile Navigation */}
+          <Sheet open={open} onOpenChange={setOpen}>
+            <SheetTrigger asChild className="md:hidden">
+              <Button variant="ghost" size="icon">
+                <Menu className="h-6 w-6" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[240px]">
+              <div className="flex flex-col mt-8">
+                <NavLinks mobile />
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
-
-        {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 py-4 border-t border-border">
-            <div className="flex flex-col gap-4">
-              <button
-                onClick={() => scrollToSection("clinbox")}
-                className="font-medium text-foreground hover:text-primary transition-colors text-left"
-              >
-                Clinbox
-              </button>
-              <button
-                onClick={() => scrollToSection("contact")}
-                className="font-medium text-foreground hover:text-primary transition-colors text-left"
-              >
-                Contact Us
-              </button>
-            </div>
-          </div>
-        )}
       </div>
     </nav>
   );
